@@ -1,0 +1,17 @@
+styles:
+
+    heading:
+        fontSize: 12
+        textColor: orange
+
+    title:
+        parent: heading
+        fontSize: 200%
+
+    heading1:
+        parent: heading
+        fontSize: 22
+
+    body:
+        border: 1px solid black;
+        padding: 20px;
