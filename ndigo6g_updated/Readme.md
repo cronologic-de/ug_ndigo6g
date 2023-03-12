@@ -1,6 +1,5 @@
-#################################################################
-#############   Current Project Setup and Installation ##########
-#################################################################
+#############   Project Setup and Installation  ###########
+
 
 1. Clone the branch named as "ndigo6g_updated" or you can download a zip.
 2. Download and install Python on your system version3 or latest one from here:
@@ -36,9 +35,9 @@
 
 
 
-#################################################################
+
 #####################   Project Structure #######################
-#################################################################
+
 
 The project cotaines multiple folders and files:
 1. conf.py: Configuration file for the Sphinx documentation builder.
@@ -53,9 +52,9 @@ The project cotaines multiple folders and files:
 
 
 
-#################################################################
+
 #############   New Project Setup and Installation ##############
-#################################################################
+
 
 1. Download and install Python on your system version3 or latest one from here:
    link: https://www.python.org/downloads/
@@ -103,7 +102,7 @@ The project cotaines multiple folders and files:
 
 13. To create RST2PDF:
     rst2pdf  -s _static/style.css <rst_file> -o <pdf_file>
-rst2pdf -s _static\style.css  C:\Users\zeiqbal\Ndigo\RST\Ndigo_Intro.rst C:\Users\zeiqbal\Ndigo\_build\html\output.pdf
+    sample command: rst2pdf -s _static\style.css  C:\Users\zeiqbal\Ndigo\RST\Ndigo_Intro.rst C:\Users\zeiqbal\Ndigo\_build\html\output.pdf
 
 
 
