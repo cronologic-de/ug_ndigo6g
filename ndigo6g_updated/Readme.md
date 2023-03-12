@@ -102,7 +102,10 @@ The project cotaines multiple folders and files:
 
 13. To create RST2PDF:
     rst2pdf  -s _static/style.css <rst_file> -o <pdf_file>
-    sample command: rst2pdf -s _static\style.css  C:\Users\zeiqbal\Ndigo\RST\Ndigo_Intro.rst C:\Users\zeiqbal\Ndigo\_build\html\output.pdf
+    
+    
+    sample command: rst2pdf -s _static\style.css  C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\RST\Ndigo_Intro.rst  C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\output.pdf
+
 
 
 
