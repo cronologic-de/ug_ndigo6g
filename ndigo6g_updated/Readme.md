@@ -31,6 +31,9 @@
 
 10. After Installation you just need to run your RST2PDF to generate PDF
     - rst2pdf  -s _static/style.css <rst_file> -o <pdf_file>
+    
+    
+    sample command: rst2pdf -s _static\style.css  C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\RST\Ndigo_Intro.rst   C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\output.pdf
 
 
 
@@ -43,7 +46,7 @@ The project cotaines multiple folders and files:
 1. conf.py: Configuration file for the Sphinx documentation builder.
 2. Readme.md: Contains documentation related to project
 3. _build: Containes doctree and HTML files against all RST files.
-4. Output.pdf: it exist under "\_build\html\output.pdf" but you can place it any where.
+4. Output.pdf: It is actuall pdf file which is genrated as output.
 5. _bulid\html\images: This folder contains all images which are displayed on HTML pages.
 6. _bulid\html\static: Contains all relevent CSS,JQuery and JS files.
 7. RST: This folder contains all RST files including main RST.
@@ -97,14 +100,14 @@ The project cotaines multiple folders and files:
 11. Then write this command on terminal:
     - sphinx-apidoc -o . .. (This will create RST for us)
 
-12. Then just make html
+12. Then just make html you need to rename the folder htmlfiles to html then run this command
     - .\make html
 
 13. To create RST2PDF:
     rst2pdf  -s _static/style.css <rst_file> -o <pdf_file>
     
     
-    sample command: rst2pdf -s _static\style.css  C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\RST\Ndigo_Intro.rst  C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\output.pdf
+    sample command: rst2pdf -s _static\style.css  C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\RST\Ndigo_Intro.rst   C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\output.pdf
 
 
 
