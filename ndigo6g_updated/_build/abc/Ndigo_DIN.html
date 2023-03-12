@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Information Required by DIN EN 61010-1 &mdash; Ndigo 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Ndigo
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html">1.0 Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#hardware">2.0 Hardware</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_PackForm.html">4.0 Packet Format</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_CExp.html">5.0 C-Example</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Tech.html">6.0 Technical Data</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ndigo</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Information Required by DIN EN 61010-1</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Ndigo_DIN.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="information-required-by-din-en-61010-1">
+<h1>Information Required by DIN EN 61010-1<a class="headerlink" href="#information-required-by-din-en-61010-1" title="Permalink to this heading"></a></h1>
+<section id="manufacturer">
+<h2>Manufacturer<a class="headerlink" href="#manufacturer" title="Permalink to this heading"></a></h2>
+<p>The Ndigo5G is a product of:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">cronologic GmbH &amp; Co. KG</div>
+<div class="line">Jahnstraße 49</div>
+<div class="line">60318 Frankfurt</div>
+</div>
+<p>HRA 42869 beim Amtsgericht Frankfurt/M</p>
+<p>VAT-ID: DE235184378</p>
+</div></blockquote>
+</section>
+<section id="intended-use-and-system-integration">
+<h2>Intended Use and System Integration<a class="headerlink" href="#intended-use-and-system-integration" title="Permalink to this heading"></a></h2>
+<p>The devices are not ready to use as delivered by cronologic. It requires
+the development of specialized software to fulfill the application of
+the end user. The device is provided to system integrators to be built
+into measurement systems that are distributed to end users. These
+systems usually consist of a the Ndigo5G, a main board, a case,
+application software and possible additional electronics to attach the
+system to some type of detector. They might also be integrated with the
+detector.</p>
+<p>The Ndigo5G is designed to comply with DIN EN 61326-1 when operated on a
+PCIe compliant main board housed in a properly shielded enclosure. When
+operated in a closed standard compliant PC enclosure the device does not
+pose any hazards as defined by EN 61010-1.</p>
+<p>Radiated emissions, noise immunity and safety highly depend on the
+quality of the enclosure. It is the responsibility of the system
+integrator to ensure that the assembled system is compliant to
+applicable standards of the country that the system is operated in,
+especially with regards to user safety and electromagnetic interference.
+Compliance was only tested for attached cables shorter than 3m.</p>
+<p>When handling the board, adequate measures have to be taken to protect
+the circuits against electrostatic discharge (ESD). All power supplied
+to the system must be turned off before installing the board.</p>
+</section>
+<section id="cooling">
+<h2>Cooling<a class="headerlink" href="#cooling" title="Permalink to this heading"></a></h2>
+<p>The Ndigo5G in its base configuration has passive cooling that requires
+a certain amount of air flow. If the case design can’t provide enough
+air flow to the board, a slot cooler like Zalman ZM-SC100 can be placed
+next to the board. Active cooling is also available as an option to the
+board.</p>
+</section>
+<section id="environmental-conditions">
+<h2>Environmental Conditions<a class="headerlink" href="#environmental-conditions" title="Permalink to this heading"></a></h2>
+<p>See Sections <a class="reference external" href="#enviro_op">[enviro_op]</a> and
+<a class="reference external" href="#enviro_store">[enviro_store]</a>.</p>
+</section>
+<section id="inputs">
+<h2>Inputs<a class="headerlink" href="#inputs" title="Permalink to this heading"></a></h2>
+<p>All inputs are AC coupled. The inputs have very high input bandwidth
+requirements and therefore there are no circuits that provide over
+voltage protection for these signals. Any voltage on the inputs above 5V
+or below -5V relative to the voltage of the slot cover can result in
+permanent damage to the board.</p>
+</section>
+<section id="known-bugs">
+<h2>Known Bugs<a class="headerlink" href="#known-bugs" title="Permalink to this heading"></a></h2>
+<p>The Ndigo5G does not work in most Thunderbolt PCIe extension enclosures.
+The reason is unknown.</p>
+<section id="workarounds">
+<h3>Workarounds<a class="headerlink" href="#workarounds" title="Permalink to this heading"></a></h3>
+<dl>
+<dt>Use Ndigo6G</dt><dd><div class="line-block">
+<div class="line"><br /></div>
+<div class="line">All other cronologic products work reliably in Thunderbolt
+enclosures. The Ndigo6G offers very similar functionality to the
+Ndigo5G at a higher performance. When using the Ndigo6G as a
+replacement, there are some software changes required in the device
+configuration. The readout data format and API is identical.</div>
+<div class="line">See
+<a class="reference external" href="https://www.cronologic.de/products/adcs/ndigo6g-12">www.cronologic.de/products/adcs/ndigo6g-12</a>
+for details.</div>
+</div>
+</dd>
+<dt>Use Ndigo Crate</dt><dd><div class="line-block">
+<div class="line"><br /></div>
+<div class="line">Up to eight Ndigo5G can be used in an Ndigo Crate connected to a
+PC. Electrically the setup is similar to an external Thunderbolt
+enclosure, but the PC must have a vacant PCIe slot.</div>
+<div class="line">See
+<a class="reference external" href="https://www.cronologic.de/products/pcie/pcie-crates">www.cronologic.de/products/pcie/pcie-crates</a>
+for details.</div>
+</div>
+</dd>
+</dl>
+<p>All other cronogic products work reliably in Thundberbolt enclosure.
+Consider using an Ndigo6G as a replace</p>
+</section>
+<section id="recycling">
+<h3>6.3.6 Recycling<a class="headerlink" href="#recycling" title="Permalink to this heading"></a></h3>
+<p>cronologic is registered with the “Stiftung Elektro-Altgeräte Register”
+as a manufacturer of electronic systems with Registration ID DE
+77895909.</p>
+<p>The Ndigo5G belongs to category 9, “Überwachungs und Kontrollinstrumente
+für ausschließlich gewerbliche Nutzung”. The last owner of an Ndigo5G
+must recycle it, treat the board in compliance with §11 and §12 of the
+German ElektroG, or return it to the manufacturer’s address listed on
+page .</p>
+</section>
+</section>
+<section id="export-control">
+<h2>Export Control<a class="headerlink" href="#export-control" title="Permalink to this heading"></a></h2>
+<p>The Ndigo5G product line is a dual use item under <a class="reference external" href="https://data.europa.eu/eli/reg/2009/428/2021-10-077">Council Regulation
+(EC) No 428/2009 of 5 May 2009 setting up a Community regime for the
+control of exports, transfer, brokering and transit of dual-use
+items</a> in
+section 3A002h. Similar regulations exist in many countries outside
+Europe.</p>
+<p>An export permit is required to export this product from the European
+Community (EC) which will cause additional lead time. When ordering from
+outside the EC, the seller will ask you for additional information
+needed to obtain this permit.</p>
+<p>Before reexporting an Ndigo5G or any product containing an Ndigo5G as a
+component please check you local regulations whether an export permit is
+required.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sulima.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

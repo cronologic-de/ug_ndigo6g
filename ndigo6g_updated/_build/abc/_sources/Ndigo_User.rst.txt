@@ -1,0 +1,7 @@
+Ndigo\_User module
+==================
+
+.. automodule:: Ndigo_User
+   :members:
+   :undoc-members:
+   :show-inheritance:
