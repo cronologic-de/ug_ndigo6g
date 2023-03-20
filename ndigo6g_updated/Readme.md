@@ -12,6 +12,7 @@
    
 4. Then you need to install any IDE to run python project and for libraries installation.
    Some famous IDEs for Python are :
+   
            - Pychram
            - Visual Studio Code
            - Anaconda
@@ -50,14 +51,14 @@
 
 The project cotaines multiple folders and files:
 
-1. conf.py: Configuration file for the Sphinx documentation builder.
-2. Readme.md: Contains documentation related to project
-3. _build: Containes doctree and HTML files against all RST files.
-4. Output.pdf: It is actuall pdf file which is genrated as output.
-5. _bulid\html\images: This folder contains all images which are displayed on HTML pages.
-6. _bulid\html\static: Contains all relevent CSS,JQuery and JS files.
-7. RST: This folder contains all RST files including main RST.
-8. RST\figures: All figures which will displayed on PDF
+1. **conf.py:** Configuration file for the Sphinx documentation builder.
+3. **Readme.md:** Contains documentation related to project
+4. **_build:** Containes doctree and HTML files against all RST files.
+5. **Output.pdf:** It is actuall pdf file which is genrated as output.
+6. **_bulid\html\images:** This folder contains all images which are displayed on HTML pages.
+7. **_bulid\html\static:** Contains all relevent CSS,JQuery and JS files.
+8. **RST:** This folder contains all RST files including main RST.
+9. **RST\figures:** All figures which will displayed on PDF
 
 
 
@@ -109,7 +110,7 @@ The project cotaines multiple folders and files:
 
 10. Also change html_theme to:
 
-    -sphinx_rtd_theme
+    - sphinx_rtd_theme
 
 11. Then write this command on terminal:
     - sphinx-apidoc -o . .. (This will create RST for us)
