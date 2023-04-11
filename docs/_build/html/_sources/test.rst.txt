@@ -1,0 +1,27 @@
+The Ndigo5G is a digitizer and transient recorder designed to sample
+relatively shorts pulses in rapid repetition. It produces a stream of
+output packets, each containing data from a single trigger event
+together with a timestamp.
+
+Introduction
+============
+Features
+--------
+
+
+-  10 bit dynamic range
+
+-  up to 5 Gsps sample rate (in 1 channel mode)
+
+-  up to 4 channels
+
+-  digital input with TDC that can also be used for gating and
+   triggering
+
+-  2\ :sup:`nd` digital input for gating or triggering
+
+-  PCIe 4x 1.1 with 800 MB/s throughput
+
+-  multiple boards can be synchronized
+
+-  extension board with 4 additional digital inputs.
