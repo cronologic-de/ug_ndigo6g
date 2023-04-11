@@ -125,16 +125,3 @@ The project cotaines multiple folders and files:
     - Sample Command: rst2pdf -s _static\style.css  C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\RST\Ndigo_Intro.rst   C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\output.pdf
 
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
