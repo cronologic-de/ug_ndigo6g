@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4.0 Packet Format &mdash; Ndigo 1.0 documentation</title>
+  <title>1. Packet Format &mdash; Ndigo 1.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/style.css" type="text/css" />
@@ -22,8 +22,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="5.0 C-Example" href="Ndigo_CExp.html" />
-    <link rel="prev" title="1.0 Introduction" href="Ndigo_Intro.html" /> 
+    <link rel="next" title="1. C-Example" href="Ndigo_CExp.html" />
+    <link rel="prev" title="1 Introduction" href="Ndigo_Intro.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,21 +41,30 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html">1.0 Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#hardware">2.0 Hardware</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html"><span class="sectnum">1</span> Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#hardware"><span class="sectnum">2</span> Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#driver-programming-api"><span class="sectnum">3</span> Driver Programming API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#packet-format"><span class="sectnum">4</span> Packet Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#c-example"><span class="sectnum">5</span> C-Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#technical-data"><span class="sectnum">6</span> Technical Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#revision-history"><span class="sectnum">7</span> Revision History</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">4.0 Packet Format</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#output-structure-ndigopacket">4.0.1 Output Structure ndigopacket</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Packet Format</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#output-structure-ndigopacket">1.1. Output Structure ndigopacket</a></li>
 </ul>
 </li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Ndigo_CExp.html">5.0 C-Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_CExp.html">1. C-Example</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Ndigo_Tech.html">6.0 Technical Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Tech.html">1. Technical Data</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_RevHistory.html">1. Revision History</a></li>
 </ul>
 
         </div>
@@ -72,7 +81,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">4.0 Packet Format</li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>Packet Format</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/Ndigo_PackForm.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -83,28 +92,23 @@
            <div itemprop="articleBody">
              
   <section id="packet-format">
-<h1>4.0 Packet Format<a class="headerlink" href="#packet-format" title="Permalink to this heading"></a></h1>
+<h1><span class="section-number">1. </span>Packet Format<a class="headerlink" href="#packet-format" title="Permalink to this heading"></a></h1>
 <section id="output-structure-ndigopacket">
-<h2>4.0.1 Output Structure ndigopacket<a class="headerlink" href="#output-structure-ndigopacket" title="Permalink to this heading"></a></h2>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">0 to 3 for the ADC input channels, 4 for the TDC, 5 for the timestamp
-channel.</div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">Identifies the source card in case there are multiple boards present.
-Defaults to 0 if no value is assigned to the parameter boardid in
-Structure ndigoinitparameters or set via</div>
-<div class="line">int ndigosetboardid(ndigodevice *device, int boardid).</div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">For the ADC channels this is set to 1 to signify 16 bit signed data.</div>
-</div>
-<p>For the TDC channel it is set to 8 to signify 64 bit unsigned data.</p>
+<h2><span class="section-number">1.1. </span>Output Structure ndigopacket<a class="headerlink" href="#output-structure-ndigopacket" title="Permalink to this heading"></a></h2>
+<p><strong>unsigned char channel</strong></p>
+<p><strong>0</strong> to <strong>3</strong> for the ADC input channels, <strong>4</strong> for the TDC, <strong>5</strong> for the timestamp channel.</p>
+<p><strong>unsigned char card</strong></p>
+<p>Identifies the source card in case there are multiple boards present.
+Defaults to <strong>0</strong> if no value is assigned to the parameter boardid in Structure
+ndigoinitparameters or set via</p>
+<blockquote>
+<div><p><strong>int ndigosetboardid(ndigodevice *device, int boardid).</strong></p>
+</div></blockquote>
+<p><strong>unsigned char type</strong></p>
+<p>For the ADC channels this is set to <strong>1</strong> to signify <strong>16 bit signed</strong> data.</p>
+<p>For the TDC channel it is set to <strong>8</strong> to signify <strong>64 bit unsigned</strong> data.</p>
 <p>If the type field is 128 or greater then there is no data present, even
-if length is not 0. In this cases the length field may contain other
+if length is not <strong>0</strong>. In this cases the length field may contain other
 data.</p>
 <div class="small docutils container">
 <table class="docutils align-default">
@@ -145,70 +149,64 @@ packet was created.</p></td>
 </tbody>
 </table>
 </div>
-<div class="line-block">
-<div class="line">1</div>
-<div class="line">If the bit with weight 1 is set, the packet was truncated because the
-internal FIFO was full. Less than the requested number of samples have
-been written due to the full FIFO.</div>
-</div>
-<div class="line-block">
-<div class="line">2</div>
-<div class="line">If the bit with weight 2 is set, there are lost triggers immediately
+<p><strong>unsigned char flags</strong></p>
+<blockquote>
+<div><p>#define NDIGO_PACKET_FLAG_SHORTENED 1</p>
+</div></blockquote>
+<p>If the bit with <strong>weight 1</strong> is set, the packet was truncated because the internal
+FIFO was full. Less than the requested number of samples have
+been written due to the full FIFO.</p>
+<blockquote>
+<div><p>#define NDIGO_PACKET_FLAG_PACKETS LOST 2</p>
+</div></blockquote>
+<p>If the bit with <strong>weight 2</strong> is set, there are lost triggers immediatel
 preceding this packet due to insufficient DMA buffers. The DMA
-controller has discarded packets due to full host buffer.</div>
-</div>
-<div class="line-block">
-<div class="line">4</div>
-<div class="line">If the bit with weight 4 is set, the packet contains ADC sample
-overflows.</div>
-</div>
-<div class="line-block">
-<div class="line">8</div>
-<div class="line">If the bit with weight 8 is set, there are lost triggers immediately
+controller has discarded packets due to full host buffer.</p>
+<blockquote>
+<div><p>#define NDIGO_PACKET_FLAG_OVERFLOW 4</p>
+</div></blockquote>
+<p>If the bit with <strong>weight 4</strong> is set, the packet contains ADC sample overflows.</p>
+<blockquote>
+<div><p>#define NDIGO_PACKET_FLAG_TRIGGER MISSED 8</p>
+</div></blockquote>
+<p>If the bit with <strong>weight 8</strong> is set, there are lost triggers immediately
 preceding this packet due to insufficient buffers. The trigger unit
-has discarded packets due to full FIFO.</div>
-</div>
-<div class="line-block">
-<div class="line">16</div>
-<div class="line">If the bit with weight 16 is set, the internal DMA FIFO was full.
-Triggers only got lost if a subsequent package has the bit with weight
-8 set.</div>
-</div>
-<div class="line-block">
-<div class="line">32</div>
-<div class="line">If the bit with weight 32 is set, the host buffer was full. Triggers
-only got lost if a subsequent package has the bit with weight 8 set.</div>
-</div>
-<div class="line-block">
-<div class="line">64</div>
-<div class="line">If the bit with weight 64 is set, the packet from the TDC does not
+has discarded packets due to full FIFO.</p>
+<blockquote>
+<div><p>#define NDIGO_PACKET_FLAG_DMA FIFO FULL 16</p>
+</div></blockquote>
+<p>If the bit with <strong>weight 16</strong> is set, the internal DMA FIFO was full.
+Triggers only got lost if a subsequent package has the bit with <strong>weight
+8</strong> set.</p>
+<blockquote>
+<div><p>#define NDIGO_PACKET_FLAG_HOST_BUFFER_FULL 32</p>
+</div></blockquote>
+<p>If the bit with <strong>weight 32</strong> is set, the host buffer was full. Triggers
+only got lost if a subsequent package has the bit with <strong>weight 8</strong> set.</p>
+<blockquote>
+<div><p>#define NDIGO_PACKET_FLAG_TDC_NO_EDGE 64</p>
+</div></blockquote>
+<p>If the bit with <strong>weight 64</strong> is set, the packet from the TDC does not
 contain valid data and the timestamp is not corrected. No valid edge
-was found in TDC packet.</div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">Number of 64-bit elements (each containing 4 samples) in the data
-array if type <span class="math notranslate nohighlight">\(&lt; 128\)</span>.</div>
-</div>
-<p>If type = 128 this is the pattern of trigger sources that where active
+was found in TDC packet.</p>
+<p><strong>unsigned int length</strong></p>
+<p>Number of <strong>64-bit</strong> elements (each containing 4 samples) in the data
+array if type <span class="math notranslate nohighlight">\(&lt; 128\)</span>.</p>
+<p>If <strong>type = 128</strong> this is the pattern of trigger sources that where active
 in the clock cycle given by the timestamp. Bits are set according to the
-trigger sources, i.e. bit 0 is set if trigger A0 was active, bit 29 is
-set if trigger BUS3PE was active. Use the NDIGOTRIGGERSOURCEdefines to
+trigger sources, i.e. <strong>bit 0</strong> is set if <strong>trigger A0</strong> was active, <strong>bit 29</strong> is
+set if <strong>trigger BUS3 PE</strong> was active. Use the <strong>NDIGO_TRIGGER_SOURCE_*</strong> to
 check for the bits set.</p>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">ADC channels A to D: Timestamp of the last word in the packet in ps.</div>
-</div>
+<p><strong>unsigned __int64 timestamp</strong></p>
+<p>ADC channels <strong>A</strong> to <strong>D</strong>: Timestamp of the last word in the packet in ps.</p>
 <p>TDC: Timestamp of the trigger event (falling edge) on the TDC channel in
-ps. When ndigoprocesstdcpacket() is called once on the packet the
+ps. When <strong>ndigo_process_tdc_packet()</strong> is called once on the packet the
 timestamp is replaced with the precise timestamp for the edge.</p>
 <p>Timestamp channel: Timestamp of the trigger event in ps.</p>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">Sample data. For the Ndigo5G each 64 bit word contains four 16 bit
+<p><strong>unsigned __int64 data[]</strong></p>
+<p>Sample data. For the <strong>Ndigo5G</strong> each <strong>64 bit</strong> word contains four <strong>16 bit</strong>
 signed words from the ADC. The user can cast the array to short* to
-directly operate on the sample data.</div>
-</div>
+directly operate on the sample data.</p>
 </section>
 </section>
 
@@ -216,8 +214,8 @@ directly operate on the sample data.</div>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Ndigo_Intro.html" class="btn btn-neutral float-left" title="1.0 Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Ndigo_CExp.html" class="btn btn-neutral float-right" title="5.0 C-Example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Ndigo_Intro.html" class="btn btn-neutral float-left" title="1 Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Ndigo_CExp.html" class="btn btn-neutral float-right" title="1. C-Example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

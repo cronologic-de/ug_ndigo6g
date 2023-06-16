@@ -1,13 +1,14 @@
 styles:
 
+    body:
+        border: 2px solid de8817
+        padding: 20px
     heading:
         fontSize: 12
         textColor: de8817
-
     title:
         parent: heading
         fontSize: 200%
-
     heading1:
         parent: heading
         fontSize: 22
@@ -16,6 +17,3 @@ styles:
     heading4:
         textColor: 6ca0dc
 
-    body:
-        border: 2px solid black
-        padding: 20px

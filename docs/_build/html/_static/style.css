@@ -1,8 +1,21 @@
-body {
-    font-size: 12pt;
-    font-family: Arial, sans-serif;
-}
-h1,h2,h3 {
-  color: #db9833;
-}
+styles:
 
+    heading:
+        fontSize: 12
+        textColor: de8817
+
+    title:
+        parent: heading
+        fontSize: 200%
+
+    heading1:
+        parent: heading
+        fontSize: 22
+    heading3:
+        textColor: 6ca0dc
+    heading4:
+        textColor: 6ca0dc
+
+    body:
+        border: 2px solid black
+        padding: 20px

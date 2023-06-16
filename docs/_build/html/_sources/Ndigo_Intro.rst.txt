@@ -1,17 +1,13 @@
-1.0 Introduction
-================
+.. sectnum::
+
+Introduction
+============
 
 .. raw:: html
 
-    <style>
-        body {
-            font-size: 12pt;
-            font-family: Arial, sans-serif;
-        }
-        h1,h2,h3 {
-          color: #db9833;
-        }
-    </style>
+   <link rel="stylesheet" type="text/css" href="_static/style.css"/>
+
+(see `Fig <#target-link1>`_ ).
 
 The **Ndigo5G** is a digitizer and transient recorder designed to sample
 relatively shorts pulses in rapid repetition. It produces a stream of
@@ -20,23 +16,20 @@ together with a timestamp.
 
 
 By default the **Ndigo5G** is equipped with a passive cooling system. If
-necessary, the unit might be ordered with an active cooling system on demand ( `Fig 1.1 <#target-link1>`_ ).
+necessary, the unit might be ordered with an active cooling system on demand ( `see Figure 1.1 <#target-link1>`_ ).
 
-
-
-
-1.1 Features
-------------
+Features
+--------
 
 
 -  **10 bit** dynamic range
 
--  up to **5 Gsps** sample rate (in 1 channel mode)
+-  up to **5 Gsps** sample rate (in 1 channel mode) for increased resolution in time domain.
 
--  up to **4 channels**
+-  up to **4 channels** for your individual measurement setups.
 
 -  digital input with TDC that can also be used for gating and
-   triggering
+   triggering.
 
 -  2\ :sup:`nd` digital input for gating or triggering.
 
@@ -46,14 +39,28 @@ necessary, the unit might be ordered with an active cooling system on demand ( `
 
 -  extension board available with 4 additional digital inputs.
 
+This is a reference to :ref:`my_figure`.
+
+
+.. raw:: html
+
+   <br>
+
+
+.. figure:: figures/fig1.1.png
+   :name: my_figure
+   :caption: This is a figure caption.
+
+
 .. _target-link1:
+
 .. figure:: figures/fig1.1.png
    :alt: alternative text
    :width: 2000
    :height: 300
 
-   Figure 1.1: Ndigo5G equipped with active cooling system
 
+   Figure 1.1: Ndigo5G equipped with active cooling system
 
 .. raw:: pdf
 
@@ -61,3 +68,12 @@ necessary, the unit might be ordered with an active cooling system on demand ( `
 
 
 .. include:: Hardware.rst
+.. include:: Ndigo_API.rst
+.. include:: Ndigo_PackForm.rst
+.. include:: Ndigo_CExp.rst
+.. include:: Ndigo_Tech.rst
+.. include:: Ndigo_RevHistory.rst
+
+
+
+

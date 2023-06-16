@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2.0 Hardware &mdash; Ndigo 1.0 documentation</title>
+  <title>2.1 Installing the Board &mdash; Ndigo 1.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/style.css" type="text/css" />
@@ -39,18 +39,27 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html">1.0 Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#hardware">2.0 Hardware</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html"><span class="sectnum">1</span> Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#hardware"><span class="sectnum">2</span> Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#driver-programming-api"><span class="sectnum">3</span> Driver Programming API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#packet-format"><span class="sectnum">4</span> Packet Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#c-example"><span class="sectnum">5</span> C-Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#technical-data"><span class="sectnum">6</span> Technical Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Intro.html#revision-history"><span class="sectnum">7</span> Revision History</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Ndigo_PackForm.html">4.0 Packet Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_PackForm.html">1. Packet Format</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Ndigo_CExp.html">5.0 C-Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_CExp.html">1. C-Example</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Ndigo_Tech.html">6.0 Technical Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_Tech.html">1. Technical Data</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Ndigo_RevHistory.html">1. Revision History</a></li>
 </ul>
 
         </div>
@@ -67,7 +76,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">2.0 Hardware</li>
+      <li class="breadcrumb-item active">2.1 Installing the Board</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/Ndigo_Hardware.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -77,10 +86,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="hardware">
-<h1>2.0 Hardware<a class="headerlink" href="#hardware" title="Permalink to this heading"></a></h1>
+  <p>2.0 Hardware
+2.0 Hardware
+============</p>
 <section id="installing-the-board">
-<h2>2.1 Installing the Board<a class="headerlink" href="#installing-the-board" title="Permalink to this heading"></a></h2>
+<h1>2.1 Installing the Board<a class="headerlink" href="#installing-the-board" title="Permalink to this heading"></a></h1>
 <p>The <strong>Ndigo5G board</strong> can be installed in any x4 (or higher amount of lanes)
 PCIe slot. If the slot electrically supports less than 4 lanes, the
 board will operate at lowerdata throughput rates.</p>
@@ -100,7 +110,7 @@ of high speed ADCs (<strong>Ndigo5G</strong>) and slower high resolution ADCs
 (<strong>Ndigo250M-14</strong>).</p>
 <p>The signals used for board synchronization and inter-board triggering
 are transferred on a bus be-tween the boards. Join all C2 connectors
-(see Figure <a class="reference external" href="#target-fig4">Fig 2.3</a>  ) on the
+(<a class="reference external" href="#target-fig4">see Figure 2.3</a>  on page 7) on the
 boards using a ribbon cable. Both ends of the bus need to be terminated
 properly. If using a <strong>Ndigo Crate</strong>, connectors providing the termination
 are located on the crate mainboard next to the PCIe slots to the extreme
@@ -116,22 +126,22 @@ user guide for more information.</p>
 <figure class="align-default" id="id17">
 <a class="reference internal image-reference" href="_images/fig2.1.png"><img alt="alternative text" src="_images/fig2.1.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.1: If several Ndigo boards are connected to work in sync, the boards
+<p><span class="caption-text">Figure 86: Figure 2.1: If several Ndigo boards are connected to work in sync, the boards
 must be connected using a ribbon cable as bus for synchronization and
 trigger signals. Proper termination is required at both ends of the cable.</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="ndigo5g-external-inputs-and-connectors">
-<h2>2.2 Ndigo5G External Inputs and Connectors<a class="headerlink" href="#ndigo5g-external-inputs-and-connectors" title="Permalink to this heading"></a></h2>
+<h1>2.2 Ndigo5G External Inputs and Connectors<a class="headerlink" href="#ndigo5g-external-inputs-and-connectors" title="Permalink to this heading"></a></h1>
 <section id="connectors">
-<h3>2.2.1 Connectors<a class="headerlink" href="#connectors" title="Permalink to this heading"></a></h3>
+<h2>2.2.1 Connectors<a class="headerlink" href="#connectors" title="Permalink to this heading"></a></h2>
 <p>The inputs of the <strong>Ndigo5G</strong> are located on the PCI bracket. Figure
-<a class="reference external" href="#target-fig4">Fig 2.3</a> on page shows the location of the
+<a class="reference external" href="#target-fig4">Figure 2.3</a> on page shows the location of the
 4 analog inputs A to D and the two digital inputs G (GATE) and T
 (Trigger). Furthermore, two board interconnection connectors can be
 found at the top edge of the <strong>Ndigo5G</strong>, as displayed in Figure
-<a class="reference external" href="#target-fig4">Fig 2.3</a> on page . Connector C1 is used
+<a class="reference external" href="#target-fig4">Figure 2.3</a> on page . Connector C1 is used
 for a board-to-board connection (e. g. to link a HPTDC8-PCI and a
 <strong>Ndigo5G</strong> via a <strong>Ndigo Extension board</strong>, see chapter 2.3).
 Connector C2 is used as a bus interface
@@ -141,22 +151,22 @@ interconnection ribbon cable.</p>
 <figure class="align-default" id="id18">
 <a class="reference internal image-reference" href="_images/fig2.2.png"><img alt="alternative text" src="_images/fig2.2.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.2: Input connectors of an Ndigo5G located on the PCI bracket.</span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 87: Figure 2.2: Input connectors of an Ndigo5G located on the PCI bracket.</span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id19">
-<span id="target-fig4"></span><a class="reference internal image-reference" href="_images/fig2.3.png"><img alt="alternative text" src="_images/fig2.3.png" style="width: 2000px; height: 300px;" /></a>
+<span id="target-fig4"></span><a class="reference internal image-reference" href="_images/fig2.3.png"><img alt="alternative text" src="_images/fig2.3.png" style="width: 1800px; height: 280px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.3: Ndigo5G board showing inter-board connectors C1 and C2.</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 88: Figure 2.3: Ndigo5G board showing inter-board connectors C1 and C2.</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="analog-inputs">
-<h3>2.2.2 Analog Inputs<a class="headerlink" href="#analog-inputs" title="Permalink to this heading"></a></h3>
+<h2>2.2.2 Analog Inputs<a class="headerlink" href="#analog-inputs" title="Permalink to this heading"></a></h2>
 <figure class="align-default" id="id20">
 <span id="target-fig5"></span><a class="reference internal image-reference" href="_images/fig2.4.png"><img alt="alternative text" src="_images/fig2.4.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.3: Input circuit for each of the four analog channels.</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 89: Figure 2.3: Input circuit for each of the four analog channels.</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The analog inputs of the ADC are single ended LEMO00 coax connectors.
@@ -164,32 +174,32 @@ The inputs have a <span class="math notranslate nohighlight">\(50\Omega\)</span>
 inputs are converted to a differential signal using a balun.</p>
 </section>
 <section id="analog-offsets">
-<h3>Analog Offsets<a class="headerlink" href="#analog-offsets" title="Permalink to this heading"></a></h3>
+<h2>Analog Offsets<a class="headerlink" href="#analog-offsets" title="Permalink to this heading"></a></h2>
 <p>AC coupling removes the common mode voltage from the input signal. Users
 can move the common mode voltage to a value of their choice using the
 analogoffset parameter of each channel before sampling.</p>
 <p>This feature is useful for highly asymmetric signals, such as pulses
 from TOF spectrometers or LIDAR systems. Without analog offset
 compensation, the pulses would begin in the middle of the ADC range,
-effectively cutting the dynamic range in half (see Figure <a class="reference external" href="target-fig7">Fig 2.6</a> ). By shifting the DC baseline to
+effectively cutting the dynamic range in half (see <a class="reference external" href="target-fig7">Figure 2.6</a> ). By shifting the DC baseline to
 one end of the ADC range, the input range can be used fully, providing
 the maximum dynamic range. The analog offset can be set between
 <span class="math notranslate nohighlight">\(\pm 0,25V\)</span>.</p>
 <figure class="align-default" id="id21">
 <a class="reference internal image-reference" href="_images/fig2.5.png"><img alt="alternative text" src="_images/fig2.5.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.5: Users can add analog offset to the input before sampling</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 90: Figure 2.5: Users can add analog offset to the input before sampling</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id22">
 <span id="target-fig7"></span><a class="reference internal image-reference" href="_images/fig2.6.png"><img alt="alternative text" src="_images/fig2.6.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.6: Asymmetric signal shifted to increase dynamic range</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 91: Figure 2.6: Asymmetric signal shifted to increase dynamic range</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="digital-inputs">
-<h3>2.2.3 Digital Inputs<a class="headerlink" href="#digital-inputs" title="Permalink to this heading"></a></h3>
+<h2>2.2.3 Digital Inputs<a class="headerlink" href="#digital-inputs" title="Permalink to this heading"></a></h2>
 <p>There are two digital inputs on the front slot cover called Trigger and
 Gate.</p>
 <p>Both inputs provide a digital input signal routed to the trigger matrix.
@@ -204,7 +214,7 @@ circuit is shown in Figure <a class="reference external" href="#fig:DigitalInput
 page .</p>
 </section>
 <section id="tdc-on-trigger-input">
-<h3>TDC on Trigger Input<a class="headerlink" href="#tdc-on-trigger-input" title="Permalink to this heading"></a></h3>
+<h2>TDC on Trigger Input<a class="headerlink" href="#tdc-on-trigger-input" title="Permalink to this heading"></a></h2>
 <p>There is a TDC connected to the Trigger input. When used with the TDC,
 the Trigger input supports negative pulses only . The TDC creates
 packets of type 8. These packets first contain a coarse timestamp and a
@@ -217,7 +227,7 @@ must have a minimum duration of 3.3ns. The dead-time of the TDC is 32ns.</p>
 </section>
 </section>
 <section id="extension-card">
-<h2>2.3 Extension Card<a class="headerlink" href="#extension-card" title="Permalink to this heading"></a></h2>
+<h1>2.3 Extension Card<a class="headerlink" href="#extension-card" title="Permalink to this heading"></a></h1>
 <p>The Ndigo Extension card provides additional inputs or outputs to the
 FPGA. It is connected to the Samtec QSS-025 connector on an Ndigo5G by
 an Samtec SQCD cable assembly.</p>
@@ -351,7 +361,7 @@ Sync-HPTDC</p></td>
 to be used for triggering. The routing can be configured to either ORing
 the sync bus and extension channels or use the extension channels
 exclusively.</p>
-<div class="center docutils container">
+<div class="small docutils container">
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 16%" />
@@ -395,9 +405,9 @@ exclusively.</p>
 </div>
 </section>
 <section id="ndigo5g-functionality">
-<h2>2.4 Ndigo5G Functionality<a class="headerlink" href="#ndigo5g-functionality" title="Permalink to this heading"></a></h2>
+<h1>2.4 Ndigo5G Functionality<a class="headerlink" href="#ndigo5g-functionality" title="Permalink to this heading"></a></h1>
 <section id="adc-modes">
-<h3>2.4.1 ADC Modes<a class="headerlink" href="#adc-modes" title="Permalink to this heading"></a></h3>
+<h2>2.4.1 ADC Modes<a class="headerlink" href="#adc-modes" title="Permalink to this heading"></a></h2>
 <p>Depending on board configuration, the analog input signal is quantized
 to 8 or 10 bits. However, the board always scales and offsets the data
 to 16 bit signed data centered around 0.</p>
@@ -407,7 +417,7 @@ may contain 4, 8 or 16 samples.</p>
 <p>The board supports using one, two or four channels:</p>
 </section>
 <section id="channel-modes-a-b-c-and-d">
-<h3>1 Channel Modes A, B, C and D<a class="headerlink" href="#channel-modes-a-b-c-and-d" title="Permalink to this heading"></a></h3>
+<h2>1 Channel Modes A, B, C and D<a class="headerlink" href="#channel-modes-a-b-c-and-d" title="Permalink to this heading"></a></h2>
 <p>In these modes, only a single channel is used. The analog signal on that
 channel is digitized at 5Gsps. Packet size is always a multiple of 16
 samples per 3.2ns. See Figure <a class="reference external" href="#fig:1ChannelMode">[fig:1ChannelMode]</a>
@@ -415,7 +425,7 @@ on page and Figure
 <a class="reference external" href="#fig:1ChannelTriggering">[fig:1ChannelTriggering]</a> on page .</p>
 </section>
 <section id="channel-modes-ac-bc-ad-and-bd">
-<h3>2 Channel Modes AC, BC, AD and BD<a class="headerlink" href="#channel-modes-ac-bc-ad-and-bd" title="Permalink to this heading"></a></h3>
+<h2>2 Channel Modes AC, BC, AD and BD<a class="headerlink" href="#channel-modes-ac-bc-ad-and-bd" title="Permalink to this heading"></a></h2>
 <p>In these modes, two channels are used simultaneously. The analog signals
 on these channels are digitized at 2.5Gsps each. Packet size is always a
 multiple of 8 samples per 3.2ns. See Figure
@@ -423,14 +433,14 @@ multiple of 8 samples per 3.2ns. See Figure
 <a class="reference external" href="#fig:2ChannelTriggering">[fig:2ChannelTriggering]</a> on page .</p>
 </section>
 <section id="channel-mode-abcd">
-<h3>4 Channel Mode ABCD<a class="headerlink" href="#channel-mode-abcd" title="Permalink to this heading"></a></h3>
+<h2>4 Channel Mode ABCD<a class="headerlink" href="#channel-mode-abcd" title="Permalink to this heading"></a></h2>
 <p>In this mode, all four channels are digitized independently at 1.25Gsps
 each. The packet size is always a multiple of 4 samples per 3.2ns. See
 Figure <a class="reference external" href="#fig:4ChannelMode">[fig:4ChannelMode]</a> on page and Figure
 <a class="reference external" href="#fig:4ChannelTriggering">[fig:4ChannelTriggering]</a> on page .</p>
 </section>
 <section id="multiple-sampling-modes-aaaa-bbbb-cccc-and-dddd">
-<h3>Multiple Sampling Modes AAAA, BBBB, CCCC and DDDD<a class="headerlink" href="#multiple-sampling-modes-aaaa-bbbb-cccc-and-dddd" title="Permalink to this heading"></a></h3>
+<h2>Multiple Sampling Modes AAAA, BBBB, CCCC and DDDD<a class="headerlink" href="#multiple-sampling-modes-aaaa-bbbb-cccc-and-dddd" title="Permalink to this heading"></a></h2>
 <p>In these modes, only one analog input channel is used, but the channel
 is sampled independently and simultaneously by four ADCs at 1.25Gsps.
 The board creates four independent streams with 4 samples each per
@@ -461,7 +471,7 @@ samples, depending on mode.</p>
 </div>
 </section>
 <section id="zero-suppression">
-<h3>2.4.2 Zero Suppression<a class="headerlink" href="#zero-suppression" title="Permalink to this heading"></a></h3>
+<h2>2.4.2 Zero Suppression<a class="headerlink" href="#zero-suppression" title="Permalink to this heading"></a></h2>
 <p>One of Ndigo5G’s key features is on-board zero suppression to reduce
 PCIe bus load. Only data that passes specifications predefined by the
 user is transmitted. This guide refers to transmitted waveform data as
@@ -479,7 +489,7 @@ much more complex scenarios.</p>
 </div>
 </section>
 <section id="trigger-blocks">
-<h3>2.4.3 Trigger Blocks<a class="headerlink" href="#trigger-blocks" title="Permalink to this heading"></a></h3>
+<h2>2.4.3 Trigger Blocks<a class="headerlink" href="#trigger-blocks" title="Permalink to this heading"></a></h2>
 <p>Ndigo5G-10 and Ndigo5G-8 record analog waveforms using zero suppression.
 Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory. Each ADC channel has one trigger block determining whether
@@ -585,7 +595,7 @@ procedure reduces PCIe bus load even further (Figure
 </div>
 </section>
 <section id="gating-blocks">
-<h3>2.4.4 Gating Blocks<a class="headerlink" href="#gating-blocks" title="Permalink to this heading"></a></h3>
+<h2>2.4.4 Gating Blocks<a class="headerlink" href="#gating-blocks" title="Permalink to this heading"></a></h2>
 <div class="figure docutils container">
 <div class="center docutils container">
 <p>image</p>
@@ -616,7 +626,7 @@ the gate timing and delay unit. Active gate time is marked in green.</p>
 </div>
 </section>
 <section id="gating-example-1-suppression-of-noise-after-starting-an-acquisition">
-<h3>Gating Example 1: Suppression of Noise After Starting an Acquisition<a class="headerlink" href="#gating-example-1-suppression-of-noise-after-starting-an-acquisition" title="Permalink to this heading"></a></h3>
+<h2>Gating Example 1: Suppression of Noise After Starting an Acquisition<a class="headerlink" href="#gating-example-1-suppression-of-noise-after-starting-an-acquisition" title="Permalink to this heading"></a></h2>
 <p>In mass spectrometer and other experiments, noise while starting data
 acquisition can result in undesired trigger events for that time period.
 To prevent noise in the output data, a gating block could be used to
@@ -633,7 +643,7 @@ whenever there is a pulse on the GATE input.</p>
 which noise shall be suppressed.</p>
 </section>
 <section id="gating-example-2-delayed-trigger">
-<h3>Gating Example 2: Delayed Trigger<a class="headerlink" href="#gating-example-2-delayed-trigger" title="Permalink to this heading"></a></h3>
+<h2>Gating Example 2: Delayed Trigger<a class="headerlink" href="#gating-example-2-delayed-trigger" title="Permalink to this heading"></a></h2>
 <p>To sample a short window at a specified time after a trigger event on a
 channel, the gating block can be used to create a delayed trigger. To do
 this, one of the triggers of the channel of interested is configured to
@@ -650,7 +660,7 @@ enabled in the trigger block’s AND matrix and the ONE trigger source
 must be selected.</p>
 </section>
 <section id="gating-example-3-dual-level-trigger">
-<h3>Gating Example 3: Dual Level Trigger<a class="headerlink" href="#gating-example-3-dual-level-trigger" title="Permalink to this heading"></a></h3>
+<h2>Gating Example 3: Dual Level Trigger<a class="headerlink" href="#gating-example-3-dual-level-trigger" title="Permalink to this heading"></a></h2>
 <p>The gates provide AND connections between each other (see fig.
 <a class="reference external" href="#fig:triggermatrix">[fig:triggermatrix]</a>) which can be used for
 example in a dual level trigger. For the acquisition of signal data with
@@ -698,7 +708,7 @@ the gates are delayed in relation to the ADC samples.</p>
 </div>
 </section>
 <section id="auto-triggering-function-generator">
-<h3>2.4.5 Auto Triggering Function Generator<a class="headerlink" href="#auto-triggering-function-generator" title="Permalink to this heading"></a></h3>
+<h2>2.4.5 Auto Triggering Function Generator<a class="headerlink" href="#auto-triggering-function-generator" title="Permalink to this heading"></a></h2>
 <p>Some applications require periodic or random triggering. Ndigo5G’s
 function generator provides this functionality.</p>
 <p>The delay between two trigger pulses of this trigger generator is the
@@ -716,7 +726,7 @@ suitable threshold level for the trigger by first getting random
 statistics on the input signal.</p>
 </section>
 <section id="timestamp-channel">
-<h3>2.4.6 Timestamp Channel<a class="headerlink" href="#timestamp-channel" title="Permalink to this heading"></a></h3>
+<h2>2.4.6 Timestamp Channel<a class="headerlink" href="#timestamp-channel" title="Permalink to this heading"></a></h2>
 <p>The timestamp channel produces a stream of small packets that denote the
 time of the trigger event. An arbitrary set of trigger sources can be
 selected in the trigger matrix to cause the creation of a packet.</p>
@@ -727,7 +737,7 @@ event except for the period monitor. Only one packet is created, no
 matter how many trigger sources caused the timestamp channel to trigger.</p>
 </section>
 <section id="data-lookup-table">
-<h3>2.4.7 Data Lookup Table<a class="headerlink" href="#data-lookup-table" title="Permalink to this heading"></a></h3>
+<h2>2.4.7 Data Lookup Table<a class="headerlink" href="#data-lookup-table" title="Permalink to this heading"></a></h2>
 <p>In some applications it might be useful to modify the ADC sample data by
 a user defined function <span class="math notranslate nohighlight">\(f(x)\)</span>. In this case the onboard FPGA is
 able to perform this task such that the the data stream consists of data
@@ -740,7 +750,7 @@ correction is applied prior to mapping the LUT values.</p>
 </section>
 </section>
 <section id="multiple-ndigo-boards-synchronization">
-<h2>2.5 Multiple Ndigo boards synchronization<a class="headerlink" href="#multiple-ndigo-boards-synchronization" title="Permalink to this heading"></a></h2>
+<h1>2.5 Multiple Ndigo boards synchronization<a class="headerlink" href="#multiple-ndigo-boards-synchronization" title="Permalink to this heading"></a></h1>
 <p>Using several Ndigo devices in applications that use more channels than
 a single board can provide requires synchronized operation. To ensure
 exact synchronization, a delay parameter needs to be set for each board.
@@ -772,7 +782,7 @@ check the cable. If the recording of histograms does not make progress
 check the cable. Make sure the cable is properly terminated at both ends
 and firmly attached to each card.</p>
 <section id="calibration-procedure">
-<h3>2.5.1 Calibration Procedure<a class="headerlink" href="#calibration-procedure" title="Permalink to this heading"></a></h3>
+<h2>2.5.1 Calibration Procedure<a class="headerlink" href="#calibration-procedure" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Make sure the “Automode” is selected.</p></li>
 <li><p>Record the calibration histograms by pressing “Record histograms”.
@@ -823,7 +833,7 @@ flash PROMs by pressing “Flash All!”.</p></li>
 </div>
 </section>
 <section id="synchronizing-a-ndgio5g-and-an-hptdc8-pci">
-<h3>2.5.2 Synchronizing a Ndgio5G and an HPTDC8-PCI<a class="headerlink" href="#synchronizing-a-ndgio5g-and-an-hptdc8-pci" title="Permalink to this heading"></a></h3>
+<h2>2.5.2 Synchronizing a Ndgio5G and an HPTDC8-PCI<a class="headerlink" href="#synchronizing-a-ndgio5g-and-an-hptdc8-pci" title="Permalink to this heading"></a></h2>
 <p>In order to operate a Ndigo5G in sync with one ore more HPTDC8-PCI
 boards, a board to board interconnection using a Ndigo Extension Board
 needs to be done. The Ndigo Extension Board has four clock outputs. One
@@ -850,7 +860,7 @@ cronoTools user guide.</p>
 </section>
 </section>
 <section id="performing-a-firmware-update">
-<h2>2.6 Performing a firmware update<a class="headerlink" href="#performing-a-firmware-update" title="Permalink to this heading"></a></h2>
+<h1>2.6 Performing a firmware update<a class="headerlink" href="#performing-a-firmware-update" title="Permalink to this heading"></a></h1>
 <p>After installing the Ndigo device driver, a firmware update tool is
 available. By choosing “NdigoFirmwareGUI.exe” a firmware update can be
 performed. After invoking the application a window as shown in Figure
@@ -883,7 +893,7 @@ execution times of applications using that firmware, since the
 calibration is performed then instead.</p>
 </section>
 <section id="calibrating-the-tdc">
-<h2>2.7 Calibrating the TDC<a class="headerlink" href="#calibrating-the-tdc" title="Permalink to this heading"></a></h2>
+<h1>2.7 Calibrating the TDC<a class="headerlink" href="#calibrating-the-tdc" title="Permalink to this heading"></a></h1>
 <p>After each update of the Ndigo5G-10 firmware the TDC has to be
 calibrated. The calibration is done with the tool “TDCCalibration.exe”
 which is available after installing the Ndigo device driver. After
@@ -924,8 +934,8 @@ update the calibration data on the card.</p></li>
 <p><strong>Important note:</strong> If the application reports an error check if the
 input pulse is within specification.</p>
 </section>
-<section id="id3">
-<h2>2.3 Extension Card<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<section id="id2">
+<h1>2.3 Extension Card<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h1>
 <p>The Ndigo Extension card provides additional inputs or outputs to the
 FPGA. It is connected to the C1(Samtec QSS-025) connector on an <strong>Ndigo5G</strong> by
 an Samtec SQCD cable assembly.</p>
@@ -942,10 +952,10 @@ the sync bus and extension channels or use the extension channels
 exclusively.</p>
 <p>Table</p>
 </section>
+<section id="id3">
+<h1>2.4 Ndigo5G Functionality<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h1>
 <section id="id4">
-<h2>2.4 Ndigo5G Functionality<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
-<section id="id5">
-<h3>2.4.1 ADC Modes<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
+<h2>2.4.1 ADC Modes<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <p>Depending on board configuration, the analog input signal is quantized
 to 8 or 10 bits. However, the board always scales and offsets the data
 to 16 bit signed data centered around 0.</p>
@@ -953,28 +963,28 @@ to 16 bit signed data centered around 0.</p>
 performed on <strong>3.2ns</strong> intervals. Depending on the ADC mode, this interval
 may contain 4, 8 or 16 samples.</p>
 <p>The board supports using one, two or four channels:</p>
-<section id="id6">
-<h4>1 Channel Modes A, B, C and D<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h4>
+<section id="id5">
+<h3>1 Channel Modes A, B, C and D<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
 <p>In these modes, only a single channel is used. The analog signal on that
 channel is digitized at 5Gsps. Packet size is always a multiple of 16
 samples per <strong>3.2ns</strong>. See <a class="reference external" href="#target-link5">Figure 2.9</a>
 on page and <a class="reference external" href="#target-link6">Figure 2.15</a> on page.</p>
 </section>
-<section id="id7">
-<h4>2 Channel Modes AC, BC, AD and BD<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h4>
+<section id="id6">
+<h3>2 Channel Modes AC, BC, AD and BD<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
 <p>In these modes, two channels are used simultaneously. The analog signals
 on these channels are digitized at <strong>2.5Gsps</strong> each. Packet size is always a
 multiple of 8 samples per <strong>3.2ns</strong>. See <a class="reference external" href="#target-link7">Fig2.8</a> on page 11
 and see <a class="reference external" href="#target-link8">Fig2.14</a> on page 14.</p>
 </section>
-<section id="id8">
-<h4>4 Channel Mode ABCD<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h4>
+<section id="id7">
+<h3>4 Channel Mode ABCD<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
 <p>In this mode, all four channels are digitized independently at <strong>1.25Gsps</strong>
 each. The packet size is always a multiple of 4 samples per <strong>3.2ns</strong>. See
 <a class="reference external" href="#target-link9">Fig2.7</a> on page 11 and see <a class="reference external" href="#target-link10">Fig2.13</a> on page 14.</p>
 </section>
-<section id="id9">
-<h4>Multiple Sampling Modes AAAA, BBBB, CCCC and DDDD<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h4>
+<section id="id8">
+<h3>Multiple Sampling Modes AAAA, BBBB, CCCC and DDDD<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
 <p>In these modes, only one analog input channel is used, but the channel
 is sampled independently and simultaneously by four ADCs at <strong>1.25Gsps</strong>.
 The board creates four independent streams with 4 samples each per
@@ -991,25 +1001,25 @@ samples, depending on mode.</p>
 <figure class="align-default" id="id23">
 <span id="target-link9"></span><a class="reference internal image-reference" href="_images/fig2.7.png"><img alt="alternative text" src="_images/fig2.7.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.7: ADCs in 4 channel mode ABCD at 1.25Gsps.</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 92: Figure 2.7: ADCs in 4 channel mode ABCD at 1.25Gsps.</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id24">
 <span id="target-link7"></span><a class="reference internal image-reference" href="_images/fig2.8.png"><img alt="alternative text" src="_images/fig2.8.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.8: ADCs in 2 channel mode AD, interleaved for 2.5Gsps.</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 93: Figure 2.8: ADCs in 2 channel mode AD, interleaved for 2.5Gsps.</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id25">
 <span id="target-link5"></span><a class="reference internal image-reference" href="_images/fig2.9.png"><img alt="alternative text" src="_images/fig2.9.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.9: ADCs in 1 channel mode A, B, C or D interleaved for 5Gsps.</span><a class="headerlink" href="#id25" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 94: Figure 2.9: ADCs in 1 channel mode A, B, C or D interleaved for 5Gsps.</span><a class="headerlink" href="#id25" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id10">
-<h3>2.4.2 Zero Suppression<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
+<section id="id9">
+<h2>2.4.2 Zero Suppression<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
 <p>One of <strong>Ndigo5G’s</strong> key features is on-board zero suppression to reduce
 PCIe bus load. Only data that passes specifications predefined by the
 user is transmitted. This guide refers to transmitted waveform data as
@@ -1023,18 +1033,18 @@ much more complex scenarios.</p>
 <figure class="align-default" id="id26">
 <span id="target-fig8"></span><a class="reference internal image-reference" href="_images/fig2.10.png"><img alt="alternative text" src="_images/fig2.10.png" style="width: 1500px; height: 250px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.10: Simple zero suppression: Only data
+<p><span class="caption-text">Figure 95: Figure 2.10: Simple zero suppression: Only data
 with values above a threshold are written to the PC.</span><a class="headerlink" href="#id26" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h3>2.4.3 Trigger Blocks<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h3>
+<section id="id10">
+<h2>2.4.3 Trigger Blocks<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
 <p><strong>Ndigo5G-10</strong> and <strong>Ndigo5G-8</strong> record analog waveforms using zero suppression.
 Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory. Each ADC channel has one trigger block determining whether
 data is written to the FIFO. The parameters are set in Structure
-<a href="#id12"><span class="problematic" id="id13">**</span></a>ndigo_trigger_block**(See chapter 3.4.3 on page 36).</p>
+<a href="#id11"><span class="problematic" id="id12">**</span></a>ndigo_trigger_block**(See chapter 3.4.3 on page 36).</p>
 <p>Each trigger block consists of two independent units that check the
 incoming raw data stream for trigger conditions (<a class="reference external" href="#target-link11">Fig 2.10</a> on page 12). Users can specify a
 threshold and can choose whether triggering is used whenever incoming
@@ -1080,79 +1090,81 @@ procedure reduces PCIe bus load even further (<a class="reference external" href
 <figure class="align-default" id="id27">
 <span id="target-link11"></span><a class="reference internal image-reference" href="_images/fig2.10.png"><img alt="alternative text" src="_images/fig2.10.png" style="width: 1500px; height: 250px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.10: Simple zero suppression: Only data
+<p><span class="caption-text">Figure 96: Figure 2.10: Simple zero suppression: Only data
 with values above a threshold are written to the PC.</span><a class="headerlink" href="#id27" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id28">
 <span id="target-link12"></span><a class="reference internal image-reference" href="_images/fig2.11.png"><img alt="_images/fig2.11.png" src="_images/fig2.11.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.11: Parameters for edge triggering</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 97: Figure 2.11: Parameters for edge triggering</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id29">
 <span id="target-link13"></span><a class="reference internal image-reference" href="_images/fig2.12.png"><img alt="_images/fig2.12.png" src="_images/fig2.12.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.12: Parameters for level triggering</span><a class="headerlink" href="#id29" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 98: Figure 2.12: Parameters for level triggering</span><a class="headerlink" href="#id29" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id30">
 <span id="target-link10"></span><a class="reference internal image-reference" href="_images/fig2.13.png"><img alt="_images/fig2.13.png" src="_images/fig2.13.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.13: Triggering in 4 channel mode at 4 samples per clock cycle.</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 99: Figure 2.13: Triggering in 4 channel mode at 4 samples per clock cycle.</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id31">
 <span id="target-link8"></span><a class="reference internal image-reference" href="_images/fig2.14.png"><img alt="_images/fig2.14.png" src="_images/fig2.14.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.14: Triggering in 2 channel mode at 8 samples per clock cycle.</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 100: Figure 2.14: Triggering in 2 channel mode at 8 samples per clock cycle.</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id32">
 <span id="target-link6"></span><a class="reference internal image-reference" href="_images/fig2.15.png"><img alt="_images/fig2.15.png" src="_images/fig2.15.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.15: Triggering in 1 channel mode at 16 samples per clock cycle.</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Figure 101: Figure 2.15: Triggering in 1 channel mode at 16 samples per clock cycle.</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id33">
 <span id="target-link14"></span><a class="reference internal image-reference" href="_images/fig2.16.png"><img alt="_images/fig2.16.png" src="_images/fig2.16.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.16: From the ADC inputs, a trigger unit creates an input flag for
+<p><span class="caption-text">Figure 102: Figure 2.16: From the ADC inputs, a trigger unit creates an input flag for
 the trigger matrix. Each digitizer channel (A, B, C, D) has two trigger units.</span><a class="headerlink" href="#id33" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id34">
 <span id="target-link4"></span><a class="reference internal image-reference" href="_images/fig2.17.png"><img alt="_images/fig2.17.png" src="_images/fig2.17.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.17: The digital inputs Trigger, GATE,
+<p><span class="caption-text">Figure 103: Figure 2.17: The digital inputs Trigger, GATE,
 BUS0, BUS1, BUS2 and BUS3 have simpler trigger units.</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id35">
 <a class="reference internal image-reference" href="_images/fig2.18.png"><img alt="_images/fig2.18.png" src="_images/fig2.18.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.18: The extension block combines signals from
+<p><span class="caption-text">Figure 104: Figure 2.18: The extension block combines signals from
 the optional extension board and the sync cable.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id36">
 <span id="target-link15"></span><a class="reference internal image-reference" href="_images/fig2.19.png"><img alt="_images/fig2.19.png" src="_images/fig2.19.png" style="width: 2000px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.19: Trigger Matrix: The trigger signals of each ADC channel, the trigger
+<p><span class="caption-text">Figure 105: Figure 2.19: Trigger Matrix: The trigger signals of each ADC channel, the trigger
 input, the GATE input or the sync cable can be combined to create a
 trigger input for each trigger block. The four gate signals can be used
 to suppress triggers during certain time frames.</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+</section>
+<section id="id16">
+<h2>2.4.4 Gating Blocks<a class="headerlink" href="#id16" title="Permalink to this heading"></a></h2>
 <figure class="align-default" id="id37">
-<span id="target-link16"></span><a class="reference internal image-reference" href="_images/fig2.20.png"><img alt="_images/fig2.20.png" src="_images/fig2.20.png" style="width: 2000px; height: 300px;" /></a>
+<span id="target-link16"></span><a class="reference internal image-reference" href="_images/fig2.20.png"><img alt="_images/fig2.20.png" src="_images/fig2.20.png" style="width: 1500px; height: 900px;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2.20: Gating Blocks: Each gating block can use an arbitrary combination
+<p><span class="caption-text">Figure 106: Figure 2.20: Gating Blocks: Each gating block can use an arbitrary combination
 of inputs to trigger its state machine. The outputs can be individually
 inverted and routed to the AND-gate feeding the trigger blocks.</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-</section>
 </section>
 </section>
 
