@@ -5,34 +5,45 @@
 
 Welcome to Ndigo's documentation!
 =================================
-
 .. toctree::
    :maxdepth: 2
 
-   Ndigo_Intro.rst
+   Ndigo_TOC.rst
 
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Home
+   :numbered:
+
+   Ndigo_Intro.rst
+
+.. toctree::
+   :numbered:
    :maxdepth: 2
 
    Ndigo_PackForm.rst
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
 
    Ndigo_CExp.rst
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
 
    Ndigo_Tech.rst
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
 
    Ndigo_RevHistory.rst
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
    :caption: Contents:
 

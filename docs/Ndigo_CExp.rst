@@ -1,9 +1,8 @@
+C-Example
+=========
 
-5.0 C-Example
-=============
 
-
-.. code:: c#
+.. code-block:: c
 
     #include "Ndigo_interface.h"
     #include <stdio.h>

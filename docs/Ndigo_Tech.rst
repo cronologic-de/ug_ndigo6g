@@ -1,8 +1,8 @@
 .. raw:: pdf
 
     PageBreak
-6.0 Technical Data
-==================
+Technical Data
+==============
 
 - Input Passband: **4.5MHz** to **950MHz.**
 
@@ -13,14 +13,14 @@
 - Throughput: **800MByte/s** on PCIe x4
 
 
-6.1 Digitizer Characteristics
------------------------------
+Digitizer Characteristics
+-------------------------
 
 Each board is tested against the values listed in the **Min** column.
 ‘‘Typical’’ is the mean value of the first 10 boards produced.
 
-6.1.1 1-Channel-Mode (5Gsps)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1-Channel-Mode (5Gsps)
+~~~~~~~~~~~~~~~~~~~~~~
 
 
 +------------------------+--------------------------+-----+---------+-----+-------+
@@ -46,8 +46,8 @@ Each board is tested against the values listed in the **Min** column.
 | ENOB1                  | Effective Number of Bits | 7,5 | 7,7     |     |       |
 +------------------------+--------------------------+-----+---------+-----+-------+
 
-6.1.2 2-Channel-Mode (2.5 Gsps)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2-Channel-Mode (2.5 Gsps)
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +--------+--------------------------+-----+---------+-----+-------+
 | Symbol | Parameter                | Min | Typical | Max | Units |
@@ -72,8 +72,8 @@ Each board is tested against the values listed in the **Min** column.
 | ENOB2  | Effective Number of Bits | 7,8 | 8,1     |     |       |
 +--------+--------------------------+-----+---------+-----+-------+
 
-6.1.3 4-Channel-Mode (1.25 Gsps)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4-Channel-Mode (1.25 Gsps)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +--------+--------------------------+-----+---------+-----+-------+
 | Symbol | Parameter                | Min | Typical | Max | Units |
@@ -98,19 +98,20 @@ Each board is tested against the values listed in the **Min** column.
 | ENOB4  | Effective Number of Bits | 7,9 | 8,1     |     |       |
 +--------+--------------------------+-----+---------+-----+-------+
 
-6.2 Electrical Characteristics
-------------------------------
+Electrical Characteristics
+--------------------------
 
-6.2.1 Oscillator
-~~~~~~~~~~~~~~~~
+Oscillator
+~~~~~~~~~~
 
 
 The **Ndigo5G** uses an OCXO oscillator with **25ppb** stability. After power up
 the oscillator needs to run for **10 minutes** to reach this stability.
 
+.. _Section 6.2.2:
 
-6.2.2 Environmental Conditions for Operation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Environmental Conditions for Operation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The board is designed to be operated under the following conditions:
 
@@ -126,10 +127,10 @@ The board is designed to be operated under the following conditions:
 |         |                         |      |         |      |                              |
 +---------+-------------------------+------+---------+------+------------------------------+
 
-.. _enviro_store:
+.. _Section 6.2.3:
 
-6.2.3 Environmental Conditions for Storage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Environmental Conditions for Storage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The board shall be stored between operation under the following
 conditions:
@@ -146,8 +147,8 @@ conditions:
 |         | non condensing              |      |         |      |                      |
 +---------+-----------------------------+------+---------+------+----------------------+
 
-6.2.4 Power Supply
-~~~~~~~~~~~~~~~~~~
+Power Supply
+~~~~~~~~~~~~
 
 ======= =================================== ====== ======= ===== =====
 Symbol  Parameter                           Min    Typical Max   Units
@@ -160,8 +161,8 @@ I       PCIe 3,3VAux rail power consumption        0             A
 VCC     PCIe 3,3VAux rail power supply             3,3           V
 ======= =================================== ====== ======= ===== =====
 
-6.2.5 Analog Input
-~~~~~~~~~~~~~~~~~~
+Analog Input
+~~~~~~~~~~~~
 
 AC coupled single-ended analog inputs (standard version).
 
@@ -201,11 +202,11 @@ t       pulse width       7              100    ns
 ======  ================= ====== ======= ====== ==============
 
 
-6.3 Information Required by DIN EN 61010-1
-------------------------------------------
+Information Required by DIN EN 61010-1
+--------------------------------------
 
-6.3.1 Manufacturer
-~~~~~~~~~~~~~~~~~~
+Manufacturer
+~~~~~~~~~~~~
 
 The **Ndigo5G** is a product of:
 
@@ -219,8 +220,8 @@ The **Ndigo5G** is a product of:
 
     VAT-ID: DE235184378
 
-6.3.2 Intended Use and System Integration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Intended Use and System Integration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The devices are not ready to use as delivered by cronologic. It requires
 the development of specialized software to fulfill the application of
@@ -247,8 +248,8 @@ When handling the board, adequate measures have to be taken to protect
 the circuits against electrostatic discharge (ESD). All power supplied
 to the system must be turned off before installing the board.
 
-6.3.3 Cooling
-~~~~~~~~~~~~~
+Cooling
+~~~~~~~
 
 The **Ndigo5G** in its base configuration has passive cooling that requires
 a certain amount of air flow. If the case design can’t provide enough
@@ -256,13 +257,15 @@ air flow to the board, a slot cooler like Zalman ZM-SC100 can be placed
 next to the board. Active cooling is also available as an option to the
 board.
 
-6.3.4 Environmental Conditions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-See Section 6.2.2 and Section 6.2.3.
 
-6.3.5 Inputs
-~~~~~~~~~~~~
+Environmental Conditions
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+See `Section 6.2.2`_  and `Section 6.2.3`_.
+
+Inputs
+~~~~~~
 
 All inputs are AC coupled. The inputs have very high input bandwidth
 requirements and therefore there are no circuits that provide over
@@ -270,8 +273,8 @@ voltage protection for these signals. Any voltage on the inputs above **5V**
 or below **-5V** relative to the voltage of the slot cover can result in
 permanent damage to the board.
 
-6.3.6 Known Bugs
-~~~~~~~~~~~~~~~~
+Known Bugs
+~~~~~~~~~~
 
 The Ndigo5G does not work in most Thunderbolt PCIe extension enclosures.
 The reason is unknown.

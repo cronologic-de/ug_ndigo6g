@@ -2,12 +2,12 @@
 
     PageBreak
 
-7.0 Revision History
-====================
+Revision History
+================
 
 
-7.1 Firmware
-------------
+Firmware
+--------
 
 =============== =========== ==========================================
 Revision        Date        Comments
@@ -16,8 +16,8 @@ Revision        Date        Comments
 1.4824          2015-02-27  Fixed intel PCIe link training issues
 =============== =========== ==========================================
 
-7.2 Driver & Applications
--------------------------
+Driver & Applications
+---------------------
 
 +------------------+------------+------------------------------------+
 | Revision         | Date       | Comments                           |
@@ -33,8 +33,8 @@ Revision        Date        Comments
 
 
 
-7.3 User Guide
---------------
+User Guide
+----------
 
 +-----------------+------------+-------------------------------------+
 | Revision        | Date       | Comments                            |

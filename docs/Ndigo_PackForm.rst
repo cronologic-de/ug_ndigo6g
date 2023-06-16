@@ -1,8 +1,8 @@
-4.0 Packet Format
-=================
+Packet Format
+=============
 
-4.0.1 Output Structure ndigopacket
-----------------------------------
+Output Structure ndigopacket
+----------------------------
 
 **unsigned char channel**
 

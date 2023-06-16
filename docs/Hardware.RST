@@ -1,8 +1,8 @@
-2.0 Hardware
-============
+Hardware
+========
 
-2.1 Installing the Board
-------------------------
+Installing the Board
+--------------------
 
 
 The **Ndigo5G board** can be installed in any x4 (or higher amount of lanes)
@@ -28,7 +28,7 @@ of high speed ADCs (**Ndigo5G**) and slower high resolution ADCs
 
 The signals used for board synchronization and inter-board triggering
 are transferred on a bus be-tween the boards. Join all C2 connectors
-(see `Figure 2.3 <#target-link2>`_  on page 7) on the
+(see `Fig 2.3`_  on page 3) on the
 boards using a ribbon cable. Both ends of the bus need to be terminated
 properly. If using a **Ndigo Crate**, connectors providing the termination
 are located on the crate mainboard next to the PCIe slots to the extreme
@@ -43,7 +43,7 @@ which is part of cronoTools, is recommended. The cronoSync library is
 provided with the Ndigo device driver. Please refer to the cronoTools
 user guide for more information.
 
-
+.. _Fig 2.1:
 .. figure:: figures/fig2.1.png
    :alt: alternative text
    :width: 2000
@@ -59,18 +59,18 @@ user guide for more information.
 
     PageBreak
 
-2.2 Ndigo5G External Inputs and Connectors
-------------------------------------------
+Ndigo5G External Inputs and Connectors
+--------------------------------------
 
-2.2.1 Connectors
-~~~~~~~~~~~~~~~~
+Connectors
+~~~~~~~~~~
 
-The inputs of the **Ndigo5G** are located on the PCI bracket. Figure
-`Figure 2.3 <#target-link2>`_ on page 7 shows the location of the
+The inputs of the **Ndigo5G** are located on the PCI bracket.
+`Fig 2.3`_ on page 3 shows the location of the
 4 analog inputs A to D and the two digital inputs G (GATE) and T
 (Trigger). Furthermore, two board interconnection connectors can be
 found at the top edge of the **Ndigo5G**, as displayed in
-`Figure 2.3 <#target-link2>`_ on page 7. Connector C1 is used
+`Fig 2.3`_ on page 3. Connector C1 is used
 for a board-to-board connection (e. g. to link a HPTDC8-PCI and a
 **Ndigo5G** via a **Ndigo Extension board**, see chapter 2.3).
 Connector C2 is used as a bus interface
@@ -78,7 +78,7 @@ between multiple Ndigo boards distributing clock, trigger and sync
 signals. Proper termination must be placed at both ends of the bus
 interconnection ribbon cable.
 
-
+.. _Fig 2.2:
 .. figure:: figures/fig2.2.png
    :alt: alternative text
    :width: 2000
@@ -86,7 +86,8 @@ interconnection ribbon cable.
 
    Figure 2.2: Input connectors of an Ndigo5G located on the PCI bracket.
 
-.. _target-link2:
+.. _Fig 2.3:
+
 .. figure:: figures/fig2.3.png
    :alt: alternative text
    :width: 2000
@@ -95,15 +96,17 @@ interconnection ribbon cable.
    Figure 2.3: Ndigo5G board showing inter-board connectors C1 and C2.
 
 
-2.2.2 Analog Inputs
-~~~~~~~~~~~~~~~~~~~
+Analog Inputs
+~~~~~~~~~~~~~
+
+.. _Fig 2.4:
 
 .. figure:: figures/fig2.4.png
    :alt: alternative text
    :width: 2000
    :height: 300
 
-   Figure 2.3: Input circuit for each of the four analog channels.
+   Figure 2.4: Input circuit for each of the four analog channels.
 
 The analog inputs of the ADC are single ended LEMO00 coax connectors.
 The inputs have a :math:`50\Omega` impedance and are AC coupled. The
@@ -120,13 +123,13 @@ analogoffset parameter of each channel before sampling.
 This feature is useful for highly asymmetric signals, such as pulses
 from TOF spectrometers or LIDAR systems. Without analog offset
 compensation, the pulses would begin in the middle of the ADC range,
-effectively cutting the dynamic range in half (see `Figure 2.6 <#target-link3>`_ ). By shifting the DC baseline to
+effectively cutting the dynamic range in half (see `Fig 2.6`_ ). By shifting the DC baseline to
 one end of the ADC range, the input range can be used fully, providing
 the maximum dynamic range. The analog offset can be set between
 :math:`\pm 0,25V`.
 
 
-
+.. _Fig 2.5:
 .. figure:: figures/fig2.5.png
    :alt: alternative text
    :width: 2000
@@ -139,7 +142,7 @@ the maximum dynamic range. The analog offset can be set between
 
     PageBreak
 
-.. _target-link3:
+.. _Fig 2.6:
 .. figure:: figures/fig2.6.png
    :alt: alternative text
    :width: 2000
@@ -148,8 +151,8 @@ the maximum dynamic range. The analog offset can be set between
    Figure 2.6: Asymmetric signal shifted to increase dynamic range
 
 
-2.2.3 Digital Inputs
-~~~~~~~~~~~~~~~~~~~~
+Digital Inputs
+~~~~~~~~~~~~~~
 
 There are two digital inputs on the front slot cover called Trigger and
 GATE.
@@ -173,7 +176,7 @@ packets of **type 8**. These packets first contain a coarse timestamp and a
 payload that can be used to calculate the trigger position with higher
 precision. The function **ndigo_process_tdc_packet()** can be used to replace
 the coarse timestamp with the precise timestamp. This function is
-described in section 3.5 on page 40 . TDC pulses
+described in `Section 3.6`_ on page 25 . TDC pulses
 must have a minimum duration of 3.3ns. The dead-time of the TDC is 32ns.
 
 .. raw:: pdf
@@ -181,8 +184,8 @@ must have a minimum duration of 3.3ns. The dead-time of the TDC is 32ns.
     PageBreak
 
 
-2.3 Extension Card
-------------------
+Extension Card
+--------------
 
 
 The Ndigo Extension card provides additional inputs or outputs to the
@@ -211,7 +214,7 @@ The current firmware revision provides the following signal connections.
       |                 |         |          |           | digital channel |
       |                 |         |          |           | 1               |
       +-----------------+---------+----------+-----------+-----------------+
-      | LEMO00: CH2     | 14      | D10      | -         | not connected   |
+      | LEMO00: CH2     | 14      | D10      |           | not connected   |
       +-----------------+---------+----------+-----------+-----------------+
       | LEMO00: CH3     | 10      | AF9      | Output    | 39.0625 MHz     |
       |                 |         |          |           | clock for HPTDC |
@@ -225,7 +228,7 @@ The current firmware revision provides the following signal connections.
       | LEMO00: CH6     | 9       | AF7      | Output    | 39.0625 MHz     |
       |                 |         |          |           | clock for HPTDC |
       +-----------------+---------+----------+-----------+-----------------+
-      | LEMO00: CH7     | 13      | D9       | -         | not connected   |
+      | LEMO00: CH7     | 13      | D9       |           | not connected   |
       +-----------------+---------+----------+-----------+-----------------+
       | LEMO00: CH8     | 17      | V9       | Input     | Ndigo Extension |
       |                 |         |          |           | digital channel |
@@ -235,7 +238,7 @@ The current firmware revision provides the following signal connections.
       |                 |         |          |           | digital channel |
       |                 |         |          |           | 3               |
       +-----------------+---------+----------+-----------+-----------------+
-      | SYNC1:          | 26      | F9       | -         | not connected   |
+      | SYNC1:          | 26      | F9       |           | not connected   |
       | Sync-TDC8       |         |          |           |                 |
       +-----------------+---------+----------+-----------+-----------------+
       | SYNC1:          | 44      | AA7      | Output    | Sync for HPTDC  |
@@ -271,12 +274,12 @@ exclusively.
 
 
 
-2.4 Ndigo5G Functionality
--------------------------
+Ndigo5G Functionality
+---------------------
 
 
-2.4.1 ADC Modes
-~~~~~~~~~~~~~~~
+ADC Modes
+~~~~~~~~~
 
 Depending on board configuration, the analog input signal is quantized
 to 8 or 10 bits. However, the board always scales and offsets the data
@@ -293,8 +296,8 @@ The board supports using one, two or four channels:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In these modes, only a single channel is used. The analog signal on that
 channel is digitized at 5Gsps. Packet size is always a multiple of 16
-samples per **3.2ns** . See `Figure 2.9 <#target-link5>`_
-on page and  ` Fig2.15  <#target-link6>`_ on page.
+samples per **3.2ns** . See `Fig 2.9`_
+on page 8 and  `Fig 2.15`_ on page 11.
 
 
 2 Channel Modes AC, BC, AD and BD
@@ -302,8 +305,8 @@ on page and  ` Fig2.15  <#target-link6>`_ on page.
 
 In these modes, two channels are used simultaneously. The analog signals
 on these channels are digitized at **2.5Gsps** each. Packet size is always a
-multiple of 8 samples per **3.2ns**. See `Fig2.8 <#target-link7>`_ on page 11
-and see ` Fig2.14 <#target-link8>`_ on page 14.
+multiple of 8 samples per **3.2ns**. See `Fig 2.8`_ on page 8
+and see `Fig 2.14`_ on page 11.
 
 
 4 Channel Mode ABCD
@@ -311,7 +314,7 @@ and see ` Fig2.14 <#target-link8>`_ on page 14.
 
 In this mode, all four channels are digitized independently at **1.25Gsps**
 each. The packet size is always a multiple of 4 samples per **3.2ns**. See
-`Fig2.7 <#target-link9>`_ on page 11 and see ` Fig2.13 <#target-link10>`_ on page 14.
+`Fig 2.7`_ on page 8 and see `Fig 2.13`_ on page 11.
 
 
 Multiple Sampling Modes AAAA, BBBB, CCCC and DDDD
@@ -339,7 +342,7 @@ samples, depending on mode.
 
     PageBreak
 
-.. _target-link9:
+.. _Fig 2.7:
 .. figure:: figures/fig2.7.png
    :alt: alternative text
    :width: 2000
@@ -349,7 +352,7 @@ samples, depending on mode.
 
 
 
-.. _target-link7:
+.. _Fig 2.8:
 .. figure:: figures/fig2.8.png
    :alt: alternative text
    :width: 2000
@@ -357,7 +360,7 @@ samples, depending on mode.
 
    Figure 2.8: ADCs in 2 channel mode AD, interleaved for 2.5Gsps.
 
-.. _target-link5:
+.. _Fig 2.9:
 .. figure:: figures/fig2.9.png
    :alt: alternative text
    :width: 2000
@@ -368,8 +371,8 @@ samples, depending on mode.
 
 
 
-2.4.2 Zero Suppression
-~~~~~~~~~~~~~~~~~~~~~~
+Zero Suppression
+~~~~~~~~~~~~~~~~
 
 One of **Ndigo5G’s** key features is on-board zero suppression to reduce
 PCIe bus load. Only data that passes specifications predefined by the
@@ -378,7 +381,7 @@ user is transmitted. This guide refers to transmitted waveform data as
 the absolute time (i.e. the time since start of data acquisition) of the
 packet’s last sample.
 
-` Fig2.10 <#target-link11>`_ shows a simple example: Data
+`Fig 2.14`_ shows a simple example: Data
 is written to the PC only if values exceed a specified threshold.
 Expanding on that, **Ndigo5G’s** zero suppression can be used to realize
 much more complex scenarios.
@@ -389,7 +392,7 @@ much more complex scenarios.
     PageBreak
 
 
-.. _target_fig8:
+.. _Fig 2.10:
 .. figure:: figures/fig2.10.png
    :alt: alternative text
    :width: 1300
@@ -400,8 +403,8 @@ much more complex scenarios.
 
 
 
-2.4.3 Trigger Blocks
-~~~~~~~~~~~~~~~~~~~~
+Trigger Blocks
+~~~~~~~~~~~~~~
 
 **Ndigo5G-10** and **Ndigo5G-8** record analog waveforms using zero suppression.
 Whenever a relevant waveform is detected, data is written to an internal
@@ -410,7 +413,7 @@ data is written to the FIFO. The parameters are set in Structure
 **ndigo_trigger_block** (See chapter 3.4.3 on page 36).
 
 Each trigger block consists of two independent units that check the
-incoming raw data stream for trigger conditions ( ` Fig2.10 <#target-link11>`_ on page 12). Users can specify a
+incoming raw data stream for trigger conditions ( `Fig 2.10`_ on page 9). Users can specify a
 threshold and can choose whether triggering is used whenever incoming
 data is below or above the threshold (level triggering) or only if data
 exceeds the threshold (edge triggering).
@@ -420,33 +423,37 @@ A gate length can be set to extend the trigger window by multiples of
 trigger unit will start writing data to the FIFO precursor
 3:2ns before the trigger event.
 
-When using edge triggering, all packets have the same length ( ` Fig2.11 <#target-link12>`_ on page 13):
+When using edge triggering, all packets have the same length ( `Fig 2.11`_ on page 10):
 precursor + length + 1 cycles of **3.2ns**. For level
-triggering, packet length is data dependent ( ` Fig 2.12 <#target-link13>`_ on page 14).
+triggering, packet length is data dependent ( `Fig 2.12`_ on page 10).
 
 Please note that triggering is not accurate to sample. For each **3.2ns**
 clock cycle, it is determined whether on any sample during that clock
 cycle a trigger condition is met. The clock cycle is then selected as
 the trigger point. As a result, the trigger sample can be anywhere
-within a range of up to 16 samples in single channel mode ( ` Fig2.15 <#target-link6>`_
-on page 15 ) at 16 samples per **3.2ns** .
+within a range of up to 16 samples in single channel mode ( `Fig 2.15`_
+on page 11 ) at 16 samples per **3.2ns** .
 
 If retriggering is active, the current trigger window is extended if a
 trigger event is detected inside the window.
 
 A trigger block can use several input sources:
 
--  the 8 trigger decision units of all four ADC channels ( ` Fig2.16 <#target-link14>`_  on page 15)
+-  the 8 trigger decision units of all four ADC channels ( `Fig 2.16`_  on page 12)
 
--  the GATE input (` Fig2.17 <#target-link4>`_ on page 15)
 
--  the Trigger or TDC input, (` Fig2.17 <#target-link4>`_ on page 15 )
+-  the GATE input (`Fig 2.17`_ on page 12)
 
--  a function trigger providing random or periodic triggering (Section 2.4.5
-   on page 20)
+
+-  the Trigger or TDC input, ( `Fig 2.17`_ on page 12 )
+
+
+-  a function trigger providing random or periodic triggering.
+
 
 -  triggers originating from other cards connected with the sync cable
    or from the Ndigo Extension card (BUS0, BUS1, BUS2, BUS3)
+
 
 -  A second set of trigger units with names ending in pe for the digital
    inputs Trigger, GATE, BUS0, BUS1, BUS2, and BUS3 configured for
@@ -455,25 +462,23 @@ A trigger block can use several input sources:
    This set of triggers is not available as inputs for the gate blocks.
 
 Trigger inputs from the above sources can be concatenated using logical
-OR ( ` Fig 2.19 <#target-link15>`_ on page 16) by
+OR ( `Fig 2.19`_ on page 13) by
 setting the appropriate bits in the trigger blocks source mask.
 
-Triggers can be fed into the gate blocks described on page ( ` Fig 2.20 <#target-link16>`_ Gate blocks can be used to
+Triggers can be fed into the gate blocks described on page ( `Fig 2.20`_ Gate blocks can be used to
 block writing data to the FIFO. That way, only zero suppressed data
 occurring when the selected gate is active is transmitted. This
-procedure reduces PCIe bus load even further ( ` Fig 2.20 <#target-link16>`_ ).
+procedure reduces PCIe bus load even further ( `Fig 2.20`_ ).
 
 
-
-.. _target-link12:
+.. _Fig 2.11:
 .. figure:: figures/fig2.11.png
    :width: 1300
    :height: 800
 
    Figure 2.11: Parameters for edge triggering
 
-
-.. _target-link13:
+.. _Fig 2.12:
 .. figure:: figures/fig2.12.png
    :width: 1300
    :height: 800
@@ -481,19 +486,14 @@ procedure reduces PCIe bus load even further ( ` Fig 2.20 <#target-link16>`_ ).
    Figure 2.12: Parameters for level triggering
 
 
-.. raw:: pdf
-
-    PageBreak
-
-
-.. _target-link10:
+.. _Fig 2.13:
 .. figure:: figures/fig2.13.png
    :width: 1300
    :height: 800
 
    Figure 2.13: Triggering in 4 channel mode at 4 samples per clock cycle.
 
-.. _target-link8:
+.. _Fig 2.14:
 .. figure:: figures/fig2.14.png
    :width: 1300
    :height: 800
@@ -501,7 +501,7 @@ procedure reduces PCIe bus load even further ( ` Fig 2.20 <#target-link16>`_ ).
    Figure 2.14: Triggering in 2 channel mode at 8 samples per clock cycle.
 
 
-.. _target-link6:
+.. _Fig 2.15:
 .. figure:: figures/fig2.15.png
    :width: 1300
    :height: 800
@@ -509,7 +509,7 @@ procedure reduces PCIe bus load even further ( ` Fig 2.20 <#target-link16>`_ ).
    Figure 2.15: Triggering in 1 channel mode at 16 samples per clock cycle.
 
 
-.. _target-link14:
+.. _Fig 2.16:
 .. figure:: figures/fig2.16.png
    :width: 1300
    :height: 800
@@ -518,7 +518,7 @@ procedure reduces PCIe bus load even further ( ` Fig 2.20 <#target-link16>`_ ).
    the trigger matrix. Each digitizer channel (A, B, C, D) has two trigger units.
 
 
-.. _target-link4:
+.. _Fig 2.17:
 .. figure:: figures/fig2.17.png
    :width: 1300
    :height: 800
@@ -527,7 +527,7 @@ procedure reduces PCIe bus load even further ( ` Fig 2.20 <#target-link16>`_ ).
    BUS0, BUS1, BUS2 and BUS3 have simpler trigger units.
 
 
-
+.. _Fig 2.18:
 .. figure:: figures/fig2.18.png
    :width: 2000
    :height: 300
@@ -536,7 +536,7 @@ procedure reduces PCIe bus load even further ( ` Fig 2.20 <#target-link16>`_ ).
    the optional extension board and the sync cable.
 
 
-.. _target-link15:
+.. _Fig 2.19:
 .. figure:: figures/fig2.19.png
    :width: 2000
    :height: 300
@@ -547,7 +547,7 @@ procedure reduces PCIe bus load even further ( ` Fig 2.20 <#target-link16>`_ ).
    to suppress triggers during certain time frames.
 
 
-.. _target-link16:
+.. _Fig 2.20:
 .. figure:: figures/fig2.20.png
    :width: 2000
    :height: 300

@@ -4,7 +4,7 @@ Information Required by DIN EN 61010-1
 Manufacturer
 ------------
 
-The Ndigo5G is a product of: 
+The Ndigo5G is a product of:
 
    | cronologic GmbH & Co. KG
    | Jahnstraße 49
