@@ -1,4 +1,12 @@
-.. rubric:: `Table of Contents`
+.. raw:: latex
+
+    \renewcommand{\contentsname}{\large{\textcolor{orange}{Table of Contents}}}
+
+====================
+Table of Content
+====================
+
+
 
 .. contents::
    :local:
