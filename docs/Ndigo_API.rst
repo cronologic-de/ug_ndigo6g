@@ -636,7 +636,7 @@ of the **Ndigo extension board** to the trigger matrix.
 
 Enable output drive for each of the four external sync lines.
 Each integer represents a bitmask selecting the trigger sources for that line.
-The bit mapping is described in section`Structure_ndigo_trigger_block`_ on page 22.
+The bit mapping is described in section `Structure_ndigo_trigger_block`_ on page 22.
 
 **int auto_trigger_period**
 
@@ -734,7 +734,8 @@ For trigger indices **NDIGO_TRIGGER_TDC_PE** to **NDIGO_TRIGGER_BUS3_PE** this m
 
 
 .. _Structure_ndigo_trigger_block:
-Structure_ndigo_trigger_block
+
+Structure ndigo_trigger_block
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
