@@ -1,6 +1,5 @@
-#################################################################
-#############   Current Project Setup and Installation ##########
-#################################################################
+#############   Project Setup and Installation  ###########
+
 
 1. Clone the branch named as "ndigo6g_updated" or you can download a zip.
 2. Download and install Python on your system version3 or latest one from here:
@@ -36,9 +35,9 @@
 
 
 
-#################################################################
+
 #####################   Project Structure #######################
-#################################################################
+
 
 The project cotaines multiple folders and files:
 1. conf.py: Configuration file for the Sphinx documentation builder.
@@ -53,9 +52,9 @@ The project cotaines multiple folders and files:
 
 
 
-#################################################################
+
 #############   New Project Setup and Installation ##############
-#################################################################
+
 
 1. Download and install Python on your system version3 or latest one from here:
    link: https://www.python.org/downloads/
@@ -72,7 +71,7 @@ The project cotaines multiple folders and files:
    - myenv\Scripts\activate
    
 5. Go to pycharm you just need to install libraries using pip on terminal:
-    - pip install -U sphinx=4.2
+    - pip install -U sphinx
     - sphinx-build --version
     - pip install sphinx_rtd_theme
 6. Alternatively, you can put your all libraries in a rquirement.txt file and then just run this commands
@@ -103,34 +102,61 @@ The project cotaines multiple folders and files:
 
 13. To create RST2PDF:
     rst2pdf  -s _static/style.css <rst_file> -o <pdf_file>
-rst2pdf -s _static\style.css  C:\Users\zeiqbal\Ndigo\RST\Ndigo_Intro.rst C:\Users\zeiqbal\Ndigo\_build\html\output.pdf
+    
+    
+    sample command: rst2pdf -s _static\style.css  C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\RST\Ndigo_Intro.rst  C:\Users\zeiqbal\PycharmProjects\Ndigov1.1\output.pdf
 
 
 
+############# Steps for Ndigo_API Section using Doxygen   ##########
 
-#################################################################
-#############   Steps for Ndigo_API Section using Doxygen ##########
-#################################################################
 
 1. First you need to install Doxywizard to run the C header file and convert it 
    into latex.
+   
 2. Select destination directory same as your sphinx project directory while converting
    C header file to latex.
+   
 3. After successful conversion a folder will be created under sphinx project.
+
 4. Now install these libraries in you python IDE as well as set it as global variable in you PC.
    
    - pip install panadoc 
+   
    - Or go there https://github.com/jgm/pandoc/releases/tag/3.1.6
+   
    - Install this one "pandoc-3.1.6-windows-x86_64.zip" from the link provided.
+   
    - if pandoc is installed in C:\Program Files\Pandoc, and it's not globally available, follow these steps to set it as global:
+   
    - Open the "Start" menu and search for "Environment Variables."
+   
    - Click on "Edit the system environment variables."
+   
    - In the System Properties window, click on the "Environment Variables" button at the bottom.
+   
    - In the Environment Variables window, under "System variables," scroll down and find the "Path" variable. Select it and click on the "Edit" button.
+   
    - Click on the "New" button and add the path to the directory where pandoc is installed, which is C:\Program Files\Pandoc in this example.
+   
    - Click "OK" to close all windows. The changes should take effect immediately in any newly opened terminal or command prompt.
 
 5. Then check your Doxygen generated Ndigo_API.tex file which will be created under a folder name as latex.
+
 6. To convert latex to RST use this "test.py" just place right path or input / output path in it and run the script.
+
 7. A new RST will be created under specified output folder you can check RST and remove extra slashes and make formulas properly.
+
 8. After modification on RST will be done use similar command which we used previously to convert RST2PDF.
+
+
+ 
+
+
+
+
+
+
+
+
+
