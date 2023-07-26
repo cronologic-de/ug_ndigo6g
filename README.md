@@ -1,4 +1,4 @@
-#############   Project Setup and Installation  ###########
+#   Project Setup and Installation  
 
 
 1. Clone the branch named as "ndigo6g_updated" or you can download a zip.
@@ -57,7 +57,7 @@
 
 
 
-#####################   Project Structure #######################
+#   Project Structure
 
 
 The project cotaines multiple folders and files:
@@ -82,7 +82,7 @@ The project cotaines multiple folders and files:
 
 
 
-#############   New Project Setup and Installation ##############
+#   New Project Setup and Installation
 
 
 1. Download and install Python on your system version3 or latest one from here:
