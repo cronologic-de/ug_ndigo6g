@@ -164,7 +164,7 @@ The project cotaines multiple folders and files:
 
 
 
-############# Steps for Ndigo_API Section using Doxygen   ##########
+# Steps for Ndigo_API Section using Doxygen
 
 
 1. First you need to install Doxywizard to run the C header file and convert it 
