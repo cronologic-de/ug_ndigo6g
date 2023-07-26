@@ -3,7 +3,7 @@
 
 1. Clone the branch named as "ndigo6g_updated" or you can download a zip.
 2. Download and install Python on your system version3 or latest one from here:
-   link: https://www.python.org/downloads/
+   [link] (https://www.python.org/downloads/)
 3. Download and install pip which helps us to install python libraries, by using following command. 
 
    - python get-pip.py
@@ -21,7 +21,7 @@
 
            - Anaconda
 
-   link: https://www.jetbrains.com/pycharm/download/#section=windows
+   [link] (https://www.jetbrains.com/pycharm/download/#section=windows)
 
    We are using Pycharm in this project.
 
@@ -87,7 +87,7 @@ The project cotaines multiple folders and files:
 
 1. Download and install Python on your system version3 or latest one from here:
 
-   link: https://www.python.org/downloads/
+   [link] (https://www.python.org/downloads/)
 
 2. Download Pip which helps us to install python libraries.
 
@@ -101,7 +101,7 @@ The project cotaines multiple folders and files:
 
            - Anaconda
 
-   link: https://www.jetbrains.com/pycharm/download/#section=windows
+   [link] (https://www.jetbrains.com/pycharm/download/#section=windows)
 
    We are using Pycharm in this project.
 
@@ -179,7 +179,7 @@ The project cotaines multiple folders and files:
    
    - pip install panadoc 
    
-   - Or go there https://github.com/jgm/pandoc/releases/tag/3.1.6
+   - [Or go there] (https://github.com/jgm/pandoc/releases/tag/3.1.6)
    
    - Install this one "pandoc-3.1.6-windows-x86_64.zip" from the link provided.
    
