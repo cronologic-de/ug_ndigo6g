@@ -80,7 +80,7 @@ signals. Proper termination must be placed at both ends of the bus
 interconnection ribbon cable.
 
 
-.. figure:: figures/fig2.2.png
+.. figure:: figures/Ndigo-Slotblende.png
    :alt: alternative text
    :width: 2000
    :height: 300

@@ -44,7 +44,11 @@ provided with the Ndigo device driver. Please refer to the cronoTools
 user guide for more information.
 
 .. _Fig 2.1:
-.. figure:: figures/fig2.1.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/Ndigo_Intercon.png
    :alt: alternative text
    :width: 2000
    :height: 300
@@ -79,7 +83,11 @@ signals. Proper termination must be placed at both ends of the bus
 interconnection ribbon cable.
 
 .. _Fig 2.2:
-.. figure:: figures/fig2.2.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/Ndigo-Slotblende.png
    :alt: alternative text
    :width: 2000
    :height: 300
@@ -87,8 +95,11 @@ interconnection ribbon cable.
    Figure 2.2: Input connectors of an Ndigo5G located on the PCI bracket.
 
 .. _Fig 2.3:
+.. role:: invisible
 
-.. figure:: figures/fig2.3.png
+:invisible:`hidden text`
+
+.. figure:: figures/Ndigo_schematic.png
    :alt: alternative text
    :width: 2000
    :height: 300
@@ -100,8 +111,11 @@ Analog Inputs
 ~~~~~~~~~~~~~
 
 .. _Fig 2.4:
+.. role:: invisible
 
-.. figure:: figures/fig2.4.png
+:invisible:`hidden text`
+
+.. figure:: figures/InputCircuit.png
    :alt: alternative text
    :width: 2000
    :height: 300
@@ -130,7 +144,11 @@ the maximum dynamic range. The analog offset can be set between
 
 
 .. _Fig 2.5:
-.. figure:: figures/fig2.5.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/AnalogOffset_Sine.png
    :alt: alternative text
    :width: 2000
    :height: 300
@@ -143,7 +161,11 @@ the maximum dynamic range. The analog offset can be set between
     PageBreak
 
 .. _Fig 2.6:
-.. figure:: figures/fig2.6.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/AnalogOffset_Pulse.png
    :alt: alternative text
    :width: 2000
    :height: 300
@@ -343,7 +365,11 @@ samples, depending on mode.
     PageBreak
 
 .. _Fig 2.7:
-.. figure:: figures/fig2.7.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/4ChannelMode.png
    :alt: alternative text
    :width: 2000
    :height: 300
@@ -353,7 +379,11 @@ samples, depending on mode.
 
 
 .. _Fig 2.8:
-.. figure:: figures/fig2.8.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/2ChannelMode.png
    :alt: alternative text
    :width: 2000
    :height: 300
@@ -361,7 +391,11 @@ samples, depending on mode.
    Figure 2.8: ADCs in 2 channel mode AD, interleaved for 2.5Gsps.
 
 .. _Fig 2.9:
-.. figure:: figures/fig2.9.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/1ChannelMode.png
    :alt: alternative text
    :width: 2000
    :height: 300
@@ -393,7 +427,11 @@ much more complex scenarios.
 
 
 .. _Fig 2.10:
-.. figure:: figures/fig2.10.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/ZeroSupp.png
    :alt: alternative text
    :width: 1300
    :height: 900
@@ -472,14 +510,22 @@ procedure reduces PCIe bus load even further ( `Fig 2.20`_ ).
 
 
 .. _Fig 2.11:
-.. figure:: figures/fig2.11.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/edge-trigger.png
    :width: 1300
    :height: 800
 
    Figure 2.11: Parameters for edge triggering
 
 .. _Fig 2.12:
-.. figure:: figures/fig2.12.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/level-trigger.png
    :width: 1300
    :height: 800
 
@@ -487,14 +533,22 @@ procedure reduces PCIe bus load even further ( `Fig 2.20`_ ).
 
 
 .. _Fig 2.13:
-.. figure:: figures/fig2.13.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/4ChannelTriggering.png
    :width: 1300
    :height: 800
 
    Figure 2.13: Triggering in 4 channel mode at 4 samples per clock cycle.
 
 .. _Fig 2.14:
-.. figure:: figures/fig2.14.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/2ChannelTriggering.png
    :width: 1300
    :height: 800
 
@@ -502,7 +556,11 @@ procedure reduces PCIe bus load even further ( `Fig 2.20`_ ).
 
 
 .. _Fig 2.15:
-.. figure:: figures/fig2.15.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/1ChannelTriggering.png
    :width: 1300
    :height: 800
 
@@ -510,7 +568,11 @@ procedure reduces PCIe bus load even further ( `Fig 2.20`_ ).
 
 
 .. _Fig 2.16:
-.. figure:: figures/fig2.16.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/analog-trigger.png
    :width: 1300
    :height: 800
 
@@ -519,7 +581,11 @@ procedure reduces PCIe bus load even further ( `Fig 2.20`_ ).
 
 
 .. _Fig 2.17:
-.. figure:: figures/fig2.17.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/DigitalInput.png
    :width: 1300
    :height: 800
 
@@ -528,7 +594,11 @@ procedure reduces PCIe bus load even further ( `Fig 2.20`_ ).
 
 
 .. _Fig 2.18:
-.. figure:: figures/fig2.18.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/ExtensionBlock.png
    :width: 2000
    :height: 300
 
@@ -537,7 +607,11 @@ procedure reduces PCIe bus load even further ( `Fig 2.20`_ ).
 
 
 .. _Fig 2.19:
-.. figure:: figures/fig2.19.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/triggermatrix.png
    :width: 2000
    :height: 300
 
@@ -548,7 +622,11 @@ procedure reduces PCIe bus load even further ( `Fig 2.20`_ ).
 
 
 .. _Fig 2.20:
-.. figure:: figures/fig2.20.png
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/GatingBlocks.png
    :width: 2000
    :height: 300
 

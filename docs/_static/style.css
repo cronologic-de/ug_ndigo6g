@@ -16,4 +16,10 @@ styles:
         textColor: 6ca0dc
     heading4:
         textColor: 6ca0dc
+    invisible:
+        parent: normal
+        textColor: FFFFFF
+
+
+
 

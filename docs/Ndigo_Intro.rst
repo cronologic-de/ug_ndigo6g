@@ -21,6 +21,8 @@ Table of Content
    :depth: 2
 
 
+.. |invisible_line| replace::
+
 .. _document title:
 
 Introduction
@@ -59,20 +61,26 @@ Features
 
 -  multiple boards can be synchronized via reference clock if more channels are required.
 
-.. _Fig 1.1:
-
 -  extension board available with 4 additional digital inputs.
 
-.. figure:: figures/fig1.1.png
+.. _Fig 1.1:
+
+.. role:: invisible
+
+:invisible:`hidden text`
+
+.. figure:: figures/active_cooling.png
    :alt: alternative text
    :width: 2000
    :height: 300
 
-   Figure 1.1: Ndigo5G equipped with active cooling system
+   Fig :counter:`figure`. Ndigo5G equipped with active cooling system
+
 
 .. raw:: pdf
 
     PageBreak
+
 
 .. include:: Hardware.rst
 .. include:: Ndigo_API.rst
