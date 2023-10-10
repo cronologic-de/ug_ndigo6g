@@ -1,0 +1,122 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{sphinxcronologic}
+\author{cronologic GmbH \& Co KG}
+
+%\DeclareOption*{\newcommand{\deviceName}{\CurrentOption}}
+
+\PassOptionsToPackage{utf8}{inputenc}
+\RequirePackage{inputenc}
+\PassOptionsToPackage{usenames, dvipsnames}{xcolor}
+\RequirePackage{xcolor}
+\RequirePackage{graphicx} %for including figures
+\RequirePackage{tabularx}
+\RequirePackage{tikz} % double line border support
+\usetikzlibrary{calc}
+\RequirePackage{eso-pic}
+\RequirePackage{listings}%for code in latex document, might be the source of the float@addtolist warning
+\RequirePackage{scrhack}  % avoid float@addtolist warning in package "listing"
+\RequirePackage{amsmath} %for math environments
+\RequirePackage{siunitx}  % SI Unit package
+\PassOptionsToPackage{left=25mm, right=25mm, top=25mm, bottom=25mm}{geometry}
+\RequirePackage{geometry} %for page properties (pagestyle)
+\PassOptionsToPackage{section,subsection,subsubsection}{extraplaceins}
+\RequirePackage{extraplaceins} %for binding figures to a (sub-)section
+\RequirePackage{textcomp}%for code in latex document
+\RequirePackage{balance}%for two-column layout
+\RequirePackage{array} %for centered AND constant width columns
+\RequirePackage{longtable}
+\PassOptionsToPackage{labelsep=space}{caption}
+\RequirePackage{caption}
+\PassOptionsToPackage{footsepline=1pt}{scrlayer-scrpage}
+\RequirePackage{makecell}  % multi line table cells
+\RequirePackage{titlesec}  % customize headings
+\RequirePackage{attachfile2} 
+\RequirePackage{incgraph} % to include the title page
+
+ 
+\definecolor{org}{RGB}{237,120,0}
+\definecolor{gry}{RGB}{ 157,157,156}
+\definecolor{crongrey}{gray}{0.5} %Variablendeklaration API
+\definecolor{cronorange}{RGB}{237, 120, 0}
+\definecolor{cronblue}{RGB}{55, 110, 181}
+\definecolor{cronblack}{RGB}{0,0,0}
+
+%%
+% Font setup
+%%
+\RequirePackage{fontspec}
+\RequirePackage{unicode-math}[mathrm=sym,math-style=ISO,bold-style=upright]
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{Montserrat}
+\setsansfont{Montserrat}
+\newfontfamily\sectionfont{Montserrat}
+\setmathfont{Latin Modern Math}[Scale=MatchUppercase]
+\setmathfont[range=up/{latin,Latin,num},Numbers=Lining]{Montserrat}
+\setmathfont[range=it/{latin,Latin,num},Numbers=Lining]{Montserrat Italic}
+\setmathfont[range=bfup/{latin,Latin,num},Numbers=Lining]{Montserrat Bold}
+\setmathfont[range=bfit/{latin,Latin,num},Numbers=Lining]%
+	{Montserrat ExtraBold Italic}
+\setmathfont[range=up/{greek,Greek}]{KerkisSans}
+\setmathfont[range=it/{greek,Greek}]{KerkisSans Italic}
+\setmathfont[range=bfup/{greek,Greek}]{Kerkis Sans Bold}
+\setmathfont[range=bfit/{greek,Greek}]{Kerkis Sans Bold Italic}
+
+
+
+ 
+%%%%%%%%%% Definitions for the whole document 
+ 
+% color definitions
+\definecolor{org}{RGB}{237,120,0}
+\definecolor{gry}{RGB}{ 157,157,156}
+\definecolor{crongrey}{gray}{0.5} %Variablendeklaration API
+\definecolor{cronorange}{RGB}{237, 120, 0}
+\definecolor{cronblue}{RGB}{55, 110, 181}
+\definecolor{cronblack}{RGB}{0,0,0}
+
+%import a title PDF and create TOC
+\newcommand{\cronofront}[1]{
+	\pagenumbering{Alph}   %this is invisible but avoids a warning for duplicate hyperlink targets
+	\clearpage
+	\thispagestyle{empty}
+	\incgraph[a4paper][width=\paperwidth]{#1}
+	\clearpage     
+	\tableofcontents
+	\clearpage
+	\pagenumbering{arabic}
+}
+
+\PassOptionsToPackage{
+	colorlinks=true,
+	linkcolor=cronblue,
+	urlcolor=gry
+}{hyperref}
+\RequirePackage{hyperref}
+
+% format headings
+\titleformat{\chapter}%
+	{\LARGE\sffamily\bfseries\color{cronorange}}%
+	{\thechapter}{1em}{}{}
+\titlespacing*{\chapter}%
+	{0ex}{0ex}{*2}
+
+\titleformat{\section}%
+	{\Large\bfseries\sffamily\color{cronorange}}%
+	{\thesection}{1em}{}{}
+
+\titleformat{\subsection}%
+	{\large\bfseries\sffamily\color{cronblue}}%
+	{\thesubsection}{1em}{}{}
+
+\titleformat{\subsubsection}%
+	{\bfseries\itshape\sffamily\color{cronblue}}%
+	{\thesubsubsection}{1em}{}{}
+
+\newcommand{\filesep}{\textbackslash\allowbreak}  % used in file pathes
+\newcommand{\lb}{\linebreak}
+\newcommand{\cronvar}[2]{\noindent\textsf{\textbf{\textcolor{gry}{#1}~#2}}}%for variable declaration
+\newcommand{\crondef}[1]{\noindent\textsf{\textcolor{gry}{\#{}define} #1}}%for definitions
+\newcommand{\tu}{\textunderscore}%shorter
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+\renewcommand{\arraystretch}{1.6} 
+\parskip 8pt

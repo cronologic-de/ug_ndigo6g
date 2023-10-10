@@ -1,0 +1,14 @@
+# vscode config files
+.vscode/
+
+# automatic build output
+build/*
+!build/latex
+build/latex/*
+!build/latex/ndigo6g-userguide.pdf
+
+# virtual environment folder
+.venv/
+
+# python
+__pycache__/
