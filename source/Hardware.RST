@@ -146,7 +146,7 @@ The TDC creates packets of **type 8**. These packets first contain a coarse
 timestamp and a payload that can be used to calculate the trigger position with higher
 precision. The function :code:`ndigo_process_tdc_packet` can be used to replace
 the coarse timestamp with the precise timestamp. This function is
-described in `Section 3.6`_. TDC pulses
+described in :numref:`Chapter %s<api:Readout>`. TDC pulses
 must have a minimum duration of 3.3 |nbws| ns. The dead-time of the TDC is
 32 |nbws| ns.
 
@@ -354,7 +354,7 @@ Trigger Blocks
 Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory. Each ADC channel has one trigger block determining whether
 data is written to the FIFO. The parameters are set in Structure
-**ndigo_trigger_block** (See :numref:`Chapter %s <3.4.3>`).
+**ndigo_trigger_block** (See :numref:`Chapter %s<api:Structure ndigo_slow_info>`).
 
 Each trigger block consists of two independent units that check the
 incoming raw data stream for trigger conditions (:numref:`Figure %s<Fig 2.10>`).
