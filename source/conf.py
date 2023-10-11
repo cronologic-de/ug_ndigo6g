@@ -6,11 +6,11 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Ndigo6G - User Guide'
+project = 'Ndigo6G – User Guide'
 copyright = ("Creative Commons Attribution-NoDerivatives"
              " 4.0 International License")
 author = 'cronologic GmbH & Co. KG'
-release = '0.1'
+release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -40,7 +40,7 @@ latex_elements = {
     "papersize": "a4paper",
     "pointsize": "12pt",
     "fontpkg" : "",
-    "preamble": r"\usepackage{sphinxcronologic}",
+    "preamble": r"\usepackage[font=montserrat]{sphinxcronologic}",
     "fncychap": "",#r"\usepackage[Bjornstrup]{fncychap}",
     "extraclassoptions": r"openany",
     "maketitle": r"\cronofront{../../source/XTDC4_title.pdf}",

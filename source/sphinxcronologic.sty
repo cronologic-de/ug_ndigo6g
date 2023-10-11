@@ -2,7 +2,12 @@
 \ProvidesPackage{sphinxcronologic}
 \author{cronologic GmbH \& Co KG}
 
-%\DeclareOption*{\newcommand{\deviceName}{\CurrentOption}}
+\RequirePackage{ifthen}
+\RequirePackage{kvoptions}
+\SetupKeyvalOptions{family=crono, prefix=crono@}
+
+\DeclareStringOption[montserrat]{font} % montserrat or fira
+\ProcessKeyvalOptions{crono}
 
 \PassOptionsToPackage{utf8}{inputenc}
 \RequirePackage{inputenc}
@@ -25,6 +30,7 @@
 \RequirePackage{balance}%for two-column layout
 \RequirePackage{array} %for centered AND constant width columns
 \RequirePackage{longtable}
+\RequirePackage{microtype} % better textblock layout
 \PassOptionsToPackage{labelsep=space}{caption}
 \RequirePackage{caption}
 \PassOptionsToPackage{footsepline=1pt}{scrlayer-scrpage}
@@ -47,19 +53,37 @@
 \RequirePackage{fontspec}
 \RequirePackage{unicode-math}[mathrm=sym,math-style=ISO,bold-style=upright]
 \defaultfontfeatures{Scale=MatchLowercase}
-\setmainfont{Montserrat}
-\setsansfont{Montserrat}
-\newfontfamily\sectionfont{Montserrat}
-\setmathfont{Latin Modern Math}[Scale=MatchUppercase]
-\setmathfont[range=up/{latin,Latin,num},Numbers=Lining]{Montserrat}
-\setmathfont[range=it/{latin,Latin,num},Numbers=Lining]{Montserrat Italic}
-\setmathfont[range=bfup/{latin,Latin,num},Numbers=Lining]{Montserrat Bold}
-\setmathfont[range=bfit/{latin,Latin,num},Numbers=Lining]%
-	{Montserrat ExtraBold Italic}
-\setmathfont[range=up/{greek,Greek}]{KerkisSans}
-\setmathfont[range=it/{greek,Greek}]{KerkisSans Italic}
-\setmathfont[range=bfup/{greek,Greek}]{Kerkis Sans Bold}
-\setmathfont[range=bfit/{greek,Greek}]{Kerkis Sans Bold Italic}
+
+\ifthenelse{\equal{\crono@font}{montserrat}}
+{
+	\setmainfont{Montserrat}
+	\setsansfont{Montserrat}
+	\setmonofont{Anonymous Pro}
+	\newfontfamily\sectionfont{Montserrat}
+	\setmathfont{Latin Modern Math}[Scale=MatchUppercase]
+	\setmathfont[range=up/{latin,Latin,num},Numbers=Lining]{Montserrat}
+	\setmathfont[range=it/{latin,Latin,num},Numbers=Lining]{Montserrat-Italic}
+	\setmathfont[range=bfup/{latin,Latin,num},Numbers=Lining]{Montserrat-Bold}
+	\setmathfont[range=bfit/{latin,Latin,num},Numbers=Lining]%
+		{Montserrat-BoldItalic}
+	\setmathfont[range=up/{greek,Greek}]{KerkisSans}
+	\setmathfont[range=it/{greek,Greek}]{KerkisSans Italic}
+	\setmathfont[range=bfup/{greek,Greek}]{Kerkis Sans Bold}
+	\setmathfont[range=bfit/{greek,Greek}]{Kerkis Sans Bold Italic}
+}{\relax}
+
+\ifthenelse{\equal{\crono@font}{fira}}
+{
+	\setmainfont{Fira Sans}
+	\setsansfont{Fira Sans}
+	\setmonofont[
+		ItalicFont={FiraMono-Oblique.otf},
+		BoldFont={FiraMono-Bold.otf},
+		BoldItalicFont={FiraMono-BoldOblique.otf}
+	]{FiraMono-Regular.otf}
+	\newfontfamily\sectionfont{Montserrat}
+	\setmathfont{Fira Math}[Scale=MatchUppercase]
+}{\relax}
 
 
 

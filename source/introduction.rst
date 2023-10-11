@@ -26,7 +26,7 @@ Features
 
 -  2\ :sup:`nd` digital input for gating or triggering.
 
--  PCIe 4x 1.1 with **800 |nwbs| MB/s throughput** for simple and fast data
+-  PCIe 4x 1.1 with **800** |nbws| **MB/s throughput** for simple and fast data
    transfer to most PCs.
 
 -  Multiple boards can be synchronized via reference clock if more channels are required.

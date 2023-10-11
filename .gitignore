@@ -5,10 +5,13 @@
 build/*
 !build/latex
 build/latex/*
-!build/latex/ndigo6g-userguide.pdf
+!build/latex/ndigo6guserguide.pdf
 
 # virtual environment folder
 .venv/
 
 # python
 __pycache__/
+
+# various
+source/figures/obsolete
