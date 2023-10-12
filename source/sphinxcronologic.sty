@@ -8,7 +8,7 @@
 
 % options provided with the sphinxcronologic package, e.g.
 % \usepackage[font=montserrat]{sphinxcronologic}
-\DeclareStringOption[montserrat]{font} % montserrat or fira
+\DeclareStringOption[montserrat]{font} % montserrat or fira or default
 \ProcessKeyvalOptions{crono}
 
 \PassOptionsToPackage{usenames, dvipsnames}{xcolor}
@@ -70,8 +70,8 @@
 
 \ifthenelse{\equal{\crono@font}{fira}}
 {
-	\setmainfont{Fira Sans}[Numbers=Tabular]
-	\setsansfont{Fira Sans}[Numbers=Tabular]
+	\setmainfont{FiraSans-Regular.otf}[Numbers=Tabular]
+	\setsansfont{FiraSans-Regular.otf}[Numbers=Tabular]
 	\setmonofont[
 		ItalicFont={FiraMono-Oblique.otf},
 		BoldFont={FiraMono-Bold.otf},
@@ -81,7 +81,7 @@
 	\setmathfont{Fira Math}[Numbers=Tabular]
 }{\relax}
 
-\ifthenelse{\equal{\crono@font}{rtd}}
+\ifthenelse{\equal{\crono@font}{default}}
 {
 	\newcommand\sectionfont{}
 }{\relax}

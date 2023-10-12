@@ -40,7 +40,7 @@ latex_elements = {
     "papersize": "a4paper",
     "pointsize": "12pt",
     "fontpkg" : "",
-    "preamble": r"\usepackage[font=rtd]{sphinxcronologic}",
+    "preamble": r"\usepackage[font=fira]{sphinxcronologic}",
     "extraclassoptions": r"openany",
     "tableofcontents":r"""\tableofcontents""",
     "maketitle": r"\cronofront",
