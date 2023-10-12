@@ -638,10 +638,11 @@ time of the trigger event. An arbitrary set of trigger sources can be
 selected in the trigger matrix to cause the creation of a packet.
 
 The packets have a fixed length of 16 bytes. The format is described in
-:numref:`Chapter %s<4.0.1>`. The length field of the packet contains a 32-bit pattern that
-contains the levels of all trigger sources at the time of the trigger
-event except for the period monitor. Only one packet is created, no
-matter how many trigger sources caused the timestamp channel to trigger.
+:numref:`Chapter %s<struct ndigopacket>`. The length field of the packet
+contains a 32-bit pattern that contains the levels of all trigger sources at
+the time of the trigger event except for the period monitor. Only one packet
+is created, no matter how many trigger sources caused the timestamp channel to
+trigger.
 
 Data Lookup Table
 ~~~~~~~~~~~~~~~~~

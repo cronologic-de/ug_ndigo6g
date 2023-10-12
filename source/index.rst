@@ -9,6 +9,7 @@ Ndigo6G |hyphen| User Guide
     introduction
     hardware
     api
+    packform
 
 
 .. |hyphen| unicode:: U+2012

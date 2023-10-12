@@ -883,7 +883,7 @@ shown as **red**.
     Set the LED to the selected color. No automatic updates are performed.
 
 
-:cpp:`int ndigo set led automode(ndigo device *device, int led)`
+:cpp:`int ndigo_set_led_automode(ndigo device *device, int led)`
     Let the selected LED be controlled by hardware.
 
 
