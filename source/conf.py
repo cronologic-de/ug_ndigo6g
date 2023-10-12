@@ -40,11 +40,11 @@ latex_elements = {
     "papersize": "a4paper",
     "pointsize": "12pt",
     "fontpkg" : "",
-    "preamble": r"\usepackage[font=montserrat]{sphinxcronologic}",
+    "preamble": r"\usepackage[font=fira]{sphinxcronologic}",
     "fncychap": "",#r"\usepackage[Bjornstrup]{fncychap}",
     "extraclassoptions": r"openany",
     "maketitle": r"\cronofront{../../source/XTDC4_title.pdf}",
-    "tableofcontents":"",
+    "tableofcontents":r"\tableofcontents",
     "maketitle": r"""
         \thispagestyle{empty}
         \begin{tikzpicture}

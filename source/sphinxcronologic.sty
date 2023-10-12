@@ -14,6 +14,7 @@
 \PassOptionsToPackage{usenames, dvipsnames}{xcolor}
 \RequirePackage{xcolor}
 \RequirePackage{graphicx} %for including figures
+\RequirePackage{ragged2e} % provide RaggedRight, RaggedLeft
 \RequirePackage{tabularx}
 \RequirePackage{tikz} % double line border support
 \usetikzlibrary{calc}
@@ -22,7 +23,7 @@
 \RequirePackage{scrhack}  % avoid float@addtolist warning in package "listing"
 \RequirePackage{amsmath} %for math environments
 \RequirePackage{siunitx}  % SI Unit package
-\PassOptionsToPackage{left=25mm, right=25mm, top=25mm, bottom=25mm}{geometry}
+% \PassOptionsToPackage{left=25mm, right=25mm, top=25mm, bottom=25mm}{geometry}
 \RequirePackage{geometry} %for page properties (pagestyle)
 \PassOptionsToPackage{section,subsection,subsubsection}{extraplaceins}
 \RequirePackage{extraplaceins} %for binding figures to a (sub-)section
@@ -33,7 +34,7 @@
 \RequirePackage{microtype} % better textblock layout
 \PassOptionsToPackage{labelsep=space}{caption}
 \RequirePackage{caption}
-\PassOptionsToPackage{footsepline=1pt}{scrlayer-scrpage}
+% \PassOptionsToPackage{footsepline=1pt}{scrlayer-scrpage}
 \RequirePackage{makecell}  % multi line table cells
 \RequirePackage{titlesec}  % customize headings
 \RequirePackage{attachfile2} 

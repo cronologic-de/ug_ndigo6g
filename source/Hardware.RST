@@ -354,7 +354,7 @@ Trigger Blocks
 Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory. Each ADC channel has one trigger block determining whether
 data is written to the FIFO. The parameters are set in Structure
-**ndigo_trigger_block** (See :numref:`Chapter %s<api:Structure ndigo_slow_info>`).
+**ndigo_trigger_block** (See :numref:`Chapter %s<struct ndigoslowinfo>`).
 
 Each trigger block consists of two independent units that check the
 incoming raw data stream for trigger conditions (:numref:`Figure %s<Fig 2.10>`).
@@ -499,7 +499,8 @@ an active gate window. The gate signal can be inverted, causing an
 active gate to close for a time defined by the user.
 
 The parameters of a gating block are set in Structure
-:code:`ndigo_gating_block` described in :numref:`Section %s <3.4.4`>.
+:code:`ndigo_gating_block` described in
+:numref:`Section %s<struct ndigoextblock>`.
 
 :numref:`Figure %s<Fig 2.21>` shows the functionality of
 the gate timing and delay unit. The active gate time is marked in green.
@@ -754,23 +755,6 @@ Calibration Procedure
    Please note that the lower panel might differ from board to board, with the
    |bdq| step |edq| being at a different position.
 
-
-
-.. |nbws| unicode:: 0xA0
-    :trim:
-
-.. |hyphen| unicode:: U+2012
-
-.. |endash| unicode:: U+2013
-
-.. |emdash| unicode:: U+2014
-
-.. |bdq| unicode:: U+201C
-    :rtrim:
-
-.. |edq| unicode:: U+201D
-    :ltrim:
-
 Synchronizing a Ndgio5G and an HPTDC8-PCI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -895,3 +879,20 @@ The card can only be successfully calibrated if:
 
    If the application reports an error check if the
    input pulse is within specification.
+
+
+
+.. |nbws| unicode:: 0xA0
+    :trim:
+
+.. |hyphen| unicode:: U+2012
+
+.. |endash| unicode:: U+2013
+
+.. |emdash| unicode:: U+2014
+
+.. |bdq| unicode:: U+201C
+    :rtrim:
+
+.. |edq| unicode:: U+201D
+    :ltrim:
