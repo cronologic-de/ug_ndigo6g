@@ -3,6 +3,7 @@ C-Example
 
 
 .. code-block:: c
+    :linenos:
 
     #include "Ndigo_interface.h"
     #include <stdio.h>
@@ -19,7 +20,7 @@ C-Example
        params.use_external_clock = false;
 
        int error_code;
-       const char*error_message;
+       const char* error_message;
        ndigo_device* ndgo = ndigo_init(&params, &error_code, &error_message);
        if( error_code != NDIGO_OK ) {
            printf("\nError %d: %s\n", error_code, error_message);
@@ -93,5 +94,5 @@ C-Example
            }
        }
        ndigo_close(ndgo);
-       return0;
+       return 0;
     }
