@@ -11,6 +11,8 @@ Ndigo6G |hyphen| User Guide
     api
     packform
     example
+    techdata
+    revhistory
 
 
 .. |hyphen| unicode:: U+2012

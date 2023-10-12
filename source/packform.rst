@@ -60,6 +60,7 @@ Output Structure :cpp:`ndigo_packet`
    .. code:: c++
 
       #define NDIGO_PACKET_FLAG_SHORTENED 1
+
    If the bit with **weight 1** is set, the packet was truncated because the
    internal FIFO was full. Less than the requested number of samples have
    been written due to the full FIFO.
