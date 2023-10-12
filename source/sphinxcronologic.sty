@@ -70,14 +70,30 @@
 
 \ifthenelse{\equal{\crono@font}{fira}}
 {
-	\setmainfont{FiraSans-Regular.otf}[Numbers=Tabular]
-	\setsansfont{FiraSans-Regular.otf}[Numbers=Tabular]
+	\setmainfont[
+		Numbers=Tabular,
+		ItalicFont={FiraSans-Italic.otf},
+		BoldFont={FiraSans-Bold.otf},
+		BoldItalicFont={FiraSans-BoldItalic.otf}
+	]{FiraSans-Regular.otf}
+	\setsansfont[
+		Numbers=Tabular,
+		ItalicFont={FiraSans-Italic.otf},
+		BoldFont={FiraSans-Bold.otf},
+		BoldItalicFont={FiraSans-BoldItalic.otf}
+	]{FiraSans-Regular.otf}
 	\setmonofont[
 		ItalicFont={FiraMono-Oblique.otf},
 		BoldFont={FiraMono-Bold.otf},
 		BoldItalicFont={FiraMono-BoldOblique.otf}
 	]{FiraMono-Regular.otf}
-	\newfontfamily\sectionfont{Montserrat}
+	\newfontfamily\sectionfont
+	[
+		ItalicFont={Montserrat-Italic.otf},
+		BoldFont={Montserrat-Bold.otf},
+		BoldItalicFont={Montserrat-BoldItalic.otf}
+	]
+	{Montserrat-Regular.otf}
 	\setmathfont{Fira Math}[Numbers=Tabular]
 }{\relax}
 
