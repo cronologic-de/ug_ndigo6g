@@ -6,47 +6,42 @@
 \RequirePackage{kvoptions}
 \SetupKeyvalOptions{family=crono, prefix=crono@}
 
+% options provided with the sphinxcronologic package, e.g.
+% \usepackage[font=montserrat]{sphinxcronologic}
 \DeclareStringOption[montserrat]{font} % montserrat or fira
 \ProcessKeyvalOptions{crono}
 
-\PassOptionsToPackage{utf8}{inputenc}
-\RequirePackage{inputenc}
 \PassOptionsToPackage{usenames, dvipsnames}{xcolor}
 \RequirePackage{xcolor}
-\RequirePackage{graphicx} %for including figures
-\RequirePackage{ragged2e} % provide RaggedRight, RaggedLeft
-\RequirePackage{tabularx}
-\RequirePackage{tikz} % double line border support
-\usetikzlibrary{calc}
-\RequirePackage{eso-pic}
-\RequirePackage{listings}%for code in latex document, might be the source of the float@addtolist warning
-\RequirePackage{scrhack}  % avoid float@addtolist warning in package "listing"
-\RequirePackage{amsmath} %for math environments
-\RequirePackage{siunitx}  % SI Unit package
-% \PassOptionsToPackage{left=25mm, right=25mm, top=25mm, bottom=25mm}{geometry}
-% \RequirePackage{geometry} %for page properties (pagestyle)
-\PassOptionsToPackage{section,subsection,subsubsection}{extraplaceins}
-\RequirePackage{extraplaceins} %for binding figures to a (sub-)section
-\RequirePackage{textcomp}%for code in latex document
-\RequirePackage{balance}%for two-column layout
-\RequirePackage{array} %for centered AND constant width columns
-\RequirePackage{longtable}
-\RequirePackage{microtype} % better textblock layout
-\PassOptionsToPackage{labelsep=space}{caption}
-\RequirePackage{caption}
-% \PassOptionsToPackage{footsepline=1pt}{scrlayer-scrpage}
-\RequirePackage{makecell}  % multi line table cells
-\RequirePackage{titlesec}  % customize headings
-\RequirePackage{attachfile2} 
-\RequirePackage{incgraph} % to include the title page
-
- 
 \definecolor{org}{RGB}{237,120,0}
-\definecolor{gry}{RGB}{ 157,157,156}
+\definecolor{gry}{RGB}{157,157,156}
 \definecolor{crongrey}{gray}{0.5} %Variablendeklaration API
 \definecolor{cronorange}{RGB}{237, 120, 0}
 \definecolor{cronblue}{RGB}{55, 110, 181}
 \definecolor{cronblack}{RGB}{0,0,0}
+
+\RequirePackage{graphicx} %for including figures
+\RequirePackage{tabularx}
+\RequirePackage{ragged2e} % provide RaggedRight, RaggedLeft
+\RequirePackage{tikz} % double line border support
+\PassOptionsToPackage{section,subsection,subsubsection}{extraplaceins}
+\RequirePackage{extraplaceins} %for binding figures to a (sub-)section
+\RequirePackage{array} %for centered AND constant width columns
+\RequirePackage{microtype} % better textblock layout
+
+\RequirePackage{caption}
+\DeclareCaptionFont{cronocaptionlabelfont}{\bfseries\color{gry}}
+\DeclareCaptionFont{cronocaptionfont}{\color{gry}}
+\captionsetup{
+	labelsep=space,
+	labelfont=cronocaptionlabelfont,
+	textfont=cronocaptionfont,
+}
+
+% \PassOptionsToPackage{footsepline=1pt}{scrlayer-scrpage}
+\RequirePackage{makecell}  % multi line table cells
+\RequirePackage{incgraph} % to include the title page
+
 
 %%
 % Font setup
@@ -75,40 +70,68 @@
 
 \ifthenelse{\equal{\crono@font}{fira}}
 {
-	\setmainfont{Fira Sans}
-	\setsansfont{Fira Sans}
+	\setmainfont{Fira Sans}[Numbers=Tabular]
+	\setsansfont{Fira Sans}[Numbers=Tabular]
 	\setmonofont[
 		ItalicFont={FiraMono-Oblique.otf},
 		BoldFont={FiraMono-Bold.otf},
 		BoldItalicFont={FiraMono-BoldOblique.otf}
 	]{FiraMono-Regular.otf}
 	\newfontfamily\sectionfont{Montserrat}
-	\setmathfont{Fira Math}[Scale=MatchUppercase]
+	\setmathfont{Fira Math}[Numbers=Tabular]
 }{\relax}
 
 
-
- 
 %%%%%%%%%% Definitions for the whole document 
  
-% color definitions
-\definecolor{org}{RGB}{237,120,0}
-\definecolor{gry}{RGB}{ 157,157,156}
-\definecolor{crongrey}{gray}{0.5} %Variablendeklaration API
-\definecolor{cronorange}{RGB}{237, 120, 0}
-\definecolor{cronblue}{RGB}{55, 110, 181}
-\definecolor{cronblack}{RGB}{0,0,0}
-
 %import a title PDF and create TOC
-\newcommand{\cronofront}[1]{
-	\pagenumbering{Alph}   %this is invisible but avoids a warning for duplicate hyperlink targets
-	\clearpage
+\newcommand{\cronofront}{
 	\thispagestyle{empty}
-	\incgraph[a4paper][width=\paperwidth]{#1}
-	\clearpage     
-	\tableofcontents
+	\begin{tikzpicture}
+	\draw[inner sep=0pt] node at (0,0){
+		\includegraphics[width=155mm]{
+			../../source/figures/cronologic.pdf
+		}
+	};
+	\end{tikzpicture}
+
+	\begin{minipage}{0.83\textwidth}
+	\begin{tabular}{l}
+
+	\begin{tikzpicture}
+	\draw[inner sep=0pt] node at (-8.1,1){\fontsize{20}{2}\selectfont
+	\sectionfont 
+	{\textcolor{org}{Ndigo6G-PCIe}}};
+
+	\draw[align=center] node at (-8.3,0){\fontsize{20}{2}\selectfont
+	\sffamily \textcolor{org}{USER GUIDE}};
+	\end{tikzpicture}
+	\\ \vspace{5pt}
+	%{\efbox{
+	%\hspace{-10pt}
+	\includegraphics[width=120mm,height=150mm,keepaspectratio]{../../source/figures/Title5G.pdf}
+	%}}
+	\\
+	\end{tabular}
+	\end{minipage}
+	\begin{minipage}{0\textwidth}
+	\vspace{25pt}
+	\begin{tikzpicture}
+	\draw[inner sep=0pt] node at (0,-5){ 
+	\fontsize{80}{2}\selectfont
+	\sectionfont 
+	\bfseries \textcolor{org}{ \rotatebox{90}{Ndigo6G-PCIe}}};
+	\end{tikzpicture}
+	\end{minipage}
+
+	\vspace{-25pt}
+	\begin{minipage}{0\textwidth}
+	\begin{tikzpicture}
+	\draw[inner sep=0pt] node at (-3,-18){\fontsize{20}{2}\selectfont
+	\sffamily \textcolor{gry}{~\url{www.cronologic.de}}};
+	\end{tikzpicture}
+	\end{minipage}
 	\clearpage
-	\pagenumbering{arabic}
 }
 
 \PassOptionsToPackage{
@@ -136,12 +159,3 @@
 \titleformat{\subsubsection}%
 	{\bfseries\itshape\sffamily\color{cronblue}}%
 	{\thesubsubsection}{1em}{}{}
-
-\newcommand{\filesep}{\textbackslash\allowbreak}  % used in file pathes
-\newcommand{\lb}{\linebreak}
-\newcommand{\cronvar}[2]{\noindent\textsf{\textbf{\textcolor{gry}{#1}~#2}}}%for variable declaration
-\newcommand{\crondef}[1]{\noindent\textsf{\textcolor{gry}{\#{}define} #1}}%for definitions
-\newcommand{\tu}{\textunderscore}%shorter
-\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
-\renewcommand{\arraystretch}{1.6} 
-\parskip 8pt

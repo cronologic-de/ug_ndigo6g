@@ -57,59 +57,39 @@ Output Structure :cpp:`ndigo_packet`
       \endgroup
 
 :cpp:`unsigned char flags`
-   .. code:: c++
 
-      #define NDIGO_PACKET_FLAG_SHORTENED 1
+   :cpp:`#define NDIGO_PACKET_FLAG_SHORTENED 1`
+      If the bit with **weight 1** is set, the packet was truncated because the
+      internal FIFO was full. Less than the requested number of samples have
+      been written due to the full FIFO.
 
-   If the bit with **weight 1** is set, the packet was truncated because the
-   internal FIFO was full. Less than the requested number of samples have
-   been written due to the full FIFO.
+   :cpp:`#define NDIGO_PACKET_FLAG_PACKETS_LOST 2`
+      If the bit with **weight 2** is set, there are lost triggers immediatel
+      preceding this packet due to insufficient DMA buffers. The DMA
+      controller has discarded packets due to full host buffer.
 
-   .. code:: c++
+   :cpp:`#define NDIGO_PACKET_FLAG_OVERFLOW 4`
+      If the bit with **weight 4** is set, the packet contains ADC sample
+      overflows.
 
-      #define NDIGO_PACKET_FLAG_PACKETS_LOST 2
+   :cpp:`#define NDIGO_PACKET_FLAG_TRIGGER_MISSED 8`
+      If the bit with **weight 8** is set, there are lost triggers immediately
+      preceding this packet due to insufficient buffers. The trigger unit
+      has discarded packets due to full FIFO.
 
-   If the bit with **weight 2** is set, there are lost triggers immediatel
-   preceding this packet due to insufficient DMA buffers. The DMA
-   controller has discarded packets due to full host buffer.
+   :cpp:`#define NDIGO_PACKET_FLAG_DMA_FIFO_FULL 16`
+      If the bit with **weight 16** is set, the internal DMA FIFO was full.
+      Triggers only got lost if a subsequent package has the bit with **weight
+      8** set.
 
-   .. code:: c++
+   :cpp:`#define NDIGO_PACKET_FLAG_HOST_BUFFER_FULL 32`
+      If the bit with **weight 32** is set, the host buffer was full. Triggers
+      only got lost if a subsequent package has the bit with **weight 8** set.
 
-      #define NDIGO_PACKET_FLAG_OVERFLOW 4
-
-   If the bit with **weight 4** is set, the packet contains ADC sample
-   overflows.
-
-   .. code:: c++
-
-      #define NDIGO_PACKET_FLAG_TRIGGER_MISSED 8
-
-   If the bit with **weight 8** is set, there are lost triggers immediately
-   preceding this packet due to insufficient buffers. The trigger unit
-   has discarded packets due to full FIFO.
-
-   .. code:: c++
-
-      #define NDIGO_PACKET_FLAG_DMA_FIFO_FULL 16
-
-   If the bit with **weight 16** is set, the internal DMA FIFO was full.
-   Triggers only got lost if a subsequent package has the bit with **weight
-   8** set.
-
-   .. code:: c++
-
-      #define NDIGO_PACKET_FLAG_HOST_BUFFER_FULL 32
-
-   If the bit with **weight 32** is set, the host buffer was full. Triggers
-   only got lost if a subsequent package has the bit with **weight 8** set.
-
-   .. code:: c++
-
-      #define NDIGO_PACKET_FLAG_TDC_NO_EDGE 64
-
-   If the bit with **weight 64** is set, the packet from the TDC does not
-   contain valid data and the timestamp is not corrected. No valid edge
-   was found in TDC packet.
+   :cpp:`#define NDIGO_PACKET_FLAG_TDC_NO_EDGE 64`
+      If the bit with **weight 64** is set, the packet from the TDC does not
+      contain valid data and the timestamp is not corrected. No valid edge
+      was found in TDC packet.
 
 :cpp:`unsigned int length`
    Number of **64-bit** elements (each containing four samples) in the data

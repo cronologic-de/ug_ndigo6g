@@ -122,9 +122,11 @@ Structure :code:`ndigo_init_parameters`
     Initialized by :cpp:`ndigo_get_default_init_parameters()`.
     Must be left unchanged. 
 
-    * :cpp:`#define CRONO_DEVICE_HPTDC 0`
-    * :cpp:`#define CRONO_DEVICE_NDIGO5G 1`
-    * :cpp:`#define CRONO_DEVICE_NDIGO250M 2`
+    .. code:: c++
+
+        #define CRONO_DEVICE_HPTDC 0
+        #define CRONO_DEVICE_NDIGO5G 1
+        #define CRONO_DEVICE_NDIGO250M 2
 
 :cpp:`int_dma read_delay`
     Initialized by :cpp:`ndigo_get_default_init_parameters()`.
@@ -214,6 +216,11 @@ during run time. It is provided by the function
     * :cpp:`3`: The version produced starting in 2011
       labeled |bdq| Rev. 3 |edq|
 
+.. raw:: latex
+
+    \begingroup
+    \RaggedRight
+
 :cpp:`int board_configuration`
     Describes the schematic configuration of the board.
 
@@ -223,7 +230,7 @@ during run time. It is provided by the function
 
       If Bit 3 is :cpp:`0`, the following is valid:
 
-        - Bit 0 determines the ADC resolution.
+        - Bit 0 determines the ADC resolution |br|
           \(:cpp:`0`: 8 |nbws| bit, :cpp:`1`: 10 |nbws| bit).
         - Bit 1 determines whether the TDC-oscillator is present
           |br| (:cpp:`0`: oscillator present, :cpp:`1`: simple trigger).
@@ -250,6 +257,10 @@ during run time. It is provided by the function
         - :cpp:`1011`:  Ndigo5G-10 560pF 10
         - :cpp:`1110`:  Ndigo5G-Sciex 2.2uF 10 Sciex Infiniband, DIFF
         - :cpp:`1111`:  Ndigo5G-Roent = fADC4/10 560pF 10
+
+.. raw:: latex
+
+    \endgroup
 
 
 :cpp:`int adc_resolution`

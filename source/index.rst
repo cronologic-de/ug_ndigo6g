@@ -2,6 +2,10 @@
 Ndigo6G |hyphen| User Guide
 ###########################
 
+.. caution::
+    
+    This User Guide is under active development and therefore, not accurate.
+
 .. toctree::
     :maxdepth: 3
     :numbered:
@@ -16,12 +20,3 @@ Ndigo6G |hyphen| User Guide
 
 
 .. |hyphen| unicode:: U+2012
-
-
-..
-   .. include:: Hardware.rst
-   .. include:: Ndigo_API.rst
-   .. include:: Ndigo_PackForm.rst
-   .. include:: Ndigo_CExp.rst
-   .. include:: Ndigo_Tech.rst
-   .. include:: Ndigo_RevHistory.rst

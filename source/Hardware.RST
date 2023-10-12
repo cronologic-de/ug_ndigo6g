@@ -585,7 +585,7 @@ the gates are delayed in relation to the ADC samples.
 .. _fig dualleveltriglogic:
 .. figure:: figures/dual-level-triggering_logic.*
 
-    Gating block logic for the AND connectino of two triggers.
+    Gating block logic for the AND connection of two triggers.
 
 Config settings can be found in the following code snippet.
 

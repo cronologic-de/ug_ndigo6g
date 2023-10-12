@@ -41,55 +41,13 @@ latex_elements = {
     "pointsize": "12pt",
     "fontpkg" : "",
     "preamble": r"\usepackage[font=fira]{sphinxcronologic}",
-    "fncychap": "",#r"\usepackage[Bjornstrup]{fncychap}",
     "extraclassoptions": r"openany",
-    "maketitle": r"\cronofront{../../source/XTDC4_title.pdf}",
-    "tableofcontents":r"\tableofcontents",
-    "maketitle": r"""
-        \thispagestyle{empty}
-        \begin{tikzpicture}
-        \draw[inner sep=0pt] node at (0,0)   { \includegraphics[width=155mm]{../../source/figures/cronologic.pdf}};
-        \end{tikzpicture}
-
-        \begin{minipage}{0.83\textwidth}
-        \begin{tabular}{l}
-
-        \begin{tikzpicture}
-        \draw[inner sep=0pt] node at (-8.1,1){\fontsize{20}{2}\selectfont
-        \sectionfont 
-        {\textcolor{org}{Ndigo5G-PCIe}}};
-
-        \draw[align=center] node at (-8.3,0){\fontsize{20}{2}\selectfont
-        \sffamily \textcolor{org}{USER GUIDE}};
-        \end{tikzpicture}
-        \\ \vspace{5pt}
-        %{\efbox{
-        %\hspace{-10pt}
-        \includegraphics[width=120mm,height=150mm,keepaspectratio]{../../source/figures/Title5G.pdf}
-        %}}
-        \\
-        \end{tabular}
-        \end{minipage}
-        \begin{minipage}{0\textwidth}
-        \vspace{25pt}
-        \begin{tikzpicture}
-        \draw[inner sep=0pt] node at (0,-5){ 
-        \fontsize{80}{2}\selectfont
-        \ttfamily \textcolor{org}{ \rotatebox{90}{Ndigo5G-PCIe}}};
-        \end{tikzpicture}
-        \end{minipage}
-
-        \vspace{-25pt}
-        \begin{minipage}{0\textwidth}
-        \begin{tikzpicture}
-        \draw[inner sep=0pt] node at (-3,-18){\fontsize{20}{2}\selectfont
-        \sffamily \textcolor{gry}{~\url{www.cronologic.de}}};
-        \end{tikzpicture}
-        \end{minipage}
-        \newpage
-    """,
+    "tableofcontents":r"""\tableofcontents""",
+    "maketitle": r"\cronofront",
     "sphinxsetup": r"""
-        TitleColor={rgb}{0.1686,0.4667,0.6941}
+        TitleColor={rgb}{0.1686,0.4667,0.6941},
+        hmargin={2.5cm,2.5cm},
+        vmargin={2.5cm,2.5cm}
     """
 }
 # latex_toplevel_sectioning = "section" 

@@ -168,7 +168,7 @@ Symbol           Parameter                  Min    Typical Max   Units
 ===============  ========================== ====== ======= ===== ==============
 V :sub:`p-p`     Peak to peak input voltage                0,5   V
 Z :sub:`p`       Input impedance                    50           Ω
-\                Analog offset              −0.25          0.25  V
+                 Analog offset              −0.25          0.25  V
 ===============  ========================== ====== ======= ===== ==============
 
 AC coupled differential analog inputs (S version).
@@ -179,7 +179,7 @@ Symbol            Parameter                  Min   Typical Max   Units
 V :sub:`com`      Input common mode          −4            6     V
 V :sub:`p-p`      Differential input Voltage −125          125   mV
 Z :sub:`p`        Input impedance                  100           Ω
-\                 Analog offset              −0.25         +0.25 V
+                  Analog offset              −0.25         +0.25 V
 ================= ========================== ===== ======= ===== ==============
 
 Analog inputs
