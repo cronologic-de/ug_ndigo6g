@@ -44,7 +44,7 @@ boards and acquire data. For more complex scenarios, using the
 the **cronoTools User Guide** for more information.
 
 .. _Fig 2.1:
-.. figure:: figures/Ndigo_Intercon.svg
+.. figure:: figures/Ndigo_Intercon.png
 
    If several Ndigo boards are connected to work in sync, the boards
    must be connected using a ribbon cable as bus for synchronization and
@@ -71,12 +71,12 @@ signals. Proper termination must be placed at both ends of the bus
 interconnection ribbon cable.
 
 .. _Fig 2.2:
-.. figure:: figures/Ndigo-Slotblende.svg
+.. figure:: figures/Ndigo-Slotblende.png
 
     Input connectors of an **Ndigo6G** board located on the PCI bracket.
 
 .. _Fig 2.3:
-.. figure:: figures/Ndigo_schematic.svg
+.. figure:: figures/Ndigo_schematic.png
 
     **Ndigo6G** board showing inter-board connectors C1 and C2.
 
@@ -85,7 +85,7 @@ Analog Inputs
 ~~~~~~~~~~~~~
 
 .. _Fig 2.4:
-.. figure:: figures/InputCircuit.svg
+.. figure:: figures/InputCircuit.png
 
    Input circuit for each of the four analog channels.
 
@@ -112,12 +112,12 @@ can be set between :math:`\pm` 0.25 |nbws| V.
 
 
 .. _Fig 2.5:
-.. figure:: figures/AnalogOffset_Sine.svg
+.. figure:: figures/AnalogOffset_Sine.png
 
    Users can add analog offset to the input before sampling
 
 .. _Fig 2.6:
-.. figure:: figures/AnalogOffset_Pulse.svg
+.. figure:: figures/AnalogOffset_Pulse.png
 
    Asymmetric signal shifted to increase dynamic range
 
@@ -306,17 +306,17 @@ users, the only difference is that a **3.2** |nbws| **ns** cycle can contain
 4, 8 or 16 samples, depending on mode.
 
 .. _Fig 2.7:
-.. figure:: figures/4ChannelMode.svg
+.. figure:: figures/4ChannelMode.png
 
     ADCs in 4 channel mode ABCD at 1.25 |nbws| Gsps.
 
 .. _Fig 2.8:
-.. figure:: figures/2ChannelMode.svg
+.. figure:: figures/2ChannelMode.png
 
     ADCs in 2 channel mode AD, interleaved for 2.5 |nbws| Gsps.
 
 .. _Fig 2.9:
-.. figure:: figures/1ChannelMode.svg
+.. figure:: figures/1ChannelMode.png
 
     ADCs in 1 channel mode A, B, C or D interleaved for 5 |nbws| Gsps.
 
@@ -340,7 +340,7 @@ much more complex scenarios.
 
 
 .. _Fig 2.10:
-.. figure:: figures/ZeroSupp.svg
+.. figure:: figures/ZeroSupp.png
 
     Simple zero suppression: Only data
     with values above a threshold are written to the PC.
@@ -412,29 +412,29 @@ This procedure reduces PCIe bus load even further
 
 
 .. _Fig 2.11:
-.. figure:: figures/edge-trigger.svg
+.. figure:: figures/edge-trigger.png
 
    Parameters for edge triggering.
 
 .. _Fig 2.12:
-.. figure:: figures/level-trigger.svg
+.. figure:: figures/level-trigger.png
 
    Parameters for level triggering.
 
 
 .. _Fig 2.13:
-.. figure:: figures/4ChannelTriggering.svg
+.. figure:: figures/4ChannelTriggering.png
 
    Triggering in 4 channel mode at 4 samples per clock cycle.
 
 .. _Fig 2.14:
-.. figure:: figures/2ChannelTriggering.svg
+.. figure:: figures/2ChannelTriggering.png
 
    Triggering in 2 channel mode at 8 samples per clock cycle.
 
 
 .. _Fig 2.15:
-.. figure:: figures/1ChannelTriggering.svg
+.. figure:: figures/1ChannelTriggering.png
 
    Triggering in 1 channel mode at 16 samples per clock cycle.
 
@@ -448,21 +448,21 @@ This procedure reduces PCIe bus load even further
 
 
 .. _Fig 2.17:
-.. figure:: figures/DigitalInput.svg
+.. figure:: figures/DigitalInput.png
 
    The digital inputs Trigger, GATE,
    BUS0, BUS1, BUS2 and BUS3 have simpler trigger units.
 
 
 .. _Fig 2.18:
-.. figure:: figures/ExtensionBlock.svg
+.. figure:: figures/ExtensionBlock.png
 
    The extension block combines signals from
    the optional extension board and the sync cable.
 
 
 .. _fig triggermatrix:
-.. figure:: figures/triggermatrix.svg
+.. figure:: figures/triggermatrix.png
 
    Trigger Matrix: The trigger signals of each ADC channel, the trigger
    input, the GATE input or the sync cable can be combined to create a
@@ -474,7 +474,7 @@ Gating Blocks
 ~~~~~~~~~~~~~
 
 .. _Fig 2.20:
-.. figure:: figures/GatingBlocks.svg
+.. figure:: figures/GatingBlocks.png
 
    Gating Blocks: Each gating block can use an arbitrary combination
    of inputs to trigger its state machine. The outputs can be individually
@@ -506,7 +506,7 @@ The parameters of a gating block are set in Structure
 the gate timing and delay unit. The active gate time is marked in green.
 
 .. _Fig 2.21:
-.. figure:: figures/GateUDelay.svg
+.. figure:: figures/GateUDelay.png
 
     Gate and delay functionality: When a trigger occurs, the gate opens after a
     set period of time |bdq| gate start |edq| and closes when it reaches
@@ -576,14 +576,14 @@ feature. Furthermore a precursor of 2 clock cycles is needed, because
 the gates are delayed in relation to the ADC samples.
 
 .. _fig dualleveltrig:
-.. figure:: figures/dual_level_triggering.svg
+.. figure:: figures/dual_level_triggering.png
 
     Measureing data with amplitude between an upper and a lower threshold
     by means of two level triggers.
 
 
 .. _fig dualleveltriglogic:
-.. figure:: figures/dual-level-triggering_logic.svg
+.. figure:: figures/dual-level-triggering_logic.png
 
     Gating block logic for the AND connection of two triggers.
 
@@ -674,7 +674,7 @@ application lists all Ndigo boards found
 \(:numref:`Figure %s<fig SyncCalibTool>`).
 
 .. _fig synccalibtool:
-.. figure:: figures/SyncCalibTool.svg
+.. figure:: figures/SyncCalibTool.png
 
    Main window of the multiple boards sync calibration tool.
 
@@ -743,14 +743,14 @@ Calibration Procedure
    flash PROMs by pressing “Flash All!”.
 
 .. _fig HistoUncalib:
-.. figure:: figures/HistoUncalib.svg
+.. figure:: figures/HistoUncalib.png
 
    Histogram for the case that the delay value for the board is not set
    correctly. Please note that the lower panel might differ from board to
    board, with the |bdq| step |edq| being at a different position.
 
 .. _fig HistoCalib:
-.. figure:: figures/HistoCalib.svg
+.. figure:: figures/HistoCalib.png
 
    Histogram for the case that the delay value of the board is set correctly.
    Please note that the lower panel might differ from board to board, with the
@@ -780,7 +780,7 @@ detailed description of cronoTools and cronoSync can be found in the
 cronoTools user guide.
 
 .. _fig InterconNdigo:
-.. figure:: figures/InterconNdigo.svg
+.. figure:: figures/InterconNdigo.png
 
    Interconnection scheme of a Ndigo5G (left) and a HPTDC8-PCI (right)
    using a Ndigo Extension Board (middle).
@@ -806,7 +806,7 @@ to the one inside a file.
 
 
 .. _fig Firmware:
-.. figure:: figures/Firmware.svg
+.. figure:: figures/Firmware.png
 
    The firmware update and calibration data backup tool as provided with the
    Ndigo device driver.
@@ -837,7 +837,7 @@ invoking the application a window as shown in
 :numref:`Figure %s<fig Calib>` will appear.
 
 .. _fig Calib:
-.. figure:: figures/Calib.svg
+.. figure:: figures/Calib.png
 
    The TDC calibration tool as provided with the Ndigo device driver.
 
