@@ -1,3 +1,7 @@
+.. role:: red
+
+.. role:: cronoblue
+
 Hardware
 ========
 
@@ -9,10 +13,10 @@ The **Ndigo6G** board can be installed in any **x4** (or higher amount
 of lanes) PCIe slot. If the slot electrically supports less than 4 lanes, the
 board will operate at lowerdata throughput rates.
 
-Please ensure proper cooling of the device. The Ndigo5G has an onboard
+Please ensure proper cooling of the device. The **Ndigo6G** has an onboard
 temperature detection. If the ADC chip temperature exceeds
-90 |nbws| C a warning is issued to the device driver. In
-case the temperature is higher than 95 |nbws| C the ADC is
+90°C a warning is issued to the device driver. In
+case the temperature is higher than 95°C the ADC is
 disabled to avoid damage. Using a PCI-slot cooler is in many cases an
 appropriate solution to circumvent problems caused by overheating if the
 board is used inside a PC. The Ndigo-Crate will provide sufficient
@@ -412,7 +416,7 @@ This procedure reduces PCIe bus load even further
 
 
 .. _Fig 2.11:
-.. figure:: figures/edge-trigger.png
+.. figure:: figures/edge-trigger.*
 
    Parameters for edge triggering.
 
@@ -506,7 +510,7 @@ The parameters of a gating block are set in Structure
 the gate timing and delay unit. The active gate time is marked in green.
 
 .. _Fig 2.21:
-.. figure:: figures/GateUDelay.png
+.. figure:: figures/GateUDelay.*
 
     Gate and delay functionality: When a trigger occurs, the gate opens after a
     set period of time |bdq| gate start |edq| and closes when it reaches
@@ -576,18 +580,18 @@ feature. Furthermore a precursor of 2 clock cycles is needed, because
 the gates are delayed in relation to the ADC samples.
 
 .. _fig dualleveltrig:
-.. figure:: figures/dual_level_triggering.png
+.. figure:: figures/dual_level_triggering.*
 
     Measureing data with amplitude between an upper and a lower threshold
     by means of two level triggers.
 
 
 .. _fig dualleveltriglogic:
-.. figure:: figures/dual-level-triggering_logic.png
+.. figure:: figures/dual-level-triggering_logic.*
 
     Gating block logic for the AND connection of two triggers.
 
-Config settings can be found in the following code snippet.
+Config settings can be found in the following code :cronoblue:`snippet`.
 
 .. code-block:: c++
 

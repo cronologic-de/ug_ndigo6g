@@ -3,6 +3,7 @@
 \author{cronologic GmbH \& Co KG}
 
 \RequirePackage{ifthen}
+\RequirePackage{xstring}
 \RequirePackage{kvoptions}
 \SetupKeyvalOptions{family=crono, prefix=crono@}
 
@@ -11,7 +12,10 @@
 \DeclareStringOption[montserrat]{font} % montserrat or fira or default
 \ProcessKeyvalOptions{crono}
 
-\PassOptionsToPackage{usenames, dvipsnames}{xcolor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% colors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
 \RequirePackage{xcolor}
 \definecolor{org}{RGB}{237,120,0}
 \definecolor{gry}{RGB}{157,157,156}
@@ -19,6 +23,15 @@
 \definecolor{cronorange}{RGB}{237, 120, 0}
 \definecolor{cronblue}{RGB}{55, 110, 181}
 \definecolor{cronblack}{RGB}{0,0,0}
+\definecolor{keywordred}{RGB}{142,33,0}
+
+% Colors used by custom sphinx roles
+\renewcommand{\DUrole}[2]{%
+	\IfEqCase{#1}{%
+		{red}{{\color{keywordred} #2}}%
+		{cronoblue}{{\color{cronblue} #2}}%
+	}%
+}
 
 \RequirePackage{graphicx} %for including figures
 \RequirePackage{tabularx}
