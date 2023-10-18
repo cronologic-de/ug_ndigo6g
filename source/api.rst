@@ -1,6 +1,3 @@
-.. role:: cpp(code)
-    :language: c++
-
 Driver Programming API
 ======================
 
@@ -10,7 +7,7 @@ Driver Programming API
     %\RaggedRight
 
 The API is a DLL with C linkage. The functions provided by the DLL are declared
-in |br| :code:`Ndigointerface.h`.
+in :raw-latex:`\\` :code:`Ndigointerface.h`.
 
 
 
@@ -897,13 +894,6 @@ shown as **red**.
 :cpp:`int ndigo_set_led_automode(ndigo device *device, int led)`
     Let the selected LED be controlled by hardware.
 
-
-
-
-
-
-
-
 .. raw:: latex
 
     % RaggedRight ends here
@@ -911,21 +901,3 @@ shown as **red**.
 
 
 
-.. |nbws| unicode:: 0xA0
-    :trim:
-
-.. |hyphen| unicode:: U+2012
-
-.. |endash| unicode:: U+2013
-
-.. |emdash| unicode:: U+2014
-
-.. |bdq| unicode:: U+201C
-    :rtrim:
-
-.. |edq| unicode:: U+201D
-    :ltrim:
-
-.. |br| raw:: latex
-
-    \linebreak

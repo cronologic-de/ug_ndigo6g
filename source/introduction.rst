@@ -37,8 +37,3 @@ Features
 .. figure:: figures/active_cooling.png
 
    Overview of the Ndigo5G equipped with active cooling system.
-
-.. |nbws| unicode:: 0xA0
-   :trim:
-
-.. |hyphen| unicode:: U+2012

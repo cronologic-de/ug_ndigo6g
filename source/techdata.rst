@@ -326,21 +326,3 @@ needed to obtain this permit.
 Before reexporting an **Ndigo5G** or any product containing an Ndigo5G as a
 component please check you local regulations whether an export permit is
 required.
-
-
-
-
-.. |nbws| unicode:: 0xA0
-    :trim:
-
-.. |hyphen| unicode:: U+2012
-
-.. |endash| unicode:: U+2013
-
-.. |emdash| unicode:: U+2014
-
-.. |bdq| unicode:: U+201C
-    :rtrim:
-
-.. |edq| unicode:: U+201D
-    :ltrim:

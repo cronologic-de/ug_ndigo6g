@@ -17,6 +17,3 @@ Ndigo6G |hyphen| User Guide
     example
     techdata
     revhistory
-
-
-.. |hyphen| unicode:: U+2012

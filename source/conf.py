@@ -22,8 +22,10 @@ extensions = [
 autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 3
 
+rst_prolog = open("global.rst", "r").read()
+
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = ["global.rst"]
 
 
 
