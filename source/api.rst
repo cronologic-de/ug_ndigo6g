@@ -7,130 +7,140 @@ Driver Programming API
     %\RaggedRight
 
 The API is a DLL with C linkage. The functions provided by the DLL are declared
-in :raw-latex:`\\` :code:`Ndigointerface.h`.
+in :code:`ndigo6g12_interface.h`.
 
 
 
 Constants
 ---------
 
-:cpp:`#define NDIGO_CHANNEL_COUNT 4`
+:cpp:`#define NDIGO6G12_CHANNEL_COUNT 4`
     The number of analog input channels.
 
-:cpp:`#define NDIGO_GATE_COUNT 4`
+:cpp:`#define NDIGO6G12_GATE_COUNT 4`
     The number of gating blocks.
 
-:cpp:`#define NDIGO_TRIGGER_COUNT 16`
-    The number of triggers. Two per analog input, one per digital input plus some specials.
+:cpp:`#define NDIGO6G12_TRIGGER_COUNT 16`
+    The number of triggers. Two per analog input, one per digital input plus
+    some specials. :red:`TODO check`
 
-:cpp:`#define NDIGO_ADD_TRIGGER_COUNT 6`
+:cpp:`#define NDIGO6G12_ADD_TRIGGER_COUNT 6`
     Additional set of triggers for digital inputs.
-
-
 
 
 Initialization
 --------------
 
-:cpp:`int ndigo_count_devices(int *error_code, char **error message)`
+:cpp:`int ndigo6g12_count_devices(int *error_code, const char **error message)`
     Return the number of boards that are supported by this driver in the system. 
 
-:cpp:`int ndigo_get_default_init_parameters(ndigo_init_parameters  *init)`
-    Get a set of default parameters to feed into **ndigoinit().**
-    This must always be used to initialize the **ndigo_init_parameter** structure.
+:cpp:`int ndigo6g12_get_default_init_parameters(ndigo6g12_init_parameters  *init)`
+    Get a set of default parameters to feed into :cpp:`ndigo6g12_init()`.
+    This must always be used to initialize the :cpp:`ndigo6g12_init_parameter` structure.
 
-:cpp:`ndigo_device *ndigo_init(ndigo_init_parameters *params, int *error_code, char **error_message)`
-    Open and initialize the Ndigo board with the given index.
+:cpp:`ndigo6g12_device *ndigo6g12_init(ndigo6g12_init_parameters *params, int *error_code, char **error_message)`
+    Open and initialize the Ndigo6G12 board with the given index.
     With :cpp:`error_code` and :cpp:`error_message`
     the user must provide pointers where to buffers where error information
     should be written by the driver.
     The buffer for the error message must by at least **80 chars** long. 
-    Params is a structure of type
-    **ndigo_init_parameters** that must be completely initialized. 
+    :cpp:`params` is a structure of type
+    :cpp:`ndigo6g12_init_parameters` that must be completely initialized. 
 
-:cpp:`int ndigo_close(ndigo_device *device)`
+:cpp:`int ndigo6g12_close(ndigo6g12_device *device)`
     Finalize the driver for this device. 
 
 
 
 
-Structure :code:`ndigo_init_parameters`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Structure :code:`ndigo6g12_init_parameters`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :cpp:`int version`
-    Must be set to :cpp:`NDIGO_API_VERSION`
+    Must be set to :cpp:`NDIGO6G12_API_VERSION`
 
 :cpp:`int card_index`
-    The index in the list of **Ndigo5G** boards that should be initialized. 
+    The index in the list of **Ndigo6G** boards that should be initialized. 
     There might be multiple boards in the system that are handled by this
-    driver as reported by :cpp:`ndigo_count_devices`. This index selects one
-    of them.  Boards are enumerated depending on the PCIe slot. The lower the
-    bus number and the lower the slot number the lower the card index. 
+    driver as reported by :cpp:`ndigo6g12_count_devices()`. This index selects
+    one of them.  Boards are enumerated depending on the PCIe slot. The lower
+    the bus number and the lower the slot number, the lower the card index. 
 
 :cpp:`int board_id`
     This 8-bit number is filled into each packet created by the board and is
     useful if data streams of multiple boards will be merged. If only
-    **Ndigo5G** cards are used this number can be set to the card index. If
+    **Ndigo6G12** cards are used this number can be set to the card index. If
     boards of different types that use a compatible data format are used in a
-    system each board should get a unique id.  Can be changed with
-    :cpp:`int ndigosetboardid(ndigodevice *device, int boardid)`. 
+    system each board should get a unique id.
 
-:cpp:`ndigo_bool_t use_external_clock`
-    Use **10** |nbws| **MHz** clock supplied by IPC flat band cable. Must be
-    set for all slaves. 
+:cpp:`int64_t buffer_size[8]`
+    The minimum size of the DMA buffer. If set to :cpp:`0`, the default size of
+    64 |nbws| MiBytes is used. For the Ndigo6G12, only the first entry is used.
 
-:cpp:`ndigo_bool_t drive_external_clock`
-    Drive internal 10MHz clock of this board to IPC flat band cable.
-    Must be set for master. 
+:cpp:`int dma_read_delay`
+    The update delay of the writing pointer after a packet has been send over
+    PCIe. Default value is :cpp:`8192`. Do not change.
 
-:cpp:`ndigo_bool_t is_slave`
-    Data acquisition of this board is controlled by the master board. 
-    :cpp:`int sync_period` Period of the multicard sync pulse. Should be set to
-    **4** (default) when using several Ndigo boards in sync. Ignored for single
-    board setups.  The **Ndigo5G** has four phases relative to the global
-    **10** |nbws| **MHz** clock. 
+:cpp:`int perf_derating`
+    Default :cpp:`0`: 1.6/3.2/6.4 |nbws| Gsps. Do not change.
 
-:cpp:`int sync_delay`
-    Fine tap delay for incoming sync signals. 
+:cpp:`int led_flashing_mode`
+    Controls the LED flashing mode.
+    - :cpp:`0`: off
+    - :cpp:`1`: light all colors once
+    - :cpp:`2`: 
+    - :cpp:`3`: 
 
-:cpp:`ndigo_bool_t force_window_calibration`
-    If :cpp:`true` / :cpp:`1`, valid data window is detected at initialization.
-    Default value is :cpp:`false` / :cpp:`0`: values from flash memory are used
-    in order to set data window to correct position.  
-    
-:cpp:`ndigo_bool_t hptdc_sync_enabled`
-    A **HPTDC** is connected to this board. Enables the clock and sync line
-    from the **Ndigo5G** to the **HPTDC**. 
+:cpp:`int adc_channel_mask`
+    Mask with a bit set for each enabled ADC channel. By default, all channels
+    are enabled. Do not change.
 
-:cpp:`__int64 buffer_size[8]`
-    The minimum size of the DMA buffer.
-    If set to :cpp:`0` the default size of **16** |nbws| **MByte** is used.
-    **Ndigo5G** only uses :cpp:`buffer_size[0]`.
+:cpp:`crono_bool_t no_reference_clock`
+    Default is :cpp:`false`. Do not change.
 
-:cpp:`int buffer_type`
-    Must be set to :cpp:`NDIGO_BUFFER_ALLOCATE`.
+:cpp:`crono_bool_t use_external_clock`
+    Use **10** |nbws| **MHz** clock as a reference. Input is either the
+    internal SMA or external LEMO connector depending on 
+    :cpp:`use_aux2_clock`. Default is :cpp:`false`.
 
-:cpp:`__int64 buffer_address`
-    Ignored. Might be used for future buffer types. 
+:cpp:`crono_bool_t use_aux2_clock`
+    If enabled, use slot bracket LEMO as external reference clock input.
+    Otherwise, the internal SMA connector is used. Has no effect if 
+    :cpp:`use_external_clock` is :cpp:`false`. Default is :cpp:`false`.
 
-:cpp:`int variant`
-    Set to :cpp:`0`. Can be used to activate future device variants such
-    as different base frequencies. 
+:cpp:`crono_bool_t ignore_lane_errors`
+    Default is :cpp:`false`. Do not change.
 
-:cpp:`int device_type`
-    Initialized by :cpp:`ndigo_get_default_init_parameters()`.
-    Must be left unchanged. 
+:cpp:`crono_bool_t ignore_clock_erros`
+    Default is :cpp:`false`. Do not change.
 
-    .. code:: c++
+:cpp:`crono_bool_t adc_full_swing`
+    Default is :cpp:`false`. Do not change.
 
-        #define CRONO_DEVICE_HPTDC 0
-        #define CRONO_DEVICE_NDIGO5G 1
-        #define CRONO_DEVICE_NDIGO250M 2
+:cpp:`int application_type`
+    Select four, two, or one channel, or averaging mode.
+    - :cpp:`0` use currently isntalled type
+    - :cpp:`1` one ADC channel at 6.4 Gsps
+    - :cpp:`2` two ADC channels at 3.2 Gsps
+    - :cpp:`4` four ADC channels at 1.6 Gsps
+    - :cpp:`5` averaging mode
 
-:cpp:`int_dma read_delay`
-    Initialized by :cpp:`ndigo_get_default_init_parameters()`.
-    The write pointer update is delay by this number of **4** |nbws| **ns**
-    clock periods to hide race conditions between software and DMA. 
+:cpp:`crono_bool_t force_bitstream_update`
+    Update partial bitstream even if the application type matches.
+
+:cpp:`int partial_bitstream_size`
+    Size of the partial bitstream.
+
+:cpp:`uint32_t *partial_bitstream`
+    Pointer to the buffer with the partial bitstream data.
+    Can be :cpp:`nullptr` if :cpp:`application_type` matches 
+    :cpp:`application_type` of the currently installed firmware.
+
+:cpp:`const char *firmware_locations`
+    Pointer to a list of paths (separated by :cpp:`;`).
+    Can be :cpp:`nullptr` if :cpp:`application_type` matches 
+    :cpp:`application_type` of the currently installed firmware.
+
 
 
 Status Information
@@ -144,14 +154,13 @@ of board, its configuration, settings and state. The information is split
 according to its scope and the computational requirements to query the
 information from the board. 
 
-:cpp:`int ndigo_get_driver_revision()`
-    Returns the driver version, same format
-    as ndigo_static_info::driver_revision.  This function does not require a
-    present **Ndigo5G** device. 
+:cpp:`int ndigo6g12_get_driver_revision()`
+    Returns the driver version, same format as
+    :cpp:`ndigo_static_info::driver_revision`.
 
 :cpp:`const char* ndigo_get_driver_revision_str()`
     Returns the driver version including SVN build revision as a string. 
-    This function does not require a present **Ndigo5G** device. 
+    with format x.y.z.svn
 
 :cpp:`int ndigo_get_static_info(ndigo_device *device, ndigo_static_info *info)`
     This structure contains information about the board that does not change
@@ -173,146 +182,111 @@ information from the board.
 :cpp:`const char* ndigo_get_last_error_message(ndigo_device *device)`
 
 
-Structure :cpp:`ndigo_static_info`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Structure :cpp:`ndigo6g12_static_info`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This structure contains information about the board that does not change
 during run time. It is provided by the function 
-:cpp:`ndigo_get_static_info`.
+:cpp:`ndigo_get_static_info()`.
 
 :cpp:`int size`
     The number of bytes occupied by the structure.
 
 :cpp:`int version`
-    A version number that is increased when
-    the definition of the structure is changed. The increment can be larger
-    than one to match driver version numbers or similar. Set to **0** for all
-    versions up to first release.  
+    A version number that is increased when the definition of the structure is
+    changed. The increment can be larger than one to match driver version
+    numbers or similar. Set to :cpp:`0` for all versions up to first release.  
 
 :cpp:`int board_id`
     Index of the board as passed to the constructor or set via
 
     :cpp:`int ndigosetboardid(ndigodevice *device, int boardid)`.
 
-:cpp:`int driver_revision`
-    The lower three bytes contain a triple level hierarchy of version
-    numbers, e.g., :cpp:`0x010103` encodes version 1.1.3.
-
-    A change in the first digit generally requires a recompilation of user
-    applications. Change in the second digit denote significant improvements
-    or changes that don’t break compatibility and the third digit changes
-    with minor bugfixes and similar updates.
-
-:cpp:`int firmware_revision`
-    Firmware revision of the FPGA configuration. This increments only when
-    there is a functional change.
+:cpp:`char bitstream_date[NDIGO6G_BITSTREAM_DATE_LEN]`
+    Bitstream creation date
+    
+    DIN EN ISO 8601 string YYYY-MM-DD HH:DD:SS describing the time when the
+    bitstream was created.
 
 :cpp:`int board_revision`
-    Specify the board's revision.
-
-    * :cpp:`0`: Experimental prototypes labeled |bdq| Rev. 1 |edq|
-    * :cpp:`2`: The version produced until 2010 labeled |bdq| Rev. 2 |edq|
-    * :cpp:`3`: The version produced starting in 2011
-      labeled |bdq| Rev. 3 |edq|
-
-.. raw:: latex
-
-    \begingroup
-    \RaggedRight
-
-:cpp:`int board_configuration`
-    Describes the schematic configuration of the board.
-
-    * For board **revision 0**, this always reads :cpp:`0`
-
-    * For board **revision 2**, the following assignments are valid:
-
-      If Bit 3 is :cpp:`0`, the following is valid:
-
-        - Bit 0 determines the ADC resolution |br|
-          \(:cpp:`0`: 8 |nbws| bit, :cpp:`1`: 10 |nbws| bit).
-        - Bit 1 determines whether the TDC-oscillator is present
-          |br| (:cpp:`0`: oscillator present, :cpp:`1`: simple trigger).
-        - Bit 2 determines the input connectors |br| (:cpp:`0`: single ended,
-          :cpp:`1`: differential).
-
-      If Bit 3 is :cpp:`1`, it signifies a special version of the board
-
-        - :cpp:`0xA`: **Ndigo1250M-12**, single ended with a digital trigger
-        - :cpp:`0x8`: **Ndigo5G-8**, single ended with a digital trigger
-
-    * For board **revision 3**, the following assignments are valid:
-
-        - Bit 2 determines the input connectors
-          (:cpp:`0` = single ended, :cpp:`1` = differential).
-
-      The other bits have one of the following patterns [Bits 3...0]:
-
-        - :cpp:`0010`:  Ndigo5G-10 2.5u 10
-        - :cpp:`0011`:  Ndigo5G-8-AQ 2.5u 8
-        - :cpp:`0110`:  Ndigo5G-10-Diff 560pF 10 DIFF
-        - :cpp:`1000`:  Ndigo5G-8 560pF 8+
-        - :cpp:`1010`:  Ndigo1250M-12 2.2uF 12 Sciex DC
-        - :cpp:`1011`:  Ndigo5G-10 560pF 10
-        - :cpp:`1110`:  Ndigo5G-Sciex 2.2uF 10 Sciex Infiniband, DIFF
-        - :cpp:`1111`:  Ndigo5G-Roent = fADC4/10 560pF 10
-
-.. raw:: latex
-
-    \endgroup
-
-
-:cpp:`int adc_resolution`
-    Number of bits of the ADC, set to :cpp:`0` if unknown.
-
-:cpp:`double nominal_sample_rate`
-    Sample rate in once channel mode. Usually :cpp:`5.0e9` (5 |nbws| Gsps).
-
-:cpp:`double analog_bandwidth`
-    :cpp:`3.0e9` (3 |nbws| Ghz).
-
-:cpp:`int chip_id`
-    16 |nbws| bit factory ID of the ADC chip
+    Board revision number.
+    
+    The board revision number can be read from a register. It is a four
+    bit number that changes when the schematic of the board is changed.
+    - :cpp:`0`: Experimental first board Version. Labeled "Rev. 1"
+    - :cpp:`2`: First commercial Version. Labeled "Rev. 2"
 
 :cpp:`int board_serial`
-    Serial number with the year minus 2000 in the highest 8 |nbws| bits of the
-    integer and a running number in the lower 24 |nbws| bits. This number is
-    identical with the one on the label on the board.
+    Serial number
+    
+    With year and running number in 8.24 format. The number is identical
+    to the one printed on the silvery sticker on the board.
 
-.. raw:: latex
+:cpp:`char calibration_date[NDIGO6G_CALIBRATION_DATE_LEN]`
+    Calibration date
+    
+    DIN EN ISO 8601 string YYYY-MM-DD HH:DD describing the time when the
+    card was calibrated.
+    
+:cpp:`int chip_id`;
+    16bit factory ID of the ADC chip.
+    
+    This is the chipID as read from the 16 bit ADC chip ID register.
 
-    \begingroup
-    \bfseries
+:cpp:`crono_bool_t dc_coupled`
+    Shows if the inputs are DC-coupled.
+    Default is :cpp:`false`, i.e., AC-coupled.
 
-:cpp:`int flash_serial_low`
+:cpp:`int driver_build_revision`
+    The build number of the driver according to cronologic's internal
+    versioning system.
 
-.. raw:: latex
+:cpp:`crono_bool_t flash_valid`
+    Calibration data read from flash is valid.
+    
+    If not :cpp:`false`, the driver found valid calibration data in the flash
+    on the board and is using it.
 
-    \endgroup
+:cpp:`int fw_revision`
+    Revision number of the FPGA configuration
 
-:cpp:`int flash_serial_high`
-    64 |nbws| bit manufacturer serial number of the flash chip.
+:cpp:`int fw_type`
+    Type of firmware, always :cpp:`5`, i.e., Ndigo6G-12.
 
-:cpp:`int flash_valid`
-    If not :cpp:`0` the driver found valid calibration data in the flash on the
-    board and is using it.
+:cpp:`int pcb_serial`
+    Trenz serial number
 
-:cpp:`ndigo_bool_t dc_coupled`
-    Returns :cpp:`false` for the standard AC coupled **Ndigo5G**.
-
-:cpp:`int subversion_revision`
+    
+:cpp:`int svn_revision`
+    Subversion revision ID of the FPGA configuration.
+    
     A number to track builds of the firmware in more detail than the
     firmware revision. It changes with every change in the firmware, even
-    if there is no visible effect for the user.
+    if there is no visible effect for the user. The subversion revision
+    number can be read from a register.
+    
+:cpp:`int application_type`
+    Shows the initialized mode
+    :cpp:`0`: keep currently used application type
+    :cpp:`1`: one ADC channel @6.4 Gsps
+    :cpp:`2`: two ADC channels @3.2 Gsps
+    :cpp:`4`: four ADC channels @1.6 Gsps
+    :cpp:`5`: averaging mode
+    See :cpp:`NDIGO6G_APP_TYPE_*` constants
 
-:cpp:`char calibration_date[20]`
-    DIN EN ISO 8601 string (YYYY-MM-DD HH:DD) describing the time when the
-    card was calibrated.
+:cpp:`char config_flash_signature_primary[NDIGO6G_FLASH_SIG_LEN]`
+    Shows the signature of the primary flash
+
+:cpp:`char config_flash_signature_secondary[NDIGO6G_FLASH_SIG_LEN]`
+    Shows the signature of the secondary flash
+
+     
+    
 
 
 
-Structure :cpp:`ndigo_param_info`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Structure :cpp:`ndigo6g12_param_info`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :cpp:`int size`
     The number of bytes occupied by the structure.
@@ -324,80 +298,209 @@ Structure :cpp:`ndigo_param_info`
     first release.
 
 :cpp:`double bandwidth`
-    Analog Bandwidth setting of the ADC. Either :cpp:`3.0e9` (3 |nbws| GHz)
-    or :cpp:`1.0e9` (1 |nbws| GHz) for the 10 bit version.
+    Bandwidth setting of the ADC. :cpp:`4.5` or :cpp:`6.5` (GHz) depending on
+    the configuration.
+
+:cpp:`double resolution`
+    ADC sample resolution. Always :cpp:`12.0` (bit).
 
 :cpp:`double sample_rate`
-    Sample rate. Either :cpp:`1.25e9`, :cpp:`2.5e9`, or :cpp:`5.0e9` depending
-    on the current ADC mode.
-
-    :cpp:`sample_rate * channels = 5.0e9`.
+    Actual ADC sample rate of currently sampled data.
+    Depends on ADC mode: *sample_rate = 6.4 / #channels*
 
 :cpp:`double sample_period`
     The period one sample in the data represents in ps.
+
+:cpp:`double tdc_period`
+    The period one TDC bin in the data represents in ps.
+
+:cpp:`double packet_ts_period`
+    The period one tick of the packet timestamp represents in ps.
+
+:cpp:`uint64_t tdc_packet_timestamp_offset`
+    TDC packets carry the timestamp of the end of packet. To calculate the
+    start, substract the offset.
+
+:cpp:`uint32_t tdc_rollover_period`
+    The time span in TDC bins of one TDC timestamp rolloever period.
+
+:cpp:`adc_sample_delay`
+    The ID the board uses to identify itself in the output data stream. Takes
+    values :cpp:`0` to :cpp:`255`.
 
 :cpp:`int board_id`
     The number the board uses to identify the data source in the output
     data stream.
 
 :cpp:`int channels`
-    Number of channels. 1, 2 or 4 depending on the ADC mode chosen;
-
-    :cpp:`sample_rate * channels = 5.0e9`.
+    Number of channels in the current mode.
 
 :cpp:`int channel_mask`
     Mask with a set bit for each enabled input channel.
 
-:cpp:`int64 total_buffer`
+:cpp:`int tdc_channels`
+    Number of TDC channels in the current mode.
+
+:cpp:`int64_t total_buffer`
     The total amount of the DMA buffer in bytes.
 
 
-Structure :cpp:`ndigo_fast_info`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Structure :cpp:`ndigo6g12_fast_info`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :cpp:`int size`
-    The number of bytes occupied by the structure
+    The number of bytes occupied by the structure.
 
 :cpp:`int version`
     A version number that is increased when the definition of the structure is
     changed.  The increment can be larger than one to match driver version
     numbers or similar. Set to :cpp:`0` for all versions up to first release.
 
-:cpp:`int adc_rpm`
-    Speed of the ADC fan. Reports :cpp:`0` if no fan is present.
+:cpp:`int state`
+    The current state of the device.
+    Should be one of the values :cpp:`NDIGO6G12_DEVICE_STATE_*`
 
-:cpp:`int fpga_rpm`
-    Speed of the FPGA fan. Reports :cpp:`0` if no fan is present.
-
-:cpp:`int alerts`
-    Alert bits from the system monitor.
-
-    * Bit 0: FPGA temperature alert (:math:`>` 85°C)
-    * Bit 1: Internal FPGA voltage out-of-range (:math:`<` 1.01 |nbws| V
-      or :math:`>` 1.08 |nbws| V)
-    * Bit 2: FPGA auxiliary voltage out-of-range. (:math:`<` 2.375 |nbws| V
-      or :math:`>` 2.625 |nbws| V)
-    * Bit 3: FPGA temperature critical (:math:`>` 125°C)
-    * Bit 4: ADC temperature alert (:math:`>` 90°C)
-    * Bit 5: ADC temperature critical (:math:`>` 100°C). ADC will automatically
-      be turned off.
-
-:cpp:`double voltage_aux`
-    Auxiliary FPGA voltage, nominal 2.5 |nbws| V
-
-:cpp:`double voltage_int`
-    Internal FPGA voltage, nominal 1.0 |nbws| V
+:cpp:`int fan_speed`
+    Speed of the FPGA fan in rounds per minute.
+    Reports :cpp:`0`, if no fan is present.
 
 :cpp:`double fpga_temperature`
-    In degree Celsius as measured on die.
+    Temperature of the FPGA in °C.
+
+:cpp:`double fpga_vccint`
+    Internal Voltage of the FPGA :red:`in V? TODO`.
+
+:cpp:`double fpga_vccaux`
+    Auxillary Voltage of the FPGA
+
+:cpp:`double fpga_vccbram`
+    BRAM Voltage of the FPGA :red:`in V? TODO`.
+
+:cpp:`double mgt_0v9`
+    Shows measured Voltage for the mgt_0v9 supply :red:`in V? TODO`.
+
+:cpp:`double mgt_1v2`
+    Shows measured Voltage for the mgt_1v2 supply :red:`in V? TODO`.
+
+:cpp:`double adc_2v5`
+    Shows measured Voltage for the 2v5 supply :red:`in V? TODO`.
+
+:cpp:`double clk_3v3`
+    Shows measured Voltage for the clk_3v3 supply :red:`in V? TODO`.
+
+:cpp:`double adc_3v3`
+    Shows measured Voltage for the adc_3v3 supply :red:`in V? TODO`.
+
+:cpp:`double pcie_3v3`
+    Shows measured Voltage for the pcie_3v3 supply :red:`in V? TODO`.
+
+:cpp:`double opamp_5v2`
+    Shows measured Voltage for the opamp_5v2 supply :red:`in V? TODO`.
+
+:cpp:`double temp4633_1`
+    Shows temperature of temp4633_1 in °C
+
+:cpp:`double temp4633_2`
+    Shows temperature of temp4633_2 in °C
+
+:cpp:`double temp4644`
+    Shows temperature of temp4644 in °C
+
+:cpp:`double tdc1_temp`
+    Temperature of the TDC in °C.
+
+:cpp:`double ev12_cmiref`
+    Shows voltage for ev12_cmiref supply. Measured or calibration target
+    depending on board revision and assembly variant.
+
+:cpp:`double ev12_temp`
+    Temperature of the ADC in °C.
+
+:cpp:`int alerts`
+    Alert bits from temperature sensor and the system monitor.
+    
+    Bit 0 is set if the TDC temperature exceeds 140 °C. In this case the
+    TDC did shut down and the device needs to be reinitialized.
 
 :cpp:`int pcie_link_width`
-    Number of PCIe lanes that the card uses. Should be :cpp:`4` for
-    **Ndigo5G**.
+    Number of PCIe lanes the card uses.
+    Should always be :cpp:`8` for the Ndigo6G12.
+
+:cpp:`int pcie_link_speed`
+    Data rate of the PCIe card.
+    Should always be x :red:`TODO` for the Ndigo6G12.
 
 :cpp:`int pcie_max_payload`
-    Maximum size in bytes for one PCIe transaction, depends on system
-    configuration.
+    Maximum size for a single PCIe transaction in bytes. Depends on
+    system configuration.
+
+:cpp:`crono_bool_t adc_data_pll_locked`
+    ADC data clock is PLL locked
+
+:cpp:`crono_bool_t adc_data_pll_lost_lock`
+    ADC data clock PLL lost lock (Sticky Bit)
+
+:cpp:`int adc_lanes_synced;`
+    Shows the synced ADC lanes
+    each bit corresponds to one lane
+
+:cpp:`int adc_lanes_lost_sync`
+    Shows the ADC lanes that lost sync
+    each bit corresponds to one lane
+
+:cpp:`int adc_lanes_fifo_empty`
+    Shows which ADC lanes have an empty FIFO
+    each bit corresponds to one lane
+
+:cpp:`int adc_lanes_fifo_full`
+    Shows which ADC lanes have a full FIFO
+    each bit corresponds to one lane
+
+:cpp:`int adc_lanes_running`
+    Shows which ADC lanes are running
+    each bit corresponds to one lane
+
+:cpp:`int adc_lanes_sync_timeout`
+    Shows which ADC lanes were unable to sync before a timeout
+    each bit corresponds to one lane
+
+:cpp:`int adc_sync_retry_count`
+    The number of ADC lane synchronization retries
+    Default is set to :cpp:`0`
+
+:cpp:`int adc_sync_strobe_retry_count`
+    The number of ADC strobe synchronization retries
+    Default is set to :cpp:`0`
+
+:cpp:`int adc_sync_delay_count`
+    16 Bit number showing when the last ADC lane synchronization was achieved
+   
+:cpp:`crono_bool_t adc_mgt_power_good`
+    Shows if the supplied mgt power is sufficient
+
+:cpp:`crono_bool_t lmk_pll1_locked`
+    Shows if lmk_pll1 is locked
+
+:cpp:`crono_bool_t lmk_pll2_locked`
+    Shows if lmk_pll2 is locked
+
+:cpp:`crono_bool_t lmk_lost_lock`
+    Shows if lmk lost lock
+
+:cpp:`int lmk_lock_wait_count`
+    Wait count of the lmk
+
+:cpp:`int lmk_ctrl_vcxo`
+    :red:`TODO`
+
+:cpp:`crono_bool_t lmx_locked`
+    lmx locked
+
+:cpp:`crono_bool_t lmx_lost_lock`
+    lmx lost lock
+
+:cpp:`int lmx_lock_wait_count`
+    :red:`TODO`
 
 .. _struct ndigoslowinfo:
 

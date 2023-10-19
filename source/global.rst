@@ -44,3 +44,5 @@
 .. role:: ctypered
 
 .. role:: cronoblue
+
+.. role:: red

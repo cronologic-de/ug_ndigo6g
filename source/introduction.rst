@@ -1,39 +1,47 @@
 Introduction
 ============
 
-The Ndigo5G is a digitizer and transient recorder designed to sample
-relatively shorts pulses in rapid repetition. It produces a stream of
-output packets, each containing data from a single trigger event
-together with a timestamp.
+The Ndigo6G-12 offers up to 6.4 |nbws| Gsps sample rate, 12 |nbws| bits
+resolution and a greatly improved redout rate of 6000 |nbws| MB/s.
 
+The unit is a combined ADC/TDC board for the acquisition of pulses in
+time-of-flight applications. It builds on the established platform of the
+Ndigo5G-10, but takes it to the next level both in performance and flexibility.
 
-By default the Ndigo5G is equipped with a passive cooling system. If
-necessary, the unit might be ordered with an active cooling system on demand
-(see :numref:`Figure %s<Fig 1.1>`).
+The Ndigo6g-12 was specifically designed for time-of-flight applications like
+LIDAR or TOF mass spectrometry. Pulse arrival times can be measured with an
+acurac down to 5 |nbws| ps together with information on the pulse shape, such
+as area or amplitude.
 
+Four channels with 1.6 |nbws| Gsps at 12 |nbws| bit resolution can be acquired
+independently. Alternatively, the four channels can be combined to to two or
+to one channel, increasing either the dynamic range or the sample rate.
 
 Features
 --------
 
--  **10 bit** dynamic range
 
--  Up to **5 Gsps** sample rate (in 1 channel mode) for increased resolution in time domain.
+- **12 bit** dynamic range
 
--  Up to **4 channels** for your individual measurement setups.
+- Up to **6.4 Gsps** sample rate (in 1 channel mode) for increased resolution
+  in time domain.
 
--  Digital input with TDC that can also be used for gating and
-   triggering.
+- Up to **four ADC channels** for your individual measurement setups.
 
--  2\ :sup:`nd` digital input for gating or triggering.
+- **Four TDC channels** with a resolution of **12** |nbws| **ns**.
 
--  PCIe 4x 1.1 with **800** |nbws| **MB/s throughput** for simple and fast data
-   transfer to most PCs.
+- Digital input with TDC that can also be used for gating and triggering.
 
--  Multiple boards can be synchronized via reference clock if more channels are required.
+- 2\ :sup:`nd` digital input for gating or triggering.
 
--  Extension board available with 4 additional digital inputs.
+- PCIe3 x8 1.1 with **XYZ** |nbws| **MB/s throughput** for simple and fast
+  data transfer to most PCs.
 
-.. _Fig 1.1:
-.. figure:: figures/active_cooling.png
+- **Synchronization of up to eight boards** via reference clock if more
+  channels are required.
 
-   Overview of the Ndigo5G equipped with active cooling system.
+- **Unlimited multihit** capabilities.
+
+- Continuous ADC readout rate of approx. **6000** |nbws| MB/s.
+
+- **Zero suppression** reducing PCIe load.

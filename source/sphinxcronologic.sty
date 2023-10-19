@@ -23,15 +23,11 @@
 \definecolor{cronorange}{RGB}{237, 120, 0}
 \definecolor{cronblue}{RGB}{55, 110, 181}
 \definecolor{cronblack}{RGB}{0,0,0}
-\definecolor{keywordred}{RGB}{142,33,0}
-
-% Colors used by custom sphinx roles
-\renewcommand{\DUrole}[2]{%
-	\IfEqCase{#1}{%
-		{red}{{\color{keywordred} #2}}%
-		{cronoblue}{{\color{cronblue} #2}}%
-	}%
-}
+\definecolor{ctypered}{RGB}{142,33,0}
+% \DUrole{color} is expanded to \docutilsrolecolor
+\newcommand{\docutilsrolectypered}[1]{{\color{ctypered} #1}}
+\newcommand{\docutilsrolered}[1]{{\color{red} #1}}
+\newcommand{\docutilsrolecronoblue}[1]{{\color{cronblue} #1}}
 
 \RequirePackage{graphicx} %for including figures
 \RequirePackage{tabularx}
@@ -46,9 +42,9 @@
 \DeclareCaptionFont{cronocaptionlabelfont}{\bfseries\color{gry}}
 \DeclareCaptionFont{cronocaptionfont}{\color{gry}}
 \captionsetup{
-	labelsep=space,
-	labelfont=cronocaptionlabelfont,
-	textfont=cronocaptionfont,
+    labelsep=space,
+    labelfont=cronocaptionlabelfont,
+    textfont=cronocaptionfont,
 }
 
 % \PassOptionsToPackage{footsepline=1pt}{scrlayer-scrpage}
@@ -104,34 +100,34 @@
 
 \ifthenelse{\equal{\crono@font}{fira}}
 {
-	\setmainfont[
-		ItalicFont={FiraSans-Italic.otf},
-		BoldFont={FiraSans-Bold.otf},
-		BoldItalicFont={FiraSans-BoldItalic.otf}
-	]{FiraSans-Regular.otf}
-	\setsansfont[
-		ItalicFont={FiraSans-Italic.otf},
-		BoldFont={FiraSans-Bold.otf},
-		BoldItalicFont={FiraSans-BoldItalic.otf}
-	]{FiraSans-Regular.otf}
-	\setmonofont[
-		ItalicFont={FiraMono-Oblique.otf},
-		BoldFont={FiraMono-Bold.otf},
-		BoldItalicFont={FiraMono-BoldOblique.otf}
-	]{FiraMono-Regular.otf}
-	\newfontfamily\sectionfont
-	[
-		ItalicFont={Montserrat-Italic.otf},
-		BoldFont={Montserrat-Bold.otf},
-		BoldItalicFont={Montserrat-BoldItalic.otf}
-	]
-	{Montserrat-Regular.otf}
-	\setmathfont{Fira Math}[Numbers=Tabular]
+    \setmainfont[
+        ItalicFont={FiraSans-Italic.otf},
+        BoldFont={FiraSans-Bold.otf},
+        BoldItalicFont={FiraSans-BoldItalic.otf}
+    ]{FiraSans-Regular.otf}
+    \setsansfont[
+        ItalicFont={FiraSans-Italic.otf},
+        BoldFont={FiraSans-Bold.otf},
+        BoldItalicFont={FiraSans-BoldItalic.otf}
+    ]{FiraSans-Regular.otf}
+    \setmonofont[
+        ItalicFont={FiraMono-Oblique.otf},
+        BoldFont={FiraMono-Bold.otf},
+        BoldItalicFont={FiraMono-BoldOblique.otf}
+    ]{FiraMono-Regular.otf}
+    \newfontfamily\sectionfont
+    [
+        ItalicFont={Montserrat-Italic.otf},
+        BoldFont={Montserrat-Bold.otf},
+        BoldItalicFont={Montserrat-BoldItalic.otf}
+    ]
+    {Montserrat-Regular.otf}
+    \setmathfont{Fira Math}[Numbers=Tabular]
 }{\relax}
 
 \ifthenelse{\equal{\crono@font}{default}}
 {
-	\newcommand\sectionfont{}
+    \newcommand\sectionfont{}
 }{\relax}
 
 
@@ -139,76 +135,76 @@
  
 %import a title PDF and create TOC
 \newcommand{\cronofront}{
-	\thispagestyle{empty}
-	\begin{tikzpicture}
-	\draw[inner sep=0pt] node at (0,0){
-		\includegraphics[width=155mm]{cronologic.pdf}
-	};
-	\end{tikzpicture}
+    \thispagestyle{empty}
+    \begin{tikzpicture}
+    \draw[inner sep=0pt] node at (0,0){
+        \includegraphics[width=155mm]{cronologic.pdf}
+    };
+    \end{tikzpicture}
 
-	\begin{minipage}{0.83\textwidth}
-	\begin{tabular}{l}
+    \begin{minipage}{0.83\textwidth}
+    \begin{tabular}{l}
 
-	\begin{tikzpicture}
-	\draw[inner sep=0pt] node at (-8.1,1){\fontsize{20}{2}\selectfont
-	\sectionfont 
-	{\textcolor{org}{Ndigo6G-PCIe}}};
+    \begin{tikzpicture}
+    \draw[inner sep=0pt] node at (-8.1,1){\fontsize{20}{2}\selectfont
+    \sectionfont 
+    {\textcolor{org}{Ndigo6G-PCIe}}};
 
-	\draw[align=center] node at (-8.3,0){\fontsize{20}{2}\selectfont
-	\sffamily \textcolor{org}{USER GUIDE}};
-	\end{tikzpicture}
-	\\ \vspace{5pt}
-	%{\efbox{
-	%\hspace{-10pt}
-	\includegraphics[width=120mm,height=150mm,keepaspectratio]{Title5G.pdf}
-	%}}
-	\\
-	\end{tabular}
-	\end{minipage}
-	\begin{minipage}{0\textwidth}
-	\vspace{25pt}
-	\begin{tikzpicture}
-	\draw[inner sep=0pt] node at (0,-5){ 
-	\fontsize{80}{2}\selectfont
-	\sectionfont 
-	\bfseries \textcolor{org}{ \rotatebox{90}{Ndigo6G-PCIe}}};
-	\end{tikzpicture}
-	\end{minipage}
+    \draw[align=center] node at (-8.3,0){\fontsize{20}{2}\selectfont
+    \sffamily \textcolor{org}{USER GUIDE}};
+    \end{tikzpicture}
+    \\ \vspace{5pt}
+    %{\efbox{
+    %\hspace{-10pt}
+    \includegraphics[width=120mm,height=150mm,keepaspectratio]{Title5G.pdf}
+    %}}
+    \\
+    \end{tabular}
+    \end{minipage}
+    \begin{minipage}{0\textwidth}
+    \vspace{25pt}
+    \begin{tikzpicture}
+    \draw[inner sep=0pt] node at (0,-5){ 
+    \fontsize{80}{2}\selectfont
+    \sectionfont 
+    \bfseries \textcolor{org}{ \rotatebox{90}{Ndigo6G-PCIe}}};
+    \end{tikzpicture}
+    \end{minipage}
 
-	\vspace{-25pt}
-	\begin{minipage}{0\textwidth}
-	\begin{tikzpicture}
-	\draw[inner sep=0pt] node at (-3,-18){\fontsize{20}{2}\selectfont
-	\sffamily \textcolor{gry}{~\url{www.cronologic.de}}};
-	\end{tikzpicture}
-	\end{minipage}
-	\clearpage
+    \vspace{-25pt}
+    \begin{minipage}{0\textwidth}
+    \begin{tikzpicture}
+    \draw[inner sep=0pt] node at (-3,-18){\fontsize{20}{2}\selectfont
+    \sffamily \textcolor{gry}{~\url{www.cronologic.de}}};
+    \end{tikzpicture}
+    \end{minipage}
+    \clearpage
 }
 
 \PassOptionsToPackage{
-	colorlinks=true,
-	linkcolor=cronblue,
-	urlcolor=gry
+    colorlinks=true,
+    linkcolor=cronblue,
+    urlcolor=gry
 }{hyperref}
 \RequirePackage{hyperref}
 
 % format headings
 \titleformat{\chapter}%
-	{\LARGE\sffamily\bfseries\color{cronorange}}%
-	{\thechapter}{1em}{}{}
+    {\LARGE\sffamily\bfseries\color{cronorange}}%
+    {\thechapter}{1em}{}{}
 \titlespacing*{\chapter}%
-	{0ex}{0ex}{*2}
+    {0ex}{0ex}{*2}
 
 \titleformat{\section}%
-	{\Large\bfseries\sffamily\color{cronorange}}%
-	{\thesection}{1em}{}{}
+    {\Large\bfseries\sffamily\color{cronorange}}%
+    {\thesection}{1em}{}{}
 
 \titleformat{\subsection}%
-	{\large\bfseries\sffamily\color{cronblue}}%
-	{\thesubsection}{1em}{}{}
+    {\large\bfseries\sffamily\color{cronblue}}%
+    {\thesubsection}{1em}{}{}
 
 \titleformat{\subsubsection}%
-	{\bfseries\itshape\sffamily\color{cronblue}}%
-	{\thesubsubsection}{1em}{}{}
+    {\bfseries\itshape\sffamily\color{cronblue}}%
+    {\thesubsubsection}{1em}{}{}
 
 \setlength{\headheight}{14.5pt}
