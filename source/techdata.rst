@@ -17,8 +17,8 @@ Digitizer Characteristics
 Each board is tested against the values listed in the |bdq| Min |edq| column.
 |bdq| Typical |edq| is the mean value of the first 10 boards produced.
 
-1-Channel-Mode (5Gsps)
-~~~~~~~~~~~~~~~~~~~~~~
+1-Channel-Mode (5 Gsps)
+~~~~~~~~~~~~~~~~~~~~~~~
 
 
 +------------------------+--------------------------+-----+---------+-----+-------+
@@ -29,11 +29,11 @@ Each board is tested against the values listed in the |bdq| Min |edq| column.
 +------------------------+--------------------------+-----+---------+-----+-------+
 | SNR1                   | Signal to Noise Ration   | 47  | 49      |     | dB    |
 +------------------------+--------------------------+-----+---------+-----+-------+
-| SFDR :sub:`incl` 1     | Spurious Free Dynamic    | 55  | 59      |     | dB    |
+| SFDR\ :sub:`incl`\ 1   | Spurious Free Dynamic    | 55  | 59      |     | dB    |
 |                        | Range (including         |     |         |     |       |
 |                        | Harmonics)               |     |         |     |       |
 +------------------------+--------------------------+-----+---------+-----+-------+
-| SFDR :sub:`excl` 1     | Spurious Free Dynamic    | 55  | 60      |     | dB    |
+| SFDR\ :sub:`excl`\ 1   | Spurious Free Dynamic    | 55  | 60      |     | dB    |
 |                        | Range (excluding         |     |         |     |       |
 |                        | Harmonics)               |     |         |     |       |
 +------------------------+--------------------------+-----+---------+-----+-------+
@@ -47,54 +47,54 @@ Each board is tested against the values listed in the |bdq| Min |edq| column.
 2-Channel-Mode (2.5 Gsps)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+--------------------+--------------------------+-----+---------+-----+-------+
-| Symbol             | Parameter                | Min | Typical | Max | Units |
-+====================+==========================+=====+=========+=====+=======+
-| THD2               | Total Harmonic           | 56  |  60     |     | dB    |
-|                    | Distortion               |     |         |     |       |
-+--------------------+--------------------------+-----+---------+-----+-------+
-| SNR2               | Signal to Noise Ration   | 49  | 51      |     | dB    |
-+--------------------+--------------------------+-----+---------+-----+-------+
-| SFDR :sub:`incl` 2 | Spurious Free Dynamic    | 58  | 60      |     | dB    |
-|                    | Range (including         |     |         |     |       |
-|                    | Harmonics)               |     |         |     |       |
-+--------------------+--------------------------+-----+---------+-----+-------+
-| SFDR :sub:`excl` 2 | Spurious Free Dynamic    | 58  | 61      |     | dB    |
-|                    | Range (excluding         |     |         |     |       |
-|                    | Harmonics)               |     |         |     |       |
-+--------------------+--------------------------+-----+---------+-----+-------+
-| SINAD2             | Signal-to-Interference   | 49  | 50      |     | dB    |
-|                    | Ratio including Noise    |     |         |     |       |
-|                    | and Distortion           |     |         |     |       |
-+--------------------+--------------------------+-----+---------+-----+-------+
-| ENOB2              | Effective Number of Bits | 7.8 | 8.1     |     |       |
-+--------------------+--------------------------+-----+---------+-----+-------+
++---------------------+--------------------------+-----+---------+-----+-------+
+| Symbol              | Parameter                | Min | Typical | Max | Units |
++=====================+==========================+=====+=========+=====+=======+
+| THD2                | Total Harmonic           | 56  |  60     |     | dB    |
+|                     | Distortion               |     |         |     |       |
++---------------------+--------------------------+-----+---------+-----+-------+
+| SNR2                | Signal to Noise Ration   | 49  | 51      |     | dB    |
++---------------------+--------------------------+-----+---------+-----+-------+
+| SFDR\ :sub:`incl`\ 2| Spurious Free Dynamic    | 58  | 60      |     | dB    |
+|                     | Range (including         |     |         |     |       |
+|                     | Harmonics)               |     |         |     |       |
++---------------------+--------------------------+-----+---------+-----+-------+
+| SFDR\ :sub:`excl`\ 2| Spurious Free Dynamic    | 58  | 61      |     | dB    |
+|                     | Range (excluding         |     |         |     |       |
+|                     | Harmonics)               |     |         |     |       |
++---------------------+--------------------------+-----+---------+-----+-------+
+| SINAD2              | Signal-to-Interference   | 49  | 50      |     | dB    |
+|                     | Ratio including Noise    |     |         |     |       |
+|                     | and Distortion           |     |         |     |       |
++---------------------+--------------------------+-----+---------+-----+-------+
+| ENOB2               | Effective Number of Bits | 7.8 | 8.1     |     |       |
++---------------------+--------------------------+-----+---------+-----+-------+
 
 4-Channel-Mode (1.25 Gsps)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+---------------------+--------------------------+-----+---------+-----+-------+
-| Symbol              | Parameter                | Min | Typical | Max | Units |
-+=====================+==========================+=====+=========+=====+=======+
-| THD4                | Total Harmonic           | 56  |  60     |     | dB    |
-|                     | Distortion               |     |         |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| SNR4                | Signal to Noise Ration   | 49  | 51      |     | dB    |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| SFDR :sub:`incl` 4  | Spurious Free Dynamic    | 58  | 60      |     | dB    |
-|                     | Range (including         |     |         |     |       |
-|                     | Harmonics)               |     |         |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| SFDR :sub:`excl` 4  | Spurious Free Dynamic    | 68  | 73      |     | dB    |
-|                     | Range (excluding         |     |         |     |       |
-|                     | Harmonics)               |     |         |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| SINAD4              | Signal-to-Interference   | 49  | 51      |     | dB    |
-|                     | Ratio including Noise    |     |         |     |       |
-|                     | and Distortion           |     |         |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| ENOB4               | Effective Number of Bits | 7.9 | 8.1     |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
++----------------------+--------------------------+-----+---------+-----+-------+
+| Symbol               | Parameter                | Min | Typical | Max | Units |
++======================+==========================+=====+=========+=====+=======+
+| THD4                 | Total Harmonic           | 56  |  60     |     | dB    |
+|                      | Distortion               |     |         |     |       |
++----------------------+--------------------------+-----+---------+-----+-------+
+| SNR4                 | Signal to Noise Ration   | 49  | 51      |     | dB    |
++----------------------+--------------------------+-----+---------+-----+-------+
+| SFDR\ :sub:`incl`\ 4 | Spurious Free Dynamic    | 58  | 60      |     | dB    |
+|                      | Range (including         |     |         |     |       |
+|                      | Harmonics)               |     |         |     |       |
++----------------------+--------------------------+-----+---------+-----+-------+
+| SFDR\ :sub:`excl`\ 4 | Spurious Free Dynamic    | 68  | 73      |     | dB    |
+|                      | Range (excluding         |     |         |     |       |
+|                      | Harmonics)               |     |         |     |       |
++----------------------+--------------------------+-----+---------+-----+-------+
+| SINAD4               | Signal-to-Interference   | 49  | 51      |     | dB    |
+|                      | Ratio including Noise    |     |         |     |       |
+|                      | and Distortion           |     |         |     |       |
++----------------------+--------------------------+-----+---------+-----+-------+
+| ENOB4                | Effective Number of Bits | 7.9 | 8.1     |     |       |
++----------------------+--------------------------+-----+---------+-----+-------+
 
 Electrical Characteristics
 --------------------------
@@ -166,8 +166,8 @@ AC coupled single-ended analog inputs (standard version).
 ===============  ========================== ====== ======= ===== ==============
 Symbol           Parameter                  Min    Typical Max   Units
 ===============  ========================== ====== ======= ===== ==============
-V :sub:`p-p`     Peak to peak input voltage                0,5   V
-Z :sub:`p`       Input impedance                    50           Ω
+V\ :sub:`p-p`    Peak to peak input voltage                0,5   V
+Z\ :sub:`p`      Input impedance                    50           Ω
                  Analog offset              −0.25          0.25  V
 ===============  ========================== ====== ======= ===== ==============
 
@@ -176,9 +176,9 @@ AC coupled differential analog inputs (S version).
 ================= ========================== ===== ======= ===== ==============
 Symbol            Parameter                  Min   Typical Max   Units
 ================= ========================== ===== ======= ===== ==============
-V :sub:`com`      Input common mode          −4            6     V
-V :sub:`p-p`      Differential input Voltage −125          125   mV
-Z :sub:`p`        Input impedance                  100           Ω
+V\ :sub:`com`     Input common mode          −4            6     V
+V\ :sub:`p-p`     Differential input Voltage −125          125   mV
+Z\ :sub:`p`       Input impedance                  100           Ω
                   Analog offset              −0.25         +0.25 V
 ================= ========================== ===== ======= ===== ==============
 
@@ -191,11 +191,11 @@ offset bias.
 ======================  ================= ====== ======= ====== ==============
 Symbol                  Parameter         Min    Typical Max    Units
 ======================  ================= ====== ======= ====== ==============
-V :sub:`trig`           Pulse height                     5.0    V
-V :sub:`trigoffset`     DC offset         −1.25          1.25   V
-V :sub:`tdcoffset`      DC offset for TDC −1.25          −0.01  V
-Z :sub:`trig`           Input impedance          50             Ω
-t :sub:`pulse`          pulse width       7              100    ns
+V\ :sub:`trig`          Pulse height                     5.0    V
+V\ :sub:`trigoffset`    DC offset         −1.25          1.25   V
+V\ :sub:`tdcoffset`     DC offset for TDC −1.25          −0.01  V
+Z\ :sub:`trig`          Input impedance          50             Ω
+t\ :sub:`pulse`         pulse width       7              100    ns
 ======================  ================= ====== ======= ====== ==============
 
 

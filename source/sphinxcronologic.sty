@@ -65,32 +65,51 @@
 
 \ifthenelse{\equal{\crono@font}{montserrat}}
 {
-	\setmainfont{Montserrat}
-	\setsansfont{Montserrat}
-	\setmonofont{Anonymous Pro}
-	\newfontfamily\sectionfont{Montserrat}
-	\setmathfont{Latin Modern Math}[Scale=MatchUppercase]
-	\setmathfont[range=up/{latin,Latin,num},Numbers=Lining]{Montserrat}
-	\setmathfont[range=it/{latin,Latin,num},Numbers=Lining]{Montserrat-Italic}
-	\setmathfont[range=bfup/{latin,Latin,num},Numbers=Lining]{Montserrat-Bold}
-	\setmathfont[range=bfit/{latin,Latin,num},Numbers=Lining]%
-		{Montserrat-BoldItalic}
-	\setmathfont[range=up/{greek,Greek}]{KerkisSans}
-	\setmathfont[range=it/{greek,Greek}]{KerkisSans Italic}
-	\setmathfont[range=bfup/{greek,Greek}]{Kerkis Sans Bold}
-	\setmathfont[range=bfit/{greek,Greek}]{Kerkis Sans Bold Italic}
+    \setmainfont[
+        ItalicFont={Montserrat-Italic.otf},
+        BoldFont={Montserrat-Bold.otf},
+        BoldItalicFont={Montserrat-BoldItalic.otf}
+    ]{Montserrat-Regular.otf}
+    \setsansfont[
+        ItalicFont={Montserrat-Italic.otf},
+        BoldFont={Montserrat-Bold.otf},
+        BoldItalicFont={Montserrat-BoldItalic.otf}
+    ]{Montserrat-Regular.otf}
+
+    \setmonofont[
+        ItalicFont={AnonymousPro-Italic.ttf},
+        BoldFont={AnonymousPro-Bold.ttf},
+        BoldItalicFont={AnonymousPro-BoldItalic.ttf}
+    ]{AnonymousPro-Regular.ttf}
+
+    \setmathfont[Scale=MatchUppercase]{Latin Modern Math}
+
+    \setmathfont[range=up/{latin,Latin,num}]{Montserrat-Regular.otf}
+    \setmathfont[range=it/{latin,Latin,num}]{Montserrat-Italic.otf}
+    \setmathfont[range=bfup/{latin,Latin,num}]{Montserrat-Bold}
+    \setmathfont[range=bfit/{latin,Latin,num}]{Montserrat-BoldItalic.otf}
+
+    \setmathfont[range=up/{greek,Greek}]{KerkisSans.otf}
+    \setmathfont[range=it/{greek,Greek}]{KerkisSans-Italic.otf}
+    \setmathfont[range=bfup/{greek,Greek}]{KerkisSans-Bold.otf}
+    \setmathfont[range=bfit/{greek,Greek}]{KerkisSans-BoldItalic.otf}
+
+    \newfontfamily\sectionfont[
+        Numbers=OldStyle,
+        ItalicFont={Montserrat-Italic.otf},
+        BoldFont={Montserrat-Bold.otf},
+        BoldItalicFont={Montserrat-BoldItalic.otf}
+    ]{Montserrat-Regular.otf}
 }{\relax}
 
 \ifthenelse{\equal{\crono@font}{fira}}
 {
 	\setmainfont[
-		Numbers=Tabular,
 		ItalicFont={FiraSans-Italic.otf},
 		BoldFont={FiraSans-Bold.otf},
 		BoldItalicFont={FiraSans-BoldItalic.otf}
 	]{FiraSans-Regular.otf}
 	\setsansfont[
-		Numbers=Tabular,
 		ItalicFont={FiraSans-Italic.otf},
 		BoldFont={FiraSans-Bold.otf},
 		BoldItalicFont={FiraSans-BoldItalic.otf}
@@ -123,9 +142,7 @@
 	\thispagestyle{empty}
 	\begin{tikzpicture}
 	\draw[inner sep=0pt] node at (0,0){
-		\includegraphics[width=155mm]{
-			../../source/figures/cronologic.pdf
-		}
+		\includegraphics[width=155mm]{cronologic.pdf}
 	};
 	\end{tikzpicture}
 
@@ -143,7 +160,7 @@
 	\\ \vspace{5pt}
 	%{\efbox{
 	%\hspace{-10pt}
-	\includegraphics[width=120mm,height=150mm,keepaspectratio]{../../source/figures/Title5G.pdf}
+	\includegraphics[width=120mm,height=150mm,keepaspectratio]{Title5G.pdf}
 	%}}
 	\\
 	\end{tabular}
@@ -193,3 +210,5 @@
 \titleformat{\subsubsection}%
 	{\bfseries\itshape\sffamily\color{cronblue}}%
 	{\thesubsubsection}{1em}{}{}
+
+\setlength{\headheight}{14.5pt}

@@ -62,15 +62,17 @@ Structure :code:`ndigo_init_parameters`
 
 :cpp:`int card_index`
     The index in the list of **Ndigo5G** boards that should be initialized. 
-    There might be multiple boards in the system that are handled by this driver
-    as reported by :cpp:`ndigo_count_devices`. This index selects one of them.
-    Boards are enumerated depending on the PCIe slot. The lower the bus number
-    and the lower the slot number the lower the card index.  int board_id This
-    8-bit number is filled into each packet created by the board and is useful
-    if data streams of multiple boards will be merged. If only **Ndigo5G**
-    cards are used this number can be set to the card index. If boards of
-    different types that use a compatible data format are used in a system
-    each board should get a unique id.  Can be changed with |br|
+    There might be multiple boards in the system that are handled by this
+    driver as reported by :cpp:`ndigo_count_devices`. This index selects one
+    of them.  Boards are enumerated depending on the PCIe slot. The lower the
+    bus number and the lower the slot number the lower the card index. 
+
+:cpp:`int board_id`
+    This 8-bit number is filled into each packet created by the board and is
+    useful if data streams of multiple boards will be merged. If only
+    **Ndigo5G** cards are used this number can be set to the card index. If
+    boards of different types that use a compatible data format are used in a
+    system each board should get a unique id.  Can be changed with
     :cpp:`int ndigosetboardid(ndigodevice *device, int boardid)`. 
 
 :cpp:`ndigo_bool_t use_external_clock`

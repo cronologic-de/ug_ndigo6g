@@ -40,9 +40,9 @@ html_static_path = ['_static']
 latex_engine = 'xelatex'
 latex_elements = {
     "papersize": "a4paper",
-    "pointsize": "12pt",
+    "pointsize": "10pt",
     "fontpkg" : "",
-    "preamble": r"\usepackage[font=fira]{sphinxcronologic}",
+    "preamble": r"\usepackage[font=montserrat]{sphinxcronologic}",
     "extraclassoptions": r"openany",
     "tableofcontents":r"""\tableofcontents""",
     "maketitle": r"\cronofront",
@@ -54,7 +54,8 @@ latex_elements = {
 }
 # latex_toplevel_sectioning = "section" 
 latex_theme = "manual" # manual (book class) or howto (article class)
-latex_additional_files = ["sphinxcronologic.sty", "extraplaceins.sty"]
+latex_additional_files = ["sphinxcronologic.sty", "extraplaceins.sty",
+                          "figures/Title5G.pdf", "figures/cronologic.pdf"]
 
 numfig = True
 numfig_format = {
