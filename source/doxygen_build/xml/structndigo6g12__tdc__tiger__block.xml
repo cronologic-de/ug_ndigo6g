@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structndigo6g12__tdc__tiger__block" kind="struct" language="C++" prot="public">
+    <compoundname>ndigo6g12_tdc_tiger_block</compoundname>
+    <includes refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h" local="no">ndigo6g12_interface_DONT_USE.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a30e2feab564e22d5e568b930dbdef0a6" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_tdc_tiger_block::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <qualifiedname>ndigo6g12_tdc_tiger_block::enable</qualifiedname>
+        <briefdescription>
+<para>activates tiger block </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TiGer output buffer is tristated if not enabled</para>
+<para>default value: false </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1103" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a64748243802880d156a614917b704778" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_tdc_tiger_block::negate</definition>
+        <argsstring></argsstring>
+        <name>negate</name>
+        <qualifiedname>ndigo6g12_tdc_tiger_block::negate</qualifiedname>
+        <briefdescription>
+<para>set pulse polarity </para>
+        </briefdescription>
+        <detaileddescription>
+<para>default value: false </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1108" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a0d56e160615259c83d123cff1d8f3b1f" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_tdc_tiger_block::retrigger</definition>
+        <argsstring></argsstring>
+        <name>retrigger</name>
+        <qualifiedname>ndigo6g12_tdc_tiger_block::retrigger</qualifiedname>
+        <briefdescription>
+<para>enables/disables retrigger setting </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If retriggering is enabled the timer is reset to the value of the start parameter, whenever the input signal is set while waiting to reach the stop time.</para>
+<para>default value: false </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1117" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a4125ee82b82405ac5bca1b1f452b1aa1" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_tdc_tiger_block::pulse_mode</definition>
+        <argsstring></argsstring>
+        <name>pulse_mode</name>
+        <qualifiedname>ndigo6g12_tdc_tiger_block::pulse_mode</qualifiedname>
+        <briefdescription>
+<para>if set output buffer is constantly enabled resulting in larger swing </para>
+        </briefdescription>
+        <detaileddescription>
+<para>default value: false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1123" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a5a0145b0a64d1d5f4cfb2a1df77799fe" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_tdc_tiger_block::enable_output</definition>
+        <argsstring></argsstring>
+        <name>enable_output</name>
+        <qualifiedname>ndigo6g12_tdc_tiger_block::enable_output</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>/brief enables the pin output</para>
+<para>enabled by default, TiGer without pin output wouldn&apos;t do anything with current firmware </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1129" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a50877a856a00485fa009152bf17cab91" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_tdc_tiger_block::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <qualifiedname>ndigo6g12_tdc_tiger_block::start</qualifiedname>
+        <briefdescription>
+<para>Precursor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of 5ns clock cycles before the tiger output goes active relative to the trigger signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1135" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1acdc08d92cf01c459aec5e498cb4f89cc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_tdc_tiger_block::stop</definition>
+        <argsstring></argsstring>
+        <name>stop</name>
+        <qualifiedname>ndigo6g12_tdc_tiger_block::stop</qualifiedname>
+        <briefdescription>
+<para>postcursor </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of 5ns clock cycles before the tiger output goes inactive relative to the trigger signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1141" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_tdc_tiger_block::sources</definition>
+        <argsstring></argsstring>
+        <name>sources</name>
+        <qualifiedname>ndigo6g12_tdc_tiger_block::sources</qualifiedname>
+        <briefdescription>
+<para>mask for choosing the trigger source </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A bit mask with a bit set for all trigger sources that can trigger this channel. Default is NDIGO6G12_TRIGGER_SOURCE_A0. One can choose a from a source <ref refid="group__sourcedefs" kindref="compound">here </ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1148" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1148" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>contains settings of gating block </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="source/ndigo6g12_interface_DONT_USE.h" line="1096" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1096" bodyend="1149"/>
+    <listofallmembers>
+      <member refid="structndigo6g12__tdc__tiger__block_1a30e2feab564e22d5e568b930dbdef0a6" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>enable</name></member>
+      <member refid="structndigo6g12__tdc__tiger__block_1a5a0145b0a64d1d5f4cfb2a1df77799fe" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>enable_output</name></member>
+      <member refid="structndigo6g12__tdc__tiger__block_1a64748243802880d156a614917b704778" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>negate</name></member>
+      <member refid="structndigo6g12__tdc__tiger__block_1a4125ee82b82405ac5bca1b1f452b1aa1" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>pulse_mode</name></member>
+      <member refid="structndigo6g12__tdc__tiger__block_1a0d56e160615259c83d123cff1d8f3b1f" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>retrigger</name></member>
+      <member refid="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>sources</name></member>
+      <member refid="structndigo6g12__tdc__tiger__block_1a50877a856a00485fa009152bf17cab91" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>start</name></member>
+      <member refid="structndigo6g12__tdc__tiger__block_1acdc08d92cf01c459aec5e498cb4f89cc" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

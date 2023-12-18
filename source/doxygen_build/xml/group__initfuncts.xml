@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__initfuncts" kind="group">
+    <compoundname>initfuncts</compoundname>
+    <title>Functions for Initialization</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__initfuncts_1gaf5c6508e6d8adf3838f2f2c74d30e065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ndigo6g12_get_default_init_parameters</definition>
+        <argsstring>(ndigo6g12_init_parameters *init)</argsstring>
+        <name>ndigo6g12_get_default_init_parameters</name>
+        <param>
+          <type><ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref> *</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+<para>Sets up the standard parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a set of default parameters for <ref refid="group__initfuncts_1ga2de181d8f48b36a640182d4118bea07d" kindref="member">ndigo6g12_init</ref> . This must always be used to initialize the <ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref> structure. Return values are listed <ref refid="" kindref="compound">here </ref>.</para>
+<para><variablelist>
+<varlistentry><term>Default Values </term></varlistentry>
+<listitem><para><table rows="18" cols="2"><row>
+<entry thead="no" class="paramname"><para>card_index</para>
+</entry><entry thead="no"><para>0 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>board_id</para>
+</entry><entry thead="no"><para>0 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>buffer_size[0]</para>
+</entry><entry thead="no"><para>64MB </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>buffer_size[1-7]</para>
+</entry><entry thead="no"><para>0 (unused) </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>dma_read_delay</para>
+</entry><entry thead="no"><para>8192 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>perf_derating</para>
+</entry><entry thead="no"><para>0 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>led_flashing_mode</para>
+</entry><entry thead="no"><para>1 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>adc_channel_mask</para>
+</entry><entry thead="no"><para>0x0f // all 4 ADC channels enabled by default </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>no_reference_clock</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>use_external_clock</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>use_aux2_clock</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>ignore_lane_errors</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>ignore_clock_errors</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>adc_full_swing</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>application_type</para>
+</entry><entry thead="no"><para>0 // use currently installed type </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>force_bitstream_update</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>partial_bitstream_size</para>
+</entry><entry thead="no"><para>0 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>partial_bitstream</para>
+</entry><entry thead="no"><para>nullptr </para>
+</entry></row>
+</table>
+</para>
+</listitem>
+</variablelist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*init</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1478" column="1" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1478" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initfuncts_1ga2de181d8f48b36a640182d4118bea07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ndigo6g12_init</definition>
+        <argsstring>(ndigo6g12_device *device, ndigo6g12_init_parameters *params, const char **error_message)</argsstring>
+        <name>ndigo6g12_init</name>
+        <param>
+          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>error_message</declname>
+        </param>
+        <briefdescription>
+<para>Open and initialize the ndigo6G12 board with the given index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>With error_code and error_message the user must provide pointers where error information should be written by the driver. The buffer for the error message must contain at least 80 chars.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to a struct that receives the internal device reference</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is type <ref refid="group__initparamsstruct" kindref="compound">ndigo6g12_init_parameters </ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*error_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is type int</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>**error_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is type char. The buffer for the error message has to contain at least 80 chars. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1490" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1490" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initfuncts_1gaa9c9b2f19ee716d20a1401607ab8629d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ndigo6g12_close</definition>
+        <argsstring>(ndigo6g12_device *device)</argsstring>
+        <name>ndigo6g12_close</name>
+        <param>
+          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>finalize the driver for this device </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return values are listed <ref refid="" kindref="compound">here </ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is type <ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device </ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1499" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1499" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

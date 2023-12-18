@@ -6,6 +6,7 @@ build/*
 !build/latex
 build/latex/*
 !build/latex/ndigo6guserguide.pdf
+source/doxygen_build/html/
 
 # virtual environment folder
 .venv/
@@ -14,4 +15,6 @@ build/latex/*
 __pycache__/
 
 # various
-source/figures/obsolete
+source/figures/obsolete/
+config_and_run_doxyfile.bat
+source/ndigo6g12_interface_DONT_USE.h

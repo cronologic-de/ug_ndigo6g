@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structndigo6g12__configuration" kind="struct" language="C++" prot="public">
+    <compoundname>ndigo6g12_configuration</compoundname>
+    <includes refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h" local="no">ndigo6g12_interface_DONT_USE.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structndigo6g12__configuration_1acee8a3e3aa5d1b93768496c0a6cb7d06" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_configuration::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>ndigo6g12_configuration::size</qualifiedname>
+        <briefdescription>
+<para>size in bytes </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of bytes occupied by the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1196" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a51c098469a6ffc23084aa2b043fe1d7c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_configuration::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>ndigo6g12_configuration::version</qualifiedname>
+        <briefdescription>
+<para>The version number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>that is increased when the definition of the structure is changed. The increment can be larger than one to match driver version numbers or similar. Set to 0 for all versions up to first release. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1203" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a9bdb8697b6a3205aff2e8c611ec1b51a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_configuration::adc_mode</definition>
+        <argsstring></argsstring>
+        <name>adc_mode</name>
+        <qualifiedname>ndigo6g12_configuration::adc_mode</qualifiedname>
+        <briefdescription>
+<para>ADC mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>as defined in <ref refid="group__adcdefs" kindref="compound">NDIGO6G12_ADC_MODE_* </ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1208" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a00c7c6e8948999a4141e20fbaabc4c01" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_configuration::adc_cal_set</definition>
+        <argsstring></argsstring>
+        <name>adc_cal_set</name>
+        <qualifiedname>ndigo6g12_configuration::adc_cal_set</qualifiedname>
+        <briefdescription>
+<para>Select ADC calibration set default: 3 Do not change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1212" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a789ab33de69d524de28180d465a910ae" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ndigo6g12_configuration::analog_offsets[NDIGO6G12_ADC_CHANNEL_COUNT]</definition>
+        <argsstring>[NDIGO6G12_ADC_CHANNEL_COUNT]</argsstring>
+        <name>analog_offsets</name>
+        <qualifiedname>ndigo6g12_configuration::analog_offsets</qualifiedname>
+        <briefdescription>
+<para>analog input configuration 0: ADC A 1: ADC B 2: ADC C 3: ADC D </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1219" column="12" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1ab165fb3d0322052a7ffe671e914461da" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ndigo6g12_configuration::tdc_trigger_offsets[NDIGO6G12_TDC_CHANNEL_COUNT+ NDIGO6G12_FPGA_TDC_CHANNEL_COUNT]</definition>
+        <argsstring>[NDIGO6G12_TDC_CHANNEL_COUNT+NDIGO6G12_FPGA_TDC_CHANNEL_COUNT]</argsstring>
+        <name>tdc_trigger_offsets</name>
+        <qualifiedname>ndigo6g12_configuration::tdc_trigger_offsets</qualifiedname>
+        <briefdescription>
+<para>Set DAC for trigger threshold of TDC inputs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>0 - 3: THS788 A - D
+4 : FGPA TDC A
+5 : FGPA TDC B
+
+Set to a value between -1.65V and +0.85V. This should be close to
+</verbatim> 50% of the height of your pulses on the inputs. Examples for various signaling standards are defined in <ref refid="group__defdcoffset" kindref="compound">#defines for dc_offset </ref>. The inputs are AC coupled. This means that for pulse inputs the absolute voltage is not important. it is rather the relative pulse amplitude that causes the input circuits to switch. dc_offset for an input must be set to the relative switching voltage for the input standard in use. If the pulses are negative, a negative switching threshold must be set and vice versa. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1239" column="12" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1ad63d22fb138d9e009910f5926576300d" prot="public" static="no" mutable="no">
+        <type><ref refid="structndigo6g12__trigger" kindref="compound">ndigo6g12_trigger</ref></type>
+        <definition>ndigo6g12_trigger ndigo6g12_configuration::trigger[NDIGO6G12_TRIGGER_COUNT]</definition>
+        <argsstring>[NDIGO6G12_TRIGGER_COUNT]</argsstring>
+        <name>trigger</name>
+        <qualifiedname>ndigo6g12_configuration::trigger</qualifiedname>
+        <briefdescription>
+<para>Configuration of the external trigger sources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Threshold is ignored for entries 8 and above. The trigger indeces refer to the entry in the trigger array <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12_TRIGGER_* </ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1247" column="23" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a104412ff3cf9bfd0227566d99bb7f2aa" prot="public" static="no" mutable="no">
+        <type><ref refid="structndigo6g12__trigger__block" kindref="compound">ndigo6g12_trigger_block</ref></type>
+        <definition>ndigo6g12_trigger_block ndigo6g12_configuration::trigger_block[NDIGO6G12_ADC_CHANNEL_COUNT]</definition>
+        <argsstring>[NDIGO6G12_ADC_CHANNEL_COUNT]</argsstring>
+        <name>trigger_block</name>
+        <qualifiedname>ndigo6g12_configuration::trigger_block</qualifiedname>
+        <briefdescription>
+<para>Trigger settings of ADC inputs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of input channels depends on TDC mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1252" column="29" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1abe92d2cf4ec62f774a89611cdaa0a785" prot="public" static="no" mutable="no">
+        <type><ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref></type>
+        <definition>ndigo6g12_gating_block ndigo6g12_configuration::gating_block[NDIGO6G12_GATE_COUNT]</definition>
+        <argsstring>[NDIGO6G12_GATE_COUNT]</argsstring>
+        <name>gating_block</name>
+        <qualifiedname>ndigo6g12_configuration::gating_block</qualifiedname>
+        <briefdescription>
+<para>Configuration of gating blocks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gating blocks are used to filter trigger. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1257" column="28" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a6408fe91ecb94d948a00c8e27e8ee246" prot="public" static="no" mutable="no">
+        <type><ref refid="structndigo6g12__tdc__configuration" kindref="compound">ndigo6g12_tdc_configuration</ref></type>
+        <definition>ndigo6g12_tdc_configuration ndigo6g12_configuration::tdc_configuration</definition>
+        <argsstring></argsstring>
+        <name>tdc_configuration</name>
+        <qualifiedname>ndigo6g12_configuration::tdc_configuration</qualifiedname>
+        <briefdescription>
+<para>THS788 related config. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1262" column="33" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1ab35faa07e9e199e2020c5f0ce4374a7b" prot="public" static="no" mutable="no">
+        <type><ref refid="structndigo6g12__averager__configuration" kindref="compound">ndigo6g12_averager_configuration</ref></type>
+        <definition>ndigo6g12_averager_configuration ndigo6g12_configuration::average_configuration</definition>
+        <argsstring></argsstring>
+        <name>average_configuration</name>
+        <qualifiedname>ndigo6g12_configuration::average_configuration</qualifiedname>
+        <briefdescription>
+<para>averager related config </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1267" column="38" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a66965045a9543ac31f453181366c0c4b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_configuration::auto_trigger_period</definition>
+        <argsstring></argsstring>
+        <name>auto_trigger_period</name>
+        <qualifiedname>ndigo6g12_configuration::auto_trigger_period</qualifiedname>
+        <briefdescription>
+<para>component to create a trigger either periodically or randomly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To be exact, there are two parameters M = <ref refid="structndigo6g12__configuration_1a66965045a9543ac31f453181366c0c4b" kindref="member">auto_trigger_period </ref> and N = <ref refid="structndigo6g12__configuration_1a8900604eada2882819af21c868f35db7" kindref="member">auto_trigger_random_exponent </ref> that result in a distance between triggers of</para>
+<para>T = 1 + M + [1...2^N]</para>
+<para>clock cycles.</para>
+<para>0 &lt;= M &lt; 2^32</para>
+<para>0 &lt;= N &lt; 32</para>
+<para>there is no enable or reset as the usage of this trigger can be configured in the channels. Each clock cycle is 5 ns. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1286" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a8900604eada2882819af21c868f35db7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_configuration::auto_trigger_random_exponent</definition>
+        <argsstring></argsstring>
+        <name>auto_trigger_random_exponent</name>
+        <qualifiedname>ndigo6g12_configuration::auto_trigger_random_exponent</qualifiedname>
+        <briefdescription>
+<para>component to create a trigger either periodically or randomly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To be exact, there are two parameters M = <ref refid="structndigo6g12__configuration_1a66965045a9543ac31f453181366c0c4b" kindref="member">auto_trigger_period </ref> and N = <ref refid="structndigo6g12__configuration_1a8900604eada2882819af21c868f35db7" kindref="member">auto_trigger_random_exponent </ref> that result in a distance between triggers of</para>
+<para>T = 1 + M + [1...2^N]</para>
+<para>clock cycles.</para>
+<para>0 &lt;= M &lt; 2^32</para>
+<para>0 &lt;= N &lt; 32</para>
+<para>there is no enable or reset as the usage of this trigger can be configured in the channels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1305" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a5572d9741c5842d741ab6d15ad333933" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_configuration::output_mode</definition>
+        <argsstring></argsstring>
+        <name>output_mode</name>
+        <qualifiedname>ndigo6g12_configuration::output_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1307" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a9570b45a7110a227c4969e9bb560066b" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_configuration::extended_bandwidth</definition>
+        <argsstring></argsstring>
+        <name>extended_bandwidth</name>
+        <qualifiedname>ndigo6g12_configuration::extended_bandwidth</qualifiedname>
+        <briefdescription>
+<para>Extended bandwidth. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set ADC to the extended bandwidth </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1312" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__configuration_1a19fef558a78fdd0f9f6fa23c17766d31" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_configuration::ramp_test_mode</definition>
+        <argsstring></argsstring>
+        <name>ramp_test_mode</name>
+        <qualifiedname>ndigo6g12_configuration::ramp_test_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default: false. Do not change. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1316" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1316" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>ndigo6g12_averager_configuration</label>
+        <link refid="structndigo6g12__averager__configuration"/>
+      </node>
+      <node id="1">
+        <label>ndigo6g12_configuration</label>
+        <link refid="structndigo6g12__configuration"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>trigger</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trigger_block</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>gating_block</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>tdc_configuration</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>average_configuration</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ndigo6g12_gating_block</label>
+        <link refid="structndigo6g12__gating__block"/>
+      </node>
+      <node id="7">
+        <label>ndigo6g12_tdc_channel</label>
+        <link refid="structndigo6g12__tdc__channel"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>gating_block</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ndigo6g12_tdc_configuration</label>
+        <link refid="structndigo6g12__tdc__configuration"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>tiger_block</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>channel</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ndigo6g12_tdc_gating_block</label>
+        <link refid="structndigo6g12__tdc__gating__block"/>
+      </node>
+      <node id="6">
+        <label>ndigo6g12_tdc_tiger_block</label>
+        <link refid="structndigo6g12__tdc__tiger__block"/>
+      </node>
+      <node id="2">
+        <label>ndigo6g12_trigger</label>
+        <link refid="structndigo6g12__trigger"/>
+      </node>
+      <node id="3">
+        <label>ndigo6g12_trigger_block</label>
+        <link refid="structndigo6g12__trigger__block"/>
+      </node>
+    </collaborationgraph>
+    <location file="source/ndigo6g12_interface_DONT_USE.h" line="1191" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1191" bodyend="1317"/>
+    <listofallmembers>
+      <member refid="structndigo6g12__configuration_1a00c7c6e8948999a4141e20fbaabc4c01" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>adc_cal_set</name></member>
+      <member refid="structndigo6g12__configuration_1a9bdb8697b6a3205aff2e8c611ec1b51a" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>adc_mode</name></member>
+      <member refid="structndigo6g12__configuration_1a789ab33de69d524de28180d465a910ae" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>analog_offsets</name></member>
+      <member refid="structndigo6g12__configuration_1a66965045a9543ac31f453181366c0c4b" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>auto_trigger_period</name></member>
+      <member refid="structndigo6g12__configuration_1a8900604eada2882819af21c868f35db7" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>auto_trigger_random_exponent</name></member>
+      <member refid="structndigo6g12__configuration_1ab35faa07e9e199e2020c5f0ce4374a7b" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>average_configuration</name></member>
+      <member refid="structndigo6g12__configuration_1a9570b45a7110a227c4969e9bb560066b" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>extended_bandwidth</name></member>
+      <member refid="structndigo6g12__configuration_1abe92d2cf4ec62f774a89611cdaa0a785" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>gating_block</name></member>
+      <member refid="structndigo6g12__configuration_1a5572d9741c5842d741ab6d15ad333933" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>output_mode</name></member>
+      <member refid="structndigo6g12__configuration_1a19fef558a78fdd0f9f6fa23c17766d31" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>ramp_test_mode</name></member>
+      <member refid="structndigo6g12__configuration_1acee8a3e3aa5d1b93768496c0a6cb7d06" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>size</name></member>
+      <member refid="structndigo6g12__configuration_1a6408fe91ecb94d948a00c8e27e8ee246" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>tdc_configuration</name></member>
+      <member refid="structndigo6g12__configuration_1ab165fb3d0322052a7ffe671e914461da" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>tdc_trigger_offsets</name></member>
+      <member refid="structndigo6g12__configuration_1ad63d22fb138d9e009910f5926576300d" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>trigger</name></member>
+      <member refid="structndigo6g12__configuration_1a104412ff3cf9bfd0227566d99bb7f2aa" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>trigger_block</name></member>
+      <member refid="structndigo6g12__configuration_1a51c098469a6ffc23084aa2b043fe1d7c" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

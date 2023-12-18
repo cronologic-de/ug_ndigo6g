@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__outputdefs" kind="group">
+    <compoundname>outputdefs</compoundname>
+    <title>defines for output_mode</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__outputdefs_1gabb1307aecd252b329c43d44ea8f0e3da" prot="public" static="no">
+        <name>NDIGO6G12_OUTPUT_MODE_RAW</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Return the native range (0 to 4095). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="68" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" prot="public" static="no">
+        <name>NDIGO6G12_OUTPUT_MODE_SIGNED16</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Return is in signed16 integer format in range <formula id="0">$-32768$</formula> to <formula id="1">$32767$</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="72" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__outputdefs_1gaa6d025ad7fb0144b088773dccd4f3ae1" prot="public" static="no">
+        <name>NDIGO6G12_OUTPUT_MODE_SIGNED32</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Output in signed32 integer format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only applicable for averaging mode. Return output in the range <formula id="2">$-2^{31}$</formula> to <formula id="3">$2^{31} - 1$</formula>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="78" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>defines for <ref refid="structndigo6g12__configuration_1a5572d9741c5842d741ab6d15ad333933" kindref="member">ndigo6g12_configuration::output_mode</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

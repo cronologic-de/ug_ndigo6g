@@ -1,7 +1,9 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
 {% extends "!layout.html" %}
-
-{% block extrahead %}
-<link rel="stylesheet" type="text/css" 
-     href="{{ pathto('_static/custom.css', 1) }}" /> 
-
+{% block footer %}
+    <div class="footer">
+        {{ project }} | <b>cronologic</b> GmbH & Co. KG (<a href="https://www.cronologic.de/contact">Imprint</a>)
+        <!-- {{ super() }} -->
+    </div>
 {% endblock %}

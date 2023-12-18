@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__gatedefs" kind="group">
+    <compoundname>gatedefs</compoundname>
+    <title>defines for trigger_gate</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__gatedefs_1ga92f1048ce70f7946e2c1f921c74c4a14" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_GATE_NONE</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="87" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__gatedefs_1ga173f9f253f6482567ad05f2f0d205dab" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_GATE_0</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="88" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__gatedefs_1gac7f7182ce5c25dc595157a18b61dc947" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_GATE_1</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="89" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__gatedefs_1gaa41f51c553b024e948fa4a159516a54d" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_GATE_2</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="90" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__gatedefs_1gae591a05665fd94755dc5cbaacc717563" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_GATE_3</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="91" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Bitmask for configuration of gates. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Bit definitions for trigger sources used in the timing generator and gating configuration. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
