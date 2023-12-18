@@ -119,6 +119,7 @@ Structure :code:`ndigo6g12_init_parameters`
 
 :cpp:`int application_type`
     Select four, two, or one channel, or averaging mode.
+
     - :cpp:`0` use currently isntalled type
     - :cpp:`1` one ADC channel at 6.4 Gsps
     - :cpp:`2` two ADC channels at 3.2 Gsps
@@ -267,11 +268,13 @@ during run time. It is provided by the function
     
 :cpp:`int application_type`
     Shows the initialized mode
-    :cpp:`0`: keep currently used application type
-    :cpp:`1`: one ADC channel @6.4 Gsps
-    :cpp:`2`: two ADC channels @3.2 Gsps
-    :cpp:`4`: four ADC channels @1.6 Gsps
-    :cpp:`5`: averaging mode
+
+    - :cpp:`0`: keep currently used application type
+    - :cpp:`1`: one ADC channel @6.4 Gsps
+    - :cpp:`2`: two ADC channels @3.2 Gsps
+    - :cpp:`4`: four ADC channels @1.6 Gsps
+    - :cpp:`5`: averaging mode
+
     See :cpp:`NDIGO6G_APP_TYPE_*` constants
 
 :cpp:`char config_flash_signature_primary[NDIGO6G_FLASH_SIG_LEN]`
@@ -504,22 +507,23 @@ Structure :cpp:`ndigo6g12_fast_info`
 
 .. _struct ndigoslowinfo:
 
-Structure :cpp:`ndigo_slow_info`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..
+    Structure :cpp:`ndigo_slow_info`
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:cpp:`int size`
-    The number of bytes occupied by the structure.
+    :cpp:`int size`
+        The number of bytes occupied by the structure.
 
-:cpp:`int version`
-    A version number that is increased when the definition of the structure is
-    changed.  The increment can be larger than one to match driver version
-    numbers or similar. Set to :cpp:`0` for all versions up to first release.
+    :cpp:`int version`
+        A version number that is increased when the definition of the structure is
+        changed.  The increment can be larger than one to match driver version
+        numbers or similar. Set to :cpp:`0` for all versions up to first release.
 
-:cpp:`double adc_temperature`
-    ADC temperature in degree Celsius as measured on die.
+    :cpp:`double adc_temperature`
+        ADC temperature in degree Celsius as measured on die.
 
-:cpp:`double board_temperature`
-    Board temperature in degree celsius. 
+    :cpp:`double board_temperature`
+        Board temperature in degree celsius. 
 
 
 Configuration
@@ -527,7 +531,7 @@ Configuration
 
 The device is congfiured with a configuration structure. The user should first
 obtain a structure that contains the default settings of the device read from
-an on board ROM, than modify the structure as needed for the user application
+an on-board ROM, then modify the structure as needed for the user application
 and use the result to configure the device.
 
 .. raw:: latex
@@ -536,11 +540,12 @@ and use the result to configure the device.
     \RaggedRight
     \bfseries
 
-:cpp:`int ndigo_get_default_configuration(ndigo_device *device, ndigo_configuration *config)`
+:cpp:`int ndigo6g12_get_default_configuration(ndigo6g12_device *device, ndigo6g12_configuration *config)`
+    Sets up the standard parameters.
 
 :cpp:`int ndigo_get_current_configuration(ndigo_device *device, ndigo_configuration *config)`
 
-:cpp:`int ndigo_configure(ndigo_device *device, ndigo_configuration *config)`
+:cpp:`int ndigo6g12_configure(ndigo6g12_device *device, ndigo6g12_configuration *config)`
 
 .. raw:: latex
 
@@ -556,8 +561,8 @@ Structure :cpp:`ndigo_configuration`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is the structure containing the configuration information. It is used in
-conjunction with :cpp:`ndigo_get_default_configuration`,
-:cpp:`ndigo_get_current_configuration` and :cpp:`ndigo_configure`.
+conjunction with :cpp:`ndigo6g12_get_default_configuration`,
+:cpp:`ndigo_get_current_configuration` and :cpp:`ndigo6g12_configure`.
 
 It uses internally the structures :cpp:`ndigo_trigger_block` and 
 :cpp:`ndigo_trigger`.
