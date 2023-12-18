@@ -2,6 +2,10 @@
 Ndigo6G |hyphen| User Guide
 ###########################
 
+.. raw:: latex
+
+    \RaggedRight
+
 .. note:: 
 
     This User Guide is under active developement and is subject to change.
