@@ -12,4 +12,6 @@
 
 div.sphinxsidebar {
     font-feature-settings: "tnum" 1;
+    max-height: 95%;
+    overflow-y: auto;
 }

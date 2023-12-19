@@ -9,3 +9,6 @@
  - what are the return values of ndigo6g12_start/stop_capture
    (defstartcap/defstopcap)
  - what is crono_pcie_info?
+ - Figure out how to use automatic documentaion for doxygen groups.
+   Right now, they are ugly, since the automatic output includes the doxygen
+   group name, which is not nice.
