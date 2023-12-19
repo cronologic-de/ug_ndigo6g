@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="820" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="820" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="808" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="808" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -25,7 +25,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface_DONT_USE.h" line="818" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="818" bodyend="822"/>
+    <location file="source/ndigo6g12_interface_DONT_USE.h" line="806" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="806" bodyend="810"/>
     <listofallmembers>
       <member refid="structndigo6g12__read__in_1a1a8dac0a0e46427f07c2feef89e3d656" prot="public" virt="non-virtual"><scope>ndigo6g12_read_in</scope><name>acknowledge_last_read</name></member>
     </listofallmembers>

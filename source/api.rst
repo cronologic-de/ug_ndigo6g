@@ -5,24 +5,21 @@ Constants
 ---------
 
 .. doxygengroup:: constants
-    :content-only:
 
 
 Initialization
 --------------
 
-Functions
-~~~~~~~~~
+.. . Functions
+.. . ~~~~~~~~~
 
 .. doxygengroup:: initfuncts
-    :content-only:
 
-Structure ndigo6g12_init_parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_init_parameters
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_init_parameters
     :members:
-    :members-only:
 
 
 
@@ -34,176 +31,152 @@ of board, it's configuration, settings and state. The information is split
 according to its scope and the computational requirements to query the
 information from the board.
 
-Defines
-~~~~~~~
+.. . Defines
+.. . ~~~~~~~
 
 .. doxygengroup:: devicestates
-    :content-only:
 
 
-Functions
-~~~~~~~~~
+.. . Functions
+.. . ~~~~~~~~~
 
 .. doxygengroup:: statfuncts
-    :content-only:
 
 
-Structure ndigo6g12_static_info
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_static_info
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_static_info
     :members:
-    :members-only:
 
 
-Structure ndigo6g12_param_info
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_param_info
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_param_info
     :members:
-    :members-only:
 
 
-Structure ndigo6g12_fast_info
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_fast_info
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_fast_info
     :members:
-    :members-only:
 
 
 
 Configuration
 -------------
 
-ADC mode defines
-~~~~~~~~~~~~~~~~
+.. . ADC mode defines
+.. . ~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: adcdefs
-    :content-only:
 
-Trigger source defines
-~~~~~~~~~~~~~~~~~~~~~~
+.. . Trigger source defines
+.. . ~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: sourcedefs
-    :content-only:
 
-Gate defines
-~~~~~~~~~~~~
+.. . Gate defines
+.. . ~~~~~~~~~~~~
 
 .. doxygengroup:: gatedefs
-    :content-only:
 
 
-Configuration setup
-~~~~~~~~~~~~~~~~~~~
+.. . Configuration setup
+.. . ~~~~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: conffuncts
-    :content-only:
 
 
-Structure ndigo6g12_configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_configuration
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_configuration
     :members:
-    :members-only:
 
 
-Structure ndigo6g12_trigger
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_trigger
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_trigger
     :members:
-    :members-only:
 
 
-Structure ndigo6g12_trigger_block
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_trigger_block
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_trigger_block
     :members:
-    :members-only:
 
 
-Structure ndigo6g12_gating_block
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_gating_block
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_gating_block
     :members:
-    :members-only:
 
-Structure ndigo6g12_averager_configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_averager_configuration
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_averager_configuration
     :members:
-    :members-only:
 
-Structure ndigo6g12_tdc_configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_tdc_configuration
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_tdc_configuration
     :members:
-    :members-only:
 
-Structure ndigo6g12_tdc_channel
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_tdc_channel
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_tdc_channel
     :members:
-    :members-only:
 
-Structure ndigo6g12_tdc_tiger_block
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. . Structure ndigo6g12_tdc_tiger_block
+.. . ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_tdc_tiger_block
     :members:
-    :members-only:
 
 
-Runtime control
-~~~~~~~~~~~~~~~
+.. . Runtime control
+.. . ~~~~~~~~~~~~~~~
 
 .. doxygengroup:: runtime
-    :content-only:
 
 
 Readout
 -------
 
-Error code defines
-~~~~~~~~~~~~~~~~~~
+.. . Error code defines
+.. . ~~~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: packflags
-    :content-only:
 
 
-Functions
-~~~~~~~~~
+.. Functions
+.. ~~~~~~~~~
 
 .. doxygengroup:: readout
-    :content-only:
 
 .. doxygengroup:: errorfuncts
-    :content-only:
 
 .. doxygengroup:: pciefuncts
-    :content-only:
 
 Input structure ndigo6g12_read_in
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_read_in
     :members:
-    :members-only:
 
 Output structure ndigo6g12_read_out
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_read_out
     :members:
-    :members-only:
 
 
 Other functions

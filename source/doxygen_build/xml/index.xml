@@ -289,7 +289,7 @@
     <member refid="group__devicestates_1gaef3e7fad598e8a4b80362e16f36224df" kind="define"><name>NDIGO6G12_DEVICE_STATE_CLOSED</name></member>
     <member refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h_1ab6bf398aec745217f9046fd72367a8c7" kind="define"><name>NDIGO6G_BITSTREAM_DATE_LEN</name></member>
     <member refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h_1a671d80fcfb0424ca97e2eea82b7eee45" kind="define"><name>NDIGO6G_CALIBRATION_DATE_LEN</name></member>
-    <member refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h_1a2df220fdbdf7c075ef7c4c4976156af6" kind="define"><name>NDIGO6G_FLASH_SIG_LEN</name></member>
+    <member refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h_1a6c789a1aba3557d4c9593c2dcb2c0dcd" kind="define"><name>NDIGO6G_FLAS</name></member>
     <member refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h_1a702b75e99bcfda21dc2a36debac52bf5" kind="define"><name>NDIGO6G_APP_TYPE_AVRG</name></member>
     <member refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h_1a1acaaf253f1fcb9dfd3ba668e2f361ec" kind="define"><name>NDIGO6G_APP_TYPE_4CH</name></member>
     <member refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h_1a2f2eb893ba0fa533b9586fd0e8c2195f" kind="define"><name>NDIGO6G_APP_TYPE_2CH</name></member>

@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1570" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1570" declcolumn="5"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1558" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1558" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__pciefuncts_1gaf409be1f4c7186527daa4b62ff76f194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1578" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1578" declcolumn="5"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1566" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1566" declcolumn="5"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

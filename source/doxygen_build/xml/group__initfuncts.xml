@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1478" column="1" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1478" declcolumn="1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1466" column="1" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1466" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="group__initfuncts_1ga2de181d8f48b36a640182d4118bea07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1490" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1490" declcolumn="5"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1478" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1478" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__initfuncts_1gaa9c9b2f19ee716d20a1401607ab8629d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1499" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1499" declcolumn="5"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1487" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1487" declcolumn="5"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

@@ -5,9 +5,9 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-import os, sys
+import os
 
-sys.path.append(os.path.abspath("../exts/"))
+# sys.path.append(os.path.abspath("../exts/"))
 
 project = 'Ndigo6G-12 API – User Guide'
 copyright = ("Creative Commons Attribution-NoDerivatives"
@@ -23,7 +23,7 @@ extensions = [
     "breathe",
 ]
 
-breathe_projects = {"ndigo6g12_api": os.path.abspath("./doxygen_build/xml/")}
+breathe_projects = {"ndigo6g12_api": os.fspath("./doxygen_build/xml/")}
 breathe_default_project = "ndigo6g12_api"
 breathe_show_include = False
 breathe_show_define_initializer = True

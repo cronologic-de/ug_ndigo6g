@@ -13,7 +13,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="96" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="96" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="99" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga5282acf49f991fd38856930423263310" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_A0</name>
@@ -21,11 +21,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is ADC input A0. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="98" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="98" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="100" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1gaceb5cc7c2d9598057055bf11ae7374a9" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_A1</name>
@@ -33,11 +32,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is ADC input A1. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="100" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="100" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="101" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1gaca7a1750faf3cffdd15d3e972551e3ba" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_B0</name>
@@ -45,7 +43,6 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is ADC input B0. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -57,11 +54,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is ADC input B1. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="104" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="104" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="103" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga8f42753ebcff479824176cb88378dde3" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_C0</name>
@@ -69,11 +65,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is ADC input C0. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="106" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="106" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="104" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1gafb73f82c7f875d694d1cada43cead711" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_C1</name>
@@ -81,11 +76,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is ADC input C1. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="108" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="108" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="105" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga4751c08972815b49297e59ff6b027dcf" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_D0</name>
@@ -93,11 +87,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is ADC input D0. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="110" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="110" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="106" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga3b17643ce2cc98bd5c1f7e6f64d0355c" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_D1</name>
@@ -105,11 +98,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is ADC input D1. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="112" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="112" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="107" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1gad88618b62eccaa028bffb8891299aade" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_TDC0</name>
@@ -117,11 +109,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is TDC0. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="114" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="114" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="108" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga5ded9b09fdcddbb1e25345f50c80ad69" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_TDC1</name>
@@ -129,11 +120,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is TDC1. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="116" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="116" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="109" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1gab58177061c491d9d0b478ecae11dda82" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_TDC2</name>
@@ -141,11 +131,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is TDC2. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="118" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="118" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="110" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga25ec036e958db242f44ffc087ffcb8df" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_TDC3</name>
@@ -153,11 +142,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is TDC3. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="120" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="120" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="111" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name>
@@ -165,11 +153,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is FPGA0. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="122" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="122" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="112" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name>
@@ -177,11 +164,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is FPGA1. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="124" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="124" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="113" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_AUTO</name>
@@ -189,11 +175,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Trigger source is autotrigger module. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="126" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="126" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="114" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__sourcedefs_1ga4d5aa984a0ff1040e17dd6898c23f2ae" prot="public" static="no">
         <name>NDIGO6G12_TRIGGER_SOURCE_ONE</name>
@@ -205,10 +190,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="128" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="128" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="116" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="116" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Bitmasks for <ref refid="structndigo6g12__gating__block_1a6eeb8b65b9dfc59e59adb4d065e1a2ec" kindref="member">ndigo6g12_gating_block::sources</ref>. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
