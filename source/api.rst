@@ -166,14 +166,14 @@ Readout
 
 .. doxygengroup:: pciefuncts
 
-Input structure ndigo6g12_read_in
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Input structure ndigo6g12_read_in
+.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_read_in
     :members:
 
-Output structure ndigo6g12_read_out
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Output structure ndigo6g12_read_out
+.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygenstruct:: ndigo6g12_read_out
     :members:
