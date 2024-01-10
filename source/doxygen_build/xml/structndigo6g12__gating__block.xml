@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structndigo6g12__gating__block" kind="struct" language="C++" prot="public">
+    <compoundname>ndigo6g12_gating_block</compoundname>
+    <includes refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h" local="no">ndigo6g12_interface_DONT_USE.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structndigo6g12__gating__block_1ac379090f42af1aea8856bf991887e275" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_gating_block::negate</definition>
+        <argsstring></argsstring>
+        <name>negate</name>
+        <qualifiedname>ndigo6g12_gating_block::negate</qualifiedname>
+        <briefdescription>
+<para>Invert output polarity. Defaults to false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="956" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="956" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__gating__block_1a1933ca18ed17d6bb2a0a86a144418be4" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_gating_block::retrigger</definition>
+        <argsstring></argsstring>
+        <name>retrigger</name>
+        <qualifiedname>ndigo6g12_gating_block::retrigger</qualifiedname>
+        <briefdescription>
+<para>enable retrigger </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Defaults to false. If retriggering is enabled the timer is reset to the value of the start parameter, whenever the input signal is set while waiting to reach the stop time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="963" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="963" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__gating__block_1a145a4ffa0f8ffb7116d0ff484f65ec0e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_gating_block::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <qualifiedname>ndigo6g12_gating_block::start</qualifiedname>
+        <briefdescription>
+<para>The time from the first input signal seen in the idle state until the gating output is set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In multiples of 5ns. Start needs to be &gt;=0 and &lt;2^16, start must be set to a value &lt;=stop. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="970" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="970" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__gating__block_1ac9b1cf94bd6dc663c386011e5a34624c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_gating_block::stop</definition>
+        <argsstring></argsstring>
+        <name>stop</name>
+        <qualifiedname>ndigo6g12_gating_block::stop</qualifiedname>
+        <briefdescription>
+<para>The number of samples from leaving the idle state until the gating output is reset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If retriggering is enabled the timer is reset to the value of the start parameter whenever the input signal is set while waiting to reach the stop time. In multiples of 5ns. Stop needs to be &gt;=0 and &lt;2^16. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="978" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="978" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__gating__block_1a6eeb8b65b9dfc59e59adb4d065e1a2ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_gating_block::sources</definition>
+        <argsstring></argsstring>
+        <name>sources</name>
+        <qualifiedname>ndigo6g12_gating_block::sources</qualifiedname>
+        <briefdescription>
+<para><ref refid="group__sourcedefs" kindref="compound">bit mask </ref> with a bit set for all trigger sources that can trigger this channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Default is <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_x0 </ref> (0 for index 0 etc). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="985" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="985" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>contains settings of the gating block </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="source/ndigo6g12_interface_DONT_USE.h" line="955" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="955" bodyend="986"/>
+    <listofallmembers>
+      <member refid="structndigo6g12__gating__block_1ac379090f42af1aea8856bf991887e275" prot="public" virt="non-virtual"><scope>ndigo6g12_gating_block</scope><name>negate</name></member>
+      <member refid="structndigo6g12__gating__block_1a1933ca18ed17d6bb2a0a86a144418be4" prot="public" virt="non-virtual"><scope>ndigo6g12_gating_block</scope><name>retrigger</name></member>
+      <member refid="structndigo6g12__gating__block_1a6eeb8b65b9dfc59e59adb4d065e1a2ec" prot="public" virt="non-virtual"><scope>ndigo6g12_gating_block</scope><name>sources</name></member>
+      <member refid="structndigo6g12__gating__block_1a145a4ffa0f8ffb7116d0ff484f65ec0e" prot="public" virt="non-virtual"><scope>ndigo6g12_gating_block</scope><name>start</name></member>
+      <member refid="structndigo6g12__gating__block_1ac9b1cf94bd6dc663c386011e5a34624c" prot="public" virt="non-virtual"><scope>ndigo6g12_gating_block</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

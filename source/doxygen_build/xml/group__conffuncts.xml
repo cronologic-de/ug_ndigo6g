@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__conffuncts" kind="group">
+    <compoundname>conffuncts</compoundname>
+    <title>Functions for Configuration</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__conffuncts_1ga9e89170f5af84611bf26f6a3426d81c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ndigo6g12_get_default_configuration</definition>
+        <argsstring>(ndigo6g12_device *device, ndigo6g12_configuration *config)</argsstring>
+        <name>ndigo6g12_get_default_configuration</name>
+        <param>
+          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Copies the default configuration to the specified config pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Default Values </term></varlistentry>
+<listitem><para><table rows="35" cols="2"><row>
+<entry thead="no" class="paramname"><para>adc_mode</para>
+</entry><entry thead="no"><para>NDIGO6G12_ADC_MODE_A for AppType::AVERAGING and AppType::SINGLE_CHANNEL </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para></para>
+</entry><entry thead="no"><para>NDIGO6G12_ADC_MODE_AD for AppType::DUAL_CHANNEL </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para></para>
+</entry><entry thead="no"><para>NDIGO6G12_ADC_MODE_ABCD for AppType::QUAD_CHANNEL or others </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>adc_cal_set</para>
+</entry><entry thead="no"><para>3 // Calibration data from Flash </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>analog_offsets[i]</para>
+</entry><entry thead="no"><para>0 All channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>tdc_trigger_offsets[0-3]</para>
+</entry><entry thead="no"><para>0 // ADC channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>tdc_trigger_offsets[4]</para>
+</entry><entry thead="no"><para>AUX2_CLK_THRESHOLD // If clk_use_aux2 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger[i].edge</para>
+</entry><entry thead="no"><para>true // All triggers </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger[i].rising</para>
+</entry><entry thead="no"><para>false All triggers </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger[i].threshold</para>
+</entry><entry thead="no"><para>512 // All triggers </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger[i].enable_rand</para>
+</entry><entry thead="no"><para>true // All triggers </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger_block[i].enabled</para>
+</entry><entry thead="no"><para>false // All ADC Channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger_block[i].retrigger</para>
+</entry><entry thead="no"><para>false // All ADC Channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger_block[i].multi_shot_count</para>
+</entry><entry thead="no"><para>1 // All ADC Channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger_block[i].precursor</para>
+</entry><entry thead="no"><para>0 // All ADC Channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger_block[i].length</para>
+</entry><entry thead="no"><para>16 All ADC Channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger_block[i].sources</para>
+</entry><entry thead="no"><para>0 // All ADC Channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger_block[i].gates</para>
+</entry><entry thead="no"><para>0 // All ADC Channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>trigger_block[i].minimum_free_packets</para>
+</entry><entry thead="no"><para>0 // All ADC Channels </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>gating_block[i].negate</para>
+</entry><entry thead="no"><para>false // All Gates </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>gating_block[i].retrigger</para>
+</entry><entry thead="no"><para>false // All Gates </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>gating_block[i].start</para>
+</entry><entry thead="no"><para>0 // All Gates </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>gating_block[i].stop</para>
+</entry><entry thead="no"><para>1000 // All Gates </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>gating_block[i].sources</para>
+</entry><entry thead="no"><para>0x00000000 // All Gates </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>auto_trigger_period</para>
+</entry><entry thead="no"><para>200000 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>auto_trigger_random_exponent</para>
+</entry><entry thead="no"><para>0 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>output_mode</para>
+</entry><entry thead="no"><para>NDIGO6G12_OUTPUT_MODE_SIGNED32 for AppType::AVERAGING, NDIGO6G12_OUTPUT_MODE_SIGNED16 for others </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>extended_bandwidth</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>ramp_test_mode</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>average_configuration.iterations</para>
+</entry><entry thead="no"><para>0 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>average_configuration.timeout_threshold</para>
+</entry><entry thead="no"><para>0 </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>average_configuration.stop_manual</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>average_configuration.stop_on_overflow</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>average_configuration.stop_on_timeout</para>
+</entry><entry thead="no"><para>false </para>
+</entry></row>
+<row>
+<entry thead="no" class="paramname"><para>average_configuration.use_saturation</para>
+</entry><entry thead="no"><para>true </para>
+</entry></row>
+</table>
+</para>
+</listitem>
+</variablelist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1414" column="1" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1414" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__conffuncts_1gafb9ccbef090349b638da935ec00dfcc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ndigo6g12_configure</definition>
+        <argsstring>(ndigo6g12_device *device, ndigo6g12_configuration *config)</argsstring>
+        <name>ndigo6g12_configure</name>
+        <param>
+          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Configures the Ndigo6G-12 device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The config information is copied such that it can be changed after the call to <ref refid="group__conffuncts_1gafb9ccbef090349b638da935ec00dfcc3" kindref="member">ndigo6g12_configure</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1422" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1422" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

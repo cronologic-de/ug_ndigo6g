@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__pciefuncts" kind="group">
+    <compoundname>pciefuncts</compoundname>
+    <title>Functions for PCIe information</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__pciefuncts_1gabd149e97b66fdb38da81b19166843267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ndigo6g12_get_pcie_info</definition>
+        <argsstring>(ndigo6g12_device *device, crono_pcie_info *pcie_info)</argsstring>
+        <name>ndigo6g12_get_pcie_info</name>
+        <param>
+          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>crono_pcie_info *</type>
+          <declname>pcie_info</declname>
+        </param>
+        <briefdescription>
+<para>reads the PCIe info like correctable and uncorrectable </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1558" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1558" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__pciefuncts_1gaf409be1f4c7186527daa4b62ff76f194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ndigo6g12_clear_pcie_errors</definition>
+        <argsstring>(ndigo6g12_device *device, int flags)</argsstring>
+        <name>ndigo6g12_clear_pcie_errors</name>
+        <param>
+          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>clear pci errors, only useful for PCIE problem debuggin flags CRONO_PCIE_CORRECTABLE_FLAG clear all correctable errors CRONO_PCIE_UNCORRECTABLE_FLAG clear all uncorrectable errors </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1566" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1566" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

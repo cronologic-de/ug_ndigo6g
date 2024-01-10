@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__alertdefs" kind="group">
+    <compoundname>alertdefs</compoundname>
+    <title>#defines for alerts</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__alertdefs_1ga4c9668c2c2601a405e950252aec4a4fb" prot="public" static="no">
+        <name>NDIGO6G12_ALERT_FPGA_TEMPERATURE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>FPGA temperature alert (&gt; 70<htmlonly> &amp;#176C </htmlonly>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="581" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__alertdefs_1ga2b525a74b3ee827d0f1bb6317240b376" prot="public" static="no">
+        <name>NDIGO6G12_ALERT_VCCINT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Internal FPGA voltage out of range(&lt; 0.83V or &gt; 0.88V) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="584" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__alertdefs_1ga84628456bd0c7fd77905ba6f9ec7e405" prot="public" static="no">
+        <name>NDIGO6G12_ALERT_VCCAUX</name>
+        <initializer>4</initializer>
+        <briefdescription>
+<para>FPGA auxiliary voltage out of range (&lt; 1.75V or &gt; 1.89V) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="587" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__alertdefs_1ga8a679f157f9440803368779b8f3ffeb3" prot="public" static="no">
+        <name>NDIGO6G12_ALERT_FPGA_TEMPERATURE_CRITICAL</name>
+        <initializer>8</initializer>
+        <briefdescription>
+<para>FPGA temperature critical (&gt; 80<htmlonly> &amp;#176C </htmlonly>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="590" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__alertdefs_1gab20a711e631e29825db5d0b36188cfbd" prot="public" static="no">
+        <name>NDIGO6G12_ALERT_THS_TEMPERATURE_CRITICAL</name>
+        <initializer>16</initializer>
+        <briefdescription>
+<para>THS temperature critical (&gt; 140<htmlonly> &amp;#176C </htmlonly>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="593" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="593" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Alert bits from the system monitor. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

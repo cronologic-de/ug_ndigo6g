@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structndigo6g12__tdc__channel" kind="struct" language="C++" prot="public">
+    <compoundname>ndigo6g12_tdc_channel</compoundname>
+    <includes refid="ndigo6g12__interface___d_o_n_t___u_s_e_8h" local="no">ndigo6g12_interface_DONT_USE.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structndigo6g12__tdc__channel_1ae01b3ead1313fb0cea8f5127b924c732" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_tdc_channel::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <qualifiedname>ndigo6g12_tdc_channel::enable</qualifiedname>
+        <briefdescription>
+<para>Enable TDC channel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1075" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1075" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__channel_1a685e995a43e1b99eeb50e98f247964bd" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_tdc_channel::reserved3</definition>
+        <argsstring></argsstring>
+        <name>reserved3</name>
+        <qualifiedname>ndigo6g12_tdc_channel::reserved3</qualifiedname>
+        <briefdescription>
+<para>for future extension </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1076" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1076" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__channel_1a8d201e1a5b07786f08340fe67180ea7e" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_tdc_channel::reserved2</definition>
+        <argsstring></argsstring>
+        <name>reserved2</name>
+        <qualifiedname>ndigo6g12_tdc_channel::reserved2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1077" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__channel_1a15315e06ef1ed550ec68436c897e23d7" prot="public" static="no" mutable="no">
+        <type>crono_bool_t</type>
+        <definition>crono_bool_t ndigo6g12_tdc_channel::reserved1</definition>
+        <argsstring></argsstring>
+        <name>reserved1</name>
+        <qualifiedname>ndigo6g12_tdc_channel::reserved1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1078" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1078" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__tdc__channel_1a247866e0f1843c867c174eb6700adcd6" prot="public" static="no" mutable="no">
+        <type><ref refid="structndigo6g12__tdc__gating__block" kindref="compound">ndigo6g12_tdc_gating_block</ref></type>
+        <definition>ndigo6g12_tdc_gating_block ndigo6g12_tdc_channel::gating_block</definition>
+        <argsstring></argsstring>
+        <name>gating_block</name>
+        <qualifiedname>ndigo6g12_tdc_channel::gating_block</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1079" column="32" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1079" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Contains TDC channel settings. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ndigo6g12_tdc_channel</label>
+        <link refid="structndigo6g12__tdc__channel"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gating_block</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ndigo6g12_tdc_gating_block</label>
+        <link refid="structndigo6g12__tdc__gating__block"/>
+      </node>
+    </collaborationgraph>
+    <location file="source/ndigo6g12_interface_DONT_USE.h" line="1074" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1074" bodyend="1080"/>
+    <listofallmembers>
+      <member refid="structndigo6g12__tdc__channel_1ae01b3ead1313fb0cea8f5127b924c732" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_channel</scope><name>enable</name></member>
+      <member refid="structndigo6g12__tdc__channel_1a247866e0f1843c867c174eb6700adcd6" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_channel</scope><name>gating_block</name></member>
+      <member refid="structndigo6g12__tdc__channel_1a15315e06ef1ed550ec68436c897e23d7" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_channel</scope><name>reserved1</name></member>
+      <member refid="structndigo6g12__tdc__channel_1a8d201e1a5b07786f08340fe67180ea7e" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_channel</scope><name>reserved2</name></member>
+      <member refid="structndigo6g12__tdc__channel_1a685e995a43e1b99eeb50e98f247964bd" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_channel</scope><name>reserved3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

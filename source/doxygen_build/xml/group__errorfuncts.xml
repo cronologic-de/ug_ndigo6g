@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__errorfuncts" kind="group">
+    <compoundname>errorfuncts</compoundname>
+    <title>Error functions</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__errorfuncts_1ga773491c1db097452e748cc4a414c71df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ndigo6g12_get_last_error_message</definition>
+        <argsstring>(ndigo6g12_device *device)</argsstring>
+        <name>ndigo6g12_get_last_error_message</name>
+        <param>
+          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>gets latest error message of the current device </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return values are listed <ref refid="" kindref="compound">here </ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is type <ref refid="structndigo6g12__device" kindref="compound">Ndigo6G12 device </ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1514" column="1" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1514" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

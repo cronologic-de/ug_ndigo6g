@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__readout" kind="group">
+    <compoundname>readout</compoundname>
+    <title>Readout</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__readout_1gad25dc720dca5598bbfc481133ab67213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ndigo6g12_read</definition>
+        <argsstring>(ndigo6g12_device *device, ndigo6g12_read_in *in, ndigo6g12_read_out *out)</argsstring>
+        <name>ndigo6g12_read</name>
+        <param>
+          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="structndigo6g12__read__in" kindref="compound">ndigo6g12_read_in</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="structndigo6g12__read__out" kindref="compound">ndigo6g12_read_out</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Reads packets from the board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>optionally automatically acknowledges the last read packets. Return values are listed <ref refid="" kindref="compound">here </ref>.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is type <ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is type <ref refid="structndigo6g12__read__in" kindref="compound">ndigo6g12_read_in</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is type <ref refid="structndigo6g12__read__out" kindref="compound">ndigo6g12_read_out</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1499" column="5" declfile="source/ndigo6g12_interface_DONT_USE.h" declline="1499" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
