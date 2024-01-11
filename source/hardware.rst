@@ -6,8 +6,8 @@ Installing the Board
 --------------------
 
 
-The **Ndigo6G** board can be installed in any :math:`\times`\ 8 (or higher amount
-of lanes) PCIe slot. :raw-latex:`{\color{red}` If the slot electrically
+The **Ndigo6G** board can be installed in any :math:`\times`\ 8 (or higher
+amount of lanes) PCIe slot. :raw-latex:`{\color{red}` If the slot electrically
 supports less than eight lanes, the board will operate at lower data throughput
 rates. :raw-latex:`}`
 
@@ -38,7 +38,7 @@ termination PCBs available from cronologic can be used.
 
 The standard device driver of the **Ndigo6G** can be used to read out all
 boards and acquire data. For more complex scenarios, using the
-*cronoSync-library*, which is part of *cronoTools*, is recommended. The
+*cronoSync-library* (which is part of *cronoTools*) is recommended. The
 *cronoSync-library* is provided with the Ndigo device driver. Please refer to
 the **cronoTools User Guide** for more information.
 
@@ -56,7 +56,7 @@ Connectors
 ~~~~~~~~~~
 
 The inputs of the **Ndigo6G** are located on the PCI bracket.
-:numref:`Figure %s<Fig 2.3>` shows the location of the four analog inputs A to
+:numref:`Figure %s<Fig 2.2>` shows the location of the four analog inputs A to
 D, the four digital TDC inputs E to H, and the two digital FPGA inputs 0 and 1.
 Furthermore, two board interconnection connectors can be found at the top edge
 of the **Ndigo6G** board, as displayed in :numref:`Figure %s<Fig 2.3>`. 
@@ -88,7 +88,7 @@ Analog Inputs
    Input circuit for each of the four analog channels.
 
 The analog inputs of the ADC are single ended LEMO00 coax connectors.
-The inputs have a 50 |nbws| Ω  impedance and are AC coupled. The
+The inputs have a 50 |nbws| Ω impedance and are AC coupled. The
 inputs are converted to a differential signal using a balun.
 
 Analog Offsets
