@@ -249,6 +249,21 @@
         </inbodydescription>
         <location file="source/ndigo6g12_interface_DONT_USE.h" line="426" column="13" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="426" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__param__info_1a8fbd9b6e04fd1473ad9c1a9b8e1e50e6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ndigo6g12_param_info::samples_per_clock</definition>
+        <argsstring></argsstring>
+        <name>samples_per_clock</name>
+        <qualifiedname>ndigo6g12_param_info::samples_per_clock</qualifiedname>
+        <briefdescription>
+<para>The number of samples in one clock cycle in the current mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="429" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
     </sectiondef>
     <briefdescription>
 <para>Contains configuration changes. </para>
@@ -256,7 +271,7 @@
     <detaileddescription>
 <para>Structure filled by <ref refid="group__statfuncts_1ga4f3ffc2d11fe59b3e07f1ae21c56791a" kindref="member">ndigo6g12_get_param_info</ref>. This structure contains information that change indirectly due to configuration changes. </para>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface_DONT_USE.h" line="363" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="363" bodyend="427"/>
+    <location file="source/ndigo6g12_interface_DONT_USE.h" line="363" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="363" bodyend="430"/>
     <listofallmembers>
       <member refid="structndigo6g12__param__info_1a59953b1c916c396c4a19f8f8a496ee51" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>adc_sample_delay</name></member>
       <member refid="structndigo6g12__param__info_1a629fe28e9ae7b2e357190342d4910ec4" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>bandwidth</name></member>
@@ -267,6 +282,7 @@
       <member refid="structndigo6g12__param__info_1a66b7140385559e0ea2b8bcf58b6d5992" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>resolution</name></member>
       <member refid="structndigo6g12__param__info_1ae3a55ab02d24f55bc878d7ee900f69e2" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>sample_period</name></member>
       <member refid="structndigo6g12__param__info_1a5301c6c31a160c63f3b95c7d59945774" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>sample_rate</name></member>
+      <member refid="structndigo6g12__param__info_1a8fbd9b6e04fd1473ad9c1a9b8e1e50e6" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>samples_per_clock</name></member>
       <member refid="structndigo6g12__param__info_1ac26d3b1289e663c5a2280654225ed974" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>size</name></member>
       <member refid="structndigo6g12__param__info_1a279a06c410c857ce3d70a9b4ee2dbbea" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>tdc_channels</name></member>
       <member refid="structndigo6g12__param__info_1a778b76de94ea8cb486e4a740e7252f6d" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>tdc_packet_timestamp_offset</name></member>

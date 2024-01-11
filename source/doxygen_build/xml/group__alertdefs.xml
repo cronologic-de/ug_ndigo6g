@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="581" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="581" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="589" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="589" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__alertdefs_1ga2b525a74b3ee827d0f1bb6317240b376" prot="public" static="no">
         <name>NDIGO6G12_ALERT_VCCINT</name>
@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="584" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="584" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="592" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="592" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__alertdefs_1ga84628456bd0c7fd77905ba6f9ec7e405" prot="public" static="no">
         <name>NDIGO6G12_ALERT_VCCAUX</name>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="587" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="587" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="595" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="595" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__alertdefs_1ga8a679f157f9440803368779b8f3ffeb3" prot="public" static="no">
         <name>NDIGO6G12_ALERT_FPGA_TEMPERATURE_CRITICAL</name>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="590" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="590" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="598" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="598" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__alertdefs_1gab20a711e631e29825db5d0b36188cfbd" prot="public" static="no">
         <name>NDIGO6G12_ALERT_THS_TEMPERATURE_CRITICAL</name>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="593" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="593" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="601" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="601" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

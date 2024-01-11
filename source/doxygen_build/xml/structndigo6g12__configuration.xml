@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1184" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1184" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1206" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a51c098469a6ffc23084aa2b043fe1d7c" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1191" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1191" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1213" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a9bdb8697b6a3205aff2e8c611ec1b51a" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1196" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1196" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1218" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1218" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a00c7c6e8948999a4141e20fbaabc4c01" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1200" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1200" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1222" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a789ab33de69d524de28180d465a910ae" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1207" column="12" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1207" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1229" column="12" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1229" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1ab165fb3d0322052a7ffe671e914461da" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -101,7 +101,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1227" column="12" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1228" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1249" column="12" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1250" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1ad63d22fb138d9e009910f5926576300d" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__trigger" kindref="compound">ndigo6g12_trigger</ref></type>
@@ -117,7 +117,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1235" column="23" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1235" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1257" column="23" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a104412ff3cf9bfd0227566d99bb7f2aa" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__trigger__block" kindref="compound">ndigo6g12_trigger_block</ref></type>
@@ -133,7 +133,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1240" column="29" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1240" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1262" column="29" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1262" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1abe92d2cf4ec62f774a89611cdaa0a785" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref></type>
@@ -149,7 +149,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1245" column="28" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1245" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1267" column="28" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1267" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a6408fe91ecb94d948a00c8e27e8ee246" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__tdc__configuration" kindref="compound">ndigo6g12_tdc_configuration</ref></type>
@@ -164,7 +164,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1250" column="33" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1250" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1272" column="33" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1272" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1ab35faa07e9e199e2020c5f0ce4374a7b" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__averager__configuration" kindref="compound">ndigo6g12_averager_configuration</ref></type>
@@ -179,7 +179,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1255" column="38" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1255" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1277" column="38" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1277" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a66965045a9543ac31f453181366c0c4b" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -200,7 +200,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1274" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1274" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1296" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1296" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a8900604eada2882819af21c868f35db7" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -221,7 +221,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1293" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1293" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1315" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a5572d9741c5842d741ab6d15ad333933" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -235,7 +235,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1295" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1295" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1317" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1317" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a9570b45a7110a227c4969e9bb560066b" prot="public" static="no" mutable="no">
         <type>crono_bool_t</type>
@@ -251,7 +251,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1300" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1300" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1322" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1322" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a19fef558a78fdd0f9f6fa23c17766d31" prot="public" static="no" mutable="no">
         <type>crono_bool_t</type>
@@ -266,7 +266,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1304" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1304" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="1326" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1326" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -335,7 +335,7 @@ Set to a value between -1.65V and +0.85V. This should be close to
         <link refid="structndigo6g12__trigger__block"/>
       </node>
     </collaborationgraph>
-    <location file="source/ndigo6g12_interface_DONT_USE.h" line="1179" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1179" bodyend="1305"/>
+    <location file="source/ndigo6g12_interface_DONT_USE.h" line="1201" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="1201" bodyend="1327"/>
     <listofallmembers>
       <member refid="structndigo6g12__configuration_1a00c7c6e8948999a4141e20fbaabc4c01" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>adc_cal_set</name></member>
       <member refid="structndigo6g12__configuration_1a9bdb8697b6a3205aff2e8c611ec1b51a" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>adc_mode</name></member>

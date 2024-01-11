@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="893" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="893" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="910" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="910" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1aedb27bbae9e92b4fd5ae828492690335" prot="public" static="no" mutable="no">
         <type>crono_bool_t</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="901" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="901" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="918" column="18" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="918" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a072bc3d1b95e702845f6a05fda8b4ba8" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="906" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="906" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="923" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="923" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1ae63d6b4996b956dec5dc1a25ead11c04" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="911" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="911" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="928" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="928" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a367787f6e4895a8835f1f6abdd9bbbca" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -72,14 +72,14 @@
         <name>length</name>
         <qualifiedname>ndigo6g12_trigger_block::length</qualifiedname>
         <briefdescription>
-<para>Length in multiples of 5ns. </para>
+<para>Length in multiples of 5ns. Maximum value is NDIGO6G12_FIFO_DEPTH minus precursors. </para>
         </briefdescription>
         <detaileddescription>
 <para>The total amount of data that is recorded in addition to the trigger window. Precursor determines how many of these are ahead of the trigger and how many are appended after the trigger. In edge trigger mode the trigger window always is 5ns wide, in level trigger mode it is as long as the trigger condition is fulfilled. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="920" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="920" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="938" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="938" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1aaf3719cf4543964ca19f774c94bd8bb9" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="927" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="927" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="945" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="945" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a82c9a7f378da8cdf154acfdd82ae5039" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="935" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="935" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="953" column="9" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="953" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a33d6847f6ba765dc4aaf761a3cc43c86" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface_DONT_USE.h" line="950" column="12" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="950" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface_DONT_USE.h" line="968" column="12" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="968" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -135,7 +135,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface_DONT_USE.h" line="892" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="892" bodyend="951"/>
+    <location file="source/ndigo6g12_interface_DONT_USE.h" line="909" column="1" bodyfile="source/ndigo6g12_interface_DONT_USE.h" bodystart="909" bodyend="969"/>
     <listofallmembers>
       <member refid="structndigo6g12__trigger__block_1abbb70b7cbab5a579740d2b4e82a23fed" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>enabled</name></member>
       <member refid="structndigo6g12__trigger__block_1a82c9a7f378da8cdf154acfdd82ae5039" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>gates</name></member>
