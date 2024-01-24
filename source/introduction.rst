@@ -1,22 +1,22 @@
 Introduction
 ============
 
-The Ndigo6G-12 offers 6400 Msps sample rate, 12 bits resolution and a greatly
+The Ndigo6G-12 offers 6400 Msps sample rate, 12 bits resolution and a greatly
 improved readout rate of 6000 MB/s.  
 
 The unit is a combined ADC/TDC board for the acquisition of pulses in time of
 flight applications. It builds on the established Platform of the Ndigo5G-10
 but takes it to the next level both in performance and flexibility.
 
-The Ndigo6G-12 was specifically designed for time of flight applications like
+The Ndigo6G-12 was specifically designed for time-of-flight applications like
 LIDAR or TOF mass spectrometry. Pulse arrival times can be measured with an
-accuracy down to 5 ps together with information on pulse shape such as area or
+accuracy down to 5 ps together with information on pulse shape such as area or
 amplitude. 
 
-Four channels with 1600 Msps at 12 bit resolution can be acquired
+Four channels with 1600 Msps at 12 bit resolution can be acquired
 independently. Alternatively, the four channels can be combined into two
 channels or decreased to a single channel. This way, either a higher temporal
-resolution up to 6400 Msps or a larger dynamic range can be achieved.
+resolution up to 6400 Msps or a larger dynamic range can be achieved.
 
 Features
 --------
