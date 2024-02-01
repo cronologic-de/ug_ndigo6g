@@ -23,7 +23,7 @@ extensions = [
     "breathe",
 ]
 
-breathe_projects = {"ndigo6g12_api": os.fspath("./doxygen_build/xml/")}
+breathe_projects = {"ndigo6g12_api": os.fspath("../build/doxygen/xml/")}
 breathe_default_project = "ndigo6g12_api"
 breathe_show_include = False
 breathe_show_define_initializer = True
@@ -96,6 +96,8 @@ latex_elements = {
     "tableofcontents":r"\tableofcontents",
     "maketitle": r"",
     "releasename": "Rev.",
+    "makeindex": "",
+    "printindex": "",
 }
 latex_theme = "manual" # manual (book class) or howto (article class)
 latex_additional_files = [

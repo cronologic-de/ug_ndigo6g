@@ -23,7 +23,7 @@ provided by the Ndigo6G-12 driver.
     ========
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 4
     :numbered:
 
     introduction
@@ -33,3 +33,5 @@ provided by the Ndigo6G-12 driver.
     example
     techdata
     revhistory
+
+.. :ref:`genindex`

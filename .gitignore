@@ -16,5 +16,6 @@ __pycache__/
 
 # various
 source/figures/obsolete/
-config_and_run_doxyfile.bat
+*.bat
+!make.bat
 source/ndigo6g12_interface_DONT_USE.h

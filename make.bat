@@ -25,6 +25,19 @@ if errorlevel 9009 (
 
 if "%1" == "" goto help
 
+if "%1" == "clean" goto skipdoxygen
+
+REM If a batch script 'fetch_interface.bat' is present, call it before
+REM compililng doxygen
+set "file=.\fetch_interface.bat"
+if exist "%file%" (
+	call "%file%"
+)
+
+doxygen
+
+:skipdoxygen
+
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -a -E
 goto end
 

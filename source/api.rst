@@ -6,11 +6,23 @@ Declarations of the interface are found in *ndigo6g12_interface.h*.
 
 This chapter provides an overview of the provided API functionality.
 
+.. Typedefs
+.. --------
+
+.. .. doxygentypedef:: crono_bool_t
+
 Constants
 ---------
 
+General
+~~~~~~~
+
 .. doxygengroup:: constants
-    :content-only:
+
+Return values
+~~~~~~~~~~~~~
+
+.. doxygengroup:: funcreturns
 
 
 Initialization
@@ -23,19 +35,23 @@ with a set of default parameters, as provided by
 are of type :code:`ndigo6g12_init`. Information on the current
 device will be stored as type :code:`ndigo6g12_device`.
 
-Initialization setup
-~~~~~~~~~~~~~~~~~~~~
+Constants for clock setup 
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. doxygengroup:: clockmodes
+
+Functions for initialization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: initfuncts
     :content-only:
 
-Structures
-~~~~~~~~~~
+Structures for initialization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. doxygenstruct:: ndigo6g12_init_parameters
+.. doxygengroup:: initstructs
+    :content-only:
     :members:
-
-.. doxygenstruct:: ndigo6g12_device
     :undoc-members:
 
 Status information
@@ -54,38 +70,43 @@ The device may be in one of the following states.
 .. doxygengroup:: devicestates
     :content-only:
 
-Structures
-~~~~~~~~~~
+Functions for information retrieval
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. doxygenstruct:: ndigo6g12_static_info
+.. doxygengroup:: statfuncts
+    :content-only:
+
+Structures for status information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. doxygengroup:: infostructs
+    :content-only:
     :members:
-
-.. doxygenstruct:: ndigo6g12_param_info
-    :members:
-
-.. doxygenstruct:: ndigo6g12_fast_info
-    :members:
-
-
 
 Configuration
 -------------
 
-Constants for ADC mode
-~~~~~~~~~~~~~~~~~~~~~~
+Constants
+~~~~~~~~~
+
+ADC mode
+^^^^^^^^
 
 .. doxygengroup:: adcdefs
 
-Constants for trigger source
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Trigger source
+^^^^^^^^^^^^^^
 
 .. doxygengroup:: sourcedefs
 
 
-Constants for trigger gates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+Trigger gates
+^^^^^^^^^^^^^
 .. doxygengroup:: gatedefs
+
+Trigger blocks
+^^^^^^^^^^^^^^
+.. doxygengroup:: triggerblockdefs
 
 
 Configuration setup
@@ -94,39 +115,22 @@ Configuration setup
 .. doxygengroup:: conffuncts
     :content-only:
 
-Structures
-~~~~~~~~~~
+.. _api confstructs:
 
-.. doxygenstruct:: ndigo6g12_configuration
+Structures for configuration 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. doxygengroup:: confstructs
     :members:
-
-.. doxygenstruct:: ndigo6g12_trigger
-    :members:
-
-
-.. doxygenstruct:: ndigo6g12_trigger_block
-    :members:
-
-.. doxygenstruct:: ndigo6g12_gating_block
-    :members:
-
-.. doxygenstruct:: ndigo6g12_averager_configuration
-    :members:
-
-.. doxygenstruct:: ndigo6g12_tdc_configuration
-    :members:
-
-.. doxygenstruct:: ndigo6g12_tdc_channel
-    :members:
-
-.. doxygenstruct:: ndigo6g12_tdc_tiger_block
-    :members:
+    :undoc-members:
+    :content-only:
 
 
 Runtime control
 ~~~~~~~~~~~~~~~
 
-.. doxygengroup:: runtime
+.. doxygengroup:: runtimefuncts
+    :content-only:
 
 
 Readout
@@ -137,28 +141,25 @@ Constants for error codes
 
 .. doxygengroup:: packflags
 
+Constants for PCIe information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Readout setup
-~~~~~~~~~~~~~
-
-.. doxygengroup:: readout
-
-.. doxygengroup:: errorfuncts
-
-.. doxygengroup:: pciefuncts
+.. doxygengroup:: pciecorrectableerrors
+.. doxygengroup:: pcieuncorrectableerrors
+.. doxygengroup:: pcieclearflags
 
 
-Structures
-~~~~~~~~~~
+Functions for readout
+~~~~~~~~~~~~~~~~~~~~~
 
-.. doxygenstruct:: ndigo6g12_read_in
+.. doxygengroup:: readfuncts
+    :content-only:
+
+
+Structures for readout
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. doxygengroup:: readstructs
     :members:
+    :content-only:
 
-.. doxygenstruct:: ndigo6g12_read_out
-    :members:
-
-
-Other functions
----------------
-
-.. doxygenfunction:: ndigo6g12_device_state_to_str

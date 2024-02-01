@@ -1,3 +1,2 @@
 sphinx>=7.2.6
-pandoc
 breathe
