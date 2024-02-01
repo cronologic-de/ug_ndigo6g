@@ -53,17 +53,20 @@ extern "C" {
 /*! length of ndigo6G12 flash signature */
 #define NDIGO6G12_FLASH_SIG_LEN 60
 
-// application types
-// averaging mode
+/*! @defgroup apptypes Application Types
+ *  @{
+ */
+/*! averaging mode */
 #define NDIGO6G12_APP_TYPE_AVRG 5
-// four ADC channels @1.6 Gsps
+/*! four ADC channels @1.6 Gsps */
 #define NDIGO6G12_APP_TYPE_4CH 4
-// two ADC channels @3.2 Gsps
+/*! two ADC channels @3.2 Gsps */
 #define NDIGO6G12_APP_TYPE_2CH 2
-// one ADC channel @6.4 Gsps
+/*! one ADC channel @6.4 Gsps */
 #define NDIGO6G12_APP_TYPE_1CH 1
-// use currently installed app type
+/*! use currently installed app type */
 #define NDIGO6G12_APP_TYPE_CURRENT 0
+/*! @} */
 
 /*! \defgroup alertdefs #defines for alerts
  *	@brief Alert bits from the system monitor
@@ -234,13 +237,9 @@ extern "C" {
 /*!@}*/
 
 /*! \defgroup triggerdefs #defines for trigger
- * @brief Defines for @link ndigo6g12_configuration::trigger @endlink
- * @{ */
-
-/*!
- *  @brief Index for configuration of the triggers
+ *  @brief Defines for @link ndigo6g12_configuration::trigger @endlink
+ *  @{
  */
-
 #define NDIGO6G12_TRIGGER_A0 0
 #define NDIGO6G12_TRIGGER_A1 1
 #define NDIGO6G12_TRIGGER_B0 2
@@ -257,17 +256,8 @@ extern "C" {
 #define NDIGO6G12_TRIGGER_FPGA1 13
 #define NDIGO6G12_TRIGGER_AUTO 14
 #define NDIGO6G12_TRIGGER_ONE 15
-
-/*!
- *  @brief Index for configuration of the TiGers
- */
-#define NDIGO6G12_TIGER_TDC0 0
-#define NDIGO6G12_TIGER_TDC1 1
-#define NDIGO6G12_TIGER_TDC2 2
-#define NDIGO6G12_TIGER_TDC3 3
-#define NDIGO6G12_TIGER_FPGA0 4
-#define NDIGO6G12_TIGER_FPGA1 5
 /*!@}*/
+
 
 /*! \defgroup defdcoffset defines for tdc_trigger_offsets
  * @{ */
@@ -293,7 +283,6 @@ extern "C" {
  * @brief clock modes of the Ndigo6G12
  * @{
  */
-
 /*! device is using internal clock */
 #define NDIGO6G12_CLOCK_SOURCE_INTERNAL 0
 /*!Use external 10 MHz clock as reference.*Input is internal SMA*/
@@ -646,7 +635,7 @@ typedef struct {
      * 2: two ADC channels @3.2 Gsps
      * 4: four ADC channels @1.6 Gsps
      * 5: averaging mode
-     * See NDIGO6G12_APP_TYPE_* constants
+     * See @link apptypes NDIGO6G12_APP_TYPE_* @endlink constants
      */
     int application_type;
     /*!
@@ -1003,7 +992,7 @@ typedef struct {
      * the trigger condition is fulfilled.
      *
      * The maximum value is @link NDIGO6G12_FIFO_DEPTH @endlink minus
-     * @link ndigo6g12_trigger_block @endlink.
+     * @link ndigo6g12_trigger_block::precursor @endlink.
      *
      */
     int length;
@@ -1327,7 +1316,7 @@ typedef struct {
 
     /*! @brief Configuration of the external trigger sources.
      *
-     * Threshold is ignored for entries 8 and above. The trigger indeces refer
+     * Threshold is ignored for index 8 and above. The trigger indeces refer
      * to the entry in the trigger array @link triggerdefs NDIGO6G12_TRIGGER_*
      * @endlink
      */

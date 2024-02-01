@@ -62,13 +62,21 @@ of board, it's configuration, settings and state. The information is split
 according to its scope and the computational requirements to query the
 information from the board.
 
-Constants defining device states
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Defines
+~~~~~~~
+
+Device states
+^^^^^^^^^^^^^
 
 The device may be in one of the following states.
 
 .. doxygengroup:: devicestates
-    :content-only:
+
+Application types
+^^^^^^^^^^^^^^^^^
+
+.. doxygengroup:: apptypes
+    
 
 Functions for information retrieval
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -86,16 +94,21 @@ Structures for status information
 Configuration
 -------------
 
-Constants
-~~~~~~~~~
+Defines
+~~~~~~~
 
 ADC mode
 ^^^^^^^^
 
 .. doxygengroup:: adcdefs
 
-Trigger source
-^^^^^^^^^^^^^^
+External trigger source
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygengroup:: triggerdefs
+
+Trigger source for gating blocks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. doxygengroup:: sourcedefs
 
@@ -107,6 +120,11 @@ Trigger gates
 Trigger blocks
 ^^^^^^^^^^^^^^
 .. doxygengroup:: triggerblockdefs
+
+DC offsets
+^^^^^^^^^^
+
+.. doxygengroup:: defdcoffset
 
 
 Configuration setup

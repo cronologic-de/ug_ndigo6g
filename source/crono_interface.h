@@ -115,55 +115,56 @@ extern "C" {
 typedef uint8_t crono_bool_t;
 
 /**
-* Basic device data structure for synchronizing cronologic Ndigo5G and HPTDC8 devices
-*/
+ * Basic device data structure for synchronizing cronologic Ndigo5G and
+ * HPTDC8 devices.
+ */
 typedef struct {
-	/* CRONO_DEVICE_*/
-	int device_type;
-	/** For HPTDC use this board id, Ndigo uses configured board id*/
-	int board_id;
-	void * device;
+    /* CRONO_DEVICE_*/
+    int device_type;
+    /** For HPTDC use this board id, Ndigo uses configured board id*/
+    int board_id;
+    void * device;
 } crono_device;
 
-        /**
-        * Packet data structure in ring buffer for packets carrying varying amounts of data.
-        *
-        * The size of the data[] array is given in the length field.
-        */
-        typedef struct {
-                // number of the source channel of the data
-                uint8_t channel;
-                // id of the card
-                uint8_t card;
-                // type of packet. One of CRONO_PACKET_TYPE_*
-                uint8_t type;
-                // Bit field of CRONO_PACKET_FLAG_* bits
-                uint8_t flags;
-                // length of data array in multiples of 8 bytes
-                uint32_t length;
-                // timestamp of packet creation, may be start or end of data depending on packet source.
-                int64_t timestamp;
-                // payload of the packet. Data type must be cast according to CRONO_PACKET_TYPE_*
-                uint64_t data[1];
-        } crono_packet;
+/**
+* Packet data structure in ring buffer for packets carrying varying amounts of data.
+*
+* The size of the data[] array is given in the length field.
+*/
+typedef struct {
+    // number of the source channel of the data
+    uint8_t channel;
+    // id of the card
+    uint8_t card;
+    // type of packet. One of CRONO_PACKET_TYPE_*
+    uint8_t type;
+    // Bit field of CRONO_PACKET_FLAG_* bits
+    uint8_t flags;
+    // length of data array in multiples of 8 bytes
+    uint32_t length;
+    // timestamp of packet creation, may be start or end of data depending on packet source.
+    int64_t timestamp;
+    // payload of the packet. Data type must be cast according to CRONO_PACKET_TYPE_*
+    uint64_t data[1];
+} crono_packet;
 
-        /**
-        * Packet data structure in ring buffer for packets carrying only the header.
-        */
-        typedef struct {
-                // number of the source channel
-                uint8_t channel;
-                // id of the card
-                uint8_t card;
-                // type of packet. Must be CRONO_PACKET_TYPE_TIMESTAMP_ONLY
-                uint8_t type;
-                // Bit field of CRONO_PACKET_FLAG_* bits
-                uint8_t flags;
-                // either 0 or a bit field carrying data
-                uint32_t length;
-                // timestamp of packet creation
-                int64_t timestamp;
-        } crono_packet_only_timestamp;
+/**
+* Packet data structure in ring buffer for packets carrying only the header.
+*/
+typedef struct {
+    // number of the source channel
+    uint8_t channel;
+    // id of the card
+    uint8_t card;
+    // type of packet. Must be CRONO_PACKET_TYPE_TIMESTAMP_ONLY
+    uint8_t type;
+    // Bit field of CRONO_PACKET_FLAG_* bits
+    uint8_t flags;
+    // either 0 or a bit field carrying data
+    uint32_t length;
+    // timestamp of packet creation
+    int64_t timestamp;
+} crono_packet_only_timestamp;
 /
 /*! @defgroup pciecorrectableerrors Correctable PCIe errors 
  *  @brief PCIe correctable error flags.
@@ -186,18 +187,18 @@ typedef struct {
  *  Only relevant when troubleshooting.
  *  @{
  */
-#define CRONO_PCIE_UNC_UNDEFINED 1 << 0;
-#define CRONO_PCIE_UNC_DATA_LINK_PROTOCOL_ERROR 1 << 4
-#define CRONO_PCIE_UNC_SURPRISE_DOWN_ERROR 1 << 5
-#define CRONO_PCIE_UNC_POISONED_TLP 1 << 12
+#define CRONO_PCIE_UNC_UNDEFINED                   1 << 0;
+#define CRONO_PCIE_UNC_DATA_LINK_PROTOCOL_ERROR    1 << 4
+#define CRONO_PCIE_UNC_SURPRISE_DOWN_ERROR         1 << 5
+#define CRONO_PCIE_UNC_POISONED_TLP                1 << 12
 #define CRONO_PCIE_UNC_FLOW_CONTROL_PROTOCOL_ERROR 1 << 13
-#define CRONO_PCIE_UNC_COMPLETION_TIMEOUT 1 << 14
-#define CRONO_PCIE_UNC_COMPLETER_ABORT 1 << 15
-#define CRONO_PCIE_UNC_UNEXPECTED_COMPLETION 1 << 16
-#define CRONO_PCIE_UNC_RECEIVER_OVERFLOW_ERROR 1 << 17
-#define CRONO_PCIE_UNC_MALFORMED_TLP 1 << 18
-#define CRONO_PCIE_UNC_ECRC_ERROR 1 << 19
-#define CRONO_PCIE_UNC_UNSUPPORED_REQUEST_ERROR 1 << 20
+#define CRONO_PCIE_UNC_COMPLETION_TIMEOUT          1 << 14
+#define CRONO_PCIE_UNC_COMPLETER_ABORT             1 << 15
+#define CRONO_PCIE_UNC_UNEXPECTED_COMPLETION       1 << 16
+#define CRONO_PCIE_UNC_RECEIVER_OVERFLOW_ERROR     1 << 17
+#define CRONO_PCIE_UNC_MALFORMED_TLP               1 << 18
+#define CRONO_PCIE_UNC_ECRC_ERROR                  1 << 19
+#define CRONO_PCIE_UNC_UNSUPPORED_REQUEST_ERROR    1 << 20
 /*! @} */
 
 
@@ -205,53 +206,53 @@ typedef struct {
  *  @brief Structure containing PCIe information
  */
 typedef struct {
-	/*! 
+    /*! 
      * @brief organizes power supply of PCIe lanes
      */
-	uint32_t pwr_mgmt;
+    uint32_t pwr_mgmt;
 
-	/*! @brief Number of PCIe lanes that the card uses.
-	 *
-	 *  Should be 4 for Ndigo5G
-	 */
-	uint32_t link_width;
+    /*! @brief Number of PCIe lanes that the card uses.
+     *
+     *  Should be 4 for Ndigo5G
+     */
+    uint32_t link_width;
 
-	/*! @brief Maximum size in bytes for one PCIe transaction.
-	 *
-	 *  Depends on the system configuration.
-	 */
-	uint32_t max_payload;
+    /*! @brief Maximum size in bytes for one PCIe transaction.
+     *
+     *  Depends on the system configuration.
+     */
+    uint32_t max_payload;
 
-	/*! @brief Data rate of the PCIe card.
-	 *
-	 *  Depends on the system configuration.
-	 */
-	uint32_t link_speed;
+    /*! @brief Data rate of the PCIe card.
+     *
+     *  Depends on the system configuration.
+     */
+    uint32_t link_speed;
 
-	/*!
+    /*!
      *  @brief Different from 0 if the PCIe error status is supported for this device
-	 */
-	uint32_t error_status_supported;
+     */
+    uint32_t error_status_supported;
 
-	/*! \brief Correctable error status flags, directly from the PCIe config
-	 *  register
-	 *
-	 *  Useful for debugging PCIe problems. 0, if no error is present,
+    /*! \brief Correctable error status flags, directly from the PCIe config
+     *  register
+     *
+     *  Useful for debugging PCIe problems. 0, if no error is present,
      *  otherwise one of @link pciecorrectableerrors CRONO_PCIE_* @endlink.
-	 */
-	uint32_t correctable_error_status;
+     */
+    uint32_t correctable_error_status;
 
-	/*! @brief Uncorrectable error status flags, directly from the PCIe
-	 *  config register.
-	 *
-	 *  Useful for debugging PCIe problems. 0, if no error is present,
+    /*! @brief Uncorrectable error status flags, directly from the PCIe
+     *  config register.
+     *
+     *  Useful for debugging PCIe problems. 0, if no error is present,
      *  otherwise one of @link pcieuncorrectableerrors CRONO_PCIE_UNC_*
      *  @endlink.
-	 */
-	uint32_t uncorrectable_error_status;
+     */
+    uint32_t uncorrectable_error_status;
 
-	/*! \brief for future extension */
-	uint32_t reserved;
+    /*! \brief for future extension */
+    uint32_t reserved;
 } crono_pcie_info;
 
 /*! @defgroup pcieclearflags Flags for clearing PCIe errors
@@ -261,20 +262,20 @@ typedef struct {
 #define CRONO_PCIE_UNCORRECTABLE_FLAG 2
 /*! @} */
 
-        /**
-        * Returns the legnth of the data array of the packet in multiples of 8 bytes.
-        */
+/*!
+ * Returns the legnth of the data array of the packet in multiples of 8 bytes.
+ */
 #define crono_packet_data_length(current) ((current)->type &128?0:(current)->length)
 
-        /**
-        * Returns the legnth of the of the packet including its header in multiples of eight bytes.
-        */
+/*!
+ * Returns the legnth of the of the packet including its header in multiples of eight bytes.
+ */
 #define crono_packet_bytes(current) ((crono_packet_data_length(current) + 2) * 8)
 
-        /**
-        * Returns a crono_packet pointer pointing to the next packet in the ring buffer.
-        * Must be checked befor use to not point beyond the last packet in the buffer.
-        */
+/**
+ * Returns a crono_packet pointer pointing to the next packet in the ring buffer.
+ * Must be checked befor use to not point beyond the last packet in the buffer.
+ */
 #define crono_next_packet(current) ((volatile crono_packet*) (((int64_t) (current)) +( ((current)->type&128?0:(current)->length) + 2) * 8))
         
 #ifdef __cplusplus
