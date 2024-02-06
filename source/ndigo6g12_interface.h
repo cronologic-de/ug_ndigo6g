@@ -3,11 +3,11 @@
 // The current driver version for Ndigo6G12 devices is 1.3.0.0
 //
 
-/*! \file
- * @brief The functions provided by the API are declared in
- * ndigo6G12_interface.h.
- *
- * The API is a DLL with C linkage.
+/*! @file
+ *  @brief The functions provided by the API are declared in
+ *  ndigo6G12_interface.h.
+ * 
+ *  The API is a DLL with C linkage.
  */
 #ifndef NDIGO6G12_INTERFACE_H
 #define NDIGO6G12_INTERFACE_H
@@ -27,68 +27,149 @@ extern "C" {
 #define NDIGO6G12_API
 #endif
 
-/*! \defgroup constants Constants
- *
- * @brief Constants
- * @{
- */
-
+/*! @defgroup constants Constants
+ *  @brief Constants
+ *  @{ */
+/*!
+ * The current API version.  */
 #define NDIGO6G12_API_VERSION 1
 
-/*! ADC and TDC trigger including AUTO and ONE */
+/*!
+ *  The number of ADC and TDC triggers, including AUTO and ONE. */
 #define NDIGO6G12_TRIGGER_COUNT 16
-/*! The number of analog input channels. */
+
+/*! 
+ *  The number of analog input channels. */
 #define NDIGO6G12_ADC_CHANNEL_COUNT 4
-/*! The number of gating blocks. */
+
+/*!
+ *  The number of gating blocks. */
 #define NDIGO6G12_GATE_COUNT 4
 
-/*! The number of high and low resolution TDC input channels */
+/*!
+ *  The number of high and low resolution TDC input channels. */
 #define NDIGO6G12_TDC_CHANNEL_COUNT 6
-/*! @} */
 
-/*! bitstream date format: YYYY-MM-DD hh:mm:ss */
+/*!
+ *  Bitstream date format: YYYY-MM-DD hh:mm:ss */
 #define NDIGO6G12_BITSTREAM_DATE_LEN 20
-/*! calibration date format: YYYY-MM-DD hh:mm */
+
+/*!
+ *  Calibration date format: YYYY-MM-DD hh:mm */
 #define NDIGO6G12_CALIBRATION_DATE_LEN 20
-/*! length of ndigo6G12 flash signature */
+
+/*!
+ *  Length of Ndigo6G12 flash signature */
 #define NDIGO6G12_FLASH_SIG_LEN 60
 
+/*!
+ *  @brief ADC sample FIFO depth.
+ *
+ *  It is the maximum recording length in multiples of 5 ns. */
+#define NDIGO6G12_FIFO_DEPTH 16364
+/*! @} */
+
+
+
+/*! @defgroup triggerblockdefs
+ *  @brief Defines for @link ndigo6g12_trigger_block @endlink.
+ *  @{ */
+/*!
+ *  Maximum for @link ndigo6g12_trigger_block::precursor @endlink. */
+#define NDIGO6G12_MAX_PRECURSOR 28
+
+/*!
+ *  Maximum for @link ndigo6g12_trigger_block::multi_shot_count @endlink. */
+#define NDIGO6G12_MAX_MULTISHOT 65535
+/*! @} */
+
+
+
+/*! @defgroup clockmodes Defines for ndigo6g12_init_parameters
+ * 
+ *  @brief Clock modes of the Ndigo6G12.
+ *
+ *  Used for @link ndigo6g12_init_parameters::clock_source @endlink.
+ *  @{ */
+/*!
+ *  Device is using the internal 10 MHz clock. */
+#define NDIGO6G12_CLOCK_SOURCE_INTERNAL 0
+
+/*!
+ *  Use an external 10 MHz clock as reference. The input is the internal SMA
+ *  socket. */
+#define NDIGO6G12_CLOCK_SOURCE_SMA 1
+
+/*!
+ *  Use an external 10 MHz clock as reference. The inputs are the bracket LEMO
+ *  connectors. */
+#define NDIGO6G12_CLOCK_SOURCE_AUX2 2
+/*! @} */
+
+
+
 /*! @defgroup apptypes Application Types
- *  @{
- */
-/*! averaging mode */
+ *  @brief Type of application.
+ *   
+ *  Used for @link ndig6g12_static_info::application_type @endlink.
+ *  @{ */
+/*!
+ *  Averaging mode */
 #define NDIGO6G12_APP_TYPE_AVRG 5
-/*! four ADC channels @1.6 Gsps */
+
+/*!
+ *  Four ADC channels at 1.6 Gsps. */
 #define NDIGO6G12_APP_TYPE_4CH 4
-/*! two ADC channels @3.2 Gsps */
+
+/*!
+ *  Two ADC channels at 3.2 Gsps. */
 #define NDIGO6G12_APP_TYPE_2CH 2
-/*! one ADC channel @6.4 Gsps */
+
+/*!
+ *  One ADC channel at 6.4 Gsps. */
 #define NDIGO6G12_APP_TYPE_1CH 1
-/*! use currently installed app type */
+
+/*!
+ *  Use currently installed app type. */
 #define NDIGO6G12_APP_TYPE_CURRENT 0
 /*! @} */
 
-/*! \defgroup alertdefs #defines for alerts
- *	@brief Alert bits from the system monitor
- * @{
- */
-/*! @brief FPGA temperature alert (> 70@htmlonly &#176C @endhtmlonly) */
-#define NDIGO6G12_ALERT_FPGA_TEMPERATURE 1
-/*! @brief Internal FPGA voltage out of range(< 0.83V or > 0.88V) */
-#define NDIGO6G12_ALERT_VCCINT 2
-/*!@brief FPGA auxiliary voltage out of range (< 1.75V or > 1.89V) */
-#define NDIGO6G12_ALERT_VCCAUX 4
-/*!@brief FPGA temperature critical (> 80@htmlonly &#176C @endhtmlonly) */
-#define NDIGO6G12_ALERT_FPGA_TEMPERATURE_CRITICAL 8
-/*! @brief THS temperature critical (> 140@htmlonly &#176C @endhtmlonly) */
-#define NDIGO6G12_ALERT_THS_TEMPERATURE_CRITICAL 16
-/*!@}*/
 
-/*! \defgroup adcdefs defines for adc_mode
+
+/*! @defgroup alertdefs Defines for alerts
+ *	@brief Alert bits from the system monitor.
+ *  
+ *  Used for @link ndigo6g12_fast_info::alerts @endlink.
+ *  @{ */
+/*! 
+ *  FPGA temperature alert (>&nbsp;70&deg;C) */
+#define NDIGO6G12_ALERT_FPGA_TEMPERATURE 1
+
+/*!
+ *  Internal FPGA voltage out of range (<&nbsp;0.83&nbsp;V or
+ *  >&nbsp;0.88&nbsp;V). */
+#define NDIGO6G12_ALERT_VCCINT 2
+
+/*!
+ *  FPGA auxiliary voltage out of range (<&nbsp;1.75&nbsp;V or
+ *  >&nbsp;1.89&nbsp;V). */
+#define NDIGO6G12_ALERT_VCCAUX 4
+
+/*!
+ *  FPGA temperature critical (>&nbsp;80&deg;C) */
+#define NDIGO6G12_ALERT_FPGA_TEMPERATURE_CRITICAL 8
+
+/*!
+ *  THS temperature critical (>&nbsp;140&deg;C) */
+#define NDIGO6G12_ALERT_THS_TEMPERATURE_CRITICAL 16
+/*! @} */
+
+
+
+/*! \defgroup adcdefs Defines for adc_mode
  *
- *  @brief defines for @link ndigo6g12_configuration::adc_mode @endlink
- *  @{
- */
+ *  @brief Defines for @link ndigo6g12_configuration::adc_mode @endlink
+ *  @{ */
 #define NDIGO6G12_ADC_MODE_ABCD 0 //!< 4 channel mode at sample rate 1600 Msps
 #define NDIGO6G12_ADC_MODE_AADD 1 //!< 4 channel mode at sample rate 1600 Msps
 #define NDIGO6G12_ADC_MODE_AAAA 2 //!< 4 channel mode at sample rate 1600 Msps
@@ -98,48 +179,61 @@ extern "C" {
 #define NDIGO6G12_ADC_MODE_DD 6   //!< 2 channel mode at sample rate 3200 Msps
 #define NDIGO6G12_ADC_MODE_A 7    //!< 1 channel mode at sample rate 6400 Msps
 #define NDIGO6G12_ADC_MODE_D 8    //!< 1 channel mode at sample rate 6400 Msps
-/*!@}*/
+/*! @} */
 
-/*! \defgroup outputdefs defines for output_mode
- *
- * @brief defines for @link ndigo6g12_configuration::output_mode @endlink
- * @{
- */
-/*! @brief 	Return the native range (0 to 4095). */
+
+
+/*! \defgroup outputdefs Defines for output_mode
+ *  @brief Defines for @link ndigo6g12_configuration::output_mode @endlink
+ *  @{ */
+/*!
+ *  @brief Return the native range (0 to 4095). */
 #define NDIGO6G12_OUTPUT_MODE_RAW 0
-/*! @brief Return is in signed16 integer format in range \f$-32768\f$ to
- * \f$32767\f$.
- */
+
+/*!
+ *  @brief Return a signed16 integer.
+ *  
+ *  The range is &minus;32768 to 32767. */
 #define NDIGO6G12_OUTPUT_MODE_SIGNED16 1
-/*! @brief Output in signed32 integer format.
+
+/*! 
+ *  @brief Output in signed32 integer format.
  *
  *  Only applicable for averaging mode.
- *  Return output in the range \f$-2^{31}\f$ to \f$2^{31} - 1\f$.
+ *  The range is @f$-2^{31}@f$ to @f$2^{31} - 1@f$.
  */
 #define NDIGO6G12_OUTPUT_MODE_SIGNED32 2
-/*!@}*/
+/*! @} */
 
-/*! \defgroup gatedefs defines for trigger_gate
- *  @brief Bitmask for configuration of gates.
+
+
+/*! @defgroup gatedefs Defines for trigger_gate
+ *  @brief Bitmask for configuration of @link ndigo6g12_trigger_block::gates
+ *  @endlink.
  *
  *  Bit definitions for trigger sources used in the timing generator
  *  and gating configuration.
- * @{
+ *  @{
  */
 #define NDIGO6G12_TRIGGER_GATE_NONE 0x0000
 #define NDIGO6G12_TRIGGER_GATE_0 0x0001
 #define NDIGO6G12_TRIGGER_GATE_1 0x0002
 #define NDIGO6G12_TRIGGER_GATE_2 0x0004
 #define NDIGO6G12_TRIGGER_GATE_3 0x0008
-/*!@}*/
+/*! @} */
 
-/*! \defgroup sourcedefs defines for trigger_source
- *
- * @brief Bitmasks for @link ndigo6g12_gating_block::sources @endlink.
- *
- * @{ */
 
-/* All trigger sources disabled. */
+
+/*! @defgroup sourcedefs defines for trigger_source
+ *  @brief Bitmasks for sources.
+ *
+ *  Used for @link ndigo6g12_gating_block::sources @endlink,
+ *  @link ndigo6g12_tdc_gating_block::sources @endlink,
+ *  and @link ndigo6g12_tdc_tiger_block::sources @endlink.
+ * 
+ *  @{ */
+/*!
+ *  All trigger sources disabled. */
 #define NDIGO6G12_TRIGGER_SOURCE_NONE 0x00000000
 
 #define NDIGO6G12_TRIGGER_SOURCE_A0 0x00000001
@@ -161,85 +255,91 @@ extern "C" {
 
 #define NDIGO6G12_TRIGGER_SOURCE_AUTO 0x00004000
 
-/*! Trigger signal active each clock cycle. */
+/*!
+ *  Trigger signal active each clock cycle. */
 #define NDIGO6G12_TRIGGER_SOURCE_ONE 0x00008000
-/*!@}*/
+/*! @} */
 
-/*! \defgroup packflags Packet and hit flags.
+
+
+/*! @defgroup packflags Packet and hit flags.
  *  @brief Flags of the packet reporting error conditions.
- *  @{
- */
-/*! @brief The trigger unit has shortend the current packet due to full FIFO.
- */
+ *  @{ */
+/*!
+ *  @brief The trigger unit has shortend the current packet due to
+ *  full FIFO. */
 #define NDIGO6G12_TDC_PACKET_FLAG_SHORTENED 1
 
-/*! @brief At least one packet was lost due to full FIFO.  */
+/*!
+ *  @brief At least one packet was lost due to full FIFO. */
 #define NDIGO6G12_TDC_PACKET_FLAG_LOST 2
 
-/*! @brief Packet contains at least one TDC event */
+/*!
+ *  @brief Packet contains at least one TDC event */
 #define NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA 4
 
 /*! @brief DMA FIFO was full.
  *
- *  Might not result in dropped packets.
- */
+ *  This does not necessarily mean that packets were dropped. */
 #define NDIGO6G12_TDC_PACKET_FLAG_DMA_FIFO_FULL 16
 
 /*! @brief Host buffer was full.
  *
- *  Might not result in dropped packets.
- */
+ *  This does not necessarily mean that packets were dropped. */
 #define NDIGO6G12_TDC_PACKET_FLAG_HOST_BUFFER_FULL 32
 
-/*! @brief At least one preceding event was lost due to full FIFO.
- */
+/*!
+ *  @brief At least one preceding event was lost due to full FIFO. */
 #define NDIGO6G12_TDC_HIT_FLAG_LOST 1
 
 /*! @brief Rollover has been lost due to full FIFO.
  *
- *  Results in a fatal error.
- */
+ *  Results in a fatal error. */
 #define NDIGO6G12_TDC_HIT_FLAG_ROLLOVER_LOST 2
 
-/*! @brief Timestamp is a valid TDC event. */
+/*!
+ *  @brief Timestamp is a valid TDC event. */
 #define NDIGO6G12_TDC_HIT_FLAG_VALID 4
 
-/*! @brief Timestamp is a rollover marker.
+/*!
+ *  @brief Timestamp is a rollover marker.
  *
- * Add @link ndigo6g12_param_info::tdc_rollover_period @endlink to all
- * subsequent timestamps in the packet.
+ *  Add @link ndigo6g12_param_info::tdc_rollover_period @endlink to all
+ *  subsequent timestamps in the packet.
  */
 #define NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER 8
 
-/*! @brief TDC hit flag mask for error reporting */
-#define NDIGO6G12_TDC_HIT_ERROR_MASK                                           \
+/*! 
+ *  @brief TDC hit flag mask for error reporting. */
+#define NDIGO6G12_TDC_HIT_ERROR_MASK                                         \
     (NDIGO6G12_TDC_HIT_FLAG_ROLLOVER_LOST | NDIGO6G12_TDC_HIT_FLAG_LOST)
 
-/*! @brief TDC hit flags mask for timestamp type */
-#define NDIGO6G12_TDC_HIT_TYPE_MASK                                            \
+/*!
+ *  @brief TDC hit flags mask for timestamp type */
+#define NDIGO6G12_TDC_HIT_TYPE_MASK                                          \
     (NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER | NDIGO6G12_TDC_HIT_FLAG_VALID)
 
-/*! @brief TDC hit channel number for padding data.
+/*!
+ *  @brief TDC hit channel number for padding-data.
  *
- * Padding data can be ignored. Does not contain any usefull information.
- * Padding data has @link NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER @endlink
- * and @link NDIGO6G12_TDC_HIT_FLAG_VALID @endlink always cleared.
- */
+ *  Padding-data can be ignored. Does not contain any usefull information.
+ *  Padding-data has @link NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER @endlink
+ *  and @link NDIGO6G12_TDC_HIT_FLAG_VALID @endlink always cleared. */
 #define NDIGO6G12_TDC_PADDING_DATA_CHANNEL 14
 
-/*! @brief TDC hit channel number for rollover marker
+/*!
+ *  @brief TDC hit channel number for rollover marker
  *
- * Rollover marker has @link NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER
- * @endlink always set.
- */
+ *  Rollover marker has @link NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER
+ *  @endlink always set. */
 #define NDIGO6G12_TDC_ROLLOVER_CHANNEL 15
+/*! @} */
 
-/*!@}*/
 
-/*! \defgroup triggerdefs #defines for trigger
- *  @brief Defines for @link ndigo6g12_configuration::trigger @endlink
- *  @{
- */
+
+/*! @defgroup triggerdefs #defines for trigger
+ *  @brief Defines for @link ndigo6g12_configuration::trigger @endlink.
+ *  @{ */
 #define NDIGO6G12_TRIGGER_A0 0
 #define NDIGO6G12_TRIGGER_A1 1
 #define NDIGO6G12_TRIGGER_B0 2
@@ -256,83 +356,73 @@ extern "C" {
 #define NDIGO6G12_TRIGGER_FPGA1 13
 #define NDIGO6G12_TRIGGER_AUTO 14
 #define NDIGO6G12_TRIGGER_ONE 15
-/*!@}*/
-
-
-/*! \defgroup defdcoffset defines for tdc_trigger_offsets
- * @{ */
-#define NDIGO6G12_DC_OFFSET_N_NIM -0.35
-/*!@}*/
-
-/*! @defgroup devicestates defines for ndigo6g12_device_state
- * @brief Device states.
- *
- * A device must be configured before data capturing is started.
- * @{
- */
-/*! device is initialized but not yet configured for data capture */
-#define NDIGO6G12_DEVICE_STATE_INITIALIZED CRONO_DEVICE_STATE_INITIALIZED
-/*! device is ready to capture data */
-#define NDIGO6G12_DEVICE_STATE_CONFIGURED CRONO_DEVICE_STATE_CONFIGURED
-/*! device has started data capture */
-#define NDIGO6G12_DEVICE_STATE_CAPTURING CRONO_DEVICE_STATE_CAPTURING
-/*!@}*/
-
-/*! \defgroup clockmodes defines for ndigo6g12_device_state
- * 
- * @brief clock modes of the Ndigo6G12
- * @{
- */
-/*! device is using internal clock */
-#define NDIGO6G12_CLOCK_SOURCE_INTERNAL 0
-/*!Use external 10 MHz clock as reference.*Input is internal SMA*/
-#define NDIGO6G12_CLOCK_SOURCE_SMA 1
-/*! Use slot bracket LEMO as external reference clock input. */
-#define NDIGO6G12_CLOCK_SOURCE_AUX2 2
-/*!@}*/
-
-/*!
- *  @defgroup triggerblockdefs Defines for ndigo6g12_trigger_block
- *  @{
-*/
-/*!
- *  ADC sample FIFO depth, which is the maximum recording length in multiples
- *  of 5 ns.
- */
-#define NDIGO6G12_FIFO_DEPTH 16364
-/*! Maximum for @link ndigo6g12_trigger_block::precursor @endlink. */
-#define NDIGO6G12_MAX_PRECURSOR 28
-/*! Maximum for @link ndigo6g12_trigger_block::multi_shot_count @endlink. */
-#define NDIGO6G12_MAX_MULTISHOT 65535
 /*! @} */
 
-/*! @defgroup tigerdefs Defines for TiGer blocks
+
+
+/*! @defgroup defdcoffset defines for tdc_trigger_offsets
+ *  @brief Defines for @link ndigo6g12_configuration::tdc_trigger_offsets
+ *  @endlink.
+ *  @{ */
+#define NDIGO6G12_DC_OFFSET_N_NIM -0.35
+/*! @} */
+
+
+
+/*! @defgroup devicestates defines for ndigo6g12_device_state
+ *  @brief Defines for @link ndigo6g12_fast_info::state @endlink.
  *
- *  @brief Contains settings for Tiger block
- *
- * @{
+ *  A device must be configured before data-capturing is started.
+ *  @{
  */
-/*! TiGeR deactivated */
-#define NDIGO6G12_TIGER_OFF 0
-/*! Pulse height approx. 2 V. LEMO only usable as output. */
-#define NDIGO6G12_TIGER_OUTPUT 1
 /*!
- *  Pulse height approx. 1 V. LEMO may be used as input with OR function when
- *  external pulse rate is low.
- */
+ *  Device is initialized but not yet configured for data capture. */
+#define NDIGO6G12_DEVICE_STATE_INITIALIZED CRONO_DEVICE_STATE_INITIALIZED
+
+/*!
+ *  Device is ready for data capture. */
+#define NDIGO6G12_DEVICE_STATE_CONFIGURED CRONO_DEVICE_STATE_CONFIGURED
+
+/*!
+ *  Device has started data capture. */
+#define NDIGO6G12_DEVICE_STATE_CAPTURING CRONO_DEVICE_STATE_CAPTURING
+/*! @} */
+
+
+
+
+/*! @defgroup tigerdefs Defines for TiGer blocks
+ *  @brief Defines for @link ndigo6g12_tdc_tiger_block::mode @endlink.
+ *  @{ */
+/*!
+ *  TiGeR deactivated */
+#define NDIGO6G12_TIGER_OFF 0
+
+/*!
+ *  Pulse height is approx. 2&nbsp;V. LEMO is only usable as output. */
+#define NDIGO6G12_TIGER_OUTPUT 1
+
+/*!
+ *  Pulse height is approx. 1&nbsp;V. LEMO may be used as input with OR
+ *  function if external pulse rate is low. */
 #define NDIGO6G12_TIGER_BIDI 2
-/*! Bipolar pulse */
+
+/*!
+ *  TiGer pulses are bipolar. */
 #define NDIGO6G12_TIGER_BIPOLAR 3
-/*! Maximum length of bipolar TiGeR pulses */
+
+/*!
+ *  Maximum length of bipolar TiGeR pulses. */
 #define NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH 15
 /*! @} */
 
 
-/*! \defgroup initstructs Structures for initialization */
+
+/*! @defgroup initstructs Structures for initialization */
 
 /*! @ingroup initstructs
  *
- *  @brief Contains information of the Ndigo6G12 device in use
+ *  @brief Contains information of the Ndigo6G12 device in use.
  */
 typedef struct {
     bool is_valid;
@@ -340,80 +430,85 @@ typedef struct {
 } ndigo6g12_device;
 
 /*! @ingroup initstructs 
+ * 
  *  @brief Struct for the initialization of the Ndigo6G12.
  *
- *   This structure MUST be completely initialized.
+ *  This structure MUST be completely initialized.
  */
 typedef struct {
     /*! @brief The version number.
      *
-     * It is increased when the definition of the structure is changed. The
-     * increment can be larger than one to match driver version numbers or
-     * similar. Set to 0 for all versions up to first release.
-     *
-     * must be set to @link NDIGO6G12_API_VERSION @endlink
+     *  It is increased when the definition of the structure is changed. The
+     *  increment can be larger than one to match driver version numbers or
+     *  similar. Set to 0 for all versions up to first release.
+     * 
+     *  Must be set to @link NDIGO6G12_API_VERSION @endlink
      */
     int version;
+
     /*! @brief The index in the list of Ndigo6G12 boards that should be
-     * initialized.
+     *  initialized.
      *
-     *   There might be multiple boards in the system that are handled by this
-     * driver as reported by @link ndigo6g12_count_devices() @endlink\.
-     * This index selects one of them. Boards are enumerated depending
-     * on the PCIe slot. The lower the bus number and the lower the slot number
-     * the lower the card index.
+     *  There might be multiple boards installed in the system that are
+     *  handled by this driver as reported by @link ndigo6g12_count_devices()
+     *  @endlink. This index selects one of them. Boards are enumerated
+     *  depending on the PCIe slot. The lower the bus number and the lower
+     *  the slot number the lower the card index.
      */
     int card_index;
-    /*! @brief the global index in all cronologic devices
+
+    /*! @brief The global index in the list of all cronologic devices.
      *
-     *   This 8 bit number is filled into each packet created by the board and
-     * is useful if data streams of multiple boards will be merged. If only
-     * Ndigo6G12 cards are used this number can be set to the
-     *   @link card_index card_index @endlink. If boards of different types that
-     * use a compatible data format are used in a system each board should get a
-     * unique id.
+     *  This 8-bit number is filled into each packet created by the board and
+     *  is useful if data-streams of multiple boards will be merged. If only
+     *  Ndigo6G12 cards are used, this number can be set to @link card_index
+     *  @endlink. If boards of different types that use a compatible data
+     *  format are used in a system, each board should get a unique ID.
      */
     int board_id;
+
     /*! @brief The minimum size of the DMA buffer.
      *
-     *   If set to 0 the default size of 64 MiBytes is used.
-     *   For the Ndigo6G12 only the first entry is used.
+     *  If set to 0, the default size of 64 MiBytes is used.
+     *  For the Ndigo6G12 only the first entry is used.
      */
     int64_t buffer_size[8];
+
     /*! @brief The update delay of the writing pointer after a packet has been
-     * send over PCIe.
+     *  send over PCIe.
      *
-     *   Default: 8192. Do not change.
+     *  Default: 8192. Do not change!
      */
     int dma_read_delay;
 
     /*!
-     * Default 0: 1.6/3.2/6.4 Gsps. Do not change.
+     *  Default 0, corresponding to  1.6, 3.2, or 6.4&nbsp;Gsps.
+     *  Do not change!
      */
     int perf_derating;
 
-    /*!
-     * 0: off
-     * 1: light all colors once
-     * 2:
-     * 3:
+    /*! @brief Controls the LED flashing mode.
+     *  
+     * - 0: Off
+     * - 1: Light up all colors once
+     * - 2:
+     * - 3:
      */
     int led_flashing_mode;
 
-    /*!
-     * @brief The clock source (internal, SMA, Aux2) to use
+    /*! @brief Defines which clock source is used (internal, SMA, AUX2).
      * 
-     * see @ref clockmodes "NDIGO6G12_CLOCK_SOURCE" constants
+     *  See @ref clockmodes "NDIGO6G12_CLOCK_SOURCE" defines.
      */
     int clock_source;
 
-    /*!
-     * Select four, two or one channel, or averaging mode.
-     * 0: use currently installed type
-     * 1: one ADC channel @6.4 Gsps
-     * 2: two ADC channels @3.2 Gsps
-     * 4: four ADC channels @1.6 Gsps
-     * 5: averaging mode
+    /*! @brief Select the application type.
+     *
+     *  - 0: Use currently installed type
+     *  - 1: One ADC channel at 6.4&nbsp;Gsps
+     *  - 2: Two ADC channels at 3.2&nbsp;Gsps
+     *  - 4: Four ADC channels at 1.6&nbsp;Gsps
+     *  - 5: Averaging mode
      */
     uint32_t application_type;
 
@@ -762,7 +857,7 @@ typedef struct {
     int pcie_link_width;
     /*!
      * Data rate of the PCIe card.
-     * Should always be x TODO for the Ndigo6G12.
+     * Should always be 3 for the Ndigo6G12.
      */
     int pcie_link_speed;
     /*!
@@ -1316,9 +1411,16 @@ typedef struct {
 
     /*! @brief Configuration of the external trigger sources.
      *
-     * Threshold is ignored for index 8 and above. The trigger indeces refer
-     * to the entry in the trigger array @link triggerdefs NDIGO6G12_TRIGGER_*
-     * @endlink
+     *  The entries in the array correspond to the definitions
+     *  @link triggerdefs NDIGO6G12_TRIGGER_* @endlink.
+     *
+     *  @link ndigo6g12_trigger::threshold @endlink is ignored for index
+     *  @link NDIGO6G12_TRIGGER_TDC0 @endlink and above. 
+     *  
+     *  @link ndigo6g12_trigger::edge @endlink and @link
+     *  ndigo6g12_trigger::rising @endlink are ignored for indeces
+     *  @link NDIGO6G12_TRIGGER_AUTO @endlink and @link NDIGO6G12_TRIGGER_ONE
+     *  @endlink.
      */
     ndigo6g12_trigger trigger[NDIGO6G12_TRIGGER_COUNT];
 

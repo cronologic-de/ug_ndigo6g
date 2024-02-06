@@ -1,6 +1,7 @@
 Driver Programming API
 ======================
 
+
 The API is a DLL with C linkage.
 Declarations of the interface are found in *ndigo6g12_interface.h*.
 
@@ -19,8 +20,8 @@ General
 
 .. doxygengroup:: constants
 
-Return values
-~~~~~~~~~~~~~
+Function return values
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: funcreturns
 
@@ -54,9 +55,10 @@ Structures for initialization
     :members:
     :undoc-members:
 
+
+
 Status information
 ------------------
-
 The driver provides functions to retrieve detailed information on the type
 of board, it's configuration, settings and state. The information is split
 according to its scope and the computational requirements to query the
@@ -64,19 +66,22 @@ information from the board.
 
 Defines
 ~~~~~~~
-
 Device states
 ^^^^^^^^^^^^^
-
 The device may be in one of the following states.
 
 .. doxygengroup:: devicestates
 
 Application types
 ^^^^^^^^^^^^^^^^^
-
 .. doxygengroup:: apptypes
+
+Alerts
+^^^^^^
+.. doxygengroup:: alertdefs
+
     
+
 
 Functions for information retrieval
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,19 +104,15 @@ Defines
 
 ADC mode
 ^^^^^^^^
-
 .. doxygengroup:: adcdefs
 
 External trigger source
 ^^^^^^^^^^^^^^^^^^^^^^^
-
 .. doxygengroup:: triggerdefs
 
 Trigger source for gating blocks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. doxygengroup:: sourcedefs
-
 
 Trigger gates
 ^^^^^^^^^^^^^
@@ -123,8 +124,11 @@ Trigger blocks
 
 DC offsets
 ^^^^^^^^^^
-
 .. doxygengroup:: defdcoffset
+
+Output modes
+^^^^^^^^^^^^
+.. doxygengroup:: outputdefs
 
 
 Configuration setup

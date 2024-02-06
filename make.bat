@@ -35,6 +35,7 @@ if exist "%file%" (
 )
 
 doxygen
+call "replace_xsd_commands.bat"
 
 :skipdoxygen
 

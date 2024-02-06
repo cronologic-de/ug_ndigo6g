@@ -18,4 +18,5 @@ __pycache__/
 source/figures/obsolete/
 *.bat
 !make.bat
+!replace_xsd_commands.bat
 source/ndigo6g12_interface_DONT_USE.h
