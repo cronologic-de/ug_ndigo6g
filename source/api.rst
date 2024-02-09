@@ -26,9 +26,9 @@ Function return values
 .. doxygengroup:: funcreturns
 
 
+
 Initialization
 --------------
-
 To use the Ndigo6G12, it first needs to be initialized. This is done by
 calling :code:`ndigo6g12_init()`. The device must first be initialized by
 with a set of default parameters, as provided by
@@ -36,20 +36,23 @@ with a set of default parameters, as provided by
 are of type :code:`ndigo6g12_init`. Information on the current
 device will be stored as type :code:`ndigo6g12_device`.
 
-Constants for clock setup 
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
+Defines used for Initialization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Clock modes
+^^^^^^^^^^^
 .. doxygengroup:: clockmodes
+
+Application types
+^^^^^^^^^^^^^^^^^
+.. doxygengroup:: apptypes
 
 Functions for initialization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. doxygengroup:: initfuncts
     :content-only:
 
 Structures for initialization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. doxygengroup:: initstructs
     :content-only:
     :members:
@@ -72,13 +75,15 @@ The device may be in one of the following states.
 
 .. doxygengroup:: devicestates
 
-Application types
-^^^^^^^^^^^^^^^^^
-.. doxygengroup:: apptypes
-
 Alerts
 ^^^^^^
 .. doxygengroup:: alertdefs
+
+PCIe information
+^^^^^^^^^^^^^^^^
+.. doxygengroup:: pciecorrectableerrors
+.. doxygengroup:: pcieuncorrectableerrors
+.. doxygengroup:: pcieclearflags
 
     
 
@@ -162,13 +167,6 @@ Constants for error codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: packflags
-
-Constants for PCIe information
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. doxygengroup:: pciecorrectableerrors
-.. doxygengroup:: pcieuncorrectableerrors
-.. doxygengroup:: pcieclearflags
 
 
 Functions for readout

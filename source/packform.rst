@@ -1,6 +1,16 @@
 Packet Format
 =============
 
+
+.. doxygengroup:: packettypes
+.. doxygengroup:: packetflags
+
+.. doxygenstruct:: crono_packet
+   :members:
+
+
+
+
 .. _struct ndigopacket:
 
 Output Structure :cpp:`ndigo_packet`

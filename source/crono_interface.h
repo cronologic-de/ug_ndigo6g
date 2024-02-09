@@ -8,11 +8,12 @@
 #include "stdint.h"
 
 
-/*! @defgroup funcreturns Return codes of functions
- *
- *  All ERRORS must be positive integers, because the upper byte is used by
- *  crono_tools
- *  @{
+/*!
+ * @defgroup funcreturns Return codes of functions
+ * @brief   Return codes of various functions.
+ * @details All ERRORS must be positive integers, because the upper byte is 
+ *          used by crono_tools
+ * @{
  */
 #define CRONO_OK                                0
 #define CRONO_WINDRIVER_NOT_FOUND               1
@@ -35,11 +36,16 @@
 #define CRONO_CALIBRATION_FAILURE               16
 #define CRONO_INVALID_ARGUMENTS                 17
 #define CRONO_INSUFFICIENT_DATA                 18
-/*! @} */
+/*!
+ * @}
+ */
 
-/**
-* Packet types supported by different cronologic boards
-*/
+/*!
+ * @defgroup packettypes Types of packets
+ * @brief   Packet types supported by different cronologic boards.
+ * @details Used for @link crono_packet::type @endlink.
+ * @{
+ */
 #define CRONO_PACKET_TYPE_8_BIT_SIGNED          0
 #define CRONO_PACKET_TYPE_16_BIT_SIGNED         1
 #define CRONO_PACKET_TYPE_32_BIT_SIGNED         2
@@ -52,21 +58,75 @@
 #define CRONO_PACKET_TYPE_TIMESTAMP_ONLY        128
 #define CRONO_PACKET_TYPE_END_OF_BUFFER         129
 #define CRONO_PACKET_TYPE_TRIGGER_PATTERN       130
+/*!
+ * @}
+ */
 
-/**
-* Errors concering the data of a packets or its processing.
-*/
+/*!
+ * @defgroup packetflags Packet flags
+ * @brief   Errors concering the data of a packet or its processing.
+ * @details Used for @link crono_packet::flags @endlink.
+ * @{
+ */
+/*!
+ * @brief   Packet was truncated because internal FIFO was full.
+ * @details This means that less than the requested number of samples have
+ *          been written.
+ */
 #define CRONO_PACKET_FLAG_SHORTENED             1
-#define CRONO_PACKET_FLAG_PACKETS_LOST          2
-#define CRONO_PACKET_FLAG_OVERFLOW              4
-#define CRONO_PACKET_FLAG_TRIGGER_MISSED        8
-#define CRONO_PACKET_FLAG_DMA_FIFO_FULL         16
-#define CRONO_PACKET_FLAG_HOST_BUFFER_FULL      32
-#define CRONO_PACKET_FLAG_TDC_NO_EDGE           64
 
-/**
-* Internal driver device ID of cronologic devices based on PCI Device ID
-*/
+/*!
+ * @brief   Lost triggers preceeded this packet due to insufficient DMA 
+ *          buffers.
+ * @details The DMA controller has discarded packets due to the full host
+ *          buffer.
+ */
+#define CRONO_PACKET_FLAG_PACKETS_LOST          2
+
+/*!
+ * @brief   The packet contains ADC sample overflows.
+ */
+#define CRONO_PACKET_FLAG_OVERFLOW              4
+
+/*!
+ * @brief   Lost triggers preceeded this packet due to insufficient buffers.
+ * @details The trigger unit has discarded packets due to a full FIFO.
+ */
+#define CRONO_PACKET_FLAG_TRIGGER_MISSED        8
+
+/*!
+ * @brief   The internal DMA FIFO was full.
+ * @details Triggers only got lost if a subsequent package has 
+ *          @ref crono_packet::flags with a bit weight
+ *          @link CRONO_PACKET_FLAG_TRIGGER_MISSED @endlink set.
+ */
+#define CRONO_PACKET_FLAG_DMA_FIFO_FULL         16
+
+/*!
+ * @brief   The host buffer was full.
+ * @details Triggers only got lost if a subsequent package has 
+ *          @ref crono_packet::flags with a bit weight
+ *          @link CRONO_PACKET_FLAG_TRIGGER_MISSED @endlink set.
+ */
+#define CRONO_PACKET_FLAG_HOST_BUFFER_FULL      32
+
+/*!
+ * @brief   The packet from a TDC does not contain valid data.
+ * @details Hence, the timestamp is not corrected. No valid edge was found
+ *          for the TDC.
+ */
+#define CRONO_PACKET_FLAG_TDC_NO_EDGE           64
+/*!
+ * @}
+ */
+
+/*!
+ * @defgroup cronodevicetypes Device types
+ * @brief    Various device types.
+ * @details  Internal driver device ID of cronologic devices based on PCI 
+ *           Device ID
+ * @{
+ */
 #define CRONO_DEVICE_UNKNOWN            0x0
 #define CRONO_DEVICE_HPTDC              0x1
 #define CRONO_DEVICE_NDIGO5G            0x2
@@ -80,23 +140,38 @@
 #define CRONO_DEVICE_NDIGO2G14          0xb
 #define CRONO_DEVICE_XHPTDC8            0xc
 #define CRONO_DEVICE_NDIGO6G12          0xd
+/*!
+ * @}
+ */
 
-/**
-* Device states
-* A device must be configured before data capturing is started.
-*/
-// device is created but not yet initialized
+/*!
+ * @defgroup cronodevicestates Device states
+ * @brief    Device states.
+ * @details  A device must be configured before data capturing is started.
+ * @{
+ */
+/*! @brief Device is created but not yet initialized */
 #define CRONO_DEVICE_STATE_CREATED      0
-// device is initialized but not yet configured for data capture
+
+/*! @brief Device is initialized but not yet configured for data capture */
 #define CRONO_DEVICE_STATE_INITIALIZED  1
-// device is ready to capture data
+
+/*! @brief Device is ready to capture data */
 #define CRONO_DEVICE_STATE_CONFIGURED   2
-// device has started data capture
+
+/*! @brief Device has started data capture */
 #define CRONO_DEVICE_STATE_CAPTURING    3
-// data capture is paused
+
+/*! @brief Data capture is paused */
 #define CRONO_DEVICE_STATE_PAUSED       4
-// device is closed
+
+/*! @brief Device is closed */
 #define CRONO_DEVICE_STATE_CLOSED       5
+/*!
+ * @}
+ */
+
+
 
 // reading packets from the device was successful
 #define CRONO_READ_OK                   0
@@ -107,46 +182,84 @@
 // trying to read packets does not yield data in the given amount of time
 #define CRONO_READ_TIMEOUT              3
 
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/*! data type used for boolean values in data structures */
+/*! @brief Data type used for boolean values in data structures */
 typedef uint8_t crono_bool_t;
 
-/**
- * Basic device data structure for synchronizing cronologic Ndigo5G and
- * HPTDC8 devices.
+
+
+/*!
+ * @brief Basic device data structure for synchronizing cronologic Ndigo5G and
+ *        HPTDC8 devices.
  */
 typedef struct {
-    /* CRONO_DEVICE_*/
+    /*!
+     * @brief @ref cronodevicetypes "CRONO_DEVICE_*".
+     */
     int device_type;
-    /** For HPTDC use this board id, Ndigo uses configured board id*/
+
+    /*! 
+     * For HPTDC use this board id, Ndigo uses configured board id
+     */
     int board_id;
+
     void * device;
 } crono_device;
 
-/**
-* Packet data structure in ring buffer for packets carrying varying amounts of data.
-*
-* The size of the data[] array is given in the length field.
-*/
+
+
+/*!
+ * @brief   Packet data structure in ring buffer for packets carrying varying 
+ *          amounts of data.
+ * @details The size of the data[] array is given in the length field.
+ */
 typedef struct {
-    // number of the source channel of the data
+    /*!
+     * @brief   Number of the source channel of the data.
+     */
     uint8_t channel;
-    // id of the card
+
+    /*!
+     * @brief   ID of the card.
+     */
     uint8_t card;
-    // type of packet. One of CRONO_PACKET_TYPE_*
+
+    /*! 
+     * @brief   Type of packet. 
+     * @details One of @ref packettypes "CRONO_PACKET_TYPE_*".
+     */ 
     uint8_t type;
-    // Bit field of CRONO_PACKET_FLAG_* bits
+
+    /*!
+     * @brief   Bit field of @ref packetflags "CRONO_PACKET_FLAG_*" bits.
+     */
     uint8_t flags;
-    // length of data array in multiples of 8 bytes
+
+    /*!
+     * @brief   Length of data array in multiples of 8 bytes.
+     */
     uint32_t length;
-    // timestamp of packet creation, may be start or end of data depending on packet source.
+
+    /*! 
+     * @brief   Timestamp of packet creation, may be start or end of data
+     *          depending on packet source.
+     */
     int64_t timestamp;
-    // payload of the packet. Data type must be cast according to CRONO_PACKET_TYPE_*
+
+    /*! 
+     * @brief   Payload of the packet. 
+     * @details Data type must be cast according to 
+     *          @ref packettypes "CRONO_PACKET_TYPE_*".
+     */
     uint64_t data[1];
 } crono_packet;
+
+
 
 /**
 * Packet data structure in ring buffer for packets carrying only the header.
@@ -165,12 +278,14 @@ typedef struct {
     // timestamp of packet creation
     int64_t timestamp;
 } crono_packet_only_timestamp;
-/
-/*! @defgroup pciecorrectableerrors Correctable PCIe errors 
- *  @brief PCIe correctable error flags.
- *
- *  Only relevant when troubleshooting.
- *  @{
+
+
+
+/*!
+ * @defgroup pciecorrectableerrors Correctable PCIe errors 
+ * @brief   PCIe correctable error flags.
+ * @details Only relevant when troubleshooting.
+ * @{
  */
 #define CRONO_PCIE_RX_ERROR 1 << 0
 #define CRONO_PCIE_BAD_TLP 1 << 6
@@ -180,14 +295,19 @@ typedef struct {
 #define CRONO_PCIE_ADVISORY_NON_FATAL 1 << 13
 #define CRONO_PCIE_CORRECTED_INTERNAL_ERROR 1 << 14
 #define CRONO_PCIE_HEADER_LOG_OVERFLOW 1 << 15
-/*! @} */
-/*! @defgroup pcieuncorrectableerrors Uncorrectable PCIe errors 
- *  @brief PCIe uncorrectable error flags.
- *
- *  Only relevant when troubleshooting.
- *  @{
+/*!
+ * @}
  */
-#define CRONO_PCIE_UNC_UNDEFINED                   1 << 0;
+
+
+
+/*! 
+ * @defgroup pcieuncorrectableerrors Uncorrectable PCIe errors 
+ * @brief   PCIe uncorrectable error flags.
+ * @details Only relevant when troubleshooting.
+ * @{
+ */
+#define CRONO_PCIE_UNC_UNDEFINED                   1 << 0
 #define CRONO_PCIE_UNC_DATA_LINK_PROTOCOL_ERROR    1 << 4
 #define CRONO_PCIE_UNC_SURPRISE_DOWN_ERROR         1 << 5
 #define CRONO_PCIE_UNC_POISONED_TLP                1 << 12
@@ -199,10 +319,13 @@ typedef struct {
 #define CRONO_PCIE_UNC_MALFORMED_TLP               1 << 18
 #define CRONO_PCIE_UNC_ECRC_ERROR                  1 << 19
 #define CRONO_PCIE_UNC_UNSUPPORED_REQUEST_ERROR    1 << 20
-/*! @} */
+/*!
+ * @}
+ */
 
 
-/*! @ingroup readstructs
+
+/*! @ingroup infostructs
  *  @brief Structure containing PCIe information
  */
 typedef struct {
@@ -229,13 +352,13 @@ typedef struct {
      */
     uint32_t link_speed;
 
-    /*!
-     *  @brief Different from 0 if the PCIe error status is supported for this device
+    /*! @brief Different from 0 if the PCIe error status is supported for
+     *  this device
      */
     uint32_t error_status_supported;
 
-    /*! \brief Correctable error status flags, directly from the PCIe config
-     *  register
+    /*! @brief Correctable error status flags, directly from the PCIe config
+     *  register.
      *
      *  Useful for debugging PCIe problems. 0, if no error is present,
      *  otherwise one of @link pciecorrectableerrors CRONO_PCIE_* @endlink.
@@ -251,11 +374,13 @@ typedef struct {
      */
     uint32_t uncorrectable_error_status;
 
-    /*! \brief for future extension */
+    /*! @brief For future extension.
+     */
     uint32_t reserved;
 } crono_pcie_info;
 
 /*! @defgroup pcieclearflags Flags for clearing PCIe errors
+ *
  *  @{
  */
 #define CRONO_PCIE_CORRECTABLE_FLAG 1
