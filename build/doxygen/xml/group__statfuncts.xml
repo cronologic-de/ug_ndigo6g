@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__statfuncts" kind="group">
+<compoundname>statfuncts</compoundname>
+<title>Functions for information retrieval</title>
+<sectiondef kind="func">
+<memberdef kind="function" id="group__statfuncts_1ga4571d3a373dd9cef756fb94450d0a3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_driver_revision</definition>
+<argsstring>()</argsstring>
+<name>ndigo6g12_get_driver_revision</name>
+<briefdescription>
+<para>Get the driver version in integer format. </para>
+</briefdescription>
+<detaileddescription>
+<para><simplesect kind="return"><para>The driver version in the same format as <ref refid="structndigo6g12__static__info_1a74e7e5e5bae3344f6dd7f1f8e21dbc32" kindref="member">ndigo6g12_static_info::driver_revision</ref>. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1773" column="6" declfile="source/ndigo6g12_interface.h" declline="1773" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="group__statfuncts_1ga69c101ee0ec180ddd5c3a79ed0ea6a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>const char *</type>
+<definition>const char * ndigo6g12_get_driver_revision_str</definition>
+<argsstring>()</argsstring>
+<name>ndigo6g12_get_driver_revision_str</name>
+<briefdescription>
+<para>Get the driver version in string format. </para>
+</briefdescription>
+<detaileddescription>
+<para><simplesect kind="return"><para>The Driver version including SVN build revision as a string with format x.y.z.svn. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1780" column="13" declfile="source/ndigo6g12_interface.h" declline="1780" declcolumn="13"/>
+</memberdef>
+<memberdef kind="function" id="group__statfuncts_1ga07881e20b788b21f3b6fc179347ce1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_count_devices</definition>
+<argsstring>(int *error_code, const char **error_message)</argsstring>
+<name>ndigo6g12_count_devices</name>
+<param>
+<type>int *</type>
+<declname>error_code</declname>
+</param>
+<param>
+<type>const char **</type>
+<declname>error_message</declname>
+</param>
+<briefdescription>
+<para>Get the number of Ndigo6G-12 boards that are installed in the system. </para>
+</briefdescription>
+<detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">error_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an integer in which to store the <ref refid="group__funcreturns" kindref="compound">error code</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">error_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location in which to store the error message as plain text. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1791" column="6" declfile="source/ndigo6g12_interface.h" declline="1791" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="group__statfuncts_1ga11f73e1c74d717664b9b07ec1d3dd8b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_static_info</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_static_info *static_info)</argsstring>
+<name>ndigo6g12_get_static_info</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__static__info" kindref="compound">ndigo6g12_static_info</ref> *</type>
+<declname>static_info</declname>
+</param>
+<briefdescription>
+<para>Get the static information. </para>
+</briefdescription>
+<detaileddescription>
+<para>The static information does not change after the device initialization. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device from which to get the information. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">static_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a structure in which to store the information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1804" column="6" declfile="source/ndigo6g12_interface.h" declline="1804" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="group__statfuncts_1ga4f3ffc2d11fe59b3e07f1ae21c56791a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_param_info</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_param_info *param_info)</argsstring>
+<name>ndigo6g12_get_param_info</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__param__info" kindref="compound">ndigo6g12_param_info</ref> *</type>
+<declname>param_info</declname>
+</param>
+<briefdescription>
+<para>Get parametric information. </para>
+</briefdescription>
+<detaileddescription>
+<para>The parametric information may change due to the configuration. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device from which to get the information. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">param_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a structure in which to store the information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1816" column="6" declfile="source/ndigo6g12_interface.h" declline="1816" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="group__statfuncts_1ga43147bc42f2803900cafb97522d40cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_fast_info</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_fast_info *fast_info)</argsstring>
+<name>ndigo6g12_get_fast_info</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__fast__info" kindref="compound">ndigo6g12_fast_info</ref> *</type>
+<declname>fast_info</declname>
+</param>
+<briefdescription>
+<para>Get fast status information. </para>
+</briefdescription>
+<detaileddescription>
+<para>The information can be retrieved within a few microseconds. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device from which to get the information. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">fast_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a structure in which to store the information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1829" column="6" declfile="source/ndigo6g12_interface.h" declline="1829" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="group__statfuncts_1gabd149e97b66fdb38da81b19166843267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_pcie_info</definition>
+<argsstring>(ndigo6g12_device *device, crono_pcie_info *pcie_info)</argsstring>
+<name>ndigo6g12_get_pcie_info</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structcrono__pcie__info" kindref="compound">crono_pcie_info</ref> *</type>
+<declname>pcie_info</declname>
+</param>
+<briefdescription>
+<para>Reads the PCIe info like correctable and uncorrectable errors. </para>
+</briefdescription>
+<detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pcie_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the structure in which to store the information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2075" column="6" declfile="source/ndigo6g12_interface.h" declline="2075" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="group__statfuncts_1gaf409be1f4c7186527daa4b62ff76f194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_clear_pcie_errors</definition>
+<argsstring>(ndigo6g12_device *device, int flags)</argsstring>
+<name>ndigo6g12_clear_pcie_errors</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type>int</type>
+<declname>flags</declname>
+</param>
+<briefdescription>
+<para>Clear pci errors. </para>
+</briefdescription>
+<detaileddescription>
+<para>Only useful for PCIe problem debugging flags. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify which flags to clear.<itemizedlist>
+<listitem><para><ref refid="group__pcieclearflags_1ga097da58e8e11ba3a84ff7f6510a848c0" kindref="member">CRONO_PCIE_CORRECTABLE_FLAG</ref>: clear all correctable errors</para>
+</listitem><listitem><para><ref refid="group__pcieclearflags_1gaa58d1403c661db7d479126221f35ef82" kindref="member">CRONO_PCIE_UNCORRECTABLE_FLAG</ref>: clear all uncorrectable errors </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char array containing the plain text error message. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2090" column="6" declfile="source/ndigo6g12_interface.h" declline="2090" declcolumn="6"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Functions for getting detailed information about the Ndigo6G-12 board. </para>
+</briefdescription>
+<detaileddescription>
+<para>The driver provides functions to retrieve detailed information on the type of board, it&apos;s configuration, settings and state. The information is split according to its scope and the computational requirements to query the information from the board. </para>
+</detaileddescription>
+</compounddef>
+</doxygen>

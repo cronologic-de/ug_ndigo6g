@@ -35,6 +35,7 @@
     \newline
 
 
+
 .. colors
    See https://stackoverflow.com/questions/32033158/create-a-role-font-color-in-sphinx-that-works-with-make-latexpdf
    The latex-macro is different than what is described on stackoverflow,

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__defdcoffset" kind="group">
+<compoundname>defdcoffset</compoundname>
+<title>defines for tdc_trigger_offsets</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_NIM</name>
+<initializer>-0.35</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="367" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="367" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Defines for <ref refid="structndigo6g12__configuration_1a2253a70de4bbdd0a27e98c1391677a65" kindref="member">ndigo6g12_configuration::tdc_trigger_offsets</ref>. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+</compounddef>
+</doxygen>

@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="structndigo6g12__tdc__configuration" kind="struct" language="C++" prot="public">
+<compoundname>ndigo6g12_tdc_configuration</compoundname>
+<includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+<sectiondef kind="public-attrib">
+<memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a1544530aac839f16f999549fd07dc6da" prot="public" static="no" mutable="no">
+<type><ref refid="structndigo6g12__tdc__channel" kindref="compound">ndigo6g12_tdc_channel</ref></type>
+<definition>ndigo6g12_tdc_channel ndigo6g12_tdc_configuration::channel[NDIGO6G12_TDC_CHANNEL_COUNT]</definition>
+<argsstring>[NDIGO6G12_TDC_CHANNEL_COUNT]</argsstring>
+<name>channel</name>
+<qualifiedname>ndigo6g12_tdc_configuration::channel</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Configure polarity, type and threshold for the TDC channels </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1569" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1569" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a56ae1001804b4a1f5c69477597df1898" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_tdc_configuration::skip_alignment</definition>
+<argsstring></argsstring>
+<name>skip_alignment</name>
+<qualifiedname>ndigo6g12_tdc_configuration::skip_alignment</qualifiedname>
+<briefdescription>
+<para>Configure THS788 calibration. </para>
+</briefdescription>
+<detaileddescription>
+<para>If set to 1 skip THS788 calibration. If set to 0 do THS788 calibration (default).</para>
+<para>Default is <computeroutput>false</computeroutput>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1578" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1578" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a1031e692bc7159747f0c636dadcb8ca3" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_tdc_configuration::alignment_mode</definition>
+<argsstring></argsstring>
+<name>alignment_mode</name>
+<qualifiedname>ndigo6g12_tdc_configuration::alignment_mode</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Align TDC channels</para>
+<para>Default is <computeroutput>false</computeroutput>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1585" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1585" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__configuration_1ad62eb5295cdc0852458a5d2cf29cc96f" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_tdc_configuration::alignment_pin_high_z</definition>
+<argsstring></argsstring>
+<name>alignment_pin_high_z</name>
+<qualifiedname>ndigo6g12_tdc_configuration::alignment_pin_high_z</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Default is <computeroutput>false</computeroutput>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1590" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1590" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a4b0893e689951405013327c852c018be" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_tdc_configuration::alignment_pin_invert</definition>
+<argsstring></argsstring>
+<name>alignment_pin_invert</name>
+<qualifiedname>ndigo6g12_tdc_configuration::alignment_pin_invert</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Default is <computeroutput>false</computeroutput>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1595" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1595" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a85539ea6a73cd39c206978a0da855d44" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_tdc_configuration::alignment_phase_mask</definition>
+<argsstring></argsstring>
+<name>alignment_phase_mask</name>
+<qualifiedname>ndigo6g12_tdc_configuration::alignment_phase_mask</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Default is <computeroutput>0x1fc</computeroutput>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1600" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1600" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__configuration_1aa97f2633625335026e03145c834f3d5e" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_tdc_configuration::send_empty_packets</definition>
+<argsstring></argsstring>
+<name>send_empty_packets</name>
+<qualifiedname>ndigo6g12_tdc_configuration::send_empty_packets</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Default is <computeroutput>false</computeroutput>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1605" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1605" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Contains configuration information of the TDC channels. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<collaborationgraph>
+<node id="2">
+<label>ndigo6g12_tdc_channel</label>
+<link refid="structndigo6g12__tdc__channel"/>
+<childnode refid="3" relation="usage">
+<edgelabel>gating_block</edgelabel>
+</childnode>
+<childnode refid="4" relation="usage">
+<edgelabel>tiger_block</edgelabel>
+</childnode>
+</node>
+<node id="1">
+<label>ndigo6g12_tdc_configuration</label>
+<link refid="structndigo6g12__tdc__configuration"/>
+<childnode refid="2" relation="usage">
+<edgelabel>channel</edgelabel>
+</childnode>
+</node>
+<node id="3">
+<label>ndigo6g12_tdc_gating_block</label>
+<link refid="structndigo6g12__tdc__gating__block"/>
+</node>
+<node id="4">
+<label>ndigo6g12_tdc_tiger_block</label>
+<link refid="structndigo6g12__tdc__tiger__block"/>
+</node>
+</collaborationgraph>
+<location file="source/ndigo6g12_interface.h" line="1565" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1565" bodyend="1606"/>
+<listofallmembers>
+<member refid="structndigo6g12__tdc__configuration_1a1031e692bc7159747f0c636dadcb8ca3" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_mode</name></member>
+<member refid="structndigo6g12__tdc__configuration_1a85539ea6a73cd39c206978a0da855d44" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_phase_mask</name></member>
+<member refid="structndigo6g12__tdc__configuration_1ad62eb5295cdc0852458a5d2cf29cc96f" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_pin_high_z</name></member>
+<member refid="structndigo6g12__tdc__configuration_1a4b0893e689951405013327c852c018be" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_pin_invert</name></member>
+<member refid="structndigo6g12__tdc__configuration_1a1544530aac839f16f999549fd07dc6da" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>channel</name></member>
+<member refid="structndigo6g12__tdc__configuration_1aa97f2633625335026e03145c834f3d5e" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>send_empty_packets</name></member>
+<member refid="structndigo6g12__tdc__configuration_1a56ae1001804b4a1f5c69477597df1898" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>skip_alignment</name></member>
+</listofallmembers>
+</compounddef>
+</doxygen>

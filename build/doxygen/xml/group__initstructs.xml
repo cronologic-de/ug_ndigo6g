@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__initstructs" kind="group">
+<compoundname>initstructs</compoundname>
+<title>Structures for initialization</title>
+<innerclass refid="structndigo6g12__device" prot="public">ndigo6g12_device</innerclass>
+<innerclass refid="structndigo6g12__init__parameters" prot="public">ndigo6g12_init_parameters</innerclass>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+</compounddef>
+</doxygen>

@@ -6,8 +6,8 @@ Installing the Board
 --------------------
 
 
-The **Ndigo6G** board can be installed in any :math:`\times`\ 8 (or higher amount
-of lanes) PCIe slot. :raw-latex:`{\color{red}` If the slot electrically
+The **Ndigo6G** board can be installed in any :math:`\times`\ 8 (or higher
+amount of lanes) PCIe slot. :raw-latex:`{\color{red}` If the slot electrically
 supports less than eight lanes, the board will operate at lower data throughput
 rates. :raw-latex:`}`
 
@@ -32,13 +32,14 @@ transferred on a bus between the boards. Join all C2 connectors (see
 the bus need to be terminated properly. In case a **Ndigo-Crate** is used,
 connectors providing proper termination are located on the crate mainboard
 next to the PCIe slots to the extreme left and right (for more details, please
-refer to the `Ndigo-Crate User Guide <https://download.cronologic.de/PCIe-Crates/Ndigo_Crate_User_Guide.pdf>_`)
-In applications that use only a few Ndigo boards directly inside a PC, 
-termination PCBs available from cronologic can be used.
+refer to the `Ndigo-Crate User Guide <https://download.cronologic.de/
+PCIe-Crates/Ndigo_Crate_User_Guide.pdf>_`) In applications that use only a few
+Ndigo boards directly inside a PC, termination PCBs available from cronologic
+can be used.
 
 The standard device driver of the **Ndigo6G** can be used to read out all
 boards and acquire data. For more complex scenarios, using the
-*cronoSync-library*, which is part of *cronoTools*, is recommended. The
+*cronoSync-library* (which is part of *cronoTools*) is recommended. The
 *cronoSync-library* is provided with the Ndigo device driver. Please refer to
 the **cronoTools User Guide** for more information.
 
@@ -56,7 +57,7 @@ Connectors
 ~~~~~~~~~~
 
 The inputs of the **Ndigo6G** are located on the PCI bracket.
-:numref:`Figure %s<Fig 2.3>` shows the location of the four analog inputs A to
+:numref:`Figure %s<Fig 2.2>` shows the location of the four analog inputs A to
 D, the four digital TDC inputs E to H, and the two digital FPGA inputs 0 and 1.
 Furthermore, two board interconnection connectors can be found at the top edge
 of the **Ndigo6G** board, as displayed in :numref:`Figure %s<Fig 2.3>`. 
@@ -88,7 +89,7 @@ Analog Inputs
    Input circuit for each of the four analog channels.
 
 The analog inputs of the ADC are single ended LEMO00 coax connectors.
-The inputs have a 50 |nbws| Ω  impedance and are AC coupled. The
+The inputs have a 50 |nbws| Ω impedance and are AC coupled. The
 inputs are converted to a differential signal using a balun.
 
 Analog Offsets
@@ -352,7 +353,7 @@ Trigger Blocks
 Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory. Each ADC channel has one trigger block determining whether
 data is written to the FIFO. The parameters are set in Structure
-**ndigo_trigger_block** (See :numref:`Chapter %s<struct ndigoslowinfo>`).
+**ndigo_trigger_block** (See :numref:`Chapter %s<api confstructs>`).
 
 Each trigger block consists of two independent units that check the
 incoming raw data stream for trigger conditions (:numref:`Figure %s<Fig 2.10>`).
@@ -402,7 +403,7 @@ OR (:numref:`Figure %s<fig triggermatrix>`) by
 setting the appropriate bits in the trigger blocks source mask.
 
 Triggers can be fed into the gate blocks as described in
-:numref:`Chapter %s<hardware:Gating Blocks>` \(:numref:`Figure %s<Fig 2.20>`).
+:numref:`Chapter %s<hardware gating blocks>` \(:numref:`Figure %s<Fig 2.20>`).
 Gate blocks can be used to block writing data to the FIFO. That way, only
 zero suppressed data occurring when the selected gate is active is transmitted.
 This procedure reduces PCIe bus load even further 
@@ -467,6 +468,7 @@ This procedure reduces PCIe bus load even further
    trigger input for each trigger block. The four gate signals can be used
    to suppress triggers during certain time frames.
 
+.. _hardware gating blocks:
 
 Gating Blocks
 ~~~~~~~~~~~~~
@@ -497,8 +499,8 @@ an active gate window. The gate signal can be inverted, causing an
 active gate to close for a time defined by the user.
 
 The parameters of a gating block are set in Structure
-:code:`ndigo_gating_block` described in
-:numref:`Section %s<struct ndigoextblock>`.
+:code:`ndigo6g12_gating_block` described in
+:numref:`chapter %s<api confstructs>`.
 
 :numref:`Figure %s<Fig 2.21>` shows the functionality of
 the gate timing and delay unit. The active gate time is marked in green.

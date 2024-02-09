@@ -9,7 +9,7 @@ import os
 
 # sys.path.append(os.path.abspath("../exts/"))
 
-project = 'Ndigo6G-12 API – User Guide'
+project = 'Ndigo6G-12 – User Guide'
 copyright = ("Creative Commons Attribution-NoDerivatives"
              " 4.0 International License")
 author = 'cronologic GmbH & Co. KG'
@@ -23,7 +23,7 @@ extensions = [
     "breathe",
 ]
 
-breathe_projects = {"ndigo6g12_api": os.fspath("./doxygen_build/xml/")}
+breathe_projects = {"ndigo6g12_api": os.fspath("../build/doxygen/xml/")}
 breathe_default_project = "ndigo6g12_api"
 breathe_show_include = False
 breathe_show_define_initializer = True
@@ -74,26 +74,10 @@ html_secnumber_suffix = " "
 html_static_path = ['_static']
 html_css_files = ["custom.css"]
 
-# PDF Output
-latex_engine = 'xelatex'
-latex_elements = {
-    "papersize": "a4paper",
-    "pointsize": "10pt",
-    "fontpkg" : "",
-    "preamble": r"\usepackage[font=montserrat]{sphinxcronologic}",
-    "extraclassoptions": r"openany",
-    "tableofcontents":r"""\tableofcontents""",
-    "maketitle": r"\cronofront",
-    "sphinxsetup": r"""
-        TitleColor={rgb}{0.1686,0.4667,0.6941},
-        hmargin={2.5cm,2.5cm},
-        vmargin={2.5cm,2.5cm}
-    """
-}
-
 # latex_toplevel_sectioning = "section" 
 
 latex_engine = 'xelatex'
+latex_xindy_use = False
 latex_elements = {
     "papersize": "a4paper",
     "pointsize": "12pt",
@@ -102,21 +86,24 @@ latex_elements = {
         \usepackage[
             font=montserrat,
             sphinx,
-            drawframe]
-        {cronologic}
+            noframe=false,
+        ]
+        {cronologicug}
         \definecolor{ctypered}{RGB}{142,33,0} % C-type auto highlighting color
         \newcommand{\docutilsrolectypered}[1]{{\color{ctypered} #1}}
         \newcommand{\docutilsrolered}[1]{{\color{red} #1}}
-        \newcommand{\docutilsrolecronoblue}[1]{{\color{cronblue} #1}}
+        \newcommand{\docutilsrolecronoblue}[1]{{\color{cronoblue} #1}}
     """,
     "extraclassoptions": r"openany",
     "tableofcontents":r"\tableofcontents",
     "maketitle": r"",
     "releasename": "Rev.",
+    "makeindex": "",
+    "printindex": "",
 }
 latex_theme = "manual" # manual (book class) or howto (article class)
 latex_additional_files = [
-    "cronologic.sty",
+    "cronologicug.sty",
     "extraplaceins.sty",
 ]
 

@@ -107,6 +107,7 @@ The **Ndigo5G** uses an OCXO oscillator with **25** |nbws| **ppb** stability.
 After power up the oscillator needs to run for **10 minutes** to reach this
 stability.
 
+.. _techdata environmental conditions for operation:
 
 Environmental Conditions for Operation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,6 +144,8 @@ conditions:
 |         | 31\ :math:`^{\circ}`\ C     |      |         |      |                      |
 |         | non condensing              |      |         |      |                      |
 +---------+-----------------------------+------+---------+------+----------------------+
+
+.. _techdata power supply:
 
 Power Supply
 ~~~~~~~~~~~~
@@ -202,6 +205,8 @@ t\ :sub:`pulse`         pulse width       7              100    ns
 Information Required by DIN EN 61010-1
 --------------------------------------
 
+.. _techdata manufacturer:
+
 Manufacturer
 ~~~~~~~~~~~~
 
@@ -256,8 +261,8 @@ board.
 
 Environmental Conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~
-See :numref:`Section %s<techdata:Environmental Conditions for Operation>`
-and :numref:`Section %s<techdata:Power Supply>`.
+See :numref:`Section %s<techdata environmental conditions for operation>`
+and :numref:`Section %s<techdata power supply>`.
 
 
 Inputs
@@ -307,7 +312,7 @@ The **Ndigo5G** belongs to **category 9**, **“Überwachungs und
 Kontrollinstrumente für ausschließlich gewerbliche Nutzung”.** The last owner
 of an **Ndigo5G** must recycle it, treat the board in compliance with **§11**
 and **§12** of the German ElektroG, or return it to the manufacturer’s address
-listed in :numref:`Section %s<techdata:Manufacturer>`.
+listed in :numref:`Section %s<techdata manufacturer>`.
 
 Export Control
 ~~~~~~~~~~~~~~

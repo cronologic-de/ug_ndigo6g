@@ -6,33 +6,40 @@ This is a Sphinx project that creates the userguide for the
 [Ndigo6G-12](https://www.cronologic.de/product/ndigo6g-12),
 gigasample PCIe digitizer boards by cronologic GmbH & Co. KG.
 
-A XeLateX and Python installation is necessary for compilation.
+XeLateX, Python, and doxygen are necessary for compilation.
 
 ## Setup and installation
 
 Optionally, create and activate a virtual environment
-```shell
+```powershell
 python -m venv .venv
 . .\.venv\Scripts\activate
 ``` 
 
 Install the requirements of the project
-```shell
+```powershell
 pip install -r requirements.txt
 ```
 
-
 After that, run
-```shell
-make html
+```powershell
+.\make.bat html
 ```
    or
-```shell
-make latexpdf
+```powershell
+.\make.bat latexpdf
 ```
 to compile the project as html or pdf. The html (pdf) output is in build/html/
 (build/latex/).
 
+---
+
+The `make.bat` script first runs `doxygen`, compiling xml output for 
+`source\crono_interface.h` and `source\ndigo6g12_interface.h`. Then, it uses
+the output thereof to compile the sphinx html (or pdf) output.
+
+The script checks if a file `.\fetch_interface.bat` is present. If that is the case, it calls `.\fetch_interface.bat` before running the doxygen output.
+This way you can fetch the most recent interface files, if so desired.
 
 ## License
 This documentation is licensed under an
