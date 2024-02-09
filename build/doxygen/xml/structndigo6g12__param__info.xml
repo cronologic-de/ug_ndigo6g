@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="structndigo6g12__param__info" kind="struct" language="C++" prot="public">
+<compoundname>ndigo6g12_param_info</compoundname>
+<includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+<sectiondef kind="public-attrib">
+<memberdef kind="variable" id="structndigo6g12__param__info_1a629fe28e9ae7b2e357190342d4910ec4" prot="public" static="no" mutable="no">
+<type>double</type>
+<definition>double ndigo6g12_param_info::bandwidth</definition>
+<argsstring></argsstring>
+<name>bandwidth</name>
+<qualifiedname>ndigo6g12_param_info::bandwidth</qualifiedname>
+<briefdescription>
+<para>Bandwidth. </para>
+</briefdescription>
+<detaileddescription>
+<para>4.5 or 6.5&#160;GHz depending on the configuration. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="578" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="578" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a66b7140385559e0ea2b8bcf58b6d5992" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_param_info::resolution</definition>
+<argsstring></argsstring>
+<name>resolution</name>
+<qualifiedname>ndigo6g12_param_info::resolution</qualifiedname>
+<briefdescription>
+<para>ADC sample resolution. </para>
+</briefdescription>
+<detaileddescription>
+<para>Always 12&#160;bit. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="584" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="584" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a5301c6c31a160c63f3b95c7d59945774" prot="public" static="no" mutable="no">
+<type>double</type>
+<definition>double ndigo6g12_param_info::sample_rate</definition>
+<argsstring></argsstring>
+<name>sample_rate</name>
+<qualifiedname>ndigo6g12_param_info::sample_rate</qualifiedname>
+<briefdescription>
+<para>Actual ADC sample rate of currently sampled data. </para>
+</briefdescription>
+<detaileddescription>
+<para>Depending on <ref refid="structndigo6g12__configuration_1a9bdb8697b6a3205aff2e8c611ec1b51a" kindref="member">ndigo6g12_configuration::adc_mode</ref>, that is, <computeroutput>sample_rate</computeroutput> = 6.4&#160;GHz / <ref refid="structndigo6g12__param__info_1a55dac2e2f642378ee61e5911262d4cbe" kindref="member">channels</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="591" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="591" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1ae3a55ab02d24f55bc878d7ee900f69e2" prot="public" static="no" mutable="no">
+<type>double</type>
+<definition>double ndigo6g12_param_info::sample_period</definition>
+<argsstring></argsstring>
+<name>sample_period</name>
+<qualifiedname>ndigo6g12_param_info::sample_period</qualifiedname>
+<briefdescription>
+<para>The period that one sample in the data represents in picoseconds. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="596" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="596" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a512552736eea8ddde3a41292e65d272b" prot="public" static="no" mutable="no">
+<type>double</type>
+<definition>double ndigo6g12_param_info::tdc_period</definition>
+<argsstring></argsstring>
+<name>tdc_period</name>
+<qualifiedname>ndigo6g12_param_info::tdc_period</qualifiedname>
+<briefdescription>
+<para>The period that one TDC bin in the data represents in picoseconds. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="601" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="601" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a628244d99ba969fbc1d98b75c7a834e8" prot="public" static="no" mutable="no">
+<type>double</type>
+<definition>double ndigo6g12_param_info::packet_ts_period</definition>
+<argsstring></argsstring>
+<name>packet_ts_period</name>
+<qualifiedname>ndigo6g12_param_info::packet_ts_period</qualifiedname>
+<briefdescription>
+<para>The period that one tick of the packet timestamp represents in picoseconds. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="606" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="606" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a778b76de94ea8cb486e4a740e7252f6d" prot="public" static="no" mutable="no">
+<type>uint64_t</type>
+<definition>uint64_t ndigo6g12_param_info::tdc_packet_timestamp_offset</definition>
+<argsstring></argsstring>
+<name>tdc_packet_timestamp_offset</name>
+<qualifiedname>ndigo6g12_param_info::tdc_packet_timestamp_offset</qualifiedname>
+<briefdescription>
+<para>The TDC packet timestamp offset. </para>
+</briefdescription>
+<detaileddescription>
+<para>Since TDC packets carry the timestamp of the end of the packet, to calculate the start, <computeroutput>tdc_packet_timestamp_offset</computeroutput> has to be subtracted. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="614" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="614" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1ac9893ca14bae9f69dfc9571e3b5d6622" prot="public" static="no" mutable="no">
+<type>uint32_t</type>
+<definition>uint32_t ndigo6g12_param_info::tdc_rollover_period</definition>
+<argsstring></argsstring>
+<name>tdc_rollover_period</name>
+<qualifiedname>ndigo6g12_param_info::tdc_rollover_period</qualifiedname>
+<briefdescription>
+<para>Time span of one TDC timestamp rollover period in units of the TDC binsize. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="619" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="619" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a59953b1c916c396c4a19f8f8a496ee51" prot="public" static="no" mutable="no">
+<type>double</type>
+<definition>double ndigo6g12_param_info::adc_sample_delay</definition>
+<argsstring></argsstring>
+<name>adc_sample_delay</name>
+<qualifiedname>ndigo6g12_param_info::adc_sample_delay</qualifiedname>
+<briefdescription>
+<para>The delay of the ADC samples due to pipelining in picoseconds. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="623" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="623" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a773c80e51c5215693ee634f08c23c27c" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_param_info::board_id</definition>
+<argsstring></argsstring>
+<name>board_id</name>
+<qualifiedname>ndigo6g12_param_info::board_id</qualifiedname>
+<briefdescription>
+<para>The ID the board uses to identify itself in the output data stream. </para>
+</briefdescription>
+<detaileddescription>
+<para>Takes values 0 to 255. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="630" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="630" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a55dac2e2f642378ee61e5911262d4cbe" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_param_info::channels</definition>
+<argsstring></argsstring>
+<name>channels</name>
+<qualifiedname>ndigo6g12_param_info::channels</qualifiedname>
+<briefdescription>
+<para>Number of ADC channels in the current mode. </para>
+</briefdescription>
+<detaileddescription>
+<para>See <ref refid="structndigo6g12__configuration_1a9bdb8697b6a3205aff2e8c611ec1b51a" kindref="member">ndigo6g12_configuration::adc_mode</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="636" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="636" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a1829abf1751d0947f4e3f0fa9ae5cb4a" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_param_info::channel_mask</definition>
+<argsstring></argsstring>
+<name>channel_mask</name>
+<qualifiedname>ndigo6g12_param_info::channel_mask</qualifiedname>
+<briefdescription>
+<para>Mask with a set bit for each enabled input channel. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="640" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="640" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a279a06c410c857ce3d70a9b4ee2dbbea" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_param_info::tdc_channels</definition>
+<argsstring></argsstring>
+<name>tdc_channels</name>
+<qualifiedname>ndigo6g12_param_info::tdc_channels</qualifiedname>
+<briefdescription>
+<para>Number of TDC channels in the current mode. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="644" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="644" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1aaad085996e989625f64e78508484e626" prot="public" static="no" mutable="no">
+<type>int64_t</type>
+<definition>int64_t ndigo6g12_param_info::total_buffer</definition>
+<argsstring></argsstring>
+<name>total_buffer</name>
+<qualifiedname>ndigo6g12_param_info::total_buffer</qualifiedname>
+<briefdescription>
+<para>The total amount of the DMA buffer in bytes. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="648" column="13" bodyfile="source/ndigo6g12_interface.h" bodystart="648" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__param__info_1a8fbd9b6e04fd1473ad9c1a9b8e1e50e6" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_param_info::samples_per_clock</definition>
+<argsstring></argsstring>
+<name>samples_per_clock</name>
+<qualifiedname>ndigo6g12_param_info::samples_per_clock</qualifiedname>
+<briefdescription>
+<para>The number of samples in one clock cycle in the current mode. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="652" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="652" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Contains configuration changes. </para>
+</briefdescription>
+<detaileddescription>
+<para>&lt;&gt;</para>
+<para>Structure filled by <ref refid="group__statfuncts_1ga4f3ffc2d11fe59b3e07f1ae21c56791a" kindref="member">ndigo6g12_get_param_info()</ref>. This structure contains information that may change indirectly due to configuration changes. </para>
+</detaileddescription>
+<location file="source/ndigo6g12_interface.h" line="573" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="573" bodyend="653"/>
+<listofallmembers>
+<member refid="structndigo6g12__param__info_1a59953b1c916c396c4a19f8f8a496ee51" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>adc_sample_delay</name></member>
+<member refid="structndigo6g12__param__info_1a629fe28e9ae7b2e357190342d4910ec4" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>bandwidth</name></member>
+<member refid="structndigo6g12__param__info_1a773c80e51c5215693ee634f08c23c27c" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>board_id</name></member>
+<member refid="structndigo6g12__param__info_1a1829abf1751d0947f4e3f0fa9ae5cb4a" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>channel_mask</name></member>
+<member refid="structndigo6g12__param__info_1a55dac2e2f642378ee61e5911262d4cbe" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>channels</name></member>
+<member refid="structndigo6g12__param__info_1a628244d99ba969fbc1d98b75c7a834e8" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>packet_ts_period</name></member>
+<member refid="structndigo6g12__param__info_1a66b7140385559e0ea2b8bcf58b6d5992" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>resolution</name></member>
+<member refid="structndigo6g12__param__info_1ae3a55ab02d24f55bc878d7ee900f69e2" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>sample_period</name></member>
+<member refid="structndigo6g12__param__info_1a5301c6c31a160c63f3b95c7d59945774" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>sample_rate</name></member>
+<member refid="structndigo6g12__param__info_1a8fbd9b6e04fd1473ad9c1a9b8e1e50e6" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>samples_per_clock</name></member>
+<member refid="structndigo6g12__param__info_1a279a06c410c857ce3d70a9b4ee2dbbea" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>tdc_channels</name></member>
+<member refid="structndigo6g12__param__info_1a778b76de94ea8cb486e4a740e7252f6d" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>tdc_packet_timestamp_offset</name></member>
+<member refid="structndigo6g12__param__info_1a512552736eea8ddde3a41292e65d272b" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>tdc_period</name></member>
+<member refid="structndigo6g12__param__info_1ac9893ca14bae9f69dfc9571e3b5d6622" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>tdc_rollover_period</name></member>
+<member refid="structndigo6g12__param__info_1aaad085996e989625f64e78508484e626" prot="public" virt="non-virtual"><scope>ndigo6g12_param_info</scope><name>total_buffer</name></member>
+</listofallmembers>
+</compounddef>
+</doxygen>

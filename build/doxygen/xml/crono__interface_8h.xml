@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="crono__interface_8h" kind="file" language="C++">
+<compoundname>crono_interface.h</compoundname>
+<includes local="yes">stdint.h</includes>
+<includedby refid="ndigo6g12__interface_8h" local="yes">source/ndigo6g12_interface.h</includedby>
+<incdepgraph>
+<node id="1">
+<label>source/crono_interface.h</label>
+<link refid="crono__interface_8h"/>
+<childnode refid="2" relation="include">
+</childnode>
+</node>
+<node id="2">
+<label>stdint.h</label>
+</node>
+</incdepgraph>
+<invincdepgraph>
+<node id="1">
+<label>source/crono_interface.h</label>
+<link refid="crono__interface_8h"/>
+<childnode refid="2" relation="include">
+</childnode>
+</node>
+<node id="2">
+<label>source/ndigo6g12_interface.h</label>
+<link refid="ndigo6g12__interface_8h"/>
+</node>
+</invincdepgraph>
+<innerclass refid="structcrono__device" prot="public">crono_device</innerclass>
+<innerclass refid="structcrono__packet" prot="public">crono_packet</innerclass>
+<innerclass refid="structcrono__packet__only__timestamp" prot="public">crono_packet_only_timestamp</innerclass>
+<innerclass refid="structcrono__pcie__info" prot="public">crono_pcie_info</innerclass>
+<sectiondef kind="define">
+<member refid="group__funcreturns_1ga15da8d27c6af5e31df23ca028f1da690" kind="define"><name>CRONO_OK</name></member>
+<member refid="group__funcreturns_1ga6ef845aa881c443d12659d9e2c1112f1" kind="define"><name>CRONO_WINDRIVER_NOT_FOUND</name></member>
+<member refid="group__funcreturns_1gab4185003fbe22362e0ccd55f0c0b4e0a" kind="define"><name>CRONO_DEVICE_NOT_FOUND</name></member>
+<member refid="group__funcreturns_1ga13e51a91144c7a24047b8c8c5657ed72" kind="define"><name>CRONO_NOT_INITIALIZED</name></member>
+<member refid="group__funcreturns_1gadfc2725c937ce91262c34988d9727060" kind="define"><name>CRONO_WRONG_STATE</name></member>
+<member refid="group__funcreturns_1ga9af0b7e89c088164655ee7433219d7b5" kind="define"><name>CRONO_INVALID_DEVICE</name></member>
+<member refid="group__funcreturns_1ga863e781e3dff36adea8b72d61cba0172" kind="define"><name>CRONO_BUFFER_ALLOC_FAILED</name></member>
+<member refid="group__funcreturns_1ga9f1e6409f93091bdb949cc61fa863215" kind="define"><name>CRONO_TDC_NO_EDGE_FOUND</name></member>
+<member refid="group__funcreturns_1ga33481f4763274ca9dce94e4f9c37aa54" kind="define"><name>CRONO_INVALID_BUFFER_PARAMETERS</name></member>
+<member refid="group__funcreturns_1ga7307ed2d8a0164202f676f0d7d5f87d6" kind="define"><name>CRONO_INVALID_CONFIG_PARAMETERS</name></member>
+<member refid="group__funcreturns_1ga667a438bce083f0fe019432c9ad3e9b0" kind="define"><name>CRONO_WINDOW_CALIBRATION_FAILED</name></member>
+<member refid="group__funcreturns_1ga71bd9fb405b37a3d151ae0bf5316e157" kind="define"><name>CRONO_HARDWARE_FAILURE</name></member>
+<member refid="group__funcreturns_1gaceee3ab4a86d9835d4abc9801d0c8d20" kind="define"><name>CRONO_INVALID_ADC_MODE</name></member>
+<member refid="group__funcreturns_1ga52734146ca9b437b88b963473f1a179c" kind="define"><name>CRONO_SYNCHRONIZATION_FAILED</name></member>
+<member refid="group__funcreturns_1gaa8b21a87bc59df50926de5ff7b432379" kind="define"><name>CRONO_DEVICE_OPEN_FAILED</name></member>
+<member refid="group__funcreturns_1ga2a75568cfbfb022747490f68e4da140c" kind="define"><name>CRONO_INTERNAL_ERROR</name></member>
+<member refid="group__funcreturns_1gaca6699f9cdf2a797ed5c567bb82b4362" kind="define"><name>CRONO_CALIBRATION_FAILURE</name></member>
+<member refid="group__funcreturns_1ga2be48360bc22c6f2157035ee7b48db42" kind="define"><name>CRONO_INVALID_ARGUMENTS</name></member>
+<member refid="group__funcreturns_1ga860d0bd4202237f4c2173c061462a0f3" kind="define"><name>CRONO_INSUFFICIENT_DATA</name></member>
+<member refid="group__packettypes_1ga55ff7ef96b5cfb7771cc244cd1610a9a" kind="define"><name>CRONO_PACKET_TYPE_8_BIT_SIGNED</name></member>
+<member refid="group__packettypes_1gac133e1ec78088f4816b7126e4b910bb0" kind="define"><name>CRONO_PACKET_TYPE_16_BIT_SIGNED</name></member>
+<member refid="group__packettypes_1ga76889dbc2a80a575a90454fbefb4ac21" kind="define"><name>CRONO_PACKET_TYPE_32_BIT_SIGNED</name></member>
+<member refid="group__packettypes_1ga1cc877fd7e92764df93551faeb24fd06" kind="define"><name>CRONO_PACKET_TYPE_64_BIT_SIGNED</name></member>
+<member refid="group__packettypes_1gadfba91ecc537169fc5bee363b9cc99a2" kind="define"><name>CRONO_PACKET_TYPE_8_BIT_UNSIGNED</name></member>
+<member refid="group__packettypes_1gacdef426ca44b851f7bb2577cbcffd7de" kind="define"><name>CRONO_PACKET_TYPE_16_BIT_UNSIGNED</name></member>
+<member refid="group__packettypes_1ga3c1572c73ebe89c812dac3a53170ced8" kind="define"><name>CRONO_PACKET_TYPE_32_BIT_UNSIGNED</name></member>
+<member refid="group__packettypes_1gac59202bb1df12d01615e4d2455aa2ffb" kind="define"><name>CRONO_PACKET_TYPE_64_BIT_UNSIGNED</name></member>
+<member refid="group__packettypes_1ga8bde9783b3aa1b809dfbb547e0577bc4" kind="define"><name>CRONO_PACKET_TYPE_TDC_DATA</name></member>
+<member refid="group__packettypes_1ga5aaa58af03dbbb76c5eb831dcaa20212" kind="define"><name>CRONO_PACKET_TYPE_TIMESTAMP_ONLY</name></member>
+<member refid="group__packettypes_1ga856a406737bf3188259c5ea5438f458c" kind="define"><name>CRONO_PACKET_TYPE_END_OF_BUFFER</name></member>
+<member refid="group__packettypes_1gaf56df0e5f1ebb2a8a310614da4a82ca4" kind="define"><name>CRONO_PACKET_TYPE_TRIGGER_PATTERN</name></member>
+<member refid="group__packetflags_1gaf114411ce4e678b35cf6f3e4fe98a5ef" kind="define"><name>CRONO_PACKET_FLAG_SHORTENED</name></member>
+<member refid="group__packetflags_1ga5214c557e9f61bdd21f0e72a15f9b6db" kind="define"><name>CRONO_PACKET_FLAG_PACKETS_LOST</name></member>
+<member refid="group__packetflags_1gaf824c90dc8978558879aec85e6889c40" kind="define"><name>CRONO_PACKET_FLAG_OVERFLOW</name></member>
+<member refid="group__packetflags_1ga4537b5516753c32786c9f132ae178230" kind="define"><name>CRONO_PACKET_FLAG_TRIGGER_MISSED</name></member>
+<member refid="group__packetflags_1gaa39d2cf45e727cdec75dc7065238908d" kind="define"><name>CRONO_PACKET_FLAG_DMA_FIFO_FULL</name></member>
+<member refid="group__packetflags_1ga92063812bf8af8aa720d22a5a9fc7281" kind="define"><name>CRONO_PACKET_FLAG_HOST_BUFFER_FULL</name></member>
+<member refid="group__packetflags_1ga499213ea1bccecfcf0934f056ac8d8ae" kind="define"><name>CRONO_PACKET_FLAG_TDC_NO_EDGE</name></member>
+<member refid="group__cronodevicetypes_1ga8fab643d38b3258036044d3d6d587964" kind="define"><name>CRONO_DEVICE_UNKNOWN</name></member>
+<member refid="group__cronodevicetypes_1ga3735897d796da0a67adcfb11fe1a8fb2" kind="define"><name>CRONO_DEVICE_HPTDC</name></member>
+<member refid="group__cronodevicetypes_1ga48b633bbe6acab8eda1a2acebb7fea82" kind="define"><name>CRONO_DEVICE_NDIGO5G</name></member>
+<member refid="group__cronodevicetypes_1gad7de0d94e834651784c0f567806e5eb7" kind="define"><name>CRONO_DEVICE_NDIGO250M</name></member>
+<member refid="group__cronodevicetypes_1ga385875b2727b7a55d3fd4d0cb7184823" kind="define"><name>CRONO_DEVICE_NDIGO_AVRG</name></member>
+<member refid="group__cronodevicetypes_1gaa305ad2f3ce5e73ee133f639dc2b0487" kind="define"><name>CRONO_DEVICE_XTDC4</name></member>
+<member refid="group__cronodevicetypes_1ga937ef41a52092dfbdab4b007bdcf56dd" kind="define"><name>CRONO_DEVICE_FMC_TDC10</name></member>
+<member refid="group__cronodevicetypes_1ga719c24ef4a3835cb297a82c85eb51b2f" kind="define"><name>CRONO_DEVICE_TIMETAGGER4</name></member>
+<member refid="group__cronodevicetypes_1ga12944067799b42d8aaa901957afdafb9" kind="define"><name>CRONO_DEVICE_D_AVE12</name></member>
+<member refid="group__cronodevicetypes_1ga7ec80869646691cd1e40b73abee49b14" kind="define"><name>CRONO_DEVICE_D_AVE14</name></member>
+<member refid="group__cronodevicetypes_1ga63599241ae785d5d6cf99845f56c556f" kind="define"><name>CRONO_DEVICE_NDIGO2G14</name></member>
+<member refid="group__cronodevicetypes_1ga3cfe5eec402d936d78b10e778ae4581c" kind="define"><name>CRONO_DEVICE_XHPTDC8</name></member>
+<member refid="group__cronodevicetypes_1ga23b41f7e1f9145709795718da535d38e" kind="define"><name>CRONO_DEVICE_NDIGO6G12</name></member>
+<member refid="group__cronodevicestates_1ga84aa1f0f4bdc5dacf4fbef9aa2639622" kind="define"><name>CRONO_DEVICE_STATE_CREATED</name></member>
+<member refid="group__cronodevicestates_1gaeb14fa2c80d0cef48101a6ac200b84ac" kind="define"><name>CRONO_DEVICE_STATE_INITIALIZED</name></member>
+<member refid="group__cronodevicestates_1ga0aa3a99f1998171b4c5783dbf7a3b1fd" kind="define"><name>CRONO_DEVICE_STATE_CONFIGURED</name></member>
+<member refid="group__cronodevicestates_1gae21c7101820077dd01168cd670573cc5" kind="define"><name>CRONO_DEVICE_STATE_CAPTURING</name></member>
+<member refid="group__cronodevicestates_1ga1f58253f725c8cbefc7b86c353696574" kind="define"><name>CRONO_DEVICE_STATE_PAUSED</name></member>
+<member refid="group__cronodevicestates_1gaff027bca61ef38551e3408e2d58a1c1b" kind="define"><name>CRONO_DEVICE_STATE_CLOSED</name></member>
+<memberdef kind="define" id="crono__interface_8h_1ac7abe40011dc7e20ab59d0bcbc619a0d" prot="public" static="no">
+<name>CRONO_READ_OK</name>
+<initializer>0</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="177" column="9" bodyfile="source/crono_interface.h" bodystart="177" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="crono__interface_8h_1a1b7dea2e56f046ef2f405c9b8c4d5d95" prot="public" static="no">
+<name>CRONO_READ_NO_DATA</name>
+<initializer>1</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="179" column="9" bodyfile="source/crono_interface.h" bodystart="179" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="crono__interface_8h_1a4fa4fb29e1a2598c455e9810e064fac9" prot="public" static="no">
+<name>CRONO_READ_INTERNAL_ERROR</name>
+<initializer>2</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="181" column="9" bodyfile="source/crono_interface.h" bodystart="181" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="crono__interface_8h_1af061dd14b2d0d1ab2a69d2c8a9604629" prot="public" static="no">
+<name>CRONO_READ_TIMEOUT</name>
+<initializer>3</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="183" column="9" bodyfile="source/crono_interface.h" bodystart="183" bodyend="-1"/>
+</memberdef>
+<member refid="group__pciecorrectableerrors_1gaedd0e587231b17f94116422ad29c4444" kind="define"><name>CRONO_PCIE_RX_ERROR</name></member>
+<member refid="group__pciecorrectableerrors_1gaf01e2e118e9f82b5dce87fa63823fb96" kind="define"><name>CRONO_PCIE_BAD_TLP</name></member>
+<member refid="group__pciecorrectableerrors_1gabb9af64c55ed166c17edacee9696194e" kind="define"><name>CRONO_PCIE_BAD_DLLP</name></member>
+<member refid="group__pciecorrectableerrors_1gaa2afce5849833810b322927186b1b027" kind="define"><name>CRONO_PCIE_REPLAY_NUM_ROLLOVER</name></member>
+<member refid="group__pciecorrectableerrors_1gacdb75fa79eb60a92c1a5e323e5db489a" kind="define"><name>CRONO_PCIE_REPLAY_TIMER_TIMEOUT</name></member>
+<member refid="group__pciecorrectableerrors_1gaf4869a2edaa23b7eb438fc48a811dd17" kind="define"><name>CRONO_PCIE_ADVISORY_NON_FATAL</name></member>
+<member refid="group__pciecorrectableerrors_1ga6651d3434fc17e2d7054f80166305018" kind="define"><name>CRONO_PCIE_CORRECTED_INTERNAL_ERROR</name></member>
+<member refid="group__pciecorrectableerrors_1gab8e0db1b98154854bb6fc7b981d4fd53" kind="define"><name>CRONO_PCIE_HEADER_LOG_OVERFLOW</name></member>
+<member refid="group__pcieuncorrectableerrors_1ga97a5e3a911b85be88fafcb48e05172bb" kind="define"><name>CRONO_PCIE_UNC_UNDEFINED</name></member>
+<member refid="group__pcieuncorrectableerrors_1ga8c8b65caf66c81e234dcf13a5ac7fcbd" kind="define"><name>CRONO_PCIE_UNC_DATA_LINK_PROTOCOL_ERROR</name></member>
+<member refid="group__pcieuncorrectableerrors_1gaa18929ae4b85bfca3cc43a346cb68d0f" kind="define"><name>CRONO_PCIE_UNC_SURPRISE_DOWN_ERROR</name></member>
+<member refid="group__pcieuncorrectableerrors_1ga7892d49c550d2bdaea0bd566e141c3c4" kind="define"><name>CRONO_PCIE_UNC_POISONED_TLP</name></member>
+<member refid="group__pcieuncorrectableerrors_1ga73e6093b362d4cad1d82ce7646f0d6b2" kind="define"><name>CRONO_PCIE_UNC_FLOW_CONTROL_PROTOCOL_ERROR</name></member>
+<member refid="group__pcieuncorrectableerrors_1ga132391cef46b6b66053e6fdcfdbf58e4" kind="define"><name>CRONO_PCIE_UNC_COMPLETION_TIMEOUT</name></member>
+<member refid="group__pcieuncorrectableerrors_1gacfcb753d75956a8fe416810d18a82aec" kind="define"><name>CRONO_PCIE_UNC_COMPLETER_ABORT</name></member>
+<member refid="group__pcieuncorrectableerrors_1gaf29c9359e0e6dd3b825d8816271bb575" kind="define"><name>CRONO_PCIE_UNC_UNEXPECTED_COMPLETION</name></member>
+<member refid="group__pcieuncorrectableerrors_1ga7794cc566837d23538813ba8e2d85c28" kind="define"><name>CRONO_PCIE_UNC_RECEIVER_OVERFLOW_ERROR</name></member>
+<member refid="group__pcieuncorrectableerrors_1gabd898dfdf0297cee1ab2f055a8cf4b3b" kind="define"><name>CRONO_PCIE_UNC_MALFORMED_TLP</name></member>
+<member refid="group__pcieuncorrectableerrors_1ga84df6ad73f98c27b9a3daf5c0f4787b3" kind="define"><name>CRONO_PCIE_UNC_ECRC_ERROR</name></member>
+<member refid="group__pcieuncorrectableerrors_1ga74a14e636a8b824abee760f851cb53a2" kind="define"><name>CRONO_PCIE_UNC_UNSUPPORED_REQUEST_ERROR</name></member>
+<member refid="group__pcieclearflags_1ga097da58e8e11ba3a84ff7f6510a848c0" kind="define"><name>CRONO_PCIE_CORRECTABLE_FLAG</name></member>
+<member refid="group__pcieclearflags_1gaa58d1403c661db7d479126221f35ef82" kind="define"><name>CRONO_PCIE_UNCORRECTABLE_FLAG</name></member>
+<memberdef kind="define" id="crono__interface_8h_1ac98d212284a26bce0d16b8714e786186" prot="public" static="no">
+<name>crono_packet_data_length</name>
+<param><defname>current</defname></param>
+<initializer>((current)-&gt;type &amp;128?0:(current)-&gt;length)</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Returns the legnth of the data array of the packet in multiples of 8 bytes. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="393" column="9" bodyfile="source/crono_interface.h" bodystart="393" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="crono__interface_8h_1a0ca5475c4d64cef53e2db9b4847f8872" prot="public" static="no">
+<name>crono_packet_bytes</name>
+<param><defname>current</defname></param>
+<initializer>((<ref refid="crono__interface_8h_1ac98d212284a26bce0d16b8714e786186" kindref="member">crono_packet_data_length</ref>(current) + 2) * 8)</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Returns the legnth of the of the packet including its header in multiples of eight bytes. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="398" column="9" bodyfile="source/crono_interface.h" bodystart="398" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="crono__interface_8h_1a9e72c7b9c13027e35d62ea245b8cea14" prot="public" static="no">
+<name>crono_next_packet</name>
+<param><defname>current</defname></param>
+<initializer>((volatile <ref refid="structcrono__packet" kindref="compound">crono_packet</ref>*) (((int64_t) (current)) +( ((current)-&gt;type&amp;128?0:(current)-&gt;length) + 2) * 8))</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Returns a <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> pointer pointing to the next packet in the ring buffer. Must be checked befor use to not point beyond the last packet in the buffer. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="404" column="9" bodyfile="source/crono_interface.h" bodystart="404" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<sectiondef kind="typedef">
+<memberdef kind="typedef" id="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" prot="public" static="no">
+<type>uint8_t</type>
+<definition>typedef uint8_t crono_bool_t</definition>
+<argsstring></argsstring>
+<name>crono_bool_t</name>
+<briefdescription>
+<para>Data type used for boolean values in data structures. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="192" column="17" bodyfile="source/crono_interface.h" bodystart="192" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Header<sp/>file<sp/>containing<sp/>structs<sp/>and<sp/>#defines<sp/>commonly<sp/>used<sp/>by<sp/>header<sp/>files<sp/>of<sp/>derived<sp/>CRONO<sp/>device<sp/>classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CRONO_COMMON_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_COMMON_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdint.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="group__funcreturns_1ga15da8d27c6af5e31df23ca028f1da690" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="group__funcreturns_1ga6ef845aa881c443d12659d9e2c1112f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_WINDRIVER_NOT_FOUND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="group__funcreturns_1gab4185003fbe22362e0ccd55f0c0b4e0a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_NOT_FOUND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="group__funcreturns_1ga13e51a91144c7a24047b8c8c5657ed72" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_NOT_INITIALIZED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>when<sp/>a<sp/>capture<sp/>on<sp/>a<sp/>closed<sp/>card<sp/>is<sp/>called</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="group__funcreturns_1gadfc2725c937ce91262c34988d9727060" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_WRONG_STATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>pointer<sp/>given<sp/>to<sp/>a<sp/>xtdc4<sp/>driver<sp/>function<sp/>was<sp/>not<sp/>a<sp/>valid<sp/>pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="group__funcreturns_1ga9af0b7e89c088164655ee7433219d7b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_INVALID_DEVICE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="group__funcreturns_1ga863e781e3dff36adea8b72d61cba0172" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_BUFFER_ALLOC_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="group__funcreturns_1ga9f1e6409f93091bdb949cc61fa863215" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_TDC_NO_EDGE_FOUND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="group__funcreturns_1ga33481f4763274ca9dce94e4f9c37aa54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_INVALID_BUFFER_PARAMETERS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="group__funcreturns_1ga7307ed2d8a0164202f676f0d7d5f87d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_INVALID_CONFIG_PARAMETERS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="group__funcreturns_1ga667a438bce083f0fe019432c9ad3e9b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_WINDOW_CALIBRATION_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="group__funcreturns_1ga71bd9fb405b37a3d151ae0bf5316e157" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_HARDWARE_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="group__funcreturns_1gaceee3ab4a86d9835d4abc9801d0c8d20" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_INVALID_ADC_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="group__funcreturns_1ga52734146ca9b437b88b963473f1a179c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_SYNCHRONIZATION_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="group__funcreturns_1gaa8b21a87bc59df50926de5ff7b432379" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_OPEN_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="group__funcreturns_1ga2a75568cfbfb022747490f68e4da140c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_INTERNAL_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="group__funcreturns_1gaca6699f9cdf2a797ed5c567bb82b4362" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_CALIBRATION_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="group__funcreturns_1ga2be48360bc22c6f2157035ee7b48db42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_INVALID_ARGUMENTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="group__funcreturns_1ga860d0bd4202237f4c2173c061462a0f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_INSUFFICIENT_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>18</highlight></codeline>
+<codeline lineno="49" refid="group__packettypes_1ga55ff7ef96b5cfb7771cc244cd1610a9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_8_BIT_SIGNED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="group__packettypes_1gac133e1ec78088f4816b7126e4b910bb0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_16_BIT_SIGNED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="group__packettypes_1ga76889dbc2a80a575a90454fbefb4ac21" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_32_BIT_SIGNED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="group__packettypes_1ga1cc877fd7e92764df93551faeb24fd06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_64_BIT_SIGNED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="group__packettypes_1gadfba91ecc537169fc5bee363b9cc99a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_8_BIT_UNSIGNED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="group__packettypes_1gacdef426ca44b851f7bb2577cbcffd7de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_16_BIT_UNSIGNED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="group__packettypes_1ga3c1572c73ebe89c812dac3a53170ced8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_32_BIT_UNSIGNED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="group__packettypes_1gac59202bb1df12d01615e4d2455aa2ffb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_64_BIT_UNSIGNED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="group__packettypes_1ga8bde9783b3aa1b809dfbb547e0577bc4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_TDC_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group__packettypes_1ga5aaa58af03dbbb76c5eb831dcaa20212" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_TIMESTAMP_ONLY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group__packettypes_1ga856a406737bf3188259c5ea5438f458c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_END_OF_BUFFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>129</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="group__packettypes_1gaf56df0e5f1ebb2a8a310614da4a82ca4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_TYPE_TRIGGER_PATTERN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>130</highlight></codeline>
+<codeline lineno="76" refid="group__packetflags_1gaf114411ce4e678b35cf6f3e4fe98a5ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_FLAG_SHORTENED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="group__packetflags_1ga5214c557e9f61bdd21f0e72a15f9b6db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_FLAG_PACKETS_LOST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="group__packetflags_1gaf824c90dc8978558879aec85e6889c40" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_FLAG_OVERFLOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="group__packetflags_1ga4537b5516753c32786c9f132ae178230" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_FLAG_TRIGGER_MISSED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="group__packetflags_1gaa39d2cf45e727cdec75dc7065238908d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_FLAG_DMA_FIFO_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="group__packetflags_1ga92063812bf8af8aa720d22a5a9fc7281" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_FLAG_HOST_BUFFER_FULL<sp/><sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="group__packetflags_1ga499213ea1bccecfcf0934f056ac8d8ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PACKET_FLAG_TDC_NO_EDGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64</highlight></codeline>
+<codeline lineno="130" refid="group__cronodevicetypes_1ga8fab643d38b3258036044d3d6d587964" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_UNKNOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="group__cronodevicetypes_1ga3735897d796da0a67adcfb11fe1a8fb2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_HPTDC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="group__cronodevicetypes_1ga48b633bbe6acab8eda1a2acebb7fea82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_NDIGO5G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="group__cronodevicetypes_1gad7de0d94e834651784c0f567806e5eb7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_NDIGO250M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="group__cronodevicetypes_1ga385875b2727b7a55d3fd4d0cb7184823" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_NDIGO_AVRG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="group__cronodevicetypes_1gaa305ad2f3ce5e73ee133f639dc2b0487" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_XTDC4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="group__cronodevicetypes_1ga937ef41a52092dfbdab4b007bdcf56dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_FMC_TDC10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="group__cronodevicetypes_1ga719c24ef4a3835cb297a82c85eb51b2f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_TIMETAGGER4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="group__cronodevicetypes_1ga12944067799b42d8aaa901957afdafb9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_D_AVE12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="group__cronodevicetypes_1ga7ec80869646691cd1e40b73abee49b14" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_D_AVE14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xa</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="group__cronodevicetypes_1ga63599241ae785d5d6cf99845f56c556f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_NDIGO2G14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xb</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="group__cronodevicetypes_1ga3cfe5eec402d936d78b10e778ae4581c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_XHPTDC8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="group__cronodevicetypes_1ga23b41f7e1f9145709795718da535d38e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_NDIGO6G12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xd</highlight></codeline>
+<codeline lineno="154" refid="group__cronodevicestates_1ga84aa1f0f4bdc5dacf4fbef9aa2639622" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_STATE_CREATED<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="group__cronodevicestates_1gaeb14fa2c80d0cef48101a6ac200b84ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_STATE_INITIALIZED<sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="group__cronodevicestates_1ga0aa3a99f1998171b4c5783dbf7a3b1fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_STATE_CONFIGURED<sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="group__cronodevicestates_1gae21c7101820077dd01168cd670573cc5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_STATE_CAPTURING<sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="group__cronodevicestates_1ga1f58253f725c8cbefc7b86c353696574" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_STATE_PAUSED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="group__cronodevicestates_1gaff027bca61ef38551e3408e2d58a1c1b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_DEVICE_STATE_CLOSED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//<sp/>reading<sp/>packets<sp/>from<sp/>the<sp/>device<sp/>was<sp/>successful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="crono__interface_8h_1ac7abe40011dc7e20ab59d0bcbc619a0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_READ_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">//<sp/>trying<sp/>to<sp/>read<sp/>packets<sp/>does<sp/>not<sp/>yield<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="crono__interface_8h_1a1b7dea2e56f046ef2f405c9b8c4d5d95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_READ_NO_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">//<sp/>some<sp/>unhandled<sp/>error<sp/>occured<sp/>a<sp/>device<sp/>reinit<sp/>is<sp/>required</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="crono__interface_8h_1a4fa4fb29e1a2598c455e9810e064fac9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_READ_INTERNAL_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">//<sp/>trying<sp/>to<sp/>read<sp/>packets<sp/>does<sp/>not<sp/>yield<sp/>data<sp/>in<sp/>the<sp/>given<sp/>amount<sp/>of<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="crono__interface_8h_1af061dd14b2d0d1ab2a69d2c8a9604629" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_READ_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="structcrono__device" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="204" refid="structcrono__device_1a6b40feab9f8d4a0282cbfcda657fc61c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcrono__device_1a6b40feab9f8d4a0282cbfcda657fc61c" kindref="member">device_type</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="structcrono__device_1ab075fa4307aefcbeea42de4cdd31a977" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcrono__device_1ab075fa4307aefcbeea42de4cdd31a977" kindref="member">board_id</ref>;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="structcrono__device_1af2840b8beb6a49d6eba436025a23de18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="structcrono__device_1af2840b8beb6a49d6eba436025a23de18" kindref="member">device</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}<sp/><ref refid="structcrono__device" kindref="compound">crono_device</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="structcrono__packet" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225" refid="structcrono__packet_1a494a324fbca25d6a26b8d91e01e28a69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structcrono__packet_1a494a324fbca25d6a26b8d91e01e28a69" kindref="member">channel</ref>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="structcrono__packet_1ab2bdf396e0645cc8c14fc010048b550c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structcrono__packet_1ab2bdf396e0645cc8c14fc010048b550c" kindref="member">card</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="structcrono__packet_1aba40464ebf54fa51fd8e968c882ffc9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structcrono__packet_1aba40464ebf54fa51fd8e968c882ffc9f" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="structcrono__packet_1a2a35dcae5468852e8408502b34b68f4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structcrono__packet_1a2a35dcae5468852e8408502b34b68f4c" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="structcrono__packet_1a3257f1832f0d0652e3be58c49370366b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__packet_1a3257f1832f0d0652e3be58c49370366b" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="structcrono__packet_1a113b64f8511f5f1145d90489cb41c560" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="structcrono__packet_1a113b64f8511f5f1145d90489cb41c560" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="structcrono__packet_1a1a07181c25b3d6de2d1e44e0d95c2504" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>data[1];</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">}<sp/><ref refid="structcrono__packet" kindref="compound">crono_packet</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="structcrono__packet__only__timestamp" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>the<sp/>source<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="structcrono__packet__only__timestamp_1a6d9bcc302ad1f289b6c3d3f08ac091b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structcrono__packet__only__timestamp_1a6d9bcc302ad1f289b6c3d3f08ac091b0" kindref="member">channel</ref>;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>id<sp/>of<sp/>the<sp/>card</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="structcrono__packet__only__timestamp_1a799dde35fbe0b140692e314f7958ec08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structcrono__packet__only__timestamp_1a799dde35fbe0b140692e314f7958ec08" kindref="member">card</ref>;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>type<sp/>of<sp/>packet.<sp/>Must<sp/>be<sp/>CRONO_PACKET_TYPE_TIMESTAMP_ONLY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="structcrono__packet__only__timestamp_1a4a50d36d887f1c8b724b1cd0769266ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structcrono__packet__only__timestamp_1a4a50d36d887f1c8b724b1cd0769266ac" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>field<sp/>of<sp/>CRONO_PACKET_FLAG_*<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="structcrono__packet__only__timestamp_1a05cb8565d19fa1f2396ffd2f4fc44991" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structcrono__packet__only__timestamp_1a05cb8565d19fa1f2396ffd2f4fc44991" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>either<sp/>0<sp/>or<sp/>a<sp/>bit<sp/>field<sp/>carrying<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="structcrono__packet__only__timestamp_1ad3ba13785db349d2de2489346e1ef1da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__packet__only__timestamp_1ad3ba13785db349d2de2489346e1ef1da" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>timestamp<sp/>of<sp/>packet<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="structcrono__packet__only__timestamp_1a0e91c2b9a8e56a4adb30b666924521d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="structcrono__packet__only__timestamp_1a0e91c2b9a8e56a4adb30b666924521d6" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">}<sp/><ref refid="structcrono__packet__only__timestamp" kindref="compound">crono_packet_only_timestamp</ref>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="group__pciecorrectableerrors_1gaedd0e587231b17f94116422ad29c4444" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_RX_ERROR<sp/>1<sp/>&lt;&lt;<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="group__pciecorrectableerrors_1gaf01e2e118e9f82b5dce87fa63823fb96" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_BAD_TLP<sp/>1<sp/>&lt;&lt;<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="group__pciecorrectableerrors_1gabb9af64c55ed166c17edacee9696194e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_BAD_DLLP<sp/>1<sp/>&lt;&lt;<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="group__pciecorrectableerrors_1gaa2afce5849833810b322927186b1b027" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_REPLAY_NUM_ROLLOVER<sp/>1<sp/>&lt;&lt;<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="group__pciecorrectableerrors_1gacdb75fa79eb60a92c1a5e323e5db489a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_REPLAY_TIMER_TIMEOUT<sp/>1<sp/>&lt;&lt;<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="group__pciecorrectableerrors_1gaf4869a2edaa23b7eb438fc48a811dd17" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_ADVISORY_NON_FATAL<sp/>1<sp/>&lt;&lt;<sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="group__pciecorrectableerrors_1ga6651d3434fc17e2d7054f80166305018" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_CORRECTED_INTERNAL_ERROR<sp/>1<sp/>&lt;&lt;<sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="group__pciecorrectableerrors_1gab8e0db1b98154854bb6fc7b981d4fd53" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_HEADER_LOG_OVERFLOW<sp/>1<sp/>&lt;&lt;<sp/>15</highlight></codeline>
+<codeline lineno="310" refid="group__pcieuncorrectableerrors_1ga97a5e3a911b85be88fafcb48e05172bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_UNDEFINED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="group__pcieuncorrectableerrors_1ga8c8b65caf66c81e234dcf13a5ac7fcbd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_DATA_LINK_PROTOCOL_ERROR<sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="group__pcieuncorrectableerrors_1gaa18929ae4b85bfca3cc43a346cb68d0f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_SURPRISE_DOWN_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="group__pcieuncorrectableerrors_1ga7892d49c550d2bdaea0bd566e141c3c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_POISONED_TLP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="group__pcieuncorrectableerrors_1ga73e6093b362d4cad1d82ce7646f0d6b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_FLOW_CONTROL_PROTOCOL_ERROR<sp/>1<sp/>&lt;&lt;<sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="group__pcieuncorrectableerrors_1ga132391cef46b6b66053e6fdcfdbf58e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_COMPLETION_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="group__pcieuncorrectableerrors_1gacfcb753d75956a8fe416810d18a82aec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_COMPLETER_ABORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="group__pcieuncorrectableerrors_1gaf29c9359e0e6dd3b825d8816271bb575" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_UNEXPECTED_COMPLETION<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="group__pcieuncorrectableerrors_1ga7794cc566837d23538813ba8e2d85c28" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_RECEIVER_OVERFLOW_ERROR<sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="group__pcieuncorrectableerrors_1gabd898dfdf0297cee1ab2f055a8cf4b3b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_MALFORMED_TLP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="group__pcieuncorrectableerrors_1ga84df6ad73f98c27b9a3daf5c0f4787b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_ECRC_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="group__pcieuncorrectableerrors_1ga74a14e636a8b824abee760f851cb53a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_UNSUPPORED_REQUEST_ERROR<sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>20</highlight></codeline>
+<codeline lineno="331" refid="structcrono__pcie__info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="335" refid="structcrono__pcie__info_1ae5a6929f9b8ba8568264b27d4f3b1197" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1ae5a6929f9b8ba8568264b27d4f3b1197" kindref="member">pwr_mgmt</ref>;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="structcrono__pcie__info_1a0cc75ae2f95181834ddbb92f720311c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a0cc75ae2f95181834ddbb92f720311c4" kindref="member">link_width</ref>;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="structcrono__pcie__info_1a9f22ead0c303e7b25afac74283208577" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a9f22ead0c303e7b25afac74283208577" kindref="member">max_payload</ref>;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="structcrono__pcie__info_1acff45c8efa389ab57d98a19219654c9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1acff45c8efa389ab57d98a19219654c9c" kindref="member">link_speed</ref>;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" kindref="member">error_status_supported</ref>;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" kindref="member">correctable_error_status</ref>;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375" refid="structcrono__pcie__info_1a5b2f4a84a6a223e3a470172620fc7140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a5b2f4a84a6a223e3a470172620fc7140" kindref="member">uncorrectable_error_status</ref>;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="structcrono__pcie__info_1a9e0e02e8255d5b800f559440ec1e260b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a9e0e02e8255d5b800f559440ec1e260b" kindref="member">reserved</ref>;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal">}<sp/><ref refid="structcrono__pcie__info" kindref="compound">crono_pcie_info</ref>;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386" refid="group__pcieclearflags_1ga097da58e8e11ba3a84ff7f6510a848c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_CORRECTABLE_FLAG<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387" refid="group__pcieclearflags_1gaa58d1403c661db7d479126221f35ef82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNCORRECTABLE_FLAG<sp/>2</highlight></codeline>
+<codeline lineno="393" refid="crono__interface_8h_1ac98d212284a26bce0d16b8714e786186" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crono_packet_data_length(current)<sp/>((current)-&gt;type<sp/>&amp;128?0:(current)-&gt;length)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398" refid="crono__interface_8h_1a0ca5475c4d64cef53e2db9b4847f8872" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crono_packet_bytes(current)<sp/>((crono_packet_data_length(current)<sp/>+<sp/>2)<sp/>*<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404" refid="crono__interface_8h_1a9e72c7b9c13027e35d62ea245b8cea14" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crono_next_packet(current)<sp/>((volatile<sp/>crono_packet*)<sp/>(((int64_t)<sp/>(current))<sp/>+(<sp/>((current)-&gt;type&amp;128?0:(current)-&gt;length)<sp/>+<sp/>2)<sp/>*<sp/>8))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+</programlisting>
+<location file="source/crono_interface.h"/>
+</compounddef>
+</doxygen>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__clockmodes" kind="group">
+<compoundname>clockmodes</compoundname>
+<title>Defines for ndigo6g12_init_parameters</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__clockmodes_1gabae6fcfe7e93142eb2b8d41da3f4e030" prot="public" static="no">
+<name>NDIGO6G12_CLOCK_SOURCE_INTERNAL</name>
+<initializer>0</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Device is using the internal 10 MHz clock. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="96" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="96" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__clockmodes_1gace2114dd58a66ac31eb1a23601c60c25" prot="public" static="no">
+<name>NDIGO6G12_CLOCK_SOURCE_SMA</name>
+<initializer>1</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Use an external 10 MHz clock as reference. The input is the internal SMA socket. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="101" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="101" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__clockmodes_1ga9c55152ad351c2c87c70513d7b55d0a4" prot="public" static="no">
+<name>NDIGO6G12_CLOCK_SOURCE_AUX2</name>
+<initializer>2</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Use an external 10 MHz clock as reference. The inputs are the bracket LEMO connectors. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="106" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="106" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Clock modes of the Ndigo6G12. </para>
+</briefdescription>
+<detaileddescription>
+<para>Used for <ref refid="structndigo6g12__init__parameters_1a35c04e89ff84d5aa7f51a35f155b3652" kindref="member">ndigo6g12_init_parameters::clock_source</ref>. </para>
+</detaileddescription>
+</compounddef>
+</doxygen>

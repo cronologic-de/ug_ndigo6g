@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__triggerblockdefs" kind="group">
+<compoundname>triggerblockdefs</compoundname>
+<title>Triggerblockdefs</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__triggerblockdefs_1gaff5fb5d6321cb5739e498a8d6004d98a" prot="public" static="no">
+<name>NDIGO6G12_MAX_PRECURSOR</name>
+<initializer>28</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Maximum for <ref refid="structndigo6g12__trigger__block_1ae63d6b4996b956dec5dc1a25ead11c04" kindref="member">ndigo6g12_trigger_block::precursor</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="79" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="79" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__triggerblockdefs_1gaf82527fb9c266707d59317100be18d7d" prot="public" static="no">
+<name>NDIGO6G12_MAX_MULTISHOT</name>
+<initializer>65535</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Maximum for <ref refid="structndigo6g12__trigger__block_1a072bc3d1b95e702845f6a05fda8b4ba8" kindref="member">ndigo6g12_trigger_block::multi_shot_count</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="83" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="83" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Defines for <ref refid="structndigo6g12__trigger__block" kindref="compound">ndigo6g12_trigger_block</ref>. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+</compounddef>
+</doxygen>

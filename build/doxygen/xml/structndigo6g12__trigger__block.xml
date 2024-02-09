@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="structndigo6g12__trigger__block" kind="struct" language="C++" prot="public">
+<compoundname>ndigo6g12_trigger_block</compoundname>
+<includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+<sectiondef kind="public-attrib">
+<memberdef kind="variable" id="structndigo6g12__trigger__block_1abbb70b7cbab5a579740d2b4e82a23fed" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_trigger_block::enabled</definition>
+<argsstring></argsstring>
+<name>enabled</name>
+<qualifiedname>ndigo6g12_trigger_block::enabled</qualifiedname>
+<briefdescription>
+<para>Activates triggers on this channel. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1192" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1192" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__trigger__block_1aedb27bbae9e92b4fd5ae828492690335" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_trigger_block::retrigger</definition>
+<argsstring></argsstring>
+<name>retrigger</name>
+<qualifiedname>ndigo6g12_trigger_block::retrigger</qualifiedname>
+<briefdescription>
+<para>Enable retrigger functionality. </para>
+</briefdescription>
+<detaileddescription>
+<para>If a new trigger condition occurs while the postcursor is acquired (i.e., within the time frame controlled by <ref refid="structndigo6g12__trigger__block_1a367787f6e4895a8835f1f6abdd9bbbca" kindref="member">length</ref>), the packet is extended by starting a new postcursor. Otherwise the new trigger is ignored and the packet ends after the precursor of the first trigger. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1202" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1202" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__trigger__block_1a072bc3d1b95e702845f6a05fda8b4ba8" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_trigger_block::multi_shot_count</definition>
+<argsstring></argsstring>
+<name>multi_shot_count</name>
+<qualifiedname>ndigo6g12_trigger_block::multi_shot_count</qualifiedname>
+<briefdescription>
+<para>Number of packets created in single-shot mode before packet generation stops. </para>
+</briefdescription>
+<detaileddescription>
+<para>Maximum is <ref refid="group__triggerblockdefs_1gaf82527fb9c266707d59317100be18d7d" kindref="member">NDIGO6G12_MAX_MULTISHOT</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1209" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1209" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__trigger__block_1ae63d6b4996b956dec5dc1a25ead11c04" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_trigger_block::precursor</definition>
+<argsstring></argsstring>
+<name>precursor</name>
+<qualifiedname>ndigo6g12_trigger_block::precursor</qualifiedname>
+<briefdescription>
+<para>Precursor in multiples of 5&#160;ns. </para>
+</briefdescription>
+<detaileddescription>
+<para>The amount of data preceding a trigger that is captured. The maximum is <ref refid="group__triggerblockdefs_1gaff5fb5d6321cb5739e498a8d6004d98a" kindref="member">NDIGO6G12_MAX_PRECURSOR</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1216" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1216" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__trigger__block_1a367787f6e4895a8835f1f6abdd9bbbca" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_trigger_block::length</definition>
+<argsstring></argsstring>
+<name>length</name>
+<qualifiedname>ndigo6g12_trigger_block::length</qualifiedname>
+<briefdescription>
+<para>Length of the postcursor in multiples of 5&#160;ns. </para>
+</briefdescription>
+<detaileddescription>
+<para>The total amount of data that is recorded in addition to the trigger window is controlled by <computeroutput>length</computeroutput> and <computeroutput>precursor</computeroutput> . <computeroutput>precursor</computeroutput> determines the amount of data before the trigger window, <computeroutput>length</computeroutput> the amount of data after the trigger.</para>
+<para>In <ref refid="structndigo6g12__trigger_1a296c83e9d21707458844e7dbcccdec8d" kindref="member">edge-trigger mode </ref>, the trigger window is always 5&#160;ns long. Otherwise, (level-trigger mode) the trigger window is as long as the trigger condition was fulfilled.</para>
+<para>The maximum value is <ref refid="group__constants_1ga0d9550cfdb01cb823407984f781a4696" kindref="member">NDIGO6G12_FIFO_DEPTH</ref> minus <ref refid="structndigo6g12__trigger__block_1ae63d6b4996b956dec5dc1a25ead11c04" kindref="member">ndigo6g12_trigger_block::precursor</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1233" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1233" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__trigger__block_1aaf3719cf4543964ca19f774c94bd8bb9" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_trigger_block::sources</definition>
+<argsstring></argsstring>
+<name>sources</name>
+<qualifiedname>ndigo6g12_trigger_block::sources</qualifiedname>
+<briefdescription>
+<para>A <ref refid="group__sourcedefs" kindref="compound">bit mask</ref> with a bit set for all trigger sources that can trigger this channel. </para>
+</briefdescription>
+<detaileddescription>
+<para>Default <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_x</ref> (x = 0 for index 0, etc) </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1241" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1241" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__trigger__block_1a82c9a7f378da8cdf154acfdd82ae5039" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_trigger_block::gates</definition>
+<argsstring></argsstring>
+<name>gates</name>
+<qualifiedname>ndigo6g12_trigger_block::gates</qualifiedname>
+<briefdescription>
+<para>A <ref refid="group__gatedefs" kindref="compound">bit mask</ref> with a bit set for all trigger gates. </para>
+</briefdescription>
+<detaileddescription>
+<para>Mask which selects the gates that have to be 1 for the trigger block to use.</para>
+<para>Default <ref refid="group__gatedefs" kindref="compound">NDIGO6G12_TRIGGER_GATE_NONE</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1251" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1251" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__trigger__block_1a33d6847f6ba765dc4aaf761a3cc43c86" prot="public" static="no" mutable="no">
+<type>double</type>
+<definition>double ndigo6g12_trigger_block::minimum_free_packets</definition>
+<argsstring></argsstring>
+<name>minimum_free_packets</name>
+<qualifiedname>ndigo6g12_trigger_block::minimum_free_packets</qualifiedname>
+<briefdescription>
+<para>Number of packets that fit into the FIFO. </para>
+</briefdescription>
+<detaileddescription>
+<para>This parameter sets how many packets are supposed to fit into the on-board FIFO before a new packet is recorded after the FIFO was full, i.e., a certain amount of free space in the FIFO is demanded before a new packet is written after the FIFO was full. As a measure for the packet length the gatelength set by the user is used. The on-board algorithm checks the free FIFO space only in case the FIFO is full. Therefore, if this number is 1.0 or more at least every second packet in the DMA buffer is guaranteed to have the full length set by the gatelength parameters. In many cases smaller values will also result in full length packets. But below a certain value multiple packets that are cut off at the end will show up. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1267" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1267" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Configuration of the trigger block. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<location file="source/ndigo6g12_interface.h" line="1188" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1188" bodyend="1268"/>
+<listofallmembers>
+<member refid="structndigo6g12__trigger__block_1abbb70b7cbab5a579740d2b4e82a23fed" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>enabled</name></member>
+<member refid="structndigo6g12__trigger__block_1a82c9a7f378da8cdf154acfdd82ae5039" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>gates</name></member>
+<member refid="structndigo6g12__trigger__block_1a367787f6e4895a8835f1f6abdd9bbbca" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>length</name></member>
+<member refid="structndigo6g12__trigger__block_1a33d6847f6ba765dc4aaf761a3cc43c86" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>minimum_free_packets</name></member>
+<member refid="structndigo6g12__trigger__block_1a072bc3d1b95e702845f6a05fda8b4ba8" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>multi_shot_count</name></member>
+<member refid="structndigo6g12__trigger__block_1ae63d6b4996b956dec5dc1a25ead11c04" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>precursor</name></member>
+<member refid="structndigo6g12__trigger__block_1aedb27bbae9e92b4fd5ae828492690335" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>retrigger</name></member>
+<member refid="structndigo6g12__trigger__block_1aaf3719cf4543964ca19f774c94bd8bb9" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>sources</name></member>
+</listofallmembers>
+</compounddef>
+</doxygen>

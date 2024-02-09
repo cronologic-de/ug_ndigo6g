@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="structcrono__packet__only__timestamp" kind="struct" language="C++" prot="public">
+<compoundname>crono_packet_only_timestamp</compoundname>
+<includes refid="crono__interface_8h" local="no">crono_interface.h</includes>
+<sectiondef kind="public-attrib">
+<memberdef kind="variable" id="structcrono__packet__only__timestamp_1a6d9bcc302ad1f289b6c3d3f08ac091b0" prot="public" static="no" mutable="no">
+<type>uint8_t</type>
+<definition>uint8_t crono_packet_only_timestamp::channel</definition>
+<argsstring></argsstring>
+<name>channel</name>
+<qualifiedname>crono_packet_only_timestamp::channel</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="269" column="13" bodyfile="source/crono_interface.h" bodystart="269" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structcrono__packet__only__timestamp_1a799dde35fbe0b140692e314f7958ec08" prot="public" static="no" mutable="no">
+<type>uint8_t</type>
+<definition>uint8_t crono_packet_only_timestamp::card</definition>
+<argsstring></argsstring>
+<name>card</name>
+<qualifiedname>crono_packet_only_timestamp::card</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="271" column="13" bodyfile="source/crono_interface.h" bodystart="271" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structcrono__packet__only__timestamp_1a4a50d36d887f1c8b724b1cd0769266ac" prot="public" static="no" mutable="no">
+<type>uint8_t</type>
+<definition>uint8_t crono_packet_only_timestamp::type</definition>
+<argsstring></argsstring>
+<name>type</name>
+<qualifiedname>crono_packet_only_timestamp::type</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="273" column="13" bodyfile="source/crono_interface.h" bodystart="273" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structcrono__packet__only__timestamp_1a05cb8565d19fa1f2396ffd2f4fc44991" prot="public" static="no" mutable="no">
+<type>uint8_t</type>
+<definition>uint8_t crono_packet_only_timestamp::flags</definition>
+<argsstring></argsstring>
+<name>flags</name>
+<qualifiedname>crono_packet_only_timestamp::flags</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="275" column="13" bodyfile="source/crono_interface.h" bodystart="275" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structcrono__packet__only__timestamp_1ad3ba13785db349d2de2489346e1ef1da" prot="public" static="no" mutable="no">
+<type>uint32_t</type>
+<definition>uint32_t crono_packet_only_timestamp::length</definition>
+<argsstring></argsstring>
+<name>length</name>
+<qualifiedname>crono_packet_only_timestamp::length</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="277" column="14" bodyfile="source/crono_interface.h" bodystart="277" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structcrono__packet__only__timestamp_1a0e91c2b9a8e56a4adb30b666924521d6" prot="public" static="no" mutable="no">
+<type>int64_t</type>
+<definition>int64_t crono_packet_only_timestamp::timestamp</definition>
+<argsstring></argsstring>
+<name>timestamp</name>
+<qualifiedname>crono_packet_only_timestamp::timestamp</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="279" column="13" bodyfile="source/crono_interface.h" bodystart="279" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Packet data structure in ring buffer for packets carrying only the header. </para>
+</detaileddescription>
+<location file="source/crono_interface.h" line="267" column="1" bodyfile="source/crono_interface.h" bodystart="267" bodyend="280"/>
+<listofallmembers>
+<member refid="structcrono__packet__only__timestamp_1a799dde35fbe0b140692e314f7958ec08" prot="public" virt="non-virtual"><scope>crono_packet_only_timestamp</scope><name>card</name></member>
+<member refid="structcrono__packet__only__timestamp_1a6d9bcc302ad1f289b6c3d3f08ac091b0" prot="public" virt="non-virtual"><scope>crono_packet_only_timestamp</scope><name>channel</name></member>
+<member refid="structcrono__packet__only__timestamp_1a05cb8565d19fa1f2396ffd2f4fc44991" prot="public" virt="non-virtual"><scope>crono_packet_only_timestamp</scope><name>flags</name></member>
+<member refid="structcrono__packet__only__timestamp_1ad3ba13785db349d2de2489346e1ef1da" prot="public" virt="non-virtual"><scope>crono_packet_only_timestamp</scope><name>length</name></member>
+<member refid="structcrono__packet__only__timestamp_1a0e91c2b9a8e56a4adb30b666924521d6" prot="public" virt="non-virtual"><scope>crono_packet_only_timestamp</scope><name>timestamp</name></member>
+<member refid="structcrono__packet__only__timestamp_1a4a50d36d887f1c8b724b1cd0769266ac" prot="public" virt="non-virtual"><scope>crono_packet_only_timestamp</scope><name>type</name></member>
+</listofallmembers>
+</compounddef>
+</doxygen>

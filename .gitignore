@@ -3,10 +3,7 @@
 
 # automatic build output
 build/*
-!build/latex
-build/latex/*
-!build/latex/ndigo6guserguide.pdf
-source/doxygen_build/html/
+!build/doxygen/
 
 # virtual environment folder
 .venv/

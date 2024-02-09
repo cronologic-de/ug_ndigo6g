@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__confstructs" kind="group">
+<compoundname>confstructs</compoundname>
+<title>Structures for configuration</title>
+<innerclass refid="structndigo6g12__trigger" prot="public">ndigo6g12_trigger</innerclass>
+<innerclass refid="structndigo6g12__trigger__block" prot="public">ndigo6g12_trigger_block</innerclass>
+<innerclass refid="structndigo6g12__gating__block" prot="public">ndigo6g12_gating_block</innerclass>
+<innerclass refid="structndigo6g12__tdc__gating__block" prot="public">ndigo6g12_tdc_gating_block</innerclass>
+<innerclass refid="structndigo6g12__tdc__tiger__block" prot="public">ndigo6g12_tdc_tiger_block</innerclass>
+<innerclass refid="structndigo6g12__averager__configuration" prot="public">ndigo6g12_averager_configuration</innerclass>
+<innerclass refid="structndigo6g12__tdc__channel" prot="public">ndigo6g12_tdc_channel</innerclass>
+<innerclass refid="structndigo6g12__tdc__configuration" prot="public">ndigo6g12_tdc_configuration</innerclass>
+<innerclass refid="structndigo6g12__configuration" prot="public">ndigo6g12_configuration</innerclass>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+</compounddef>
+</doxygen>

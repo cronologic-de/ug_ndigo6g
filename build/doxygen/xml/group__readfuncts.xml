@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__readfuncts" kind="group">
+<compoundname>readfuncts</compoundname>
+<title>Readout</title>
+<sectiondef kind="func">
+<memberdef kind="function" id="group__readfuncts_1gad25dc720dca5598bbfc481133ab67213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_read</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_read_in *in, ndigo6g12_read_out *out)</argsstring>
+<name>ndigo6g12_read</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__read__in" kindref="compound">ndigo6g12_read_in</ref> *</type>
+<declname>in</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__read__out" kindref="compound">ndigo6g12_read_out</ref> *</type>
+<declname>out</declname>
+</param>
+<briefdescription>
+<para>Reads packets from the board. </para>
+</briefdescription>
+<detaileddescription>
+<para>If <ref refid="structndigo6g12__read__in_1a1a8dac0a0e46427f07c2feef89e3d656" kindref="member">ndigo6g12_read_in::acknowledge_last_read</ref> is <computeroutput>true</computeroutput>, automatically acknowledges the last read packets. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device that should be read. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the structure that configures the read call. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a structure in which the read-out should be stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2053" column="6" declfile="source/ndigo6g12_interface.h" declline="2053" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="group__readfuncts_1ga773491c1db097452e748cc4a414c71df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>const char *</type>
+<definition>const char * ndigo6g12_get_last_error_message</definition>
+<argsstring>(ndigo6g12_device *device)</argsstring>
+<name>ndigo6g12_get_last_error_message</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<briefdescription>
+<para>Gets latest error message of <bold>device</bold>. </para>
+</briefdescription>
+<detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char array containing the plain text error message. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2064" column="1" declfile="source/ndigo6g12_interface.h" declline="2064" declcolumn="1"/>
+</memberdef>
+<memberdef kind="function" id="group__readfuncts_1ga73e2cc71b45d17768b57bfc2f84c1b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>const char *</type>
+<definition>const char * ndigo6g12_device_state_to_str</definition>
+<argsstring>(int state)</argsstring>
+<name>ndigo6g12_device_state_to_str</name>
+<param>
+<type>int</type>
+<declname>state</declname>
+</param>
+<briefdescription>
+<para>Convert <bold>state</bold> to plain text. </para>
+</briefdescription>
+<detaileddescription>
+<para>The device state is stored in <ref refid="structndigo6g12__fast__info_1a3abbdff225db4d6b3e4c8f42736cfdbc" kindref="member">ndigo6g12_fast_info::state</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See <ref refid="group__devicestates" kindref="compound">NDIGO6G12_DEVICE_STATE_* </ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char array containing the state as plain text. </para>
+</simplesect>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2101" column="13" declfile="source/ndigo6g12_interface.h" declline="2101" declcolumn="13"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+</compounddef>
+</doxygen>

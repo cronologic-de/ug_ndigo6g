@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="structndigo6g12__init__parameters" kind="struct" language="C++" prot="public">
+<compoundname>ndigo6g12_init_parameters</compoundname>
+<includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+<sectiondef kind="public-attrib">
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1a976fb0e6935bacc3eedf74e5e4e8c79a" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_init_parameters::version</definition>
+<argsstring></argsstring>
+<name>version</name>
+<qualifiedname>ndigo6g12_init_parameters::version</qualifiedname>
+<briefdescription>
+<para>The version number. </para>
+</briefdescription>
+<detaileddescription>
+<para>It is increased when the definition of the structure is changed. The increment can be larger than one to match driver version numbers or similar. Set to 0 for all versions up to first release.</para>
+<para>Must be set to <ref refid="group__constants_1ga2f31605192c692844d830dee4ab190df" kindref="member">NDIGO6G12_API_VERSION</ref> </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="447" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="447" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1a810922890a923f5f973e292bacc48e68" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_init_parameters::card_index</definition>
+<argsstring></argsstring>
+<name>card_index</name>
+<qualifiedname>ndigo6g12_init_parameters::card_index</qualifiedname>
+<briefdescription>
+<para>The index in the list of Ndigo6G12 boards that should be initialized. </para>
+</briefdescription>
+<detaileddescription>
+<para>There might be multiple boards installed in the system that are handled by this driver as reported by <ref refid="group__statfuncts_1ga07881e20b788b21f3b6fc179347ce1c5" kindref="member">ndigo6g12_count_devices()</ref>. This index selects one of them. Boards are enumerated depending on the PCIe slot. The lower the bus number and the lower the slot number the lower the card index. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="458" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="458" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1a407704680bbae19ae81aae1c5ae1aa52" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_init_parameters::board_id</definition>
+<argsstring></argsstring>
+<name>board_id</name>
+<qualifiedname>ndigo6g12_init_parameters::board_id</qualifiedname>
+<briefdescription>
+<para>The global index in the list of all cronologic devices. </para>
+</briefdescription>
+<detaileddescription>
+<para>This 8-bit number is filled into each packet created by the board and is useful if data-streams of multiple boards will be merged. If only Ndigo6G12 cards are used, this number can be set to <ref refid="structndigo6g12__init__parameters_1a810922890a923f5f973e292bacc48e68" kindref="member">card_index</ref>. If boards of different types that use a compatible data format are used in a system, each board should get a unique ID. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="468" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="468" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1aa2468a4af7aec085f9be593be0d8c6d0" prot="public" static="no" mutable="no">
+<type>int64_t</type>
+<definition>int64_t ndigo6g12_init_parameters::buffer_size[8]</definition>
+<argsstring>[8]</argsstring>
+<name>buffer_size</name>
+<qualifiedname>ndigo6g12_init_parameters::buffer_size</qualifiedname>
+<briefdescription>
+<para>The minimum size of the DMA buffer. </para>
+</briefdescription>
+<detaileddescription>
+<para>If set to 0, the default size of 64 MiBytes is used. For the Ndigo6G12 only the first entry is used. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="475" column="13" bodyfile="source/ndigo6g12_interface.h" bodystart="475" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1a1bc9168424b880e63a33443c747350b9" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_init_parameters::dma_read_delay</definition>
+<argsstring></argsstring>
+<name>dma_read_delay</name>
+<qualifiedname>ndigo6g12_init_parameters::dma_read_delay</qualifiedname>
+<briefdescription>
+<para>The update delay of the writing pointer after a packet has been send over PCIe. </para>
+</briefdescription>
+<detaileddescription>
+<para>Default: 8192. Do not change. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="482" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="482" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1ada1dd9fd522d3a2bcbf647d1c8b542d4" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_init_parameters::perf_derating</definition>
+<argsstring></argsstring>
+<name>perf_derating</name>
+<qualifiedname>ndigo6g12_init_parameters::perf_derating</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Default 0, corresponding to 1.6, 3.2, or 6.4&#160;Gsps.</para>
+<para>Do not change. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="489" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="489" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1a0d1a33713018575f8f2da8999695b421" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_init_parameters::led_flashing_mode</definition>
+<argsstring></argsstring>
+<name>led_flashing_mode</name>
+<qualifiedname>ndigo6g12_init_parameters::led_flashing_mode</qualifiedname>
+<briefdescription>
+<para>Controls the LED flashing mode. </para>
+</briefdescription>
+<detaileddescription>
+<para><itemizedlist>
+<listitem><para>0: Off</para>
+</listitem><listitem><para>1: Light up all colors once</para>
+</listitem><listitem><para>2:</para>
+</listitem><listitem><para>3: </para>
+</listitem></itemizedlist>
+</para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="498" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="498" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1a35c04e89ff84d5aa7f51a35f155b3652" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_init_parameters::clock_source</definition>
+<argsstring></argsstring>
+<name>clock_source</name>
+<qualifiedname>ndigo6g12_init_parameters::clock_source</qualifiedname>
+<briefdescription>
+<para>Defines which clock source is used (internal, SMA, AUX2). </para>
+</briefdescription>
+<detaileddescription>
+<para>See <ref refid="group__clockmodes" kindref="compound">NDIGO6G12_CLOCK_SOURCE</ref> defines. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="504" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="504" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" prot="public" static="no" mutable="no">
+<type>uint32_t</type>
+<definition>uint32_t ndigo6g12_init_parameters::application_type</definition>
+<argsstring></argsstring>
+<name>application_type</name>
+<qualifiedname>ndigo6g12_init_parameters::application_type</qualifiedname>
+<briefdescription>
+<para>Select the application type. </para>
+</briefdescription>
+<detaileddescription>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para>Possible values   </para>
+</entry><entry thead="yes"><para>Description    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__apptypes_1ga1cf9cfd9fb63b105f34151d73dbdb158" kindref="member">NDIGO6G12_APP_TYPE_CURRENT</ref>   </para>
+</entry><entry thead="no"><para>Use currently installed type, that is, the one that the Ndigo6G-12 was last initialized with.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__apptypes_1ga5892cf53d029fcd233410b03261f2380" kindref="member">NDIGO6G12_APP_TYPE_1CH</ref>   </para>
+</entry><entry thead="no"><para>One ADC channel at 6.4&#160;Gsps.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__apptypes_1ga8575c724769f442f91a76c6f73eb00fb" kindref="member">NDIGO6G12_APP_TYPE_2CH</ref>   </para>
+</entry><entry thead="no"><para>Two ADC channels at 3.2&#160;Gsps.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__apptypes_1ga96d6b2b565ff0f6c6cda34854768bcff" kindref="member">NDIGO6G12_APP_TYPE_4CH</ref>   </para>
+</entry><entry thead="no"><para>Four ADC channels at 1.6&#160;Gsps.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" kindref="member">NDIGO6G12_APP_TYPE_AVRG</ref>   </para>
+</entry><entry thead="no"><para>Averaging mode.   </para>
+</entry></row>
+</table>
+</para>
+<para>Note that <ref refid="structndigo6g12__configuration_1a9bdb8697b6a3205aff2e8c611ec1b51a" kindref="member">ndigo6g12_configuration::adc_mode</ref> must match the application type chosen here. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="519" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="519" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1af4bb2b03283eafaee3d91ce58b4b5397" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_init_parameters::force_bitstream_update</definition>
+<argsstring></argsstring>
+<name>force_bitstream_update</name>
+<qualifiedname>ndigo6g12_init_parameters::force_bitstream_update</qualifiedname>
+<briefdescription>
+<para>Force a bitstream update that configures the FPGA. </para>
+</briefdescription>
+<detaileddescription>
+<para>During the initialization of the card, a bitstream configures the FPGA of the Ndigo6G12. This is only done if during the initialization of the Ndigo6G12, <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">ndigo6g12_init_parameters::application_type</ref> is different from the <computeroutput>application_type</computeroutput> that the Ndigo6G12 is currently configured in. That is, the FPGA is only reconfigured, if <computeroutput>application_type</computeroutput> changes.</para>
+<para>By setting <computeroutput>force_bitstream_update</computeroutput> to <computeroutput>true</computeroutput>, one can force a reconfiguration of the FPGA. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="533" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="533" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1a067707582ac772dfd88dd5b85af45da5" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_init_parameters::partial_bitstream_size</definition>
+<argsstring></argsstring>
+<name>partial_bitstream_size</name>
+<qualifiedname>ndigo6g12_init_parameters::partial_bitstream_size</qualifiedname>
+<briefdescription>
+<para>Size of <ref refid="structndigo6g12__init__parameters_1a3a623a1a097d3b9da291ed28d78b12e2" kindref="member">partial_bitstream</ref>. </para>
+</briefdescription>
+<detaileddescription>
+<para>Reserved for future expandability. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="540" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="540" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1a3a623a1a097d3b9da291ed28d78b12e2" prot="public" static="no" mutable="no">
+<type>uint32_t *</type>
+<definition>uint32_t* ndigo6g12_init_parameters::partial_bitstream</definition>
+<argsstring></argsstring>
+<name>partial_bitstream</name>
+<qualifiedname>ndigo6g12_init_parameters::partial_bitstream</qualifiedname>
+<briefdescription>
+<para>Pointer to a buffer with partial bitstream data. </para>
+</briefdescription>
+<detaileddescription>
+<para>Can be <computeroutput>nullptr</computeroutput> if <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">application_type</ref> matches <computeroutput>application_type</computeroutput> of currently installed firmware.</para>
+<para>Reserved for future expandability. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="551" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="551" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__init__parameters_1af86355f231a6cbfcb4bb674c8b0f322e" prot="public" static="no" mutable="no">
+<type>const char *</type>
+<definition>const char* ndigo6g12_init_parameters::firmware_locations</definition>
+<argsstring></argsstring>
+<name>firmware_locations</name>
+<qualifiedname>ndigo6g12_init_parameters::firmware_locations</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+<para>Pointer to a list of paths (separated by <computeroutput></computeroutput>; ) Can be <computeroutput>nullptr</computeroutput> if <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">application_type</ref> matches <computeroutput>application_type</computeroutput> of currently installed firmware. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="558" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="558" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Struct for the initialization of the Ndigo6G12. </para>
+</briefdescription>
+<detaileddescription>
+<para>This structure MUST be completely initialized. </para>
+</detaileddescription>
+<location file="source/ndigo6g12_interface.h" line="438" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="438" bodyend="559"/>
+<listofallmembers>
+<member refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>application_type</name></member>
+<member refid="structndigo6g12__init__parameters_1a407704680bbae19ae81aae1c5ae1aa52" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>board_id</name></member>
+<member refid="structndigo6g12__init__parameters_1aa2468a4af7aec085f9be593be0d8c6d0" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>buffer_size</name></member>
+<member refid="structndigo6g12__init__parameters_1a810922890a923f5f973e292bacc48e68" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>card_index</name></member>
+<member refid="structndigo6g12__init__parameters_1a35c04e89ff84d5aa7f51a35f155b3652" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>clock_source</name></member>
+<member refid="structndigo6g12__init__parameters_1a1bc9168424b880e63a33443c747350b9" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>dma_read_delay</name></member>
+<member refid="structndigo6g12__init__parameters_1af86355f231a6cbfcb4bb674c8b0f322e" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>firmware_locations</name></member>
+<member refid="structndigo6g12__init__parameters_1af4bb2b03283eafaee3d91ce58b4b5397" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>force_bitstream_update</name></member>
+<member refid="structndigo6g12__init__parameters_1a0d1a33713018575f8f2da8999695b421" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>led_flashing_mode</name></member>
+<member refid="structndigo6g12__init__parameters_1a3a623a1a097d3b9da291ed28d78b12e2" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>partial_bitstream</name></member>
+<member refid="structndigo6g12__init__parameters_1a067707582ac772dfd88dd5b85af45da5" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>partial_bitstream_size</name></member>
+<member refid="structndigo6g12__init__parameters_1ada1dd9fd522d3a2bcbf647d1c8b542d4" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>perf_derating</name></member>
+<member refid="structndigo6g12__init__parameters_1a976fb0e6935bacc3eedf74e5e4e8c79a" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>version</name></member>
+</listofallmembers>
+</compounddef>
+</doxygen>

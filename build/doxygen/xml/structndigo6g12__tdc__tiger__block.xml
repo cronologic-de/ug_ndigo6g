@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="structndigo6g12__tdc__tiger__block" kind="struct" language="C++" prot="public">
+<compoundname>ndigo6g12_tdc_tiger_block</compoundname>
+<includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+<sectiondef kind="public-attrib">
+<memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1aab61493d50d200c507cefe94ff15a79e" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_tdc_tiger_block::mode</definition>
+<argsstring></argsstring>
+<name>mode</name>
+<qualifiedname>ndigo6g12_tdc_tiger_block::mode</qualifiedname>
+<briefdescription>
+<para>Enables the desired mode of operation for the TiGeR. </para>
+</briefdescription>
+<detaileddescription>
+<para>It is of one of the values <ref refid="group__tigerdefs" kindref="compound">NDIGO6G12_TIGER_* </ref>.</para>
+<para>Default is <ref refid="group__tigerdefs_1ga7eccbe4d5a6be5547e3483dd660bee96" kindref="member">NDIGO6G12_TIGER_OFF</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1413" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1413" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a64748243802880d156a614917b704778" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_tdc_tiger_block::negate</definition>
+<argsstring></argsstring>
+<name>negate</name>
+<qualifiedname>ndigo6g12_tdc_tiger_block::negate</qualifiedname>
+<briefdescription>
+<para>Set pulse polarity. </para>
+</briefdescription>
+<detaileddescription>
+<para>The TiGeR creates a high pulse from <computeroutput>start</computeroutput> to <computeroutput>stop</computeroutput> unless negated.</para>
+<para>Default is <computeroutput>true</computeroutput>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1422" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1422" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a0d56e160615259c83d123cff1d8f3b1f" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t ndigo6g12_tdc_tiger_block::retrigger</definition>
+<argsstring></argsstring>
+<name>retrigger</name>
+<qualifiedname>ndigo6g12_tdc_tiger_block::retrigger</qualifiedname>
+<briefdescription>
+<para>Enable retriggering. </para>
+</briefdescription>
+<detaileddescription>
+<para>If enabled:<itemizedlist>
+<listitem><para>If the timer surpassed the time corresponding to <computeroutput>start</computeroutput>, it is reset to <computeroutput>start</computeroutput>.</para>
+</listitem><listitem><para>If the timer did not surpass the time corresponding to <computeroutput>start</computeroutput>, it is reset to zero.</para>
+</listitem></itemizedlist>
+</para>
+<para>Otherwise signals at the input <computeroutput>sources</computeroutput> are ignored until <computeroutput>stop</computeroutput> is reached.</para>
+<para>Defaults to <computeroutput>false</computeroutput>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1437" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1437" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a50877a856a00485fa009152bf17cab91" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_tdc_tiger_block::start</definition>
+<argsstring></argsstring>
+<name>start</name>
+<qualifiedname>ndigo6g12_tdc_tiger_block::start</qualifiedname>
+<briefdescription>
+<para>The time from the first input signal seen in the idle state until the TiGer outputs a signal. </para>
+</briefdescription>
+<detaileddescription>
+<para>In multiples of 5&#160;ns. 0 &#8804; <computeroutput>start</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>start</computeroutput> &#8804; <computeroutput>stop</computeroutput>.</para>
+<para>Default is 0. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1447" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1447" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1acdc08d92cf01c459aec5e498cb4f89cc" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_tdc_tiger_block::stop</definition>
+<argsstring></argsstring>
+<name>stop</name>
+<qualifiedname>ndigo6g12_tdc_tiger_block::stop</qualifiedname>
+<briefdescription>
+<para>The number of samples from leaving the idle state until the tiger output is reset. </para>
+</briefdescription>
+<detaileddescription>
+<para>In multiples of 5&#160;ns. 0 &#8804; <computeroutput>stop</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>stop</computeroutput> &#8805; <computeroutput>start</computeroutput>.</para>
+<para>Default is 1. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1457" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1457" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int ndigo6g12_tdc_tiger_block::sources</definition>
+<argsstring></argsstring>
+<name>sources</name>
+<qualifiedname>ndigo6g12_tdc_tiger_block::sources</qualifiedname>
+<briefdescription>
+<para><ref refid="group__sourcedefs" kindref="compound">Bit mask</ref> with a bit set for all trigger sources that can trigger this channel. </para>
+</briefdescription>
+<detaileddescription>
+<para>Default is <ref refid="group__sourcedefs_1ga5282acf49f991fd38856930423263310" kindref="member">NDIGO6G12_TRIGGER_SOURCE_A0</ref>. One can choose from a source <ref refid="group__sourcedefs" kindref="compound">here</ref>. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1465" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1465" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Contains settings of TiGer block. </para>
+</briefdescription>
+<detaileddescription>
+<para>The configuration is similiar to <ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref>. </para>
+</detaileddescription>
+<location file="source/ndigo6g12_interface.h" line="1406" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1406" bodyend="1466"/>
+<listofallmembers>
+<member refid="structndigo6g12__tdc__tiger__block_1aab61493d50d200c507cefe94ff15a79e" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>mode</name></member>
+<member refid="structndigo6g12__tdc__tiger__block_1a64748243802880d156a614917b704778" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>negate</name></member>
+<member refid="structndigo6g12__tdc__tiger__block_1a0d56e160615259c83d123cff1d8f3b1f" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>retrigger</name></member>
+<member refid="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>sources</name></member>
+<member refid="structndigo6g12__tdc__tiger__block_1a50877a856a00485fa009152bf17cab91" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>start</name></member>
+<member refid="structndigo6g12__tdc__tiger__block_1acdc08d92cf01c459aec5e498cb4f89cc" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>stop</name></member>
+</listofallmembers>
+</compounddef>
+</doxygen>

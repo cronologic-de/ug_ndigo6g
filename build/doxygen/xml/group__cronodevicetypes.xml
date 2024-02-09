@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__cronodevicetypes" kind="group">
+<compoundname>cronodevicetypes</compoundname>
+<title>Device types</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__cronodevicetypes_1ga8fab643d38b3258036044d3d6d587964" prot="public" static="no">
+<name>CRONO_DEVICE_UNKNOWN</name>
+<initializer>0x0</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="130" column="9" bodyfile="source/crono_interface.h" bodystart="130" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga3735897d796da0a67adcfb11fe1a8fb2" prot="public" static="no">
+<name>CRONO_DEVICE_HPTDC</name>
+<initializer>0x1</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="131" column="9" bodyfile="source/crono_interface.h" bodystart="131" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga48b633bbe6acab8eda1a2acebb7fea82" prot="public" static="no">
+<name>CRONO_DEVICE_NDIGO5G</name>
+<initializer>0x2</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="132" column="9" bodyfile="source/crono_interface.h" bodystart="132" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1gad7de0d94e834651784c0f567806e5eb7" prot="public" static="no">
+<name>CRONO_DEVICE_NDIGO250M</name>
+<initializer>0x4</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="133" column="9" bodyfile="source/crono_interface.h" bodystart="133" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga385875b2727b7a55d3fd4d0cb7184823" prot="public" static="no">
+<name>CRONO_DEVICE_NDIGO_AVRG</name>
+<initializer>0x3</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="134" column="9" bodyfile="source/crono_interface.h" bodystart="134" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1gaa305ad2f3ce5e73ee133f639dc2b0487" prot="public" static="no">
+<name>CRONO_DEVICE_XTDC4</name>
+<initializer>0x6</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="135" column="9" bodyfile="source/crono_interface.h" bodystart="135" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga937ef41a52092dfbdab4b007bdcf56dd" prot="public" static="no">
+<name>CRONO_DEVICE_FMC_TDC10</name>
+<initializer>0x7</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="136" column="9" bodyfile="source/crono_interface.h" bodystart="136" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga719c24ef4a3835cb297a82c85eb51b2f" prot="public" static="no">
+<name>CRONO_DEVICE_TIMETAGGER4</name>
+<initializer>0x8</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="137" column="9" bodyfile="source/crono_interface.h" bodystart="137" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga12944067799b42d8aaa901957afdafb9" prot="public" static="no">
+<name>CRONO_DEVICE_D_AVE12</name>
+<initializer>0x9</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="138" column="9" bodyfile="source/crono_interface.h" bodystart="138" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga7ec80869646691cd1e40b73abee49b14" prot="public" static="no">
+<name>CRONO_DEVICE_D_AVE14</name>
+<initializer>0xa</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="139" column="9" bodyfile="source/crono_interface.h" bodystart="139" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga63599241ae785d5d6cf99845f56c556f" prot="public" static="no">
+<name>CRONO_DEVICE_NDIGO2G14</name>
+<initializer>0xb</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="140" column="9" bodyfile="source/crono_interface.h" bodystart="140" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga3cfe5eec402d936d78b10e778ae4581c" prot="public" static="no">
+<name>CRONO_DEVICE_XHPTDC8</name>
+<initializer>0xc</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="141" column="9" bodyfile="source/crono_interface.h" bodystart="141" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__cronodevicetypes_1ga23b41f7e1f9145709795718da535d38e" prot="public" static="no">
+<name>CRONO_DEVICE_NDIGO6G12</name>
+<initializer>0xd</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="142" column="9" bodyfile="source/crono_interface.h" bodystart="142" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Various device types. </para>
+</briefdescription>
+<detaileddescription>
+<para>Internal driver device ID of cronologic devices based on PCI Device ID </para>
+</detaileddescription>
+</compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__packettypes" kind="group">
+<compoundname>packettypes</compoundname>
+<title>Types of packets</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__packettypes_1ga55ff7ef96b5cfb7771cc244cd1610a9a" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_8_BIT_SIGNED</name>
+<initializer>0</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="49" column="9" bodyfile="source/crono_interface.h" bodystart="49" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1gac133e1ec78088f4816b7126e4b910bb0" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_16_BIT_SIGNED</name>
+<initializer>1</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="50" column="9" bodyfile="source/crono_interface.h" bodystart="50" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1ga76889dbc2a80a575a90454fbefb4ac21" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_32_BIT_SIGNED</name>
+<initializer>2</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="51" column="9" bodyfile="source/crono_interface.h" bodystart="51" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1ga1cc877fd7e92764df93551faeb24fd06" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_64_BIT_SIGNED</name>
+<initializer>3</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="52" column="9" bodyfile="source/crono_interface.h" bodystart="52" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1gadfba91ecc537169fc5bee363b9cc99a2" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_8_BIT_UNSIGNED</name>
+<initializer>4</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="53" column="9" bodyfile="source/crono_interface.h" bodystart="53" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1gacdef426ca44b851f7bb2577cbcffd7de" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_16_BIT_UNSIGNED</name>
+<initializer>5</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="54" column="9" bodyfile="source/crono_interface.h" bodystart="54" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1ga3c1572c73ebe89c812dac3a53170ced8" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_32_BIT_UNSIGNED</name>
+<initializer>6</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="55" column="9" bodyfile="source/crono_interface.h" bodystart="55" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1gac59202bb1df12d01615e4d2455aa2ffb" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_64_BIT_UNSIGNED</name>
+<initializer>7</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="56" column="9" bodyfile="source/crono_interface.h" bodystart="56" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1ga8bde9783b3aa1b809dfbb547e0577bc4" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_TDC_DATA</name>
+<initializer>8</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="57" column="9" bodyfile="source/crono_interface.h" bodystart="57" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1ga5aaa58af03dbbb76c5eb831dcaa20212" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_TIMESTAMP_ONLY</name>
+<initializer>128</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="58" column="9" bodyfile="source/crono_interface.h" bodystart="58" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1ga856a406737bf3188259c5ea5438f458c" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_END_OF_BUFFER</name>
+<initializer>129</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="59" column="9" bodyfile="source/crono_interface.h" bodystart="59" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__packettypes_1gaf56df0e5f1ebb2a8a310614da4a82ca4" prot="public" static="no">
+<name>CRONO_PACKET_TYPE_TRIGGER_PATTERN</name>
+<initializer>130</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="60" column="9" bodyfile="source/crono_interface.h" bodystart="60" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Packet types supported by different cronologic boards. </para>
+</briefdescription>
+<detaileddescription>
+<para>Used for <ref refid="structcrono__packet_1aba40464ebf54fa51fd8e968c882ffc9f" kindref="member">crono_packet::type</ref>. </para>
+</detaileddescription>
+</compounddef>
+</doxygen>
