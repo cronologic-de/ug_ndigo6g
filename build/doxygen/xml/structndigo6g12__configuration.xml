@@ -75,7 +75,7 @@
 </listitem><listitem><para>4 to 5: low-resolution TDC, inputs FPGA0, FPGA1</para>
 <para>Set to a value between &#8722;1.32&#160;V and +2.0&#160;V.</para>
 <para>This should be close to 50% of the height of your pulses on the inputs. Examples for various signaling standards are defined <ref refid="group__defdcoffset" kindref="compound">here </ref>. The inputs are AC coupled. This means that for pulse inputs the absolute voltage is not important. Only the relative pulse amplitude causes the input circuits to switch. <computeroutput>tdc_trigger_offset</computeroutput> for an input must be set to the relative switching voltage for the input standard in use. If the pulses are negative, a negative switching threshold must be set and vice versa.</para>
-<para>Defaults are NDIGO6g12_DC_OFFSET_N_NIM for each TDC channel. </para>
+<para>Defaults are <ref refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kindref="member">NDIGO6G12_DC_OFFSET_N_NIM</ref> for each TDC channel. </para>
 </listitem></itemizedlist>
 </para>
 </detaileddescription>

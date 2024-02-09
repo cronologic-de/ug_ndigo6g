@@ -59,9 +59,6 @@ Structures for initialization
     :members:
     :undoc-members:
 
-.. doxygenstruct:: ndigo6g12_device
-    :undoc-members:
-
 Status information
 ------------------
 The driver provides functions to retrieve detailed information on the type
@@ -174,24 +171,11 @@ Constants for error codes
 Functions for readout
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. doxygengroup:: readout
-
-.. doxygengroup:: errorfuncts
+.. doxygengroup:: readfuncts
+    :content-only:
 
 Structures for readout
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: readstructs
     :members:
-
-Output structure ndigo6g12_read_out
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. doxygenstruct:: ndigo6g12_read_out
-    :members:
-
-
-Other functions
----------------
-
-.. doxygenfunction:: ndigo6g12_device_state_to_str

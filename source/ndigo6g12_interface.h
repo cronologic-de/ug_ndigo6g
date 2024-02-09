@@ -1666,7 +1666,7 @@ typedef struct {
      *          for an input must be set to the relative switching voltage
      *          for the input standard in use. If the pulses are negative, a
      *          negative switching threshold must be set and vice versa.
-     * @details Defaults are @ref NDIGO6g12_DC_OFFSET_N_NIM for each TDC
+     * @details Defaults are @ref NDIGO6G12_DC_OFFSET_N_NIM for each TDC
      *          channel.
      */
     double tdc_trigger_offsets[NDIGO6G12_TDC_CHANNEL_COUNT];
@@ -1831,13 +1831,13 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
 
 
 
-/*! \defgroup conffuncts Functions for Configuration */
+/*! @defgroup conffuncts Functions for Configuration */
 /*!
  * @ingroup conffuncts
  * @brief            Copies the default configuration to the specified config
  *                   pointer.
  * @param[in] device Pointer to the device from which to get the information.
- * @param[out] static_info Pointer to a structure in which to store the
+ * @param[out] config Pointer to a structure in which to store the
  *                   configuration values.
  * @return           See @ref funcreturns "Function return values".
  * @details          Default values of @link ndigo6g12_configuration @endlink:
@@ -1863,12 +1863,12 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
  * - @link ndigo6g12_configuration::tdc_trigger_offsets tdc_trigger_offsets[i]
  *   @endlink = @ref NDIGO6G12_DC_OFFSET_N_NIM
  *
- * - @link ndigo6g12_trigger trigger[i]@endlink:
+ * - @link ndigo6g12_trigger trigger[i] @endlink:
  *   - @ref ndigo6g12_trigger.edge "edge" = `true`
  *   - @ref ndigo6g12_trigger.rising "rising" = `false`
- *   - @ref ndigo6g12_trigger.threshold "threshold" = 512
+ *   - @link ndigo6g12_trigger.threshold threshold @endlink = 512
  *
- * - @ref ndigo6g12_trigger_block trigger_block[i]@endlink:
+ * - @link ndigo6g12_trigger_block trigger_block[i] @endlink:
  *   - @ref ndigo6g12_trigger_block::enabled "enabled" = `false`
  *   - @ref ndigo6g12_trigger_block::retrigger "retrigger" = `false`
  *   - @ref ndigo6g12_trigger_block::multi_shot_count "multi_shot_count" = 1
@@ -1879,7 +1879,7 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
  *   - @link ndigo6g12_trigger_block::minimum_free_packets 
  *     minimum_free_packets @endlink = 0
  *
- * - @ref ndigo6g12_gating_block gating_block[i]@endlink:
+ * - @link ndigo6g12_gating_block gating_block[i]@endlink:
  *   - @ref ndigo6g12_gating_block::negate "negate" = `false`
  *   - @ref ndigo6g12_gating_block::retrigger "retrigger" = `false`
  *   - @ref ndigo6g12_gating_block::start "start" = 0
@@ -1901,16 +1901,16 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
  *           - @link ndigo6g12_tdc_gating_block::start start@endlink = 0
  *           - @link ndigo6g12_tdc_gating_block::stop start@endlink = 1000
  *        - @link ndigo6g12_tdc_tiger_block tiger_block@endlink:
- *           - @link ndigo6g12_tdc_gating_block::mode enable@endlink = 
+ *           - @link ndigo6g12_tdc_tiger_block::mode mode@endlink = 
  *             @ref NDIGO6G12_TIGER_OFF
- *           - @link ndigo6g12_tdc_gating_block::negate negate@endlink = 
+ *           - @link ndigo6g12_tdc_tiger_block::negate negate@endlink = 
  *             `true`
- *           - @link ndigo6g12_tdc_gating_block::retrigger retrigger@endlink = 
+ *           - @link ndigo6g12_tdc_tiger_block::retrigger retrigger@endlink = 
  *             `false`
- *           - @link ndigo6g12_tdc_gating_block::sources retrigger@endlink = 
+ *           - @link ndigo6g12_tdc_tiger_block::sources retrigger@endlink = 
  *             @ref NDIGO6G12_TRIGGER_SOURCE_AUTO
- *           - @link ndigo6g12_tdc_gating_block::start start@endlink = 0
- *           - @link ndigo6g12_tdc_gating_block::stop start@endlink = 1
+ *           - @link ndigo6g12_tdc_tiger_block::start start@endlink = 0
+ *           - @link ndigo6g12_tdc_tiger_block::stop start@endlink = 1
  *   - @ref ndigo6g12_tdc_configuration::skip_alignment "skip_alignment" =
  *     `false`
  *   - @ref ndigo6g12_tdc_configuration::alignment_mode "alignment_mode" =
@@ -1953,7 +1953,7 @@ ndigo6g12_get_default_configuration(ndigo6g12_device *device,
  *                   be changed after the call to @link
  *                   ndigo6g12_configure @endlink.
  * @param[in] device Pointer to the device from which to get the information.
- * @param[out] static_info Pointer to the configuration structure.
+ * @param[out] config Pointer to the configuration structure.
  * @return           See @ref funcreturns "Function return values".
  */
 NDIGO6G12_API int

@@ -34,12 +34,7 @@ autosectionlabel_maxdepth = 2
 rst_prolog = open("global.rst", "r").read()
 
 templates_path = ['_templates']
-exclude_patterns = ["global.rst", "hardware.rst", "introduction.rst",
-                    "example.rst", "packform.rst", "revhistory.rst",
-                    "techdata.rst"]
-
-asdf
-
+exclude_patterns = ["global.rst"]
 
 
 # -- Options for HTML output -------------------------------------------------
