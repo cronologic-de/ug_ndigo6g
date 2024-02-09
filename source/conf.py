@@ -38,6 +38,10 @@ exclude_patterns = ["global.rst", "hardware.rst", "introduction.rst",
                     "example.rst", "packform.rst", "revhistory.rst",
                     "techdata.rst"]
 
+asdf
+
+
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
