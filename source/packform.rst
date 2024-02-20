@@ -1,6 +1,11 @@
 Packet Format
 =============
 
+.. attention:: 
+
+    This User Guide is under active development and is subject to major 
+    changes.
+
 Defines for `crono_packet`
 --------------------------
 

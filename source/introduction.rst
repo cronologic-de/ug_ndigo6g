@@ -1,6 +1,11 @@
 Introduction
 ============
 
+.. attention:: 
+
+    This User Guide is under active development and is subject to major 
+    changes.
+
 The Ndigo6G-12 offers 6400 Msps sample rate, 12 bits resolution and a greatly
 improved readout rate of 6000 MB/s.  
 

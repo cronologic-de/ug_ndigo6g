@@ -104,7 +104,6 @@ latex_additional_files = [
     "extraplaceins.sty",
 ]
 
-
 numfig = True
 numfig_format = {
     "figure":"Figure %s:",
