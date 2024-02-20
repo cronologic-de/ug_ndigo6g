@@ -32,7 +32,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2111" column="6" declfile="source/ndigo6g12_interface.h" declline="2111" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2101" column="6" declfile="source/ndigo6g12_interface.h" declline="2101" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__runtimefuncts_1ga97dbeb5e7c2d3e60e4adc71587d2c4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -62,7 +62,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2119" column="6" declfile="source/ndigo6g12_interface.h" declline="2119" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2109" column="6" declfile="source/ndigo6g12_interface.h" declline="2109" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__runtimefuncts_1gaf39c5c016c10bef5822ba9b83e4aa957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -104,7 +104,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2128" column="6" declfile="source/ndigo6g12_interface.h" declline="2128" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2118" column="6" declfile="source/ndigo6g12_interface.h" declline="2118" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__runtimefuncts_1gacb9dd649c5b3c3347ccd0cd9b62d5fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -146,7 +146,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2138" column="6" declfile="source/ndigo6g12_interface.h" declline="2138" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2128" column="6" declfile="source/ndigo6g12_interface.h" declline="2128" declcolumn="6"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

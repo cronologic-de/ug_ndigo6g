@@ -325,56 +325,60 @@ typedef struct {
 
 
 
-/*! @ingroup infostructs
- *  @brief Structure containing PCIe information
+/*!
+ * @ingroup infostructs
+ * @brief Structure containing PCIe information
  */
 typedef struct {
     /*! 
-     * @brief organizes power supply of PCIe lanes
+     * @brief   Organizes power supply of PCIe lanes.
      */
     uint32_t pwr_mgmt;
 
-    /*! @brief Number of PCIe lanes that the card uses.
-     *
-     *  Should be 4 for Ndigo5G
+    /*! 
+     * @brief   Number of PCIe lanes that the card uses.
+     * @details Should be 4 for Ndigo5G and Ndigo6G-12.
      */
     uint32_t link_width;
 
-    /*! @brief Maximum size in bytes for one PCIe transaction.
-     *
-     *  Depends on the system configuration.
+    /*!
+     * @brief   Maximum size in bytes for one PCIe transaction.
+     * @details Depends on the system configuration.
      */
     uint32_t max_payload;
 
-    /*! @brief Data rate of the PCIe card.
-     *
-     *  Depends on the system configuration.
+    /*! 
+     * @brief   Data rate of the PCIe card.
+     * @details Depends on the system configuration.
      */
     uint32_t link_speed;
 
-    /*! @brief Different from 0 if the PCIe error status is supported for
-     *  this device
+    /*! 
+     * @brief   Different from 0 if the PCIe error status is supported for
+     *          this device
      */
     uint32_t error_status_supported;
 
-    /*! @brief Correctable error status flags, directly from the PCIe config
-     *  register.
-     *
-     *  Useful for debugging PCIe problems. 0, if no error is present,
-     *  otherwise one of @link pciecorrectableerrors CRONO_PCIE_* @endlink.
+    /*!
+     * @brief   Correctable error status flags, directly from the PCIe config
+     *          register.
+     * @details Useful for debugging PCIe problems. 0, if no error is present,
+     *          otherwise one of @link pciecorrectableerrors CRONO_PCIE_* 
+     *          @endlink.
      */
     uint32_t correctable_error_status;
 
-    /*! @brief Uncorrectable error status flags, directly from the PCIe
-     *  config register.
-     *
-     *  Useful for debugging PCIe problems. 0, if no error is present,
-     *  otherwise one of @link pcieuncorrectableerrors CRONO_PCIE_UNC_*
-     *  @endlink.
+    /*! 
+     * @brief   Uncorrectable error status flags, directly from the PCIe
+     *          config register.
+     * @details Useful for debugging PCIe problems. 0, if no error is present,
+     *          otherwise one of 
+     *          @link pcieuncorrectableerrors CRONO_PCIE_UNC_* @endlink.
      */
     uint32_t uncorrectable_error_status;
 
-    /*! @brief For future extension.
+    /*! 
+     * @brief   For future extension.
      */
     uint32_t reserved;
 } crono_pcie_info;

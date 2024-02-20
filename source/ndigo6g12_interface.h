@@ -30,20 +30,16 @@ extern "C" {
 /*! @defgroup constants Constants
  *  @brief Constants
  *  @{ */
-/*!
- * The current API version.  */
+/*! The current API version.  */
 #define NDIGO6G12_API_VERSION 1
 
-/*!
- *  The number of ADC and TDC triggers, including AUTO and ONE. */
+/*! The number of ADC and TDC triggers, including AUTO and ONE. */
 #define NDIGO6G12_TRIGGER_COUNT 16
 
-/*! 
- *  The number of analog input channels. */
+/*! The number of analog input channels. */
 #define NDIGO6G12_ADC_CHANNEL_COUNT 4
 
-/*!
- *  The number of gating blocks. */
+/*! The number of gating blocks. */
 #define NDIGO6G12_GATE_COUNT 4
 
 /*!
@@ -96,8 +92,8 @@ extern "C" {
 #define NDIGO6G12_CLOCK_SOURCE_INTERNAL 0
 
 /*!
- *  Use an external 10 MHz clock as reference. The input is the internal SMA
- *  socket. */
+ *  Use an external 10 MHz clock as reference. The input is the SMA
+ *  socket located on the board. */
 #define NDIGO6G12_CLOCK_SOURCE_SMA 1
 
 /*!
@@ -394,17 +390,16 @@ extern "C" {
 /*! @defgroup tigerdefs Defines for TiGer blocks
  *  @brief Defines for @link ndigo6g12_tdc_tiger_block::mode @endlink.
  *  @{ */
-/*!
- *  TiGeR deactivated */
+/*! TiGeR deactivated. */
 #define NDIGO6G12_TIGER_OFF 0
 
-/*!
- *  Pulse height is approx. 2&nbsp;V. LEMO is only usable as output. */
+/*! Pulse height is approximately 2&nbsp;V. LEMO is only usable as output. */
 #define NDIGO6G12_TIGER_OUTPUT 1
 
 /*!
- *  Pulse height is approx. 1&nbsp;V. LEMO may be used as input with OR
- *  function if external pulse rate is low. */
+ *  Pulse height is approximately 1&nbsp;V. LEMO may be used as input with OR
+ *  function if external pulse rate is low.
+ */
 #define NDIGO6G12_TIGER_BIDI 2
 
 /*!
@@ -755,65 +750,54 @@ typedef struct {
     int fw_revision;
 
     /*!
-     *  @brief Type of firmware, always 5 -> Ndigo6G-12.
+     * @brief   Type of firmware, always 5 -> Ndigo6G-12.
      */
     int fw_type;
 
     /*!
-     *  @brief Trenz serial number.
+     * @brief   Trenz serial number.
      */
     int pcb_serial;
 
     /*!
-     *  @brief Subversion revision ID of the FPGA configuration.
-     *
-     *  A number to track builds of the firmware in more detail than the
-     *  firmware revision. It changes with every change in the firmware, even
-     *  if there is no visible effect for the user. The subversion revision
-     *  number can be read from a register.
+     * @brief   Subversion revision ID of the FPGA configuration.
+     * @details A number to track builds of the firmware in more detail than 
+     *          the firmware revision. It changes with every change in the 
+     *          firmware, even if there is no visible effect for the user. 
+     *          The subversion revision number can be read from a register.
      */
     int svn_revision;
 
     /*!
-     *  @brief Shows the initialized mode.
-     *
-     *  - 0: Keep currently used application type
-     *  - 1: One ADC channel at 6.4&nbsp;Gsps
-     *  - 2: Two ADC channels at 3.2&nbsp;Gsps
-     *  - 4: Four ADC channels at 1.6&nbsp;Gsps
-     *  - 5: Averaging mode
-     *
-     *  See @link apptypes NDIGO6G12_APP_TYPE_* @endlink constants.
+     * @brief   Shows the initialized mode.
+     * @details See @ref apptypes "NDIGO6G12_APP_TYPE_*" constants.
      */
     int application_type;
 
     /*!
-     *  @brief Shows the signature of the primary flash.
+     * @brief   Shows the signature of the primary flash.
      */
     char config_flash_signature_primary[NDIGO6G12_FLASH_SIG_LEN];
 
     /*!
-     *  @brief Shows the signature of the secondary flash.
+     * @brief   Shows the signature of the secondary flash.
      */
     char config_flash_signature_secondary[NDIGO6G12_FLASH_SIG_LEN];
 
-    /*! @brief Auto trigger clock frequency.
-     *
-     *  The clock frequency of the auto trigger in Hz
-     *  used for calculating the auto_trigger_period.
+    /*! 
+     * @brief   Auto trigger clock frequency.
+     * @details The clock frequency of the auto trigger in Hz
+     *          used for calculating the auto_trigger_period.
      */
     double auto_trigger_ref_clock;
 } ndigo6g12_static_info;
 
-
-
 /*!
- *  @ingroup infostructs
- *
- *  @brief Contains fast dynamic information.
- *
- *  This structure is filled by @link ndigo6g12_get_fast_info() @endlink. This
- *  information can be obtained within a few microseconds.
+ * @ingroup infostructs
+ * @brief   Contains fast dynamic information.
+ * @details This structure is filled by @link ndigo6g12_get_fast_info()
+ *          @endlink. This information can be obtained within a few
+ *          microseconds.
  */
 typedef struct {
     /*!
@@ -1235,8 +1219,7 @@ typedef struct {
     /*! @brief A @ref sourcedefs "bit mask" with a bit set for all
      * trigger sources that can trigger this channel.
      *
-     * Default @ref sourcedefs "NDIGO6G12_TRIGGER_SOURCE_x" (x = 0 for
-     * index 0, etc)
+     * Default @ref NDIGO6G12_TRIGGER_SOURCE_NONE\.
      */
     int sources;
 
@@ -1844,16 +1827,16 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
  * 
  * - @ref ndigo6g12_configuration::adc_mode "adc_mode" = 
  *   - @ref NDIGO6G12_ADC_MODE_A
- *     (@ref ndigo6g12_init_parameters::application_type "application_type" 
+ *     (if @ref ndigo6g12_init_parameters::application_type "application_type" 
  *     = @link NDIGO6G12_APP_TYPE_1CH @endlink)
  *   - @ref NDIGO6G12_ADC_MODE_AD
- *     (@ref ndigo6g12_init_parameters::application_type "application_type" 
+ *     (if @ref ndigo6g12_init_parameters::application_type "application_type" 
  *     = @link NDIGO6G12_APP_TYPE_2CH @endlink)
  *   - @ref NDIGO6G12_ADC_MODE_ABCD
- *     (@ref ndigo6g12_init_parameters::application_type "application_type" 
+ *     (if @ref ndigo6g12_init_parameters::application_type "application_type" 
  *     = @link NDIGO6G12_APP_TYPE_4CH @endlink)
  *   - @ref NDIGO6G12_ADC_MODE_A
- *     (@ref ndigo6g12_init_parameters::application_type "application_type" 
+ *     (if @ref ndigo6g12_init_parameters::application_type "application_type" 
  *     = @link NDIGO6G12_APP_TYPE_AVRG @endlink)
  *
  * - @ref ndigo6g12_configuration::adc_cal_set "adc_cal_set" = 3
@@ -1874,8 +1857,10 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
  *   - @ref ndigo6g12_trigger_block::multi_shot_count "multi_shot_count" = 1
  *   - @ref ndigo6g12_trigger_block::precursor "precursor" = 0
  *   - @ref ndigo6g12_trigger_block::length "length" = 16
- *   - @ref ndigo6g12_trigger_block::sources "sources" = 0x00000000
- *   - @ref ndigo6g12_trigger_block::gates "gates" = 0x0000
+ *   - @ref ndigo6g12_trigger_block::sources "sources" = 
+ *     @ref NDIGO6G12_TRIGGER_SOURCE_NONE
+ *   - @ref ndigo6g12_trigger_block::gates "gates" = 
+ *     @ref NDIGO6G12_TRIGGER_GATE_NONE
  *   - @link ndigo6g12_trigger_block::minimum_free_packets 
  *     minimum_free_packets @endlink = 0
  *
@@ -1884,7 +1869,8 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
  *   - @ref ndigo6g12_gating_block::retrigger "retrigger" = `false`
  *   - @ref ndigo6g12_gating_block::start "start" = 0
  *   - @ref ndigo6g12_gating_block::stop "stop" = 1000
- *   - @ref ndigo6g12_gating_block::sources "sources" = 0x00000000
+ *   - @ref ndigo6g12_gating_block::sources "sources" =
+ *     @ref NDIGO6G12_TRIGGER_SOURCE_NONE
  *
  * - @link ndigo6g12_tdc_configuration tdc_configuration@endlink:
  *   - @link ndigo6g12_tdc_configuration::channel channel[i]@endlink:
@@ -1899,7 +1885,9 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
  *           - @link ndigo6g12_tdc_gating_block::sources retrigger@endlink = 
  *             @ref NDIGO6G12_TRIGGER_SOURCE_AUTO
  *           - @link ndigo6g12_tdc_gating_block::start start@endlink = 0
- *           - @link ndigo6g12_tdc_gating_block::stop start@endlink = 1000
+ *           - @link ndigo6g12_tdc_gating_block::stop stop@endlink = 1000
+ *           - @ref ndigo6g12_tdc_gating_block::sources "sources" = 
+ *             @ref NDIGO6G12_TRIGGER_SOURCE_AUTO
  *        - @link ndigo6g12_tdc_tiger_block tiger_block@endlink:
  *           - @link ndigo6g12_tdc_tiger_block::mode mode@endlink = 
  *             @ref NDIGO6G12_TIGER_OFF
@@ -1910,7 +1898,9 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
  *           - @link ndigo6g12_tdc_tiger_block::sources retrigger@endlink = 
  *             @ref NDIGO6G12_TRIGGER_SOURCE_AUTO
  *           - @link ndigo6g12_tdc_tiger_block::start start@endlink = 0
- *           - @link ndigo6g12_tdc_tiger_block::stop start@endlink = 1
+ *           - @link ndigo6g12_tdc_tiger_block::stop stop@endlink = 1
+ *           - @ref ndigo6g12_tdc_tiger_block::sources "sources" = 
+ *             @ref NDIGO6G12_TRIGGER_SOURCE_A0
  *   - @ref ndigo6g12_tdc_configuration::skip_alignment "skip_alignment" =
  *     `false`
  *   - @ref ndigo6g12_tdc_configuration::alignment_mode "alignment_mode" =
@@ -1932,7 +1922,7 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
  *
  * - @ref ndigo6g12_configuration::output_mode "output_mode" = 
  *   - @ref NDIGO6G12_OUTPUT_MODE_SIGNED32
- *     (@ref ndigo6g12_init_parameters::application_type "application_type" 
+ *     (if @ref ndigo6g12_init_parameters::application_type "application_type" 
  *     = @link NDIGO6G12_APP_TYPE_AVRG @endlink)
  *   - @ref NDIGO6G12_OUTPUT_MODE_SIGNED16 (otherwise)
  *
@@ -2077,7 +2067,7 @@ NDIGO6G12_API int ndigo6g12_get_pcie_info(ndigo6g12_device *device,
 
 /*! 
  * @ingroup statfuncts
- * @brief            Clear pci errors
+ * @brief            Clear PCIe errors.
  * @details          Only useful for PCIe problem debugging flags.
  * @param[in] device Pointer to the device.
  * @param[in] flags  Specify which flags to clear.

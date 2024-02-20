@@ -17,7 +17,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1346" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1346" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1329" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1329" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1ad4a4d76a104c0a0d0bd2e3a26a7c13f5" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -33,7 +33,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1352" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1352" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1335" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1335" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a53085ff85ea47e8d2c4c80884129a4a9" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -55,7 +55,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1367" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1367" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1350" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1350" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a261748d5ec588fea915de0676b87759b" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -72,7 +72,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1377" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1377" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1360" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1360" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a8d3748e5cdf1b84f603e6f72a4df89fd" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -89,7 +89,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1387" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1387" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1370" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1370" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a941a5f0e9288ffcbfcb26413c0792c12" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -105,7 +105,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1395" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1395" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1378" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1378" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -114,7 +114,7 @@
 <detaileddescription>
 <para>The functionality is similiar to <ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref>. </para>
 </detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1343" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1343" bodyend="1396"/>
+<location file="source/ndigo6g12_interface.h" line="1326" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1326" bodyend="1379"/>
 <listofallmembers>
 <member refid="structndigo6g12__tdc__gating__block_1a7bef63a1d69cc74bd67df9f6803b4f65" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>enable</name></member>
 <member refid="structndigo6g12__tdc__gating__block_1ad4a4d76a104c0a0d0bd2e3a26a7c13f5" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>negate</name></member>

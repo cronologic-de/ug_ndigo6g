@@ -14,7 +14,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="118" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="118" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="114" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="114" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__apptypes_1ga96d6b2b565ff0f6c6cda34854768bcff" prot="public" static="no">
 <name>NDIGO6G12_APP_TYPE_4CH</name>
@@ -26,7 +26,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="122" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="122" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="118" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="118" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__apptypes_1ga8575c724769f442f91a76c6f73eb00fb" prot="public" static="no">
 <name>NDIGO6G12_APP_TYPE_2CH</name>
@@ -38,7 +38,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="126" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="126" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="122" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="122" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__apptypes_1ga5892cf53d029fcd233410b03261f2380" prot="public" static="no">
 <name>NDIGO6G12_APP_TYPE_1CH</name>
@@ -50,7 +50,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="130" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="130" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="126" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="126" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__apptypes_1ga1cf9cfd9fb63b105f34151d73dbdb158" prot="public" static="no">
 <name>NDIGO6G12_APP_TYPE_CURRENT</name>
@@ -62,7 +62,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="134" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="134" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="130" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="130" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

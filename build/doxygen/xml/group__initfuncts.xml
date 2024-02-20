@@ -59,7 +59,7 @@ Default values:<itemizedlist>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2003" column="1" declfile="source/ndigo6g12_interface.h" declline="2003" declcolumn="1"/>
+<location file="source/ndigo6g12_interface.h" line="1993" column="1" declfile="source/ndigo6g12_interface.h" declline="1993" declcolumn="1"/>
 </memberdef>
 <memberdef kind="function" id="group__initfuncts_1ga2de181d8f48b36a640182d4118bea07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -113,7 +113,7 @@ Default values:<itemizedlist>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2027" column="6" declfile="source/ndigo6g12_interface.h" declline="2027" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2017" column="6" declfile="source/ndigo6g12_interface.h" declline="2017" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__initfuncts_1gaa9c9b2f19ee716d20a1401607ab8629d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -143,7 +143,7 @@ Default values:<itemizedlist>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2037" column="6" declfile="source/ndigo6g12_interface.h" declline="2037" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2027" column="6" declfile="source/ndigo6g12_interface.h" declline="2027" declcolumn="6"/>
 </memberdef>
 </sectiondef>
 <sectiondef kind="define">
@@ -158,7 +158,7 @@ Default values:<itemizedlist>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2011" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="2011" bodyend="2012"/>
+<location file="source/ndigo6g12_interface.h" line="2001" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="2001" bodyend="2002"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

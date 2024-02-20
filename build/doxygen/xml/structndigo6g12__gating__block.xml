@@ -19,7 +19,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1291" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1291" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1274" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1274" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__gating__block_1a1933ca18ed17d6bb2a0a86a144418be4" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -41,7 +41,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1306" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1306" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1289" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1289" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__gating__block_1a145a4ffa0f8ffb7116d0ff484f65ec0e" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -58,7 +58,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1316" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1316" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1299" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1299" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__gating__block_1ac9b1cf94bd6dc663c386011e5a34624c" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -75,7 +75,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1326" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1326" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1309" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1309" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__gating__block_1a6eeb8b65b9dfc59e59adb4d065e1a2ec" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -91,7 +91,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1333" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1333" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1316" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1316" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -101,7 +101,7 @@
 <para>After a signal at one of the <computeroutput>sources</computeroutput> is detected, a timer starts running. Once the timer reaches the value specified by <computeroutput>start</computeroutput>, a gate is opened (or closed, depending on <computeroutput>negate</computeroutput>) until the timer reaches the time specified by <computeroutput>stop</computeroutput>.</para>
 <para>What happens in the event that another signal before <computeroutput>stop</computeroutput> is detected is controlled by <computeroutput>retrigger</computeroutput>. </para>
 </detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1283" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1283" bodyend="1334"/>
+<location file="source/ndigo6g12_interface.h" line="1266" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1266" bodyend="1317"/>
 <listofallmembers>
 <member refid="structndigo6g12__gating__block_1ac379090f42af1aea8856bf991887e275" prot="public" virt="non-virtual"><scope>ndigo6g12_gating_block</scope><name>negate</name></member>
 <member refid="structndigo6g12__gating__block_1a1933ca18ed17d6bb2a0a86a144418be4" prot="public" virt="non-virtual"><scope>ndigo6g12_gating_block</scope><name>retrigger</name></member>

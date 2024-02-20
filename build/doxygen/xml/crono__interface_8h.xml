@@ -166,7 +166,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="393" column="9" bodyfile="source/crono_interface.h" bodystart="393" bodyend="-1"/>
+<location file="source/crono_interface.h" line="397" column="9" bodyfile="source/crono_interface.h" bodystart="397" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="crono__interface_8h_1a0ca5475c4d64cef53e2db9b4847f8872" prot="public" static="no">
 <name>crono_packet_bytes</name>
@@ -179,7 +179,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="398" column="9" bodyfile="source/crono_interface.h" bodystart="398" bodyend="-1"/>
+<location file="source/crono_interface.h" line="402" column="9" bodyfile="source/crono_interface.h" bodystart="402" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="crono__interface_8h_1a9e72c7b9c13027e35d62ea245b8cea14" prot="public" static="no">
 <name>crono_next_packet</name>
@@ -192,7 +192,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="404" column="9" bodyfile="source/crono_interface.h" bodystart="404" bodyend="-1"/>
+<location file="source/crono_interface.h" line="408" column="9" bodyfile="source/crono_interface.h" bodystart="408" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <sectiondef kind="typedef">
@@ -380,37 +380,37 @@
 <codeline lineno="319" refid="group__pcieuncorrectableerrors_1gabd898dfdf0297cee1ab2f055a8cf4b3b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_MALFORMED_TLP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>18</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="320" refid="group__pcieuncorrectableerrors_1ga84df6ad73f98c27b9a3daf5c0f4787b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_ECRC_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>19</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="321" refid="group__pcieuncorrectableerrors_1ga74a14e636a8b824abee760f851cb53a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNC_UNSUPPORED_REQUEST_ERROR<sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>20</highlight></codeline>
-<codeline lineno="331" refid="structcrono__pcie__info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="335" refid="structcrono__pcie__info_1ae5a6929f9b8ba8568264b27d4f3b1197" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1ae5a6929f9b8ba8568264b27d4f3b1197" kindref="member">pwr_mgmt</ref>;</highlight></codeline>
-<codeline lineno="336"><highlight class="normal"></highlight></codeline>
-<codeline lineno="341" refid="structcrono__pcie__info_1a0cc75ae2f95181834ddbb92f720311c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a0cc75ae2f95181834ddbb92f720311c4" kindref="member">link_width</ref>;</highlight></codeline>
-<codeline lineno="342"><highlight class="normal"></highlight></codeline>
-<codeline lineno="347" refid="structcrono__pcie__info_1a9f22ead0c303e7b25afac74283208577" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a9f22ead0c303e7b25afac74283208577" kindref="member">max_payload</ref>;</highlight></codeline>
-<codeline lineno="348"><highlight class="normal"></highlight></codeline>
-<codeline lineno="353" refid="structcrono__pcie__info_1acff45c8efa389ab57d98a19219654c9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1acff45c8efa389ab57d98a19219654c9c" kindref="member">link_speed</ref>;</highlight></codeline>
-<codeline lineno="354"><highlight class="normal"></highlight></codeline>
-<codeline lineno="358" refid="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" kindref="member">error_status_supported</ref>;</highlight></codeline>
-<codeline lineno="359"><highlight class="normal"></highlight></codeline>
-<codeline lineno="366" refid="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" kindref="member">correctable_error_status</ref>;</highlight></codeline>
-<codeline lineno="367"><highlight class="normal"></highlight></codeline>
-<codeline lineno="375" refid="structcrono__pcie__info_1a5b2f4a84a6a223e3a470172620fc7140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a5b2f4a84a6a223e3a470172620fc7140" kindref="member">uncorrectable_error_status</ref>;</highlight></codeline>
-<codeline lineno="376"><highlight class="normal"></highlight></codeline>
-<codeline lineno="379" refid="structcrono__pcie__info_1a9e0e02e8255d5b800f559440ec1e260b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a9e0e02e8255d5b800f559440ec1e260b" kindref="member">reserved</ref>;</highlight></codeline>
-<codeline lineno="380"><highlight class="normal">}<sp/><ref refid="structcrono__pcie__info" kindref="compound">crono_pcie_info</ref>;</highlight></codeline>
-<codeline lineno="381"><highlight class="normal"></highlight></codeline>
-<codeline lineno="386" refid="group__pcieclearflags_1ga097da58e8e11ba3a84ff7f6510a848c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_CORRECTABLE_FLAG<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="387" refid="group__pcieclearflags_1gaa58d1403c661db7d479126221f35ef82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNCORRECTABLE_FLAG<sp/>2</highlight></codeline>
-<codeline lineno="393" refid="crono__interface_8h_1ac98d212284a26bce0d16b8714e786186" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crono_packet_data_length(current)<sp/>((current)-&gt;type<sp/>&amp;128?0:(current)-&gt;length)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="394"><highlight class="normal"></highlight></codeline>
-<codeline lineno="398" refid="crono__interface_8h_1a0ca5475c4d64cef53e2db9b4847f8872" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crono_packet_bytes(current)<sp/>((crono_packet_data_length(current)<sp/>+<sp/>2)<sp/>*<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="399"><highlight class="normal"></highlight></codeline>
-<codeline lineno="404" refid="crono__interface_8h_1a9e72c7b9c13027e35d62ea245b8cea14" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crono_next_packet(current)<sp/>((volatile<sp/>crono_packet*)<sp/>(((int64_t)<sp/>(current))<sp/>+(<sp/>((current)-&gt;type&amp;128?0:(current)-&gt;length)<sp/>+<sp/>2)<sp/>*<sp/>8))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="406"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="407"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="408"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="409"><highlight class="normal"></highlight></codeline>
-<codeline lineno="410"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="332" refid="structcrono__pcie__info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="336" refid="structcrono__pcie__info_1ae5a6929f9b8ba8568264b27d4f3b1197" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1ae5a6929f9b8ba8568264b27d4f3b1197" kindref="member">pwr_mgmt</ref>;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="structcrono__pcie__info_1a0cc75ae2f95181834ddbb92f720311c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a0cc75ae2f95181834ddbb92f720311c4" kindref="member">link_width</ref>;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="structcrono__pcie__info_1a9f22ead0c303e7b25afac74283208577" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a9f22ead0c303e7b25afac74283208577" kindref="member">max_payload</ref>;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354" refid="structcrono__pcie__info_1acff45c8efa389ab57d98a19219654c9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1acff45c8efa389ab57d98a19219654c9c" kindref="member">link_speed</ref>;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360" refid="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" kindref="member">error_status_supported</ref>;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369" refid="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" kindref="member">correctable_error_status</ref>;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378" refid="structcrono__pcie__info_1a5b2f4a84a6a223e3a470172620fc7140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a5b2f4a84a6a223e3a470172620fc7140" kindref="member">uncorrectable_error_status</ref>;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383" refid="structcrono__pcie__info_1a9e0e02e8255d5b800f559440ec1e260b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structcrono__pcie__info_1a9e0e02e8255d5b800f559440ec1e260b" kindref="member">reserved</ref>;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal">}<sp/><ref refid="structcrono__pcie__info" kindref="compound">crono_pcie_info</ref>;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390" refid="group__pcieclearflags_1ga097da58e8e11ba3a84ff7f6510a848c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_CORRECTABLE_FLAG<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391" refid="group__pcieclearflags_1gaa58d1403c661db7d479126221f35ef82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRONO_PCIE_UNCORRECTABLE_FLAG<sp/>2</highlight></codeline>
+<codeline lineno="397" refid="crono__interface_8h_1ac98d212284a26bce0d16b8714e786186" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crono_packet_data_length(current)<sp/>((current)-&gt;type<sp/>&amp;128?0:(current)-&gt;length)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402" refid="crono__interface_8h_1a0ca5475c4d64cef53e2db9b4847f8872" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crono_packet_bytes(current)<sp/>((crono_packet_data_length(current)<sp/>+<sp/>2)<sp/>*<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408" refid="crono__interface_8h_1a9e72c7b9c13027e35d62ea245b8cea14" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crono_next_packet(current)<sp/>((volatile<sp/>crono_packet*)<sp/>(((int64_t)<sp/>(current))<sp/>+(<sp/>((current)-&gt;type&amp;128?0:(current)-&gt;length)<sp/>+<sp/>2)<sp/>*<sp/>8))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
 </programlisting>
 <location file="source/crono_interface.h"/>
 </compounddef>

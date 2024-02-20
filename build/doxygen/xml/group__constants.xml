@@ -15,7 +15,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="35" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="35" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="34" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="34" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__constants_1ga8a0e2b9fc283e378af9d140d7dc5a8e5" prot="public" static="no">
 <name>NDIGO6G12_TRIGGER_COUNT</name>
@@ -27,7 +27,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="39" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="39" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="37" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="37" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__constants_1ga58b88b343de23d00cb6e3b95ec6b35f1" prot="public" static="no">
 <name>NDIGO6G12_ADC_CHANNEL_COUNT</name>
@@ -39,7 +39,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="43" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="43" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="40" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="40" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__constants_1ga4a0f11174c3e9e1ffbe019a413df7cb1" prot="public" static="no">
 <name>NDIGO6G12_GATE_COUNT</name>
@@ -51,7 +51,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="47" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="47" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="43" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="43" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__constants_1ga671625c986c17588d7c66719427afea7" prot="public" static="no">
 <name>NDIGO6G12_TDC_CHANNEL_COUNT</name>
@@ -63,7 +63,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="51" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="51" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="47" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="47" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__constants_1gae48cca7429d857a6dbd4b4b382b1a61b" prot="public" static="no">
 <name>NDIGO6G12_BITSTREAM_DATE_LEN</name>
@@ -75,7 +75,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="55" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="55" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="51" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="51" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__constants_1gaa14e5242dc5cd22f333c69aa6af0db4f" prot="public" static="no">
 <name>NDIGO6G12_CALIBRATION_DATE_LEN</name>
@@ -87,7 +87,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="59" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="59" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="55" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="55" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__constants_1gaa06cf78afb177936084bbac7ce768e63" prot="public" static="no">
 <name>NDIGO6G12_FLASH_SIG_LEN</name>
@@ -99,7 +99,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="63" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="63" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="59" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="59" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__constants_1ga0d9550cfdb01cb823407984f781a4696" prot="public" static="no">
 <name>NDIGO6G12_FIFO_DEPTH</name>
@@ -112,7 +112,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="69" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="69" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="65" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="65" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

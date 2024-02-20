@@ -19,7 +19,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1773" column="6" declfile="source/ndigo6g12_interface.h" declline="1773" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="1756" column="6" declfile="source/ndigo6g12_interface.h" declline="1756" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__statfuncts_1ga69c101ee0ec180ddd5c3a79ed0ea6a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>const char *</type>
@@ -36,7 +36,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1780" column="13" declfile="source/ndigo6g12_interface.h" declline="1780" declcolumn="13"/>
+<location file="source/ndigo6g12_interface.h" line="1763" column="13" declfile="source/ndigo6g12_interface.h" declline="1763" declcolumn="13"/>
 </memberdef>
 <memberdef kind="function" id="group__statfuncts_1ga07881e20b788b21f3b6fc179347ce1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -78,7 +78,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1791" column="6" declfile="source/ndigo6g12_interface.h" declline="1791" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="1774" column="6" declfile="source/ndigo6g12_interface.h" declline="1774" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__statfuncts_1ga11f73e1c74d717664b9b07ec1d3dd8b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -120,7 +120,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1804" column="6" declfile="source/ndigo6g12_interface.h" declline="1804" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="1787" column="6" declfile="source/ndigo6g12_interface.h" declline="1787" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__statfuncts_1ga4f3ffc2d11fe59b3e07f1ae21c56791a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -162,7 +162,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1816" column="6" declfile="source/ndigo6g12_interface.h" declline="1816" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="1799" column="6" declfile="source/ndigo6g12_interface.h" declline="1799" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__statfuncts_1ga43147bc42f2803900cafb97522d40cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -204,7 +204,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1829" column="6" declfile="source/ndigo6g12_interface.h" declline="1829" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="1812" column="6" declfile="source/ndigo6g12_interface.h" declline="1812" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__statfuncts_1gabd149e97b66fdb38da81b19166843267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -246,7 +246,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2075" column="6" declfile="source/ndigo6g12_interface.h" declline="2075" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2065" column="6" declfile="source/ndigo6g12_interface.h" declline="2065" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__statfuncts_1gaf409be1f4c7186527daa4b62ff76f194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -262,7 +262,7 @@
 <declname>flags</declname>
 </param>
 <briefdescription>
-<para>Clear pci errors. </para>
+<para>Clear PCIe errors. </para>
 </briefdescription>
 <detaileddescription>
 <para>Only useful for PCIe problem debugging flags. <parameterlist kind="param"><parameteritem>
@@ -292,7 +292,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2090" column="6" declfile="source/ndigo6g12_interface.h" declline="2090" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2080" column="6" declfile="source/ndigo6g12_interface.h" declline="2080" declcolumn="6"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

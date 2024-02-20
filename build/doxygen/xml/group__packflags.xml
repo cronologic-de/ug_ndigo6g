@@ -14,7 +14,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="271" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="271" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="267" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="267" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1gae1a09398a594319d4d651e71af4cc531" prot="public" static="no">
 <name>NDIGO6G12_TDC_PACKET_FLAG_LOST</name>
@@ -26,7 +26,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="275" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="275" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="271" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="271" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1ga414ee83902f69fe30f828657e3a144ca" prot="public" static="no">
 <name>NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA</name>
@@ -38,7 +38,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="279" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="279" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="275" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="275" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1ga096593c9935b4e3bef94f8af1736a4e0" prot="public" static="no">
 <name>NDIGO6G12_TDC_PACKET_FLAG_DMA_FIFO_FULL</name>
@@ -51,7 +51,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="284" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="284" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="280" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="280" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1gab58e0e726461115cacef8d5df0463e91" prot="public" static="no">
 <name>NDIGO6G12_TDC_PACKET_FLAG_HOST_BUFFER_FULL</name>
@@ -64,7 +64,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="289" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="289" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="285" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="285" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1gaa1ab44e4949733dc2a4d001d21727bda" prot="public" static="no">
 <name>NDIGO6G12_TDC_HIT_FLAG_LOST</name>
@@ -76,7 +76,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="293" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="293" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="289" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="289" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1ga0c6587adee0e9743ab4f1b281884fdd4" prot="public" static="no">
 <name>NDIGO6G12_TDC_HIT_FLAG_ROLLOVER_LOST</name>
@@ -89,7 +89,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="298" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="298" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="294" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="294" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1gab18e3f6a232a7aa7f22c55a4bb6f2f5f" prot="public" static="no">
 <name>NDIGO6G12_TDC_HIT_FLAG_VALID</name>
@@ -101,7 +101,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="302" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="302" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="298" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="298" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1gad3453e1c7467a3e09caa68f2adef9442" prot="public" static="no">
 <name>NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER</name>
@@ -114,7 +114,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="310" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="310" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="306" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="306" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1ga8839ed36e22f6b5ebc4b530180cdbe5c" prot="public" static="no">
 <name>NDIGO6G12_TDC_HIT_ERROR_MASK</name>
@@ -126,7 +126,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="314" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="314" bodyend="315"/>
+<location file="source/ndigo6g12_interface.h" line="310" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="310" bodyend="311"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1ga131480d92fc6519c48cb9b644a4832b0" prot="public" static="no">
 <name>NDIGO6G12_TDC_HIT_TYPE_MASK</name>
@@ -138,7 +138,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="319" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="319" bodyend="320"/>
+<location file="source/ndigo6g12_interface.h" line="315" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="315" bodyend="316"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1ga2c849d405488877f8a9cdb14ef378aba" prot="public" static="no">
 <name>NDIGO6G12_TDC_PADDING_DATA_CHANNEL</name>
@@ -151,7 +151,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="328" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="328" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="324" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="324" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__packflags_1gae9340d4a362787142eed90008105163e" prot="public" static="no">
 <name>NDIGO6G12_TDC_ROLLOVER_CHANNEL</name>
@@ -164,7 +164,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="335" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="335" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="331" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="331" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

@@ -131,6 +131,10 @@ Trigger blocks
 ^^^^^^^^^^^^^^
 .. doxygengroup:: triggerblockdefs
 
+TiGer blocks
+^^^^^^^^^^^^
+.. doxygengroup:: tigerdefs
+
 DC offsets
 ^^^^^^^^^^
 .. doxygengroup:: defdcoffset
