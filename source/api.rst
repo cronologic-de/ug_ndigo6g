@@ -12,10 +12,10 @@ Declarations of the interface are found in *ndigo6g12_interface.h*.
 
 This chapter provides an overview of the provided API functionality.
 
-.. Typedefs
-.. --------
-
-.. .. doxygentypedef:: crono_bool_t
+..
+    ###########################################################################
+                                                                      Constants
+    ###########################################################################
 
 Constants
 ---------
@@ -32,6 +32,10 @@ Function return values
 .. doxygengroup:: funcreturns
 
 
+..
+    ###########################################################################
+                                                                           Init
+    ###########################################################################
 
 Initialization
 --------------
@@ -89,28 +93,27 @@ PCIe information
 .. doxygengroup:: pcieuncorrectableerrors
 .. doxygengroup:: pcieclearflags
 
-    
-
 
 Functions for information retrieval
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. doxygengroup:: statfuncts
     :content-only:
 
 Structures for status information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. doxygengroup:: infostructs
     :content-only:
     :members:
 
+..
+    ###########################################################################
+                                                                         Config
+    ###########################################################################
+
 Configuration
 -------------
-
 Defines
 ~~~~~~~
-
 ADC mode
 ^^^^^^^^
 .. doxygengroup:: adcdefs
@@ -143,18 +146,16 @@ Output modes
 ^^^^^^^^^^^^
 .. doxygengroup:: outputdefs
 
-
 Configuration setup
 ~~~~~~~~~~~~~~~~~~~
-
 .. doxygengroup:: conffuncts
     :content-only:
+
 
 .. _api confstructs:
 
 Structures for configuration 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. doxygengroup:: confstructs
     :members:
     :undoc-members:
@@ -163,28 +164,29 @@ Structures for configuration
 
 Runtime control
 ~~~~~~~~~~~~~~~
-
 .. doxygengroup:: runtimefuncts
     :content-only:
 
 
+..
+    ###########################################################################
+                                                                        readout
+    ###########################################################################
+
 Readout
 -------
-
 Constants for error codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. doxygengroup:: packflags
+.. doxygengroup:: readerrors
 
 
 Functions for readout
 ~~~~~~~~~~~~~~~~~~~~~
-
 .. doxygengroup:: readfuncts
     :content-only:
 
 Structures for readout
 ~~~~~~~~~~~~~~~~~~~~~~
-
 .. doxygengroup:: readstructs
     :members:

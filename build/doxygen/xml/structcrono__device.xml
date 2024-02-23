@@ -17,7 +17,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="204" column="9" bodyfile="source/crono_interface.h" bodystart="204" bodyend="-1"/>
+<location file="source/crono_interface.h" line="221" column="9" bodyfile="source/crono_interface.h" bodystart="221" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__device_1ab075fa4307aefcbeea42de4cdd31a977" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -32,7 +32,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="209" column="9" bodyfile="source/crono_interface.h" bodystart="209" bodyend="-1"/>
+<location file="source/crono_interface.h" line="226" column="9" bodyfile="source/crono_interface.h" bodystart="226" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__device_1af2840b8beb6a49d6eba436025a23de18" prot="public" static="no" mutable="no">
 <type>void *</type>
@@ -46,7 +46,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="211" column="11" bodyfile="source/crono_interface.h" bodystart="211" bodyend="-1"/>
+<location file="source/crono_interface.h" line="228" column="11" bodyfile="source/crono_interface.h" bodystart="228" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -54,7 +54,7 @@
 </briefdescription>
 <detaileddescription>
 </detaileddescription>
-<location file="source/crono_interface.h" line="200" column="1" bodyfile="source/crono_interface.h" bodystart="200" bodyend="212"/>
+<location file="source/crono_interface.h" line="217" column="1" bodyfile="source/crono_interface.h" bodystart="217" bodyend="229"/>
 <listofallmembers>
 <member refid="structcrono__device_1ab075fa4307aefcbeea42de4cdd31a977" prot="public" virt="non-virtual"><scope>crono_device</scope><name>board_id</name></member>
 <member refid="structcrono__device_1af2840b8beb6a49d6eba436025a23de18" prot="public" virt="non-virtual"><scope>crono_device</scope><name>device</name></member>

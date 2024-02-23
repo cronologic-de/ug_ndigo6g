@@ -17,7 +17,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="336" column="14" bodyfile="source/crono_interface.h" bodystart="336" bodyend="-1"/>
+<location file="source/crono_interface.h" line="353" column="14" bodyfile="source/crono_interface.h" bodystart="353" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__pcie__info_1a0cc75ae2f95181834ddbb92f720311c4" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
@@ -29,11 +29,11 @@
 <para>Number of PCIe lanes that the card uses. </para>
 </briefdescription>
 <detaileddescription>
-<para>Should be 4 for Ndigo5G and Ndigo6G-12. </para>
+<para>Should be 1, 2, or 4 for Ndigo5G and 1, 2, 4, or 8 for the Ndigo6G-12. Ideally, should be the respective maximum. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="342" column="14" bodyfile="source/crono_interface.h" bodystart="342" bodyend="-1"/>
+<location file="source/crono_interface.h" line="361" column="14" bodyfile="source/crono_interface.h" bodystart="361" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__pcie__info_1a9f22ead0c303e7b25afac74283208577" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
@@ -49,7 +49,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="348" column="14" bodyfile="source/crono_interface.h" bodystart="348" bodyend="-1"/>
+<location file="source/crono_interface.h" line="367" column="14" bodyfile="source/crono_interface.h" bodystart="367" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__pcie__info_1acff45c8efa389ab57d98a19219654c9c" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
@@ -65,7 +65,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="354" column="14" bodyfile="source/crono_interface.h" bodystart="354" bodyend="-1"/>
+<location file="source/crono_interface.h" line="373" column="14" bodyfile="source/crono_interface.h" bodystart="373" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
@@ -80,7 +80,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="360" column="14" bodyfile="source/crono_interface.h" bodystart="360" bodyend="-1"/>
+<location file="source/crono_interface.h" line="379" column="14" bodyfile="source/crono_interface.h" bodystart="379" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
@@ -96,7 +96,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="369" column="14" bodyfile="source/crono_interface.h" bodystart="369" bodyend="-1"/>
+<location file="source/crono_interface.h" line="388" column="14" bodyfile="source/crono_interface.h" bodystart="388" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__pcie__info_1a5b2f4a84a6a223e3a470172620fc7140" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
@@ -112,7 +112,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="378" column="14" bodyfile="source/crono_interface.h" bodystart="378" bodyend="-1"/>
+<location file="source/crono_interface.h" line="397" column="14" bodyfile="source/crono_interface.h" bodystart="397" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__pcie__info_1a9e0e02e8255d5b800f559440ec1e260b" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
@@ -127,7 +127,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="383" column="14" bodyfile="source/crono_interface.h" bodystart="383" bodyend="-1"/>
+<location file="source/crono_interface.h" line="402" column="14" bodyfile="source/crono_interface.h" bodystart="402" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -135,7 +135,7 @@
 </briefdescription>
 <detaileddescription>
 </detaileddescription>
-<location file="source/crono_interface.h" line="332" column="1" bodyfile="source/crono_interface.h" bodystart="332" bodyend="384"/>
+<location file="source/crono_interface.h" line="349" column="1" bodyfile="source/crono_interface.h" bodystart="349" bodyend="403"/>
 <listofallmembers>
 <member refid="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>correctable_error_status</name></member>
 <member refid="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>error_status_supported</name></member>

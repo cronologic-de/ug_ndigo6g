@@ -144,43 +144,60 @@
  * @}
  */
 
+
+
 /*!
  * @defgroup cronodevicestates Device states
  * @brief    Device states.
  * @details  A device must be configured before data capturing is started.
  * @{
  */
-/*! @brief Device is created but not yet initialized */
+
+/*! Device is created but not yet initialized */
 #define CRONO_DEVICE_STATE_CREATED      0
 
-/*! @brief Device is initialized but not yet configured for data capture */
+/*! Device is initialized but not yet configured for data capture */
 #define CRONO_DEVICE_STATE_INITIALIZED  1
 
-/*! @brief Device is ready to capture data */
+/*! Device is ready to capture data */
 #define CRONO_DEVICE_STATE_CONFIGURED   2
 
-/*! @brief Device has started data capture */
+/*! Device has started data capture */
 #define CRONO_DEVICE_STATE_CAPTURING    3
 
-/*! @brief Data capture is paused */
+/*! Data capture is paused */
 #define CRONO_DEVICE_STATE_PAUSED       4
 
-/*! @brief Device is closed */
+/*! Device is closed */
 #define CRONO_DEVICE_STATE_CLOSED       5
+
 /*!
  * @}
  */
 
 
 
-// reading packets from the device was successful
+/*!
+ * @defgroup readerrors Errors of read_out
+ * @brief Errors for `read_out` structure.
+ * @{
+ */
+
+/*! Reading packets from the device was successful. */
 #define CRONO_READ_OK                   0
-// trying to read packets does not yield data
+
+/*! Trying to read packets does not yield data. */
 #define CRONO_READ_NO_DATA              1
-// some unhandled error occured a device reinit is required
+
+/*! Some unhandled error occured. A device reinit is required. */
 #define CRONO_READ_INTERNAL_ERROR       2
-// trying to read packets does not yield data in the given amount of time
+
+/*! Trying to read packets does not yield data in the given amount of time. */
 #define CRONO_READ_TIMEOUT              3
+
+/*!
+ * @}
+ */
 
 
 
@@ -337,7 +354,9 @@ typedef struct {
 
     /*! 
      * @brief   Number of PCIe lanes that the card uses.
-     * @details Should be 4 for Ndigo5G and Ndigo6G-12.
+     * @details Should be 1, 2, or 4 for Ndigo5G and 
+     *          1, 2, 4, or 8 for the Ndigo6G-12. Ideally, should be the
+     *          respective maximum.
      */
     uint32_t link_width;
 

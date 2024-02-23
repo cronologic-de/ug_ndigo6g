@@ -17,7 +17,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="225" column="13" bodyfile="source/crono_interface.h" bodystart="225" bodyend="-1"/>
+<location file="source/crono_interface.h" line="242" column="13" bodyfile="source/crono_interface.h" bodystart="242" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__packet_1ab2bdf396e0645cc8c14fc010048b550c" prot="public" static="no" mutable="no">
 <type>uint8_t</type>
@@ -32,7 +32,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="230" column="13" bodyfile="source/crono_interface.h" bodystart="230" bodyend="-1"/>
+<location file="source/crono_interface.h" line="247" column="13" bodyfile="source/crono_interface.h" bodystart="247" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__packet_1aba40464ebf54fa51fd8e968c882ffc9f" prot="public" static="no" mutable="no">
 <type>uint8_t</type>
@@ -48,7 +48,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="236" column="13" bodyfile="source/crono_interface.h" bodystart="236" bodyend="-1"/>
+<location file="source/crono_interface.h" line="253" column="13" bodyfile="source/crono_interface.h" bodystart="253" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__packet_1a2a35dcae5468852e8408502b34b68f4c" prot="public" static="no" mutable="no">
 <type>uint8_t</type>
@@ -63,7 +63,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="241" column="13" bodyfile="source/crono_interface.h" bodystart="241" bodyend="-1"/>
+<location file="source/crono_interface.h" line="258" column="13" bodyfile="source/crono_interface.h" bodystart="258" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__packet_1a3257f1832f0d0652e3be58c49370366b" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
@@ -78,7 +78,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="246" column="14" bodyfile="source/crono_interface.h" bodystart="246" bodyend="-1"/>
+<location file="source/crono_interface.h" line="263" column="14" bodyfile="source/crono_interface.h" bodystart="263" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__packet_1a113b64f8511f5f1145d90489cb41c560" prot="public" static="no" mutable="no">
 <type>int64_t</type>
@@ -93,7 +93,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="252" column="13" bodyfile="source/crono_interface.h" bodystart="252" bodyend="-1"/>
+<location file="source/crono_interface.h" line="269" column="13" bodyfile="source/crono_interface.h" bodystart="269" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structcrono__packet_1a1a07181c25b3d6de2d1e44e0d95c2504" prot="public" static="no" mutable="no">
 <type>uint64_t</type>
@@ -109,7 +109,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="259" column="14" bodyfile="source/crono_interface.h" bodystart="259" bodyend="-1"/>
+<location file="source/crono_interface.h" line="276" column="14" bodyfile="source/crono_interface.h" bodystart="276" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -118,7 +118,7 @@
 <detaileddescription>
 <para>The size of the data[] array is given in the length field. </para>
 </detaileddescription>
-<location file="source/crono_interface.h" line="221" column="1" bodyfile="source/crono_interface.h" bodystart="221" bodyend="260"/>
+<location file="source/crono_interface.h" line="238" column="1" bodyfile="source/crono_interface.h" bodystart="238" bodyend="277"/>
 <listofallmembers>
 <member refid="structcrono__packet_1ab2bdf396e0645cc8c14fc010048b550c" prot="public" virt="non-virtual"><scope>crono_packet</scope><name>card</name></member>
 <member refid="structcrono__packet_1a494a324fbca25d6a26b8d91e01e28a69" prot="public" virt="non-virtual"><scope>crono_packet</scope><name>channel</name></member>

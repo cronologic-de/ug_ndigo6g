@@ -19,7 +19,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1465" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1465" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1530" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1530" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__averager__configuration_1a31b3dec87854087e5d92394c04fa1da2" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -36,7 +36,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1474" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1474" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1539" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1539" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__averager__configuration_1aa4942f113d6903f68f66ad431c112a4f" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -53,7 +53,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1483" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1483" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1547" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1547" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__averager__configuration_1aff46814be0d69ce6a9dec09f17154142" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -69,7 +69,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1489" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1489" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1553" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1553" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__averager__configuration_1ab624489e14c02d386ead68753a386456" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -86,7 +86,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1497" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1497" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1561" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1561" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__averager__configuration_1a79e3d789dc7f7bf9ec790dffc6a0719b" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -98,12 +98,12 @@
 <para>Set the number microseconds until timeout. </para>
 </briefdescription>
 <detaileddescription>
-<para>Must be 0 if no averaging application is installed on the Ndigo6G-12.</para>
+<para>Must be 0 if no averaging application is installed on the Ndigo6G-12 board.</para>
 <para>Default is 0. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1505" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1505" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1569" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1569" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -111,7 +111,7 @@
 </briefdescription>
 <detaileddescription>
 </detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1457" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1457" bodyend="1506"/>
+<location file="source/ndigo6g12_interface.h" line="1522" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1522" bodyend="1570"/>
 <listofallmembers>
 <member refid="structndigo6g12__averager__configuration_1a32ceafd663b247e78704f3e1c3f3e8b7" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>iterations</name></member>
 <member refid="structndigo6g12__averager__configuration_1aa4942f113d6903f68f66ad431c112a4f" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>stop_manual</name></member>

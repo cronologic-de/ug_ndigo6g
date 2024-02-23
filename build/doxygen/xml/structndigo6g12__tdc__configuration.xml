@@ -11,13 +11,13 @@
 <name>channel</name>
 <qualifiedname>ndigo6g12_tdc_configuration::channel</qualifiedname>
 <briefdescription>
+<para>Configure polarity, type and threshold for the TDC channels. </para>
 </briefdescription>
 <detaileddescription>
-<para>Configure polarity, type and threshold for the TDC channels </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1552" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1552" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1617" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1617" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a56ae1001804b4a1f5c69477597df1898" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -29,12 +29,17 @@
 <para>Configure THS788 calibration. </para>
 </briefdescription>
 <detaileddescription>
-<para>If set to 1 skip THS788 calibration. If set to 0 do THS788 calibration (default).</para>
-<para>Default is <computeroutput>false</computeroutput>. </para>
+<para><itemizedlist>
+<listitem><para><computeroutput>true</computeroutput>: Skip THS788 calibration.<itemizedlist>
+<listitem><para><computeroutput>false</computeroutput>: Do THS788 calibration (default).</para>
+</listitem></itemizedlist>
+Default is <computeroutput>false</computeroutput>. </para>
+</listitem></itemizedlist>
+</para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1561" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1561" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1626" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1626" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a1031e692bc7159747f0c636dadcb8ca3" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -43,14 +48,14 @@
 <name>alignment_mode</name>
 <qualifiedname>ndigo6g12_tdc_configuration::alignment_mode</qualifiedname>
 <briefdescription>
+<para>Align TDC channels. </para>
 </briefdescription>
 <detaileddescription>
-<para>Align TDC channels</para>
 <para>Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1568" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1568" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1632" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1632" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1ad62eb5295cdc0852458a5d2cf29cc96f" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -59,13 +64,13 @@
 <name>alignment_pin_high_z</name>
 <qualifiedname>ndigo6g12_tdc_configuration::alignment_pin_high_z</qualifiedname>
 <briefdescription>
+<para>Default is <computeroutput>false</computeroutput>. </para>
 </briefdescription>
 <detaileddescription>
-<para>Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1573" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1573" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1637" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1637" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a4b0893e689951405013327c852c018be" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -74,13 +79,13 @@
 <name>alignment_pin_invert</name>
 <qualifiedname>ndigo6g12_tdc_configuration::alignment_pin_invert</qualifiedname>
 <briefdescription>
+<para>Default is <computeroutput>false</computeroutput>. </para>
 </briefdescription>
 <detaileddescription>
-<para>Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1578" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1578" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1642" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1642" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a85539ea6a73cd39c206978a0da855d44" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -89,13 +94,13 @@
 <name>alignment_phase_mask</name>
 <qualifiedname>ndigo6g12_tdc_configuration::alignment_phase_mask</qualifiedname>
 <briefdescription>
+<para>Default is <computeroutput>0x1fc</computeroutput>. </para>
 </briefdescription>
 <detaileddescription>
-<para>Default is <computeroutput>0x1fc</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1583" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1583" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1647" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1647" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1aa97f2633625335026e03145c834f3d5e" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -104,13 +109,13 @@
 <name>send_empty_packets</name>
 <qualifiedname>ndigo6g12_tdc_configuration::send_empty_packets</qualifiedname>
 <briefdescription>
+<para>Default is <computeroutput>false</computeroutput>. </para>
 </briefdescription>
 <detaileddescription>
-<para>Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1588" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1588" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1652" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1652" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -145,7 +150,7 @@
 <link refid="structndigo6g12__tdc__tiger__block"/>
 </node>
 </collaborationgraph>
-<location file="source/ndigo6g12_interface.h" line="1548" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1548" bodyend="1589"/>
+<location file="source/ndigo6g12_interface.h" line="1613" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1613" bodyend="1653"/>
 <listofallmembers>
 <member refid="structndigo6g12__tdc__configuration_1a1031e692bc7159747f0c636dadcb8ca3" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_mode</name></member>
 <member refid="structndigo6g12__tdc__configuration_1a85539ea6a73cd39c206978a0da855d44" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_phase_mask</name></member>

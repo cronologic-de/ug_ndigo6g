@@ -56,7 +56,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2043" column="6" declfile="source/ndigo6g12_interface.h" declline="2043" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2114" column="6" declfile="source/ndigo6g12_interface.h" declline="2114" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__readfuncts_1ga773491c1db097452e748cc4a414c71df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>const char *</type>
@@ -86,7 +86,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2054" column="1" declfile="source/ndigo6g12_interface.h" declline="2054" declcolumn="1"/>
+<location file="source/ndigo6g12_interface.h" line="2125" column="1" declfile="source/ndigo6g12_interface.h" declline="2125" declcolumn="1"/>
 </memberdef>
 <memberdef kind="function" id="group__readfuncts_1ga73e2cc71b45d17768b57bfc2f84c1b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>const char *</type>
@@ -116,7 +116,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2091" column="13" declfile="source/ndigo6g12_interface.h" declline="2091" declcolumn="13"/>
+<location file="source/ndigo6g12_interface.h" line="2162" column="13" declfile="source/ndigo6g12_interface.h" declline="2162" declcolumn="13"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

@@ -279,10 +279,10 @@
 <member refid="group__cronodevicestates_1gae21c7101820077dd01168cd670573cc5" kind="define"><name>CRONO_DEVICE_STATE_CAPTURING</name></member>
 <member refid="group__cronodevicestates_1ga1f58253f725c8cbefc7b86c353696574" kind="define"><name>CRONO_DEVICE_STATE_PAUSED</name></member>
 <member refid="group__cronodevicestates_1gaff027bca61ef38551e3408e2d58a1c1b" kind="define"><name>CRONO_DEVICE_STATE_CLOSED</name></member>
-<member refid="crono__interface_8h_1ac7abe40011dc7e20ab59d0bcbc619a0d" kind="define"><name>CRONO_READ_OK</name></member>
-<member refid="crono__interface_8h_1a1b7dea2e56f046ef2f405c9b8c4d5d95" kind="define"><name>CRONO_READ_NO_DATA</name></member>
-<member refid="crono__interface_8h_1a4fa4fb29e1a2598c455e9810e064fac9" kind="define"><name>CRONO_READ_INTERNAL_ERROR</name></member>
-<member refid="crono__interface_8h_1af061dd14b2d0d1ab2a69d2c8a9604629" kind="define"><name>CRONO_READ_TIMEOUT</name></member>
+<member refid="group__readerrors_1gac7abe40011dc7e20ab59d0bcbc619a0d" kind="define"><name>CRONO_READ_OK</name></member>
+<member refid="group__readerrors_1ga1b7dea2e56f046ef2f405c9b8c4d5d95" kind="define"><name>CRONO_READ_NO_DATA</name></member>
+<member refid="group__readerrors_1ga4fa4fb29e1a2598c455e9810e064fac9" kind="define"><name>CRONO_READ_INTERNAL_ERROR</name></member>
+<member refid="group__readerrors_1gaf061dd14b2d0d1ab2a69d2c8a9604629" kind="define"><name>CRONO_READ_TIMEOUT</name></member>
 <member refid="group__pciecorrectableerrors_1gaedd0e587231b17f94116422ad29c4444" kind="define"><name>CRONO_PCIE_RX_ERROR</name></member>
 <member refid="group__pciecorrectableerrors_1gaf01e2e118e9f82b5dce87fa63823fb96" kind="define"><name>CRONO_PCIE_BAD_TLP</name></member>
 <member refid="group__pciecorrectableerrors_1gabb9af64c55ed166c17edacee9696194e" kind="define"><name>CRONO_PCIE_BAD_DLLP</name></member>
@@ -659,6 +659,12 @@
 <member refid="group__cronodevicestates_1gae21c7101820077dd01168cd670573cc5" kind="define"><name>CRONO_DEVICE_STATE_CAPTURING</name></member>
 <member refid="group__cronodevicestates_1ga1f58253f725c8cbefc7b86c353696574" kind="define"><name>CRONO_DEVICE_STATE_PAUSED</name></member>
 <member refid="group__cronodevicestates_1gaff027bca61ef38551e3408e2d58a1c1b" kind="define"><name>CRONO_DEVICE_STATE_CLOSED</name></member>
+</compound>
+<compound refid="group__readerrors" kind="group"><name>readerrors</name>
+<member refid="group__readerrors_1gac7abe40011dc7e20ab59d0bcbc619a0d" kind="define"><name>CRONO_READ_OK</name></member>
+<member refid="group__readerrors_1ga1b7dea2e56f046ef2f405c9b8c4d5d95" kind="define"><name>CRONO_READ_NO_DATA</name></member>
+<member refid="group__readerrors_1ga4fa4fb29e1a2598c455e9810e064fac9" kind="define"><name>CRONO_READ_INTERNAL_ERROR</name></member>
+<member refid="group__readerrors_1gaf061dd14b2d0d1ab2a69d2c8a9604629" kind="define"><name>CRONO_READ_TIMEOUT</name></member>
 </compound>
 <compound refid="group__pciecorrectableerrors" kind="group"><name>pciecorrectableerrors</name>
 <member refid="group__pciecorrectableerrors_1gaedd0e587231b17f94116422ad29c4444" kind="define"><name>CRONO_PCIE_RX_ERROR</name></member>

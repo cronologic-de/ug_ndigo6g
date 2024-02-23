@@ -52,19 +52,19 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 </listitem><listitem><para><ref refid="structndigo6g12__configuration_1a00c7c6e8948999a4141e20fbaabc4c01" kindref="member">adc_cal_set</ref> = 3</para>
 </listitem><listitem><para><ref refid="structndigo6g12__configuration_1a789ab33de69d524de28180d465a910ae" kindref="member">analog_offsets[i]</ref> = 0</para>
 </listitem><listitem><para><ref refid="structndigo6g12__configuration_1a2253a70de4bbdd0a27e98c1391677a65" kindref="member">tdc_trigger_offsets[i] </ref> = <ref refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kindref="member">NDIGO6G12_DC_OFFSET_N_NIM</ref></para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger" kindref="compound">trigger[i] </ref>:<itemizedlist>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger" kindref="compound">trigger[i]</ref>:<itemizedlist>
 <listitem><para><ref refid="structndigo6g12__trigger_1a296c83e9d21707458844e7dbcccdec8d" kindref="member">edge</ref> = <computeroutput>true</computeroutput></para>
 </listitem><listitem><para><ref refid="structndigo6g12__trigger_1a8d87b34870f5ab3abb9f50a4b9d34d7e" kindref="member">rising</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger_1a2c6c4b83ca2337f3530386715846303e" kindref="member">threshold </ref> = 512</para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger_1a2c6c4b83ca2337f3530386715846303e" kindref="member">threshold</ref> = 512</para>
 </listitem></itemizedlist>
 </para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger__block" kindref="compound">trigger_block[i] </ref>:<itemizedlist>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger__block" kindref="compound">trigger_block[i]</ref>:<itemizedlist>
 <listitem><para><ref refid="structndigo6g12__trigger__block_1abbb70b7cbab5a579740d2b4e82a23fed" kindref="member">enabled</ref> = <computeroutput>false</computeroutput></para>
 </listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1aedb27bbae9e92b4fd5ae828492690335" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
 </listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a072bc3d1b95e702845f6a05fda8b4ba8" kindref="member">multi_shot_count</ref> = 1</para>
 </listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1ae63d6b4996b956dec5dc1a25ead11c04" kindref="member">precursor</ref> = 0</para>
 </listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a367787f6e4895a8835f1f6abdd9bbbca" kindref="member">length</ref> = 16</para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1aaf3719cf4543964ca19f774c94bd8bb9" kindref="member">sources</ref> = <ref refid="group__sourcedefs_1gad85e47f3b9cb93fa3c5e09b5ee23456b" kindref="member">NDIGO6G12_TRIGGER_SOURCE_NONE</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1aaf3719cf4543964ca19f774c94bd8bb9" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
 </listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a82c9a7f378da8cdf154acfdd82ae5039" kindref="member">gates</ref> = <ref refid="group__gatedefs_1ga92f1048ce70f7946e2c1f921c74c4a14" kindref="member">NDIGO6G12_TRIGGER_GATE_NONE</ref></para>
 </listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a33d6847f6ba765dc4aaf761a3cc43c86" kindref="member">minimum_free_packets </ref> = 0</para>
 </listitem></itemizedlist>
@@ -74,7 +74,7 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 </listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a1933ca18ed17d6bb2a0a86a144418be4" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
 </listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a145a4ffa0f8ffb7116d0ff484f65ec0e" kindref="member">start</ref> = 0</para>
 </listitem><listitem><para><ref refid="structndigo6g12__gating__block_1ac9b1cf94bd6dc663c386011e5a34624c" kindref="member">stop</ref> = 1000</para>
-</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a6eeb8b65b9dfc59e59adb4d065e1a2ec" kindref="member">sources</ref> = <ref refid="group__sourcedefs_1gad85e47f3b9cb93fa3c5e09b5ee23456b" kindref="member">NDIGO6G12_TRIGGER_SOURCE_NONE</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a6eeb8b65b9dfc59e59adb4d065e1a2ec" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
 </listitem></itemizedlist>
 </para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration" kindref="compound">tdc_configuration</ref>:<itemizedlist>
@@ -87,7 +87,7 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a941a5f0e9288ffcbfcb26413c0792c12" kindref="member">retrigger</ref> = <ref refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kindref="member">NDIGO6G12_TRIGGER_SOURCE_AUTO</ref></para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a261748d5ec588fea915de0676b87759b" kindref="member">start</ref> = 0</para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a8d3748e5cdf1b84f603e6f72a4df89fd" kindref="member">stop</ref> = 1000</para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a941a5f0e9288ffcbfcb26413c0792c12" kindref="member">sources</ref> = <ref refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kindref="member">NDIGO6G12_TRIGGER_SOURCE_AUTO</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a941a5f0e9288ffcbfcb26413c0792c12" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
 </listitem></itemizedlist>
 </para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block" kindref="compound">tiger_block</ref>:<itemizedlist>
@@ -97,7 +97,7 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" kindref="member">retrigger</ref> = <ref refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kindref="member">NDIGO6G12_TRIGGER_SOURCE_AUTO</ref></para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a50877a856a00485fa009152bf17cab91" kindref="member">start</ref> = 0</para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1acdc08d92cf01c459aec5e498cb4f89cc" kindref="member">stop</ref> = 1</para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" kindref="member">sources</ref> = <ref refid="group__sourcedefs_1ga5282acf49f991fd38856930423263310" kindref="member">NDIGO6G12_TRIGGER_SOURCE_A0</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
 </listitem></itemizedlist>
 </para>
 </listitem></itemizedlist>
@@ -124,7 +124,7 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1936" column="1" declfile="source/ndigo6g12_interface.h" declline="1936" declcolumn="1"/>
+<location file="source/ndigo6g12_interface.h" line="2002" column="1" declfile="source/ndigo6g12_interface.h" declline="2002" declcolumn="1"/>
 </memberdef>
 <memberdef kind="function" id="group__conffuncts_1gafb9ccbef090349b638da935ec00dfcc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -166,7 +166,7 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1950" column="1" declfile="source/ndigo6g12_interface.h" declline="1950" declcolumn="1"/>
+<location file="source/ndigo6g12_interface.h" line="2016" column="1" declfile="source/ndigo6g12_interface.h" declline="2016" declcolumn="1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

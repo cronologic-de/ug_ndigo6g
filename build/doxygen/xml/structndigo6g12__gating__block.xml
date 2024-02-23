@@ -19,7 +19,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1274" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1274" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1351" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1351" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__gating__block_1a1933ca18ed17d6bb2a0a86a144418be4" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -35,13 +35,12 @@
 <listitem><para>If the timer surpassed the time corresponding to <computeroutput>start</computeroutput>, it is reset to <computeroutput>start</computeroutput>.</para>
 </listitem><listitem><para>If the timer did not surpass the time corresponding to <computeroutput>start</computeroutput>, it is reset to zero.</para>
 </listitem></itemizedlist>
-</para>
-<para>Otherwise signals at the input <computeroutput>sources</computeroutput> are ignored until <computeroutput>stop</computeroutput> is reached.</para>
+Otherwise signals at the input <computeroutput>sources</computeroutput> are ignored until <computeroutput>stop</computeroutput> is reached.</para>
 <para>Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1289" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1289" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1365" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1365" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__gating__block_1a145a4ffa0f8ffb7116d0ff484f65ec0e" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -58,7 +57,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1299" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1299" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1374" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1374" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__gating__block_1ac9b1cf94bd6dc663c386011e5a34624c" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -75,7 +74,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1309" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1309" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1383" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1383" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__gating__block_1a6eeb8b65b9dfc59e59adb4d065e1a2ec" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -87,11 +86,11 @@
 <para><ref refid="group__sourcedefs" kindref="compound">Bit mask</ref> with a bit set for all trigger sources that can trigger this channel. </para>
 </briefdescription>
 <detaileddescription>
-<para>Default is <ref refid="group__sourcedefs_1gad85e47f3b9cb93fa3c5e09b5ee23456b" kindref="member">NDIGO6G12_TRIGGER_SOURCE_NONE</ref>. </para>
+<para>Default <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref> (<ref refid="group__sourcedefs_1ga5282acf49f991fd38856930423263310" kindref="member">NDIGO6G12_TRIGGER_SOURCE_A0</ref> for ADC channel A, <ref refid="group__sourcedefs_1gaca7a1750faf3cffdd15d3e972551e3ba" kindref="member">NDIGO6G12_TRIGGER_SOURCE_B0</ref> for ADC channel B, etc). </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1316" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1316" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1392" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1392" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -101,7 +100,7 @@
 <para>After a signal at one of the <computeroutput>sources</computeroutput> is detected, a timer starts running. Once the timer reaches the value specified by <computeroutput>start</computeroutput>, a gate is opened (or closed, depending on <computeroutput>negate</computeroutput>) until the timer reaches the time specified by <computeroutput>stop</computeroutput>.</para>
 <para>What happens in the event that another signal before <computeroutput>stop</computeroutput> is detected is controlled by <computeroutput>retrigger</computeroutput>. </para>
 </detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1266" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1266" bodyend="1317"/>
+<location file="source/ndigo6g12_interface.h" line="1344" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1344" bodyend="1393"/>
 <listofallmembers>
 <member refid="structndigo6g12__gating__block_1ac379090f42af1aea8856bf991887e275" prot="public" virt="non-virtual"><scope>ndigo6g12_gating_block</scope><name>negate</name></member>
 <member refid="structndigo6g12__gating__block_1a1933ca18ed17d6bb2a0a86a144418be4" prot="public" virt="non-virtual"><scope>ndigo6g12_gating_block</scope><name>retrigger</name></member>

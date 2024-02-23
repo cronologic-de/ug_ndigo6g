@@ -59,7 +59,7 @@ Default values:<itemizedlist>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1993" column="1" declfile="source/ndigo6g12_interface.h" declline="1993" declcolumn="1"/>
+<location file="source/ndigo6g12_interface.h" line="2059" column="1" declfile="source/ndigo6g12_interface.h" declline="2059" declcolumn="1"/>
 </memberdef>
 <memberdef kind="function" id="group__initfuncts_1ga2de181d8f48b36a640182d4118bea07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -113,7 +113,7 @@ Default values:<itemizedlist>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2017" column="6" declfile="source/ndigo6g12_interface.h" declline="2017" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2084" column="6" declfile="source/ndigo6g12_interface.h" declline="2084" declcolumn="6"/>
 </memberdef>
 <memberdef kind="function" id="group__initfuncts_1gaa9c9b2f19ee716d20a1401607ab8629d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
 <type>int</type>
@@ -143,7 +143,7 @@ Default values:<itemizedlist>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2027" column="6" declfile="source/ndigo6g12_interface.h" declline="2027" declcolumn="6"/>
+<location file="source/ndigo6g12_interface.h" line="2094" column="6" declfile="source/ndigo6g12_interface.h" declline="2094" declcolumn="6"/>
 </memberdef>
 </sectiondef>
 <sectiondef kind="define">
@@ -152,13 +152,13 @@ Default values:<itemizedlist>
 <param><defname>init</defname></param>
 <initializer>    <ref refid="group__initfuncts_1ga9b17c6124fa242e7293b30d927826ff3" kindref="member">ndigo6g12_get_default_init_parameters_version</ref>(init, <ref refid="group__constants_1ga2f31605192c692844d830dee4ab190df" kindref="member">NDIGO6G12_API_VERSION</ref>)</initializer>
 <briefdescription>
+<para>Macro that calls <ref refid="group__initfuncts_1ga9b17c6124fa242e7293b30d927826ff3" kindref="member">ndigo6g12_get_default_init_parameters_version</ref> with the correct API version. </para>
 </briefdescription>
 <detaileddescription>
-<para>Macro that calls * <ref refid="group__initfuncts_1ga9b17c6124fa242e7293b30d927826ff3" kindref="member">ndigo6g12_get_default_init_parameters_version</ref> with the correct API version. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="2001" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="2001" bodyend="2002"/>
+<location file="source/ndigo6g12_interface.h" line="2068" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="2068" bodyend="2069"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
