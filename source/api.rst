@@ -177,7 +177,6 @@ Readout
 -------
 Constants for error codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-.. doxygengroup:: packflags
 .. doxygengroup:: readerrors
 
 

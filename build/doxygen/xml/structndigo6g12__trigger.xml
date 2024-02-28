@@ -23,7 +23,7 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1210" column="11" bodyfile="source/ndigo6g12_interface.h" bodystart="1210" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1223" column="11" bodyfile="source/ndigo6g12_interface.h" bodystart="1223" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger_1a296c83e9d21707458844e7dbcccdec8d" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -43,7 +43,7 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1225" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1225" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1238" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1238" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger_1a8d87b34870f5ab3abb9f50a4b9d34d7e" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -71,7 +71,7 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1242" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1242" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1255" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1255" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -79,7 +79,7 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </briefdescription>
 <detaileddescription>
 </detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1194" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1194" bodyend="1243"/>
+<location file="source/ndigo6g12_interface.h" line="1207" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1207" bodyend="1256"/>
 <listofallmembers>
 <member refid="structndigo6g12__trigger_1a296c83e9d21707458844e7dbcccdec8d" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>edge</name></member>
 <member refid="structndigo6g12__trigger_1a8d87b34870f5ab3abb9f50a4b9d34d7e" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>rising</name></member>

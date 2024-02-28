@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<compounddef id="group__tdchitflags" kind="group">
+<compoundname>tdchitflags</compoundname>
+<title>TDC Hit flags</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__tdchitflags_1gaa1ab44e4949733dc2a4d001d21727bda" prot="public" static="no">
+<name>NDIGO6G12_TDC_HIT_FLAG_LOST</name>
+<initializer>1</initializer>
+<briefdescription>
+<para>At least one preceding event was lost due to full FIFO. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="341" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="341" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__tdchitflags_1ga0c6587adee0e9743ab4f1b281884fdd4" prot="public" static="no">
+<name>NDIGO6G12_TDC_HIT_FLAG_ROLLOVER_LOST</name>
+<initializer>2</initializer>
+<briefdescription>
+<para>Rollover has been lost due to full FIFO. </para>
+</briefdescription>
+<detaileddescription>
+<para>Results in a fatal error. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="347" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="347" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__tdchitflags_1gab18e3f6a232a7aa7f22c55a4bb6f2f5f" prot="public" static="no">
+<name>NDIGO6G12_TDC_HIT_FLAG_VALID</name>
+<initializer>4</initializer>
+<briefdescription>
+<para>Timestamp is a valid TDC event. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="352" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="352" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__tdchitflags_1gad3453e1c7467a3e09caa68f2adef9442" prot="public" static="no">
+<name>NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER</name>
+<initializer>8</initializer>
+<briefdescription>
+<para>Timestamp is a rollover marker. </para>
+</briefdescription>
+<detaileddescription>
+<para>Add <ref refid="structndigo6g12__param__info_1ac9893ca14bae9f69dfc9571e3b5d6622" kindref="member">ndigo6g12_param_info::tdc_rollover_period</ref> to all subsequent timestamps in the packet. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="359" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="359" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__tdchitflags_1ga8839ed36e22f6b5ebc4b530180cdbe5c" prot="public" static="no">
+<name>NDIGO6G12_TDC_HIT_ERROR_MASK</name>
+<initializer>    (<ref refid="group__tdchitflags_1ga0c6587adee0e9743ab4f1b281884fdd4" kindref="member">NDIGO6G12_TDC_HIT_FLAG_ROLLOVER_LOST</ref> | <ref refid="group__tdchitflags_1gaa1ab44e4949733dc2a4d001d21727bda" kindref="member">NDIGO6G12_TDC_HIT_FLAG_LOST</ref>)</initializer>
+<briefdescription>
+<para>TDC hit flag mask for error reporting. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="364" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="364" bodyend="365"/>
+</memberdef>
+<memberdef kind="define" id="group__tdchitflags_1ga131480d92fc6519c48cb9b644a4832b0" prot="public" static="no">
+<name>NDIGO6G12_TDC_HIT_TYPE_MASK</name>
+<initializer>    (<ref refid="group__tdchitflags_1gad3453e1c7467a3e09caa68f2adef9442" kindref="member">NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER</ref> | <ref refid="group__tdchitflags_1gab18e3f6a232a7aa7f22c55a4bb6f2f5f" kindref="member">NDIGO6G12_TDC_HIT_FLAG_VALID</ref>)</initializer>
+<briefdescription>
+<para>TDC hit flags mask for timestamp type. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="370" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="370" bodyend="371"/>
+</memberdef>
+<memberdef kind="define" id="group__tdchitflags_1ga2c849d405488877f8a9cdb14ef378aba" prot="public" static="no">
+<name>NDIGO6G12_TDC_PADDING_DATA_CHANNEL</name>
+<initializer>14</initializer>
+<briefdescription>
+<para>TDC hit channel number for padding-data. </para>
+</briefdescription>
+<detaileddescription>
+<para>Padding-data can be ignored. Does not contain any usefull information. Padding-data has <ref refid="group__tdchitflags_1gad3453e1c7467a3e09caa68f2adef9442" kindref="member">NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER</ref> and <ref refid="group__tdchitflags_1gab18e3f6a232a7aa7f22c55a4bb6f2f5f" kindref="member">NDIGO6G12_TDC_HIT_FLAG_VALID</ref> always cleared. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="380" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="380" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__tdchitflags_1gae9340d4a362787142eed90008105163e" prot="public" static="no">
+<name>NDIGO6G12_TDC_ROLLOVER_CHANNEL</name>
+<initializer>15</initializer>
+<briefdescription>
+<para>TDC hit channel number for rollover marker. </para>
+</briefdescription>
+<detaileddescription>
+<para>Rollover marker has <ref refid="group__tdchitflags_1gad3453e1c7467a3e09caa68f2adef9442" kindref="member">NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER</ref> always set. </para>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="388" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="388" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
+<para>Flags of TDC-hit error conditions. </para>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+</compounddef>
+</doxygen>

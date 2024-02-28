@@ -14,7 +14,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="157" column="9" bodyfile="source/crono_interface.h" bodystart="157" bodyend="-1"/>
+<location file="source/crono_interface.h" line="161" column="9" bodyfile="source/crono_interface.h" bodystart="161" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__cronodevicestates_1gaeb14fa2c80d0cef48101a6ac200b84ac" prot="public" static="no">
 <name>CRONO_DEVICE_STATE_INITIALIZED</name>
@@ -26,7 +26,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="160" column="9" bodyfile="source/crono_interface.h" bodystart="160" bodyend="-1"/>
+<location file="source/crono_interface.h" line="164" column="9" bodyfile="source/crono_interface.h" bodystart="164" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__cronodevicestates_1ga0aa3a99f1998171b4c5783dbf7a3b1fd" prot="public" static="no">
 <name>CRONO_DEVICE_STATE_CONFIGURED</name>
@@ -38,7 +38,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="163" column="9" bodyfile="source/crono_interface.h" bodystart="163" bodyend="-1"/>
+<location file="source/crono_interface.h" line="167" column="9" bodyfile="source/crono_interface.h" bodystart="167" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__cronodevicestates_1gae21c7101820077dd01168cd670573cc5" prot="public" static="no">
 <name>CRONO_DEVICE_STATE_CAPTURING</name>
@@ -50,7 +50,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="166" column="9" bodyfile="source/crono_interface.h" bodystart="166" bodyend="-1"/>
+<location file="source/crono_interface.h" line="170" column="9" bodyfile="source/crono_interface.h" bodystart="170" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__cronodevicestates_1ga1f58253f725c8cbefc7b86c353696574" prot="public" static="no">
 <name>CRONO_DEVICE_STATE_PAUSED</name>
@@ -62,7 +62,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="169" column="9" bodyfile="source/crono_interface.h" bodystart="169" bodyend="-1"/>
+<location file="source/crono_interface.h" line="173" column="9" bodyfile="source/crono_interface.h" bodystart="173" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__cronodevicestates_1gaff027bca61ef38551e3408e2d58a1c1b" prot="public" static="no">
 <name>CRONO_DEVICE_STATE_CLOSED</name>
@@ -74,7 +74,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="172" column="9" bodyfile="source/crono_interface.h" bodystart="172" bodyend="-1"/>
+<location file="source/crono_interface.h" line="176" column="9" bodyfile="source/crono_interface.h" bodystart="176" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

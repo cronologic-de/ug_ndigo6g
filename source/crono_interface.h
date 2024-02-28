@@ -19,9 +19,9 @@
 #define CRONO_WINDRIVER_NOT_FOUND               1
 #define CRONO_DEVICE_NOT_FOUND                  2
 #define CRONO_NOT_INITIALIZED                   3
-// when a capture on a closed card is called
+/* when a capture on a closed card is called */
 #define CRONO_WRONG_STATE                       4
-// The pointer given to a xtdc4 driver function was not a valid pointer
+/* The pointer given to a xtdc4 driver function was not a valid pointer */
 #define CRONO_INVALID_DEVICE                    5
 #define CRONO_BUFFER_ALLOC_FAILED               6
 #define CRONO_TDC_NO_EDGE_FOUND                 7
@@ -61,6 +61,8 @@
 /*!
  * @}
  */
+
+
 
 /*!
  * @defgroup packetflags Packet flags
@@ -119,6 +121,8 @@
 /*!
  * @}
  */
+
+
 
 /*!
  * @defgroup cronodevicetypes Device types
@@ -205,6 +209,7 @@
 extern "C" {
 #endif
 
+
 /*! @brief Data type used for boolean values in data structures */
 typedef uint8_t crono_bool_t;
 
@@ -221,7 +226,7 @@ typedef struct {
     int device_type;
 
     /*! 
-     * For HPTDC use this board id, Ndigo uses configured board id
+     * @details For HPTDC use this board ID. Ndigo uses configured board ID.
      */
     int board_id;
 
@@ -263,8 +268,9 @@ typedef struct {
     uint32_t length;
 
     /*! 
-     * @brief   Timestamp of packet creation, may be start or end of data
-     *          depending on packet source.
+     * @brief   Timestamp of packet creation.
+     * @details It may be the start or the end of the data, depending on
+     *          the packet source.
      */
     int64_t timestamp;
 
@@ -282,17 +288,17 @@ typedef struct {
 * Packet data structure in ring buffer for packets carrying only the header.
 */
 typedef struct {
-    // number of the source channel
+    /*! Number of the source channel */
     uint8_t channel;
-    // id of the card
+    /*! ID of the card */
     uint8_t card;
-    // type of packet. Must be CRONO_PACKET_TYPE_TIMESTAMP_ONLY
+    /*! Type of packet. Must be CRONO_PACKET_TYPE_TIMESTAMP_ONLY */
     uint8_t type;
-    // Bit field of CRONO_PACKET_FLAG_* bits
+    /*! Bit field of CRONO_PACKET_FLAG_* bits */
     uint8_t flags;
-    // either 0 or a bit field carrying data
+    /*! either 0 or a bit field carrying data */
     uint32_t length;
-    // timestamp of packet creation
+    /*! timestamp of packet creation */
     int64_t timestamp;
 } crono_packet_only_timestamp;
 
@@ -304,14 +310,14 @@ typedef struct {
  * @details Only relevant when troubleshooting.
  * @{
  */
-#define CRONO_PCIE_RX_ERROR 1 << 0
-#define CRONO_PCIE_BAD_TLP 1 << 6
-#define CRONO_PCIE_BAD_DLLP 1 << 7
-#define CRONO_PCIE_REPLAY_NUM_ROLLOVER 1 << 8
-#define CRONO_PCIE_REPLAY_TIMER_TIMEOUT 1 << 12
-#define CRONO_PCIE_ADVISORY_NON_FATAL 1 << 13
+#define CRONO_PCIE_RX_ERROR                 1 << 0
+#define CRONO_PCIE_BAD_TLP                  1 << 6
+#define CRONO_PCIE_BAD_DLLP                 1 << 7
+#define CRONO_PCIE_REPLAY_NUM_ROLLOVER      1 << 8
+#define CRONO_PCIE_REPLAY_TIMER_TIMEOUT     1 << 12
+#define CRONO_PCIE_ADVISORY_NON_FATAL       1 << 13
 #define CRONO_PCIE_CORRECTED_INTERNAL_ERROR 1 << 14
-#define CRONO_PCIE_HEADER_LOG_OVERFLOW 1 << 15
+#define CRONO_PCIE_HEADER_LOG_OVERFLOW      1 << 15
 /*!
  * @}
  */
@@ -402,13 +408,15 @@ typedef struct {
     uint32_t reserved;
 } crono_pcie_info;
 
-/*! @defgroup pcieclearflags Flags for clearing PCIe errors
- *
- *  @{
+/*! 
+ * @defgroup pcieclearflags Flags for clearing PCIe errors
+ * @{
  */
-#define CRONO_PCIE_CORRECTABLE_FLAG 1
+#define CRONO_PCIE_CORRECTABLE_FLAG   1
 #define CRONO_PCIE_UNCORRECTABLE_FLAG 2
-/*! @} */
+/*!
+ * @}
+ */
 
 /*!
  * Returns the legnth of the data array of the packet in multiples of 8 bytes.
@@ -420,7 +428,7 @@ typedef struct {
  */
 #define crono_packet_bytes(current) ((crono_packet_data_length(current) + 2) * 8)
 
-/**
+/*!
  * Returns a crono_packet pointer pointing to the next packet in the ring buffer.
  * Must be checked befor use to not point beyond the last packet in the buffer.
  */

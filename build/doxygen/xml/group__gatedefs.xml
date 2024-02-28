@@ -13,7 +13,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="239" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="239" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="240" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="240" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__gatedefs_1ga173f9f253f6482567ad05f2f0d205dab" prot="public" static="no">
 <name>NDIGO6G12_TRIGGER_GATE_0</name>
@@ -24,7 +24,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="240" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="240" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="241" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="241" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__gatedefs_1gac7f7182ce5c25dc595157a18b61dc947" prot="public" static="no">
 <name>NDIGO6G12_TRIGGER_GATE_1</name>
@@ -35,7 +35,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="241" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="241" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="242" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="242" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__gatedefs_1gaa41f51c553b024e948fa4a159516a54d" prot="public" static="no">
 <name>NDIGO6G12_TRIGGER_GATE_2</name>
@@ -46,7 +46,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="242" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="242" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="243" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="243" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__gatedefs_1gae591a05665fd94755dc5cbaacc717563" prot="public" static="no">
 <name>NDIGO6G12_TRIGGER_GATE_3</name>
@@ -57,7 +57,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="243" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="243" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="244" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="244" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

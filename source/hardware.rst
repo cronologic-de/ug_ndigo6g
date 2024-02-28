@@ -24,11 +24,12 @@ Hardware
 .. normal operating conditions. Using a single **Ndigo6G**, no further
 .. connections need to be made.
 
-.. For applications that require more than four ADC channels, several Ndigo
-.. boards can be operated in sync. Any board of the **Ndigo product line** can be
-.. synced to other Ndigo boards, allowing, for instance, for a combination
-.. of high speed ADCs (e.g., **Ndigo5G**) and slower high resolution ADCs
-.. (**Ndigo250M-14**).
+.. 
+   For applications that require more than four ADC channels, several Ndigo
+   boards can be operated in sync. Any board of the **Ndigo product line** can be
+   synced to other Ndigo boards, allowing, for instance, for a combination
+   of high speed ADCs (e.g., **Ndigo5G**) and slower high resolution ADCs
+   (**Ndigo250M-14**).
 
 .. The signals used for board synchronization and inter-board triggering are
 .. transferred on a bus between the boards. Join all C2 connectors (see

@@ -14,7 +14,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="155" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="155" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="156" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="156" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__alertdefs_1ga2b525a74b3ee827d0f1bb6317240b376" prot="public" static="no">
 <name>NDIGO6G12_ALERT_VCCINT</name>
@@ -26,7 +26,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="161" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="161" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="162" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="162" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__alertdefs_1ga84628456bd0c7fd77905ba6f9ec7e405" prot="public" static="no">
 <name>NDIGO6G12_ALERT_VCCAUX</name>
@@ -38,7 +38,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="167" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="167" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="168" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="168" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__alertdefs_1ga8a679f157f9440803368779b8f3ffeb3" prot="public" static="no">
 <name>NDIGO6G12_ALERT_FPGA_TEMPERATURE_CRITICAL</name>
@@ -50,7 +50,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="170" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="170" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="171" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="171" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__alertdefs_1gab20a711e631e29825db5d0b36188cfbd" prot="public" static="no">
 <name>NDIGO6G12_ALERT_THS_TEMPERATURE_CRITICAL</name>
@@ -62,7 +62,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="173" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="173" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="174" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="174" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

@@ -1,6 +1,7 @@
 /*
  * Header file containing structs and #defines specific for the Ndigo6G-12
- * The current driver version for Ndigo6G12 devices is 1.3.0.0
+ * board.
+ * The current driver version for Ndigo6G-12 devices is 1.3.0.0
  */
 
 /*!
@@ -54,7 +55,7 @@ extern "C" {
 /*! Calibration date format: YYYY-MM-DD hh:mm */
 #define NDIGO6G12_CALIBRATION_DATE_LEN 20
 
-/*! Length of Ndigo6G12 flash signature */
+/*! Length of Ndigo6G-12 flash signature */
 #define NDIGO6G12_FLASH_SIG_LEN 60
 
 /*!
@@ -89,7 +90,7 @@ extern "C" {
 
 /*! 
  * @defgroup clockmodes Defines for ndigo6g12_init_parameters
- * @brief    Clock modes of the Ndigo6G12.
+ * @brief    Clock modes of the Ndigo6G-12.
  * @details  Used for @link ndigo6g12_init_parameters::clock_source @endlink.
  * @{
  */
@@ -293,8 +294,9 @@ extern "C" {
 
 
 /*! 
- * @defgroup packflags Packet and hit flags.
- * @brief   Flags of the packet reporting error conditions.
+ * @defgroup tdcpacketflags TDC Packet flags
+ * @brief   Flags of a TDC packet reporting error conditions.
+ * @details Used for @ref crono_packet::flags\.
  * @{ 
  */
 
@@ -324,7 +326,15 @@ extern "C" {
  * @details This does not necessarily mean that packets were dropped.
  */
 #define NDIGO6G12_TDC_PACKET_FLAG_HOST_BUFFER_FULL 32
+/*!
+ * @}
+ */
 
+/*!
+ * @defgroup tdchitflags TDC Hit flags
+ * @brief   Flags of TDC-hit error conditions.
+ * @{
+ */
 /*! 
  * @brief   At least one preceding event was lost due to full FIFO. 
  */
@@ -497,7 +507,7 @@ extern "C" {
 
 /*! 
  * @ingroup initstructs
- * @brief   Contains information of the Ndigo6G12 device in use.
+ * @brief   Contains information of the Ndigo6G-12 device in use.
  */
 typedef struct {
     bool is_valid;
@@ -506,14 +516,14 @@ typedef struct {
 
 /*!
  * @ingroup initstructs 
- * @brief   Struct for the initialization of the Ndigo6G12.
+ * @brief   Struct for the initialization of the Ndigo6G-12.
  * @details This structure MUST be completely initialized.
  */
 typedef struct {
     /*!
      * @brief   The version number.
      * @details It is increased when the definition of the structure is 
-     *          changed. The increment can be larger than one to match driver 
+     *          changed. The increment can be larger than 1 to match driver 
      *          version numbers or similar. Set to 0 for all versions up to 
      *          first release.
      * @details Must be set to @link NDIGO6G12_API_VERSION @endlink.
@@ -521,7 +531,7 @@ typedef struct {
     int version;
 
     /*! 
-     * @brief   The index in the list of Ndigo6G12 boards that should be
+     * @brief   The index in the list of Ndigo6G-12 boards that should be
      *          initialized.
      * @details There might be multiple boards installed in the system that 
      *          are handled by this driver as reported by 
@@ -596,10 +606,10 @@ typedef struct {
 
     /*!
      * @brief   Force a bitstream update that configures the FPGA.
-     * @details During the initialization of the card, a bitstream configures 
-     *          the FPGA of the Ndigo6G12. This is only done if during the 
-     *          initialization of the Ndigo6G12, `application_type` is
-     *          different from the `application_type` that the Ndigo6G12 is 
+     * @details During the initialization of the board, a bitstream configures 
+     *          the FPGA of the Ndigo6G-12. This is only done if during the 
+     *          initialization of the Ndigo6G-12, `application_type` is
+     *          different from the `application_type` that the Ndigo6G-12 is 
      *          currently configured in. That is, the FPGA is only 
      *          reconfigured, if `application_type` changes.
      * @details By setting `force_bitstream_update` to `true`, one can force
@@ -693,6 +703,8 @@ typedef struct {
     /*! 
      * @brief   Time span of one TDC timestamp rollover period in
      *          units of the TDC binsize.
+     * @details All TDC hits within this period are written to one 
+     *          @ref crono_packet\.
      */
     uint32_t tdc_rollover_period;
 
@@ -1144,8 +1156,10 @@ typedef struct {
  */
 typedef struct {
     /*!
-     * @brief If `true`, @link ndigo6g12_read @endlink automatically 
-     *        acknowledges packets from the last read.
+     * @brief   Automatically acknowledge packets from the previous call of
+     *          @ref ndigo6g12_read\.
+     * @details Only acknowledged packets will release the memory of the DMA
+     *          buffer.
      */
     crono_bool_t acknowledge_last_read;
 } ndigo6g12_read_in;
@@ -1163,8 +1177,7 @@ typedef struct {
     volatile crono_packet *first_packet;
 
     /*!
-     * @brief   The packet @b after the last one.
-     * @details This is not a valid packet.
+     * @brief   Pointer to the last packet.
      */
     volatile crono_packet *last_packet;
 
@@ -1265,8 +1278,10 @@ typedef struct {
     crono_bool_t retrigger;
 
     /*!
-     * @brief   Number of packets created in single-shot mode before packet
+     * @brief   Number of packets created in single-shot mode (i.e., 
+     *          @ref ndigo6g12_single_shot() was called) before packet
      *          generation stops.
+     * @details This value is ignored if `enabled` is `true`.
      * @details Maximum is @link NDIGO6G12_MAX_MULTISHOT @endlink.
      */
     int multi_shot_count;
@@ -2191,7 +2206,11 @@ NDIGO6G12_API int ndigo6g12_manual_trigger(ndigo6g12_device *device,
 
 /*!
  * @ingroup runtimefuncts
- * @brief   Enables single shot recording of the ADC channels.
+ * @brief   Enables single-shot recording of the ADC channels.
+ * @details Instead of continously triggering on input signals, only trigger
+ *          and record a @ref ndigo6g12_trigger_block::multi_shot_count number
+ *          of events.
+ * @details Requires that @ref ndigo6g12_trigger_block::enabled is `false`.
  * @param[in] device Pointer to the device.
  * @param[in] channel_mask A bit mask that chooses which channels to trigger.
  * @return  See @ref funcreturns "Function return values".
