@@ -36,8 +36,8 @@ Packets are retrieved by :cpp:func:`ndigo6g12_read`. They are of type
 |             |                                               |                               | | :code:`0xF`: Rollover marker |
 +-------------+-----------------------------------------------+-------------------------------+--------------------------------+
 
-Defines for `crono_packet`
---------------------------
+Defines for :cpp:struct:`crono_packet`
+--------------------------------------
 
 .. _packettypes:
 .. doxygengroup:: packettypes
@@ -51,8 +51,8 @@ Defines for `crono_packet`
 .. doxygengroup:: tdchitflags
 
 
-Output Structure :cpp:`crono_packet`
-------------------------------------
+Output Structure :cpp:struct:`crono_packet`
+-------------------------------------------
 .. doxygenstruct:: crono_packet
    :members:
 

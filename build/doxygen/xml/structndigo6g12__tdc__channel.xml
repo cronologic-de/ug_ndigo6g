@@ -18,7 +18,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1596" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1596" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1588" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1588" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__channel_1a685e995a43e1b99eeb50e98f247964bd" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -33,7 +33,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1601" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1601" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1593" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1593" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__channel_1a8d201e1a5b07786f08340fe67180ea7e" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -48,7 +48,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1606" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1606" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1598" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1598" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__channel_1a15315e06ef1ed550ec68436c897e23d7" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -63,7 +63,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1611" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1611" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1603" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1603" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__channel_1a247866e0f1843c867c174eb6700adcd6" prot="public" static="no" mutable="no">
 <type><ref refid="structndigo6g12__tdc__gating__block" kindref="compound">ndigo6g12_tdc_gating_block</ref></type>
@@ -78,7 +78,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1616" column="32" bodyfile="source/ndigo6g12_interface.h" bodystart="1616" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1608" column="32" bodyfile="source/ndigo6g12_interface.h" bodystart="1608" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__channel_1a419663e7c483e1d6b972e03b06d85010" prot="public" static="no" mutable="no">
 <type><ref refid="structndigo6g12__tdc__tiger__block" kindref="compound">ndigo6g12_tdc_tiger_block</ref></type>
@@ -93,7 +93,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1621" column="31" bodyfile="source/ndigo6g12_interface.h" bodystart="1621" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1613" column="31" bodyfile="source/ndigo6g12_interface.h" bodystart="1613" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -121,7 +121,7 @@
 <link refid="structndigo6g12__tdc__tiger__block"/>
 </node>
 </collaborationgraph>
-<location file="source/ndigo6g12_interface.h" line="1591" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1591" bodyend="1622"/>
+<location file="source/ndigo6g12_interface.h" line="1583" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1583" bodyend="1614"/>
 <listofallmembers>
 <member refid="structndigo6g12__tdc__channel_1ae01b3ead1313fb0cea8f5127b924c732" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_channel</scope><name>enable</name></member>
 <member refid="structndigo6g12__tdc__channel_1a247866e0f1843c867c174eb6700adcd6" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_channel</scope><name>gating_block</name></member>

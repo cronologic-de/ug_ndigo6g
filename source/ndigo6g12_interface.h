@@ -589,18 +589,10 @@ typedef struct {
     int clock_source;
 
     /*! 
-     * @brief Select the application type.
-     *
-     * | Possible values                           | Description                         |
-     * |-------------------------------------------|-------------------------------------|
-     * | @link NDIGO6G12_APP_TYPE_CURRENT @endlink | Use currently installed type, that is, the one that the Ndigo6G-12 was last initialized with.
-     * | @link NDIGO6G12_APP_TYPE_1CH @endlink     | One ADC channel at 6.4&nbsp;Gsps.   |
-     * | @link NDIGO6G12_APP_TYPE_2CH @endlink     | Two ADC channels at 3.2&nbsp;Gsps.  |
-     * | @link NDIGO6G12_APP_TYPE_4CH @endlink     | Four ADC channels at 1.6&nbsp;Gsps. |
-     * | @link NDIGO6G12_APP_TYPE_AVRG @endlink    | Averaging mode.                     |
-     *
-     * Note that @link ndigo6g12_configuration::adc_mode @endlink must match
-     * the application type chosen here.
+     * @brief   Select the application type.
+     * @details See @ref apptypes "NDIGO6G12_APP_TYPE_*"\.
+     * @details Note that @link ndigo6g12_configuration::adc_mode @endlink must match
+     *          the application type chosen here.
      */
     uint32_t application_type;
 
