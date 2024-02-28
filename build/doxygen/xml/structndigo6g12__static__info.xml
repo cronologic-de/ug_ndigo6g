@@ -4,9 +4,9 @@
 <compoundname>ndigo6g12_static_info</compoundname>
 <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
 <sectiondef kind="public-attrib">
-<memberdef kind="variable" id="structndigo6g12__static__info_1af3b6aa8b1bd6aa4b468f9251b5edf436" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1a512af8dba9aeafad54b7a10d19dc3d02" prot="public" static="no" mutable="no">
 <type>char</type>
-<definition>char ndigo6g12_static_info::bitstream_date[NDIGO6G12_BITSTREAM_DATE_LEN]</definition>
+<definition>char bitstream_date[NDIGO6G12_BITSTREAM_DATE_LEN]</definition>
 <argsstring>[NDIGO6G12_BITSTREAM_DATE_LEN]</argsstring>
 <name>bitstream_date</name>
 <qualifiedname>ndigo6g12_static_info::bitstream_date</qualifiedname>
@@ -20,9 +20,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="757" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="757" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a720fe4690938fa8ed547124813ec3c11" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1acb2f934097b300a105c40f2e4c41514b" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::board_configuration</definition>
+<definition>int board_configuration</definition>
 <argsstring></argsstring>
 <name>board_configuration</name>
 <qualifiedname>ndigo6g12_static_info::board_configuration</qualifiedname>
@@ -36,9 +36,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="765" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="765" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a0ce83753516d7af7876d7a38ac269ed8" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1afc726c2d5b6d25fdad0e9a1dd74cb2c3" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::board_revision</definition>
+<definition>int board_revision</definition>
 <argsstring></argsstring>
 <name>board_revision</name>
 <qualifiedname>ndigo6g12_static_info::board_revision</qualifiedname>
@@ -56,9 +56,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="777" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="777" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a5b0319e1f64b7844446c870fa318f2e7" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1add5cabd93cfb03f8781a9fc9d02312ce" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::board_serial</definition>
+<definition>int board_serial</definition>
 <argsstring></argsstring>
 <name>board_serial</name>
 <qualifiedname>ndigo6g12_static_info::board_serial</qualifiedname>
@@ -73,9 +73,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="786" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="786" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a450ed7b15ddc664816846ba757559f3c" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1a15bdf16fc5ccd57e761f7d4e0eeffa0a" prot="public" static="no" mutable="no">
 <type>char</type>
-<definition>char ndigo6g12_static_info::calibration_date[NDIGO6G12_CALIBRATION_DATE_LEN]</definition>
+<definition>char calibration_date[NDIGO6G12_CALIBRATION_DATE_LEN]</definition>
 <argsstring>[NDIGO6G12_CALIBRATION_DATE_LEN]</argsstring>
 <name>calibration_date</name>
 <qualifiedname>ndigo6g12_static_info::calibration_date</qualifiedname>
@@ -89,9 +89,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="793" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="793" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a579cd9c2c69161c36044c981c6667827" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1ab6fb04639784cc2dc47148e481e3d346" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::chip_id</definition>
+<definition>int chip_id</definition>
 <argsstring></argsstring>
 <name>chip_id</name>
 <qualifiedname>ndigo6g12_static_info::chip_id</qualifiedname>
@@ -105,9 +105,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="800" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="800" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a56338022d60b61f3a43750ed6a041dfa" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1a0c0db10d25db9c7849280f3d06ce9435" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_static_info::dc_coupled</definition>
+<definition>crono_bool_t dc_coupled</definition>
 <argsstring></argsstring>
 <name>dc_coupled</name>
 <qualifiedname>ndigo6g12_static_info::dc_coupled</qualifiedname>
@@ -121,9 +121,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="806" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="806" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a74e7e5e5bae3344f6dd7f1f8e21dbc32" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1ad13d5f2a4d5f44ded6ed4278020b0d9c" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::driver_revision</definition>
+<definition>int driver_revision</definition>
 <argsstring></argsstring>
 <name>driver_revision</name>
 <qualifiedname>ndigo6g12_static_info::driver_revision</qualifiedname>
@@ -138,9 +138,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="818" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="818" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a9b245d713039ff40f7f8873db865a9b1" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1a8a77a6fdee403f69ff371bfe2bc921ce" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::driver_build_revision</definition>
+<definition>int driver_build_revision</definition>
 <argsstring></argsstring>
 <name>driver_build_revision</name>
 <qualifiedname>ndigo6g12_static_info::driver_build_revision</qualifiedname>
@@ -153,9 +153,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="824" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="824" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a21a76566c581e9201a7621b11bccc1e5" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1ab73ab79144c3b03c068c9febf5322c15" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_static_info::flash_valid</definition>
+<definition>crono_bool_t flash_valid</definition>
 <argsstring></argsstring>
 <name>flash_valid</name>
 <qualifiedname>ndigo6g12_static_info::flash_valid</qualifiedname>
@@ -169,9 +169,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="831" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="831" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1adf490305513cdda808e3f0b77d1b46d5" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1ae467d6985b8a238121a0bc133c497e6d" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::fw_revision</definition>
+<definition>int fw_revision</definition>
 <argsstring></argsstring>
 <name>fw_revision</name>
 <qualifiedname>ndigo6g12_static_info::fw_revision</qualifiedname>
@@ -184,9 +184,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="836" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="836" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a1f27550ce310a0c6676065dae33b05bf" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1a9bb92485d2634a15fb7d0f6fcac15695" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::fw_type</definition>
+<definition>int fw_type</definition>
 <argsstring></argsstring>
 <name>fw_type</name>
 <qualifiedname>ndigo6g12_static_info::fw_type</qualifiedname>
@@ -199,9 +199,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="841" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="841" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a9ecc32fe83504a3cf5fc3de7c431133c" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1ae5b5190955ae6c680756ae582339f0b2" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::pcb_serial</definition>
+<definition>int pcb_serial</definition>
 <argsstring></argsstring>
 <name>pcb_serial</name>
 <qualifiedname>ndigo6g12_static_info::pcb_serial</qualifiedname>
@@ -214,9 +214,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="846" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="846" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a937056b702f50ab21246c4ee8ee92745" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1ae2120530b15de87cfcf4effe960ff84e" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::svn_revision</definition>
+<definition>int svn_revision</definition>
 <argsstring></argsstring>
 <name>svn_revision</name>
 <qualifiedname>ndigo6g12_static_info::svn_revision</qualifiedname>
@@ -230,9 +230,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="855" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="855" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a037650317f5044072390cce596914782" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1a67572f944bebd45e5787aa5548181242" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_static_info::application_type</definition>
+<definition>int application_type</definition>
 <argsstring></argsstring>
 <name>application_type</name>
 <qualifiedname>ndigo6g12_static_info::application_type</qualifiedname>
@@ -246,9 +246,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="861" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="861" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1a5dda53b8edb899f121bb01eca2612556" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1a67d2d93ab82df725a5bc401d45edbf9a" prot="public" static="no" mutable="no">
 <type>char</type>
-<definition>char ndigo6g12_static_info::config_flash_signature_primary[NDIGO6G12_FLASH_SIG_LEN]</definition>
+<definition>char config_flash_signature_primary[NDIGO6G12_FLASH_SIG_LEN]</definition>
 <argsstring>[NDIGO6G12_FLASH_SIG_LEN]</argsstring>
 <name>config_flash_signature_primary</name>
 <qualifiedname>ndigo6g12_static_info::config_flash_signature_primary</qualifiedname>
@@ -261,9 +261,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="866" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="866" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1aa66a210a0bd31499ee33502d98633aee" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1abc812be3acbf8f8de16a38ab1f04cce8" prot="public" static="no" mutable="no">
 <type>char</type>
-<definition>char ndigo6g12_static_info::config_flash_signature_secondary[NDIGO6G12_FLASH_SIG_LEN]</definition>
+<definition>char config_flash_signature_secondary[NDIGO6G12_FLASH_SIG_LEN]</definition>
 <argsstring>[NDIGO6G12_FLASH_SIG_LEN]</argsstring>
 <name>config_flash_signature_secondary</name>
 <qualifiedname>ndigo6g12_static_info::config_flash_signature_secondary</qualifiedname>
@@ -276,9 +276,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="871" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="871" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__static__info_1abf8eabeb4e38670ab4e76fdfc6e26359" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__static__info_1ae01f01d8bcaed2b77819008775cc48e5" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_static_info::auto_trigger_ref_clock</definition>
+<definition>double auto_trigger_ref_clock</definition>
 <argsstring></argsstring>
 <name>auto_trigger_ref_clock</name>
 <qualifiedname>ndigo6g12_static_info::auto_trigger_ref_clock</qualifiedname>
@@ -286,7 +286,7 @@
 <para>Auto trigger clock frequency. </para>
 </briefdescription>
 <detaileddescription>
-<para>The clock frequency of the auto trigger in Hz used for the calculations of <ref refid="structndigo6g12__configuration_1a66965045a9543ac31f453181366c0c4b" kindref="member">ndigo6g12_configuration::auto_trigger_period</ref>.</para>
+<para>The clock frequency of the auto trigger in Hz used for the calculations of <ref refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" kindref="member">ndigo6g12_configuration::auto_trigger_period</ref>.</para>
 <para>Fixed at 200&#160;MHz. </para>
 </detaileddescription>
 <inbodydescription>
@@ -302,24 +302,24 @@
 </detaileddescription>
 <location file="source/ndigo6g12_interface.h" line="751" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="751" bodyend="881"/>
 <listofallmembers>
-<member refid="structndigo6g12__static__info_1a037650317f5044072390cce596914782" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>application_type</name></member>
-<member refid="structndigo6g12__static__info_1abf8eabeb4e38670ab4e76fdfc6e26359" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>auto_trigger_ref_clock</name></member>
-<member refid="structndigo6g12__static__info_1af3b6aa8b1bd6aa4b468f9251b5edf436" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>bitstream_date</name></member>
-<member refid="structndigo6g12__static__info_1a720fe4690938fa8ed547124813ec3c11" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>board_configuration</name></member>
-<member refid="structndigo6g12__static__info_1a0ce83753516d7af7876d7a38ac269ed8" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>board_revision</name></member>
-<member refid="structndigo6g12__static__info_1a5b0319e1f64b7844446c870fa318f2e7" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>board_serial</name></member>
-<member refid="structndigo6g12__static__info_1a450ed7b15ddc664816846ba757559f3c" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>calibration_date</name></member>
-<member refid="structndigo6g12__static__info_1a579cd9c2c69161c36044c981c6667827" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>chip_id</name></member>
-<member refid="structndigo6g12__static__info_1a5dda53b8edb899f121bb01eca2612556" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>config_flash_signature_primary</name></member>
-<member refid="structndigo6g12__static__info_1aa66a210a0bd31499ee33502d98633aee" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>config_flash_signature_secondary</name></member>
-<member refid="structndigo6g12__static__info_1a56338022d60b61f3a43750ed6a041dfa" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>dc_coupled</name></member>
-<member refid="structndigo6g12__static__info_1a9b245d713039ff40f7f8873db865a9b1" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>driver_build_revision</name></member>
-<member refid="structndigo6g12__static__info_1a74e7e5e5bae3344f6dd7f1f8e21dbc32" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>driver_revision</name></member>
-<member refid="structndigo6g12__static__info_1a21a76566c581e9201a7621b11bccc1e5" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>flash_valid</name></member>
-<member refid="structndigo6g12__static__info_1adf490305513cdda808e3f0b77d1b46d5" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>fw_revision</name></member>
-<member refid="structndigo6g12__static__info_1a1f27550ce310a0c6676065dae33b05bf" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>fw_type</name></member>
-<member refid="structndigo6g12__static__info_1a9ecc32fe83504a3cf5fc3de7c431133c" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>pcb_serial</name></member>
-<member refid="structndigo6g12__static__info_1a937056b702f50ab21246c4ee8ee92745" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>svn_revision</name></member>
+<member refid="structndigo6g12__static__info_1a67572f944bebd45e5787aa5548181242" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>application_type</name></member>
+<member refid="structndigo6g12__static__info_1ae01f01d8bcaed2b77819008775cc48e5" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>auto_trigger_ref_clock</name></member>
+<member refid="structndigo6g12__static__info_1a512af8dba9aeafad54b7a10d19dc3d02" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>bitstream_date</name></member>
+<member refid="structndigo6g12__static__info_1acb2f934097b300a105c40f2e4c41514b" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>board_configuration</name></member>
+<member refid="structndigo6g12__static__info_1afc726c2d5b6d25fdad0e9a1dd74cb2c3" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>board_revision</name></member>
+<member refid="structndigo6g12__static__info_1add5cabd93cfb03f8781a9fc9d02312ce" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>board_serial</name></member>
+<member refid="structndigo6g12__static__info_1a15bdf16fc5ccd57e761f7d4e0eeffa0a" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>calibration_date</name></member>
+<member refid="structndigo6g12__static__info_1ab6fb04639784cc2dc47148e481e3d346" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>chip_id</name></member>
+<member refid="structndigo6g12__static__info_1a67d2d93ab82df725a5bc401d45edbf9a" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>config_flash_signature_primary</name></member>
+<member refid="structndigo6g12__static__info_1abc812be3acbf8f8de16a38ab1f04cce8" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>config_flash_signature_secondary</name></member>
+<member refid="structndigo6g12__static__info_1a0c0db10d25db9c7849280f3d06ce9435" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>dc_coupled</name></member>
+<member refid="structndigo6g12__static__info_1a8a77a6fdee403f69ff371bfe2bc921ce" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>driver_build_revision</name></member>
+<member refid="structndigo6g12__static__info_1ad13d5f2a4d5f44ded6ed4278020b0d9c" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>driver_revision</name></member>
+<member refid="structndigo6g12__static__info_1ab73ab79144c3b03c068c9febf5322c15" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>flash_valid</name></member>
+<member refid="structndigo6g12__static__info_1ae467d6985b8a238121a0bc133c497e6d" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>fw_revision</name></member>
+<member refid="structndigo6g12__static__info_1a9bb92485d2634a15fb7d0f6fcac15695" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>fw_type</name></member>
+<member refid="structndigo6g12__static__info_1ae5b5190955ae6c680756ae582339f0b2" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>pcb_serial</name></member>
+<member refid="structndigo6g12__static__info_1ae2120530b15de87cfcf4effe960ff84e" prot="public" virt="non-virtual"><scope>ndigo6g12_static_info</scope><name>svn_revision</name></member>
 </listofallmembers>
 </compounddef>
 </doxygen>

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['tdc1_5ftemp_0',['tdc1_temp',['../structndigo6g12__fast__info.html#ae620da7afa78ff04ae04a3198ef3fa49',1,'ndigo6g12_fast_info']]],
+  ['tdc_5fchannels_1',['tdc_channels',['../structndigo6g12__param__info.html#a0ee2fe3997719a17d80126a327cbb3e2',1,'ndigo6g12_param_info']]],
+  ['tdc_5fconfiguration_2',['tdc_configuration',['../structndigo6g12__configuration.html#a5a34f3b615684bfa687d290ea65b8f5c',1,'ndigo6g12_configuration']]],
+  ['tdc_5fpacket_5ftimestamp_5foffset_3',['tdc_packet_timestamp_offset',['../structndigo6g12__param__info.html#a1d039fd674d0ba660fbbae6d8da275e1',1,'ndigo6g12_param_info']]],
+  ['tdc_5fperiod_4',['tdc_period',['../structndigo6g12__param__info.html#a19309cdb5f637caea2ca7c6066d9f994',1,'ndigo6g12_param_info']]],
+  ['tdc_5frollover_5fperiod_5',['tdc_rollover_period',['../structndigo6g12__param__info.html#a15ca62e8bd88cdcc2e065e46cb602823',1,'ndigo6g12_param_info']]],
+  ['tdc_5ftrigger_5foffsets_6',['tdc_trigger_offsets',['../structndigo6g12__configuration.html#aa6bf60e4eaac106ccf3902c1a8f5d942',1,'ndigo6g12_configuration']]],
+  ['temp4633_5f1_7',['temp4633_1',['../structndigo6g12__fast__info.html#a32786ff2fe01f5240aa6036b582863f8',1,'ndigo6g12_fast_info']]],
+  ['temp4633_5f2_8',['temp4633_2',['../structndigo6g12__fast__info.html#ae869c1a56a149b68fe5ff7835851ddcd',1,'ndigo6g12_fast_info']]],
+  ['temp4644_9',['temp4644',['../structndigo6g12__fast__info.html#ad82fd00c9f952e92d303105e12d152b2',1,'ndigo6g12_fast_info']]],
+  ['threshold_10',['threshold',['../structndigo6g12__trigger.html#afff4cd79ce8bef5eb16061de39587d90',1,'ndigo6g12_trigger']]],
+  ['tiger_5fblock_11',['tiger_block',['../structndigo6g12__tdc__channel.html#a3e05037b257fb5965fda061a0e189c03',1,'ndigo6g12_tdc_channel']]],
+  ['timeout_5fthreshold_12',['timeout_threshold',['../structndigo6g12__averager__configuration.html#a564c478b4c3b07c67eec961b698be982',1,'ndigo6g12_averager_configuration']]],
+  ['timestamp_13',['timestamp',['../structcrono__packet.html#a8a591d341723df9496cda98e225b25b4',1,'crono_packet::timestamp'],['../structcrono__packet__only__timestamp.html#a8a591d341723df9496cda98e225b25b4',1,'crono_packet_only_timestamp::timestamp']]],
+  ['total_5fbuffer_14',['total_buffer',['../structndigo6g12__param__info.html#a9801e889811f380fc700e1f4bbb0a623',1,'ndigo6g12_param_info']]],
+  ['trigger_15',['trigger',['../structndigo6g12__configuration.html#a6c8176d17295bed2bcaf313e24f33056',1,'ndigo6g12_configuration']]],
+  ['trigger_5fblock_16',['trigger_block',['../structndigo6g12__configuration.html#a6036815c3ea54db0f0364e5407bb9364',1,'ndigo6g12_configuration']]],
+  ['type_17',['type',['../structcrono__packet.html#a1d127017fb298b889f4ba24752d08b8e',1,'crono_packet::type'],['../structcrono__packet__only__timestamp.html#a1d127017fb298b889f4ba24752d08b8e',1,'crono_packet_only_timestamp::type']]]
+];

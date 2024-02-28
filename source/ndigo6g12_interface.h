@@ -1625,7 +1625,8 @@ typedef struct {
 
     /*! 
      * @brief   Configure THS788 calibration.
-     * @details - `true`: Skip THS788 calibration.
+     * @details .
+     *          - `true`: Skip THS788 calibration.
      *          - `false`: Do THS788 calibration (default).
      *          .
      *          Default is `false`.
@@ -1669,10 +1670,9 @@ typedef struct {
  */
 typedef struct {
     /*!
-     * @brief   ADC mode as defined in @link adcdefs NDIGO6G12_ADC_MODE_*
-     *          @endlink.
-     * @details The chosen ADC mode has to be supported by the current @link
-     *          apptypes NDIGO6G12_APP_TYPE @endlink.
+     * @brief   ADC mode as defined in @ref adcdefs "NDIGO6G12_ADC_MODE_*"\.
+     * @details The chosen ADC mode has to be supported by the current
+     *          @ref apptypes "NDIGO6G12_APP_TYPE"\.
      * @details For example, if @c NDIGO6G12_APP_TYPE_1CH is used, one 
      *          *cannot* choose, e.g.,  `adc_mode = NDIGO6G12_ADC_MODE_AA`,
      *          but one has to either choose `NDIGO6G12_ADC_MODE_A` or

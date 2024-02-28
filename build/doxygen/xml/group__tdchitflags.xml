@@ -48,7 +48,7 @@
 <para>Timestamp is a rollover marker. </para>
 </briefdescription>
 <detaileddescription>
-<para>Add <ref refid="structndigo6g12__param__info_1ac9893ca14bae9f69dfc9571e3b5d6622" kindref="member">ndigo6g12_param_info::tdc_rollover_period</ref> to all subsequent timestamps in the packet. </para>
+<para>Add <ref refid="structndigo6g12__param__info_1a15ca62e8bd88cdcc2e065e46cb602823" kindref="member">ndigo6g12_param_info::tdc_rollover_period</ref> to all subsequent timestamps in the packet. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>

@@ -61,7 +61,7 @@
 </memberdef>
 </sectiondef>
 <briefdescription>
-<para>Bitmask for configuration of <ref refid="structndigo6g12__trigger__block_1a82c9a7f378da8cdf154acfdd82ae5039" kindref="member">ndigo6g12_trigger_block::gates</ref>. </para>
+<para>Bitmask for configuration of <ref refid="structndigo6g12__trigger__block_1a606c376138bec8a53d55cc54453ffdf8" kindref="member">ndigo6g12_trigger_block::gates</ref>. </para>
 </briefdescription>
 <detaileddescription>
 <para>Bit definitions for trigger sources used in the timing generator and gating configuration. </para>

@@ -123,8 +123,8 @@
 <para>Enables single-shot recording of the ADC channels. </para>
 </briefdescription>
 <detaileddescription>
-<para>Instead of continously triggering on input signals, only trigger and record a <ref refid="structndigo6g12__trigger__block_1a072bc3d1b95e702845f6a05fda8b4ba8" kindref="member">ndigo6g12_trigger_block::multi_shot_count</ref> number of events.</para>
-<para>Requires that <ref refid="structndigo6g12__trigger__block_1abbb70b7cbab5a579740d2b4e82a23fed" kindref="member">ndigo6g12_trigger_block::enabled</ref> is <computeroutput>false</computeroutput>. <parameterlist kind="param"><parameteritem>
+<para>Instead of continously triggering on input signals, only trigger and record a <ref refid="structndigo6g12__trigger__block_1a2c5c3f6d832916c465850cf9a684237e" kindref="member">ndigo6g12_trigger_block::multi_shot_count</ref> number of events.</para>
+<para>Requires that <ref refid="structndigo6g12__trigger__block_1a4cd2d3ea697c9b380a0a38e0b34db914" kindref="member">ndigo6g12_trigger_block::enabled</ref> is <computeroutput>false</computeroutput>. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
 </parameternamelist>

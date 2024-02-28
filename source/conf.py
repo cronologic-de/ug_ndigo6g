@@ -9,7 +9,7 @@ import os
 
 # sys.path.append(os.path.abspath("../exts/"))
 
-project = 'Ndigo6G-12 – User Guide'
+project = 'Ndigo6G-12 User Guide'
 copyright = ("Creative Commons Attribution-NoDerivatives"
              " 4.0 International License")
 author = 'cronologic GmbH & Co. KG'
@@ -40,34 +40,44 @@ exclude_patterns = ["global.rst"]
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = "alabaster"#'sphinx_rtd_theme'
-html_sidebars = {
-    '**': [
-        'about.html',
-        'navigation.html',
-        'relations.html',
-        'searchbox.html',
-    ]
-}
+html_theme = "furo"
 html_theme_options = {
-    "font_family" : "Montserrat, sans-serif",
-    "extra_nav_links": {"Back to all User Guides": "https://docs.cronologic.de/"},
-    "sidebar_collapse": True,
-    "show_relbar_bottom": True,
-    "fixed_sidebar": True,
-    "sidebar_width": 400,
-    "page_width": 1200, 
-    "logo": "cronologic.svg",
-    "description": f"{project}",
-    "show_powered_by": False,
-    "touch_icon": "cronologic_favicon.svg",
-    # colors
-    "body_text" : "#737372",
-    "link_hover": "#376EB5",
+    "light_css_variables": {
+        "color-brand-primary": "#376EB5",
+        "color-brand-content": "#376EB5",
+    },
+    # "light_logo": "cronologic_favicon.svg",
+    #     "footer_icons": [
+    #     {
+    #         "name": "cronologic",
+    #         "url": "https://www.cronologic.de",
+    #         "html": """
+    #             cronologic GmbH & Co. KG<br>Imprint
+    #         """,
+    #         "class": "",
+    #     },
+    # ],
 }
+# html_theme_options = {
+    # "font_family" : "Montserrat, sans-serif",
+    # "extra_nav_links": {"Back to all User Guides": "https://docs.cronologic.de/"},
+    # "sidebar_collapse": True,
+    # "show_relbar_bottom": True,
+    # "fixed_sidebar": True,
+    # "sidebar_width": 400,
+    # "page_width": 1200, 
+    # "logo": "cronologic.svg",
+    # "description": f"{project}",
+    # "show_powered_by": False,
+    # "touch_icon": "cronologic_favicon.svg",
+    # colors
+    # "body_text" : "#737372",
+    # "link_hover": "#376EB5",
+# }
 html_favicon = "_static/cronologic_favicon.svg"
 html_title = f"{project}"
 html_secnumber_suffix = " "
+html_logo = "_static/cronologic.svg"
 html_static_path = ['_static']
 html_css_files = ["custom.css"]
 

@@ -1,3 +1,5 @@
+:hide-toc:
+
 ###########################
 Ndigo6G |hyphen| User Guide
 ###########################
@@ -24,14 +26,14 @@ provided by the Ndigo6G-12 driver.
     ========
 
 .. toctree::
-    :maxdepth: 4
+    :maxdepth: 2
     :numbered:
 
     introduction
     hardware
-    api
-    packform
-    example
+    api/index
+    packform/index
+    example/index
     techdata
     revhistory
 

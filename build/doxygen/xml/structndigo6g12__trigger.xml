@@ -4,9 +4,9 @@
 <compoundname>ndigo6g12_trigger</compoundname>
 <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
 <sectiondef kind="public-attrib">
-<memberdef kind="variable" id="structndigo6g12__trigger_1a2c6c4b83ca2337f3530386715846303e" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__trigger_1afff4cd79ce8bef5eb16061de39587d90" prot="public" static="no" mutable="no">
 <type>short</type>
-<definition>short ndigo6g12_trigger::threshold</definition>
+<definition>short threshold</definition>
 <argsstring></argsstring>
 <name>threshold</name>
 <qualifiedname>ndigo6g12_trigger::threshold</qualifiedname>
@@ -14,20 +14,20 @@
 <para>Threshold controlling when the ADC channel is active. </para>
 </briefdescription>
 <detaileddescription>
-<para>Sets the threshold for the trigger block within the range of the ADC data. The range depends on <ref refid="structndigo6g12__configuration_1a5572d9741c5842d741ab6d15ad333933" kindref="member">ndigo6g12_configuration::output_mode</ref>:<itemizedlist>
+<para>Sets the threshold for the trigger block within the range of the ADC data. The range depends on <ref refid="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" kindref="member">ndigo6g12_configuration::output_mode</ref>:<itemizedlist>
 <listitem><para><ref refid="group__outputdefs_1gabb1307aecd252b329c43d44ea8f0e3da" kindref="member">NDIGO6G12_OUTPUT_MODE_RAW</ref> : 0 to 4096</para>
 </listitem><listitem><para><ref refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kindref="member">NDIGO6G12_OUTPUT_MODE_SIGNED16</ref> : &#8722;32768 to 32767</para>
 </listitem></itemizedlist>
 For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12_TRIGGER_TDC </ref> to <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12_TRIGGER_ONE </ref> the threshold is ignored.</para>
-<para>For the TDC channels, the trigger threshold is controlled by <ref refid="structndigo6g12__configuration_1a2253a70de4bbdd0a27e98c1391677a65" kindref="member">ndigo6g12_configuration::tdc_trigger_offsets</ref>. </para>
+<para>For the TDC channels, the trigger threshold is controlled by <ref refid="structndigo6g12__configuration_1aa6bf60e4eaac106ccf3902c1a8f5d942" kindref="member">ndigo6g12_configuration::tdc_trigger_offsets</ref>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1215" column="11" bodyfile="source/ndigo6g12_interface.h" bodystart="1215" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__trigger_1a296c83e9d21707458844e7dbcccdec8d" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_trigger::edge</definition>
+<definition>crono_bool_t edge</definition>
 <argsstring></argsstring>
 <name>edge</name>
 <qualifiedname>ndigo6g12_trigger::edge</qualifiedname>
@@ -36,7 +36,7 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </briefdescription>
 <detaileddescription>
 <para>For trigger indices <ref refid="group__triggerdefs_1ga473188e6f82aa412123aa9aa8e76f485" kindref="member">NDIGO6G12_TRIGGER_AUTO</ref> and <ref refid="group__triggerdefs_1gaddbcf304ec8709008e9cdd7594e575f9" kindref="member">NDIGO6G12_TRIGGER_ONE</ref> this is ignored.<itemizedlist>
-<listitem><para><computeroutput>false</computeroutput>: Use a level trigger. The level trigger triggers as long as the signal is above or below (depending on <ref refid="structndigo6g12__trigger_1a8d87b34870f5ab3abb9f50a4b9d34d7e" kindref="member">rising</ref>) the set threshold. Followingly the trigger gives the sign of the signal in reference to the threshold.</para>
+<listitem><para><computeroutput>false</computeroutput>: Use a level trigger. The level trigger triggers as long as the signal is above or below (depending on <ref refid="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" kindref="member">rising</ref>) the set threshold. Followingly the trigger gives the sign of the signal in reference to the threshold.</para>
 </listitem><listitem><para><computeroutput>true</computeroutput>: Use an edge trigger. The edge trigger triggers as soon as its set threshold is crossed by the signal. Thus, the roots in reference to the threshold are recorded. </para>
 </listitem></itemizedlist>
 </para>
@@ -45,9 +45,9 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1230" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1230" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__trigger_1a8d87b34870f5ab3abb9f50a4b9d34d7e" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_trigger::rising</definition>
+<definition>crono_bool_t rising</definition>
 <argsstring></argsstring>
 <name>rising</name>
 <qualifiedname>ndigo6g12_trigger::rising</qualifiedname>
@@ -81,9 +81,9 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </detaileddescription>
 <location file="source/ndigo6g12_interface.h" line="1199" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1199" bodyend="1248"/>
 <listofallmembers>
-<member refid="structndigo6g12__trigger_1a296c83e9d21707458844e7dbcccdec8d" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>edge</name></member>
-<member refid="structndigo6g12__trigger_1a8d87b34870f5ab3abb9f50a4b9d34d7e" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>rising</name></member>
-<member refid="structndigo6g12__trigger_1a2c6c4b83ca2337f3530386715846303e" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>threshold</name></member>
+<member refid="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>edge</name></member>
+<member refid="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>rising</name></member>
+<member refid="structndigo6g12__trigger_1afff4cd79ce8bef5eb16061de39587d90" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>threshold</name></member>
 </listofallmembers>
 </compounddef>
 </doxygen>

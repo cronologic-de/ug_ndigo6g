@@ -69,7 +69,7 @@
 <para>Alert bits from the system monitor. </para>
 </briefdescription>
 <detaileddescription>
-<para>Used for <ref refid="structndigo6g12__fast__info_1add4edaae432aab799b9e02d87f096ec3" kindref="member">ndigo6g12_fast_info::alerts</ref>. </para>
+<para>Used for <ref refid="structndigo6g12__fast__info_1abf3701f2f808e7a5a11bd5e6065023a4" kindref="member">ndigo6g12_fast_info::alerts</ref>. </para>
 </detaileddescription>
 </compounddef>
 </doxygen>

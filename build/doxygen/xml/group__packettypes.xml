@@ -141,7 +141,7 @@
 <para>Packet types supported by different cronologic boards. </para>
 </briefdescription>
 <detaileddescription>
-<para>Used for <ref refid="structcrono__packet_1aba40464ebf54fa51fd8e968c882ffc9f" kindref="member">crono_packet::type</ref>. </para>
+<para>Used for <ref refid="structcrono__packet_1a1d127017fb298b889f4ba24752d08b8e" kindref="member">crono_packet::type</ref>. </para>
 </detaileddescription>
 </compounddef>
 </doxygen>

@@ -13,7 +13,7 @@
 <para>Get the driver version in integer format. </para>
 </briefdescription>
 <detaileddescription>
-<para><simplesect kind="return"><para>The driver version in the same format as <ref refid="structndigo6g12__static__info_1a74e7e5e5bae3344f6dd7f1f8e21dbc32" kindref="member">ndigo6g12_static_info::driver_revision</ref>. </para>
+<para><simplesect kind="return"><para>The driver version in the same format as <ref refid="structndigo6g12__static__info_1ad13d5f2a4d5f44ded6ed4278020b0d9c" kindref="member">ndigo6g12_static_info::driver_revision</ref>. </para>
 </simplesect>
 </para>
 </detaileddescription>

@@ -42,83 +42,83 @@
 </simplesect>
 Default values of <ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref>:</para>
 <para><itemizedlist>
-<listitem><para><ref refid="structndigo6g12__configuration_1a9bdb8697b6a3205aff2e8c611ec1b51a" kindref="member">adc_mode</ref> =<itemizedlist>
-<listitem><para><ref refid="group__adcdefs_1gadc5a2d3a469ff27f8dc115b099a3da03" kindref="member">NDIGO6G12_ADC_MODE_A</ref> (if <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">application_type</ref> = <ref refid="group__apptypes_1ga5892cf53d029fcd233410b03261f2380" kindref="member">NDIGO6G12_APP_TYPE_1CH</ref>)</para>
-</listitem><listitem><para><ref refid="group__adcdefs_1gaeff36ea77c6420a7798dd1ed57d327a4" kindref="member">NDIGO6G12_ADC_MODE_AD</ref> (if <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">application_type</ref> = <ref refid="group__apptypes_1ga8575c724769f442f91a76c6f73eb00fb" kindref="member">NDIGO6G12_APP_TYPE_2CH</ref>)</para>
-</listitem><listitem><para><ref refid="group__adcdefs_1ga387f83c29e74ed7a8e9f9dd171ad8da6" kindref="member">NDIGO6G12_ADC_MODE_ABCD</ref> (if <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">application_type</ref> = <ref refid="group__apptypes_1ga96d6b2b565ff0f6c6cda34854768bcff" kindref="member">NDIGO6G12_APP_TYPE_4CH</ref>)</para>
-</listitem><listitem><para><ref refid="group__adcdefs_1gadc5a2d3a469ff27f8dc115b099a3da03" kindref="member">NDIGO6G12_ADC_MODE_A</ref> (if <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">application_type</ref> = <ref refid="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" kindref="member">NDIGO6G12_APP_TYPE_AVRG</ref>)</para>
+<listitem><para><ref refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" kindref="member">adc_mode</ref> =<itemizedlist>
+<listitem><para><ref refid="group__adcdefs_1gadc5a2d3a469ff27f8dc115b099a3da03" kindref="member">NDIGO6G12_ADC_MODE_A</ref> (if <ref refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" kindref="member">application_type</ref> = <ref refid="group__apptypes_1ga5892cf53d029fcd233410b03261f2380" kindref="member">NDIGO6G12_APP_TYPE_1CH</ref>)</para>
+</listitem><listitem><para><ref refid="group__adcdefs_1gaeff36ea77c6420a7798dd1ed57d327a4" kindref="member">NDIGO6G12_ADC_MODE_AD</ref> (if <ref refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" kindref="member">application_type</ref> = <ref refid="group__apptypes_1ga8575c724769f442f91a76c6f73eb00fb" kindref="member">NDIGO6G12_APP_TYPE_2CH</ref>)</para>
+</listitem><listitem><para><ref refid="group__adcdefs_1ga387f83c29e74ed7a8e9f9dd171ad8da6" kindref="member">NDIGO6G12_ADC_MODE_ABCD</ref> (if <ref refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" kindref="member">application_type</ref> = <ref refid="group__apptypes_1ga96d6b2b565ff0f6c6cda34854768bcff" kindref="member">NDIGO6G12_APP_TYPE_4CH</ref>)</para>
+</listitem><listitem><para><ref refid="group__adcdefs_1gadc5a2d3a469ff27f8dc115b099a3da03" kindref="member">NDIGO6G12_ADC_MODE_A</ref> (if <ref refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" kindref="member">application_type</ref> = <ref refid="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" kindref="member">NDIGO6G12_APP_TYPE_AVRG</ref>)</para>
 </listitem></itemizedlist>
 </para>
-</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a00c7c6e8948999a4141e20fbaabc4c01" kindref="member">adc_cal_set</ref> = 3</para>
-</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a789ab33de69d524de28180d465a910ae" kindref="member">analog_offsets[i]</ref> = 0</para>
-</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a2253a70de4bbdd0a27e98c1391677a65" kindref="member">tdc_trigger_offsets[i] </ref> = <ref refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kindref="member">NDIGO6G12_DC_OFFSET_N_NIM</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__configuration_1af082914cfc6a01318b0051489d56c31c" kindref="member">adc_cal_set</ref> = 3</para>
+</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a762a3bb11a140f26c1b5313d4d446b6e" kindref="member">analog_offsets[i]</ref> = 0</para>
+</listitem><listitem><para><ref refid="structndigo6g12__configuration_1aa6bf60e4eaac106ccf3902c1a8f5d942" kindref="member">tdc_trigger_offsets[i] </ref> = <ref refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kindref="member">NDIGO6G12_DC_OFFSET_N_NIM</ref></para>
 </listitem><listitem><para><ref refid="structndigo6g12__trigger" kindref="compound">trigger[i]</ref>:<itemizedlist>
-<listitem><para><ref refid="structndigo6g12__trigger_1a296c83e9d21707458844e7dbcccdec8d" kindref="member">edge</ref> = <computeroutput>true</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger_1a8d87b34870f5ab3abb9f50a4b9d34d7e" kindref="member">rising</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger_1a2c6c4b83ca2337f3530386715846303e" kindref="member">threshold</ref> = 512</para>
+<listitem><para><ref refid="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" kindref="member">edge</ref> = <computeroutput>true</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" kindref="member">rising</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger_1afff4cd79ce8bef5eb16061de39587d90" kindref="member">threshold</ref> = 512</para>
 </listitem></itemizedlist>
 </para>
 </listitem><listitem><para><ref refid="structndigo6g12__trigger__block" kindref="compound">trigger_block[i]</ref>:<itemizedlist>
-<listitem><para><ref refid="structndigo6g12__trigger__block_1abbb70b7cbab5a579740d2b4e82a23fed" kindref="member">enabled</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1aedb27bbae9e92b4fd5ae828492690335" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a072bc3d1b95e702845f6a05fda8b4ba8" kindref="member">multi_shot_count</ref> = 1</para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1ae63d6b4996b956dec5dc1a25ead11c04" kindref="member">precursor</ref> = 0</para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a367787f6e4895a8835f1f6abdd9bbbca" kindref="member">length</ref> = 16</para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1aaf3719cf4543964ca19f774c94bd8bb9" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a82c9a7f378da8cdf154acfdd82ae5039" kindref="member">gates</ref> = <ref refid="group__gatedefs_1ga92f1048ce70f7946e2c1f921c74c4a14" kindref="member">NDIGO6G12_TRIGGER_GATE_NONE</ref></para>
-</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a33d6847f6ba765dc4aaf761a3cc43c86" kindref="member">minimum_free_packets </ref> = 0</para>
+<listitem><para><ref refid="structndigo6g12__trigger__block_1a4cd2d3ea697c9b380a0a38e0b34db914" kindref="member">enabled</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a2c5c3f6d832916c465850cf9a684237e" kindref="member">multi_shot_count</ref> = 1</para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1aa313c7cca7f719735e68839e5f9ec632" kindref="member">precursor</ref> = 0</para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a9f59b34b1f25fe00023291b678246bcc" kindref="member">length</ref> = 16</para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a606c376138bec8a53d55cc54453ffdf8" kindref="member">gates</ref> = <ref refid="group__gatedefs_1ga92f1048ce70f7946e2c1f921c74c4a14" kindref="member">NDIGO6G12_TRIGGER_GATE_NONE</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__trigger__block_1a99fb48ea8804c4690d830b2037e9e405" kindref="member">minimum_free_packets </ref> = 0</para>
 </listitem></itemizedlist>
 </para>
 </listitem><listitem><para><ref refid="structndigo6g12__gating__block" kindref="compound">gating_block[i]</ref>:<itemizedlist>
-<listitem><para><ref refid="structndigo6g12__gating__block_1ac379090f42af1aea8856bf991887e275" kindref="member">negate</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a1933ca18ed17d6bb2a0a86a144418be4" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a145a4ffa0f8ffb7116d0ff484f65ec0e" kindref="member">start</ref> = 0</para>
-</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1ac9b1cf94bd6dc663c386011e5a34624c" kindref="member">stop</ref> = 1000</para>
-</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a6eeb8b65b9dfc59e59adb4d065e1a2ec" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
+<listitem><para><ref refid="structndigo6g12__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" kindref="member">negate</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref> = 0</para>
+</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">stop</ref> = 1000</para>
+</listitem><listitem><para><ref refid="structndigo6g12__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
 </listitem></itemizedlist>
 </para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration" kindref="compound">tdc_configuration</ref>:<itemizedlist>
-<listitem><para><ref refid="structndigo6g12__tdc__configuration_1a1544530aac839f16f999549fd07dc6da" kindref="member">channel[i]</ref>:<itemizedlist>
-<listitem><para><ref refid="structndigo6g12__tdc__channel_1ae01b3ead1313fb0cea8f5127b924c732" kindref="member">enable</ref> = <computeroutput>false</computeroutput></para>
+<listitem><para><ref refid="structndigo6g12__tdc__configuration_1a50521bcda4beea471b80ea792ca559d4" kindref="member">channel[i]</ref>:<itemizedlist>
+<listitem><para><ref refid="structndigo6g12__tdc__channel_1af9ab2c809a800c5898c63e811b55d217" kindref="member">enable</ref> = <computeroutput>false</computeroutput></para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block" kindref="compound">gating_block</ref>:<itemizedlist>
-<listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a7bef63a1d69cc74bd67df9f6803b4f65" kindref="member">enable</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1ad4a4d76a104c0a0d0bd2e3a26a7c13f5" kindref="member">negate</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a53085ff85ea47e8d2c4c80884129a4a9" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a941a5f0e9288ffcbfcb26413c0792c12" kindref="member">retrigger</ref> = <ref refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kindref="member">NDIGO6G12_TRIGGER_SOURCE_AUTO</ref></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a261748d5ec588fea915de0676b87759b" kindref="member">start</ref> = 0</para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a8d3748e5cdf1b84f603e6f72a4df89fd" kindref="member">stop</ref> = 1000</para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a941a5f0e9288ffcbfcb26413c0792c12" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
+<listitem><para><ref refid="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" kindref="member">enable</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" kindref="member">negate</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">retrigger</ref> = <ref refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kindref="member">NDIGO6G12_TRIGGER_SOURCE_AUTO</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref> = 0</para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">stop</ref> = 1000</para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
 </listitem></itemizedlist>
 </para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block" kindref="compound">tiger_block</ref>:<itemizedlist>
-<listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1aab61493d50d200c507cefe94ff15a79e" kindref="member">mode</ref> = <ref refid="group__tigerdefs_1ga7eccbe4d5a6be5547e3483dd660bee96" kindref="member">NDIGO6G12_TIGER_OFF</ref></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a64748243802880d156a614917b704778" kindref="member">negate</ref> = <computeroutput>true</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a0d56e160615259c83d123cff1d8f3b1f" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" kindref="member">retrigger</ref> = <ref refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kindref="member">NDIGO6G12_TRIGGER_SOURCE_AUTO</ref></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a50877a856a00485fa009152bf17cab91" kindref="member">start</ref> = 0</para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1acdc08d92cf01c459aec5e498cb4f89cc" kindref="member">stop</ref> = 1</para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
+<listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a1ea5d0cb93f22f7d0fdf804bd68c3326" kindref="member">mode</ref> = <ref refid="group__tigerdefs_1ga7eccbe4d5a6be5547e3483dd660bee96" kindref="member">NDIGO6G12_TIGER_OFF</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" kindref="member">negate</ref> = <computeroutput>true</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">retrigger</ref> = <ref refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kindref="member">NDIGO6G12_TRIGGER_SOURCE_AUTO</ref></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref> = 0</para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">stop</ref> = 1</para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref> = <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref></para>
 </listitem></itemizedlist>
 </para>
 </listitem></itemizedlist>
 </para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a56ae1001804b4a1f5c69477597df1898" kindref="member">skip_alignment</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a1031e692bc7159747f0c636dadcb8ca3" kindref="member">alignment_mode</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1ad62eb5295cdc0852458a5d2cf29cc96f" kindref="member">alignment_pin_high_z</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a4b0893e689951405013327c852c018be" kindref="member">alignment_pin_invert</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a85539ea6a73cd39c206978a0da855d44" kindref="member">alignment_phase_mask</ref> = <computeroutput>0x1fc</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1aa97f2633625335026e03145c834f3d5e" kindref="member">send_empty_packets</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a186804851b77519a6d29a798fceda898" kindref="member">skip_alignment</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" kindref="member">alignment_mode</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a9b2604c0bb3cc03053716f4b17b38c7a" kindref="member">alignment_pin_high_z</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" kindref="member">alignment_pin_invert</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1adb55a4f3896e60734c3bcf1dc3833b6c" kindref="member">alignment_phase_mask</ref> = <computeroutput>0x1fc</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" kindref="member">send_empty_packets</ref> = <computeroutput>false</computeroutput></para>
 </listitem></itemizedlist>
 </para>
-</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a66965045a9543ac31f453181366c0c4b" kindref="member">auto_trigger_period</ref> = 200000</para>
-</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a8900604eada2882819af21c868f35db7" kindref="member">auto_trigger_random_exponent </ref> = 0</para>
-</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a5572d9741c5842d741ab6d15ad333933" kindref="member">output_mode</ref> =<itemizedlist>
-<listitem><para><ref refid="group__outputdefs_1gaa6d025ad7fb0144b088773dccd4f3ae1" kindref="member">NDIGO6G12_OUTPUT_MODE_SIGNED32</ref> (if <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">application_type</ref> = <ref refid="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" kindref="member">NDIGO6G12_APP_TYPE_AVRG</ref>)</para>
+</listitem><listitem><para><ref refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" kindref="member">auto_trigger_period</ref> = 200000</para>
+</listitem><listitem><para><ref refid="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" kindref="member">auto_trigger_random_exponent </ref> = 0</para>
+</listitem><listitem><para><ref refid="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" kindref="member">output_mode</ref> =<itemizedlist>
+<listitem><para><ref refid="group__outputdefs_1gaa6d025ad7fb0144b088773dccd4f3ae1" kindref="member">NDIGO6G12_OUTPUT_MODE_SIGNED32</ref> (if <ref refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" kindref="member">application_type</ref> = <ref refid="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" kindref="member">NDIGO6G12_APP_TYPE_AVRG</ref>)</para>
 </listitem><listitem><para><ref refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kindref="member">NDIGO6G12_OUTPUT_MODE_SIGNED16</ref> (otherwise)</para>
 </listitem></itemizedlist>
 </para>
-</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a9570b45a7110a227c4969e9bb560066b" kindref="member">extended_bandwidth</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a19fef558a78fdd0f9f6fa23c17766d31" kindref="member">ramp_test_mode</ref> = <computeroutput>false</computeroutput> </para>
+</listitem><listitem><para><ref refid="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" kindref="member">extended_bandwidth</ref> = <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__configuration_1a3cf4c860b082641b35785714656ec046" kindref="member">ramp_test_mode</ref> = <computeroutput>false</computeroutput> </para>
 </listitem></itemizedlist>
 </para>
 </detaileddescription>

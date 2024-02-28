@@ -4,9 +4,9 @@
 <compoundname>crono_pcie_info</compoundname>
 <includes refid="crono__interface_8h" local="no">crono_interface.h</includes>
 <sectiondef kind="public-attrib">
-<memberdef kind="variable" id="structcrono__pcie__info_1ae5a6929f9b8ba8568264b27d4f3b1197" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structcrono__pcie__info_1a2da8464d7d389857007dbc41cbd2769e" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
-<definition>uint32_t crono_pcie_info::pwr_mgmt</definition>
+<definition>uint32_t pwr_mgmt</definition>
 <argsstring></argsstring>
 <name>pwr_mgmt</name>
 <qualifiedname>crono_pcie_info::pwr_mgmt</qualifiedname>
@@ -19,9 +19,9 @@
 </inbodydescription>
 <location file="source/crono_interface.h" line="359" column="14" bodyfile="source/crono_interface.h" bodystart="359" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structcrono__pcie__info_1a0cc75ae2f95181834ddbb92f720311c4" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structcrono__pcie__info_1a6a71fcd0f10965c4d7f9d5bea0be3115" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
-<definition>uint32_t crono_pcie_info::link_width</definition>
+<definition>uint32_t link_width</definition>
 <argsstring></argsstring>
 <name>link_width</name>
 <qualifiedname>crono_pcie_info::link_width</qualifiedname>
@@ -35,9 +35,9 @@
 </inbodydescription>
 <location file="source/crono_interface.h" line="367" column="14" bodyfile="source/crono_interface.h" bodystart="367" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structcrono__pcie__info_1a9f22ead0c303e7b25afac74283208577" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structcrono__pcie__info_1a91b7c315a5033b6fd324e3ff9d898cc6" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
-<definition>uint32_t crono_pcie_info::max_payload</definition>
+<definition>uint32_t max_payload</definition>
 <argsstring></argsstring>
 <name>max_payload</name>
 <qualifiedname>crono_pcie_info::max_payload</qualifiedname>
@@ -51,9 +51,9 @@
 </inbodydescription>
 <location file="source/crono_interface.h" line="373" column="14" bodyfile="source/crono_interface.h" bodystart="373" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structcrono__pcie__info_1acff45c8efa389ab57d98a19219654c9c" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structcrono__pcie__info_1aae24fc4f200e75aa8215f797b2561dbf" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
-<definition>uint32_t crono_pcie_info::link_speed</definition>
+<definition>uint32_t link_speed</definition>
 <argsstring></argsstring>
 <name>link_speed</name>
 <qualifiedname>crono_pcie_info::link_speed</qualifiedname>
@@ -67,9 +67,9 @@
 </inbodydescription>
 <location file="source/crono_interface.h" line="379" column="14" bodyfile="source/crono_interface.h" bodystart="379" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structcrono__pcie__info_1aa08ef78334f8abc54403c6ff172cf211" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
-<definition>uint32_t crono_pcie_info::error_status_supported</definition>
+<definition>uint32_t error_status_supported</definition>
 <argsstring></argsstring>
 <name>error_status_supported</name>
 <qualifiedname>crono_pcie_info::error_status_supported</qualifiedname>
@@ -82,9 +82,9 @@
 </inbodydescription>
 <location file="source/crono_interface.h" line="385" column="14" bodyfile="source/crono_interface.h" bodystart="385" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structcrono__pcie__info_1a632233adea772089be357e2ca4413476" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
-<definition>uint32_t crono_pcie_info::correctable_error_status</definition>
+<definition>uint32_t correctable_error_status</definition>
 <argsstring></argsstring>
 <name>correctable_error_status</name>
 <qualifiedname>crono_pcie_info::correctable_error_status</qualifiedname>
@@ -98,9 +98,9 @@
 </inbodydescription>
 <location file="source/crono_interface.h" line="394" column="14" bodyfile="source/crono_interface.h" bodystart="394" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structcrono__pcie__info_1a5b2f4a84a6a223e3a470172620fc7140" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structcrono__pcie__info_1a7061e033851718f01f63ef104c23c1be" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
-<definition>uint32_t crono_pcie_info::uncorrectable_error_status</definition>
+<definition>uint32_t uncorrectable_error_status</definition>
 <argsstring></argsstring>
 <name>uncorrectable_error_status</name>
 <qualifiedname>crono_pcie_info::uncorrectable_error_status</qualifiedname>
@@ -114,9 +114,9 @@
 </inbodydescription>
 <location file="source/crono_interface.h" line="403" column="14" bodyfile="source/crono_interface.h" bodystart="403" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structcrono__pcie__info_1a9e0e02e8255d5b800f559440ec1e260b" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structcrono__pcie__info_1aa43c4c21b173ada1b6b7568956f0d650" prot="public" static="no" mutable="no">
 <type>uint32_t</type>
-<definition>uint32_t crono_pcie_info::reserved</definition>
+<definition>uint32_t reserved</definition>
 <argsstring></argsstring>
 <name>reserved</name>
 <qualifiedname>crono_pcie_info::reserved</qualifiedname>
@@ -137,14 +137,14 @@
 </detaileddescription>
 <location file="source/crono_interface.h" line="355" column="1" bodyfile="source/crono_interface.h" bodystart="355" bodyend="409"/>
 <listofallmembers>
-<member refid="structcrono__pcie__info_1ae05e3cd97b8dcc80ab9318912d4785fb" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>correctable_error_status</name></member>
-<member refid="structcrono__pcie__info_1ae93fcc7287b67834524e40080f7a7136" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>error_status_supported</name></member>
-<member refid="structcrono__pcie__info_1acff45c8efa389ab57d98a19219654c9c" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>link_speed</name></member>
-<member refid="structcrono__pcie__info_1a0cc75ae2f95181834ddbb92f720311c4" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>link_width</name></member>
-<member refid="structcrono__pcie__info_1a9f22ead0c303e7b25afac74283208577" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>max_payload</name></member>
-<member refid="structcrono__pcie__info_1ae5a6929f9b8ba8568264b27d4f3b1197" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>pwr_mgmt</name></member>
-<member refid="structcrono__pcie__info_1a9e0e02e8255d5b800f559440ec1e260b" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>reserved</name></member>
-<member refid="structcrono__pcie__info_1a5b2f4a84a6a223e3a470172620fc7140" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>uncorrectable_error_status</name></member>
+<member refid="structcrono__pcie__info_1a632233adea772089be357e2ca4413476" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>correctable_error_status</name></member>
+<member refid="structcrono__pcie__info_1aa08ef78334f8abc54403c6ff172cf211" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>error_status_supported</name></member>
+<member refid="structcrono__pcie__info_1aae24fc4f200e75aa8215f797b2561dbf" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>link_speed</name></member>
+<member refid="structcrono__pcie__info_1a6a71fcd0f10965c4d7f9d5bea0be3115" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>link_width</name></member>
+<member refid="structcrono__pcie__info_1a91b7c315a5033b6fd324e3ff9d898cc6" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>max_payload</name></member>
+<member refid="structcrono__pcie__info_1a2da8464d7d389857007dbc41cbd2769e" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>pwr_mgmt</name></member>
+<member refid="structcrono__pcie__info_1aa43c4c21b173ada1b6b7568956f0d650" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>reserved</name></member>
+<member refid="structcrono__pcie__info_1a7061e033851718f01f63ef104c23c1be" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>uncorrectable_error_status</name></member>
 </listofallmembers>
 </compounddef>
 </doxygen>

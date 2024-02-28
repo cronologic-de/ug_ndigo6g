@@ -71,7 +71,7 @@
 <para>Flags of a TDC packet reporting error conditions. </para>
 </briefdescription>
 <detaileddescription>
-<para>Used for <ref refid="structcrono__packet_1a2a35dcae5468852e8408502b34b68f4c" kindref="member">crono_packet::flags</ref>. </para>
+<para>Used for <ref refid="structcrono__packet_1aa2585d779da0ab21273a8d92de9a0ebe" kindref="member">crono_packet::flags</ref>. </para>
 </detaileddescription>
 </compounddef>
 </doxygen>

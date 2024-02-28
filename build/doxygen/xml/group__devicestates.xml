@@ -42,7 +42,7 @@
 </memberdef>
 </sectiondef>
 <briefdescription>
-<para>Defines for <ref refid="structndigo6g12__fast__info_1a3abbdff225db4d6b3e4c8f42736cfdbc" kindref="member">ndigo6g12_fast_info::state</ref>. </para>
+<para>Defines for <ref refid="structndigo6g12__fast__info_1a89f234133d3efe315836311cbf21c64b" kindref="member">ndigo6g12_fast_info::state</ref>. </para>
 </briefdescription>
 <detaileddescription>
 <para>A device must be configured before data-capturing is started. </para>

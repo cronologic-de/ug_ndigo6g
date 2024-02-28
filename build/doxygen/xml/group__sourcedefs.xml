@@ -198,7 +198,7 @@
 <para>Bitmasks for trigger sources. </para>
 </briefdescription>
 <detaileddescription>
-<para>Used for <ref refid="structndigo6g12__trigger__block_1aaf3719cf4543964ca19f774c94bd8bb9" kindref="member">ndigo6g12_trigger_block::sources</ref>, <ref refid="structndigo6g12__gating__block_1a6eeb8b65b9dfc59e59adb4d065e1a2ec" kindref="member">ndigo6g12_gating_block::sources</ref>, <ref refid="structndigo6g12__tdc__gating__block_1a941a5f0e9288ffcbfcb26413c0792c12" kindref="member">ndigo6g12_tdc_gating_block::sources</ref>, and <ref refid="structndigo6g12__tdc__tiger__block_1a3b7c36e8029b407f3fe1df91e2a8ece4" kindref="member">ndigo6g12_tdc_tiger_block::sources</ref>. </para>
+<para>Used for <ref refid="structndigo6g12__trigger__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">ndigo6g12_trigger_block::sources</ref>, <ref refid="structndigo6g12__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">ndigo6g12_gating_block::sources</ref>, <ref refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">ndigo6g12_tdc_gating_block::sources</ref>, and <ref refid="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">ndigo6g12_tdc_tiger_block::sources</ref>. </para>
 </detaileddescription>
 </compounddef>
 </doxygen>

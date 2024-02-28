@@ -4,9 +4,9 @@
 <compoundname>ndigo6g12_fast_info</compoundname>
 <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
 <sectiondef kind="public-attrib">
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a3abbdff225db4d6b3e4c8f42736cfdbc" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a89f234133d3efe315836311cbf21c64b" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::state</definition>
+<definition>int state</definition>
 <argsstring></argsstring>
 <name>state</name>
 <qualifiedname>ndigo6g12_fast_info::state</qualifiedname>
@@ -20,9 +20,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="896" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="896" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a73abdfb53c8495c408b2144810adc6d1" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ad1e2d946950447f09ab27a4eb53e8c66" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::fan_speed</definition>
+<definition>int fan_speed</definition>
 <argsstring></argsstring>
 <name>fan_speed</name>
 <qualifiedname>ndigo6g12_fast_info::fan_speed</qualifiedname>
@@ -36,9 +36,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="902" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="902" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a760fa763aef79b323915c195c3a23055" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a056e6eb165729b24a4741001e2264af1" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::fpga_temperature</definition>
+<definition>double fpga_temperature</definition>
 <argsstring></argsstring>
 <name>fpga_temperature</name>
 <qualifiedname>ndigo6g12_fast_info::fpga_temperature</qualifiedname>
@@ -51,9 +51,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="907" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="907" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a0d1589f78ea6585c291fbf0aa891a999" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a703422d39416880872ba1bd5c182fab5" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::fpga_vccint</definition>
+<definition>double fpga_vccint</definition>
 <argsstring></argsstring>
 <name>fpga_vccint</name>
 <qualifiedname>ndigo6g12_fast_info::fpga_vccint</qualifiedname>
@@ -66,9 +66,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="913" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="913" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a5ca820ac7e802ecc06089e76f8ecde7f" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ac2b0f482899ffc35cd4734dfbeba12f9" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::fpga_vccaux</definition>
+<definition>double fpga_vccaux</definition>
 <argsstring></argsstring>
 <name>fpga_vccaux</name>
 <qualifiedname>ndigo6g12_fast_info::fpga_vccaux</qualifiedname>
@@ -81,9 +81,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="919" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="919" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1adf5070291fde73afd25af056ba447d7a" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a67825c019d10b28406690cd165ba95d1" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::fpga_vccbram</definition>
+<definition>double fpga_vccbram</definition>
 <argsstring></argsstring>
 <name>fpga_vccbram</name>
 <qualifiedname>ndigo6g12_fast_info::fpga_vccbram</qualifiedname>
@@ -96,9 +96,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="925" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="925" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a5f2c0ab1026f9831fa91a00e51eebe03" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1aea29ee97e6cb2f676ef35dcfd3e64f86" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::mgt_0v9</definition>
+<definition>double mgt_0v9</definition>
 <argsstring></argsstring>
 <name>mgt_0v9</name>
 <qualifiedname>ndigo6g12_fast_info::mgt_0v9</qualifiedname>
@@ -111,9 +111,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="931" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="931" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a7285fdba3d8c906dc8a877ffe62b907c" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ae769114ae01cf59f30c81d4138ff73d9" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::mgt_1v2</definition>
+<definition>double mgt_1v2</definition>
 <argsstring></argsstring>
 <name>mgt_1v2</name>
 <qualifiedname>ndigo6g12_fast_info::mgt_1v2</qualifiedname>
@@ -126,9 +126,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="937" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="937" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a439493c1de4a1ef41f543bb23051f7cd" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1adbd1ca81d32fed7e8e01190de37156d5" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::adc_2v5</definition>
+<definition>double adc_2v5</definition>
 <argsstring></argsstring>
 <name>adc_2v5</name>
 <qualifiedname>ndigo6g12_fast_info::adc_2v5</qualifiedname>
@@ -141,9 +141,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="943" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="943" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a9d9fdc6d335ae62e7391570fcb78ade6" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a71a18bc9eebd5f557868669b3e98978e" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::clk_3v3</definition>
+<definition>double clk_3v3</definition>
 <argsstring></argsstring>
 <name>clk_3v3</name>
 <qualifiedname>ndigo6g12_fast_info::clk_3v3</qualifiedname>
@@ -156,9 +156,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="949" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="949" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a5be11b6553cadae5274a103a20b8b172" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a3d6ccdebf705d3f0e262602ba7aeff7a" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::adc_3v3</definition>
+<definition>double adc_3v3</definition>
 <argsstring></argsstring>
 <name>adc_3v3</name>
 <qualifiedname>ndigo6g12_fast_info::adc_3v3</qualifiedname>
@@ -171,9 +171,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="955" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="955" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1ae0a3e87683deec39467d1b51911d1b23" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a428ac35601f5a49618abda16129b8956" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::pcie_3v3</definition>
+<definition>double pcie_3v3</definition>
 <argsstring></argsstring>
 <name>pcie_3v3</name>
 <qualifiedname>ndigo6g12_fast_info::pcie_3v3</qualifiedname>
@@ -186,9 +186,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="961" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="961" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1aed116e3287ea90b10a2121450f770695" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a5f1f0e95e92335651efdf291d29b570f" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::opamp_5v2</definition>
+<definition>double opamp_5v2</definition>
 <argsstring></argsstring>
 <name>opamp_5v2</name>
 <qualifiedname>ndigo6g12_fast_info::opamp_5v2</qualifiedname>
@@ -201,9 +201,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="967" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="967" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1ab4b7e0bf448941a5b3b12f9b9ae81451" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a32786ff2fe01f5240aa6036b582863f8" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::temp4633_1</definition>
+<definition>double temp4633_1</definition>
 <argsstring></argsstring>
 <name>temp4633_1</name>
 <qualifiedname>ndigo6g12_fast_info::temp4633_1</qualifiedname>
@@ -216,9 +216,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="972" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="972" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1aeb994271428106d41df1451648e47f07" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ae869c1a56a149b68fe5ff7835851ddcd" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::temp4633_2</definition>
+<definition>double temp4633_2</definition>
 <argsstring></argsstring>
 <name>temp4633_2</name>
 <qualifiedname>ndigo6g12_fast_info::temp4633_2</qualifiedname>
@@ -231,9 +231,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="977" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="977" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1ad21aa15ec60c77e14784361fd12557ae" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ad82fd00c9f952e92d303105e12d152b2" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::temp4644</definition>
+<definition>double temp4644</definition>
 <argsstring></argsstring>
 <name>temp4644</name>
 <qualifiedname>ndigo6g12_fast_info::temp4644</qualifiedname>
@@ -246,9 +246,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="982" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="982" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a2864bc15fe160f3df83e5670947c23f2" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ae620da7afa78ff04ae04a3198ef3fa49" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::tdc1_temp</definition>
+<definition>double tdc1_temp</definition>
 <argsstring></argsstring>
 <name>tdc1_temp</name>
 <qualifiedname>ndigo6g12_fast_info::tdc1_temp</qualifiedname>
@@ -261,9 +261,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="987" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="987" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a7edbfa57e15d619ccd2eb66053ec3a99" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a95c6ef27bc082a9ac60ffd3c44fe240f" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::ev12_cmiref</definition>
+<definition>double ev12_cmiref</definition>
 <argsstring></argsstring>
 <name>ev12_cmiref</name>
 <qualifiedname>ndigo6g12_fast_info::ev12_cmiref</qualifiedname>
@@ -277,9 +277,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="994" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="994" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1aed221a30c474454446b24dcab3d1bd71" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a19d3b3b0590526ce6e9964a70e27d98c" prot="public" static="no" mutable="no">
 <type>double</type>
-<definition>double ndigo6g12_fast_info::ev12_temp</definition>
+<definition>double ev12_temp</definition>
 <argsstring></argsstring>
 <name>ev12_temp</name>
 <qualifiedname>ndigo6g12_fast_info::ev12_temp</qualifiedname>
@@ -292,9 +292,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="999" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="999" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1add4edaae432aab799b9e02d87f096ec3" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1abf3701f2f808e7a5a11bd5e6065023a4" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::alerts</definition>
+<definition>int alerts</definition>
 <argsstring></argsstring>
 <name>alerts</name>
 <qualifiedname>ndigo6g12_fast_info::alerts</qualifiedname>
@@ -309,9 +309,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1008" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1008" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a00eded8ac21c7992a992a1b53b6ff1a0" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1addd928187e7b988d927057f6e7c67a13" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::pcie_link_width</definition>
+<definition>int pcie_link_width</definition>
 <argsstring></argsstring>
 <name>pcie_link_width</name>
 <qualifiedname>ndigo6g12_fast_info::pcie_link_width</qualifiedname>
@@ -325,9 +325,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1014" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1014" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1aee07f6cdbfc483893418119ab03b7242" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a946981413ca4a952eef495aa8097fef7" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::pcie_link_speed</definition>
+<definition>int pcie_link_speed</definition>
 <argsstring></argsstring>
 <name>pcie_link_speed</name>
 <qualifiedname>ndigo6g12_fast_info::pcie_link_speed</qualifiedname>
@@ -341,9 +341,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1021" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1021" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1ab470f632498494e27e9a7653d97bed22" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a919f151d5f43932122ab66c8d7d552d9" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::pcie_max_payload</definition>
+<definition>int pcie_max_payload</definition>
 <argsstring></argsstring>
 <name>pcie_max_payload</name>
 <qualifiedname>ndigo6g12_fast_info::pcie_max_payload</qualifiedname>
@@ -357,9 +357,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1026" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1026" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1abfb150bfe65f9d0ee1d2acd9661f7975" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ae933d3ca3b4cea50914b66195f017395" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_fast_info::adc_data_pll_locked</definition>
+<definition>crono_bool_t adc_data_pll_locked</definition>
 <argsstring></argsstring>
 <name>adc_data_pll_locked</name>
 <qualifiedname>ndigo6g12_fast_info::adc_data_pll_locked</qualifiedname>
@@ -372,9 +372,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1031" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1031" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a3507669e79e38f6c286de05a91e299b5" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1af4aef7211a3a83a288990c2f0d552c02" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_fast_info::adc_data_pll_lost_lock</definition>
+<definition>crono_bool_t adc_data_pll_lost_lock</definition>
 <argsstring></argsstring>
 <name>adc_data_pll_lost_lock</name>
 <qualifiedname>ndigo6g12_fast_info::adc_data_pll_lost_lock</qualifiedname>
@@ -387,9 +387,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1036" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1036" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a724db79a4235224db5cf6ef0c896cbec" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1af5bf1b96bf0309f94175246a34427e84" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::adc_lanes_synced</definition>
+<definition>int adc_lanes_synced</definition>
 <argsstring></argsstring>
 <name>adc_lanes_synced</name>
 <qualifiedname>ndigo6g12_fast_info::adc_lanes_synced</qualifiedname>
@@ -403,9 +403,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1042" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1042" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a26c6e512c1cdc905e6d26961f50e900a" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a1819c324ac13c5becc051a4fbad0f802" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::adc_lanes_lost_sync</definition>
+<definition>int adc_lanes_lost_sync</definition>
 <argsstring></argsstring>
 <name>adc_lanes_lost_sync</name>
 <qualifiedname>ndigo6g12_fast_info::adc_lanes_lost_sync</qualifiedname>
@@ -419,9 +419,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1048" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1048" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a28fe6782c8aa61f05b5b55578f28156b" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ad40e2f25adfd6bc02ba5a84c0e0bdc30" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::adc_lanes_fifo_empty</definition>
+<definition>int adc_lanes_fifo_empty</definition>
 <argsstring></argsstring>
 <name>adc_lanes_fifo_empty</name>
 <qualifiedname>ndigo6g12_fast_info::adc_lanes_fifo_empty</qualifiedname>
@@ -435,9 +435,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1054" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1054" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1ada9a7042adb1f703373eb8554e3b2b46" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a0c9dd386f65999c2d03c69d9f8aeedf9" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::adc_lanes_fifo_full</definition>
+<definition>int adc_lanes_fifo_full</definition>
 <argsstring></argsstring>
 <name>adc_lanes_fifo_full</name>
 <qualifiedname>ndigo6g12_fast_info::adc_lanes_fifo_full</qualifiedname>
@@ -451,9 +451,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1060" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1060" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1abc4b147c9cf34b53b2901984b1ed5809" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a5f88bd9235cfab79aef04f5815ee7d79" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::adc_lanes_running</definition>
+<definition>int adc_lanes_running</definition>
 <argsstring></argsstring>
 <name>adc_lanes_running</name>
 <qualifiedname>ndigo6g12_fast_info::adc_lanes_running</qualifiedname>
@@ -467,9 +467,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1066" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1066" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a225adacc6306cba97a2c52a4484c1d38" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a8d016be86f660e88b09d856c1053c8e0" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::adc_lanes_sync_timeout</definition>
+<definition>int adc_lanes_sync_timeout</definition>
 <argsstring></argsstring>
 <name>adc_lanes_sync_timeout</name>
 <qualifiedname>ndigo6g12_fast_info::adc_lanes_sync_timeout</qualifiedname>
@@ -483,9 +483,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1072" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1072" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a579e334c685e2387c6573231d79540e7" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a4bc0094b8b7b263496f26746277dba2b" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::adc_sync_retry_count</definition>
+<definition>int adc_sync_retry_count</definition>
 <argsstring></argsstring>
 <name>adc_sync_retry_count</name>
 <qualifiedname>ndigo6g12_fast_info::adc_sync_retry_count</qualifiedname>
@@ -499,9 +499,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1078" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1078" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a076fcc500f677307970360e2f650567f" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a903ae77f3dcc13ddda10298d8245ae96" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::adc_sync_strobe_retry_count</definition>
+<definition>int adc_sync_strobe_retry_count</definition>
 <argsstring></argsstring>
 <name>adc_sync_strobe_retry_count</name>
 <qualifiedname>ndigo6g12_fast_info::adc_sync_strobe_retry_count</qualifiedname>
@@ -515,9 +515,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1084" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1084" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a4f6b0278e10281adfe47c0e7f3a117ab" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ae298e66a6a01ba7304eb529221b86a41" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::adc_sync_delay_count</definition>
+<definition>int adc_sync_delay_count</definition>
 <argsstring></argsstring>
 <name>adc_sync_delay_count</name>
 <qualifiedname>ndigo6g12_fast_info::adc_sync_delay_count</qualifiedname>
@@ -530,9 +530,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1090" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1090" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a0e33ec7d4d57c87b716958e4fc4fca67" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a82fdda10777af65341bbbcd062d14456" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_fast_info::adc_mgt_power_good</definition>
+<definition>crono_bool_t adc_mgt_power_good</definition>
 <argsstring></argsstring>
 <name>adc_mgt_power_good</name>
 <qualifiedname>ndigo6g12_fast_info::adc_mgt_power_good</qualifiedname>
@@ -545,9 +545,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1096" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1096" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1add1cf32be71efe797c6abd899bc30ee8" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a41ec4fdf59dc41482f136c7dfbe5bdd2" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_fast_info::lmk_pll1_locked</definition>
+<definition>crono_bool_t lmk_pll1_locked</definition>
 <argsstring></argsstring>
 <name>lmk_pll1_locked</name>
 <qualifiedname>ndigo6g12_fast_info::lmk_pll1_locked</qualifiedname>
@@ -560,9 +560,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1101" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1101" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a299df385ef3d78616a4b90748a4b5e26" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1ae882d17bbbf3233eedd336b8b8ddb062" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_fast_info::lmk_pll2_locked</definition>
+<definition>crono_bool_t lmk_pll2_locked</definition>
 <argsstring></argsstring>
 <name>lmk_pll2_locked</name>
 <qualifiedname>ndigo6g12_fast_info::lmk_pll2_locked</qualifiedname>
@@ -575,9 +575,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1106" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1106" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1ab265809144afaa3b0e59533fa6121b34" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a9f71023de14dd51eb55b92e4d1b6b5ea" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_fast_info::lmk_lost_lock</definition>
+<definition>crono_bool_t lmk_lost_lock</definition>
 <argsstring></argsstring>
 <name>lmk_lost_lock</name>
 <qualifiedname>ndigo6g12_fast_info::lmk_lost_lock</qualifiedname>
@@ -590,9 +590,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1111" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1111" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1ac66a7834b6a1557400df49a16a0c214d" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1af74522e1153c60f7a66ee45e7a27b6df" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::lmk_lock_wait_count</definition>
+<definition>int lmk_lock_wait_count</definition>
 <argsstring></argsstring>
 <name>lmk_lock_wait_count</name>
 <qualifiedname>ndigo6g12_fast_info::lmk_lock_wait_count</qualifiedname>
@@ -605,9 +605,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1116" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1116" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a16a76fb2e411f877c53a14bae4ada0bf" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a892b53d400cfdfd76557108ceec90210" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::lmk_ctrl_vcxo</definition>
+<definition>int lmk_ctrl_vcxo</definition>
 <argsstring></argsstring>
 <name>lmk_ctrl_vcxo</name>
 <qualifiedname>ndigo6g12_fast_info::lmk_ctrl_vcxo</qualifiedname>
@@ -620,9 +620,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1121" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1121" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a309cdfea1fd99f7bf8c9d302ad05d92f" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a4a0bac780849b710011029cda4cfb7e6" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_fast_info::lmx_locked</definition>
+<definition>crono_bool_t lmx_locked</definition>
 <argsstring></argsstring>
 <name>lmx_locked</name>
 <qualifiedname>ndigo6g12_fast_info::lmx_locked</qualifiedname>
@@ -635,9 +635,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1126" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1126" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1addb1dfbff05f42895f8629798973b732" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a7877cb59b85901d88cecdd16dbee6d42" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_fast_info::lmx_lost_lock</definition>
+<definition>crono_bool_t lmx_lost_lock</definition>
 <argsstring></argsstring>
 <name>lmx_lost_lock</name>
 <qualifiedname>ndigo6g12_fast_info::lmx_lost_lock</qualifiedname>
@@ -650,9 +650,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1131" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1131" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__fast__info_1a62c225c58f0706164193905f22a3e042" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__fast__info_1a8adf5caaa2160f343d12737cd99f1ba7" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_fast_info::lmx_lock_wait_count</definition>
+<definition>int lmx_lock_wait_count</definition>
 <argsstring></argsstring>
 <name>lmx_lock_wait_count</name>
 <qualifiedname>ndigo6g12_fast_info::lmx_lock_wait_count</qualifiedname>
@@ -674,49 +674,49 @@
 </detaileddescription>
 <location file="source/ndigo6g12_interface.h" line="890" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="890" bodyend="1137"/>
 <listofallmembers>
-<member refid="structndigo6g12__fast__info_1a439493c1de4a1ef41f543bb23051f7cd" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_2v5</name></member>
-<member refid="structndigo6g12__fast__info_1a5be11b6553cadae5274a103a20b8b172" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_3v3</name></member>
-<member refid="structndigo6g12__fast__info_1abfb150bfe65f9d0ee1d2acd9661f7975" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_data_pll_locked</name></member>
-<member refid="structndigo6g12__fast__info_1a3507669e79e38f6c286de05a91e299b5" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_data_pll_lost_lock</name></member>
-<member refid="structndigo6g12__fast__info_1a28fe6782c8aa61f05b5b55578f28156b" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_fifo_empty</name></member>
-<member refid="structndigo6g12__fast__info_1ada9a7042adb1f703373eb8554e3b2b46" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_fifo_full</name></member>
-<member refid="structndigo6g12__fast__info_1a26c6e512c1cdc905e6d26961f50e900a" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_lost_sync</name></member>
-<member refid="structndigo6g12__fast__info_1abc4b147c9cf34b53b2901984b1ed5809" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_running</name></member>
-<member refid="structndigo6g12__fast__info_1a225adacc6306cba97a2c52a4484c1d38" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_sync_timeout</name></member>
-<member refid="structndigo6g12__fast__info_1a724db79a4235224db5cf6ef0c896cbec" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_synced</name></member>
-<member refid="structndigo6g12__fast__info_1a0e33ec7d4d57c87b716958e4fc4fca67" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_mgt_power_good</name></member>
-<member refid="structndigo6g12__fast__info_1a4f6b0278e10281adfe47c0e7f3a117ab" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_sync_delay_count</name></member>
-<member refid="structndigo6g12__fast__info_1a579e334c685e2387c6573231d79540e7" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_sync_retry_count</name></member>
-<member refid="structndigo6g12__fast__info_1a076fcc500f677307970360e2f650567f" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_sync_strobe_retry_count</name></member>
-<member refid="structndigo6g12__fast__info_1add4edaae432aab799b9e02d87f096ec3" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>alerts</name></member>
-<member refid="structndigo6g12__fast__info_1a9d9fdc6d335ae62e7391570fcb78ade6" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>clk_3v3</name></member>
-<member refid="structndigo6g12__fast__info_1a7edbfa57e15d619ccd2eb66053ec3a99" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>ev12_cmiref</name></member>
-<member refid="structndigo6g12__fast__info_1aed221a30c474454446b24dcab3d1bd71" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>ev12_temp</name></member>
-<member refid="structndigo6g12__fast__info_1a73abdfb53c8495c408b2144810adc6d1" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fan_speed</name></member>
-<member refid="structndigo6g12__fast__info_1a760fa763aef79b323915c195c3a23055" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fpga_temperature</name></member>
-<member refid="structndigo6g12__fast__info_1a5ca820ac7e802ecc06089e76f8ecde7f" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fpga_vccaux</name></member>
-<member refid="structndigo6g12__fast__info_1adf5070291fde73afd25af056ba447d7a" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fpga_vccbram</name></member>
-<member refid="structndigo6g12__fast__info_1a0d1589f78ea6585c291fbf0aa891a999" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fpga_vccint</name></member>
-<member refid="structndigo6g12__fast__info_1a16a76fb2e411f877c53a14bae4ada0bf" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_ctrl_vcxo</name></member>
-<member refid="structndigo6g12__fast__info_1ac66a7834b6a1557400df49a16a0c214d" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_lock_wait_count</name></member>
-<member refid="structndigo6g12__fast__info_1ab265809144afaa3b0e59533fa6121b34" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_lost_lock</name></member>
-<member refid="structndigo6g12__fast__info_1add1cf32be71efe797c6abd899bc30ee8" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_pll1_locked</name></member>
-<member refid="structndigo6g12__fast__info_1a299df385ef3d78616a4b90748a4b5e26" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_pll2_locked</name></member>
-<member refid="structndigo6g12__fast__info_1a62c225c58f0706164193905f22a3e042" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmx_lock_wait_count</name></member>
-<member refid="structndigo6g12__fast__info_1a309cdfea1fd99f7bf8c9d302ad05d92f" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmx_locked</name></member>
-<member refid="structndigo6g12__fast__info_1addb1dfbff05f42895f8629798973b732" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmx_lost_lock</name></member>
-<member refid="structndigo6g12__fast__info_1a5f2c0ab1026f9831fa91a00e51eebe03" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>mgt_0v9</name></member>
-<member refid="structndigo6g12__fast__info_1a7285fdba3d8c906dc8a877ffe62b907c" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>mgt_1v2</name></member>
-<member refid="structndigo6g12__fast__info_1aed116e3287ea90b10a2121450f770695" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>opamp_5v2</name></member>
-<member refid="structndigo6g12__fast__info_1ae0a3e87683deec39467d1b51911d1b23" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>pcie_3v3</name></member>
-<member refid="structndigo6g12__fast__info_1aee07f6cdbfc483893418119ab03b7242" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>pcie_link_speed</name></member>
-<member refid="structndigo6g12__fast__info_1a00eded8ac21c7992a992a1b53b6ff1a0" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>pcie_link_width</name></member>
-<member refid="structndigo6g12__fast__info_1ab470f632498494e27e9a7653d97bed22" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>pcie_max_payload</name></member>
-<member refid="structndigo6g12__fast__info_1a3abbdff225db4d6b3e4c8f42736cfdbc" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>state</name></member>
-<member refid="structndigo6g12__fast__info_1a2864bc15fe160f3df83e5670947c23f2" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>tdc1_temp</name></member>
-<member refid="structndigo6g12__fast__info_1ab4b7e0bf448941a5b3b12f9b9ae81451" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>temp4633_1</name></member>
-<member refid="structndigo6g12__fast__info_1aeb994271428106d41df1451648e47f07" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>temp4633_2</name></member>
-<member refid="structndigo6g12__fast__info_1ad21aa15ec60c77e14784361fd12557ae" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>temp4644</name></member>
+<member refid="structndigo6g12__fast__info_1adbd1ca81d32fed7e8e01190de37156d5" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_2v5</name></member>
+<member refid="structndigo6g12__fast__info_1a3d6ccdebf705d3f0e262602ba7aeff7a" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_3v3</name></member>
+<member refid="structndigo6g12__fast__info_1ae933d3ca3b4cea50914b66195f017395" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_data_pll_locked</name></member>
+<member refid="structndigo6g12__fast__info_1af4aef7211a3a83a288990c2f0d552c02" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_data_pll_lost_lock</name></member>
+<member refid="structndigo6g12__fast__info_1ad40e2f25adfd6bc02ba5a84c0e0bdc30" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_fifo_empty</name></member>
+<member refid="structndigo6g12__fast__info_1a0c9dd386f65999c2d03c69d9f8aeedf9" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_fifo_full</name></member>
+<member refid="structndigo6g12__fast__info_1a1819c324ac13c5becc051a4fbad0f802" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_lost_sync</name></member>
+<member refid="structndigo6g12__fast__info_1a5f88bd9235cfab79aef04f5815ee7d79" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_running</name></member>
+<member refid="structndigo6g12__fast__info_1a8d016be86f660e88b09d856c1053c8e0" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_sync_timeout</name></member>
+<member refid="structndigo6g12__fast__info_1af5bf1b96bf0309f94175246a34427e84" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_lanes_synced</name></member>
+<member refid="structndigo6g12__fast__info_1a82fdda10777af65341bbbcd062d14456" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_mgt_power_good</name></member>
+<member refid="structndigo6g12__fast__info_1ae298e66a6a01ba7304eb529221b86a41" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_sync_delay_count</name></member>
+<member refid="structndigo6g12__fast__info_1a4bc0094b8b7b263496f26746277dba2b" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_sync_retry_count</name></member>
+<member refid="structndigo6g12__fast__info_1a903ae77f3dcc13ddda10298d8245ae96" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_sync_strobe_retry_count</name></member>
+<member refid="structndigo6g12__fast__info_1abf3701f2f808e7a5a11bd5e6065023a4" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>alerts</name></member>
+<member refid="structndigo6g12__fast__info_1a71a18bc9eebd5f557868669b3e98978e" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>clk_3v3</name></member>
+<member refid="structndigo6g12__fast__info_1a95c6ef27bc082a9ac60ffd3c44fe240f" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>ev12_cmiref</name></member>
+<member refid="structndigo6g12__fast__info_1a19d3b3b0590526ce6e9964a70e27d98c" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>ev12_temp</name></member>
+<member refid="structndigo6g12__fast__info_1ad1e2d946950447f09ab27a4eb53e8c66" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fan_speed</name></member>
+<member refid="structndigo6g12__fast__info_1a056e6eb165729b24a4741001e2264af1" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fpga_temperature</name></member>
+<member refid="structndigo6g12__fast__info_1ac2b0f482899ffc35cd4734dfbeba12f9" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fpga_vccaux</name></member>
+<member refid="structndigo6g12__fast__info_1a67825c019d10b28406690cd165ba95d1" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fpga_vccbram</name></member>
+<member refid="structndigo6g12__fast__info_1a703422d39416880872ba1bd5c182fab5" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>fpga_vccint</name></member>
+<member refid="structndigo6g12__fast__info_1a892b53d400cfdfd76557108ceec90210" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_ctrl_vcxo</name></member>
+<member refid="structndigo6g12__fast__info_1af74522e1153c60f7a66ee45e7a27b6df" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_lock_wait_count</name></member>
+<member refid="structndigo6g12__fast__info_1a9f71023de14dd51eb55b92e4d1b6b5ea" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_lost_lock</name></member>
+<member refid="structndigo6g12__fast__info_1a41ec4fdf59dc41482f136c7dfbe5bdd2" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_pll1_locked</name></member>
+<member refid="structndigo6g12__fast__info_1ae882d17bbbf3233eedd336b8b8ddb062" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmk_pll2_locked</name></member>
+<member refid="structndigo6g12__fast__info_1a8adf5caaa2160f343d12737cd99f1ba7" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmx_lock_wait_count</name></member>
+<member refid="structndigo6g12__fast__info_1a4a0bac780849b710011029cda4cfb7e6" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmx_locked</name></member>
+<member refid="structndigo6g12__fast__info_1a7877cb59b85901d88cecdd16dbee6d42" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>lmx_lost_lock</name></member>
+<member refid="structndigo6g12__fast__info_1aea29ee97e6cb2f676ef35dcfd3e64f86" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>mgt_0v9</name></member>
+<member refid="structndigo6g12__fast__info_1ae769114ae01cf59f30c81d4138ff73d9" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>mgt_1v2</name></member>
+<member refid="structndigo6g12__fast__info_1a5f1f0e95e92335651efdf291d29b570f" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>opamp_5v2</name></member>
+<member refid="structndigo6g12__fast__info_1a428ac35601f5a49618abda16129b8956" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>pcie_3v3</name></member>
+<member refid="structndigo6g12__fast__info_1a946981413ca4a952eef495aa8097fef7" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>pcie_link_speed</name></member>
+<member refid="structndigo6g12__fast__info_1addd928187e7b988d927057f6e7c67a13" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>pcie_link_width</name></member>
+<member refid="structndigo6g12__fast__info_1a919f151d5f43932122ab66c8d7d552d9" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>pcie_max_payload</name></member>
+<member refid="structndigo6g12__fast__info_1a89f234133d3efe315836311cbf21c64b" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>state</name></member>
+<member refid="structndigo6g12__fast__info_1ae620da7afa78ff04ae04a3198ef3fa49" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>tdc1_temp</name></member>
+<member refid="structndigo6g12__fast__info_1a32786ff2fe01f5240aa6036b582863f8" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>temp4633_1</name></member>
+<member refid="structndigo6g12__fast__info_1ae869c1a56a149b68fe5ff7835851ddcd" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>temp4633_2</name></member>
+<member refid="structndigo6g12__fast__info_1ad82fd00c9f952e92d303105e12d152b2" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>temp4644</name></member>
 </listofallmembers>
 </compounddef>
 </doxygen>

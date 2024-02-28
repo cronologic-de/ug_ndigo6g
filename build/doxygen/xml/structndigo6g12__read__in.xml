@@ -4,9 +4,9 @@
 <compoundname>ndigo6g12_read_in</compoundname>
 <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
 <sectiondef kind="public-attrib">
-<memberdef kind="variable" id="structndigo6g12__read__in_1a1a8dac0a0e46427f07c2feef89e3d656" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__read__in_1a375ae9746419fc6197ccb8f66c636aa1" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_read_in::acknowledge_last_read</definition>
+<definition>crono_bool_t acknowledge_last_read</definition>
 <argsstring></argsstring>
 <name>acknowledge_last_read</name>
 <qualifiedname>ndigo6g12_read_in::acknowledge_last_read</qualifiedname>
@@ -28,7 +28,7 @@
 </detaileddescription>
 <location file="source/ndigo6g12_interface.h" line="1149" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1149" bodyend="1157"/>
 <listofallmembers>
-<member refid="structndigo6g12__read__in_1a1a8dac0a0e46427f07c2feef89e3d656" prot="public" virt="non-virtual"><scope>ndigo6g12_read_in</scope><name>acknowledge_last_read</name></member>
+<member refid="structndigo6g12__read__in_1a375ae9746419fc6197ccb8f66c636aa1" prot="public" virt="non-virtual"><scope>ndigo6g12_read_in</scope><name>acknowledge_last_read</name></member>
 </listofallmembers>
 </compounddef>
 </doxygen>

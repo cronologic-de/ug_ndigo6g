@@ -25,7 +25,7 @@
 <para>Reads packets from the board. </para>
 </briefdescription>
 <detaileddescription>
-<para>If <ref refid="structndigo6g12__read__in_1a1a8dac0a0e46427f07c2feef89e3d656" kindref="member">ndigo6g12_read_in::acknowledge_last_read</ref> is <computeroutput>true</computeroutput>, automatically acknowledges the last read packets. <parameterlist kind="param"><parameteritem>
+<para>If <ref refid="structndigo6g12__read__in_1a375ae9746419fc6197ccb8f66c636aa1" kindref="member">ndigo6g12_read_in::acknowledge_last_read</ref> is <computeroutput>true</computeroutput>, automatically acknowledges the last read packets. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
 </parameternamelist>
@@ -101,7 +101,7 @@
 <para>Convert <bold>state</bold> to plain text. </para>
 </briefdescription>
 <detaileddescription>
-<para>The device state is stored in <ref refid="structndigo6g12__fast__info_1a3abbdff225db4d6b3e4c8f42736cfdbc" kindref="member">ndigo6g12_fast_info::state</ref>. <parameterlist kind="param"><parameteritem>
+<para>The device state is stored in <ref refid="structndigo6g12__fast__info_1a89f234133d3efe315836311cbf21c64b" kindref="member">ndigo6g12_fast_info::state</ref>. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">state</parametername>
 </parameternamelist>

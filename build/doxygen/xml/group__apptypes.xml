@@ -69,7 +69,7 @@
 <para>Type of application. </para>
 </briefdescription>
 <detaileddescription>
-<para>Used for <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">ndigo6g12_init_parameters::application_type</ref>. </para>
+<para>Used for <ref refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" kindref="member">ndigo6g12_init_parameters::application_type</ref>. </para>
 </detaileddescription>
 </compounddef>
 </doxygen>

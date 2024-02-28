@@ -4,9 +4,9 @@
 <compoundname>ndigo6g12_averager_configuration</compoundname>
 <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
 <sectiondef kind="public-attrib">
-<memberdef kind="variable" id="structndigo6g12__averager__configuration_1a32ceafd663b247e78704f3e1c3f3e8b7" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__averager__configuration_1a1d10e252e778731e59f0f71afd7e727e" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_averager_configuration::iterations</definition>
+<definition>int iterations</definition>
 <argsstring></argsstring>
 <name>iterations</name>
 <qualifiedname>ndigo6g12_averager_configuration::iterations</qualifiedname>
@@ -14,16 +14,16 @@
 <para>Set the number of trigger events that are averaged. </para>
 </briefdescription>
 <detaileddescription>
-<para>Must be 0 if no averaging application is installed on the Ndigo6G-12 (see <ref refid="structndigo6g12__init__parameters_1a8ce1d043c015f22a58dd2b0caa062402" kindref="member">ndigo6g12_init_parameters::application_type</ref>).</para>
+<para>Must be 0 if no averaging application is installed on the Ndigo6G-12 (see <ref refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" kindref="member">ndigo6g12_init_parameters::application_type</ref>).</para>
 <para>Default is 0. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1537" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1537" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__averager__configuration_1a31b3dec87854087e5d92394c04fa1da2" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__averager__configuration_1acc1497904ce70b4cfd0209819f28a9e9" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_averager_configuration::stop_on_overflow</definition>
+<definition>crono_bool_t stop_on_overflow</definition>
 <argsstring></argsstring>
 <name>stop_on_overflow</name>
 <qualifiedname>ndigo6g12_averager_configuration::stop_on_overflow</qualifiedname>
@@ -38,9 +38,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1546" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1546" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__averager__configuration_1aa4942f113d6903f68f66ad431c112a4f" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__averager__configuration_1afd03e19cafb94c89d45b97a4f50860ec" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_averager_configuration::stop_manual</definition>
+<definition>crono_bool_t stop_manual</definition>
 <argsstring></argsstring>
 <name>stop_manual</name>
 <qualifiedname>ndigo6g12_averager_configuration::stop_manual</qualifiedname>
@@ -55,9 +55,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1554" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1554" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__averager__configuration_1aff46814be0d69ce6a9dec09f17154142" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__averager__configuration_1af67a741a117491352cd4d9420687aaac" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_averager_configuration::use_saturation</definition>
+<definition>crono_bool_t use_saturation</definition>
 <argsstring></argsstring>
 <name>use_saturation</name>
 <qualifiedname>ndigo6g12_averager_configuration::use_saturation</qualifiedname>
@@ -71,9 +71,9 @@
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1560" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1560" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__averager__configuration_1ab624489e14c02d386ead68753a386456" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__averager__configuration_1a330bd7eb8ecc195683528e61d5e1ce05" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t ndigo6g12_averager_configuration::stop_on_timeout</definition>
+<definition>crono_bool_t stop_on_timeout</definition>
 <argsstring></argsstring>
 <name>stop_on_timeout</name>
 <qualifiedname>ndigo6g12_averager_configuration::stop_on_timeout</qualifiedname>
@@ -81,16 +81,16 @@
 <para>Determine if the averager stops on timeout. </para>
 </briefdescription>
 <detaileddescription>
-<para>The timeout time is configured by <ref refid="structndigo6g12__averager__configuration_1a79e3d789dc7f7bf9ec790dffc6a0719b" kindref="member">timeout_threshold</ref>.</para>
+<para>The timeout time is configured by <ref refid="structndigo6g12__averager__configuration_1a564c478b4c3b07c67eec961b698be982" kindref="member">timeout_threshold</ref>.</para>
 <para>Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1568" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1568" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__averager__configuration_1a79e3d789dc7f7bf9ec790dffc6a0719b" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__averager__configuration_1a564c478b4c3b07c67eec961b698be982" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int ndigo6g12_averager_configuration::timeout_threshold</definition>
+<definition>int timeout_threshold</definition>
 <argsstring></argsstring>
 <name>timeout_threshold</name>
 <qualifiedname>ndigo6g12_averager_configuration::timeout_threshold</qualifiedname>
@@ -113,12 +113,12 @@
 </detaileddescription>
 <location file="source/ndigo6g12_interface.h" line="1529" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1529" bodyend="1577"/>
 <listofallmembers>
-<member refid="structndigo6g12__averager__configuration_1a32ceafd663b247e78704f3e1c3f3e8b7" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>iterations</name></member>
-<member refid="structndigo6g12__averager__configuration_1aa4942f113d6903f68f66ad431c112a4f" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>stop_manual</name></member>
-<member refid="structndigo6g12__averager__configuration_1a31b3dec87854087e5d92394c04fa1da2" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>stop_on_overflow</name></member>
-<member refid="structndigo6g12__averager__configuration_1ab624489e14c02d386ead68753a386456" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>stop_on_timeout</name></member>
-<member refid="structndigo6g12__averager__configuration_1a79e3d789dc7f7bf9ec790dffc6a0719b" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>timeout_threshold</name></member>
-<member refid="structndigo6g12__averager__configuration_1aff46814be0d69ce6a9dec09f17154142" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>use_saturation</name></member>
+<member refid="structndigo6g12__averager__configuration_1a1d10e252e778731e59f0f71afd7e727e" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>iterations</name></member>
+<member refid="structndigo6g12__averager__configuration_1afd03e19cafb94c89d45b97a4f50860ec" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>stop_manual</name></member>
+<member refid="structndigo6g12__averager__configuration_1acc1497904ce70b4cfd0209819f28a9e9" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>stop_on_overflow</name></member>
+<member refid="structndigo6g12__averager__configuration_1a330bd7eb8ecc195683528e61d5e1ce05" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>stop_on_timeout</name></member>
+<member refid="structndigo6g12__averager__configuration_1a564c478b4c3b07c67eec961b698be982" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>timeout_threshold</name></member>
+<member refid="structndigo6g12__averager__configuration_1af67a741a117491352cd4d9420687aaac" prot="public" virt="non-virtual"><scope>ndigo6g12_averager_configuration</scope><name>use_saturation</name></member>
 </listofallmembers>
 </compounddef>
 </doxygen>
