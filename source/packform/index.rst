@@ -19,7 +19,9 @@ Packets are retrieved by :cpp:func:`ndigo6g12_read`. They are of type
 
 .. toctree::
     :maxdepth: 2
+    :caption: Contents
 
     constants
+    utility
     bittable
     struct

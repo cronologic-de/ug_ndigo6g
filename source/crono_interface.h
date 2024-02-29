@@ -418,21 +418,36 @@ typedef struct {
  * @}
  */
 
+
+
 /*!
- * Returns the legnth of the data array of the packet in multiples of 8 bytes.
+ * @defgroup cronopacketmacros Macros for readout-packet handling
+ * @{
+ */
+/*!
+ * @brief   Returns the length of @ref crono_packet::data in multiples of
+ *          8 bytes.
  */
 #define crono_packet_data_length(current) ((current)->type &128?0:(current)->length)
 
 /*!
- * Returns the legnth of the of the packet including its header in multiples of eight bytes.
+ * @brief   Returns the legnth of @ref crono_packet::data including its header 
+ *          in multiples of 8 bytes.
  */
 #define crono_packet_bytes(current) ((crono_packet_data_length(current) + 2) * 8)
 
 /*!
- * Returns a crono_packet pointer pointing to the next packet in the ring buffer.
- * Must be checked befor use to not point beyond the last packet in the buffer.
+ * @brief   Returns a @ref crono_packet pointer pointing to the next packet in
+ *          the ring buffer.
+ * @details Must be checked before use to not point beyond the last packet in 
+ *          the buffer.
  */
 #define crono_next_packet(current) ((volatile crono_packet*) (((int64_t) (current)) +( ((current)->type&128?0:(current)->length) + 2) * 8))
+/*!
+ * @}
+ */
+
+
         
 #ifdef __cplusplus
 }

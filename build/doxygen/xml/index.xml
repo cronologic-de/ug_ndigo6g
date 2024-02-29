@@ -305,9 +305,9 @@
 <member refid="group__pcieuncorrectableerrors_1ga74a14e636a8b824abee760f851cb53a2" kind="define"><name>CRONO_PCIE_UNC_UNSUPPORED_REQUEST_ERROR</name></member>
 <member refid="group__pcieclearflags_1ga097da58e8e11ba3a84ff7f6510a848c0" kind="define"><name>CRONO_PCIE_CORRECTABLE_FLAG</name></member>
 <member refid="group__pcieclearflags_1gaa58d1403c661db7d479126221f35ef82" kind="define"><name>CRONO_PCIE_UNCORRECTABLE_FLAG</name></member>
-<member refid="crono__interface_8h_1ac98d212284a26bce0d16b8714e786186" kind="define"><name>crono_packet_data_length</name></member>
-<member refid="crono__interface_8h_1a0ca5475c4d64cef53e2db9b4847f8872" kind="define"><name>crono_packet_bytes</name></member>
-<member refid="crono__interface_8h_1a9e72c7b9c13027e35d62ea245b8cea14" kind="define"><name>crono_next_packet</name></member>
+<member refid="group__cronopacketmacros_1gac98d212284a26bce0d16b8714e786186" kind="define"><name>crono_packet_data_length</name></member>
+<member refid="group__cronopacketmacros_1ga0ca5475c4d64cef53e2db9b4847f8872" kind="define"><name>crono_packet_bytes</name></member>
+<member refid="group__cronopacketmacros_1ga9e72c7b9c13027e35d62ea245b8cea14" kind="define"><name>crono_next_packet</name></member>
 <member refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kind="typedef"><name>crono_bool_t</name></member>
 </compound>
 <compound refid="ndigo6g12__interface_8h" kind="file"><name>ndigo6g12_interface.h</name>
@@ -695,6 +695,11 @@
 <compound refid="group__pcieclearflags" kind="group"><name>pcieclearflags</name>
 <member refid="group__pcieclearflags_1ga097da58e8e11ba3a84ff7f6510a848c0" kind="define"><name>CRONO_PCIE_CORRECTABLE_FLAG</name></member>
 <member refid="group__pcieclearflags_1gaa58d1403c661db7d479126221f35ef82" kind="define"><name>CRONO_PCIE_UNCORRECTABLE_FLAG</name></member>
+</compound>
+<compound refid="group__cronopacketmacros" kind="group"><name>cronopacketmacros</name>
+<member refid="group__cronopacketmacros_1gac98d212284a26bce0d16b8714e786186" kind="define"><name>crono_packet_data_length</name></member>
+<member refid="group__cronopacketmacros_1ga0ca5475c4d64cef53e2db9b4847f8872" kind="define"><name>crono_packet_bytes</name></member>
+<member refid="group__cronopacketmacros_1ga9e72c7b9c13027e35d62ea245b8cea14" kind="define"><name>crono_next_packet</name></member>
 </compound>
 <compound refid="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b" kind="dir"><name>source</name>
 </compound>

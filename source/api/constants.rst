@@ -14,6 +14,8 @@ Clock modes
 ~~~~~~~~~~~
 .. doxygengroup:: clockmodes
 
+.. _application types:
+
 Application types
 ~~~~~~~~~~~~~~~~~
 .. doxygengroup:: apptypes
@@ -63,3 +65,7 @@ DC offsets
 Output modes
 ~~~~~~~~~~~~
 .. doxygengroup:: outputdefs
+
+Read-error codes
+~~~~~~~~~~~~~~~~
+.. doxygengroup:: readerrors
