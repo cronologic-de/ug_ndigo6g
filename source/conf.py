@@ -40,40 +40,31 @@ exclude_patterns = ["global.rst"]
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+cronoblue = "#376EB5"
+cronolightblue = "#569fd6"
+cronoorange = "#ED7807"
+cronolightorange = "rgb(237, 120, 7, 0.2)"
+
 html_theme = "furo"
 html_theme_options = {
-    "light_css_variables": {
-        "color-brand-primary": "#376EB5",
-        "color-brand-content": "#376EB5",
+    "dark_css_variables": {
+        "color-brand-primary": cronolightblue,
+        "color-brand-content": cronolightblue,
+        "color-api-name": cronoorange,
+        "color-sidebar-brand-text": cronolightblue,
+        "color-highlight-on-target": cronolightorange,
     },
-    # "light_logo": "cronologic_favicon.svg",
-    #     "footer_icons": [
-    #     {
-    #         "name": "cronologic",
-    #         "url": "https://www.cronologic.de",
-    #         "html": """
-    #             cronologic GmbH & Co. KG<br>Imprint
-    #         """,
-    #         "class": "",
-    #     },
-    # ],
+    "light_css_variables": {
+        "color-brand-primary": cronoblue,
+        "color-brand-content": cronoblue,
+        "color-api-name": cronoorange,
+        "color-sidebar-brand-text": cronolightblue,
+        "color-admonition-title--attention": cronoorange,
+        "color-admonition-title-background--attention": cronolightorange,
+        "color-highlight-on-target": cronolightorange,
+    },
 }
-# html_theme_options = {
-    # "font_family" : "Montserrat, sans-serif",
-    # "extra_nav_links": {"Back to all User Guides": "https://docs.cronologic.de/"},
-    # "sidebar_collapse": True,
-    # "show_relbar_bottom": True,
-    # "fixed_sidebar": True,
-    # "sidebar_width": 400,
-    # "page_width": 1200, 
-    # "logo": "cronologic.svg",
-    # "description": f"{project}",
-    # "show_powered_by": False,
-    # "touch_icon": "cronologic_favicon.svg",
-    # colors
-    # "body_text" : "#737372",
-    # "link_hover": "#376EB5",
-# }
+
 html_favicon = "_static/cronologic_favicon.svg"
 html_title = f"{project}"
 html_secnumber_suffix = " "
