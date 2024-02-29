@@ -21,4 +21,5 @@ This chapter provides an overview of the provided API functionality.
     init
     status_info
     config
+    runtime
     readout
