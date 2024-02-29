@@ -21,13 +21,13 @@ Source file                                     Description
                                                 :ref:`application types<application types>`
                                                 and TDC setup.
 :doc:`ndigo6g12_adc_single.cpp<adc_single>`     Implementation of application 
-                                                type :ref:`NDIGO6G12_APP_TYPE_1CH<application types>`.
+                                                type :c:macro:`NDIGO6G12_APP_TYPE_1CH`.
 :doc:`ndigo6g12_adc_dual.cpp<adc_dual>`         Implementation of application 
-                                                type :ref:`NDIGO6G12_APP_TYPE_2CH<application types>`.
+                                                type :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 :doc:`ndigo6g12_adc_quad.cpp<adc_quad>`         Implementation of application 
-                                                type :ref:`NDIGO6G12_APP_TYPE_4CH<application types>`.
+                                                type :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 :doc:`ndigo6g12_adc_averager.cpp<adc_averager>` Implementation of application
-                                                type :ref:`NDIGO6G12_APP_TYPE_AVRG<application types>`.
+                                                type :c:macro:`NDIGO6G12_APP_TYPE_AVRG`.
 :doc:`ndigo6g12_tdc.cpp<tdc>`                   Implementation of the TDC-class.
 :doc:`delay.h<delay>`                           Implementation for measuring
                                                 delays.

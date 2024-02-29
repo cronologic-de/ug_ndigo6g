@@ -54,3 +54,6 @@ div.sphinxsidebar {
     padding-bottom: 1rem;
     padding-top: 1rem
 }
+span.n {
+    font-weight: bold;
+}
