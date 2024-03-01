@@ -8,11 +8,6 @@ Ndigo6G |hyphen| User Guide
 
     \RaggedRight
 
-.. attention:: 
-
-    This User Guide is under active development and is subject to major 
-    changes.
-
 The `Ndigo6G-12 <https://www.cronologic.de/product/ndigo6g-12>`_
 by `cronologic GmbH & Co. KG <https://www.cronologic.de>`_
 is a hybrid ADC/TDC solution for the acquisition of short pulses.
@@ -21,17 +16,18 @@ This User Guide documents the hardware and functionality of the
 Ndigo6G-12 board, as well as the driver programming API provided by the
 Ndigo6G-12 driver.
 
-.. only:: html
+.. .. only:: html
 
-    Contents
-    ========
+..     Contents
+..     ========
 
 .. toctree::
     :maxdepth: 2
     :numbered:
+    :hidden:
 
     introduction
-    hardware
+    hardware/index
     api/index
     packform/index
     example/index

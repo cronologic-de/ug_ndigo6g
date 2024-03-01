@@ -58,7 +58,7 @@ html_theme_options = {
         "color-brand-primary": cronoblue,
         "color-brand-content": cronoblue,
         "color-api-name": cronoorange,
-        "color-sidebar-brand-text": cronolightblue,
+        "color-sidebar-brand-text": cronoblue,
         "color-admonition-title--attention": cronoorange,
         "color-admonition-title-background--attention": cronolightorange,
         "color-highlight-on-target": cronolightorange,

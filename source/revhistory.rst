@@ -1,11 +1,6 @@
 Revision History
 ================
 
-.. attention:: 
-
-    This User Guide is under active development and is subject to major 
-    changes.
-
 
 .. Firmware
 .. --------

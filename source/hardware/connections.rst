@@ -1,0 +1,2 @@
+External Inputs and Connectors
+------------------------------

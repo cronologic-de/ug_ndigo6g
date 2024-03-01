@@ -3,11 +3,6 @@
 Packet Format
 =============
 
-.. attention:: 
-
-    This User Guide is under active development and is subject to major 
-    changes.
-
 Packets are retrieved by :cpp:func:`ndigo6g12_read`. They are of type
 :cpp:struct:`crono_packet`.
 

@@ -2,10 +2,16 @@
 Hardware
 ========
 
-.. attention:: 
+.. toctree::
+   :caption: Contents
+   
+   installation
+   connections
+   functionality
+   sync
+   update
+   calibration
 
-    This User Guide is under active development and is subject to major 
-    changes.
 
 .. Installing the Board
 .. --------------------

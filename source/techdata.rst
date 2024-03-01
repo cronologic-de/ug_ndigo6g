@@ -1,11 +1,6 @@
 Technical Data
 ==============
 
-.. attention:: 
-
-    This User Guide is under active development and is subject to major 
-    changes.
-
 .. - Input Passband: **4.5** |nbws| **MHz** to **950** |nbws| **MHz**
 
 .. - Power Requirements: **25** |nbws| **W**
