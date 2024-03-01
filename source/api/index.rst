@@ -21,5 +21,5 @@ This chapter provides an overview of the provided API functionality.
     init/index
     info/index
     config/index
-    runtime
+    runtime/index
     readout/index

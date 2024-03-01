@@ -8,5 +8,6 @@ data is packaged in *packets* (see :numref:`Chapter %s<packet format>`).
 .. toctree::
     :caption: Contents
 
+    defines
     functions
     structures

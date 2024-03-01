@@ -10,6 +10,7 @@ the current device will be stored as type :cpp:struct:`ndigo6g12_device`.
 .. toctree::
     :caption: Contents
 
+    defines
     functions
     structures
 

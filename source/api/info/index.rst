@@ -8,6 +8,7 @@ information from the board.
 .. toctree::
     :caption: Contents
 
+    defines
     functions
     structures
 

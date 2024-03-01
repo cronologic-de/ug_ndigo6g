@@ -13,5 +13,6 @@ The configuration itself is done by calling :cpp:func:`ndigo6g12_configure`.
 .. toctree::
     :caption: Contents
 
+    defines
     functions
     structures
