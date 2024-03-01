@@ -14,7 +14,8 @@ TDC package error flags
 ~~~~~~~~~~~~~~~~~~~~~~~
 .. doxygengroup:: tdcpacketflags
 
+.. _tdchitflags:
+
 TDC hit flags
 ~~~~~~~~~~~~~
-.. _tdchitflags:
 .. doxygengroup:: tdchitflags
