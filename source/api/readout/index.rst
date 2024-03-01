@@ -7,6 +7,7 @@ data is packaged in *packets* (see :numref:`Chapter %s<packet format>`).
 
 .. toctree::
     :caption: Contents
+    :maxdepth: 2
 
     defines
     functions

@@ -9,7 +9,7 @@ by the Ndigo6G-12 driver.
 This chapter provides an overview of the provided API functionality.
 
 .. toctree::
-    :maxdepth: 4
+    :maxdepth: 3
     :caption: Contents
 
     constants
