@@ -430,7 +430,7 @@ typedef struct {
 #define crono_packet_data_length(current) ((current)->type &128?0:(current)->length)
 
 /*!
- * @brief   Returns the legnth of @ref crono_packet::data including its header 
+ * @brief   Returns the length of @ref crono_packet::data including its header 
  *          in multiples of 8 bytes.
  */
 #define crono_packet_bytes(current) ((crono_packet_data_length(current) + 2) * 8)

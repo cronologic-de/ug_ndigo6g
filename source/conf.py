@@ -91,6 +91,7 @@ latex_elements = {
         \newcommand{\docutilsrolectypered}[1]{{\color{ctypered} #1}}
         \newcommand{\docutilsrolered}[1]{{\color{red} #1}}
         \newcommand{\docutilsrolecronoblue}[1]{{\color{cronoblue} #1}}
+        \setcounter{tocdepth}{4}
     """,
     "extraclassoptions": r"openany",
     "tableofcontents":r"\tableofcontents",
