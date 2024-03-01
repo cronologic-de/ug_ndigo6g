@@ -14,7 +14,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="99" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="99" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="94" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="94" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__clockmodes_1gace2114dd58a66ac31eb1a23601c60c25" prot="public" static="no">
 <name>NDIGO6G12_CLOCK_SOURCE_SMA</name>
@@ -26,7 +26,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="105" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="105" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="100" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="100" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__clockmodes_1ga9c55152ad351c2c87c70513d7b55d0a4" prot="public" static="no">
 <name>NDIGO6G12_CLOCK_SOURCE_AUX2</name>
@@ -38,7 +38,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="111" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="111" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="106" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="106" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

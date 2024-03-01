@@ -62,7 +62,6 @@ html_theme_options = {
         "color-admonition-title--attention": cronoorange,
         "color-admonition-title-background--attention": cronolightorange,
         "color-highlight-on-target": cronolightorange,
-        "font-stack--monospace": "Fira Code, monospace",
     },
 }
 

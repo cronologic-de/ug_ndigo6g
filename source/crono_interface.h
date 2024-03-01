@@ -349,7 +349,6 @@ typedef struct {
 
 
 /*!
- * @ingroup infostructs
  * @brief Structure containing PCIe information
  */
 typedef struct {

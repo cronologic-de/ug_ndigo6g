@@ -14,12 +14,12 @@ by the Ndigo6G-12 driver.
 This chapter provides an overview of the provided API functionality.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 4
     :caption: Contents
 
     constants
-    init
-    status_info
-    config
+    init/index
+    info/index
+    config/index
     runtime
-    readout
+    readout/index

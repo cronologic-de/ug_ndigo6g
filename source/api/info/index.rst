@@ -5,9 +5,9 @@ of board, it's configuration, settings and state. The information is split
 according to its scope and the computational requirements to query the
 information from the board.
 
-.. doxygengroup:: statfuncts
-    :content-only:
+.. toctree::
+    :caption: Contents
 
-.. doxygengroup:: infostructs
-    :content-only:
-    :members:
+    functions
+    structures
+

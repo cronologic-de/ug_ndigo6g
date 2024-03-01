@@ -14,11 +14,11 @@
 <para>Pointer to the first packet. </para>
 </briefdescription>
 <detaileddescription>
-<para>That is, the pointer that was captured by the call of <ref refid="group__readfuncts_1gad25dc720dca5598bbfc481133ab67213" kindref="member">ndigo6g12_read</ref>. </para>
+<para>That is, the pointer that was captured by the call of <ref refid="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" kindref="member">ndigo6g12_read</ref>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1169" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1169" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1145" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1145" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__read__out_1a4f8b3bd4de3b864131053ab455e7813b" prot="public" static="no" mutable="no">
 <type>volatile <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> *</type>
@@ -33,7 +33,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1174" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1174" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1150" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1150" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -49,7 +49,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1181" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1181" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1157" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1157" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" static="no" mutable="no">
 <type>const char *</type>
@@ -64,7 +64,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1186" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="1186" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1162" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="1162" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -86,7 +86,7 @@
 </childnode>
 </node>
 </collaborationgraph>
-<location file="source/ndigo6g12_interface.h" line="1163" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1163" bodyend="1187"/>
+<location file="source/ndigo6g12_interface.h" line="1139" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1139" bodyend="1163"/>
 <listofallmembers>
 <member refid="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_code</name></member>
 <member refid="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_message</name></member>

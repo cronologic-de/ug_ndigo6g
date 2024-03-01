@@ -1,3 +1,5 @@
+.. _packet format:
+
 Packet Format
 =============
 

@@ -15,7 +15,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="431" column="9" bodyfile="source/crono_interface.h" bodystart="431" bodyend="-1"/>
+<location file="source/crono_interface.h" line="430" column="9" bodyfile="source/crono_interface.h" bodystart="430" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__cronopacketmacros_1ga0ca5475c4d64cef53e2db9b4847f8872" prot="public" static="no">
 <name>crono_packet_bytes</name>
@@ -28,7 +28,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="437" column="9" bodyfile="source/crono_interface.h" bodystart="437" bodyend="-1"/>
+<location file="source/crono_interface.h" line="436" column="9" bodyfile="source/crono_interface.h" bodystart="436" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__cronopacketmacros_1ga9e72c7b9c13027e35d62ea245b8cea14" prot="public" static="no">
 <name>crono_next_packet</name>
@@ -42,7 +42,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="445" column="9" bodyfile="source/crono_interface.h" bodystart="445" bodyend="-1"/>
+<location file="source/crono_interface.h" line="444" column="9" bodyfile="source/crono_interface.h" bodystart="444" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

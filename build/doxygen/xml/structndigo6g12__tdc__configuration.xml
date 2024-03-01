@@ -17,7 +17,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1624" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1624" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1601" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1601" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a186804851b77519a6d29a798fceda898" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -37,7 +37,7 @@ Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1634" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1634" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1611" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1611" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -53,7 +53,7 @@ Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1640" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1640" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1617" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1617" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a9b2604c0bb3cc03053716f4b17b38c7a" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -68,7 +68,7 @@ Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1645" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1645" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1622" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1622" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -83,7 +83,7 @@ Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1650" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1650" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1627" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1627" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1adb55a4f3896e60734c3bcf1dc3833b6c" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -98,7 +98,7 @@ Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1655" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1655" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1632" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1632" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -113,7 +113,7 @@ Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1660" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1660" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1637" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1637" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -148,7 +148,7 @@ Default is <computeroutput>false</computeroutput>. </para>
 <link refid="structndigo6g12__tdc__tiger__block"/>
 </node>
 </collaborationgraph>
-<location file="source/ndigo6g12_interface.h" line="1620" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1620" bodyend="1661"/>
+<location file="source/ndigo6g12_interface.h" line="1597" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1597" bodyend="1638"/>
 <listofallmembers>
 <member refid="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_mode</name></member>
 <member refid="structndigo6g12__tdc__configuration_1adb55a4f3896e60734c3bcf1dc3833b6c" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_phase_mask</name></member>

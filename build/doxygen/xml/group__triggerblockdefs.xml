@@ -14,7 +14,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="80" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="80" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="77" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="77" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__triggerblockdefs_1gaf82527fb9c266707d59317100be18d7d" prot="public" static="no">
 <name>NDIGO6G12_MAX_MULTISHOT</name>
@@ -26,7 +26,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="83" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="83" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="80" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="80" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

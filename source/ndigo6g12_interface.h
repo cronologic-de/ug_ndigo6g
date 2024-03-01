@@ -33,7 +33,6 @@ extern "C" {
  * @brief    Constants
  * @{ 
  */
-
 /*! The current API version. */
 #define NDIGO6G12_API_VERSION 1
 
@@ -63,7 +62,6 @@ extern "C" {
  * @details It is the maximum recording length in multiples of 5 ns.
  */
 #define NDIGO6G12_FIFO_DEPTH 16364
-
 /*!
  * @}
  */
@@ -75,13 +73,11 @@ extern "C" {
  * @brief    Defines for @link ndigo6g12_trigger_block @endlink.
  * @{
  */
-
 /*! Maximum for @link ndigo6g12_trigger_block::precursor @endlink. */
 #define NDIGO6G12_MAX_PRECURSOR 28
 
 /*! Maximum for @link ndigo6g12_trigger_block::multi_shot_count @endlink. */
 #define NDIGO6G12_MAX_MULTISHOT 65535
-
 /*! 
  * @}
  */
@@ -94,7 +90,6 @@ extern "C" {
  * @details  Used for @link ndigo6g12_init_parameters::clock_source @endlink.
  * @{
  */
-
 /*! Device is using the internal 10 MHz clock. */
 #define NDIGO6G12_CLOCK_SOURCE_INTERNAL 0
 
@@ -109,7 +104,6 @@ extern "C" {
  * LEMO connectors.
  */
 #define NDIGO6G12_CLOCK_SOURCE_AUX2 2
-
 /*!
  * @} 
  */
@@ -123,7 +117,6 @@ extern "C" {
  *           @endlink.
  * @{
  */
-
 /*! Averaging mode */
 #define NDIGO6G12_APP_TYPE_AVRG 5
 
@@ -138,7 +131,6 @@ extern "C" {
 
 /*! Use currently installed application type. */
 #define NDIGO6G12_APP_TYPE_CURRENT 0
-
 /*!
  * @}
  */
@@ -147,32 +139,36 @@ extern "C" {
 
 /*!
  * @defgroup alertdefs Defines for alerts
- * @brief    Alert bits from the system monitor.
- * @details  Used for @link ndigo6g12_fast_info::alerts @endlink.
+ * @brief   Alert bits from the system monitor.
+ * @details Used for @link ndigo6g12_fast_info::alerts @endlink.
  * @{
  */
-
-/*! FPGA temperature alert (>&nbsp;70&deg;C) */
+/*! 
+ * @brief   FPGA temperature alert (>&nbsp;70&deg;C) 
+ */
 #define NDIGO6G12_ALERT_FPGA_TEMPERATURE 1
 
 /*!
- *  Internal FPGA voltage out of range (<&nbsp;0.83&nbsp;V or
- *  >&nbsp;0.88&nbsp;V).
+ * @brief   Internal FPGA voltage out of range (<&nbsp;0.83&nbsp;V or
+ *          >&nbsp;0.88&nbsp;V).
  */
 #define NDIGO6G12_ALERT_VCCINT 2
 
 /*!
- *  FPGA auxiliary voltage out of range (<&nbsp;1.75&nbsp;V or
- *  >&nbsp;1.89&nbsp;V).
+ * @brief   FPGA auxiliary voltage out of range (<&nbsp;1.75&nbsp;V or
+ *          >&nbsp;1.89&nbsp;V).
  */
 #define NDIGO6G12_ALERT_VCCAUX 4
 
-/*! FPGA temperature critical (>&nbsp;80&deg;C) */
+/*! 
+ * @brief   FPGA temperature critical (>&nbsp;80&deg;C) 
+ */
 #define NDIGO6G12_ALERT_FPGA_TEMPERATURE_CRITICAL 8
 
-/*! THS temperature critical (>&nbsp;140&deg;C) */
+/*! 
+ * @brief THS temperature critical (>&nbsp;140&deg;C) 
+ */
 #define NDIGO6G12_ALERT_THS_TEMPERATURE_CRITICAL 16
-
 /*!
  * @}
  */
@@ -222,7 +218,6 @@ extern "C" {
  *          The range is &minus;2<sup>31</sup> to 2<sup>31</sup> &minus; 1.
  */
 #define NDIGO6G12_OUTPUT_MODE_SIGNED32 2
-
 /*!
  * @} 
  */
@@ -286,7 +281,6 @@ extern "C" {
  * @brief Trigger signal is active each clock cycle. 
  */
 #define NDIGO6G12_TRIGGER_SOURCE_ONE 0x00008000
-
 /*!
  * @}
  */
@@ -386,7 +380,6 @@ extern "C" {
  *          set. 
  */
 #define NDIGO6G12_TDC_ROLLOVER_CHANNEL 15
-
 /*!
  * @}
  */
@@ -454,7 +447,6 @@ extern "C" {
  * @brief   Device has started data capture. 
  */
 #define NDIGO6G12_DEVICE_STATE_CAPTURING CRONO_DEVICE_STATE_CAPTURING
-
 /*!
  * @}
  */
@@ -494,7 +486,6 @@ extern "C" {
  * @brief   Maximum length of bipolar TiGeR pulses. 
  */
 #define NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH 15
-
 /*!
  * @}
  */
@@ -502,11 +493,6 @@ extern "C" {
 
 
 /*! 
- * @defgroup initstructs Structures for initialization 
- */
-
-/*! 
- * @ingroup initstructs
  * @brief   Contains information of the Ndigo6G-12 device in use.
  */
 typedef struct {
@@ -514,8 +500,9 @@ typedef struct {
     void *ndigo6g12;
 } ndigo6g12_device;
 
+
+
 /*!
- * @ingroup initstructs 
  * @brief   Struct for the initialization of the Ndigo6G-12.
  * @details This structure MUST be completely initialized.
  */
@@ -635,11 +622,6 @@ typedef struct {
 
 
 /*! 
- * @defgroup infostructs Structures for information retrieval
- */
-
-/*! 
- * @ingroup infostructs  
  * @brief   Contains configuration changes.
  * @details Structure filled by @link ndigo6g12_get_param_info() @endlink.
  *          This structure contains information that may change indirectly due
@@ -742,7 +724,6 @@ typedef struct {
 
 
 /*!
- * @ingroup infostructs
  * @brief   Structure contains static information.
  * @details This structure contains information about the board that does not
  *          change during run time. It is provided by 
@@ -881,7 +862,6 @@ typedef struct {
 } ndigo6g12_static_info;
 
 /*!
- * @ingroup infostructs
  * @brief   Contains fast dynamic information.
  * @details This structure is filled by @link ndigo6g12_get_fast_info()
  *          @endlink. This information can be obtained within a few
@@ -1138,12 +1118,7 @@ typedef struct {
 
 
 
-/*! 
- * @defgroup readstructs Structures for readout and readin 
- */
-
 /*!
- * @ingroup readstructs
  * @brief   The parameters of the read commands.
  */
 typedef struct {
@@ -1156,8 +1131,9 @@ typedef struct {
     crono_bool_t acknowledge_last_read;
 } ndigo6g12_read_in;
 
+
+
 /*!
- * @ingroup readstructs
  * @brief   Struct for the read-out of the Ndigo6G-12 packets.
  */
 typedef struct {
@@ -1187,10 +1163,6 @@ typedef struct {
 } ndigo6g12_read_out;
 
 
-
-/*! 
- * @defgroup confstructs Structures for configuration
- */
 
 /*!
  * @ingroup confstructs
@@ -1250,7 +1222,6 @@ typedef struct {
 
 
 /*! 
- * @ingroup confstructs
  * @brief   Configuration of the trigger block.
  */
 typedef struct {
@@ -1338,8 +1309,9 @@ typedef struct {
     double minimum_free_packets;
 } ndigo6g12_trigger_block;
 
+
+
 /*! 
- * @ingroup confstructs
  * @brief   Contains settings of the gating block.
  * @details After a signal at one of the `sources` is detected, a timer starts
  *          running. Once the timer reaches the value specified by `start`, a
@@ -1399,8 +1371,9 @@ typedef struct {
     int sources;
 } ndigo6g12_gating_block;
 
+
+
 /*! 
- * @ingroup confstructs
  * @brief   Contains settings of the gating blocks specifically for the TDCs.
  * @details The functionality is similiar to @ref ndigo6g12_gating_block.
  */
@@ -1458,8 +1431,9 @@ typedef struct {
     int sources;
 } ndigo6g12_tdc_gating_block;
 
+
+
 /*! 
- * @ingroup confstructs
  * @brief   Contains settings of TiGer block.
  * @details The configuration is similiar to @ref ndigo6g12_gating_block.
  */
@@ -1522,8 +1496,9 @@ typedef struct {
     int sources;
 } ndigo6g12_tdc_tiger_block;
 
+
+
 /*! 
- * @ingroup confstructs
  * @brief Contains averaging settings.
  */
 typedef struct {
@@ -1576,8 +1551,9 @@ typedef struct {
     int timeout_threshold;
 } ndigo6g12_averager_configuration;
 
+
+
 /*! 
- * @ingroup confstructs
  * @brief   Contains TDC channel settings
  */
 typedef struct {
@@ -1613,8 +1589,9 @@ typedef struct {
     ndigo6g12_tdc_tiger_block tiger_block;
 } ndigo6g12_tdc_channel;
 
+
+
 /*!
- * @ingroup confstructs
  * @brief   Contains configuration information of the TDC channels.
  */
 typedef struct {
@@ -1660,8 +1637,9 @@ typedef struct {
     crono_bool_t send_empty_packets;
 } ndigo6g12_tdc_configuration;
 
+
+
 /*! 
- * @ingroup confstructs
  * @brief   Structure that contains the configuration values for the
  *          Ndigo6G-12.
  * @details This structure contains the configuration information. It is used 
@@ -1807,38 +1785,33 @@ typedef struct {
      * @brief   Default is `false`. Do not change.
      */
     crono_bool_t ramp_test_mode;
+
+    /*! @brief calculate sample average for modes AAAA/DDDD, AADD, AA/DD
+    */
+    crono_bool_t sample_averaging;
 } ndigo6g12_configuration;
 
 
 
-/*! 
- * @defgroup statfuncts Functions for information retrieval
- * @brief    Functions for getting detailed information about the 
- *           Ndigo6G-12 board.
- * @details  The driver provides functions to retrieve detailed information on 
- *           the type of board, it's configuration, settings and state. The 
- *           information is split according to its scope and the computational 
- *           requirements to query the information from the board.
- */
-
 /*!
- * @ingroup statfuncts
  * @brief   Get the driver version in integer format.
  * @return  The driver version in the same format as 
  *          @link ndigo6g12_static_info::driver_revision @endlink.
  */
 NDIGO6G12_API int ndigo6g12_get_driver_revision();
 
+
+
 /*! 
- * @ingroup statfuncts
  * @brief   Get the driver version in string format.
  * @return  The Driver version including SVN build revision as a string
  *          with format x.y.z.svn.
  */
 NDIGO6G12_API const char *ndigo6g12_get_driver_revision_str();
 
+
+
 /*! 
- * @ingroup statfuncts
  * @brief   Get the number of Ndigo6G-12 boards that are installed
  *          in the system.
  * @param[out] error_code Pointer to an integer in which to store the
@@ -1850,8 +1823,9 @@ NDIGO6G12_API const char *ndigo6g12_get_driver_revision_str();
 NDIGO6G12_API int ndigo6g12_count_devices(int *error_code,
                                           const char **error_message);
 
+
+
 /*!
- * @ingroup statfuncts
  * @brief   Get the static information.
  * @details The static information does not change after the device
  *          initialization.
@@ -1863,8 +1837,9 @@ NDIGO6G12_API int ndigo6g12_count_devices(int *error_code,
 NDIGO6G12_API int ndigo6g12_get_static_info(ndigo6g12_device *device,
                                             ndigo6g12_static_info *static_info);
 
+
+
 /*!
- * @ingroup statfuncts
  * @brief   Get parametric information.
  * @details The parametric information  may change due to the configuration.
  * @param[in] device Pointer to the device from which to get the information.
@@ -1875,8 +1850,8 @@ NDIGO6G12_API int ndigo6g12_get_static_info(ndigo6g12_device *device,
 NDIGO6G12_API int ndigo6g12_get_param_info(ndigo6g12_device *device,
                                            ndigo6g12_param_info *param_info);
 
+
 /*! 
- * @ingroup statfuncts
  * @brief   Get fast status information.
  * @details The information can be retrieved within a few microseconds.
  * @param[in] device Pointer to the device from which to get the information.
@@ -1889,9 +1864,7 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device,
 
 
 
-/*! @defgroup conffuncts Functions for Configuration */
 /*!
- * @ingroup conffuncts
  * @brief   Copies the default configuration to the specified config pointer.
  * @param[in] device Pointer to the device from which to get the information.
  * @param[out] config Pointer to a structure in which to store the
@@ -2009,8 +1982,9 @@ NDIGO6G12_API int
 ndigo6g12_get_default_configuration(ndigo6g12_device *device,
                                     ndigo6g12_configuration *config);
 
+
+
 /*!
- * @ingroup conffuncts
  * @brief   Configures the Ndigo6G-12 device.
  * @details The config information is copied such that it can
  *          be changed after the call to @link
@@ -2026,48 +2000,46 @@ ndigo6g12_configure(ndigo6g12_device *device,
 
 
 /*!
- * @defgroup initfuncts Functions for Initialization 
- */
-
-/*!
  * @ingroup initfuncts
  * @brief   Sets up the standard parameters.
- * @details Gets a set of default parameters for @link 
+ * @details Gets a set of default parameters for @link
  *          ndigo6g12_init() @endlink. This must always be used to
- *          initialize the @link ndigo6g12_init_parameters @endlink
- *          structure.
+ *          initialize the @ref ndigo6g12_init_parameters structure.
+ * @details For convinience, the macro
+ *          @ref ndigo6g12_get_default_init_parameters is provided, which
+ *          automatically sets the correct `client_api_version`.
+ * @details Default values:
+ *          - @ref ndigo6g12_init_parameters::card_index "card_index" = 0
+ *          - @ref ndigo6g12_init_parameters::board_id "board_id" = 0
+ *          - @ref ndigo6g12_init_parameters::buffer_size "buffer_size[0]" = 64 (MiB)
+ *          - @ref ndigo6g12_init_parameters::buffer_size "buffer_size[1-7]" = 0 (unused)
+ *          - @ref ndigo6g12_init_parameters::dma_read_delay "dma_read_delay" = 1000
+ *          - @ref ndigo6g12_init_parameters::perf_derating "perf_derating" = 0
+ *          - @ref ndigo6g12_init_parameters::led_flashing_mode "led_flashing_mode" = 1
+ *          - @ref ndigo6g12_init_parameters::clock_source "clock_source" = 
+ *               @ref NDIGO6G12_CLOCK_SOURCE_INTERNAL
+ *          - @ref ndigo6g12_init_parameters::application_type "application_type" =
+ *               @ref NDIGO6G12_APP_TYPE_CURRENT
+ *          - @link ndigo6g12_init_parameters::force_bitstream_update
+ *               force_bitstream_update@endlink = `false`
+ *          - @link ndigo6g12_init_parameters::partial_bitstream_size
+ *               partial_bitstream_size@endlink = 0
+ *          - @link ndigo6g12_init_parameters::partial_bitstream
+ *               partial_bitstream@endlink = `nullptr`
+ *          - @link ndigo6g12_init_parameters::firmware_locations
+ *               firmware_locations@endlink = `nullptr`
  * @param[in] init Pointer to a structure in which to store the
  *          initialization values.
  * @param[in] client_api_version @link NDIGO6G12_API_VERSION @endlink
  * @return  See @ref funcreturns "Function return values".
- * 
- * Default values:
- * - @ref ndigo6g12_init_parameters::card_index "card_index" = 0
- * - @ref ndigo6g12_init_parameters::board_id "board_id" = 0
- * - @ref ndigo6g12_init_parameters::buffer_size "buffer_size[0]" = 64 MiB
- * - @ref ndigo6g12_init_parameters::buffer_size "buffer_size[1-7]" = 0 (unused)
- * - @ref ndigo6g12_init_parameters::dma_read_delay "dma_read_delay" = 1000
- * - @ref ndigo6g12_init_parameters::perf_derating "perf_derating" = 0
- * - @ref ndigo6g12_init_parameters::led_flashing_mode "led_flashing_mode" = 1
- * - @ref ndigo6g12_init_parameters::clock_source "clock_source" = 
- *      @ref NDIGO6G12_CLOCK_SOURCE_INTERNAL
- * - @ref ndigo6g12_init_parameters::application_type "application_type" = 
- *      @ref NDIGO6G12_APP_TYPE_CURRENT
- * - @link ndigo6g12_init_parameters::force_bitstream_update 
- *      force_bitstream_update@endlink = `false`
- * - @link ndigo6g12_init_parameters::partial_bitstream_size 
- *      partial_bitstream_size@endlink = 0
- * - @link ndigo6g12_init_parameters::partial_bitstream 
- *      partial_bitstream@endlink = `nullptr`
- * - @link ndigo6g12_init_parameters::firmware_locations 
- *      firmware_locations@endlink = `nullptr`
-*/
+ */
 NDIGO6G12_API int
 ndigo6g12_get_default_init_parameters_version(ndigo6g12_init_parameters *init,
                                               int client_api_version);
 
+
+
 /*!
- * @ingroup initfuncts
  * @brief   Macro that calls 
  *          @ref ndigo6g12_get_default_init_parameters_version with
  *          the correct API version.
@@ -2075,8 +2047,9 @@ ndigo6g12_get_default_init_parameters_version(ndigo6g12_init_parameters *init,
 #define ndigo6g12_get_default_init_parameters(init)                          \
     ndigo6g12_get_default_init_parameters_version(init, NDIGO6G12_API_VERSION)
 
+
+
 /*!
- * @ingroup initfuncts
  * @brief   Open and initialize an Ndigo6G-12 board.
  * @details Which Ndigo6G-12 board will be initialized is
  *          determined by @link
@@ -2092,8 +2065,9 @@ NDIGO6G12_API int ndigo6g12_init(ndigo6g12_device *device,
                                  ndigo6g12_init_parameters *params,
                                  const char **error_message);
 
+
+
 /*!
- * @ingroup initfuncts
  * @brief   Finalize the driver for this device.
  * @param[in] device Pointer to the device that should be finalized.
  * @return  See @ref funcreturns "Function return values".
@@ -2103,11 +2077,6 @@ NDIGO6G12_API int ndigo6g12_close(ndigo6g12_device *device);
 
 
 /*!
- * @defgroup readfuncts Readout 
- */
-
-/*!
- * @ingroup readfuncts
  * @brief   Reads packets from the board.
  * @details If @ref ndigo6g12_read_in::acknowledge_last_read is
  *          `true`, automatically acknowledges the last read packets.
@@ -2122,8 +2091,9 @@ NDIGO6G12_API int ndigo6g12_read(ndigo6g12_device *device,
                                  ndigo6g12_read_in *in,
                                  ndigo6g12_read_out *out);
 
+
+
 /*!
- * @ingroup readfuncts
  * @brief   Gets latest error message of @b device.
  * @param[in] device Pointer to the device.
  * @return  char array containing the plain text error message.
@@ -2131,8 +2101,9 @@ NDIGO6G12_API int ndigo6g12_read(ndigo6g12_device *device,
 NDIGO6G12_API const char *
 ndigo6g12_get_last_error_message(ndigo6g12_device *device);
 
+
+
 /*!
- * @ingroup statfuncts
  * @brief   Reads the PCIe info like correctable and
  *          uncorrectable errors.
  * @param[in] device Pointer to the device.
@@ -2143,8 +2114,9 @@ ndigo6g12_get_last_error_message(ndigo6g12_device *device);
 NDIGO6G12_API int ndigo6g12_get_pcie_info(ndigo6g12_device *device,
                                           crono_pcie_info *pcie_info);
 
+
+
 /*! 
- * @ingroup statfuncts
  * @brief   Clear PCIe errors.
  * @details Only useful for PCIe problem debugging flags.
  * @param[in] device Pointer to the device.
@@ -2158,8 +2130,9 @@ NDIGO6G12_API int ndigo6g12_get_pcie_info(ndigo6g12_device *device,
 NDIGO6G12_API int ndigo6g12_clear_pcie_errors(ndigo6g12_device *device,
                                               int flags);
 
+
+
 /*!
- * @ingroup readfuncts
  * @brief   Convert @b state to plain text.
  * @details The device state is stored in
  *          @link ndigo6g12_fast_info::state @endlink.
@@ -2168,26 +2141,27 @@ NDIGO6G12_API int ndigo6g12_clear_pcie_errors(ndigo6g12_device *device,
  */
 NDIGO6G12_API const char *ndigo6g12_device_state_to_str(int state);
 
-/*! @defgroup runtimefuncts Run Time Control */
+
 
 /*!
- * @ingroup runtimefuncts
  * @brief   Start data acquisition.
  * @param[in] device Pointer to the device.
  * @return  See @ref funcreturns "Function return values".
  */
 NDIGO6G12_API int ndigo6g12_start_capture(ndigo6g12_device *device);
 
+
+
 /*!
- * @ingroup runtimefuncts
  * @brief   Stop data acquisition.
  * @param[in] device Pointer to the device.
  * @return  See @ref funcreturns "Function return values".
  */
 NDIGO6G12_API int ndigo6g12_stop_capture(ndigo6g12_device *device);
 
+
+
 /*! 
- * @ingroup runtimefuncts
  * @brief   Enables manual triggering of the ADC channels.
  * @param[in] device Pointer to the device.
  * @param[in] channel_mask A bit mask that chooses which channels to trigger.
@@ -2196,8 +2170,9 @@ NDIGO6G12_API int ndigo6g12_stop_capture(ndigo6g12_device *device);
 NDIGO6G12_API int ndigo6g12_manual_trigger(ndigo6g12_device *device,
                                            int channel_mask);
 
+
+
 /*!
- * @ingroup runtimefuncts
  * @brief   Enables single-shot recording of the ADC channels.
  * @details Instead of continously triggering on input signals, only trigger
  *          and record a @ref ndigo6g12_trigger_block::multi_shot_count number

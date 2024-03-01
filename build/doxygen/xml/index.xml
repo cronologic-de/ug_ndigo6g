@@ -55,6 +55,7 @@
 <member refid="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" kind="variable"><name>output_mode</name></member>
 <member refid="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" kind="variable"><name>extended_bandwidth</name></member>
 <member refid="structndigo6g12__configuration_1a3cf4c860b082641b35785714656ec046" kind="variable"><name>ramp_test_mode</name></member>
+<member refid="structndigo6g12__configuration_1a5707ff9810325ed2c0ec2813936a58c2" kind="variable"><name>sample_averaging</name></member>
 </compound>
 <compound refid="structndigo6g12__device" kind="struct"><name>ndigo6g12_device</name>
 <member refid="structndigo6g12__device_1a7b1d0df736739f38994ed29f54cffdf3" kind="variable"><name>is_valid</name></member>
@@ -408,27 +409,27 @@
 <member refid="group__tigerdefs_1ga8b3220a875ee8bfa25194f383a28a88d" kind="define"><name>NDIGO6G12_TIGER_BIDI</name></member>
 <member refid="group__tigerdefs_1ga1edd2216a57c42dd92c5d0b141b61d53" kind="define"><name>NDIGO6G12_TIGER_BIPOLAR</name></member>
 <member refid="group__tigerdefs_1gafdf751fd3bdecfe23abce68ef14a8d65" kind="define"><name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name></member>
-<member refid="group__initfuncts_1ga4266289aaec1ed48f096291508844f64" kind="define"><name>ndigo6g12_get_default_init_parameters</name></member>
-<member refid="group__statfuncts_1ga4571d3a373dd9cef756fb94450d0a3a9" kind="function"><name>ndigo6g12_get_driver_revision</name></member>
-<member refid="group__statfuncts_1ga69c101ee0ec180ddd5c3a79ed0ea6a9d" kind="function"><name>ndigo6g12_get_driver_revision_str</name></member>
-<member refid="group__statfuncts_1ga07881e20b788b21f3b6fc179347ce1c5" kind="function"><name>ndigo6g12_count_devices</name></member>
-<member refid="group__statfuncts_1ga11f73e1c74d717664b9b07ec1d3dd8b0" kind="function"><name>ndigo6g12_get_static_info</name></member>
-<member refid="group__statfuncts_1ga4f3ffc2d11fe59b3e07f1ae21c56791a" kind="function"><name>ndigo6g12_get_param_info</name></member>
-<member refid="group__statfuncts_1ga43147bc42f2803900cafb97522d40cb4" kind="function"><name>ndigo6g12_get_fast_info</name></member>
-<member refid="group__conffuncts_1ga9e89170f5af84611bf26f6a3426d81c0" kind="function"><name>ndigo6g12_get_default_configuration</name></member>
-<member refid="group__conffuncts_1gafb9ccbef090349b638da935ec00dfcc3" kind="function"><name>ndigo6g12_configure</name></member>
-<member refid="group__initfuncts_1ga9b17c6124fa242e7293b30d927826ff3" kind="function"><name>ndigo6g12_get_default_init_parameters_version</name></member>
-<member refid="group__initfuncts_1ga2de181d8f48b36a640182d4118bea07d" kind="function"><name>ndigo6g12_init</name></member>
-<member refid="group__initfuncts_1gaa9c9b2f19ee716d20a1401607ab8629d" kind="function"><name>ndigo6g12_close</name></member>
-<member refid="group__readfuncts_1gad25dc720dca5598bbfc481133ab67213" kind="function"><name>ndigo6g12_read</name></member>
-<member refid="group__readfuncts_1ga773491c1db097452e748cc4a414c71df" kind="function"><name>ndigo6g12_get_last_error_message</name></member>
-<member refid="group__statfuncts_1gabd149e97b66fdb38da81b19166843267" kind="function"><name>ndigo6g12_get_pcie_info</name></member>
-<member refid="group__statfuncts_1gaf409be1f4c7186527daa4b62ff76f194" kind="function"><name>ndigo6g12_clear_pcie_errors</name></member>
-<member refid="group__readfuncts_1ga73e2cc71b45d17768b57bfc2f84c1b2d" kind="function"><name>ndigo6g12_device_state_to_str</name></member>
-<member refid="group__runtimefuncts_1ga91dedbf501326e87ffa205136c866648" kind="function"><name>ndigo6g12_start_capture</name></member>
-<member refid="group__runtimefuncts_1ga97dbeb5e7c2d3e60e4adc71587d2c4bf" kind="function"><name>ndigo6g12_stop_capture</name></member>
-<member refid="group__runtimefuncts_1gaf39c5c016c10bef5822ba9b83e4aa957" kind="function"><name>ndigo6g12_manual_trigger</name></member>
-<member refid="group__runtimefuncts_1gacb9dd649c5b3c3347ccd0cd9b62d5fdc" kind="function"><name>ndigo6g12_single_shot</name></member>
+<member refid="ndigo6g12__interface_8h_1a4266289aaec1ed48f096291508844f64" kind="define"><name>ndigo6g12_get_default_init_parameters</name></member>
+<member refid="ndigo6g12__interface_8h_1a4571d3a373dd9cef756fb94450d0a3a9" kind="function"><name>ndigo6g12_get_driver_revision</name></member>
+<member refid="ndigo6g12__interface_8h_1a69c101ee0ec180ddd5c3a79ed0ea6a9d" kind="function"><name>ndigo6g12_get_driver_revision_str</name></member>
+<member refid="ndigo6g12__interface_8h_1a07881e20b788b21f3b6fc179347ce1c5" kind="function"><name>ndigo6g12_count_devices</name></member>
+<member refid="ndigo6g12__interface_8h_1a11f73e1c74d717664b9b07ec1d3dd8b0" kind="function"><name>ndigo6g12_get_static_info</name></member>
+<member refid="ndigo6g12__interface_8h_1a4f3ffc2d11fe59b3e07f1ae21c56791a" kind="function"><name>ndigo6g12_get_param_info</name></member>
+<member refid="ndigo6g12__interface_8h_1a43147bc42f2803900cafb97522d40cb4" kind="function"><name>ndigo6g12_get_fast_info</name></member>
+<member refid="ndigo6g12__interface_8h_1a9e89170f5af84611bf26f6a3426d81c0" kind="function"><name>ndigo6g12_get_default_configuration</name></member>
+<member refid="ndigo6g12__interface_8h_1afb9ccbef090349b638da935ec00dfcc3" kind="function"><name>ndigo6g12_configure</name></member>
+<member refid="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" kind="function"><name>ndigo6g12_get_default_init_parameters_version</name></member>
+<member refid="ndigo6g12__interface_8h_1a2de181d8f48b36a640182d4118bea07d" kind="function"><name>ndigo6g12_init</name></member>
+<member refid="ndigo6g12__interface_8h_1aa9c9b2f19ee716d20a1401607ab8629d" kind="function"><name>ndigo6g12_close</name></member>
+<member refid="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" kind="function"><name>ndigo6g12_read</name></member>
+<member refid="ndigo6g12__interface_8h_1a773491c1db097452e748cc4a414c71df" kind="function"><name>ndigo6g12_get_last_error_message</name></member>
+<member refid="ndigo6g12__interface_8h_1abd149e97b66fdb38da81b19166843267" kind="function"><name>ndigo6g12_get_pcie_info</name></member>
+<member refid="ndigo6g12__interface_8h_1af409be1f4c7186527daa4b62ff76f194" kind="function"><name>ndigo6g12_clear_pcie_errors</name></member>
+<member refid="ndigo6g12__interface_8h_1a73e2cc71b45d17768b57bfc2f84c1b2d" kind="function"><name>ndigo6g12_device_state_to_str</name></member>
+<member refid="ndigo6g12__interface_8h_1a91dedbf501326e87ffa205136c866648" kind="function"><name>ndigo6g12_start_capture</name></member>
+<member refid="ndigo6g12__interface_8h_1a97dbeb5e7c2d3e60e4adc71587d2c4bf" kind="function"><name>ndigo6g12_stop_capture</name></member>
+<member refid="ndigo6g12__interface_8h_1af39c5c016c10bef5822ba9b83e4aa957" kind="function"><name>ndigo6g12_manual_trigger</name></member>
+<member refid="ndigo6g12__interface_8h_1acb9dd649c5b3c3347ccd0cd9b62d5fdc" kind="function"><name>ndigo6g12_single_shot</name></member>
 </compound>
 <compound refid="group__constants" kind="group"><name>constants</name>
 <member refid="group__constants_1ga2f31605192c692844d830dee4ab190df" kind="define"><name>NDIGO6G12_API_VERSION</name></member>
@@ -555,45 +556,6 @@
 <member refid="group__tigerdefs_1ga8b3220a875ee8bfa25194f383a28a88d" kind="define"><name>NDIGO6G12_TIGER_BIDI</name></member>
 <member refid="group__tigerdefs_1ga1edd2216a57c42dd92c5d0b141b61d53" kind="define"><name>NDIGO6G12_TIGER_BIPOLAR</name></member>
 <member refid="group__tigerdefs_1gafdf751fd3bdecfe23abce68ef14a8d65" kind="define"><name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name></member>
-</compound>
-<compound refid="group__initstructs" kind="group"><name>initstructs</name>
-</compound>
-<compound refid="group__infostructs" kind="group"><name>infostructs</name>
-</compound>
-<compound refid="group__readstructs" kind="group"><name>readstructs</name>
-</compound>
-<compound refid="group__confstructs" kind="group"><name>confstructs</name>
-</compound>
-<compound refid="group__statfuncts" kind="group"><name>statfuncts</name>
-<member refid="group__statfuncts_1ga4571d3a373dd9cef756fb94450d0a3a9" kind="function"><name>ndigo6g12_get_driver_revision</name></member>
-<member refid="group__statfuncts_1ga69c101ee0ec180ddd5c3a79ed0ea6a9d" kind="function"><name>ndigo6g12_get_driver_revision_str</name></member>
-<member refid="group__statfuncts_1ga07881e20b788b21f3b6fc179347ce1c5" kind="function"><name>ndigo6g12_count_devices</name></member>
-<member refid="group__statfuncts_1ga11f73e1c74d717664b9b07ec1d3dd8b0" kind="function"><name>ndigo6g12_get_static_info</name></member>
-<member refid="group__statfuncts_1ga4f3ffc2d11fe59b3e07f1ae21c56791a" kind="function"><name>ndigo6g12_get_param_info</name></member>
-<member refid="group__statfuncts_1ga43147bc42f2803900cafb97522d40cb4" kind="function"><name>ndigo6g12_get_fast_info</name></member>
-<member refid="group__statfuncts_1gabd149e97b66fdb38da81b19166843267" kind="function"><name>ndigo6g12_get_pcie_info</name></member>
-<member refid="group__statfuncts_1gaf409be1f4c7186527daa4b62ff76f194" kind="function"><name>ndigo6g12_clear_pcie_errors</name></member>
-</compound>
-<compound refid="group__conffuncts" kind="group"><name>conffuncts</name>
-<member refid="group__conffuncts_1ga9e89170f5af84611bf26f6a3426d81c0" kind="function"><name>ndigo6g12_get_default_configuration</name></member>
-<member refid="group__conffuncts_1gafb9ccbef090349b638da935ec00dfcc3" kind="function"><name>ndigo6g12_configure</name></member>
-</compound>
-<compound refid="group__initfuncts" kind="group"><name>initfuncts</name>
-<member refid="group__initfuncts_1ga9b17c6124fa242e7293b30d927826ff3" kind="function"><name>ndigo6g12_get_default_init_parameters_version</name></member>
-<member refid="group__initfuncts_1ga2de181d8f48b36a640182d4118bea07d" kind="function"><name>ndigo6g12_init</name></member>
-<member refid="group__initfuncts_1gaa9c9b2f19ee716d20a1401607ab8629d" kind="function"><name>ndigo6g12_close</name></member>
-<member refid="group__initfuncts_1ga4266289aaec1ed48f096291508844f64" kind="define"><name>ndigo6g12_get_default_init_parameters</name></member>
-</compound>
-<compound refid="group__readfuncts" kind="group"><name>readfuncts</name>
-<member refid="group__readfuncts_1gad25dc720dca5598bbfc481133ab67213" kind="function"><name>ndigo6g12_read</name></member>
-<member refid="group__readfuncts_1ga773491c1db097452e748cc4a414c71df" kind="function"><name>ndigo6g12_get_last_error_message</name></member>
-<member refid="group__readfuncts_1ga73e2cc71b45d17768b57bfc2f84c1b2d" kind="function"><name>ndigo6g12_device_state_to_str</name></member>
-</compound>
-<compound refid="group__runtimefuncts" kind="group"><name>runtimefuncts</name>
-<member refid="group__runtimefuncts_1ga91dedbf501326e87ffa205136c866648" kind="function"><name>ndigo6g12_start_capture</name></member>
-<member refid="group__runtimefuncts_1ga97dbeb5e7c2d3e60e4adc71587d2c4bf" kind="function"><name>ndigo6g12_stop_capture</name></member>
-<member refid="group__runtimefuncts_1gaf39c5c016c10bef5822ba9b83e4aa957" kind="function"><name>ndigo6g12_manual_trigger</name></member>
-<member refid="group__runtimefuncts_1gacb9dd649c5b3c3347ccd0cd9b62d5fdc" kind="function"><name>ndigo6g12_single_shot</name></member>
 </compound>
 <compound refid="group__funcreturns" kind="group"><name>funcreturns</name>
 <member refid="group__funcreturns_1ga15da8d27c6af5e31df23ca028f1da690" kind="define"><name>CRONO_OK</name></member>

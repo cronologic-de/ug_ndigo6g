@@ -17,7 +17,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1260" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1260" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1231" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1231" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a19337455e0a99f687d18ff1c7e20ff96" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -33,7 +33,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1270" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1270" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1241" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1241" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a2c5c3f6d832916c465850cf9a684237e" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -42,7 +42,7 @@
 <name>multi_shot_count</name>
 <qualifiedname>ndigo6g12_trigger_block::multi_shot_count</qualifiedname>
 <briefdescription>
-<para>Number of packets created in single-shot mode (i.e., <ref refid="group__runtimefuncts_1gacb9dd649c5b3c3347ccd0cd9b62d5fdc" kindref="member">ndigo6g12_single_shot()</ref> was called) before packet generation stops. </para>
+<para>Number of packets created in single-shot mode (i.e., <ref refid="ndigo6g12__interface_8h_1acb9dd649c5b3c3347ccd0cd9b62d5fdc" kindref="member">ndigo6g12_single_shot()</ref> was called) before packet generation stops. </para>
 </briefdescription>
 <detaileddescription>
 <para>This value is ignored if <computeroutput>enabled</computeroutput> is <computeroutput>true</computeroutput>.</para>
@@ -50,7 +50,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1279" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1279" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1250" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1250" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1aa313c7cca7f719735e68839e5f9ec632" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -66,7 +66,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1286" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1286" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1257" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1257" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a9f59b34b1f25fe00023291b678246bcc" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -84,7 +84,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1303" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1303" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1274" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1274" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a09bf0a0c15c4905391944154b116a637" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -100,7 +100,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1312" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1312" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1283" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1283" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a606c376138bec8a53d55cc54453ffdf8" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -117,7 +117,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1321" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1321" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1292" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1292" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a99fb48ea8804c4690d830b2037e9e405" prot="public" static="no" mutable="no">
 <type>double</type>
@@ -133,7 +133,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1338" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1338" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1309" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1309" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -141,7 +141,7 @@
 </briefdescription>
 <detaileddescription>
 </detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1256" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1256" bodyend="1339"/>
+<location file="source/ndigo6g12_interface.h" line="1227" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1227" bodyend="1310"/>
 <listofallmembers>
 <member refid="structndigo6g12__trigger__block_1a4cd2d3ea697c9b380a0a38e0b34db914" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>enabled</name></member>
 <member refid="structndigo6g12__trigger__block_1a606c376138bec8a53d55cc54453ffdf8" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>gates</name></member>

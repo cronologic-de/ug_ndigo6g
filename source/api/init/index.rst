@@ -7,10 +7,9 @@ with a set of default parameters, as provided by
 parameters are of type :cpp:struct:`ndigo6g12_init_parameters`. Information on 
 the current device will be stored as type :cpp:struct:`ndigo6g12_device`.
 
-.. doxygengroup:: initfuncts
-    :content-only:
+.. toctree::
+    :caption: Contents
 
-.. doxygengroup:: initstructs
-    :content-only:
-    :members:
-    :undoc-members:
+    functions
+    structures
+

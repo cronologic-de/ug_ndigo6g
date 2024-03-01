@@ -19,7 +19,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1473" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1473" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1447" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1447" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -36,7 +36,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1481" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1481" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1455" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1455" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a19337455e0a99f687d18ff1c7e20ff96" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -57,7 +57,7 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1495" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1495" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1469" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1469" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a37722a150250e2a5a98e5e0d11e53449" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -74,7 +74,7 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1504" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1504" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1478" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1478" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a6c0af9f2e97842405fb15ed952ef2976" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -91,7 +91,7 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1513" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1513" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1487" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1487" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -107,7 +107,7 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1522" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1522" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1496" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1496" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -116,7 +116,7 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
 <detaileddescription>
 <para>The configuration is similiar to <ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref>. </para>
 </detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1466" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1466" bodyend="1523"/>
+<location file="source/ndigo6g12_interface.h" line="1440" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1440" bodyend="1497"/>
 <listofallmembers>
 <member refid="structndigo6g12__tdc__tiger__block_1a1ea5d0cb93f22f7d0fdf804bd68c3326" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>mode</name></member>
 <member refid="structndigo6g12__tdc__tiger__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>negate</name></member>
