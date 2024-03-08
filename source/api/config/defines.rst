@@ -2,13 +2,21 @@ Defines
 ~~~~~~~
 
 
+ADC modes
+^^^^^^^^^
 .. raw:: latex
 
     \phantomsection
     \addcontentsline{toc}{subsubsection}{ADC modes}
 
+See also :numref:`Section %s<ADC Modes>`.
+
 .. doxygengroup:: adcdefs
 
+
+
+Trigger
+^^^^^^^
 .. raw:: latex
 
     \phantomsection
@@ -16,6 +24,11 @@ Defines
 
 .. doxygengroup:: triggerdefs
 
+
+
+
+Trigger Source
+^^^^^^^^^^^^^^
 .. raw:: latex
 
     \phantomsection
@@ -23,6 +36,10 @@ Defines
 
 .. doxygengroup:: sourcedefs
 
+
+
+Gates
+^^^^^
 .. raw:: latex
 
     \phantomsection
@@ -30,6 +47,10 @@ Defines
 
 .. doxygengroup:: gatedefs
 
+
+
+Trigger Block
+^^^^^^^^^^^^^
 .. raw:: latex
 
     \phantomsection
@@ -37,6 +58,10 @@ Defines
 
 .. doxygengroup:: triggerblockdefs
 
+
+
+TiGer
+^^^^^
 .. raw:: latex
 
     \phantomsection
@@ -44,6 +69,10 @@ Defines
 
 .. doxygengroup:: tigerdefs
 
+
+
+TDC DC Offsets
+^^^^^^^^^^^^^^
 .. raw:: latex
 
     \phantomsection
@@ -51,6 +80,10 @@ Defines
 
 .. doxygengroup:: defdcoffset
 
+
+
+Output Mode
+^^^^^^^^^^^
 .. raw:: latex
 
     \phantomsection

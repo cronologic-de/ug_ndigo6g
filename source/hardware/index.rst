@@ -7,7 +7,7 @@ Hardware
    
    installation
    connections
-   functionality
+   functionality/index
    sync
    update
    calibration
@@ -253,83 +253,6 @@ Hardware
 
 .. Ndigo5G Functionality
 .. ---------------------
-
-
-.. ADC Modes
-.. ~~~~~~~~~
-
-.. Depending on board configuration, the analog input signal is quantized
-.. to 8 or 10 bits. However, the board always scales and offsets the data
-.. to 16 bit signed data centered around 0.
-
-.. Data processing such as trigger detection or packet building are always
-.. performed on 3.2 |nbws| ns intervals. Depending on the ADC mode, this interval
-.. may contain 4, 8 or 16 samples.
-
-.. The board supports using one, two or four channels:
-
-
-.. 1 Channel Modes A, B, C and D
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. In these modes, only a single channel is used. The analog signal on that
-.. channel is digitized at 5Gsps. Packet size is always a multiple of 16
-.. samples per 3.2 |nbws| ns (See :numref:`Figures %s<Fig 2.9>`
-.. and :numref:`%s<Fig 2.15>`).
-
-
-.. 2 Channel Modes AC, BC, AD and BD
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. In these modes, two channels are used simultaneously. The analog signals
-.. on these channels are digitized at **2.5** |nbws| **Gsps** each.
-.. Packet size is always a multiple of 8 samples per
-.. 3.2 |nbws| ns (See :numref:`Figures %s<Fig 2.8>` and
-.. :numref:`%s<Fig 2.14>`).
-
-
-.. 4 Channel Mode ABCD
-.. ^^^^^^^^^^^^^^^^^^^
-
-.. In this mode, all four channels are digitized independently at 1.25 |nbws| Gsps
-.. each. The packet size is always a multiple of 4 samples per 3.2 |nbws| ns. (See
-.. :numref:`Figures %s<Fig 2.7>` and :numref:`%s<Fig 2.13>`).
-
-
-.. Multiple Sampling Modes AAAA, BBBB, CCCC and DDDD
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. In these modes, only one analog input channel is used, but the channel is
-.. sampled independently and simultaneously by four ADCs at **1.25** |nbws|
-.. **Gsps**. The board creates four independent streams with 4 samples each per
-.. **3.2** |nbws| **ns**.
-
-.. Using the same trigger setting on all ADCs, can be used to reduce noise
-.. by averaging the four channels. To deal with complex triggering
-.. conditions, different trigger settings on each of the ADCs can be used.
-
-.. The **Ndigo5G** provides four ADCs sampling at **1.25** |nbws| **Gsps** each.
-.. Higher speed modes are implemented by interleaving two or four of these ADCs.
-
-.. During interleaving, the **Ndigo5G** firmware reorders and groups the data
-.. into a linear sample stream. The process is fully transparent. For
-.. users, the only difference is that a **3.2** |nbws| **ns** cycle can contain
-.. 4, 8 or 16 samples, depending on mode.
-
-.. .. _Fig 2.7:
-.. .. figure:: figures/4ChannelMode.*
-
-..     ADCs in 4 channel mode ABCD at 1.25 |nbws| Gsps.
-
-.. .. _Fig 2.8:
-.. .. figure:: figures/2ChannelMode.*
-
-..     ADCs in 2 channel mode AD, interleaved for 2.5 |nbws| Gsps.
-
-.. .. _Fig 2.9:
-.. .. figure:: figures/1ChannelMode.*
-
-..     ADCs in 1 channel mode A, B, C or D interleaved for 5 |nbws| Gsps.
-
 
 
 

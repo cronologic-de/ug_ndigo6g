@@ -14,7 +14,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="183" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="183" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="178" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="178" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__adcdefs_1ga1eb1d3b4d01f27b96f34597b037d1e8f" prot="public" static="no">
 <name>NDIGO6G12_ADC_MODE_AADD</name>
@@ -26,7 +26,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="184" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="184" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="179" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="179" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__adcdefs_1ga3313309476ae81b536e29a961537cfb9" prot="public" static="no">
 <name>NDIGO6G12_ADC_MODE_AAAA</name>
@@ -38,7 +38,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="185" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="185" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="180" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="180" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__adcdefs_1gaa6fb55a06a3163fe75d5ba2c3b6e6776" prot="public" static="no">
 <name>NDIGO6G12_ADC_MODE_DDDD</name>
@@ -50,7 +50,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="186" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="186" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="181" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="181" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__adcdefs_1gaeff36ea77c6420a7798dd1ed57d327a4" prot="public" static="no">
 <name>NDIGO6G12_ADC_MODE_AD</name>
@@ -62,7 +62,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="187" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="187" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="182" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="182" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__adcdefs_1ga0fd4cb43021c9e2f155fdcc3a6415024" prot="public" static="no">
 <name>NDIGO6G12_ADC_MODE_AA</name>
@@ -74,7 +74,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="188" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="188" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="183" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="183" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__adcdefs_1ga305d143ce6c99b781e390ac63bc501f8" prot="public" static="no">
 <name>NDIGO6G12_ADC_MODE_DD</name>
@@ -86,7 +86,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="189" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="189" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="184" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="184" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__adcdefs_1gadc5a2d3a469ff27f8dc115b099a3da03" prot="public" static="no">
 <name>NDIGO6G12_ADC_MODE_A</name>
@@ -98,7 +98,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="190" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="190" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="185" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="185" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__adcdefs_1ga92e6becb238b0ce5f48917bf2a7fb0cb" prot="public" static="no">
 <name>NDIGO6G12_ADC_MODE_D</name>
@@ -110,7 +110,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="191" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="191" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="186" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="186" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

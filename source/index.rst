@@ -21,10 +21,11 @@ Ndigo6G-12 driver.
 ..     Contents
 ..     ========
 
+
 .. toctree::
     :maxdepth: 2
-    :numbered:
     :hidden:
+    :numbered: 3
 
     introduction
     hardware/index

@@ -1,0 +1,2 @@
+Auto Triggering Function Generator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
