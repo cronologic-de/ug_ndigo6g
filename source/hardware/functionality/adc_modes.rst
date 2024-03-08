@@ -4,7 +4,7 @@ ADC Modes
 ~~~~~~~~~
 
 Depending on the board configuration, the analog input signal is quantized
-to 8 or 10 bits. However, the board always scales and offsets the data
+to 12 bits. However, the board always scales and offsets the data
 to 16-bit signed data centered around 0.
 
 Data processing such as trigger detection or packet building are always
