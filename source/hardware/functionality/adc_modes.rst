@@ -8,7 +8,7 @@ to 12 bits. However, the board always scales and offsets the data
 to 16-bit signed data centered around 0.
 
 Data processing such as trigger detection or packet building are always
-performed on 3.2 ns intervals. Depending on the ADC mode, this interval
+performed on 5 ns intervals. Depending on the ADC mode, this interval
 may contain 4, 8 or 16 samples.
 
 The ADC mode is configured using 
@@ -21,7 +21,7 @@ The board supports using one, two or four channels:
 ^^^^^^^^^^^^^^^^^^^^^^^
 In these modes, only a single channel is used. The analog signal on that
 channel is digitized at 6.4 Gsps. Packet size is always a multiple of 16
-samples per 3.2 |nbws| ns (See :numref:`Figures %s<Fig 2.9>`
+samples per 5 ns (See :numref:`Figures %s<Fig 2.9>`
 and :numref:`%s<Fig 2.15>`).
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
@@ -34,7 +34,7 @@ be either :c:macro:`NDIGO6G12_APP_TYPE_1CH` or
 In this mode, two channels are used simultaneously. The analog signals
 on these channels are digitized at 3.2 Gsps each.
 Packet size is always a multiple of 8 samples per
-3.2 ns (See :numref:`Figures %s<Fig 2.8>` and
+5 ns (See :numref:`Figures %s<Fig 2.8>` and
 :numref:`%s<Fig 2.14>`).
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
@@ -46,7 +46,7 @@ be either :c:macro:`NDIGO6G12_APP_TYPE_2CH` or
 ^^^^^^^^^^^^^^^^^^^
 
 In this mode, all four channels are digitized independently at 1.6 Gsps
-each. The packet size is always a multiple of 4 samples per 3.2 ns. (See
+each. The packet size is always a multiple of 4 samples per 5 ns. (See
 :numref:`Figures %s<Fig 2.7>` and :numref:`%s<Fig 2.13>`).
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
@@ -75,7 +75,7 @@ of the ADCs can be used.
 
 During interleaving, the Ndigo6G-12 firmware reorders and groups the data
 into a linear sample stream. The process is fully transparent. For
-users, the only difference is that a 3.2 ns cycle can contain
+users, the only difference is that a 5 ns cycle can contain
 4, 8 or 16 samples, depending on the mode.
 
 The Ndigo6G-12 provides four ADCs sampling at 1.6 Gsps each.
@@ -83,7 +83,7 @@ Higher speed modes are implemented by interleaving two or four of these ADCs.
 
 Modes AA and DD
 ``````````````` 
-In this mode, input channel A (or D) is sampled at 3.2 Gsps two times and
+In this mode, input channel A (or D) is sampled at 5 Gsps two times and
 independently by the internal ADC chips.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
