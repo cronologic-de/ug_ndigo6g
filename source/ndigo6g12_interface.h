@@ -1128,7 +1128,6 @@ typedef struct {
 } ndigo6g12_read_out;
 
 /*!
- * @ingroup confstructs
  * @brief   Structure that contains trigger settings.
  */
 typedef struct {
@@ -1466,9 +1465,14 @@ typedef struct {
 
     /*!
      * @brief   Stops averaging before an overflow can happen.
-     * @details Stops the averaging once AVERAGING_VALUE &ge;
-     *          (MAX_AVERAGING_VALUE &minus; MAX_ADC_VALUE) to prevent
-     *          overflow.
+     * @details Stops the averaging once _averaging_value_ &ge;
+     *          _max_averaging_value_ &minus; _max_ADC_value_
+     *          or _averaging_value_ &le; _min_averaging_value_ &minus;
+     *          _min_ADC_value_ to prevent overflow.
+     * @details .
+     *          - _max(min)_averaging_value_ is 2097151 (&minus;2097152)
+     *          - _max(min)_ADC_value_ is 32768 (&minus;32767)
+     *          .
      * @details Default is `false`.
      */
     crono_bool_t stop_on_overflow;
@@ -1483,20 +1487,30 @@ typedef struct {
 
     /*!
      * @brief   Determines if saturation arithmetic is used by the averager.
+     * @details .
+     *          - `true`: Instead of _averaging_value_ over(under)flowing once 
+     *            _max(min)_averaging_value_ is reached, the maximum (minimum)
+     *            value is kept.
+     *          - `false`: Once _averaging_value_ reaches 
+     *            _max(min)_averaging_value_, _averaging_value_ will 
+     *            over(under)flow and wrap around.
+     *          .
+     * @details See @link ndigo6g12_averager_configuration::stop_on_overflow
+     *          stop_on_overflow @endlink for the values of
+     *          _averaging_value_ and _max(min)_averaging_value_.
      * @details Default is `true`.
      */
     crono_bool_t use_saturation;
 
     /*!
      * @brief   Determine if the averager stops on timeout.
-     * @details The timeout time is configured by @link timeout_threshold
-     *          @endlink.
+     * @details The timeout time is configured by @ref timeout_threshold\.
      * @details Default is `false`.
      */
     crono_bool_t stop_on_timeout;
 
     /*!
-     * @brief   Set the number microseconds until timeout.
+     * @brief   Set the number of microseconds until timeout.
      * @details Must be 0 if no averaging application is installed on the
      *          Ndigo6G-12 board.
      * @details Default is 0.
@@ -1692,7 +1706,7 @@ typedef struct {
      *          @ref auto_trigger_period and @f$N@f$ =
      *          @ref auto_trigger_random_exponent that result in a distance
      *          between triggers of
-     *          @f$ T = 1 + M + [1...2^N] @f$
+     *          @f$ T = 1 + M + [1 \dots 2^N] @f$
      *          clock cycles, where
      *          @f$ 6 \le M < 2^{32} @f$ and
      *          @f$ 0 \le N < 32 @f$.
@@ -1750,7 +1764,8 @@ typedef struct {
      *          - `false`: Output all samples in their own package.
      *          .
      * @verbatim embed:rst:leading-asterisk
-     *          For more information, see :ref:`multiple sampling modes`.
+     *          For more information, see :ref:`multiple sampling modes` in
+     *          :numref:`Section %s<ADC Modes>`.
      * @endverbatim
      */
     crono_bool_t sample_averaging;
