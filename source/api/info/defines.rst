@@ -1,6 +1,9 @@
 Defines
 ~~~~~~~
 
+
+Device States
+^^^^^^^^^^^^^
 .. raw:: latex
 
     \phantomsection
@@ -8,6 +11,8 @@ Defines
 
 .. doxygengroup:: devicestates
 
+Alerts
+^^^^^^
 .. raw:: latex
 
     \phantomsection
@@ -15,6 +20,8 @@ Defines
 
 .. doxygengroup:: alertdefs
 
+PCIe Information
+^^^^^^^^^^^^^^^^
 .. raw:: latex
 
     \phantomsection
