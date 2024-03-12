@@ -11,5 +11,5 @@ Averaging Mode is enabled. Then,
 :cpp:member:`ndigo6g12_averager_configuration::iterations` are averaged
 before output is written.
 
-Averaging Mode can be used with all ADC modes
+Averaging Mode can be used only with ADC modes A and D
 (see :numref:`Section %s <ADC Modes>`).

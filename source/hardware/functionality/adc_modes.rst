@@ -9,7 +9,7 @@ to 16-bit signed data centered around 0.
 
 Data processing such as trigger detection or packet building are always
 performed on 5 ns intervals. Depending on the ADC mode, this interval
-may contain 4, 8 or 16 samples.
+may contain 8 (1.6 Gsps), 16 (3.2 Gsps) or 32 (6.4 Gsps) samples.
 
 The ADC mode is configured using 
 :cpp:member:`ndigo6g12_configuration::adc_mode`.
@@ -38,8 +38,7 @@ Packet size is always a multiple of 8 samples per
 :numref:`%s<Fig 2.14>`).
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
-be either :c:macro:`NDIGO6G12_APP_TYPE_2CH` or 
-:c:macro:`NDIGO6G12_APP_TYPE_AVRG`.
+be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 
 
 4-Channel Mode ABCD
@@ -50,8 +49,7 @@ each. The packet size is always a multiple of 4 samples per 5 ns. (See
 :numref:`Figures %s<Fig 2.7>` and :numref:`%s<Fig 2.13>`).
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
-be either :c:macro:`NDIGO6G12_APP_TYPE_4CH` or 
-:c:macro:`NDIGO6G12_APP_TYPE_AVRG`.
+be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 
 
 .. _multiple sampling modes:
@@ -87,8 +85,7 @@ In this mode, input channel A (or D) is sampled at 5 Gsps two times and
 independently by the internal ADC chips.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
-be either :c:macro:`NDIGO6G12_APP_TYPE_2CH` or 
-:c:macro:`NDIGO6G12_APP_TYPE_AVRG`.
+be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 
 Mode AADD
 `````````
@@ -96,8 +93,7 @@ In this mode, input channel A and D are sampled at 1.6 Gsps two times and
 independently by the internal ADC chips.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
-be either :c:macro:`NDIGO6G12_APP_TYPE_4CH` or 
-:c:macro:`NDIGO6G12_APP_TYPE_AVRG`.
+be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 
 Modes AAAA, DDDD
 ````````````````
@@ -105,8 +101,7 @@ In this mode, input channel A (or D) are sampled at 1.6 Gsps four times and
 independently by the internal ADC chips.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
-be either :c:macro:`NDIGO6G12_APP_TYPE_4CH` or 
-:c:macro:`NDIGO6G12_APP_TYPE_AVRG`.
+be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 
 
 .. _Fig 2.7:
