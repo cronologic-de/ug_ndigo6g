@@ -66,3 +66,16 @@ h5,
 h6 {
   color: #ED7807;
 }
+
+.caption-number{
+  font-weight: bold;
+}
+
+.caption-number,
+.caption-text {
+  color: grey;
+}
+
+figcaption {
+  padding-bottom: 2.25em;
+}
