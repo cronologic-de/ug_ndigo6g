@@ -11,23 +11,6 @@ the FIFO.
 The parameters are set in Structures :cpp:struct:`ndigo6g12_trigger` and 
 :cpp:struct:`ndigo6g12_trigger_block`.
 
-.. In :cpp:struct:`ndigo6g12_trigger`, the user specifies the trigger condition,
-.. configuring the threshold and if a rising or falling edge should trigger
-.. the channel, and the type of trigger.
-.. Two types of trigger are provided: edge trigger or level trigger.
-
-.. For edge trigger, data is recorded for
-..
-    :cpp:member:`ndigo6g12_trigger_block::precursor` and
-.. 
-   :cpp:member:`ndigo6g12_trigger_block::length` 
-.. amount of time before and after the 
-.. trigger condition is met (see :numref:`Figure %s<fig edge trigger>`).
-
-.. For level trigger, the trigger condition is true all the while the signal
-.. level is above (or below, if :cpp:member:`ndigo6g12_trigger::rising` is 
-.. false) the configured threshold. That means, data is recorded 
-
 Each trigger block consists of two independent units that check the
 incoming raw data stream for trigger conditions. The trigger conditions
 are configured using the :cpp:struct:`ndigo6g12_trigger` structure.
@@ -71,18 +54,18 @@ within a range of up to 8, 16, or 32 samples depending on the channel mode
 .. _Fig 2.13:
 .. figure:: ../../figures/4ChannelTriggering.*
 
-   Triggering in 4 channel mode at 4 samples per clock cycle. TODO double check graphic
+   Triggering in 4 channel mode at 8 samples per clock cycle.
 
 .. _Fig 2.14:
 .. figure:: ../../figures/2ChannelTriggering.*
 
-   Triggering in 2 channel mode at 8 samples per clock cycle. TODO double check graphic
+   Triggering in 2 channel mode at 16 samples per clock cycle.
 
 
 .. _Fig 2.15:
 .. figure:: ../../figures/1ChannelTriggering.*
 
-   Triggering in 1 channel mode at 16 samples per clock cycle. TODO double check graphic
+   Triggering in 1 channel mode at 32 samples per clock cycle.
 
 
 If retriggering is active, the current trigger window is extended if a

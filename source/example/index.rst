@@ -3,11 +3,6 @@
 C++-Example
 ===========
 
-.. attention:: 
-
-    This User Guide is under active development and is subject to major 
-    changes.
-
 The following source code is an example of an Ndigo6G-12 application written
 in C++.
 

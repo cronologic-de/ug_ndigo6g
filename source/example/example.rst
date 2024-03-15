@@ -1,6 +1,4 @@
 
-:hide-toc:
-
 :code:`ndigo6g12_example.cpp`
 -----------------------------
 

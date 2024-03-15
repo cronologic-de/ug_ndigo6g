@@ -6,8 +6,8 @@ Ndigo6G-12 Functionality
 
     adc_modes
     zero_suppression
-    trigger_blocks
-    gating_blocks
+    trigger
+    gating
     auto_trigger
     timestamps
     averaging
