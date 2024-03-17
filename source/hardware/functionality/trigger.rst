@@ -99,7 +99,6 @@ This procedure reduces PCIe bus load even further
    the trigger matrix. Each digitizer channel (A, B, C, D) has two trigger
    units.
 
-
 .. _Fig 2.17:
 .. figure:: ../../figures/DigitalInput.*
 

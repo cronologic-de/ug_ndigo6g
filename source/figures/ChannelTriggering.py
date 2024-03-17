@@ -70,6 +70,7 @@ def plot(config: Config):
         these instead
     """
     orange = "#ED7807"
+    lightorange = "#F6BB82"
     blue = "#376EB5"
     lightblue = "#569fd6"
     plt.rcParams["lines.linewidth"] = plt.rcParams["axes.linewidth"]
@@ -137,7 +138,7 @@ def plot(config: Config):
 
     ax.add_patch(Rectangle(
         (x[threshold_idx], 0), dx, y[threshold_idx],
-        fc=orange, ec="none", alpha=0.5, zorder=1))
+        fc=lightorange, ec="none", zorder=1))
 
     ax.plot([xmin, 1.0], [y[threshold_idx]]*2, ls="-")
     ax.plot([xmin, 0], [0, 0], clip_on=False)

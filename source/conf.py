@@ -21,7 +21,10 @@ release = '0.1.0'
 extensions = [
     "sphinx.ext.autosectionlabel",
     "breathe",
+    # "sphinxcontrib.wavedrom",
 ]
+
+render_using_wavedrompy = True
 
 breathe_projects = {"ndigo6g12_api": os.fspath("../build/doxygen/xml/")}
 breathe_default_project = "ndigo6g12_api"

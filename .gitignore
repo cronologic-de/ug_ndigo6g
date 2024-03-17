@@ -6,7 +6,7 @@ build/*
 !build/doxygen/
 
 # virtual environment folder
-.venv/
+.venv*/
 
 # python
 __pycache__/
