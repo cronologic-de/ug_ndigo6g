@@ -6,41 +6,49 @@ Gating Blocks
 .. _Fig 2.20:
 .. figure:: ../../figures/GatingBlocks.*
 
-   Gating Blocks: Each gating block can use an arbitrary combination
-   of inputs to trigger its state machine. The outputs can be individually
-   inverted and routed to the AND-gate feeding the trigger blocks.
+    Gating Blocks: Each gating block can use an arbitrary combination
+    of inputs to trigger its state machine. The outputs can be individually
+    inverted and routed to the AND-gate feeding the trigger blocks. TODO
+    update Figure.
 
-.. To decrease the amount of data transmitted to the PC, **Ndigo6G** includes four
-.. independent gate and delay units. A gate and delay unit creates a gate
-.. window starting at a specified time after a trigger, closing the window
-.. at gate stop. Both timing values — gate start and gate stop — must be
-.. set as multiples of 3.2 |nbws| ns.
+In order to decrease the amount of data transmitted to the PC, the Ndigo6G-12 
+includes four independent gate and delay units.
 
-.. Trigger blocks can use the gate signal to suppress data acquisition:
-.. Only data that fulfills zero suppression specifications occurring in an
-.. active gate window is written to the PC.
+They are configured using :cpp:member:`ndigo6g12_configuration::gating_block`.
 
-.. As input, any trigger from the four trigger blocks, the GATE and Trigger
-.. inputs, a trigger from a connected board and the function generator can
-.. be used.
+A gate and delay unit creates a gate window starting and closing at specified 
+times after a trigger event (as configured by the user with
+:cpp:member:`ndigo6g12_gating_block::start` and 
+:cpp:member:`stop <ndigo6g12_gating_block::stop>`).
 
-.. The retrigger feature will create a new gate if a trigger occurs during
-.. an active gate window. The gate signal can be inverted, causing an
-.. active gate to close for a time defined by the user.
+:cpp:member:`trigger_blocks <ndigo6g12_configuration::trigger_block>`
+can use the gate signal to suppress data acquisition, that is, 
+only data that fulfills zero suppression specifications occurring in an
+active gate window is written to the PC.
 
-.. The parameters of a gating block are set in Structure
-.. :code:`ndigo6g12_gating_block` described in
-.. :numref:`chapter %s<api confstructs>`.
+Configuration
+^^^^^^^^^^^^^
 
-.. :numref:`Figure %s<Fig 2.21>` shows the functionality of
-.. the gate timing and delay unit. The active gate time is marked in green.
+The inputs of each :cpp:member:`ndigo6g12_configuration::gating_block`
+is configured by :cpp:member:`ndigo6g12_gating_block::sources`.
 
-.. .. _Fig 2.21:
-.. .. figure:: figures/GateUDelay.*
+The :cpp:member:`retrigger <ndigo6g12_gating_block::retrigger>` feature will 
+create a new gate if a trigger occurs during an active gate window.
 
-..     Gate and delay functionality: When a trigger occurs, the gate opens after a
-       set period of time |bdq| gate start |edq| and closes when it reaches
-       |bdq| gate stop |edq|.
+The gate signal can be inverted using
+:cpp:member:`ndigo6g12_gating_block::negate`, causing an
+active gate to close (instead of opening) for the specified time.
+
+:numref:`Figure %s<Fig 2.21>` shows the functionality of
+the gate timing and delay unit.
+
+.. _Fig 2.21:
+.. figure:: ../../figures/gating_principle.*
+
+    Gate and delay functionality: When a trigger occurs, the gate opens after a
+    set period of time “Gate Start” and closes when it reaches
+    “Gate Stop”. A second trigger event may influence this behavior if
+    retriggering is enabled.
 
 
 .. Gating Example 1: Suppression of Noise After Starting an Acquisition
@@ -49,14 +57,14 @@ Gating Blocks
 .. In mass spectrometer and other experiments, noise while starting data
 .. acquisition can result in undesired trigger events for that time period.
 .. To prevent noise in the output data, a gating block could be used to
-.. suppress all triggers during start-up.
+.. suppress all triggers during start-up,
 
 .. The following example illustrates the use of a gating block to prevent
 .. noise: The GATE input transmits a pulse on each acquisition start. The
 .. trigger structure of the GATE input is used to select pulse polarity.
 .. Then, the GATE trigger is selected as gating block input and the gating
-.. block’s start parameter is set to 0. The stop parameter is set to the
-.. desired length measured in 3.2 |nbws| ns clock cycle and negate is set to true.
+.. block's start parameter is set to 0. The stop parameter is set to the
+.. desired length measured in 5 ns clock cycle and negate is set to true.
 .. The gating block will now output a low pulse of the desired length
 .. whenever there is a pulse on the GATE input.
 

@@ -1,9 +1,9 @@
 .. _Section Trigger Blocks:
 
-Trigger Conditions and Trigger Blocks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Trigger Setup
+~~~~~~~~~~~~~
 
-**Ndigo6G-12** record analog waveforms using zero suppression.
+The Ndigo6G-12 records analog waveforms using zero suppression.
 Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory.
 Each ADC channel has one trigger block determining whether data is written to
@@ -11,9 +11,13 @@ the FIFO.
 The parameters are set in Structures :cpp:struct:`ndigo6g12_trigger` and 
 :cpp:struct:`ndigo6g12_trigger_block`.
 
-Each trigger block consists of two independent units that check the
+Each :cpp:member:`trigger_block <ndigo6g12_configuration::trigger_block>`
+consists of two independent units that check the
 incoming raw data stream for trigger conditions. The trigger conditions
 are configured using the :cpp:struct:`ndigo6g12_trigger` structure.
+
+Trigger configuration
+^^^^^^^^^^^^^^^^^^^^^
 
 Users can specify a :cpp:member:`threshold <ndigo6g12_trigger::threshold>` 
 and can choose whether triggering is used 
@@ -22,15 +26,16 @@ see :numref:`Figure %s<fig level trigger>`) or
 only if data exceeds the threshold (edge triggering, see 
 :numref:`Figure %s<fig edge trigger>`).
 
+.. _fig level trigger:
+.. figure:: ../../figures/level-trigger.*
+
+   Example for level triggering.
+
 .. _fig edge trigger:
 .. figure:: ../../figures/edge-trigger.*
 
    Example for edge triggering.
 
-.. _fig level trigger:
-.. figure:: ../../figures/level-trigger.*
-
-   Example for level triggering.
 
 A gate :cpp:member:`length <ndigo6g12_trigger_block::length>` can be set to
 extend the trigger window by multiples of 5 ns. 
@@ -51,6 +56,11 @@ within a range of up to 8, 16, or 32 samples depending on the channel mode
 (see :numref:`Section %s<ADC modes>` and :numref:`Figures %s<Fig 2.13>`,
 :numref:`%s<Fig 2.14>`, and :numref:`%s<Fig 2.15>`). 
 
+If :cpp:member:`retrigger <ndigo6g12_trigger_block::retrigger>` is enabled,
+the current trigger window is extended if a trigger event is detected inside
+the window (see :numref:`Figure %s<figure zero suppression>`).
+
+
 .. _Fig 2.13:
 .. figure:: ../../figures/4ChannelTriggering.*
 
@@ -67,29 +77,22 @@ within a range of up to 8, 16, or 32 samples depending on the channel mode
 
    Triggering in 1 channel mode at 32 samples per clock cycle.
 
+Trigger inputs
+^^^^^^^^^^^^^^
 
-If retriggering is active, the current trigger window is extended if a
-trigger event is detected inside the window
-(see :numref:`Figure %s<figure zero suppression>`).
+A :cpp:struct:`trigger_block <ndigo6g12_trigger_block>` can use several 
+input :cpp:member:`sources <ndigo6g12_trigger_block::sources>`:
 
-A trigger block can use several input sources:
-
--  The 8 trigger decision units of all four ADC channels
+-  The eight trigger decision units of all four ADC channels
    \(:numref:`Figure %s<Fig 2.16>`)
--  The GATE input (:numref:`Figure %s<Fig 2.17>`)
--  The Trigger or TDC input (:numref:`Figure %s<Fig 2.17>`)
--  A function trigger providing random or periodic triggering.
+-  The four TDC and the two FPGA inputs (:numref:`Figure %s<Fig 2.17>`)
+-  A function trigger providing random or periodic triggering (see
+   :doc:`auto_trigger`).
 
-Trigger inputs from the above sources can be concatenated using logical
+Trigger inputs from the above sources can be concatenated using a logical
 OR (:numref:`Figure %s<fig triggermatrix>`) by
-setting the appropriate bits in the trigger blocks source mask.
-
-Triggers can be fed into the gate blocks as described in
-:numref:`Chapter %s<section gating blocks>` \(:numref:`Figure %s<Fig 2.20>`).
-Gate blocks can be used to block writing data to the FIFO. That way, only
-zero suppressed data occurring when the selected gate is active is transmitted.
-This procedure reduces PCIe bus load even further 
-\(:numref:`Figure %s<Fig 2.20>`).
+setting the appropriate bits in the bitmask 
+:cpp:member:`ndigo6g12_trigger_block::sources`.
 
 
 .. _Fig 2.16:
@@ -120,3 +123,28 @@ This procedure reduces PCIe bus load even further
    input, the GATE input or the sync cable can be combined to create a
    trigger input for each trigger block. The four gate signals can be used
    to suppress triggers during certain time frames.
+
+.. _gating trigger events:
+
+Gating trigger events
+^^^^^^^^^^^^^^^^^^^^^
+
+Triggers can be fed into the 
+:cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`
+as outlined in
+:numref:`Chapter %s<section gating blocks>` and 
+:numref:`Figure %s<Fig 2.20>`.
+
+
+In return, the 
+:cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`
+can be used to block writing data to the FIFO. That way, only
+zero suppressed data occurring when the selected gate is active is transmitted.
+This procedure reduces PCIe bus load even further.
+
+Which 
+:cpp:member:`gating_block <ndigo6g12_configuration::gating_block>`
+is used to block a particular
+:cpp:member:`trigger_block <ndigo6g12_configuration::trigger_block>`
+is configured
+with :cpp:member:`ndigo6g12_trigger_block::gates`.
