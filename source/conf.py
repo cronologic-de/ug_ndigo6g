@@ -47,6 +47,9 @@ cronoblue = "#376EB5"
 cronolightblue = "#569fd6"
 cronoorange = "#ED7807"
 cronolightorange = "rgb(237, 120, 7, 0.2)"
+cronogrey = "#737372"
+cronolightgrey = "#acacac"
+cronoverylightgrey = "#dcdcdc"
 
 html_theme = "furo"
 html_theme_options = {
@@ -56,8 +59,14 @@ html_theme_options = {
         "color-api-name": cronoorange,
         "color-sidebar-brand-text": cronolightblue,
         "color-highlight-on-target": cronolightorange,
+        "color-foreground-primary": cronolightgrey,
+        "color-headers": cronoverylightgrey,
     },
     "light_css_variables": {
+        "font-stack": "Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji",
+        "font-stack--monospace": "Consolas, Monaco, Liberation Mono, Lucida Console, monospace",
+        "color-foreground-primary": cronogrey,
+        "color-headers": "#000000",
         "color-brand-primary": cronoblue,
         "color-brand-content": cronoblue,
         "color-api-name": cronoorange,

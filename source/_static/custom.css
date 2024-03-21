@@ -55,16 +55,28 @@ div.sphinxsidebar {
     padding-top: 1rem
 }
 
-h1 {
-  color:  #ED7807;
+
+h1, h2, h3, h4, h5 h6 {
+  font-feature-settings: "tnum" 0;
+  font-weight: bold;
+  color: var(--color-headers);
 }
 
-h2,
+h1 {
+  font-size: 150%;
+}
+
+
+h2 {
+  font-size: 130%;
+}
+
 h3,
 h4,
 h5,
 h6 {
-  color: var(--color-brand-primary);
+  font-size: 110%;
+  color: var(--color-foreground-secondary)
 }
 
 .caption-number{
