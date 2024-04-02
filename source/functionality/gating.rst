@@ -4,7 +4,7 @@ Gating Blocks
 ~~~~~~~~~~~~~
 
 .. _Fig 2.20:
-.. figure:: ../../figures/GatingBlocks.*
+.. figure:: ../figures/GatingBlocks.*
 
     Gating Blocks: Each gating block can use an arbitrary combination
     of inputs to trigger its state machine. The outputs can be individually
@@ -43,7 +43,7 @@ active gate to close (instead of opening) for the specified time.
 the gate timing and delay unit.
 
 .. _Fig 2.21:
-.. figure:: ../../figures/gating_principle.*
+.. figure:: ../figures/gating_principle.*
 
     Gate and delay functionality: When a trigger occurs, the gate opens after a
     set period of time “Gate Start” and closes when it reaches

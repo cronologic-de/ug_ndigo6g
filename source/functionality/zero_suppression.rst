@@ -17,7 +17,7 @@ realize much more complex scenarios using the *Trigger* and *Gating Blocks*
 :numref:`%s<Section Gating Blocks>`).
 
 .. _Figure Zero Suppression:
-.. figure:: ../../figures/ZeroSupp.*
+.. figure:: ../figures/ZeroSupp.*
 
     Simple zero suppression: Only data
     with values above a threshold are written to the PC.

@@ -29,6 +29,7 @@ Ndigo6G-12 driver.
 
     introduction
     hardware/index
+    functionality/index
     api/index
     packform/index
     example/index
