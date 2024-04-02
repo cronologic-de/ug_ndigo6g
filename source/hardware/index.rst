@@ -7,7 +7,6 @@ Hardware
    
    installation
    connections
-   sync
    update
    calibration
 
