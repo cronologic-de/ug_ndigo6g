@@ -7,7 +7,6 @@ Hardware
    
    installation
    connections
-   functionality/index
    sync
    update
    calibration
