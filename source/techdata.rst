@@ -15,7 +15,7 @@ Digitizer Characteristics
 -------------------------
 
 Each board is tested against the values listed in the |bdq| Min |edq| column.
-|bdq| Typical |edq| is the mean value of the first 10 boards produced.
+|bdq| Typical |edq| is the mean value of the first 10 boards that were produced.
 
 
 1-Channel-Mode (6.4 Gsps)
@@ -106,7 +106,7 @@ Electrical Characteristics
 Oscillator
 ~~~~~~~~~~
 
-The Ndigo6G-12 uses an OCXO oscillator with **25** |nbws| **ppb** stability.
+The Ndigo6G-12 uses an OCXO oscillator with **25 ppb** stability.
 After power up the oscillator needs to run for **10 minutes** to reach this
 stability.
 
@@ -158,12 +158,12 @@ Power Supply
 ======= =================================== ====== ======= ===== =====
 Symbol  Parameter                           Min    Typical Max   Units
 ======= =================================== ====== ======= ===== =====
-I       PCIe 3,3V rail power consumption                   4     mA
-VCC     PCIe 3,3V rail power supply         3.1    3.3     3.6    V
+I       PCIe 3.3V rail power consumption                   4     mA
+VCC     PCIe 3.3V rail power supply         3.1    3.3     3.6    V
 I       PCIe 12V rail power consumption                    2.1   A
 VCC     PCIe 12V rail power supply          11.1   12      12.9  V
-I       PCIe 3,3VAux rail power consumption        0             A
-VCC     PCIe 3,3VAux rail power supply             3.3           V
+I       PCIe 3.3VAux rail power consumption        0             A
+VCC     PCIe 3.3VAux rail power supply             3.3           V
 ======= =================================== ====== ======= ===== =====
 
 
@@ -172,13 +172,15 @@ Analog Input
 
 AC coupled single-ended analog inputs:
 
-===============  ========================== ====== ======= ===== ==============
-Symbol           Parameter                  Min    Typical Max   Units
-===============  ========================== ====== ======= ===== ==============
-V\ :sub:`p-p`    Peak to peak input voltage                0,5   V
-Z\ :sub:`p`      Input impedance                    50           Ω
-                 Analog offset              −0.25          0.25  V
-===============  ========================== ====== ======= ===== ==============
++---------------+---------------------------+------+---------+-----+-------+
+|Symbol         |  Parameter                | Min  | Typical | Max | Units |
++===============+===========================+======+=========+=====+=======+
+| V\ :sub:`p-p` | Peak to peak input voltage|      |         | 0.5 | V     |
++---------------+---------------------------+------+---------+-----+-------+
+| Z\ :sub:`p`   | Input impedance           |      | 50      |     | Ω     |
++---------------+---------------------------+------+---------+-----+-------+
+|               | Analog offset             | −0.25|         | 0.25| V     |
++---------------+---------------------------+------+---------+-----+-------+
 
 Single ended AC coupled inputs Trigger and GATE with configurable DC
 offset bias.
@@ -190,7 +192,7 @@ V\ :sub:`trig`          Pulse height                     5.0    V
 V\ :sub:`trigoffset`    DC offset         −1.25          1.25   V
 V\ :sub:`tdcoffset`     DC offset for TDC −1.25          −0.01  V
 Z\ :sub:`trig`          Input impedance          50             Ω
-t\ :sub:`pulse`         pulse width       7              100    ns
+t\ :sub:`pulse`         Pulse width       7              100    ns
 ======================  ================= ====== ======= ====== ==============
 
 
@@ -219,7 +221,7 @@ The devices are not ready to use as delivered by cronologic. It requires
 the development of specialized software to fulfill the application of
 the end user. The device is provided to system integrators to be built
 into measurement systems that are distributed to end users. These
-systems usually consist of a the Ndigo6G, a main board, a case,
+systems usually consist of a Ndigo6G, a main board, a case,
 application software and possible additional electronics to attach the
 system to some type of detector. They might also be integrated with the
 detector.
@@ -234,7 +236,7 @@ quality of the enclosure. It is the responsibility of the system
 integrator to ensure that the assembled system is compliant to
 applicable standards of the country that the system is operated in,
 especially with regards to user safety and electromagnetic interference.
-Compliance was only tested for attached cables shorter than 3 |nbws| m.
+Compliance was only tested for attached cables shorter than 3 m.
 
 When handling the board, adequate measures have to be taken to protect
 the circuits against electrostatic discharge (ESD). All power supplied
@@ -265,8 +267,8 @@ requirements and therefore there are no circuits that provide over
 voltage protection for these signals.
 
 .. danger::
-  Any voltage on the inputs above **5V**
-  or below **−5V** relative to the voltage of the slot cover can result in
+  Any voltage on the inputs above **5 V**
+  or below **−5 V** relative to the voltage of the slot cover can result in
   permanent damage to the board.
 
 
@@ -277,9 +279,9 @@ cronologic is registered with the “Stiftung Elektro-Altgeräte Register”
 as a manufacturer of electronic systems with **Registration ID DE
 77895909**.
 
-The **Ndigo5G** belongs to **category 9**, **“Überwachungs und
+The Ndigo6G belongs to **category 9**, **“Überwachungs und
 Kontrollinstrumente für ausschließlich gewerbliche Nutzung”.** The last owner
-of an **Ndigo5G** must recycle it, treat the board in compliance with **§11**
+of an Ndigo6G must recycle it, treat the board in compliance with **§11**
 and **§12** of the German ElektroG, or return it to the manufacturer’s address
 listed in :numref:`Section %s<techdata manufacturer>`.
 
@@ -287,8 +289,8 @@ Export Control
 ~~~~~~~~~~~~~~
 
 The Ndigo6G product line is a dual use item under
-`Council Regulation (EC) No 428/2009 of 5 May 2009 setting up a Community regime for the
-control of exports, transfer, brokering and transit of dual-use
+`Council Regulation (EC) No 428/2009 of 5 May 2009 setting up a Community 
+regime for the control of exports, transfer, brokering and transit of dual-use
 items <https://data.europa.eu/eli/reg/2009/428/2021-10-077>`__ in
 section **3A002h.** Similar regulations exist in many countries outside Europe.
 
@@ -302,4 +304,4 @@ component please check you local regulations whether an export permit is
 required.
 
 It is not permitted to export an Ndigo6G to the Russian Federation or the
-Republic of Belarus
+Republic of Belarus.
