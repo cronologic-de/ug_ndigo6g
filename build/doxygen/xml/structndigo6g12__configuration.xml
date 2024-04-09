@@ -175,9 +175,9 @@
 <para>Component to create a trigger either periodically or randomly. </para>
 </briefdescription>
 <detaileddescription>
-<para>To be exact, there are two parameters <formula id="0">$M$</formula> = <ref refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" kindref="member">auto_trigger_period</ref> and <formula id="1">$N$</formula> = <ref refid="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" kindref="member">auto_trigger_random_exponent</ref> that result in a distance between triggers of <formula id="2">$ T = 1 + M + [1 \dots 2^N] $</formula> clock cycles, where <formula id="3">$ 6 \le M &lt; 2^{32} $</formula> and <formula id="4">$ 0 \le N &lt; 32 $</formula>.</para>
+<para>To be exact, there are two parameters <formula id="0">$M$</formula> = <ref refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" kindref="member">auto_trigger_period</ref> and <formula id="1">$N$</formula> = <ref refid="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" kindref="member">auto_trigger_random_exponent</ref> that result in a distance between triggers of <formula id="2">$ T = M + [1 \dots 2^N] - 1 $</formula> clock cycles, where <formula id="3">$ 6 \le M &lt; 2^{32} $</formula> and <formula id="4">$ 0 \le N &lt; 32 $</formula>.</para>
 <para>There is no enable or reset as the usage of this trigger can be configured in the channels. Each clock cycle is 5&#160;ns.</para>
-<para>Default is 200000. </para>
+<para>Default is 200000, corresponding to a 1&#160;kHz auto trigger. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
