@@ -9,13 +9,16 @@ to 16-bit signed data centered around 0.
 
 Data processing such as trigger detection or packet building are always
 performed on 5 ns intervals. Depending on the ADC mode, this interval
-may contain 8 (1.6 Gsps), 16 (3.2 Gsps) or 32 (6.4 Gsps) samples.
+may contain 32 (:ref:`1-Channel Mode <1channelmode>` @ 6.4 Gsps), 
+16 (:ref:`2-Channel Mode <2channelmode>` @ 3.2 Gsps) or 
+8 (:ref:`4-Channel Mode <4channelmode>` @ 1.6 Gsps) samples.
 
 The ADC mode is configured using 
 :cpp:member:`ndigo6g12_configuration::adc_mode`.
 
 The board supports using one, two or four channels:
 
+.. _1channelmode:
 
 1-Channel Modes A and D
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -28,6 +31,7 @@ For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be either :c:macro:`NDIGO6G12_APP_TYPE_1CH` or 
 :c:macro:`NDIGO6G12_APP_TYPE_AVRG`.
 
+.. _2channelmode:
 
 2-Channel Mode AD
 ^^^^^^^^^^^^^^^^^
@@ -40,6 +44,7 @@ Packet size is always a multiple of 8 samples per
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 
+.. _4channelmode:
 
 4-Channel Mode ABCD
 ^^^^^^^^^^^^^^^^^^^
@@ -74,7 +79,7 @@ of the ADCs can be used.
 During interleaving, the Ndigo6G-12 firmware reorders and groups the data
 into a linear sample stream. The process is fully transparent. For
 users, the only difference is that a 5 ns cycle can contain
-4, 8 or 16 samples, depending on the mode.
+8, 16 or 32 samples, depending on the mode.
 
 The Ndigo6G-12 provides four ADCs sampling at 1.6 Gsps each.
 Higher speed modes are implemented by interleaving two or four of these ADCs.
