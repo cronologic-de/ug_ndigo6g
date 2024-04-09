@@ -1,5 +1,5 @@
-Ndigo6G-12 Functionality
-------------------------
+Functionality
+-------------
 
 .. toctree::
     :caption: Contents
@@ -11,4 +11,3 @@ Ndigo6G-12 Functionality
     auto_trigger
     timestamps
     averaging
-    data_lut
