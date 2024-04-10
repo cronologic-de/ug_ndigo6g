@@ -1,14 +1,14 @@
 Technical Data
 ==============
 
-- Input Passband: **4.5** |nbws| **MHz** to **950** |nbws| **MHz**
+- Input Passband: **4.5 MHz** to **950 MHz**
 
-- Power Requirements: **25** |nbws| **W**
+- Power Requirements: **25 W**
 
 - Mechanical Dimensions:
-  **170** |nbws| **mm** :math:`\times` **106** |nbws| **mm**
+  **170 mm** :math:`\times` **106 mm**
 
-- Throughput: **800** |nbws| **MByte/s** on PCIe x4
+- Throughput: **800 MByte/s** on PCIe x4
 
 
 Digitizer Characteristics
@@ -24,79 +24,79 @@ Each board is tested against the values listed in the |bdq| Min |edq| column.
 +------------------------+--------------------------+-----+---------+-----+-------+
 | Symbol                 | Parameter                | Min | Typical | Max | Units |
 +========================+==========================+=====+=========+=====+=======+
-| THD1                   | Total Harmonic           | 56  | 60      |     | dB    |
+| THD\ :sub:`1`          | Total Harmonic           | TBD |         |     | dB    |
 |                        | Distortion               |     |         |     |       |
 +------------------------+--------------------------+-----+---------+-----+-------+
-| SNR1                   | Signal to Noise Ration   | 47  | 49      |     | dB    |
+| SNR\ :sub:`1`          | Signal to Noise Ratio    | TBD |         |     | dB    |
 +------------------------+--------------------------+-----+---------+-----+-------+
-| SFDR\ :sub:`incl`\ 1   | Spurious Free Dynamic    | 55  | 59      |     | dB    |
+| SFDR\ :sub:`incl,1`    | Spurious Free Dynamic    | TBD |         |     | dB    |
 |                        | Range (including         |     |         |     |       |
 |                        | Harmonics)               |     |         |     |       |
 +------------------------+--------------------------+-----+---------+-----+-------+
-| SFDR\ :sub:`excl`\ 1   | Spurious Free Dynamic    | 55  | 60      |     | dB    |
+| SFDR\ :sub:`excl,1`    | Spurious Free Dynamic    | TBD |         |     | dB    |
 |                        | Range (excluding         |     |         |     |       |
 |                        | Harmonics)               |     |         |     |       |
 +------------------------+--------------------------+-----+---------+-----+-------+
-| SINAD1                 | Signal-to-Interference   | 47  | 48      |     | dB    |
+| SINAD\ :sub:`1`        | Signal-to-Interference   | TBD |         |     | dB    |
 |                        | Ratio including Noise    |     |         |     |       |
 |                        | and Distortion           |     |         |     |       |
 +------------------------+--------------------------+-----+---------+-----+-------+
-| ENOB1                  | Effective Number of Bits | 7.5 | 7.7     |     |       |
+| ENOB\ :sub:`1`         | Effective Number of Bits | TBD |         |     |       |
 +------------------------+--------------------------+-----+---------+-----+-------+
 
 
 2-Channel-Mode (3.2 Gsps)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+---------------------+--------------------------+-----+---------+-----+-------+
-| Symbol              | Parameter                | Min | Typical | Max | Units |
-+=====================+==========================+=====+=========+=====+=======+
-| THD2                | Total Harmonic           | 56  |  60     |     | dB    |
-|                     | Distortion               |     |         |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| SNR2                | Signal to Noise Ration   | 49  | 51      |     | dB    |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| SFDR\ :sub:`incl`\ 2| Spurious Free Dynamic    | 58  | 60      |     | dB    |
-|                     | Range (including         |     |         |     |       |
-|                     | Harmonics)               |     |         |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| SFDR\ :sub:`excl`\ 2| Spurious Free Dynamic    | 58  | 61      |     | dB    |
-|                     | Range (excluding         |     |         |     |       |
-|                     | Harmonics)               |     |         |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| SINAD2              | Signal-to-Interference   | 49  | 50      |     | dB    |
-|                     | Ratio including Noise    |     |         |     |       |
-|                     | and Distortion           |     |         |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
-| ENOB2               | Effective Number of Bits | 7.8 | 8.1     |     |       |
-+---------------------+--------------------------+-----+---------+-----+-------+
++-----------------------+---------------------------+-----+---------+-----+-------+
+| Symbol                |  Parameter                | Min | Typical | Max | Units |
++=======================+===========================+=====+=========+=====+=======+
+| THD\ :sub:`2`         |  Total Harmonic           | TBD |         |     | dB    |
+|                       |  Distortion               |     |         |     |       |
++-----------------------+---------------------------+-----+---------+-----+-------+
+| SNR\ :sub:`2`         |  Signal to Noise Ratio    | TBD |         |     | dB    |
++-----------------------+---------------------------+-----+---------+-----+-------+
+| SFDR\ :sub:`incl,2`   |  Spurious Free Dynamic    | TBD |         |     | dB    |
+|                       |  Range (including         |     |         |     |       |
+|                       |  Harmonics)               |     |         |     |       |
++-----------------------+---------------------------+-----+---------+-----+-------+
+| SFDR\ :sub:`excl,2`   |  Spurious Free Dynamic    | TBD |         |     | dB    |
+|                       |  Range (excluding         |     |         |     |       |
+|                       |  Harmonics)               |     |         |     |       |
++-----------------------+---------------------------+-----+---------+-----+-------+
+| SINAD\ :sub:`2`       |  Signal-to-Interference   | TBD |         |     | dB    |
+|                       |  Ratio including Noise    |     |         |     |       |
+|                       |  and Distortion           |     |         |     |       |
++-----------------------+---------------------------+-----+---------+-----+-------+
+| ENOB\ :sub:`2`        |  Effective Number of Bits | TBD |         |     |       |
++-----------------------+---------------------------+-----+---------+-----+-------+
 
 
 4-Channel-Mode (1.6 Gsps)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+----------------------+--------------------------+-----+---------+-----+-------+
-| Symbol               | Parameter                | Min | Typical | Max | Units |
-+======================+==========================+=====+=========+=====+=======+
-| THD4                 | Total Harmonic           | 56  |  60     |     | dB    |
-|                      | Distortion               |     |         |     |       |
-+----------------------+--------------------------+-----+---------+-----+-------+
-| SNR4                 | Signal to Noise Ration   | 49  | 51      |     | dB    |
-+----------------------+--------------------------+-----+---------+-----+-------+
-| SFDR\ :sub:`incl`\ 4 | Spurious Free Dynamic    | 58  | 60      |     | dB    |
-|                      | Range (including         |     |         |     |       |
-|                      | Harmonics)               |     |         |     |       |
-+----------------------+--------------------------+-----+---------+-----+-------+
-| SFDR\ :sub:`excl`\ 4 | Spurious Free Dynamic    | 68  | 73      |     | dB    |
-|                      | Range (excluding         |     |         |     |       |
-|                      | Harmonics)               |     |         |     |       |
-+----------------------+--------------------------+-----+---------+-----+-------+
-| SINAD4               | Signal-to-Interference   | 49  | 51      |     | dB    |
-|                      | Ratio including Noise    |     |         |     |       |
-|                      | and Distortion           |     |         |     |       |
-+----------------------+--------------------------+-----+---------+-----+-------+
-| ENOB4                | Effective Number of Bits | 7.9 | 8.1     |     |       |
-+----------------------+--------------------------+-----+---------+-----+-------+
++-----------------------+--------------------------+-----+---------+-----+-------+
+| Symbol                | Parameter                | Min | Typical | Max | Units |
++=======================+==========================+=====+=========+=====+=======+
+| THD\ :sub:`4`         | Total Harmonic           | TBD |         |     | dB    |
+|                       | Distortion               |     |         |     |       |
++-----------------------+--------------------------+-----+---------+-----+-------+
+| SNR\ :sub:`4`         | Signal to Noise Ratio    | TBD |         |     | dB    |
++-----------------------+--------------------------+-----+---------+-----+-------+
+| SFDR\ :sub:`incl,4`   | Spurious Free Dynamic    | TBD |         |     | dB    |
+|                       | Range (including         |     |         |     |       |
+|                       | Harmonics)               |     |         |     |       |
++-----------------------+--------------------------+-----+---------+-----+-------+
+| SFDR\ :sub:`excl,4`   | Spurious Free Dynamic    | TBD |         |     | dB    |
+|                       | Range (excluding         |     |         |     |       |
+|                       | Harmonics)               |     |         |     |       |
++-----------------------+--------------------------+-----+---------+-----+-------+
+| SINAD\ :sub:`4`       | Signal-to-Interference   | TBD |         |     | dB    |
+|                       | Ratio including Noise    |     |         |     |       |
+|                       | and Distortion           |     |         |     |       |
++-----------------------+--------------------------+-----+---------+-----+-------+
+| ENOB\ :sub:`4`        | Effective Number of Bits | TBD |         |     |       |
++-----------------------+--------------------------+-----+---------+-----+-------+
 
 
 
@@ -158,12 +158,12 @@ Power Supply
 =============== ============================================= ====== ======= ===== =====
 Symbol          Parameter                                     Min    Typical Max   Units
 =============== ============================================= ====== ======= ===== =====
-I\ :sub:`3.3`   PCIe 3.3V rail power consumption                             4     mA
-VCC\ :sub:`3.3` PCIe 3.3V rail power supply                   3.1    3.3     3.6    V
-I\ :sub:`12`    PCIe 12V rail power consumption                              2.1   A
-VCC\ :sub:`12`  PCIe 12V rail power supply                    11.1   12      12.9  V
-I\ :sub:`aux`   PCIe 3.3V\ :sub:`aux` rail power consumption         0             A
-VCC\ :sub:`aux` PCIe 3.3V\ :sub:`aux` rail power supply              3.3           V
+I\ :sub:`3.3`   PCIe 3.3V rail power consumption                             TBD   mA
+VCC\ :sub:`3.3` PCIe 3.3V rail power supply                   TBD            TBD    V
+I\ :sub:`12`    PCIe 12V rail power consumption                              TBD   A
+VCC\ :sub:`12`  PCIe 12V rail power supply                    TBD            TBD   V
+I\ :sub:`aux`   PCIe 3.3V\ :sub:`aux` rail power consumption                 TBD   A
+VCC\ :sub:`aux` PCIe 3.3V\ :sub:`aux` rail power supply                      TBD   V
 =============== ============================================= ====== ======= ===== =====
 
 
@@ -175,11 +175,11 @@ AC coupled single-ended analog inputs:
 +---------------+---------------------------+------+---------+-----+-------+
 |Symbol         |  Parameter                | Min  | Typical | Max | Units |
 +===============+===========================+======+=========+=====+=======+
-| V\ :sub:`p-p` | Peak to peak input voltage|      |         | 0.5 | V     |
+| V\ :sub:`p-p` | Peak to peak input voltage|      |         | TBD | V     |
 +---------------+---------------------------+------+---------+-----+-------+
 | Z\ :sub:`p`   | Input impedance           |      | 50      |     | Ω     |
 +---------------+---------------------------+------+---------+-----+-------+
-|               | Analog offset             | −0.25|         | 0.25| V     |
+|               | Analog offset             | TBD  |         | TBD | V     |
 +---------------+---------------------------+------+---------+-----+-------+
 
 Single ended AC coupled inputs Trigger and GATE with configurable DC
@@ -189,10 +189,10 @@ offset bias.
 Symbol                  Parameter         Min    Typical Max    Units
 ======================  ================= ====== ======= ====== ==============
 V\ :sub:`trig`          Pulse height                     5.0    V
-V\ :sub:`trigoffset`    DC offset         −1.25          1.25   V
-V\ :sub:`tdcoffset`     DC offset for TDC −1.25          −0.01  V
-Z\ :sub:`trig`          Input impedance          50             Ω
-t\ :sub:`pulse`         Pulse width       7              100    ns
+V\ :sub:`trigoffset`    DC offset         TBD            TBD    V
+V\ :sub:`tdcoffset`     DC offset for TDC TBD            TBD    V
+Z\ :sub:`trig`          Input impedance           50            Ω
+t\ :sub:`pulse`         Pulse width       TBD            TBD    ns
 ======================  ================= ====== ======= ====== ==============
 
 
@@ -235,21 +235,12 @@ Radiated emissions, noise immunity and safety highly depend on the
 quality of the enclosure. It is the responsibility of the system
 integrator to ensure that the assembled system is compliant to
 applicable standards of the country that the system is operated in,
-especially with regards to user safety and electromagnetic interference.
+especially with regard to user safety and electromagnetic interference.
 Compliance was only tested for attached cables shorter than 3 m.
 
 When handling the board, adequate measures have to be taken to protect
 the circuits against electrostatic discharge (ESD). All power supplied
 to the system must be turned off before installing the board.
-
-Cooling
-~~~~~~~
-
-The **Ndigo6G** in its base configuration has passive cooling that requires
-a certain amount of air flow. If the case design can’t provide enough
-air flow to the board, a slot cooler like Zalman ZM-SC100 can be placed
-next to the board. Active cooling is also available as an option to the
-board.
 
 
 
