@@ -155,16 +155,16 @@ conditions:
 Power Supply
 ~~~~~~~~~~~~
 
-======= =================================== ====== ======= ===== =====
-Symbol  Parameter                           Min    Typical Max   Units
-======= =================================== ====== ======= ===== =====
-I       PCIe 3.3V rail power consumption                   4     mA
-VCC     PCIe 3.3V rail power supply         3.1    3.3     3.6    V
-I       PCIe 12V rail power consumption                    2.1   A
-VCC     PCIe 12V rail power supply          11.1   12      12.9  V
-I       PCIe 3.3VAux rail power consumption        0             A
-VCC     PCIe 3.3VAux rail power supply             3.3           V
-======= =================================== ====== ======= ===== =====
+=============== ============================================= ====== ======= ===== =====
+Symbol          Parameter                                     Min    Typical Max   Units
+=============== ============================================= ====== ======= ===== =====
+I\ :sub:`3.3`   PCIe 3.3V rail power consumption                             4     mA
+VCC\ :sub:`3.3` PCIe 3.3V rail power supply                   3.1    3.3     3.6    V
+I\ :sub:`12`    PCIe 12V rail power consumption                              2.1   A
+VCC\ :sub:`12`  PCIe 12V rail power supply                    11.1   12      12.9  V
+I\ :sub:`aux`   PCIe 3.3V\ :sub:`aux` rail power consumption         0             A
+VCC\ :sub:`aux` PCIe 3.3V\ :sub:`aux` rail power supply              3.3           V
+=============== ============================================= ====== ======= ===== =====
 
 
 Analog Input
