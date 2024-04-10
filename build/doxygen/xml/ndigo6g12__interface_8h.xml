@@ -462,7 +462,7 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" kindref="member">alignment_mode</ref> = <computeroutput>false</computeroutput></para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a9b2604c0bb3cc03053716f4b17b38c7a" kindref="member">alignment_pin_high_z</ref> = <computeroutput>false</computeroutput></para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" kindref="member">alignment_pin_invert</ref> = <computeroutput>false</computeroutput></para>
-</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1adb55a4f3896e60734c3bcf1dc3833b6c" kindref="member">alignment_phase_mask</ref> = <computeroutput>0x1fc</computeroutput></para>
+</listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" kindref="member">alignment_phase_steps</ref> = <computeroutput>12</computeroutput></para>
 </listitem><listitem><para><ref refid="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" kindref="member">send_empty_packets</ref> = <computeroutput>false</computeroutput></para>
 </listitem></itemizedlist>
 </para>
@@ -1494,7 +1494,7 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <codeline lineno="1586"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1590" refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" kindref="member">alignment_pin_invert</ref>;</highlight></codeline>
 <codeline lineno="1591"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1595" refid="structndigo6g12__tdc__configuration_1adb55a4f3896e60734c3bcf1dc3833b6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__configuration_1adb55a4f3896e60734c3bcf1dc3833b6c" kindref="member">alignment_phase_mask</ref>;</highlight></codeline>
+<codeline lineno="1595" refid="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" kindref="member">alignment_phase_steps</ref>;</highlight></codeline>
 <codeline lineno="1596"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1600" refid="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" kindref="member">send_empty_packets</ref>;</highlight></codeline>
 <codeline lineno="1601"><highlight class="normal">}<sp/><ref refid="structndigo6g12__tdc__configuration" kindref="compound">ndigo6g12_tdc_configuration</ref>;</highlight></codeline>

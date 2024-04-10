@@ -85,14 +85,14 @@ Default is <computeroutput>false</computeroutput>. </para>
 </inbodydescription>
 <location file="source/ndigo6g12_interface.h" line="1590" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1590" bodyend="-1"/>
 </memberdef>
-<memberdef kind="variable" id="structndigo6g12__tdc__configuration_1adb55a4f3896e60734c3bcf1dc3833b6c" prot="public" static="no" mutable="no">
+<memberdef kind="variable" id="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" prot="public" static="no" mutable="no">
 <type>int</type>
-<definition>int alignment_phase_mask</definition>
+<definition>int alignment_phase_steps</definition>
 <argsstring></argsstring>
-<name>alignment_phase_mask</name>
-<qualifiedname>ndigo6g12_tdc_configuration::alignment_phase_mask</qualifiedname>
+<name>alignment_phase_steps</name>
+<qualifiedname>ndigo6g12_tdc_configuration::alignment_phase_steps</qualifiedname>
 <briefdescription>
-<para>Default is <computeroutput>0x1fc</computeroutput>. </para>
+<para>Default is 12. </para>
 </briefdescription>
 <detaileddescription>
 </detaileddescription>
@@ -151,7 +151,7 @@ Default is <computeroutput>false</computeroutput>. </para>
 <location file="source/ndigo6g12_interface.h" line="1560" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1560" bodyend="1601"/>
 <listofallmembers>
 <member refid="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_mode</name></member>
-<member refid="structndigo6g12__tdc__configuration_1adb55a4f3896e60734c3bcf1dc3833b6c" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_phase_mask</name></member>
+<member refid="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_phase_steps</name></member>
 <member refid="structndigo6g12__tdc__configuration_1a9b2604c0bb3cc03053716f4b17b38c7a" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_pin_high_z</name></member>
 <member refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>alignment_pin_invert</name></member>
 <member refid="structndigo6g12__tdc__configuration_1a50521bcda4beea471b80ea792ca559d4" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_configuration</scope><name>channel</name></member>

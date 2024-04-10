@@ -188,7 +188,7 @@
 <member refid="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" kind="variable"><name>alignment_mode</name></member>
 <member refid="structndigo6g12__tdc__configuration_1a9b2604c0bb3cc03053716f4b17b38c7a" kind="variable"><name>alignment_pin_high_z</name></member>
 <member refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" kind="variable"><name>alignment_pin_invert</name></member>
-<member refid="structndigo6g12__tdc__configuration_1adb55a4f3896e60734c3bcf1dc3833b6c" kind="variable"><name>alignment_phase_mask</name></member>
+<member refid="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" kind="variable"><name>alignment_phase_steps</name></member>
 <member refid="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" kind="variable"><name>send_empty_packets</name></member>
 </compound>
 <compound refid="structndigo6g12__tdc__gating__block" kind="struct"><name>ndigo6g12_tdc_gating_block</name>

@@ -111,8 +111,8 @@ extern "C" {
  *           @endlink.
  * @{
  */
-/*! 
- * @brief Averaging mode. 
+/*!
+ * @brief Averaging mode.
  * @verbatim embed:rst:leading-asterisk
  *        For more information, see :numref:`Section %s<Averaging Mode>`.
  * @endverbatim
@@ -1488,11 +1488,11 @@ typedef struct {
     /*!
      * @brief   Determines if saturation arithmetic is used by the averager.
      * @details .
-     *          - `true`: Instead of _averaging_value_ over(under)flowing once 
+     *          - `true`: Instead of _averaging_value_ over(under)flowing once
      *            _max(min)_averaging_value_ is reached, the maximum (minimum)
      *            value is kept.
-     *          - `false`: Once _averaging_value_ reaches 
-     *            _max(min)_averaging_value_, _averaging_value_ will 
+     *          - `false`: Once _averaging_value_ reaches
+     *            _max(min)_averaging_value_, _averaging_value_ will
      *            over(under)flow and wrap around.
      *          .
      * @details See @link ndigo6g12_averager_configuration::stop_on_overflow
@@ -1590,9 +1590,9 @@ typedef struct {
     crono_bool_t alignment_pin_invert;
 
     /*!
-     * @brief   Default is `0x1fc`.
+     * @brief   Default is 12.
      */
-    int alignment_phase_mask;
+    int alignment_phase_steps;
 
     /*!
      * @brief   Default is `false`.
@@ -1706,13 +1706,13 @@ typedef struct {
      *          @ref auto_trigger_period and @f$N@f$ =
      *          @ref auto_trigger_random_exponent that result in a distance
      *          between triggers of
-     *          @f$ T = 1 + M + [1 \dots 2^N] @f$
+     *          @f$ T = M + [1 \dots 2^N] - 1 @f$
      *          clock cycles, where
      *          @f$ 6 \le M < 2^{32} @f$ and
      *          @f$ 0 \le N < 32 @f$.
      * @details There is no enable or reset as the usage of this trigger can
      *          be configured in the channels. Each clock cycle is 5&nbsp;ns.
-     * @details Default is 200000.
+     * @details Default is 200000, corresponding to a 1&nbsp;kHz auto trigger.
      */
     int auto_trigger_period;
 
@@ -1751,8 +1751,8 @@ typedef struct {
      */
     crono_bool_t ramp_test_mode;
 
-    /*! 
-     * @brief   Calculate sample average for multi-sampling modes 
+    /*!
+     * @brief   Calculate sample average for multi-sampling modes
      *          @ref NDIGO6G12_ADC_MODE_AAAA "AAAA",
      *          @ref NDIGO6G12_ADC_MODE_DDDD "DDDD",
      *          @ref NDIGO6G12_ADC_MODE_AADD "AADD",
@@ -1918,8 +1918,8 @@ NDIGO6G12_API int ndigo6g12_get_fast_info(ndigo6g12_device *device, ndigo6g12_fa
  *     alignment_pin_high_z@endlink = `false`
  *   - @link ndigo6g12_tdc_configuration::alignment_pin_invert
  *     alignment_pin_invert@endlink = `false`
- *   - @link ndigo6g12_tdc_configuration::alignment_phase_mask
- *     alignment_phase_mask@endlink = `0x1fc`
+ *   - @link ndigo6g12_tdc_configuration::alignment_phase_steps
+ *     alignment_phase_steps@endlink = `12`
  *   - @link ndigo6g12_tdc_configuration::send_empty_packets
  *     send_empty_packets@endlink = `false`
  *
