@@ -2,10 +2,10 @@ Introduction
 ============
 
 The Ndigo6G-12 offers 6400 Msps sample rate, 12 bit resolution and a greatly
-improved readout rate of 6000 MB/s.  
+improved readout rate of 5200 MB/s.  
 
 The unit is a combined ADC/TDC board for the acquisition of pulses in 
-time-of-flight applications. It builds on the established Platform of the 
+time-of-flight applications. It builds on the established platform of the 
 `Ndigo5G-10 <https://www.cronologic.de/product/ndigo5g-10>`_ but takes it to 
 the next level both in performance and flexibility.
 
@@ -32,9 +32,10 @@ Features
 
 - **Four TDC channels** with a resolution of **12** |nbws| **ns**.
 
-- Digital TDC inputs can also be used for **gating and triggering**.
+- **Two digital control inputs** for effective
+  **gating and triggering**.
 
-- PCIe3 x8 1.1 with **TODO** |nbws| **MB/s throughput** for simple and fast
+- PCIe3 x8 with **TODO** |nbws| **MB/s throughput** for simple and fast
   data transfer to most PCs.
 
 .. - **Synchronization of up to eight boards** via reference clock if more than
@@ -42,11 +43,13 @@ Features
 
 - **Unlimited multihit** capabilities.
 
-- Continuous ADC readout rate of approx. **6000** |nbws| **MB/s**.
+- **Common start** and **common stop** capabilities.
+
+- Continuous ADC readout rate of approx. **5200** |nbws| **MB/s**.
 
 - **Zero suppression** reducing PCIe load.
 
-- **Internal 10 MHz** clock with a time base of **50** |nbws| **ppb** or the
+- **Internal 10 MHz** clock with a time base of **25** |nbws| **ppb** or the
   **ability to use an external** 10 |nbws| MHz clock.
 
 
@@ -60,7 +63,7 @@ Board overview
 +------------------------------------+---------------------------------------------+
 | TDC channels                       | 4                                           |
 +------------------------------------+---------------------------------------------+
-| Gating channels                    | 4                                           |
+| Digital control channels           | 2                                           |
 +------------------------------------+---------------------------------------------+
 | Connectors                         | 10 :math:`\times` LEMO 00                   |
 +-------------+----------------------+---------------------------------------------+
@@ -70,26 +73,26 @@ Board overview
 +-------------+----------------------+---------------------------------------------+
 | Resolution                         | 12 bit                                      |
 +------------------------------------+---------------------------------------------+
-| Double pulse resolution            | TBD                                         |
-+------------------------------------+---------------------------------------------+
 | Maximum bandwidth                  | TBD                                         |
 +------------------------------------+---------------------------------------------+
 | TDC bin size                       | 12 ps                                       |
++------------------------------------+---------------------------------------------+
+| TDC double pulse resolution        | typicaly 4 ns                               |
 +------------------------------------+---------------------------------------------+
 | Multihit                           | unlimited                                   |
 +------------------------------------+---------------------------------------------+
 | Dead time between groups           | none                                        |
 +--------------+---------------------+---------------------------------------------+
-| Readout rate | | ADC               | | TBD                                       |
+| Readout rate | | ADC               | | 5200 MByte/s                              |
 |              | | TDC               | | approx. 6000 MByte/s                      |
 +--------------+---------------------+---------------------------------------------+
-| Range                              | TBD                                         |
+| Timestamp range                    | 106 d                                       |
 +------------------------------------+---------------------------------------------+
 | Synchronization                    | up to 8 boards                              |
 +------------------------------------+---------------------------------------------+
-| Readout interface                  | PCIe3 :math:`\times` 8                      |
+| Readout interface                  | PCIe3 x8                                    |
 +------------------------------------+---------------------------------------------+
-| Time base                          | 50 ppb (internal) or external 10 MHz clock  |
+| Time base                          | 25 ppb (internal) or external 10 MHz clock  |
 +------------------------------------+---------------------------------------------+
 | On-board calibration data storage  | yes                                         |
 +------------------------------------+---------------------------------------------+
