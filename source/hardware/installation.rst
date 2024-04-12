@@ -1,5 +1,5 @@
-Installing the Board
---------------------
+Installation
+------------
 
 The Ndigo6G-12 board can be installed in any PCIe x8 (or higher
 amount of lanes) PCIe slot.
