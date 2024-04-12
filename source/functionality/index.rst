@@ -9,5 +9,4 @@ Functionality
     trigger
     gating
     auto_trigger
-    timestamps
     averaging

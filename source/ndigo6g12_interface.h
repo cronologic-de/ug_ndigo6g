@@ -1706,13 +1706,13 @@ typedef struct {
      *          @ref auto_trigger_period and @f$N@f$ =
      *          @ref auto_trigger_random_exponent that result in a distance
      *          between triggers of
-     *          @f$ T = M + [1 \dots 2^N] - 1 @f$
+     *          @f$ T = 1 + M + [1 \dots 2^N] @f$
      *          clock cycles, where
      *          @f$ 6 \le M < 2^{32} @f$ and
      *          @f$ 0 \le N < 32 @f$.
      * @details There is no enable or reset as the usage of this trigger can
      *          be configured in the channels. Each clock cycle is 5&nbsp;ns.
-     * @details Default is 200000, corresponding to a 1&nbsp;kHz auto trigger.
+     * @details Default is 200000.
      */
     int auto_trigger_period;
 
