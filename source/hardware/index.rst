@@ -11,53 +11,6 @@ Hardware
    calibration
 
 
-.. Installing the Board
-.. --------------------
-
-.. The **Ndigo6G** board can be installed in any :math:`\times`\ 8 (or higher
-.. amount of lanes) PCIe slot. :raw-latex:`{\color{red}` If the slot electrically
-.. supports less than eight lanes, the board will operate at lower data throughput
-.. rates. :raw-latex:`}`
-
-.. Please ensure proper cooling of the device. The **Ndigo6G** has an onboard
-.. temperature detection. If the ADC chip temperature exceeds 90°C a warning is
-.. issued to the device driver. In case the temperature is higher than 95°C the
-.. ADC is disabled to avoid damage. Using a PCI-slot cooler is in many cases an
-.. appropriate solution to circumvent problems caused by overheating if the board
-.. is used inside a PC. The Ndigo-Crate will provide sufficient cooling under
-.. normal operating conditions. Using a single **Ndigo6G**, no further
-.. connections need to be made.
-
-.. 
-   For applications that require more than four ADC channels, several Ndigo
-   boards can be operated in sync. Any board of the **Ndigo product line** can be
-   synced to other Ndigo boards, allowing, for instance, for a combination
-   of high speed ADCs (e.g., **Ndigo5G**) and slower high resolution ADCs
-   (**Ndigo250M-14**).
-
-.. The signals used for board synchronization and inter-board triggering are
-.. transferred on a bus between the boards. Join all C2 connectors (see
-.. :numref:`Figure %s<Fig 2.3>`) on the boards using a ribbon cable. Both ends of
-.. the bus need to be terminated properly. In case a **Ndigo-Crate** is used,
-.. connectors providing proper termination are located on the crate mainboard
-.. next to the PCIe slots to the extreme left and right (for more details, please
-.. refer to the `Ndigo-Crate User Guide <https://download.cronologic.de/
-.. PCIe-Crates/Ndigo_Crate_User_Guide.pdf>_`) In applications that use only a few
-.. Ndigo boards directly inside a PC, termination PCBs available from cronologic
-.. can be used.
-
-.. The standard device driver of the **Ndigo6G** can be used to read out all
-.. boards and acquire data. For more complex scenarios, using the
-.. *cronoSync-library* (which is part of *cronoTools*) is recommended. The
-.. *cronoSync-library* is provided with the Ndigo device driver. Please refer to
-.. the **cronoTools User Guide** for more information.
-
-.. .. _Fig 2.1:
-.. .. figure:: figures/Ndigo_Intercon.*
-
-..    If several Ndigo boards are connected to work in sync, the boards
-..    must be connected using a ribbon cable as a bus for synchronization and
-..    trigger signals. Proper termination is required at both ends of the cable.
 
 .. Ndigo6G External Inputs and Connectors
 .. --------------------------------------

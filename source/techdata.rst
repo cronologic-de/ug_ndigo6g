@@ -130,6 +130,7 @@ The board is designed to be operated under the following conditions:
 +---------+-------------------------+------+---------+------+------------------------------+
 
 
+.. _techdata environmental conditions for storage:
 
 Environmental Conditions for Storage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
