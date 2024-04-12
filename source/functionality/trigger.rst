@@ -109,11 +109,11 @@ setting the appropriate bits in the bitmask
    BUS0, BUS1, BUS2 and BUS3 have simpler trigger units.
 
 
-.. _Fig 2.18:
-.. figure:: ../figures/ExtensionBlock.*
+.. .. _Fig 2.18:
+.. .. figure:: ../figures/ExtensionBlock.*
 
-   The extension block combines signals from
-   the optional extension board and the sync cable.
+..    The extension block combines signals from
+..    the optional extension board and the sync cable.
 
 
 .. _fig triggermatrix:
