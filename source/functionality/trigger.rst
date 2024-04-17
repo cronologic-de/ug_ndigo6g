@@ -105,24 +105,18 @@ setting the appropriate bits in the bitmask
 .. _Fig 2.17:
 .. figure:: ../figures/DigitalInput.*
 
-   The digital inputs Trigger, GATE,
-   BUS0, BUS1, BUS2 and BUS3 have simpler trigger units.
-
-
-.. .. _Fig 2.18:
-.. .. figure:: ../figures/ExtensionBlock.*
-
-..    The extension block combines signals from
-..    the optional extension board and the sync cable.
+   The digital inputs TDC0, TDC1, TDC2, TDC4, FPGA0, and FPGA1
+   have simpler trigger units.
 
 
 .. _fig triggermatrix:
 .. figure:: ../figures/triggermatrix.*
 
-   Trigger Matrix: The trigger signals of each ADC channel, the trigger
-   input, the GATE input or the sync cable can be combined to create a
-   trigger input for each trigger block. The four gate signals can be used
-   to suppress triggers during certain time frames.
+   Trigger Matrix. The eight trigger signals from the four analog channels and
+   the trigger signals from the six digital channels (four TDC channels, FPGA0,
+   FPGA1) can be combined to create a trigger input for each *trigger block*.
+   Additionally, four *gate signals* can be used to suppress trigger during
+   configurable time frames.
 
 .. _gating trigger events:
 
