@@ -3,12 +3,12 @@ Technical Data
 
 - Input Passband: **4.5 MHz** to **950 MHz**
 
-- Power Requirements: **25 W**
+- Power Requirements: **35 W**
 
 - Mechanical Dimensions:
   **170 mm** :math:`\times` **106 mm**
 
-- Throughput: **800 MByte/s** on PCIe x4
+- Throughput: **800 MByte/s** on PCIe x8
 
 
 Digitizer Characteristics
@@ -126,7 +126,7 @@ The board is designed to be operated under the following conditions:
 | RH      | relative                | 20   |         | 75   | %                            |
 |         | humidity at             |      |         |      |                              |
 |         | 31\ :math:`^{\circ}`\ C |      |         |      |                              |
-|         |                         |      |         |      |                              |
+|         | non condensing          |      |         |      |                              |
 +---------+-------------------------+------+---------+------+------------------------------+
 
 
@@ -155,45 +155,51 @@ conditions:
 Power Supply
 ~~~~~~~~~~~~
 
-=============== ============================================= ====== ======= ===== =====
-Symbol          Parameter                                     Min    Typical Max   Units
-=============== ============================================= ====== ======= ===== =====
-I\ :sub:`3.3`   PCIe 3.3V rail power consumption                             TBD   mA
-VCC\ :sub:`3.3` PCIe 3.3V rail power supply                   TBD            TBD    V
-I\ :sub:`12`    PCIe 12V rail power consumption                              TBD   A
-VCC\ :sub:`12`  PCIe 12V rail power supply                    TBD            TBD   V
-I\ :sub:`aux`   PCIe 3.3V\ :sub:`aux` rail power consumption                 TBD   A
-VCC\ :sub:`aux` PCIe 3.3V\ :sub:`aux` rail power supply                      TBD   V
-=============== ============================================= ====== ======= ===== =====
+=============== ============================================== ====== ======= ===== =====
+Symbol          Parameter                                      Min    Typical Max   Units
+=============== ============================================== ====== ======= ===== =====
+I\ :sub:`3.3`   PCIe 3.3 V rail power consumption                      0.42          W
+VCC\ :sub:`3.3` PCIe 3.3 V rail power supply                   3.1     3.3    3.6    V
+I\ :sub:`12`    PCIe 12 V rail power consumption\ :sup:`1`             31            W
+VCC\ :sub:`12`  PCIe 12 V rail power supply\ :sup:`1`          11.1    12     12.9   V
+I\ :sub:`aux`   PCIe 3.3 V\ :sub:`aux` rail power consumption          0             W
+VCC\ :sub:`aux` PCIe 3.3 V\ :sub:`aux` rail power supply               3.3           V
+=============== ============================================== ====== ======= ===== =====
+
+.. note::
+
+  :sup:`1` The 12 V power is sourced solely from the GPU power connector.
 
 
-Analog Input
-~~~~~~~~~~~~
+Analog Inputs
+~~~~~~~~~~~~~
 
 AC coupled single-ended analog inputs:
 
 +---------------+---------------------------+------+---------+-----+-------+
 |Symbol         |  Parameter                | Min  | Typical | Max | Units |
 +===============+===========================+======+=========+=====+=======+
-| V\ :sub:`p-p` | Peak to peak input voltage|      |         | TBD | V     |
+| V\ :sub:`p-p` | Peak to peak input voltage|      |         | 1   | V     |
 +---------------+---------------------------+------+---------+-----+-------+
 | Z\ :sub:`p`   | Input impedance           |      | 50      |     | Ω     |
 +---------------+---------------------------+------+---------+-----+-------+
-|               | Analog offset             | TBD  |         | TBD | V     |
+|               | Adjustable offset         | -0.5 |         | 0.5 | V     |
 +---------------+---------------------------+------+---------+-----+-------+
 
-Single ended AC coupled inputs Trigger and GATE with configurable DC
-offset bias.
+Digital Inputs
+~~~~~~~~~~~~~~
 
-======================  ================= ====== ======= ====== ==============
-Symbol                  Parameter         Min    Typical Max    Units
-======================  ================= ====== ======= ====== ==============
-V\ :sub:`trig`          Pulse height                     5.0    V
-V\ :sub:`trigoffset`    DC offset         TBD            TBD    V
-V\ :sub:`tdcoffset`     DC offset for TDC TBD            TBD    V
-Z\ :sub:`trig`          Input impedance           50            Ω
-t\ :sub:`pulse`         Pulse width       TBD            TBD    ns
-======================  ================= ====== ======= ====== ==============
+AC coupled single-ended digital inputs:
+
++---------------+---------------------------+------+---------+-----+-------+
+|Symbol         |  Parameter                | Min  | Typical | Max | Units |
++===============+===========================+======+=========+=====+=======+
+| V\ :sub:`p-p` | Peak to peak input voltage|      |         | 1.3 | V     |
++---------------+---------------------------+------+---------+-----+-------+
+| Z\ :sub:`p`   | Input impedance           |      | 50      |     | Ω     |
++---------------+---------------------------+------+---------+-----+-------+
+|               | Adjustable offset         | -1.3 |         | 1.3 | V     |
++---------------+---------------------------+------+---------+-----+-------+
 
 
 Information Required by DIN EN 61010-1
