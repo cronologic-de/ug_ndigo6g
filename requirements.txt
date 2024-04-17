@@ -1,4 +1,4 @@
-sphinx=7.2.6
+sphinx==7.2.6
 breathe
 furo
 matplotlib
