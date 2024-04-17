@@ -3,7 +3,7 @@ Zero Suppression
 One of the Ndigo6G-12's key features is on-board zero suppression to reduce
 PCIe bus load.
 Only data that passes specifications predefined by the user is transmitted.
-Data is transmitted as so-called “packets.”
+Data is transmitted as so-called “:doc:`packets <../packform/index>`.”
 For the ADC channels, the packet contains the waveform data and a timestamp
 giving the absolute time (i.e., the time since the start of the data
 acquisition) of the packet's last sample.

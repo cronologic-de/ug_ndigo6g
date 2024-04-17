@@ -110,6 +110,18 @@ The Ndigo6G-12 uses an OCXO oscillator with **25 ppb** stability.
 After power up the oscillator needs to run for **10 minutes** to reach this
 stability.
 
++-------------------+--------------------------------------+-----+---------+------+-----+
+| Symbol            | Parameter                            | Min | Typical | Max  | ppb |
++===================+======================================+=====+=========+======+=====+
+| ΔT                | Temperature stability 20 °C to 70 °C |     |         | 25   | ppb |
++-------------------+--------------------------------------+-----+---------+------+-----+
+| F\ :sub:`0`       | Initial calibration                  |     |         | 500  | ppb |
++-------------------+--------------------------------------+-----+---------+------+-----+
+| ΔF / F\ :sub:`1`  | Aging first year                     |     |         | 100  | ppb |
++-------------------+--------------------------------------+-----+---------+------+-----+
+| ΔF / F\ :sub:`10` | Aging 10 years                       |     |         | 1000 | ppb |
++-------------------+--------------------------------------+-----+---------+------+-----+
+
 .. _techdata environmental conditions for operation:
 
 Environmental Conditions for Operation
@@ -130,6 +142,7 @@ The board is designed to be operated under the following conditions:
 +---------+-------------------------+------+---------+------+------------------------------+
 
 
+.. _techdata environmental conditions for storage:
 
 Environmental Conditions for Storage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

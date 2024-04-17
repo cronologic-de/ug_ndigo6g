@@ -81,6 +81,7 @@ TDC DC Offsets
 .. doxygengroup:: defdcoffset
 
 
+.. _sec output mode:
 
 Output Mode
 ^^^^^^^^^^^
