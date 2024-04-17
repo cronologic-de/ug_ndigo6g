@@ -84,12 +84,16 @@ configure, respectively, TDC channels 0 to 3:
 
 :cpp:member:`trigger[NDIGO6G12_TRIGGER_TDC0:NDIGO6G12_TRIGGER_TDC3] <ndigo6g12_configuration::trigger>`
     Configure if an edge or level trigger is used (relevant, if the TDCs are used in
-    :cpp:member:`trigger <ndigo6g12_configuration::trigger_block>` or 
+    :cpp:member:`trigger_blocks <ndigo6g12_configuration::trigger_block>` or 
     :cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`)
     and if the rising or falling edge of the input signal triggers.
 
-:cpp:member:`tdc_configuration.channel[0:3] <ndigo6g12_configuration::tdc_configuration>`
-    Configure if and when timestamps are recorded on the TDC channel.
+:cpp:member:`tdc_configuration.channel[0:3] <ndigo6g12_tdc_configuration::channel>`
+    Configure if
+    (:cpp:member:`channel[0:3].enable <ndigo6g12_tdc_channel::enable>`)
+    and when 
+    (:cpp:member:`channel[0:3].gating_block <ndigo6g12_tdc_channel::gating_block>`)
+    timestamps are recorded on the TDC channel.
     
 The trigger unit input logic is summarized, as well, in 
 :numref:`Figure %s<Fig 2.17>`.
