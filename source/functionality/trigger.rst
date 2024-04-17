@@ -133,7 +133,7 @@ as outlined in
 In return, the 
 :cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`
 can be used to block writing data to the FIFO. That way, only
-zero suppressed data occurring when the selected gate is active is transmitted.
+zero-suppressed data occurring when the selected gate is active is transmitted.
 This procedure reduces PCIe bus load even further.
 
 Which 
