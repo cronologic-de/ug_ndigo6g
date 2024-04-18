@@ -294,7 +294,7 @@ cronologic is registered with the “Stiftung Elektro-Altgeräte Register”
 as a manufacturer of electronic systems with **Registration ID DE
 77895909**.
 
-The Ndigo6G belongs to **category 9**, **“Überwachungs und
+The Ndigo6G-12 belongs to **category 9**, **“Überwachungs und
 Kontrollinstrumente für ausschließlich gewerbliche Nutzung”.** The last owner
 of an Ndigo6G must recycle it, treat the board in compliance with **§11**
 and **§12** of the German ElektroG, or return it to the manufacturer’s address
@@ -306,7 +306,7 @@ Export Control
 The Ndigo6G product line is a dual use item under
 `Council Regulation (EC) No 428/2009 of 5 May 2009 setting up a Community 
 regime for the control of exports, transfer, brokering and transit of dual-use
-items <https://data.europa.eu/eli/reg/2009/428/2021-10-077>`__ in
+items <https://eur-lex.europa.eu/eli/reg/2009/428/oj>`__ in
 section **3A002h.** Similar regulations exist in many countries outside Europe.
 
 An export permit is required to export this product from the European
