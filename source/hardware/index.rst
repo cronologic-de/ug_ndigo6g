@@ -4,7 +4,7 @@ Hardware
 
 .. toctree::
    :caption: Contents
-   
+
    installation
    connections
    update
@@ -294,7 +294,7 @@ Hardware
 
 .. After installing the Ndigo device driver, a firmware update tool is
 .. available. By choosing “NdigoFirmwareGUI.exe” a firmware update can be
-.. performed. After invoking the application a window as shown in 
+.. performed. After invoking the application a window as shown in
 .. :numref:`Figure %s<fig Firmware>` will appear. The tool can be used for
 .. updating the firmware and to create a backup of the on-board calibration
 .. data of the Ndigo unit. If several boards are present, the one which is
@@ -315,7 +315,7 @@ Hardware
 ..    Ndigo device driver.
 
 .. .. note::
-   
+
 ..    The new firmware will only be used after a power
 ..    cycle, i.e., after switching the PC (or Ndigo crate) off and back on. A
 ..    simple reboot is not sufficient. Therefore the information shown in the
@@ -336,7 +336,7 @@ Hardware
 .. After each update of the Ndigo5G-10 firmware the TDC has to be
 .. calibrated. The calibration is done with the tool “TDCCalibration.exe”
 .. which is available after installing the Ndigo device driver. After
-.. invoking the application a window as shown in 
+.. invoking the application a window as shown in
 .. :numref:`Figure %s<fig Calib>` will appear.
 
 .. .. _fig Calib:

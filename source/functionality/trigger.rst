@@ -8,7 +8,7 @@ Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory.
 Each ADC channel has one trigger block determining whether data is written to
 the FIFO.
-The parameters are set in Structures :cpp:struct:`ndigo6g12_trigger` and 
+The parameters are set in Structures :cpp:struct:`ndigo6g12_trigger` and
 :cpp:struct:`ndigo6g12_trigger_block`.
 
 Each :cpp:member:`trigger_block <ndigo6g12_configuration::trigger_block>`
@@ -19,11 +19,11 @@ are configured using the :cpp:struct:`ndigo6g12_trigger` structure.
 Trigger configuration
 ^^^^^^^^^^^^^^^^^^^^^
 
-Users can specify a :cpp:member:`threshold <ndigo6g12_trigger::threshold>` 
-and can choose whether triggering is used 
+Users can specify a :cpp:member:`threshold <ndigo6g12_trigger::threshold>`
+and can choose whether triggering is used
 whenever incoming data is below or above the threshold (level triggering,
-see :numref:`Figure %s<fig level trigger>`) or 
-only if data exceeds the threshold (edge triggering, see 
+see :numref:`Figure %s<fig level trigger>`) or
+only if data exceeds the threshold (edge triggering, see
 :numref:`Figure %s<fig edge trigger>`).
 
 .. _fig level trigger:
@@ -38,23 +38,23 @@ only if data exceeds the threshold (edge triggering, see
 
 
 A gate :cpp:member:`length <ndigo6g12_trigger_block::length>` can be set to
-extend the trigger window by multiples of 5 ns. 
+extend the trigger window by multiples of 5 ns.
 Furthermore, a :cpp:member:`precursor <ndigo6g12_trigger_block::precursor>`
-window can be specified, causing the trigger unit to write data to 
+window can be specified, causing the trigger unit to write data to
 the FIFO (:code:`precursor` :math:`\times` 5 ns) before the trigger event.
 
-When edge triggering is used, all packets have the same length of 
+When edge triggering is used, all packets have the same length of
 (:code:`precursor` + :code:`length` + 1)-cycles of 5 ns.
 For level triggering, packet length is data dependent.
 
 Please note that triggering is not accurate to sample. For each
 5 ns clock cycle, it is determined whether on any sample during that clock
-cycle a trigger condition is met. If it was met during a clock cycle, that 
-cycle is then selected as the trigger point. 
+cycle a trigger condition is met. If it was met during a clock cycle, that
+cycle is then selected as the trigger point.
 As a result, the trigger sample can be anywhere
 within a range of up to 8, 16, or 32 samples depending on the channel mode
 (see :numref:`Section %s<ADC modes>` and :numref:`Figures %s<Fig 2.13>`,
-:numref:`%s<Fig 2.14>`, and :numref:`%s<Fig 2.15>`). 
+:numref:`%s<Fig 2.14>`, and :numref:`%s<Fig 2.15>`).
 
 If :cpp:member:`retrigger <ndigo6g12_trigger_block::retrigger>` is enabled,
 the current trigger window is extended if a trigger event is detected inside
@@ -80,7 +80,7 @@ the window (see :numref:`Figure %s<figure zero suppression>`).
 Trigger inputs
 ^^^^^^^^^^^^^^
 
-A :cpp:struct:`trigger_block <ndigo6g12_trigger_block>` can use several 
+A :cpp:struct:`trigger_block <ndigo6g12_trigger_block>` can use several
 input :cpp:member:`sources <ndigo6g12_trigger_block::sources>`:
 
 -  The eight trigger decision units of all four ADC channels
@@ -91,7 +91,7 @@ input :cpp:member:`sources <ndigo6g12_trigger_block::sources>`:
 
 Trigger inputs from the above sources can be concatenated using a logical
 OR (:numref:`Figure %s<fig triggermatrix>`) by
-setting the appropriate bits in the bitmask 
+setting the appropriate bits in the bitmask
 :cpp:member:`ndigo6g12_trigger_block::sources`.
 
 
@@ -123,20 +123,20 @@ setting the appropriate bits in the bitmask
 Gating trigger events
 ^^^^^^^^^^^^^^^^^^^^^
 
-Triggers can be fed into the 
+Triggers can be fed into the
 :cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`
 as outlined in
-:numref:`Chapter %s<section gating blocks>` and 
+:numref:`Chapter %s<section gating blocks>` and
 :numref:`Figure %s<Fig 2.20>`.
 
 
-In return, the 
+In return, the
 :cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`
 can be used to block writing data to the FIFO. That way, only
 zero-suppressed data occurring when the selected gate is active is transmitted.
 This procedure reduces PCIe bus load even further.
 
-Which 
+Which
 :cpp:member:`gating_block <ndigo6g12_configuration::gating_block>`
 is used to block a particular
 :cpp:member:`trigger_block <ndigo6g12_configuration::trigger_block>`

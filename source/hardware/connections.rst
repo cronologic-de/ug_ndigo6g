@@ -8,7 +8,7 @@ The inputs of the Ndigo6G-12 board are located on the PCI bracket.
 
 :numref:`Figure %s<Fig 2.2>` shows the location of the four analog inputs A to
 D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs E to H
-(see :numref:`Section %s<digital TDC inputs>`), and the two digital control 
+(see :numref:`Section %s<digital TDC inputs>`), and the two digital control
 inputs FPGA0 and FPGA1 (see :numref:`Section %s<digital ctrl inputs>`).
 
 .. _Fig 2.2:
@@ -41,8 +41,8 @@ can move the common mode voltage to a value of their choice using the
 parameter of each channel before sampling.
 
 This feature is useful for highly asymmetric signals, such as pulses
-from `TOF <https://www.cronologic.de/applications/tof-mass-spectrometry>`_ 
-spectrometers or `LIDAR <https://www.cronologic.de/applications/lidar>`_ 
+from `TOF <https://www.cronologic.de/applications/tof-mass-spectrometry>`_
+spectrometers or `LIDAR <https://www.cronologic.de/applications/lidar>`_
 systems. Without analog offset
 compensation, the pulses would begin in the middle of the ADC range,
 effectively cutting the dynamic range in half
@@ -84,18 +84,18 @@ configure, respectively, TDC channels 0 to 3:
 
 :cpp:member:`trigger[NDIGO6G12_TRIGGER_TDC0:NDIGO6G12_TRIGGER_TDC3] <ndigo6g12_configuration::trigger>`
     Configure if an edge or level trigger is used (relevant, if the TDCs are used in
-    :cpp:member:`trigger_blocks <ndigo6g12_configuration::trigger_block>` or 
+    :cpp:member:`trigger_blocks <ndigo6g12_configuration::trigger_block>` or
     :cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`)
     and if the rising or falling edge of the input signal triggers.
 
 :cpp:member:`tdc_configuration.channel[0:3] <ndigo6g12_tdc_configuration::channel>`
     Configure if
     (:cpp:member:`channel[0:3].enable <ndigo6g12_tdc_channel::enable>`)
-    and when 
+    and when
     (:cpp:member:`channel[0:3].gating_block <ndigo6g12_tdc_channel::gating_block>`)
     timestamps are recorded on the TDC channel.
-    
-The trigger unit input logic is summarized, as well, in 
+
+The trigger unit input logic is summarized, as well, in
 :numref:`Figure %s<Fig 2.17>`.
 
 .. _digital ctrl inputs:
@@ -112,14 +112,14 @@ and :doc:`gating blocks <../functionality/gating>` with maximum sampling rate.
 Thus, we recommend using these inputs as digital triggers and gates instead
 of the TDC inputs described in :numref:`Section %s<Fig 2.17>`.
 
-The control inputs are configured analogously to the TDC inputs (see 
+The control inputs are configured analogously to the TDC inputs (see
 :numref:`Section %s<digital tdc inputs>` and
-:numref:`Figure %s<Fig 2.17>`), where indices 4 (5) and 
+:numref:`Figure %s<Fig 2.17>`), where indices 4 (5) and
 :c:macro:`NDIGO6G12_TRIGGER_FPGA0` (:c:macro:`NDIGO6G12_TRIGGER_FPGA1`)
 correspond to input FPGA0 (FPGA1).
 
 The input circuit and trigger logic is identical to the TDC inputs
-(see :numref:`Figures %s<fig digital input circuit>` and 
+(see :numref:`Figures %s<fig digital input circuit>` and
 :numref:`%s<Fig 2.17>`).
 
 Control Inputs as TDCs
@@ -128,7 +128,7 @@ The control inputs FPGA0 and FPGA1 can be used as low-resolution TDCs.
 
 .. hint::
 
-    To record timestamps with the FPGA0 or FPGA1 input, set 
+    To record timestamps with the FPGA0 or FPGA1 input, set
     :cpp:member:`ndigo6g12_configuration::tdc_configuration.channel[4||5]<ndigo6g12_tdc_channel::enable>`
     to :code:`true`.
 
@@ -144,5 +144,5 @@ The dead-time is 32 ns.
 
 .. .. note::
 
-..    When used with the TDC, the Trigger input supports negative pulses only. 
+..    When used with the TDC, the Trigger input supports negative pulses only.
 

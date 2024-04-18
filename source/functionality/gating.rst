@@ -11,18 +11,18 @@ Gating Blocks
     inverted and routed to the AND-gate feeding the trigger blocks. TODO
     update Figure.
 
-In order to decrease the amount of data transmitted to the PC, the Ndigo6G-12 
+In order to decrease the amount of data transmitted to the PC, the Ndigo6G-12
 includes four independent gate and delay units.
 
 They are configured using :cpp:member:`ndigo6g12_configuration::gating_block`.
 
-A gate and delay unit creates a gate window starting and closing at specified 
+A gate and delay unit creates a gate window starting and closing at specified
 times after a trigger event (as configured by the user with
-:cpp:member:`ndigo6g12_gating_block::start` and 
+:cpp:member:`ndigo6g12_gating_block::start` and
 :cpp:member:`stop <ndigo6g12_gating_block::stop>`).
 
 :cpp:member:`trigger_blocks <ndigo6g12_configuration::trigger_block>`
-can use the gate signal to suppress data acquisition, that is, 
+can use the gate signal to suppress data acquisition, that is,
 only data that fulfills zero suppression specifications occurring in an
 active gate window is written to the PC.
 
@@ -32,7 +32,7 @@ Configuration
 The inputs of each :cpp:member:`ndigo6g12_configuration::gating_block`
 is configured by :cpp:member:`ndigo6g12_gating_block::sources`.
 
-The :cpp:member:`retrigger <ndigo6g12_gating_block::retrigger>` feature will 
+The :cpp:member:`retrigger <ndigo6g12_gating_block::retrigger>` feature will
 create a new gate if a trigger occurs during an active gate window.
 
 The gate signal can be inverted using
@@ -98,7 +98,7 @@ the gate timing and delay unit.
 .. :numref:`Figure %s<fig triggermatrix>`) which can be used for
 .. example in a dual level trigger. For the acquisition of signal data with
 .. amplitudes between a lower and an upper bound, for example, two level
-.. triggers can be connected (see 
+.. triggers can be connected (see
 .. :numref:`Figure %s<fig dualleveltrig>`): a falling level trigger
 .. with an upper threshold and a rising level trigger with a lower
 .. threshold.
@@ -106,7 +106,7 @@ the gate timing and delay unit.
 .. Since the triggers are only connected by OR in the triggerblock logic
 .. (see :numref:`Figure %s<fig triggermatrix>`) they are
 .. assigned to one of the gates each and connected with AND via the gating
-.. block region of the trigger matrix (see 
+.. block region of the trigger matrix (see
 .. :numref:`Figures %s<fig triggermatrix>` and
 .. :numref:`%s<fig dualleveltriglogic>`). Because of the
 .. dead times of the gates it is important to enable the retriggering

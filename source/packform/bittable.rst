@@ -32,7 +32,7 @@
     \endgroup
 
 .. only:: latex
-    
+
     Details:
 
     - The timestamp is relative to

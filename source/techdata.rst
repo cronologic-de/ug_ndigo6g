@@ -116,7 +116,7 @@ Oscillator Time Base
 |                   | Warm-up\ :sup:`2`                              |     |         | 3    | min.|
 +-------------------+------------------------------------------------+-----+---------+------+-----+
 
-:sup:`1`\ Over –40 °C to +85 °C; relative to stabilized frequency after 1 hour 
+:sup:`1`\ Over –40 °C to +85 °C; relative to stabilized frequency after 1 hour
 of continuous operation
 
 :sup:`2`\ @+25 °C; within ±100 ppb of F, where F is the stabilized frequency
@@ -250,10 +250,10 @@ application software and possible additional electronics to attach the
 system to some type of detector. They might also be integrated with the
 detector.
 
-The Ndigo6G is designed to comply with **DIN EN 61326-1** when operated on
+The Ndigo6G is designed to comply with **DIN EN 61326-1** when operated on
 a PCIe compliant main board housed in a properly shielded enclosure. When
 operated in a closed standard compliant PC enclosure the device does not
-pose any hazards as defined by **EN 61010-1.**
+pose any hazards as defined by **EN 61010-1.**
 
 Radiated emissions, noise immunity and safety highly depend on the
 quality of the enclosure. It is the responsibility of the system
@@ -278,8 +278,8 @@ Inputs
 ~~~~~~
 
 All inputs are AC coupled. The inputs have very high input bandwidth
-requirements and therefore there are no circuits that provide over
-voltage protection for these signals.
+requirements and therefore there are no circuits that provide overvoltage
+protection for these signals.
 
 .. danger::
   Any voltage on the inputs above **5 V**
@@ -304,7 +304,7 @@ Export Control
 ~~~~~~~~~~~~~~
 
 The Ndigo6G product line is a dual use item under
-`Council Regulation (EC) No 428/2009 of 5 May 2009 setting up a Community 
+`Council Regulation (EC) No 428/2009 of 5 May 2009 setting up a Community
 regime for the control of exports, transfer, brokering and transit of dual-use
 items <https://eur-lex.europa.eu/eli/reg/2009/428/oj>`__ in
 section **3A002h.** Similar regulations exist in many countries outside Europe.

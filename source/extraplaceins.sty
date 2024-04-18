@@ -47,7 +47,7 @@
   }}
  \DeclareOption{verbose}{\catcode`\V=9 }% Activate things after `V'
  \ProvidesPackage{extraplaceins}[2005/04/18 \space  v 2.2]
- \ProcessOptions 
+ \ProcessOptions
 } % end of \@ifundefined
 
 \def\FloatBarrier{\par\begingroup \let\@elt\relax
@@ -59,9 +59,9 @@ V  page \noexpand\thepage. }}\@tempa
  \else
     \ifx\@fltovf\relax % my indicator of recursion
        \if@firstcolumn V\PackageWarning{placeins}{Some floats are stuck,}%
-         \clearpage 
+         \clearpage
        \else V\PackageInfo{placeins}{Eject a column and check again:}%
-         \null\newpage\FloatBarrier 
+         \null\newpage\FloatBarrier
        \fi
     \else V\PackageInfo{placeins}{Must dump some floats}%
        \newpage \let\@fltovf\relax V\PackageInfo{placeins}{Check again:}%
@@ -80,32 +80,32 @@ V  page \noexpand\thepage. }}\@tempa
 
 Placeins.sty keeps floats `in their place', preventing them from floating
 past a "\FloatBarrier" command into another section.  To use it, declare
-"\usepackage{placeins}" and insert "\FloatBarrier" at places that floats 
-should not move past, perhaps at every "\section".  
+"\usepackage{placeins}" and insert "\FloatBarrier" at places that floats
+should not move past, perhaps at every "\section".
 
 Option:  [section]
 
-A more convenient way to stop floats at section boundaries is to change 
+A more convenient way to stop floats at section boundaries is to change
 the definition of "\section" to include "\FloatBarrier", either at the
-beginning, before "\@startsection", or in the `style' specification (see 
-The LaTeX Companion, section 2.2.2; or 2.3 in the 1st ed).  If you specify 
-"\usepackage[section]{placeins}", then the "\section" command will be 
+beginning, before "\@startsection", or in the `style' specification (see
+The LaTeX Companion, section 2.2.2; or 2.3 in the 1st ed).  If you specify
+"\usepackage[section]{placeins}", then the "\section" command will be
 redefined with "\FloatBarrier" inserted at the beginning.
 
 Options:  [above]  [below]
 
-Something you may not like is that, by default, "\FloatBarrier" is very 
-strict, and will (try to) prevent a float from appearing above the start 
-of the current section or below the start of the next section, even 
-though the float is still on the same page as its intended section.  
-Each restriction can be relaxed separately by using the "[above]" and 
-"[below]" package options: "[above]" allows floats to appear above their 
+Something you may not like is that, by default, "\FloatBarrier" is very
+strict, and will (try to) prevent a float from appearing above the start
+of the current section or below the start of the next section, even
+though the float is still on the same page as its intended section.
+Each restriction can be relaxed separately by using the "[above]" and
+"[below]" package options: "[above]" allows floats to appear above their
 section, if on the same page; "[below]" allows below.
 
 NOTE!  The original version of placeins.sty acted like it was loaded
 with the option "[above]" specified.
 
-There is a problem with LaTeX's "\suppressfloats" being out of step with 
+There is a problem with LaTeX's "\suppressfloats" being out of step with
 the page breaking (see usenet msg <yfi656pbsn0.fsf@triumf.ca> and thread)
 which sometimes allows a float to go above a "\FloatBarrier" placed near
 the top of a page. Maybe placeins will fix it sometime later.

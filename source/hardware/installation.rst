@@ -6,7 +6,7 @@ amount of lanes) PCIe slot.
 If the slot electrically supports less than eight lanes, the board will operate
 at lower data throughput rates.
 
-Connect a 6-pin GPU power cable to the connector at the rear of the board 
+Connect a 6-pin GPU power cable to the connector at the rear of the board
 (see :numref:`Figure %s<fig hardware picture>`).
 
 .. note::
@@ -22,11 +22,11 @@ Connect a 6-pin GPU power cable to the connector at the rear of the board
 
 Cooling
 ^^^^^^^
-The Ndigo6G-12 board is equipped with an active cooling system, ensuring 
+The Ndigo6G-12 board is equipped with an active cooling system, ensuring
 proper cooling of the device. If, however, the temperature of the ADC chip
-exceeds 90 °C (for instance, if the device is operated in inappropriate 
-environmental conditions, see 
-:numref:`Section %s<techdata environmental conditions for operation>`), 
+exceeds 90 °C (for instance, if the device is operated in inappropriate
+environmental conditions, see
+:numref:`Section %s<techdata environmental conditions for operation>`),
 a warning is issued to the device driver.
-When the temperature exceeds 95 °C, the ADC chip is disabled to avoid damaging 
+When the temperature exceeds 95 °C, the ADC chip is disabled to avoid damaging
 the device.

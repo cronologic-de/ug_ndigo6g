@@ -88,7 +88,7 @@ html_logo = "_static/cronologic.svg"
 html_static_path = ['_static']
 html_css_files = ["custom.css"]
 
-# latex_toplevel_sectioning = "section" 
+# latex_toplevel_sectioning = "section"
 
 latex_engine = 'xelatex'
 latex_xindy_use = False

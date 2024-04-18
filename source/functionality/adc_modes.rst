@@ -10,11 +10,11 @@ output data. See :ref:`sec output mode` for details.
 
 Data processing such as trigger detection or packet building are always
 performed on 5 ns intervals. Depending on the ADC mode, this interval
-may contain 32 (:ref:`1-Channel Mode <1channelmode>` @ 6.4 Gsps), 
-16 (:ref:`2-Channel Mode <2channelmode>` @ 3.2 Gsps) or 
+may contain 32 (:ref:`1-Channel Mode <1channelmode>` @ 6.4 Gsps),
+16 (:ref:`2-Channel Mode <2channelmode>` @ 3.2 Gsps) or
 8 (:ref:`4-Channel Mode <4channelmode>` @ 1.6 Gsps) samples.
 
-The ADC mode is configured using 
+The ADC mode is configured using
 :cpp:member:`ndigo6g12_configuration::adc_mode`.
 
 The board supports using one, two or four channels:
@@ -29,7 +29,7 @@ samples per 5 ns (See :numref:`Figures %s<Fig 2.9>`
 and :numref:`%s<Fig 2.15>`).
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
-be either :c:macro:`NDIGO6G12_APP_TYPE_1CH` or 
+be either :c:macro:`NDIGO6G12_APP_TYPE_1CH` or
 :c:macro:`NDIGO6G12_APP_TYPE_AVRG`.
 
 .. _2channelmode:
@@ -67,13 +67,13 @@ are sampled independently by the ADC chips.
 The output of the board depends on
 :cpp:member:`ndigo6g12_configuration::sample_averaging`.
 
-- :code:`sample_averaging == false`: The digitized samples are output 
+- :code:`sample_averaging == false`: The digitized samples are output
   as separate packages (the number of which depends on the selected mode).
 - :code:`sample_averaging == true`: The average of the digitized
   samples is calculated and output as one single package.
 
 Using the same trigger setting on all ADCs, can be used to reduce noise
-by averaging the four channels. 
+by averaging the four channels.
 To deal with complex triggering conditions, different trigger settings on each
 of the ADCs can be used.
 
@@ -86,7 +86,7 @@ The Ndigo6G-12 provides four ADCs sampling at 1.6 Gsps each.
 Higher speed modes are implemented by interleaving two or four of these ADCs.
 
 Modes AA and DD
-``````````````` 
+```````````````
 In this mode, input channel A (or D) is sampled at 5 Gsps two times and
 independently by the internal ADC chips.
 

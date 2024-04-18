@@ -48,7 +48,7 @@
 
 .. role:: red
 
-.. attention:: 
+.. attention::
 
-    This User Guide is under active development and is subject to major 
+    This User Guide is under active development and is subject to major
     changes.

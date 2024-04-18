@@ -23,6 +23,6 @@ suitable threshold level for the trigger by first getting random
 statistics on the input signal.
 
 This functionality is enabled and configured using
-:cpp:member:`ndigo6g12_configuration::auto_trigger_period` and 
-:cpp:member:`auto_trigger_random_exponent 
+:cpp:member:`ndigo6g12_configuration::auto_trigger_period` and
+:cpp:member:`auto_trigger_random_exponent
 <ndigo6g12_configuration::auto_trigger_random_exponent>`.
