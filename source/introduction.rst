@@ -49,7 +49,7 @@ Features
 
 - **Zero suppression** reducing PCIe load.
 
-- **Internal 10 MHz** clock with a time base of **25** |nbws| **ppb** or the
+- **Internal 10 MHz** clock with a time base of **10** |nbws| **ppb** or the
   **ability to use an external** 10 |nbws| MHz clock.
 
 
@@ -92,7 +92,7 @@ Board overview
 +------------------------------------+---------------------------------------------+
 | Readout interface                  | PCIe3 x8                                    |
 +------------------------------------+---------------------------------------------+
-| Time base                          | 25 ppb (internal) or external 10 MHz clock  |
+| Time base                          | 10 ppb (internal) or external 10 MHz clock  |
 +------------------------------------+---------------------------------------------+
 | On-board calibration data storage  | yes                                         |
 +------------------------------------+---------------------------------------------+
