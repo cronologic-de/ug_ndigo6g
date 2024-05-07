@@ -130,11 +130,16 @@ be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 Modes AAAA, DDDD
 ````````````````
 In this mode, input channel A (or D) are sampled at 1.6 Gsps four times and
-independently by the internal ADC chips.
+independently by the internal ADC chips, see
+:numref:`Figure %s<fig mode AAAA DDDD>`.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 
+.. _fig mode AAAA DDDD:
+.. figure:: ../figures/4ChannelMode_AAAA_DDDD.*
+
+    ADCs in 4-channel-mode AAAA or DDDD at 1.6 Gsps.
 
 
 
