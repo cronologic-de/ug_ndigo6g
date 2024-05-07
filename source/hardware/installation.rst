@@ -14,10 +14,10 @@ Connect a 6-pin GPU power cable to the connector at the rear of the board
     The Ndigo6G-12 does not operate without a 6-pin GPU power connector.
 
 .. _fig hardware picture:
-.. figure:: ../figures/ndigo6g12_hw_installation.jpg
+.. figure:: ../figures/Ndigo6G_periphery.jpg
 
-    Picture of an Ndigo6G-12 installed in a PCIe x16 slot. Note the power
-    connector at the rear of the board.
+    Overview of an Ndigo6G-12 board. Note the PCIe power connector at the rear
+    of the board.
 
 
 Cooling
