@@ -35,7 +35,7 @@ be either :c:macro:`NDIGO6G12_APP_TYPE_1CH` or
 .. _Fig 2.9:
 .. figure:: ../figures/1ChannelMode.*
 
-    ADCs in 1 channel mode A, B, C or D interleaved for 6.4 Gsps.
+    ADCs in 1-channel-mode A, B, C or D interleaved for 6.4 Gsps.
 
 .. _2channelmode:
 
@@ -53,7 +53,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 .. _Fig 2.8:
 .. figure:: ../figures/2ChannelMode.*
 
-    ADCs in 2 channel mode AD, interleaved for 3.2 Gsps.
+    ADCs in 2-channel-mode AD, interleaved for 3.2 Gsps.
 
 .. _4channelmode:
 
@@ -70,7 +70,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 .. _Fig 2.7:
 .. figure:: ../figures/4ChannelMode.*
 
-    ADCs in 4 channel mode ABCD at 1.6 Gsps.
+    ADCs in 4-channel-mode ABCD at 1.6 Gsps.
 
 .. _multiple sampling modes:
 
@@ -111,15 +111,21 @@ be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 .. _fig mode AA DD:
 .. figure:: ../figures/2ChannelMode_AA_DD.*
 
-    ADCs in 2 channel mode AA or DD at 3.2 Gsps.
+    ADCs in 2-channel-mode AA or DD at 3.2 Gsps.
 
 Mode AADD
 `````````
 In this mode, input channel A and D are sampled at 1.6 Gsps two times and
 independently by the internal ADC chips, see
+:numref:`Figure %s<fig mode AADD>`.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
+
+.. _fig mode AADD:
+.. figure:: ../figures/4ChannelMode_AADD.*
+
+    ADCs in 4-channel-mode AADD at 1.6 Gsps.
 
 Modes AAAA, DDDD
 ````````````````
