@@ -17,7 +17,7 @@ may contain 32 (:ref:`1-Channel Mode <1channelmode>` @ 6.4 Gsps),
 The ADC mode is configured using
 :cpp:member:`ndigo6g12_configuration::adc_mode`.
 
-The board supports using one, two or four channels:
+The board supports using one, two or four channels.
 
 .. _1channelmode:
 
@@ -32,6 +32,11 @@ For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be either :c:macro:`NDIGO6G12_APP_TYPE_1CH` or
 :c:macro:`NDIGO6G12_APP_TYPE_AVRG`.
 
+.. _Fig 2.9:
+.. figure:: ../figures/1ChannelMode.*
+
+    ADCs in 1 channel mode A, B, C or D interleaved for 6.4 Gsps. TODO: update graphics
+
 .. _2channelmode:
 
 2-Channel Mode AD
@@ -45,6 +50,11 @@ Packet size is always a multiple of 8 samples per
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 
+.. _Fig 2.8:
+.. figure:: ../figures/2ChannelMode.*
+
+    ADCs in 2 channel mode AD, interleaved for 3.2 Gsps. TODO: update graphics
+
 .. _4channelmode:
 
 4-Channel Mode ABCD
@@ -57,6 +67,10 @@ each. The packet size is always a multiple of 4 samples per 5 ns. (See
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 
+.. _Fig 2.7:
+.. figure:: ../figures/4ChannelMode.*
+
+    ADCs in 4 channel mode ABCD at 1.6 Gsps. TODO: update graphics
 
 .. _multiple sampling modes:
 
@@ -68,11 +82,11 @@ The output of the board depends on
 :cpp:member:`ndigo6g12_configuration::sample_averaging`.
 
 - :code:`sample_averaging == false`: The digitized samples are output
-  as separate packages (the number of which depends on the selected mode).
+  as separate packets (the number of which depends on the selected mode).
 - :code:`sample_averaging == true`: The average of the digitized
-  samples is calculated and output as one single package.
+  samples is calculated and output as one single packet.
 
-Using the same trigger setting on all ADCs, can be used to reduce noise
+Using the same trigger settings on all ADCs can be used to reduce noise
 by averaging the four channels.
 To deal with complex triggering conditions, different trigger settings on each
 of the ADCs can be used.
@@ -87,7 +101,7 @@ Higher speed modes are implemented by interleaving two or four of these ADCs.
 
 Modes AA and DD
 ```````````````
-In this mode, input channel A (or D) is sampled at 5 Gsps two times and
+In this mode, input channel A (or D) is sampled at 3.2 Gsps two times and
 independently by the internal ADC chips.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
@@ -110,19 +124,6 @@ For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 
 
-.. _Fig 2.7:
-.. figure:: ../figures/4ChannelMode.*
 
-    ADCs in 4 channel mode ABCD at 1.6 Gsps. TODO: update graphics
-
-.. _Fig 2.8:
-.. figure:: ../figures/2ChannelMode.*
-
-    ADCs in 2 channel mode AD, interleaved for 3.2 Gsps. TODO: update graphics
-
-.. _Fig 2.9:
-.. figure:: ../figures/1ChannelMode.*
-
-    ADCs in 1 channel mode A, B, C or D interleaved for 6.4 Gsps. TODO: update graphics
 
 
