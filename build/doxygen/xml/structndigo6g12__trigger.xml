@@ -23,7 +23,7 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1149" column="11" bodyfile="source/ndigo6g12_interface.h" bodystart="1149" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1151" column="11" bodyfile="source/ndigo6g12_interface.h" bodystart="1151" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -36,14 +36,14 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </briefdescription>
 <detaileddescription>
 <para>For trigger indices <ref refid="group__triggerdefs_1ga473188e6f82aa412123aa9aa8e76f485" kindref="member">NDIGO6G12_TRIGGER_AUTO</ref> and <ref refid="group__triggerdefs_1gaddbcf304ec8709008e9cdd7594e575f9" kindref="member">NDIGO6G12_TRIGGER_ONE</ref> this is ignored.<itemizedlist>
-<listitem><para><computeroutput>false</computeroutput>: Use a level trigger. The level trigger triggers as long as the signal is above or below (depending on <ref refid="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" kindref="member">rising</ref>) the set threshold. Followingly the trigger gives the sign of the signal in reference to the threshold.</para>
-</listitem><listitem><para><computeroutput>true</computeroutput>: Use an edge trigger. The edge trigger triggers as soon as its set threshold is crossed by the signal. Thus, the roots in reference to the threshold are recorded. </para>
+<listitem><para><computeroutput>false</computeroutput>: Use a level trigger. The level trigger triggers as long as the signal is above or below (depending on <computeroutput>rising</computeroutput>) the set threshold. Followingly, the trigger gives the sign of the signal in reference to the threshold.</para>
+</listitem><listitem><para><computeroutput>true</computeroutput>: Use an edge trigger. The edge trigger triggers as soon as its set threshold is crossed by the signal. Thus, the roots in reference to the threshold are recorded.</para>
 </listitem></itemizedlist>
-</para>
+Default is <computeroutput>true</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1164" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1164" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1167" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1167" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" prot="public" static="no" mutable="no">
 <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -56,22 +56,22 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </briefdescription>
 <detaileddescription>
 <para>For trigger indices <ref refid="group__triggerdefs_1ga473188e6f82aa412123aa9aa8e76f485" kindref="member">NDIGO6G12_TRIGGER_AUTO</ref> and <ref refid="group__triggerdefs_1gaddbcf304ec8709008e9cdd7594e575f9" kindref="member">NDIGO6G12_TRIGGER_ONE</ref>, this is ignored.<itemizedlist>
-<listitem><para>If <computeroutput>edge</computeroutput> is <computeroutput>false</computeroutput> (i.e., a level trigger is used):<itemizedlist>
+<listitem><para>If <computeroutput>edge</computeroutput> is <computeroutput>true</computeroutput> (i.e., an edge trigger is used):<itemizedlist>
 <listitem><para><computeroutput>false</computeroutput>: Trigger when the signal crosses from above to below the threshold.</para>
 </listitem><listitem><para><computeroutput>true</computeroutput>: Trigger when the signal crosses from below to above the threshold.</para>
 </listitem></itemizedlist>
 </para>
-</listitem><listitem><para>If <computeroutput>edge</computeroutput> is <computeroutput>true</computeroutput> (i.e., an edge trigger is used):<itemizedlist>
-<listitem><para><computeroutput>false</computeroutput>: Triggers the part of the signal above the threshold.</para>
-</listitem><listitem><para><computeroutput>true</computeroutput>: Triggers the part of the signal below the threshold. </para>
+</listitem><listitem><para>If <computeroutput>edge</computeroutput> is <computeroutput>false</computeroutput> (i.e., a level trigger is used):<itemizedlist>
+<listitem><para><computeroutput>false</computeroutput>: Triggers the part of the signal below the threshold.</para>
+</listitem><listitem><para><computeroutput>true</computeroutput>: Triggers the part of the signal above the threshold.</para>
 </listitem></itemizedlist>
 </para>
 </listitem></itemizedlist>
-</para>
+Default is <computeroutput>false</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1181" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1181" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1187" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1187" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -79,7 +79,7 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
 </briefdescription>
 <detaileddescription>
 </detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1133" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1133" bodyend="1182"/>
+<location file="source/ndigo6g12_interface.h" line="1135" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1135" bodyend="1188"/>
 <listofallmembers>
 <member refid="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>edge</name></member>
 <member refid="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>rising</name></member>

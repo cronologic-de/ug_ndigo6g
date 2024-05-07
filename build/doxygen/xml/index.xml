@@ -371,9 +371,10 @@
 <member refid="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name></member>
 <member refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_AUTO</name></member>
 <member refid="group__sourcedefs_1ga4d5aa984a0ff1040e17dd6898c23f2ae" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_ONE</name></member>
-<member refid="group__tdcpacketflags_1gac5c9984ba716be0973e119ef03a1c633" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_SHORTENED</name></member>
-<member refid="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_LOST</name></member>
+<member refid="group__tdcpacketflags_1gaac3fc10b5f615ad03ecfb52a26b0e546" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_RESERVED</name></member>
 <member refid="group__tdcpacketflags_1ga414ee83902f69fe30f828657e3a144ca" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA</name></member>
+<member refid="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_LOST</name></member>
+<member refid="group__tdcpacketflags_1gac5c9984ba716be0973e119ef03a1c633" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_SHORTENED</name></member>
 <member refid="group__tdcpacketflags_1ga096593c9935b4e3bef94f8af1736a4e0" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_DMA_FIFO_FULL</name></member>
 <member refid="group__tdcpacketflags_1gab58e0e726461115cacef8d5df0463e91" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_HOST_BUFFER_FULL</name></member>
 <member refid="group__tdchitflags_1gaa1ab44e4949733dc2a4d001d21727bda" kind="define"><name>NDIGO6G12_TDC_HIT_FLAG_LOST</name></member>
@@ -508,9 +509,10 @@
 <member refid="group__sourcedefs_1ga4d5aa984a0ff1040e17dd6898c23f2ae" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_ONE</name></member>
 </compound>
 <compound refid="group__tdcpacketflags" kind="group"><name>tdcpacketflags</name>
-<member refid="group__tdcpacketflags_1gac5c9984ba716be0973e119ef03a1c633" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_SHORTENED</name></member>
-<member refid="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_LOST</name></member>
+<member refid="group__tdcpacketflags_1gaac3fc10b5f615ad03ecfb52a26b0e546" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_RESERVED</name></member>
 <member refid="group__tdcpacketflags_1ga414ee83902f69fe30f828657e3a144ca" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA</name></member>
+<member refid="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_LOST</name></member>
+<member refid="group__tdcpacketflags_1gac5c9984ba716be0973e119ef03a1c633" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_SHORTENED</name></member>
 <member refid="group__tdcpacketflags_1ga096593c9935b4e3bef94f8af1736a4e0" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_DMA_FIFO_FULL</name></member>
 <member refid="group__tdcpacketflags_1gab58e0e726461115cacef8d5df0463e91" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_HOST_BUFFER_FULL</name></member>
 </compound>

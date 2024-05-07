@@ -281,20 +281,22 @@ extern "C" {
  * @{
  */
 
-/*!
- * @brief   The trigger unit has shortend the current packet due to full FIFO.
- */
-#define NDIGO6G12_TDC_PACKET_FLAG_SHORTENED 1
-
-/*!
- * @brief   At least one packet was lost due to full FIFO.
- */
-#define NDIGO6G12_TDC_PACKET_FLAG_LOST 2
+#define NDIGO6G12_TDC_PACKET_FLAG_RESERVED 1
 
 /*!
  * @brief   Packet contains at least one TDC event
  */
-#define NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA 4
+#define NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA 2
+
+/*!
+ * @brief   At least one packet was lost due to full FIFO.
+ */
+#define NDIGO6G12_TDC_PACKET_FLAG_LOST 4
+
+/*!
+ * @brief   The trigger unit has shortend the current packet due to full FIFO.
+ */
+#define NDIGO6G12_TDC_PACKET_FLAG_SHORTENED 8
 
 /*!
  * @brief   DMA FIFO was full.
@@ -1153,13 +1155,14 @@ typedef struct {
      * @details For trigger indices @link NDIGO6G12_TRIGGER_AUTO @endlink
      *          and @link NDIGO6G12_TRIGGER_ONE @endlink this is ignored.
      *          - `false`: Use a level trigger. The level trigger triggers as
-     *            long as the signal is above or below (depending on @link
-     *            rising @endlink) the set threshold. Followingly the
-     *            trigger gives the sign of the signal in reference to the
-     *            threshold.
+     *            long as the signal is above or below (depending on `rising`)
+     *            the set threshold. Followingly, the trigger gives the sign
+     *            of the signal in reference to the threshold.
      *          - `true`: Use an edge trigger. The edge trigger triggers as
      *            soon as its set threshold is crossed by the signal. Thus,
      *            the roots in reference to the threshold are recorded.
+     *          .
+     *          Default is `true`.
      */
     crono_bool_t edge;
 
@@ -1167,16 +1170,19 @@ typedef struct {
      * @brief   Sets rising-edge trigger functionality.
      * @details For trigger indices @link NDIGO6G12_TRIGGER_AUTO @endlink and
      *          @link NDIGO6G12_TRIGGER_ONE @endlink, this is ignored.
-     *          - If `edge` is `false` (i.e., a level trigger is used):
+     *          - If `edge` is `true` (i.e., an edge trigger is used):
      *              - `false`: Trigger when the signal crosses from above to
      *                below the threshold.
      *              - `true`: Trigger when the signal crosses from below to
      *                above the threshold.
-     *          - If `edge` is `true` (i.e., an edge trigger is used):
-     *              - `false`: Triggers the part of the signal above the
+     *          - If `edge` is `false` (i.e., a level trigger is used):
+     *              - `false`: Triggers the part of the signal below the
      *                threshold.
-     *              - `true`: Triggers the part of the signal below the
+     *              - `true`: Triggers the part of the signal above the
      *                threshold.
+     *              .
+     *          .
+     *          Default is `false`.
      */
     crono_bool_t rising;
 } ndigo6g12_trigger;
@@ -1641,6 +1647,7 @@ typedef struct {
      * @brief   Set the offsets of the ADC inputs in V.
      * @details The indices 0 to 3 of the array correspond to ADC channels A
      *          to D.
+     * @details Must be between @f$\pm@f$ 0.5&nbsp;V.
      * @details Defaults are 0&nbsp;V for each ADC channel.
      */
     double analog_offsets[NDIGO6G12_ADC_CHANNEL_COUNT];
@@ -1706,13 +1713,13 @@ typedef struct {
      *          @ref auto_trigger_period and @f$N@f$ =
      *          @ref auto_trigger_random_exponent that result in a distance
      *          between triggers of
-     *          @f$ T = 1 + M + [1 \dots 2^N] @f$
+     *          @f$ T = M + [1 \dots 2^N] - 1 @f$
      *          clock cycles, where
      *          @f$ 6 \le M < 2^{32} @f$ and
      *          @f$ 0 \le N < 32 @f$.
      * @details There is no enable or reset as the usage of this trigger can
      *          be configured in the channels. Each clock cycle is 5&nbsp;ns.
-     * @details Default is 200000.
+     * @details Default is 200000, corresponding to a 1&nbsp;kHz auto trigger.
      */
     int auto_trigger_period;
 
