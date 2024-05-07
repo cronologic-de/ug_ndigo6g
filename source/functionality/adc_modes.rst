@@ -102,15 +102,21 @@ Higher speed modes are implemented by interleaving two or four of these ADCs.
 Modes AA and DD
 ```````````````
 In this mode, input channel A (or D) is sampled at 3.2 Gsps two times and
-independently by the internal ADC chips.
+independently by the internal ADC chips, see
+:numref:`Figure %s<fig mode AA DD>`.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 
+.. _fig mode AA DD:
+.. figure:: ../figures/2ChannelMode_AA_DD.*
+
+    ADCs in 2 channel mode AA or DD at 3.2 Gsps.
+
 Mode AADD
 `````````
 In this mode, input channel A and D are sampled at 1.6 Gsps two times and
-independently by the internal ADC chips.
+independently by the internal ADC chips, see
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
 be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
