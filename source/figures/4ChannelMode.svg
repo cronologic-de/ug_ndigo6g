@@ -8,7 +8,7 @@
    version="1.1"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="4ChannelMode.svg"
-   inkscape:export-filename="4ChannelMode.png"
+   inkscape:export-filename="4ChannelMode.pdf"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -63,11 +63,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="414.64286"
-     inkscape:cy="185.35714"
+     inkscape:zoom="2.8"
+     inkscape:cx="236.25"
+     inkscape:cy="147.32143"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2989"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -122,17 +122,11 @@
          x="2.5024607"
          xml:space="preserve">(</text>
       <text
-         id="text2995"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="123.87181"
-         x="7.5073824"
-         xml:space="preserve">2.5</text>
-      <text
          id="text2997"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="123.87181"
-         x="35.034451"
-         xml:space="preserve">GHz</text>
+         x="8.4435234"
+         xml:space="preserve">3.2 GHz</text>
       <text
          id="text2999"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
@@ -172,17 +166,11 @@
          x="163.91118"
          xml:space="preserve">circuit</text>
       <text
-         id="text3013"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="78.827515"
-         x="156.40379"
-         xml:space="preserve">1.25</text>
-      <text
          id="text3015"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="78.827515"
-         x="193.9407"
-         xml:space="preserve">GHz</text>
+         x="157.68033"
+         xml:space="preserve">1.6 GHz</text>
       <path
          id="path3017"
          d="M 109.01345,201.52629 H 782.8792 V 2.8934702 H 109.01345 Z"
@@ -210,17 +198,11 @@
          x="290.28543"
          xml:space="preserve">ADC A</text>
       <text
-         id="text3027"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="117.61565"
-         x="277.77313"
-         xml:space="preserve">1.25</text>
-      <text
          id="text3029"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="117.61565"
-         x="315.31006"
-         xml:space="preserve">Gsps</text>
+         x="283.8844"
+         xml:space="preserve">1.6 Gsps</text>
       <path
          id="path3031"
          d="m 404.53842,50.205618 h 82.8158 v 80.391552 l -41.3688,37.84972 -41.447,-37.84972 z"
@@ -233,17 +215,11 @@
          x="420.41339"
          xml:space="preserve">ADC B</text>
       <text
-         id="text3035"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="117.61565"
-         x="407.90109"
-         xml:space="preserve">1.25</text>
-      <text
          id="text3037"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="117.61565"
-         x="445.43802"
-         xml:space="preserve">Gsps</text>
+         x="414.01236"
+         xml:space="preserve">1.6 Gsps</text>
       <path
          id="path3039"
          d="m 534.58817,50.205618 h 82.81581 v 80.391552 l -41.3688,37.84972 -41.44701,-37.84972 z"
@@ -256,17 +232,11 @@
          x="550.54138"
          xml:space="preserve">ADC C</text>
       <text
-         id="text3043"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="117.61565"
-         x="538.02905"
-         xml:space="preserve">1.25</text>
-      <text
          id="text3045"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="117.61565"
-         x="575.56598"
-         xml:space="preserve">Gsps</text>
+         x="544.14032"
+         xml:space="preserve">1.6 Gsps</text>
       <path
          id="path3047"
          d="m 664.63793,50.205618 h 82.81581 v 80.391552 l -41.36881,37.84972 -41.447,-37.84972 z"
@@ -279,17 +249,11 @@
          x="680.66931"
          xml:space="preserve">ADC D</text>
       <text
-         id="text3051"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="117.61565"
-         x="668.15698"
-         xml:space="preserve">1.25</text>
-      <text
          id="text3053"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="117.61565"
-         x="705.69391"
-         xml:space="preserve">Gsps</text>
+         x="674.26825"
+         xml:space="preserve">1.6 Gsps</text>
       <path
          id="path3055"
          d="M 306.70784,239.37601 V 181.3502"

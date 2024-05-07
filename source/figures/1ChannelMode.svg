@@ -8,7 +8,7 @@
    version="1.1"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="1ChannelMode.svg"
-   inkscape:export-filename="1ChannelMode.png"
+   inkscape:export-filename="1ChannelMode.pdf"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -63,9 +63,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="394.64286"
-     inkscape:cy="200.35714"
+     inkscape:zoom="1.979899"
+     inkscape:cx="470.47854"
+     inkscape:cy="105.81348"
      inkscape:document-units="px"
      inkscape:current-layer="g3437"
      showgrid="false"
@@ -110,35 +110,35 @@
          y="-11.850744"
          transform="matrix(0.77735823,0,0,0.77735823,-23.537425,85.47398)" />
       <text
+         id="text3477-0"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         y="213.0266"
+         x="315.1084"
+         xml:space="preserve">1.6 Gsps</text>
+      <text
+         id="text3477-1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         y="213.0266"
+         x="416.1084"
+         xml:space="preserve">1.6 Gsps</text>
+      <text
+         id="text3477-6"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         y="213.0266"
+         x="517.1084"
+         xml:space="preserve">1.6 Gsps</text>
+      <text
          id="text3439"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="184.68471"
          x="-7.0023031"
          xml:space="preserve">CLK</text>
       <text
-         id="text3441"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="200.24718"
-         x="-21.592115"
-         xml:space="preserve">(</text>
-      <text
-         id="text3443"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="200.24718"
-         x="-17.7015"
-         xml:space="preserve">2.5</text>
-      <text
          id="text3445"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="200.24718"
-         x="3.6968937"
-         xml:space="preserve">GHz</text>
-      <text
-         id="text3447"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="200.24718"
-         x="29.958559"
-         xml:space="preserve">)</text>
+         y="200.24759"
+         x="-17.565796"
+         xml:space="preserve">(3.2 GHz)</text>
       <path
          id="path3449"
          d="M 42.846225,188.81849 H 63.089588"
@@ -178,17 +178,11 @@
          x="267.28619"
          xml:space="preserve">Inverted</text>
       <text
-         id="text3463"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#569fd6;fill-opacity:1"
-         y="260.55173"
-         x="263.39557"
-         xml:space="preserve">1.25</text>
-      <text
          id="text3465"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#569fd6;fill-opacity:1"
          y="260.55173"
-         x="292.5752"
-         xml:space="preserve">GHz</text>
+         x="266.5752"
+         xml:space="preserve">1.6 GHz</text>
       <path
          id="path3467"
          d="M 52.02565,317.5128 H 612.63922 V 87.723243 H 52.02565 Z"
@@ -218,15 +212,9 @@
       <text
          id="text3477"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="212.89168"
-         x="210.87224"
-         xml:space="preserve">1.25</text>
-      <text
-         id="text3479"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="212.89168"
-         x="240.05188"
-         xml:space="preserve">Gsps</text>
+         y="213.02681"
+         x="214.44838"
+         xml:space="preserve">1.6 Gsps</text>
       <path
          id="path3481"
          d="m 309.35348,161.28022 h 64.31676 v 62.49303 l -32.15838,29.42279 -32.15838,-29.42279 z"
@@ -238,18 +226,6 @@
          y="197.32922"
          x="321.75482"
          xml:space="preserve">ADC B</text>
-      <text
-         id="text3485"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="212.89168"
-         x="312.02829"
-         xml:space="preserve">1.25</text>
-      <text
-         id="text3487"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="212.89168"
-         x="341.20789"
-         xml:space="preserve">Gsps</text>
       <path
          id="path3489"
          d="m 410.44873,161.28022 h 64.31675 v 62.49303 l -32.15837,29.42279 -32.15838,-29.42279 z"
@@ -261,18 +237,6 @@
          y="197.32922"
          x="421.93817"
          xml:space="preserve">ADC C</text>
-      <text
-         id="text3493"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="212.89168"
-         x="413.18433"
-         xml:space="preserve">1.25</text>
-      <text
-         id="text3495"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="212.89168"
-         x="441.3913"
-         xml:space="preserve">Gsps</text>
       <path
          id="path3497"
          d="m 511.54397,161.28022 h 64.31677 v 62.49303 l -32.15838,29.42279 -32.15839,-29.42279 z"
@@ -284,18 +248,6 @@
          y="197.32922"
          x="523.09424"
          xml:space="preserve">ADC D</text>
-      <text
-         id="text3501"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="212.89168"
-         x="514.34039"
-         xml:space="preserve">1.25</text>
-      <text
-         id="text3503"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="212.89168"
-         x="542.5473"
-         xml:space="preserve">Gsps</text>
       <path
          id="path3505"
          d="M 233.24328,299.09316 V 263.22654"
@@ -357,59 +309,11 @@
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <text
-         id="text3529"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="344.19998"
-         x="247.8331"
-         xml:space="preserve">AAI</text>
-      <text
-         id="text3531"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="344.19998"
-         x="268.25885"
-         xml:space="preserve">, </text>
-      <text
          id="text3533"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="344.19998"
-         x="276.04007"
-         xml:space="preserve">AAIN or BAI</text>
-      <text
-         id="text3535"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="344.19998"
-         x="345.09851"
-         xml:space="preserve">,</text>
-      <text
-         id="text3537"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="344.19998"
-         x="348.98914"
-         xml:space="preserve">BAIN or CAI</text>
-      <text
-         id="text3539"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="344.19998"
-         x="419.99289"
-         xml:space="preserve">, </text>
-      <text
-         id="text3541"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="344.19998"
-         x="426.80145"
-         xml:space="preserve">CAIN or DAI</text>
-      <text
-         id="text3543"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="344.19998"
-         x="498.77789"
-         xml:space="preserve">, </text>
-      <text
-         id="text3545"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="344.19998"
-         x="505.58646"
-         xml:space="preserve">DAIN</text>
+         y="341.42206"
+         x="329.07309"
+         xml:space="preserve">AAI,AAIN or DAI,DAIN</text>
       <path
          id="path3547"
          d="m 189.83859,142.86058 v 62.49303"
@@ -484,17 +388,11 @@
          x="161.26688"
          xml:space="preserve">phase</text>
       <text
-         id="text3575"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="260.55173"
-         x="143.75911"
-         xml:space="preserve">1.25</text>
-      <text
          id="text3577"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="260.55173"
-         x="172.93874"
-         xml:space="preserve">GHz</text>
+         x="146.93874"
+         xml:space="preserve">1.6 GHz</text>
       <path
          id="path3579"
          d="m 174.88403,128.14918 v 62.49303"
@@ -621,17 +519,11 @@
          x="450.14517"
          xml:space="preserve">shifted</text>
       <text
-         id="text3627"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#006266;fill-opacity:1"
-         y="154.53242"
-         x="386.92267"
-         xml:space="preserve">1.25</text>
-      <text
          id="text3629"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#006266;fill-opacity:1"
          y="154.53242"
-         x="416.10226"
-         xml:space="preserve">GHz</text>
+         x="388.10226"
+         xml:space="preserve">1.6 GHz</text>
       <text
          id="text3631"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#944266;fill-opacity:1"
@@ -663,17 +555,11 @@
          x="568.80896"
          xml:space="preserve">shifted</text>
       <text
-         id="text3641"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#944266;fill-opacity:1"
-         y="154.53242"
-         x="499.75055"
-         xml:space="preserve">1.25</text>
-      <text
          id="text3643"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#944266;fill-opacity:1"
          y="154.53242"
-         x="527.95752"
-         xml:space="preserve">GHz</text>
+         x="499.95752"
+         xml:space="preserve">1.6 GHz</text>
       <path
          id="path3645"
          d="M 384.67339,326.69223 V 299.09316"
@@ -734,6 +620,22 @@
          d="m 384.67339,296.41836 c -1.45898,0 -2.6748,1.21582 -2.6748,2.6748 0,1.51978 1.21582,2.73559 2.6748,2.73559 1.51977,0 2.73559,-1.21581 2.73559,-2.73559 0,-1.45898 -1.21582,-2.6748 -2.73559,-2.6748"
          style="fill:none;stroke:#000000;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, ';fill:#ed7800;stroke:#ed7800;stroke-width:1.173"
+         x="-21.766052"
+         y="242.97244"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, ';fill:#ed7800;stroke:#ed7800;stroke-width:1.173"
+         x="11.568982"
+         y="14.677964"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"></tspan></text>
     </g>
   </g>
 </svg>

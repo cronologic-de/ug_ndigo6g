@@ -35,7 +35,7 @@ be either :c:macro:`NDIGO6G12_APP_TYPE_1CH` or
 .. _Fig 2.9:
 .. figure:: ../figures/1ChannelMode.*
 
-    ADCs in 1 channel mode A, B, C or D interleaved for 6.4 Gsps. TODO: update graphics
+    ADCs in 1 channel mode A, B, C or D interleaved for 6.4 Gsps.
 
 .. _2channelmode:
 
@@ -53,7 +53,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 .. _Fig 2.8:
 .. figure:: ../figures/2ChannelMode.*
 
-    ADCs in 2 channel mode AD, interleaved for 3.2 Gsps. TODO: update graphics
+    ADCs in 2 channel mode AD, interleaved for 3.2 Gsps.
 
 .. _4channelmode:
 
@@ -70,7 +70,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 .. _Fig 2.7:
 .. figure:: ../figures/4ChannelMode.*
 
-    ADCs in 4 channel mode ABCD at 1.6 Gsps. TODO: update graphics
+    ADCs in 4 channel mode ABCD at 1.6 Gsps.
 
 .. _multiple sampling modes:
 
