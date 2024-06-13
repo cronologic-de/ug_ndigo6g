@@ -30,12 +30,12 @@ Features
 
 - Up to **four ADC channels** for your individual measurement setups.
 
-- **Four TDC channels** with a resolution of **12** |nbws| **ns**.
+- **Four TDC channels** with a resolution of **12 ns**.
 
 - **Two digital control inputs** for effective
   **gating and triggering**.
 
-- PCIe3 x8 with **TODO** |nbws| **MB/s throughput** for simple and fast
+- PCIe3 x8 with **TODO MB/s throughput** for simple and fast
   data transfer to most PCs.
 
 .. - **Synchronization of up to eight boards** via reference clock if more than
@@ -45,12 +45,12 @@ Features
 
 - **Common start** and **common stop** capabilities.
 
-- Continuous ADC readout rate of approx. **5200** |nbws| **MB/s**.
+- Continuous ADC readout rate of approx. **5200 MB/s**.
 
 - **Zero suppression** reducing PCIe load.
 
-- **Internal 10 MHz** clock with a time base of **10** |nbws| **ppb** or the
-  **ability to use an external** 10 |nbws| MHz clock.
+- **Internal 10 MHz** clock with a time base of **10 ppb** or the
+  **ability to use an external** 10 MHz clock.
 
 
 Board overview
