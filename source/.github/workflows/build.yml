@@ -1,0 +1,52 @@
+name: Build HTML and PDF documentation
+
+on:
+  push:
+    branches:
+      - setup-workflows
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        # checkout specific branch
+        ref: setup-workflows
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.12
+        cache: 'pip'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Build Sphinx HTML
+      run: make html
+
+    - name: Upload zip to artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: html
+        path: build/html
+
+    # - name: Build Sphinx latex file
+    #   run: make latex
+
+    # - name: Compile pdf from tex
+    #   uses: xu-cheng/latex-action@v3
+    #   with:
+    #     root_file: TODO.tex
+    #     working_directory: build/latex
+    #     latexmk_use_lualatex: true
+
+    # - name: Upload pdf to artifacts
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: pdf
+    #     path: build/latex/TODO.pdf
