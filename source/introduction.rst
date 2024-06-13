@@ -25,7 +25,7 @@ Features
 
 - **12 bit** dynamic range
 
-- Up to **6400 Msps** sample rate (in 1 channel mode) for increased resolution
+- Up to **6400 Msps** sample rate (in 1-channel mode) for increased resolution
   in time domain.
 
 - Up to **four ADC channels** for your individual measurement setups.
