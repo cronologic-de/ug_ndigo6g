@@ -1,44 +1,34 @@
 Revision History
 ================
 
+Firmware
+--------
+
+Driver
+------
+2.0.0 |emdash| TBA
+    | Extensive revision of the application programming interface
+    | Improved linux support
+    | Improved documentation
+    | Improved TDC and ADC synchronisation
+
+1.5.4 |emdash| 2024-07-13
+    | Fixed 2 channel handling with trigger from opposite channel (trigger A on channel D)
+    | Fixed timestamp uncertainty in lower bits
+
+
+1.5.3 |emdash| 2024-07-07
+    | Dynamic reconfiguration with .cronorom support
+
+1.4.5 |emdash| 2023-01-23
+    | crono kernel driver update to v1.4.2
+    | added support for revision 3 boards
+    | minor bug fixes
+    | support for 32 bit OS discontinued
+
+
+User Guide
+----------
+
 |version| |emdash| TBA
-    Initial release (pending)
-
-
-.. Firmware
-.. --------
-
-.. =============== =========== ==========================================
-.. Revision        Date        Comments
-.. =============== =========== ==========================================
-.. 1.4865          2015-07-28  Internal optimizations
-.. 1.4824          2015-02-27  Fixed intel PCIe link training issues
-.. =============== =========== ==========================================
-
-.. Driver & Applications
-.. ---------------------
-
-..
-    +------------------+------------+------------------------------------+
-    | Revision         | Date       | Comments                           |
-    +==================+============+====================================+
-    | 1.4.3            | 2019-10-21 | Fixed a card initialization error  |
-    |                  |            | in x64 32 mode                     |
-    +------------------+------------+------------------------------------+
-    | 1.4.0            | 2019-06-04 | Added Windows 10 support           |
-    +------------------+------------+------------------------------------+
-    | 1.3.0            | 2017-06-08 | NdigoScope application now         |
-    |                  |            | supports Ndigo250M-14              |
-    +------------------+------------+------------------------------------+
-
-
-
-.. User Guide
-.. ----------
-
-..
-    +-----------------+------------+-------------------------------------+
-    | Revision        | Date       | Comments                            |
-    +=================+============+=====================================+
-    | 1.1.0           | 2019-08-27 | API clarifications                  |
-    +-----------------+------------+-------------------------------------+
+    | Initial release (pending)
