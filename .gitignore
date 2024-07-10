@@ -3,7 +3,6 @@
 
 # automatic build output
 build/*
-# !build/doxygen/
 
 # virtual environment folder
 .venv*/
@@ -14,3 +13,4 @@ __pycache__/
 # various
 source/figures/obsolete/
 fetch_interface.bat
+*.bak
