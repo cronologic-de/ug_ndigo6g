@@ -3,7 +3,7 @@ Driver Programming API
 
 .. attention::
 
-    The API is only valid for driver versions >2.0.0.
+    The API is only valid for driver versions **>2.0.0**.
 
 
 The API is a DLL with C linkage.
