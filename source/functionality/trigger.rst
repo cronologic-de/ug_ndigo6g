@@ -104,6 +104,7 @@ by setting the appropriate bits in the bitmask
 
 .. _Fig 2.17:
 .. figure:: ../figures/DigitalInput.*
+   :width: 50%
 
    The digital inputs TDC0, TDC1, TDC2, TDC4, FPGA0, and FPGA1
    have simpler trigger units.
