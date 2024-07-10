@@ -89,10 +89,10 @@ input :cpp:member:`sources <ndigo6g12_trigger_block::sources>`:
 -  A function trigger providing random or periodic triggering (see
    :doc:`auto_trigger`).
 
-Trigger inputs from the above sources can be concatenated using a logical
-OR (:numref:`Figure %s<fig triggermatrix>`) by
-setting the appropriate bits in the bitmask
-:cpp:member:`ndigo6g12_trigger_block::sources`.
+Trigger inputs from the above sources can be concatenated using a logical OR
+.. (:numref:`Figure %s<fig triggermatrix>`)
+by setting the appropriate bits in the bitmask
+(see :cpp:member:`ndigo6g12_trigger_block::sources`).
 
 
 .. _Fig 2.16:
@@ -109,14 +109,14 @@ setting the appropriate bits in the bitmask
    have simpler trigger units.
 
 
-.. _fig triggermatrix:
-.. figure:: ../figures/triggermatrix.*
+.. .. _fig triggermatrix:
+.. .. figure:: ../figures/triggermatrix.*
 
-   Trigger Matrix. The eight trigger signals from the four analog channels and
-   the trigger signals from the six digital channels (four TDC channels, FPGA0,
-   FPGA1) can be combined to create a trigger input for each *trigger block*.
-   Additionally, four *gate signals* can be used to suppress trigger during
-   configurable time frames.
+..    Trigger Matrix. The eight trigger signals from the four analog channels and
+..    the trigger signals from the six digital channels (four TDC channels, FPGA0,
+..    FPGA1) can be combined to create a trigger input for each *trigger block*.
+..    Additionally, four *gate signals* can be used to suppress trigger during
+..    configurable time frames.
 
 .. _gating trigger events:
 

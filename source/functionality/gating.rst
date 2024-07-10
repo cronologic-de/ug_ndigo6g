@@ -3,13 +3,13 @@
 Gating Blocks
 ~~~~~~~~~~~~~
 
-.. _Fig 2.20:
-.. figure:: ../figures/GatingBlocks.*
+.. .. _Fig 2.20:
+.. .. figure:: ../figures/GatingBlocks.*
 
-    Gating Blocks: Each gating block can use an arbitrary combination
-    of inputs to trigger its state machine. The outputs can be individually
-    inverted and routed to the AND-gate feeding the trigger blocks. TODO
-    update Figure.
+..     Gating Blocks: Each gating block can use an arbitrary combination
+..     of inputs to trigger its state machine. The outputs can be individually
+..     inverted and routed to the AND-gate feeding the trigger blocks. TODO
+..     update Figure.
 
 In order to decrease the amount of data transmitted to the PC, the Ndigo6G-12
 includes four independent gate and delay units.
