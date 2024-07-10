@@ -457,7 +457,7 @@ extern "C" {
 
 /*!
  * @brief   TiGer pulses are bipolar.
- * @details LEMO connectors are only usable as outputs.
+ * @details LEMO connectors are only usable as outputs. Not supported for FPGA0 and FPGA1.
  */
 #define NDIGO6G12_TIGER_BIPOLAR 3
 
