@@ -24,11 +24,11 @@ pip install -r requirements.txt
 
 After that, run
 ```shell
-.\make.bat html
+make html
 ```
    or
 ```shell
-.\make.bat latexpdf
+make latexpdf
 ```
 to compile the project as HTML or PDF. The HTML (PDF) output is in `build/html/`
 (`build/latex/`).
