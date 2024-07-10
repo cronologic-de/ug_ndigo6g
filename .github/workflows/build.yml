@@ -36,7 +36,9 @@ jobs:
       uses: mattnotmitt/doxygen-action@v1.9.8
 
     - name: Replace some unicode characters
-      run: ./replace_xsd_commands.sh
+      run: |
+        chmod +x replace_xsd_commands.sh
+        ./replace_xsd_commands.sh
 
     - name: Build Sphinx HTML
       run: make html
