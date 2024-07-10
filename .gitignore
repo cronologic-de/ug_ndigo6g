@@ -3,7 +3,7 @@
 
 # automatic build output
 build/*
-!build/doxygen/
+# !build/doxygen/
 
 # virtual environment folder
 .venv*/
