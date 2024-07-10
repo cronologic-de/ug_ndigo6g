@@ -6,7 +6,9 @@ Packet Format
 Packets are retrieved by :cpp:func:`ndigo6g12_read`. They are of type
 :cpp:struct:`crono_packet`.
 
-- Each hit on an ADC channel is stored in one packet. For ADC-packets.
+- Each hit on an ADC channel is stored in one packet.
+  Two consecutive packets on the same ADC channel must have a minimum distance
+  of 4 ADC samles.
 
 - All TDC hits within the time given by
   :cpp:member:`ndigo6g12_param_info::tdc_rollover_period` are stored in a single
