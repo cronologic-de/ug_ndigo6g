@@ -1,6 +1,9 @@
 Revision History
 ================
 
+|version| |emdash| TBA
+    Initial release (pending)
+
 
 .. Firmware
 .. --------
