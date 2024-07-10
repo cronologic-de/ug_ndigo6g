@@ -33,23 +33,6 @@ After that, run
 to compile the project as html or pdf. The html (pdf) output is in `build/html/`
 (`build/latex/`).
 
----
-
-The `make.bat` script first runs `doxygen`, compiling xml output for
-`source\crono_interface.h` and `source\ndigo6g12_interface.h`. Then, it uses
-the output thereof to compile the sphinx html (or pdf) output. It also
-runs `replace_xsd_commands.bat` to fix some missing unicode-characters.
-
-The script checks if a file `.\fetch_interface.bat` is present. If that is
-the case, it calls `.\fetch_interface.bat` before running the `doxygen` output.
-This way you can fetch the most recent interface files, if so desired.
-
-To bypass this behavior, either remove the respective `call` in `make.bat`
-or call the sphinx builder without using the script, e.g.,
-```powershell
-sphinx-build -M html source build
-```
-
 ## License
 This documentation is licensed under an
 [Creative Commons Attribution-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/).
