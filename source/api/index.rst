@@ -3,7 +3,7 @@ Driver Programming API
 
 .. attention::
 
-    The API is only valid for driver versions **>2.0.0**.
+    The API requires driver versions **>2.0.0** and firmware 24120.
 
 
 The API is a DLL with C linkage.
