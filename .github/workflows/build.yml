@@ -37,7 +37,7 @@ jobs:
     - name: Replace some unicode characters
       run: |
         chmod +x replace_xsd_commands.sh
-        ./replace_xsd_commands.sh
+        sudo ./replace_xsd_commands.sh
 
     - name: Build Sphinx HTML
       run: make html
