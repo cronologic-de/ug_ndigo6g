@@ -90,9 +90,11 @@ input :cpp:member:`sources <ndigo6g12_trigger_block::sources>`:
    :doc:`auto_trigger`).
 
 Trigger inputs from the above sources can be concatenated using a logical OR
-.. (:numref:`Figure %s<fig triggermatrix>`)
 by setting the appropriate bits in the bitmask
 (see :cpp:member:`ndigo6g12_trigger_block::sources`).
+
+.. (:numref:`Figure %s<fig triggermatrix>`)
+
 
 
 .. _Fig 2.16:
@@ -127,8 +129,9 @@ Gating trigger events
 Triggers can be fed into the
 :cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`
 as outlined in
-:numref:`Chapter %s<section gating blocks>` and
-:numref:`Figure %s<Fig 2.20>`.
+:numref:`Chapter %s<section gating blocks>`.
+
+.. and :numref:`Figure %s<Fig 2.20>`.
 
 
 In return, the

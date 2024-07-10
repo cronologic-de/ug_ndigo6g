@@ -106,7 +106,7 @@ There are two digital control inputs on the front slot cover called
 FPGA0 and FPGA1.
 
 Both inputs provide a digital input signal routed to the
-:ref:`trigger matrix <fig triggermatrix>`.
+Trigger Matrix.
 These signals can be used to trigger any of the trigger state machines
 and :doc:`gating blocks <../functionality/gating>` with maximum sampling rate.
 Thus, we recommend using these inputs as digital triggers and gates instead
