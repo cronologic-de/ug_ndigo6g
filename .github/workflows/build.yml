@@ -1,0 +1,62 @@
+name: Build HTML and PDF documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        # checkout specific branch
+        ref: main
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.12
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Create output directory for doxygen
+      run: |
+        mkdir build
+        mkdir build/doxygen
+
+    - name: Run doxygen
+      uses: mattnotmitt/doxygen-action@v1.9.8
+
+    - name: Replace some unicode characters
+      run: |
+        chmod +x replace_xsd_commands.sh
+        sudo ./replace_xsd_commands.sh
+
+    - name: Build Sphinx HTML
+      run: make html
+
+    # - name: Upload zip to artifacts
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: html
+    #     path: build/html
+
+    - name: Publish HTML
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT }}
+        key: ${{ secrets.KEY }}
+        source: ./build/html/*
+        target: ${{ secrets.TARGETHTML }}
+        strip_components: 2
+        rm: true
+
