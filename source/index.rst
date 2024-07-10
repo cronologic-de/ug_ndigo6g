@@ -4,6 +4,10 @@
 Ndigo6G |hyphen| User Guide
 ###########################
 
+.. note::
+
+    This User Guide is under active development.
+
 .. raw:: latex
 
     \RaggedRight
