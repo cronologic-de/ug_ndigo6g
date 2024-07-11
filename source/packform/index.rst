@@ -16,9 +16,13 @@ Packets are retrieved by :cpp:func:`ndigo6g12_read`. They are of type
   The memory layout thereof is shown in
   :numref:`Section %s<tdcpacket bit table>`.
 
+
+.. raw:: html
+
+    <h2>Contents</h2>
+
 .. toctree::
     :maxdepth: 2
-    :caption: Contents
 
     constants
     utility

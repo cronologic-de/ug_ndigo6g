@@ -1,8 +1,13 @@
 Functionality
 -------------
 
+
+.. raw:: html
+
+    <h2>Contents</h2>
+
 .. toctree::
-    :caption: Contents
+    :maxdepth: 2
 
     adc_modes
     zero_suppression

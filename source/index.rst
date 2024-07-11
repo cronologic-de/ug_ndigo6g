@@ -20,15 +20,13 @@ This User Guide documents the hardware and functionality of the
 Ndigo6G-12 board, as well as the driver programming API provided by the
 Ndigo6G-12 driver.
 
-.. .. only:: html
 
-..     Contents
-..     ========
+.. raw:: html
 
+    <h2>Contents</h2>
 
 .. toctree::
     :maxdepth: 2
-    :hidden:
     :numbered: 3
 
     introduction
@@ -39,5 +37,4 @@ Ndigo6G-12 driver.
     example/index
     techdata
     revhistory
-
-.. :ref:`genindex`
+    genindex
