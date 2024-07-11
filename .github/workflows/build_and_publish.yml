@@ -50,27 +50,27 @@ jobs:
         name: html
         path: build/html
 
-    - name: Compile PDF
-      uses: xu-cheng/latex-action@v3
-      with:
-        root_file: ndigo6g-12userguide.tex
-        latexmk_use_lualatex: true
-        working_directory: build/latex
-        pre_compile: "tlmgr update --self && tlmgr update --all"
+    # - name: Compile PDF
+    #   uses: xu-cheng/latex-action@v3
+    #   with:
+    #     root_file: ndigo6g-12userguide.tex
+    #     latexmk_use_lualatex: true
+    #     working_directory: build/latex
+    #     pre_compile: "tlmgr update --self && tlmgr update --all"
 
-    - name: Upload log if latexmk fails
-      if: ${{ failure() }}
-      uses: actions/upload-artifact@v4
-      with:
-        name: latex_files
-        path: |
-          build/latex/*
+    # - name: Upload log if latexmk fails
+    #   if: ${{ failure() }}
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: latex_files
+    #     path: |
+    #       build/latex/*
 
-    - name: Upload LaTeX to artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: latex
-        path: build/latex
+    # - name: Upload LaTeX to artifacts
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: latex
+    #     path: build/latex
 
   publish:
     needs: build
@@ -112,7 +112,8 @@ jobs:
       run: |
         mkdir documentation
         mv ./artifacts/html ./documentation/html
-        mv ./artifacts/latex/Ndigo6G_User_Guide.pdf ./documentation/Ndigo6G_User_Guide.pdf
         zip -r documentation.zip documentation
         gh release upload ${{ github.event.release.tag_name }} ./documentation.zip
 
+
+# mv ./artifacts/latex/Ndigo6G_User_Guide.pdf ./documentation/Ndigo6G_User_Guide.pdf
