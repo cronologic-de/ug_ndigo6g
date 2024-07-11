@@ -117,7 +117,7 @@ latex_elements = {
     """,
     "extraclassoptions": r"openany",
     "tableofcontents":r"\tableofcontents",
-    "maketitle": r"",
+    "maketitle": r"\includepdf[pages={1}]{Ndigo6G-12_Front_Page.pdf}",
     "releasename": "Rev.",
     "makeindex": "",
     "printindex": "",
@@ -126,6 +126,7 @@ latex_theme = "manual" # manual (book class) or howto (article class)
 latex_additional_files = [
     "cronologicug.sty",
     "extraplaceins.sty",
+    "Ndigo6G-12_Front_Page.pdf",
 ]
 
 numfig = True
