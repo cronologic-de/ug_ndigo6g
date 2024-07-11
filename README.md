@@ -2,10 +2,12 @@
 
 User guide for the cronologic **Ndigo6G-12** digitizer.
 
-This is a Sphinx project that creates the user guide for the
+This is a Sphinx project that creates the User Guide for the
 [Ndigo6G-12](https://www.cronologic.de/product/ndigo6g-12),
 gigasample PCIe digitizer boards by
 [cronologic GmbH & Co. KG](https://www.cronologic.de).
+
+Find the documentation online at [docs.cronologic.de/ndigo6g](https://docs.cronologic.de/ndigo6g).
 
 LuaLaTeX or XeLaTeX, Python, and doxygen are necessary for compilation.
 
