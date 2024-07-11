@@ -46,7 +46,7 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
       run: |
         mkdir documentation
-        mv -r ./artifacts/html ./documentation/html
+        mv ./artifacts/html ./documentation/html
         mv ./artifacts/latex/Ndigo6G_User_Guide.pdf ./documentation/Ndigo6G_User_Guide.pdf
         zip -r documentation.zip documentation
         gh release upload ${{ github.event.release.tag_name }} ./documentation.zip
