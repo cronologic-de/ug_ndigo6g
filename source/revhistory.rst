@@ -53,5 +53,5 @@ Driver
 User Guide
 ----------
 
-|version| |emdash| TBA
-    | Initial release (pending)
+|version| |emdash| 2024-07-11
+    | Initial release
