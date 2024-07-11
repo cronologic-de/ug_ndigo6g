@@ -8,7 +8,7 @@ Technical Data
 - Mechanical Dimensions:
   **170 mm** :math:`\times` **106 mm**
 
-- Throughput: **800 MByte/s** on PCIe x8
+- Throughput: **5200 MByte/s** on PCIe x8
 
 
 Digitizer Characteristics
