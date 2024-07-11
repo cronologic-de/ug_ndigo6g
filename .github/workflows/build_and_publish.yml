@@ -1,9 +1,9 @@
-name: Build HTML and PDF documentation
+name: Build and publish HTML and PDF documentation
 
 on:
-  push:
-    branches:
-      dev
+  release:
+    types:
+      published
 
 jobs:
   build:
@@ -72,4 +72,47 @@ jobs:
         name: latex
         path: build/latex
 
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: ./artifacts
+
+    # - name: Publish HTML
+    #   uses: appleboy/scp-action@v0.1.7
+    #   with:
+    #     host: ${{ secrets.HOST }}
+    #     username: ${{ secrets.USERNAME }}
+    #     port: ${{ secrets.PORT }}
+    #     key: ${{ secrets.KEY }}
+    #     source: ./build/html/*
+    #     target: ${{ secrets.TARGETHTML }}
+    #     strip_components: 2
+    #     rm: true
+
+    # - name: Publish PDF
+    #   uses: appleboy/scp-action@v0.1.7
+    #   with:
+    #     host: ${{ secrets.HOST }}
+    #     username: ${{ secrets.USERNAME }}
+    #     port: ${{ secrets.PORT }}
+    #     key: ${{ secrets.KEY }}
+    #     source: ./build/latex/Ndigo6G_User_Guide.pdf
+    #     target: ${{ secrets.TARGETPDF }}
+    #     strip_components: 3
+    #     rm: true
+
+    - name: zip and upload documentation as release asset
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      run: |
+        mkdir documentation
+        mv ./artifacts/html ./documentation/html
+        mv ./artifacts/latex/Ndigo6G_User_Guide.pdf ./documentation/Ndigo6G_User_Guide.pdf
+        zip -r documentation.zip documentation
+        gh release upload ${{ github.event.release.tag_name }} ./documentation.zip
 
