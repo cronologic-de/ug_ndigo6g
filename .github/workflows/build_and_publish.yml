@@ -66,6 +66,10 @@ jobs:
         path: |
           build/latex/*
 
+    - name: Rename latex file
+      run: |
+        mv build/latex/ndigo6g-12userguide.pdf build/latex/Ndigo6G_User_Guide.pdf
+
     - name: Upload LaTeX to artifacts
       uses: actions/upload-artifact@v4
       with:
