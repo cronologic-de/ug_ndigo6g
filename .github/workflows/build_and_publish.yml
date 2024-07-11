@@ -106,13 +106,16 @@ jobs:
     #     strip_components: 3
     #     rm: true
 
-    - name: zip and upload documentation as release asset
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
+    - name: zip documentation
       run: |
         mkdir documentation
         mv ./artifacts/html ./documentation/html
         zip -r documentation.zip documentation
+
+    - name: Upload documentation as release asset
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      run: |
         gh release upload ${{ github.event.release.tag_name }} ./documentation.zip
 
 
