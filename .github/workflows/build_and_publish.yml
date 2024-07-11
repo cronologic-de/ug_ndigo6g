@@ -116,7 +116,7 @@ jobs:
       run: |
         mkdir documentation
         mv ./artifacts/html ./documentation/html
-        zip -r documentation.zip documentation
+        zip -r documentation.zip documentation/*
 
     - name: Upload documentation as release asset
       env:
