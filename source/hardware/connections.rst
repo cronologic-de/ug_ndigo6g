@@ -122,8 +122,8 @@ The input circuit and trigger logic is identical to the TDC inputs
 (see :numref:`Figures %s<fig digital input circuit>` and
 :numref:`%s<Fig 2.17>`).
 
-Control Inputs as TDCs
-^^^^^^^^^^^^^^^^^^^^^^
+Use Control Inputs as TDCs
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 The control inputs FPGA0 and FPGA1 can be used as low-resolution TDCs.
 
 .. hint::
