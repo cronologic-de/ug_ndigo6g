@@ -32,7 +32,7 @@ breathe_show_include = False
 breathe_show_define_initializer = True
 
 autosectionlabel_prefix_document = True
-autosectionlabel_maxdepth = 2
+autosectionlabel_maxdepth = 3
 
 with open("global.rst", "r") as f:
     prolog_file = f.read()
