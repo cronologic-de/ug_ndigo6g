@@ -64,7 +64,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="470.47854"
+     inkscape:cx="470.73108"
      inkscape:cy="105.81348"
      inkscape:document-units="px"
      inkscape:current-layer="g3437"
@@ -102,7 +102,7 @@
        id="g3437"
        transform="translate(-34.300543,312.42991)">
       <rect
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter3880)"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect3866"
          width="856.10547"
          height="358.96259"
@@ -312,8 +312,8 @@
          id="text3533"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="341.42206"
-         x="329.07309"
-         xml:space="preserve">AAI,AAIN or DAI,DAIN</text>
+         x="347.76093"
+         xml:space="preserve">Channel A or D</text>
       <path
          id="path3547"
          d="m 189.83859,142.86058 v 62.49303"
@@ -627,7 +627,7 @@
          y="242.97244"
          id="text1"><tspan
            sodipodi:role="line"
-           id="tspan1"></tspan></text>
+           id="tspan1" /></text>
       <text
          xml:space="preserve"
          style="font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, ';fill:#ed7800;stroke:#ed7800;stroke-width:1.173"
@@ -635,7 +635,7 @@
          y="14.677964"
          id="text2"><tspan
            sodipodi:role="line"
-           id="tspan2"></tspan></text>
+           id="tspan2" /></text>
     </g>
   </g>
 </svg>

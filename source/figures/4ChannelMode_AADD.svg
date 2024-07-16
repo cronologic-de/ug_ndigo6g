@@ -24,10 +24,10 @@
        id="filter3062"
        inkscape:label="Drop Shadow"
        color-interpolation-filters="sRGB"
-       x="-0.012879587"
-       y="-0.036257448"
-       width="1.0307326"
-       height="1.0865157">
+       x="-0.00097561214"
+       y="-0.0027464551"
+       width="1.0069247"
+       height="1.0194938">
       <feFlood
          id="feFlood3064"
          flood-opacity="0.5"
@@ -41,7 +41,7 @@
          result="composite1" />
       <feGaussianBlur
          id="feGaussianBlur3068"
-         stdDeviation="4"
+         stdDeviation="0.010837103"
          result="blur" />
       <feOffset
          id="feOffset3070"
@@ -59,10 +59,10 @@
        id="filter3075"
        inkscape:label="Drop Shadow"
        color-interpolation-filters="sRGB"
-       x="-0.013030664"
-       y="-0.031667266"
-       width="1.0310929"
-       height="1.0755624">
+       x="-0.012879587"
+       y="-0.036257448"
+       width="1.0307326"
+       height="1.0865157">
       <feFlood
          id="feFlood3077"
          flood-opacity="0.5"
@@ -99,10 +99,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="293.21429"
-     inkscape:cy="200.35714"
+     inkscape:cx="150"
+     inkscape:cy="133.21428"
      inkscape:document-units="px"
-     inkscape:current-layer="g2989"
+     inkscape:current-layer="layer1"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -115,7 +115,8 @@
      inkscape:window-maximized="1"
      inkscape:showpageshadow="2"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1" />
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#ffffffff" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -133,7 +134,7 @@
      id="layer1"
      transform="translate(64.212652,-463.44185)">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.51729;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3062)"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.51729;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
        id="rect3060"
        width="804.26843"
        height="285.69702"
@@ -438,37 +439,13 @@
          style="font-style:normal;font-weight:normal;font-size:16.2657px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000;stroke-width:0.999986"
          y="288.04401"
          x="277.75208"
-         xml:space="preserve">AAI</text>
-      <text
-         id="text3083"
-         style="font-style:normal;font-weight:normal;font-size:16.2657px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000;stroke-width:0.999986"
-         y="288.04401"
-         x="305.27875"
-         xml:space="preserve">, </text>
-      <text
-         id="text3085"
-         style="font-style:normal;font-weight:normal;font-size:16.2657px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000;stroke-width:0.999986"
-         y="288.04401"
-         x="314.03723"
-         xml:space="preserve">AAIN</text>
+         xml:space="preserve">Channel A</text>
       <text
          id="text3087-7"
          style="font-style:normal;font-weight:normal;font-size:16.2657px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000;stroke-width:0.999986"
          y="288.04401"
          x="539.25519"
-         xml:space="preserve">DAI</text>
-      <text
-         id="text3089-6"
-         style="font-style:normal;font-weight:normal;font-size:16.2657px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000;stroke-width:0.999986"
-         y="288.04401"
-         x="566.78186"
-         xml:space="preserve">, </text>
-      <text
-         id="text3091-2"
-         style="font-style:normal;font-weight:normal;font-size:16.2657px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000;stroke-width:0.999986"
-         y="288.04401"
-         x="575.54034"
-         xml:space="preserve">DAIN</text>
+         xml:space="preserve">Channel D</text>
       <path
          id="path3133-1"
          d="M 306.68633,206.55887 H 436.26487"

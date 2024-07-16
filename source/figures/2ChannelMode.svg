@@ -64,7 +64,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="261.60714"
+     inkscape:cx="261.78571"
      inkscape:cy="165.53571"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -99,7 +99,7 @@
      id="layer1"
      transform="translate(119.11561,-418.67315)">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.51828;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3075)"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.51828;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3073"
        width="794.98175"
        height="327.12454"
@@ -325,37 +325,13 @@
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="309.05389"
          x="277.77313"
-         xml:space="preserve">AAI</text>
-      <text
-         id="text3083"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="309.05389"
-         x="305.3002"
-         xml:space="preserve">, </text>
-      <text
-         id="text3085"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="309.05389"
-         x="314.05881"
-         xml:space="preserve">AAIN</text>
+         xml:space="preserve">Channel A</text>
       <text
          id="text3087"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="309.05389"
          x="539.28027"
-         xml:space="preserve">DAI</text>
-      <text
-         id="text3089"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="309.05389"
-         x="566.80737"
-         xml:space="preserve">, </text>
-      <text
-         id="text3091"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="309.05389"
-         x="575.56598"
-         xml:space="preserve">DAIN</text>
+         xml:space="preserve">Channel D</text>
       <path
          id="path3093"
          d="M 250.87169,50.205618 V 121.13474"
