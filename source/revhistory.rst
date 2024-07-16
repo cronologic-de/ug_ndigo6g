@@ -52,8 +52,9 @@ Driver
 
 User Guide
 ----------
+|version| |emdash| TBA
 
-|version| |emdash| 2024-07-16
+0.1.1 |emdash| 2024-07-16
     | Corrected values in introduction
     | Improved phrasing throughout
 
