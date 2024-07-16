@@ -43,13 +43,14 @@ the next level both in performance and flexibility.
 The Ndigo6G-12 was specifically designed for time-of-flight applications like
 `LIDAR <https://www.cronologic.de/applications/lidar>`_ or
 `TOF mass spectrometry <https://www.cronologic.de/applications/tof-mass-spectrometry>`_.
-Pulse arrival times can be measured with an accuracy **down to 5 ps** together
-with information on pulse shape such as area or amplitude.
+A measurement precision of **5 ps (RMS)** is achievable for unipolar pulses.
+In addition, information on the pulse shape, such as area or amplitude, is
+recorded.
 
 **Four channels** with **1600 Msps at 12 bit resolution** can be acquired
 independently. Alternatively, the four channels can be combined into two
 channels or into a single channel. This way, either a higher temporal
-resolution up to 6400 Msps or a larger dynamic range can be achieved via
+resolution **up to 6400 Msps** or a **larger dynamic range** can be achieved via
 :ref:`multiple-sampling modes <functionality/adc_modes:multiple sampling modes>`.
 
 This User Guide documents the hardware and functionality of the
