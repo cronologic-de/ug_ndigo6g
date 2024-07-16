@@ -6,15 +6,17 @@ Trigger Setup
 The Ndigo6G-12 records analog waveforms using zero suppression.
 Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory.
-Each ADC channel has one trigger block determining whether data is written to
+Each ADC channel has one *trigger block* determining whether data is written to
 the FIFO.
-The parameters are set in Structures :cpp:struct:`ndigo6g12_trigger` and
-:cpp:struct:`ndigo6g12_trigger_block`.
 
-Each :cpp:member:`trigger_block <ndigo6g12_configuration::trigger_block>`
-consists of two independent units that check the
-incoming raw data stream for trigger conditions. The trigger conditions
-are configured using the :cpp:struct:`ndigo6g12_trigger` structure.
+All triggers are configured with the Structures
+:cpp:struct:`ndigo6g12_trigger` and :cpp:struct:`ndigo6g12_trigger_block`.
+
+Each *trigger block* consists of two independent units that check the
+incoming raw data stream for trigger conditions.
+
+The trigger conditions are configured using the :cpp:struct:`ndigo6g12_trigger` 
+structure.
 
 Trigger configuration
 ^^^^^^^^^^^^^^^^^^^^^
