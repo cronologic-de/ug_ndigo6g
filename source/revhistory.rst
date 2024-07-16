@@ -54,4 +54,7 @@ User Guide
 ----------
 
 |version| |emdash| 2024-07-11
+    | Corrected values in introduction
+
+0.1.0 |emdash| 2024-07-11
     | Initial release

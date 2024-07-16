@@ -78,12 +78,12 @@ Ndigo6G-12 driver.
 
 - Up to **four ADC channels** for your individual measurement setups.
 
-- **Four TDC channels** with a resolution of **12 ns**.
+- **Four TDC channels** with a resolution of **13 ps**.
 
 - **Two digital control inputs** for effective
   **gating and triggering**.
 
-- PCIe3 x8 with **TODO MB/s throughput** for simple and fast
+- PCIe3 x8 with **6000 MB/s throughput** for simple and fast
   data transfer to most PCs.
 
 - **Unlimited multihit** capabilities.
@@ -128,7 +128,7 @@ Ndigo6G-12 driver.
 +------------------------------------+---------------------------------------------+
 | Maximum bandwidth                  | TBD                                         |
 +------------------------------------+---------------------------------------------+
-| TDC bin size                       | 12 ps                                       |
+| TDC bin size                       | 13 ps                                       |
 +------------------------------------+---------------------------------------------+
 | TDC double pulse resolution        | typicaly 4 ns                               |
 +------------------------------------+---------------------------------------------+
@@ -137,11 +137,10 @@ Ndigo6G-12 driver.
 | Dead time between groups           | none                                        |
 +------------------------------------+---------------------------------------------+
 | Readout rate                       | | 5200 MByte/s (ADC)                        |
-|                                    | | approx. 6000 MByte/s (TDC)                |
+|                                    | | 30 MHits/s (all TDC channels)             |
+|                                    | | 11.6 MHits/s (single TDC channel)         |
 +------------------------------------+---------------------------------------------+
 | Timestamp range                    | 106 d                                       |
-+------------------------------------+---------------------------------------------+
-| Synchronization                    | up to 8 boards                              |
 +------------------------------------+---------------------------------------------+
 | Readout interface                  | PCIe3 x8                                    |
 +------------------------------------+---------------------------------------------+
