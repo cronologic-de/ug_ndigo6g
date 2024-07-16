@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__packetflags" kind="group">
+    <compoundname>packetflags</compoundname>
+    <title>Packet flags</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__packetflags_1gaf114411ce4e678b35cf6f3e4fe98a5ef" prot="public" static="no">
+        <name>CRONO_PACKET_FLAG_SHORTENED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Packet was truncated because internal FIFO was full. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This means that less than the requested number of samples have been written. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="78" column="9" bodyfile="source/crono_interface.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__packetflags_1ga5214c557e9f61bdd21f0e72a15f9b6db" prot="public" static="no">
+        <name>CRONO_PACKET_FLAG_PACKETS_LOST</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Lost triggers preceeded this packet due to insufficient DMA buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The DMA controller has discarded packets due to the full host buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="86" column="9" bodyfile="source/crono_interface.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__packetflags_1gaf824c90dc8978558879aec85e6889c40" prot="public" static="no">
+        <name>CRONO_PACKET_FLAG_OVERFLOW</name>
+        <initializer>4</initializer>
+        <briefdescription>
+<para>The packet contains ADC sample overflows. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="91" column="9" bodyfile="source/crono_interface.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__packetflags_1ga4537b5516753c32786c9f132ae178230" prot="public" static="no">
+        <name>CRONO_PACKET_FLAG_TRIGGER_MISSED</name>
+        <initializer>8</initializer>
+        <briefdescription>
+<para>Lost triggers preceeded this packet due to insufficient buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The trigger unit has discarded packets due to a full FIFO. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="97" column="9" bodyfile="source/crono_interface.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__packetflags_1gaa39d2cf45e727cdec75dc7065238908d" prot="public" static="no">
+        <name>CRONO_PACKET_FLAG_DMA_FIFO_FULL</name>
+        <initializer>16</initializer>
+        <briefdescription>
+<para>The internal DMA FIFO was full. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Triggers only got lost if a subsequent package has <ref refid="structcrono__packet_1aa2585d779da0ab21273a8d92de9a0ebe" kindref="member">crono_packet::flags</ref> with a bit weight <ref refid="group__packetflags_1ga4537b5516753c32786c9f132ae178230" kindref="member">CRONO_PACKET_FLAG_TRIGGER_MISSED</ref> set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="105" column="9" bodyfile="source/crono_interface.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__packetflags_1ga92063812bf8af8aa720d22a5a9fc7281" prot="public" static="no">
+        <name>CRONO_PACKET_FLAG_HOST_BUFFER_FULL</name>
+        <initializer>32</initializer>
+        <briefdescription>
+<para>The host buffer was full. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Triggers only got lost if a subsequent package has <ref refid="structcrono__packet_1aa2585d779da0ab21273a8d92de9a0ebe" kindref="member">crono_packet::flags</ref> with a bit weight <ref refid="group__packetflags_1ga4537b5516753c32786c9f132ae178230" kindref="member">CRONO_PACKET_FLAG_TRIGGER_MISSED</ref> set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="113" column="9" bodyfile="source/crono_interface.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__packetflags_1ga499213ea1bccecfcf0934f056ac8d8ae" prot="public" static="no">
+        <name>CRONO_PACKET_FLAG_TDC_NO_EDGE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+<para>The packet from a TDC does not contain valid data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Hence, the timestamp is not corrected. No valid edge was found for the TDC. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="120" column="9" bodyfile="source/crono_interface.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Errors concering the data of a packet or its processing. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Used for <ref refid="structcrono__packet_1aa2585d779da0ab21273a8d92de9a0ebe" kindref="member">crono_packet::flags</ref>. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

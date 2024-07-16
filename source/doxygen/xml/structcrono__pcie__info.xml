@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structcrono__pcie__info" kind="struct" language="C++" prot="public">
+    <compoundname>crono_pcie_info</compoundname>
+    <includes refid="crono__interface_8h" local="no">crono_interface.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcrono__pcie__info_1a2da8464d7d389857007dbc41cbd2769e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t pwr_mgmt</definition>
+        <argsstring></argsstring>
+        <name>pwr_mgmt</name>
+        <qualifiedname>crono_pcie_info::pwr_mgmt</qualifiedname>
+        <briefdescription>
+<para>Organizes power supply of PCIe lanes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="358" column="14" bodyfile="source/crono_interface.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrono__pcie__info_1a6a71fcd0f10965c4d7f9d5bea0be3115" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_width</definition>
+        <argsstring></argsstring>
+        <name>link_width</name>
+        <qualifiedname>crono_pcie_info::link_width</qualifiedname>
+        <briefdescription>
+<para>Number of PCIe lanes that the card uses. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Should be 1, 2, or 4 for Ndigo5G and 1, 2, 4, or 8 for the Ndigo6G-12. Ideally, should be the respective maximum. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="366" column="14" bodyfile="source/crono_interface.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrono__pcie__info_1a91b7c315a5033b6fd324e3ff9d898cc6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t max_payload</definition>
+        <argsstring></argsstring>
+        <name>max_payload</name>
+        <qualifiedname>crono_pcie_info::max_payload</qualifiedname>
+        <briefdescription>
+<para>Maximum size in bytes for one PCIe transaction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Depends on the system configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="372" column="14" bodyfile="source/crono_interface.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrono__pcie__info_1aae24fc4f200e75aa8215f797b2561dbf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_speed</definition>
+        <argsstring></argsstring>
+        <name>link_speed</name>
+        <qualifiedname>crono_pcie_info::link_speed</qualifiedname>
+        <briefdescription>
+<para>Data rate of the PCIe card. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Depends on the system configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="378" column="14" bodyfile="source/crono_interface.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrono__pcie__info_1aa08ef78334f8abc54403c6ff172cf211" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t error_status_supported</definition>
+        <argsstring></argsstring>
+        <name>error_status_supported</name>
+        <qualifiedname>crono_pcie_info::error_status_supported</qualifiedname>
+        <briefdescription>
+<para>Different from 0 if the PCIe error status is supported for this device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="384" column="14" bodyfile="source/crono_interface.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrono__pcie__info_1a632233adea772089be357e2ca4413476" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t correctable_error_status</definition>
+        <argsstring></argsstring>
+        <name>correctable_error_status</name>
+        <qualifiedname>crono_pcie_info::correctable_error_status</qualifiedname>
+        <briefdescription>
+<para>Correctable error status flags, directly from the PCIe config register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Useful for debugging PCIe problems. 0, if no error is present, otherwise one of <ref refid="group__pciecorrectableerrors" kindref="compound">CRONO_PCIE_* </ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="393" column="14" bodyfile="source/crono_interface.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrono__pcie__info_1a7061e033851718f01f63ef104c23c1be" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t uncorrectable_error_status</definition>
+        <argsstring></argsstring>
+        <name>uncorrectable_error_status</name>
+        <qualifiedname>crono_pcie_info::uncorrectable_error_status</qualifiedname>
+        <briefdescription>
+<para>Uncorrectable error status flags, directly from the PCIe config register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Useful for debugging PCIe problems. 0, if no error is present, otherwise one of <ref refid="group__pcieuncorrectableerrors" kindref="compound">CRONO_PCIE_UNC_* </ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="402" column="14" bodyfile="source/crono_interface.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrono__pcie__info_1aa43c4c21b173ada1b6b7568956f0d650" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <qualifiedname>crono_pcie_info::reserved</qualifiedname>
+        <briefdescription>
+<para>For future extension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="407" column="14" bodyfile="source/crono_interface.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure containing PCIe information. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="source/crono_interface.h" line="354" column="1" bodyfile="source/crono_interface.h" bodystart="354" bodyend="408"/>
+    <listofallmembers>
+      <member refid="structcrono__pcie__info_1a632233adea772089be357e2ca4413476" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>correctable_error_status</name></member>
+      <member refid="structcrono__pcie__info_1aa08ef78334f8abc54403c6ff172cf211" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>error_status_supported</name></member>
+      <member refid="structcrono__pcie__info_1aae24fc4f200e75aa8215f797b2561dbf" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>link_speed</name></member>
+      <member refid="structcrono__pcie__info_1a6a71fcd0f10965c4d7f9d5bea0be3115" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>link_width</name></member>
+      <member refid="structcrono__pcie__info_1a91b7c315a5033b6fd324e3ff9d898cc6" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>max_payload</name></member>
+      <member refid="structcrono__pcie__info_1a2da8464d7d389857007dbc41cbd2769e" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>pwr_mgmt</name></member>
+      <member refid="structcrono__pcie__info_1aa43c4c21b173ada1b6b7568956f0d650" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>reserved</name></member>
+      <member refid="structcrono__pcie__info_1a7061e033851718f01f63ef104c23c1be" prot="public" virt="non-virtual"><scope>crono_pcie_info</scope><name>uncorrectable_error_status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

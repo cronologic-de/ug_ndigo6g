@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structndigo6g12__device" kind="struct" language="C++" prot="public">
+    <compoundname>ndigo6g12_device</compoundname>
+    <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structndigo6g12__device_1a7b1d0df736739f38994ed29f54cffdf3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool is_valid</definition>
+        <argsstring></argsstring>
+        <name>is_valid</name>
+        <qualifiedname>ndigo6g12_device::is_valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="476" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__device_1ad11caf1e34fe5bda6c4fe7b2317edbf8" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ndigo6g12</definition>
+        <argsstring></argsstring>
+        <name>ndigo6g12</name>
+        <qualifiedname>ndigo6g12_device::ndigo6g12</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="477" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Contains information of the Ndigo6G-12 device in use. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="source/ndigo6g12_interface.h" line="475" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="475" bodyend="478"/>
+    <listofallmembers>
+      <member refid="structndigo6g12__device_1a7b1d0df736739f38994ed29f54cffdf3" prot="public" virt="non-virtual"><scope>ndigo6g12_device</scope><name>is_valid</name></member>
+      <member refid="structndigo6g12__device_1ad11caf1e34fe5bda6c4fe7b2317edbf8" prot="public" virt="non-virtual"><scope>ndigo6g12_device</scope><name>ndigo6g12</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

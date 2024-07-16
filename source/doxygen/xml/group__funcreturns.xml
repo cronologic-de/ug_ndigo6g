@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__funcreturns" kind="group">
+    <compoundname>funcreturns</compoundname>
+    <title>Return codes of functions</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__funcreturns_1ga15da8d27c6af5e31df23ca028f1da690" prot="public" static="no">
+        <name>CRONO_OK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="18" column="9" bodyfile="source/crono_interface.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga6ef845aa881c443d12659d9e2c1112f1" prot="public" static="no">
+        <name>CRONO_WINDRIVER_NOT_FOUND</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="19" column="9" bodyfile="source/crono_interface.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1gab4185003fbe22362e0ccd55f0c0b4e0a" prot="public" static="no">
+        <name>CRONO_DEVICE_NOT_FOUND</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="20" column="9" bodyfile="source/crono_interface.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga13e51a91144c7a24047b8c8c5657ed72" prot="public" static="no">
+        <name>CRONO_NOT_INITIALIZED</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="21" column="9" bodyfile="source/crono_interface.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1gadfc2725c937ce91262c34988d9727060" prot="public" static="no">
+        <name>CRONO_WRONG_STATE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="23" column="9" bodyfile="source/crono_interface.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga9af0b7e89c088164655ee7433219d7b5" prot="public" static="no">
+        <name>CRONO_INVALID_DEVICE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="25" column="9" bodyfile="source/crono_interface.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga863e781e3dff36adea8b72d61cba0172" prot="public" static="no">
+        <name>CRONO_BUFFER_ALLOC_FAILED</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="26" column="9" bodyfile="source/crono_interface.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga9f1e6409f93091bdb949cc61fa863215" prot="public" static="no">
+        <name>CRONO_TDC_NO_EDGE_FOUND</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="27" column="9" bodyfile="source/crono_interface.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga33481f4763274ca9dce94e4f9c37aa54" prot="public" static="no">
+        <name>CRONO_INVALID_BUFFER_PARAMETERS</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="28" column="9" bodyfile="source/crono_interface.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga7307ed2d8a0164202f676f0d7d5f87d6" prot="public" static="no">
+        <name>CRONO_INVALID_CONFIG_PARAMETERS</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="29" column="9" bodyfile="source/crono_interface.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga667a438bce083f0fe019432c9ad3e9b0" prot="public" static="no">
+        <name>CRONO_WINDOW_CALIBRATION_FAILED</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="30" column="9" bodyfile="source/crono_interface.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga71bd9fb405b37a3d151ae0bf5316e157" prot="public" static="no">
+        <name>CRONO_HARDWARE_FAILURE</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="31" column="9" bodyfile="source/crono_interface.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1gaceee3ab4a86d9835d4abc9801d0c8d20" prot="public" static="no">
+        <name>CRONO_INVALID_ADC_MODE</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="32" column="9" bodyfile="source/crono_interface.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga52734146ca9b437b88b963473f1a179c" prot="public" static="no">
+        <name>CRONO_SYNCHRONIZATION_FAILED</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="33" column="9" bodyfile="source/crono_interface.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1gaa8b21a87bc59df50926de5ff7b432379" prot="public" static="no">
+        <name>CRONO_DEVICE_OPEN_FAILED</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="34" column="9" bodyfile="source/crono_interface.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga2a75568cfbfb022747490f68e4da140c" prot="public" static="no">
+        <name>CRONO_INTERNAL_ERROR</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="35" column="9" bodyfile="source/crono_interface.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1gaca6699f9cdf2a797ed5c567bb82b4362" prot="public" static="no">
+        <name>CRONO_CALIBRATION_FAILURE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="36" column="9" bodyfile="source/crono_interface.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga2be48360bc22c6f2157035ee7b48db42" prot="public" static="no">
+        <name>CRONO_INVALID_ARGUMENTS</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="37" column="9" bodyfile="source/crono_interface.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__funcreturns_1ga860d0bd4202237f4c2173c061462a0f3" prot="public" static="no">
+        <name>CRONO_INSUFFICIENT_DATA</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="38" column="9" bodyfile="source/crono_interface.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Return codes of various functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>All ERRORS must be positive integers, because the upper byte is used by crono_tools </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

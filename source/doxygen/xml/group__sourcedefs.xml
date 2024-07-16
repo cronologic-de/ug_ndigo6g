@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__sourcedefs" kind="group">
+    <compoundname>sourcedefs</compoundname>
+    <title>defines for trigger_source</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__sourcedefs_1gad85e47f3b9cb93fa3c5e09b5ee23456b" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_NONE</name>
+        <initializer>0x00000000</initializer>
+        <briefdescription>
+<para>All trigger sources disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="248" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga5282acf49f991fd38856930423263310" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_A0</name>
+        <initializer>0x00000001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="250" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1gaceb5cc7c2d9598057055bf11ae7374a9" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_A1</name>
+        <initializer>0x00000002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="251" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1gaca7a1750faf3cffdd15d3e972551e3ba" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_B0</name>
+        <initializer>0x00000004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="252" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga47accd3ba5b7c214e82ee18f5cd5781b" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_B1</name>
+        <initializer>0x00000008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="253" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga8f42753ebcff479824176cb88378dde3" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_C0</name>
+        <initializer>0x00000010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="254" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1gafb73f82c7f875d694d1cada43cead711" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_C1</name>
+        <initializer>0x00000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="255" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga4751c08972815b49297e59ff6b027dcf" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_D0</name>
+        <initializer>0x00000040</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="256" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga3b17643ce2cc98bd5c1f7e6f64d0355c" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_D1</name>
+        <initializer>0x00000080</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="257" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1gad88618b62eccaa028bffb8891299aade" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_TDC0</name>
+        <initializer>0x00000100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="259" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga5ded9b09fdcddbb1e25345f50c80ad69" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_TDC1</name>
+        <initializer>0x00000200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="260" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1gab58177061c491d9d0b478ecae11dda82" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_TDC2</name>
+        <initializer>0x00000400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="261" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga25ec036e958db242f44ffc087ffcb8df" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_TDC3</name>
+        <initializer>0x00000800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="262" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name>
+        <initializer>0x00001000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="264" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name>
+        <initializer>0x00002000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="265" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_AUTO</name>
+        <initializer>0x00004000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="267" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga4d5aa984a0ff1040e17dd6898c23f2ae" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_ONE</name>
+        <initializer>0x00008000</initializer>
+        <briefdescription>
+<para>Trigger signal is active each clock cycle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="272" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Bitmasks for trigger sources. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Used for <ref refid="structndigo6g12__trigger__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">ndigo6g12_trigger_block::sources</ref>, <ref refid="structndigo6g12__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">ndigo6g12_gating_block::sources</ref>, <ref refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">ndigo6g12_tdc_gating_block::sources</ref>, and <ref refid="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">ndigo6g12_tdc_tiger_block::sources</ref>. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
