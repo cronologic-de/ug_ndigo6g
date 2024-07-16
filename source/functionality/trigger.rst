@@ -64,18 +64,18 @@ the window (see :numref:`Figure %s<figure zero suppression>`).
 .. _Fig 2.13:
 .. figure:: ../figures/4ChannelTriggering.*
 
-   Triggering in 4 channel mode at 8 samples per clock cycle.
+   Triggering in 4-channel mode at 8 samples per clock cycle.
 
 .. _Fig 2.14:
 .. figure:: ../figures/2ChannelTriggering.*
 
-   Triggering in 2 channel mode at 16 samples per clock cycle.
+   Triggering in 2-channel mode at 16 samples per clock cycle.
 
 
 .. _Fig 2.15:
 .. figure:: ../figures/1ChannelTriggering.*
 
-   Triggering in 1 channel mode at 32 samples per clock cycle.
+   Triggering in 1-channel mode at 32 samples per clock cycle.
 
 Trigger inputs
 ^^^^^^^^^^^^^^
