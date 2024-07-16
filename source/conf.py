@@ -26,7 +26,7 @@ extensions = [
     "breathe",
 ]
 
-breathe_projects = {"ndigo6g12_api": os.fspath("../build/doxygen/xml/")}
+breathe_projects = {"ndigo6g12_api": os.fspath("./doxygen/xml/")}
 breathe_default_project = "ndigo6g12_api"
 breathe_show_include = False
 breathe_show_define_initializer = True
