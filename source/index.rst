@@ -33,7 +33,7 @@ Ndigo6G |hyphen| User Guide
 
 The `Ndigo6G-12 <https://www.cronologic.de/product/ndigo6g-12>`_ offers
 **6400 Msps sample rate**, **12 bit resolution** and a greatly
-improved **readout rate of up to 6000 MB/s**.
+improved **readout rate of up to 5200 MB/s**.
 
 The unit is a **combined ADC/TDC board** for the acquisition of pulses in
 time-of-flight applications. It builds on the established platform of the
@@ -84,8 +84,7 @@ Ndigo6G-12 driver.
 - **Two digital control inputs** for effective
   **gating and triggering**.
 
-- PCIe3 x8 with **6000 MB/s throughput** for simple and fast
-  data transfer to most PCs.
+- PCIe3 x8 interface for simple and fast data transfer to most PCs.
 
 - **Unlimited multihit** capabilities.
 
