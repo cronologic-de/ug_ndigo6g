@@ -92,7 +92,7 @@ Ndigo6G-12 driver.
 
 - Continuous ADC readout rate of approx. **5200 MB/s**.
 
-- **Zero suppression** reducing PCIe load.
+- **Zero suppression**, significantly reducing PCIe load.
 
 - **Internal 10 MHz** clock with a time base of **10 ppb** or the
   **ability to use an external** 10 MHz clock.
@@ -130,7 +130,7 @@ Ndigo6G-12 driver.
 +------------------------------------+---------------------------------------------+
 | TDC bin size                       | 13 ps                                       |
 +------------------------------------+---------------------------------------------+
-| TDC double pulse resolution        | typicaly 4 ns                               |
+| TDC double pulse resolution        | typically 4 ns                              |
 +------------------------------------+---------------------------------------------+
 | Multihit                           | unlimited                                   |
 +------------------------------------+---------------------------------------------+
