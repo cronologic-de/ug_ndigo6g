@@ -53,8 +53,9 @@ Driver
 User Guide
 ----------
 
-|version| |emdash| 2024-07-11
+|version| |emdash| 2024-07-16
     | Corrected values in introduction
+    | Improved phrasing throughout
 
 0.1.0 |emdash| 2024-07-11
     | Initial release
