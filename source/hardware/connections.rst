@@ -106,11 +106,12 @@ There are two digital control inputs on the front slot cover called
 FPGA0 and FPGA1.
 
 Input-signals on the inputs FPGA0 and FPGA1 are digitized and routed to the 
-Trigger Matrix. They can be used to trigger any of the trigger state machines and :doc:`gating blocks <../functionality/gating>` with maximum sampling rate.
+Trigger Matrix. They can be used to trigger any of the trigger state machines 
+and :doc:`gating blocks <../functionality/gating>` with maximum sampling rate.
 
-The digital control inputs are optimally suited to be used as digital triggers and gates, and we recommend using them instead of the
-:ref:`digital TDC inputs <digital tdc inputs>`
-for these purposes.
+The digital control inputs are optimally suited to be used as digital triggers 
+and gates, and we recommend using them instead of the
+:ref:`digital TDC inputs <digital tdc inputs>` for these purposes.
 
 FPGA0 and FPGA1 are configured analogously to the TDC inputs (see
 :numref:`Section %s<digital tdc inputs>` and
