@@ -12,5 +12,5 @@ __pycache__/
 
 # various
 source/figures/obsolete/
-fetch_interface.bat
+*.sh
 *.bak
