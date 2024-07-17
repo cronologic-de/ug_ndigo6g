@@ -23,7 +23,7 @@ Firmware
 
 Driver
 ------
-2.0.0 |emdash| TBA
+2.0.1 |emdash| 2024-07-17
     | Extensive revision of the application programming interface
     | Improved linux support
     | Improved documentation
@@ -52,7 +52,10 @@ Driver
 
 User Guide
 ----------
-|version| |emdash| TBA
+|version| |emdash| 2024-07-17
+    | Rename FPGA0/1 to TRG/GATE
+    | Restructure API documentation
+    | Expand documentation on Packet Format
 
 0.1.1 |emdash| 2024-07-16
     | Corrected values in introduction
