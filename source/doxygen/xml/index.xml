@@ -367,10 +367,12 @@
     <member refid="group__sourcedefs_1ga5ded9b09fdcddbb1e25345f50c80ad69" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC1</name></member>
     <member refid="group__sourcedefs_1gab58177061c491d9d0b478ecae11dda82" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC2</name></member>
     <member refid="group__sourcedefs_1ga25ec036e958db242f44ffc087ffcb8df" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC3</name></member>
-    <member refid="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name></member>
-    <member refid="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name></member>
+    <member refid="group__sourcedefs_1ga008d38f3b1bf98dcb9a6615157fb5e77" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TRG</name></member>
+    <member refid="group__sourcedefs_1ga2b298b7a7c3fcd57787fcef68520f719" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_GATE</name></member>
     <member refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_AUTO</name></member>
     <member refid="group__sourcedefs_1ga4d5aa984a0ff1040e17dd6898c23f2ae" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_ONE</name></member>
+    <member refid="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name></member>
+    <member refid="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name></member>
     <member refid="group__tdcpacketflags_1gaac3fc10b5f615ad03ecfb52a26b0e546" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_RESERVED</name></member>
     <member refid="group__tdcpacketflags_1ga414ee83902f69fe30f828657e3a144ca" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA</name></member>
     <member refid="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_LOST</name></member>
@@ -397,10 +399,12 @@
     <member refid="group__triggerdefs_1gaf5841ea364ca55f7a9c2425f090de583" kind="define"><name>NDIGO6G12_TRIGGER_TDC1</name></member>
     <member refid="group__triggerdefs_1ga56946427c59350a9dd009bdb1d29d1ba" kind="define"><name>NDIGO6G12_TRIGGER_TDC2</name></member>
     <member refid="group__triggerdefs_1ga3d28c6d62cbe3932cd5fe50894253174" kind="define"><name>NDIGO6G12_TRIGGER_TDC3</name></member>
-    <member refid="group__triggerdefs_1gad0a2ed9ea21a259daa91c5a8145875c9" kind="define"><name>NDIGO6G12_TRIGGER_FPGA0</name></member>
-    <member refid="group__triggerdefs_1gac9ffa6d38056cf5c0e58e73da7d27585" kind="define"><name>NDIGO6G12_TRIGGER_FPGA1</name></member>
+    <member refid="group__triggerdefs_1ga40689cd1bd352b7d7338764e72da0ecc" kind="define"><name>NDIGO6G12_TRIGGER_TRG</name></member>
+    <member refid="group__triggerdefs_1ga5c8e474086f222ea6e9945356d74183b" kind="define"><name>NDIGO6G12_TRIGGER_GATE</name></member>
     <member refid="group__triggerdefs_1ga473188e6f82aa412123aa9aa8e76f485" kind="define"><name>NDIGO6G12_TRIGGER_AUTO</name></member>
     <member refid="group__triggerdefs_1gaddbcf304ec8709008e9cdd7594e575f9" kind="define"><name>NDIGO6G12_TRIGGER_ONE</name></member>
+    <member refid="group__triggerdefs_1gad0a2ed9ea21a259daa91c5a8145875c9" kind="define"><name>NDIGO6G12_TRIGGER_FPGA0</name></member>
+    <member refid="group__triggerdefs_1gac9ffa6d38056cf5c0e58e73da7d27585" kind="define"><name>NDIGO6G12_TRIGGER_FPGA1</name></member>
     <member refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kind="define"><name>NDIGO6G12_DC_OFFSET_N_NIM</name></member>
     <member refid="group__devicestates_1ga966029913bb493197b755aefb3451e66" kind="define"><name>NDIGO6G12_DEVICE_STATE_INITIALIZED</name></member>
     <member refid="group__devicestates_1ga9a4c10e013521be5659574c819a31104" kind="define"><name>NDIGO6G12_DEVICE_STATE_CONFIGURED</name></member>
@@ -503,10 +507,12 @@
     <member refid="group__sourcedefs_1ga5ded9b09fdcddbb1e25345f50c80ad69" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC1</name></member>
     <member refid="group__sourcedefs_1gab58177061c491d9d0b478ecae11dda82" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC2</name></member>
     <member refid="group__sourcedefs_1ga25ec036e958db242f44ffc087ffcb8df" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC3</name></member>
-    <member refid="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name></member>
-    <member refid="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name></member>
+    <member refid="group__sourcedefs_1ga008d38f3b1bf98dcb9a6615157fb5e77" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TRG</name></member>
+    <member refid="group__sourcedefs_1ga2b298b7a7c3fcd57787fcef68520f719" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_GATE</name></member>
     <member refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_AUTO</name></member>
     <member refid="group__sourcedefs_1ga4d5aa984a0ff1040e17dd6898c23f2ae" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_ONE</name></member>
+    <member refid="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name></member>
+    <member refid="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name></member>
   </compound>
   <compound refid="group__tdcpacketflags" kind="group"><name>tdcpacketflags</name>
     <member refid="group__tdcpacketflags_1gaac3fc10b5f615ad03ecfb52a26b0e546" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_RESERVED</name></member>
@@ -539,10 +545,12 @@
     <member refid="group__triggerdefs_1gaf5841ea364ca55f7a9c2425f090de583" kind="define"><name>NDIGO6G12_TRIGGER_TDC1</name></member>
     <member refid="group__triggerdefs_1ga56946427c59350a9dd009bdb1d29d1ba" kind="define"><name>NDIGO6G12_TRIGGER_TDC2</name></member>
     <member refid="group__triggerdefs_1ga3d28c6d62cbe3932cd5fe50894253174" kind="define"><name>NDIGO6G12_TRIGGER_TDC3</name></member>
-    <member refid="group__triggerdefs_1gad0a2ed9ea21a259daa91c5a8145875c9" kind="define"><name>NDIGO6G12_TRIGGER_FPGA0</name></member>
-    <member refid="group__triggerdefs_1gac9ffa6d38056cf5c0e58e73da7d27585" kind="define"><name>NDIGO6G12_TRIGGER_FPGA1</name></member>
+    <member refid="group__triggerdefs_1ga40689cd1bd352b7d7338764e72da0ecc" kind="define"><name>NDIGO6G12_TRIGGER_TRG</name></member>
+    <member refid="group__triggerdefs_1ga5c8e474086f222ea6e9945356d74183b" kind="define"><name>NDIGO6G12_TRIGGER_GATE</name></member>
     <member refid="group__triggerdefs_1ga473188e6f82aa412123aa9aa8e76f485" kind="define"><name>NDIGO6G12_TRIGGER_AUTO</name></member>
     <member refid="group__triggerdefs_1gaddbcf304ec8709008e9cdd7594e575f9" kind="define"><name>NDIGO6G12_TRIGGER_ONE</name></member>
+    <member refid="group__triggerdefs_1gad0a2ed9ea21a259daa91c5a8145875c9" kind="define"><name>NDIGO6G12_TRIGGER_FPGA0</name></member>
+    <member refid="group__triggerdefs_1gac9ffa6d38056cf5c0e58e73da7d27585" kind="define"><name>NDIGO6G12_TRIGGER_FPGA1</name></member>
   </compound>
   <compound refid="group__defdcoffset" kind="group"><name>defdcoffset</name>
     <member refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kind="define"><name>NDIGO6G12_DC_OFFSET_N_NIM</name></member>

@@ -8,7 +8,7 @@
         <name>NDIGO6G12_ALERT_FPGA_TEMPERATURE</name>
         <initializer>1</initializer>
         <briefdescription>
-<para>FPGA temperature alert (&gt;<nonbreakablespace/>70<deg/>C) </para>
+<para>FPGA temperature alert (&gt;&#160;70&#176;C) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -20,7 +20,7 @@
         <name>NDIGO6G12_ALERT_VCCINT</name>
         <initializer>2</initializer>
         <briefdescription>
-<para>Internal FPGA voltage out of range (&lt;<nonbreakablespace/>0.83<nonbreakablespace/>V or &gt;<nonbreakablespace/>0.88<nonbreakablespace/>V). </para>
+<para>Internal FPGA voltage out of range (&lt;&#160;0.83&#160;V or &gt;&#160;0.88&#160;V). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -32,7 +32,7 @@
         <name>NDIGO6G12_ALERT_VCCAUX</name>
         <initializer>4</initializer>
         <briefdescription>
-<para>FPGA auxiliary voltage out of range (&lt;<nonbreakablespace/>1.75<nonbreakablespace/>V or &gt;<nonbreakablespace/>1.89<nonbreakablespace/>V). </para>
+<para>FPGA auxiliary voltage out of range (&lt;&#160;1.75&#160;V or &gt;&#160;1.89&#160;V). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -44,7 +44,7 @@
         <name>NDIGO6G12_ALERT_FPGA_TEMPERATURE_CRITICAL</name>
         <initializer>8</initializer>
         <briefdescription>
-<para>FPGA temperature critical (&gt;<nonbreakablespace/>80<deg/>C) </para>
+<para>FPGA temperature critical (&gt;&#160;80&#176;C) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -56,7 +56,7 @@
         <name>NDIGO6G12_ALERT_THS_TEMPERATURE_CRITICAL</name>
         <initializer>16</initializer>
         <briefdescription>
-<para>THS temperature critical (&gt;<nonbreakablespace/>140<deg/>C) </para>
+<para>THS temperature critical (&gt;&#160;140&#176;C) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>

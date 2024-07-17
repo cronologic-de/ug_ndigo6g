@@ -9,12 +9,14 @@ The inputs of the Ndigo6G-12 board are located on the PCI bracket.
 :numref:`Figure %s<Fig 2.2>` shows the location of the four analog inputs A to
 D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs E to H
 (see :numref:`Section %s<digital TDC inputs>`), and the two digital control
-inputs FPGA0 and FPGA1 (see :numref:`Section %s<digital ctrl inputs>`).
+inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 
 .. _Fig 2.2:
 .. figure:: ../figures/Ndigo6G_connections.png
+    :width: 90%
 
-    Input connectors of an Ndigo6G-12 board located on the PCI bracket.
+    Input connectors of an Ndigo6G-12 board located on the PCI bracket. In the
+    figure, FPGA0 equals TRG, FPGA1 equals GATE.
 
 
 .. _analog inputs:
@@ -24,8 +26,9 @@ Analog Inputs
 
 .. _Fig 2.4:
 .. figure:: ../figures/InputCircuit.*
+    :width: 70%
 
-   Input circuit for each of the four analog channels.
+    Input circuit for each of the four analog channels.
 
 The analog inputs of the ADC are single ended LEMO00 coax connectors.
 The inputs have a 50 |nbws| Ω impedance and are AC coupled. The
@@ -103,9 +106,9 @@ The trigger unit input logic is summarized, as well, in
 Digital Control Inputs
 ~~~~~~~~~~~~~~~~~~~~~~
 There are two digital control inputs on the front slot cover called
-FPGA0 and FPGA1.
+TRG and GATE.
 
-Input-signals on the inputs FPGA0 and FPGA1 are digitized and routed to the 
+Input-signals on the inputs TRG and GATE are digitized and routed to the 
 Trigger Matrix. They can be used to trigger any of the trigger state machines 
 and :doc:`gating blocks <../functionality/gating>` with maximum sampling rate.
 
@@ -113,11 +116,11 @@ The digital control inputs are optimally suited to be used as digital triggers
 and gates, and we recommend using them instead of the
 :ref:`digital TDC inputs <digital tdc inputs>` for these purposes.
 
-FPGA0 and FPGA1 are configured analogously to the TDC inputs (see
+TRG and GATE are configured analogously to the TDC inputs (see
 :numref:`Section %s<digital tdc inputs>` and
 :numref:`Figure %s<Fig 2.17>`), where indices 4 (5) and
-:c:macro:`NDIGO6G12_TRIGGER_FPGA0` (:c:macro:`NDIGO6G12_TRIGGER_FPGA1`)
-correspond to input FPGA0 (FPGA1).
+:c:macro:`NDIGO6G12_TRIGGER_TRG` (:c:macro:`NDIGO6G12_TRIGGER_GATE`)
+correspond to input TRG (GATE).
 
 The input circuit and trigger logic is identical to the TDC inputs
 (see :numref:`Figures %s<fig digital input circuit>` and
@@ -125,11 +128,11 @@ The input circuit and trigger logic is identical to the TDC inputs
 
 Use Control Inputs as TDCs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-The control inputs FPGA0 and FPGA1 can be used as low-resolution TDCs.
+The control inputs TRG and GATE can be used as low-resolution TDCs.
 
 .. hint::
 
-    To record timestamps with the FPGA0 or FPGA1 input, set
+    To record timestamps with the TRG or GATE input, set
     :cpp:member:`ndigo6g12_configuration::tdc_configuration.channel[4||5]<ndigo6g12_tdc_channel::enable>`
     to :code:`true`.
 
@@ -138,7 +141,7 @@ The dead-time is 32 ns.
 
 .. note::
 
-    The digital *control* inputs FPGA0 and FPGA1 are best suited for triggering
+    The digital *control* inputs TRG and GATE are best suited for triggering
     and controlling gates.
 
     The digital *TDC* inputs are best suited for measuring precise time stamps.

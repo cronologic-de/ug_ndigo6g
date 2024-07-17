@@ -23,7 +23,7 @@
 <para>Return a signed16 integer. </para>
         </briefdescription>
         <detaileddescription>
-<para>The range is <minus/>32768 to 32767. </para>
+<para>The range is &#8722;32768 to 32767. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -36,7 +36,7 @@
 <para>Output in signed32 integer format. </para>
         </briefdescription>
         <detaileddescription>
-<para>Only applicable for averaging mode. The range is <minus/>2<superscript>31</superscript> to 2<superscript>31</superscript> <minus/> 1. </para>
+<para>Only applicable for averaging mode. The range is &#8722;2<superscript>31</superscript> to 2<superscript>31</superscript> &#8722; 1. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

@@ -16,14 +16,14 @@
         <detaileddescription>
 <para>Sets the threshold for the trigger block within the range of the ADC data. The range depends on <ref refid="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" kindref="member">ndigo6g12_configuration::output_mode</ref>:<itemizedlist>
 <listitem><para><ref refid="group__outputdefs_1gabb1307aecd252b329c43d44ea8f0e3da" kindref="member">NDIGO6G12_OUTPUT_MODE_RAW</ref> : 0 to 4096</para>
-</listitem><listitem><para><ref refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kindref="member">NDIGO6G12_OUTPUT_MODE_SIGNED16</ref> : <minus/>32768 to 32767</para>
+</listitem><listitem><para><ref refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kindref="member">NDIGO6G12_OUTPUT_MODE_SIGNED16</ref> : &#8722;32768 to 32767</para>
 </listitem></itemizedlist>
 For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12_TRIGGER_TDC </ref> to <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12_TRIGGER_ONE </ref> the threshold is ignored.</para>
 <para>For the TDC channels, the trigger threshold is controlled by <ref refid="structndigo6g12__configuration_1aa6bf60e4eaac106ccf3902c1a8f5d942" kindref="member">ndigo6g12_configuration::tdc_trigger_offsets</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1151" column="11" bodyfile="source/ndigo6g12_interface.h" bodystart="1151" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1173" column="11" bodyfile="source/ndigo6g12_interface.h" bodystart="1173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -43,7 +43,7 @@ Default is <computeroutput>true</computeroutput>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1167" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1167" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1189" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -71,7 +71,7 @@ Default is <computeroutput>false</computeroutput>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1187" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1187" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1209" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1209" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -79,7 +79,7 @@ Default is <computeroutput>false</computeroutput>. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="1135" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1135" bodyend="1188"/>
+    <location file="source/ndigo6g12_interface.h" line="1157" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1157" bodyend="1210"/>
     <listofallmembers>
       <member refid="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>edge</name></member>
       <member refid="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>rising</name></member>

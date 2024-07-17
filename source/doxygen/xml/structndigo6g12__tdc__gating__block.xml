@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1346" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1346" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1368" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1368" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1352" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1352" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1374" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1374" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -54,7 +54,7 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1366" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1366" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1388" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1388" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -66,12 +66,12 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
 <para>The time from the first input signal seen in the idle state until the gating output is set. </para>
         </briefdescription>
         <detaileddescription>
-<para>In multiples of 5<nonbreakablespace/>ns. 0 <le/> <computeroutput>start</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>start</computeroutput> <le/> <computeroutput>stop</computeroutput>.</para>
+<para>In multiples of 5&#160;ns. 0 &#8804; <computeroutput>start</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>start</computeroutput> &#8804; <computeroutput>stop</computeroutput>.</para>
 <para>Default is 0. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1375" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1375" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1397" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1397" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -83,12 +83,12 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
 <para>The number of samples from leaving the idle state until the gating output is reset. </para>
         </briefdescription>
         <detaileddescription>
-<para>In multiples of 5<nonbreakablespace/>ns. 0 <le/> <computeroutput>stop</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>stop</computeroutput> <ge/> <computeroutput>start</computeroutput>.</para>
+<para>In multiples of 5&#160;ns. 0 &#8804; <computeroutput>stop</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>stop</computeroutput> &#8805; <computeroutput>start</computeroutput>.</para>
 <para>Default is 1000. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1384" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1384" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1406" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1406" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -104,7 +104,7 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1393" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1393" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1415" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1415" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -113,7 +113,7 @@ Otherwise signals at the input <computeroutput>sources</computeroutput> are igno
     <detaileddescription>
 <para>The functionality is similiar to <ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref>. </para>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="1342" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1342" bodyend="1394"/>
+    <location file="source/ndigo6g12_interface.h" line="1364" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1364" bodyend="1416"/>
     <listofallmembers>
       <member refid="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>enable</name></member>
       <member refid="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>negate</name></member>

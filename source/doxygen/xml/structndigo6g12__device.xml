@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="476" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="476" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="498" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="498" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__device_1ad11caf1e34fe5bda6c4fe7b2317edbf8" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="477" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="477" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="499" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="499" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -38,7 +38,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="475" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="475" bodyend="478"/>
+    <location file="source/ndigo6g12_interface.h" line="497" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="497" bodyend="500"/>
     <listofallmembers>
       <member refid="structndigo6g12__device_1a7b1d0df736739f38994ed29f54cffdf3" prot="public" virt="non-virtual"><scope>ndigo6g12_device</scope><name>is_valid</name></member>
       <member refid="structndigo6g12__device_1ad11caf1e34fe5bda6c4fe7b2317edbf8" prot="public" virt="non-virtual"><scope>ndigo6g12_device</scope><name>ndigo6g12</name></member>

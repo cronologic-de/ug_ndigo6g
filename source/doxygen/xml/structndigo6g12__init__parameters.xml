@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="493" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="493" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="515" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="515" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1a76f4fd1aefbb9db87716f117658faf83" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="505" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="505" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="527" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="527" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1a7edf6305fafb8d595318dde91addca3c" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="516" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="516" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="538" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="538" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1ada476c6eaaba1ad3aab64831b1cd78f0" prot="public" static="no" mutable="no">
         <type>int64_t</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="523" column="13" bodyfile="source/ndigo6g12_interface.h" bodystart="523" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="545" column="13" bodyfile="source/ndigo6g12_interface.h" bodystart="545" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1aec252b7f9290ce207cb8111e9d7b12b2" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="530" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="530" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="552" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="552" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1af4dd57b2ce6a39ca55a02ecd8ea2e631" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -92,14 +92,14 @@
         <name>perf_derating</name>
         <qualifiedname>ndigo6g12_init_parameters::perf_derating</qualifiedname>
         <briefdescription>
-<para>Default 0, corresponding to 1.6, 3.2, or 6.4<nonbreakablespace/>Gsps (depending on <computeroutput>application_type</computeroutput>). </para>
+<para>Default 0, corresponding to 1.6, 3.2, or 6.4&#160;Gsps (depending on <computeroutput>application_type</computeroutput>). </para>
         </briefdescription>
         <detaileddescription>
 <para>For internal use only. Do not change. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="537" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="537" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="559" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="559" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1ae2d782a5a219c3a5a9810e7b9e62c45d" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="545" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="545" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="567" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="567" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1a81df57a7537c826653c8ea24ec0920e3" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="551" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="551" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="573" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="573" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="559" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="559" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="581" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="581" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1a3b8fb22de8ef5aeb91d5e1c29c24fc09" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="572" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="572" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="594" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="594" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1a98d67f5783a289d35bd5983d640b0ef8" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="578" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="578" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="600" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="600" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1a20c2951f55ac2033b5d9b0f38a0cc445" prot="public" static="no" mutable="no">
         <type>uint32_t *</type>
@@ -202,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="586" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="586" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="608" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="608" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1aae1a1af9d5e69b5f4952d8612f2fba96" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="594" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="594" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="616" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="616" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -227,7 +227,7 @@
     <detaileddescription>
 <para>This structure MUST be completely initialized. </para>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="484" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="484" bodyend="595"/>
+    <location file="source/ndigo6g12_interface.h" line="506" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="506" bodyend="617"/>
     <listofallmembers>
       <member refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>application_type</name></member>
       <member refid="structndigo6g12__init__parameters_1a7edf6305fafb8d595318dde91addca3c" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>board_id</name></member>

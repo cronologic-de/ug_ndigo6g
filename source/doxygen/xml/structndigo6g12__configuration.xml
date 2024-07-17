@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1638" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1638" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1660" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1660" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1af082914cfc6a01318b0051489d56c31c" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1644" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1644" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1666" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1666" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a762a3bb11a140f26c1b5313d4d446b6e" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -56,12 +56,12 @@
         </briefdescription>
         <detaileddescription>
 <para>The indices 0 to 3 of the array correspond to ADC channels A to D.</para>
-<para>Must be between <formula id="0">$\pm$</formula> 0.5<nonbreakablespace/>V.</para>
-<para>Defaults are 0<nonbreakablespace/>V for each ADC channel. </para>
+<para>Must be between <formula id="0">$\pm$</formula> 0.5&#160;V.</para>
+<para>Defaults are 0&#160;V for each ADC channel. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1653" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1653" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1675" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1675" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1aa6bf60e4eaac106ccf3902c1a8f5d942" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -75,8 +75,8 @@
         <detaileddescription>
 <para>Channel assignment:<itemizedlist>
 <listitem><para>0 to 3: high-resolution TDC, inputs E to H</para>
-</listitem><listitem><para>4 to 5: low-resolution TDC, inputs FPGA0, FPGA1</para>
-<para>Set to a value between <minus/>1.32<nonbreakablespace/>V and +2.0<nonbreakablespace/>V.</para>
+</listitem><listitem><para>4 and 5: inputs TRG and GATE</para>
+<para>Set to a value between &#8722;1.32&#160;V and +2.0&#160;V.</para>
 <para>This should be close to 50% of the height of your pulses on the inputs. Examples for various signaling standards are defined <ref refid="group__defdcoffset" kindref="compound">here </ref>. The inputs are AC coupled. This means that for pulse inputs the absolute voltage is not important. Only the relative pulse amplitude causes the input circuits to switch. <computeroutput>tdc_trigger_offset</computeroutput> for an input must be set to the relative switching voltage for the input standard in use. If the pulses are negative, a negative switching threshold must be set and vice versa.</para>
 <para>Defaults are <ref refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kindref="member">NDIGO6G12_DC_OFFSET_N_NIM</ref> for each TDC channel. </para>
 </listitem></itemizedlist>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1673" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1673" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1695" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1695" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a6c8176d17295bed2bcaf313e24f33056" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__trigger" kindref="compound">ndigo6g12_trigger</ref></type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1686" column="23" bodyfile="source/ndigo6g12_interface.h" bodystart="1686" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1708" column="23" bodyfile="source/ndigo6g12_interface.h" bodystart="1708" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a6036815c3ea54db0f0364e5407bb9364" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__trigger__block" kindref="compound">ndigo6g12_trigger_block</ref></type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1692" column="29" bodyfile="source/ndigo6g12_interface.h" bodystart="1692" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1714" column="29" bodyfile="source/ndigo6g12_interface.h" bodystart="1714" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1acb2af45715e3011dc15d8892e4f68f6d" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref></type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1698" column="28" bodyfile="source/ndigo6g12_interface.h" bodystart="1698" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1720" column="28" bodyfile="source/ndigo6g12_interface.h" bodystart="1720" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a5a34f3b615684bfa687d290ea65b8f5c" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__tdc__configuration" kindref="compound">ndigo6g12_tdc_configuration</ref></type>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1703" column="33" bodyfile="source/ndigo6g12_interface.h" bodystart="1703" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1725" column="33" bodyfile="source/ndigo6g12_interface.h" bodystart="1725" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a4c18194717ac6f1d232f56c82741ce70" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__averager__configuration" kindref="compound">ndigo6g12_averager_configuration</ref></type>
@@ -164,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1708" column="38" bodyfile="source/ndigo6g12_interface.h" bodystart="1708" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1730" column="38" bodyfile="source/ndigo6g12_interface.h" bodystart="1730" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -177,12 +177,12 @@
         </briefdescription>
         <detaileddescription>
 <para>To be exact, there are two parameters <formula id="1">$M$</formula> = <ref refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" kindref="member">auto_trigger_period</ref> and <formula id="2">$N$</formula> = <ref refid="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" kindref="member">auto_trigger_random_exponent</ref> that result in a distance between triggers of <formula id="3">$ T = M + [1 \dots 2^N] - 1 $</formula> clock cycles, where <formula id="4">$ 6 \le M &lt; 2^{32} $</formula> and <formula id="5">$ 0 \le N &lt; 32 $</formula>.</para>
-<para>There is no enable or reset as the usage of this trigger can be configured in the channels. Each clock cycle is 5<nonbreakablespace/>ns.</para>
-<para>Default is 200000, corresponding to a 1<nonbreakablespace/>kHz auto trigger. </para>
+<para>There is no enable or reset as the usage of this trigger can be configured in the channels. Each clock cycle is 5&#160;ns.</para>
+<para>Default is 200000, corresponding to a 1&#160;kHz auto trigger. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1724" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1724" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1746" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1746" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1731" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1731" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1753" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1753" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -220,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1742" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1742" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1764" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1764" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -232,13 +232,13 @@
 <para>Extended bandwidth. </para>
         </briefdescription>
         <detaileddescription>
-<para>If <computeroutput>true</computeroutput>, the input bandwidth is 6.5<nonbreakablespace/>GHz instead of the default 4.5<nonbreakablespace/>GHz.</para>
-<para>Since the extended input bandwidth of the ADC influences the total bandwidth of the Ndigo6G-12 board only in a minimal manner, we recommend using the non-extended input bandwidth of 4.5<nonbreakablespace/>GHz. This ensures the best signal-to-noise ratio.</para>
+<para>If <computeroutput>true</computeroutput>, the input bandwidth is 6.5&#160;GHz instead of the default 4.5&#160;GHz.</para>
+<para>Since the extended input bandwidth of the ADC influences the total bandwidth of the Ndigo6G-12 board only in a minimal manner, we recommend using the non-extended input bandwidth of 4.5&#160;GHz. This ensures the best signal-to-noise ratio.</para>
 <para>Default is <computeroutput>false</computeroutput>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1754" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1754" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1776" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1776" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a3cf4c860b082641b35785714656ec046" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1759" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1759" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1781" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1781" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a5707ff9810325ed2c0ec2813936a58c2" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -276,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1778" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1778" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1800" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1800" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -347,7 +347,7 @@
         <link refid="structndigo6g12__trigger__block"/>
       </node>
     </collaborationgraph>
-    <location file="source/ndigo6g12_interface.h" line="1616" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1616" bodyend="1779"/>
+    <location file="source/ndigo6g12_interface.h" line="1638" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1638" bodyend="1801"/>
     <listofallmembers>
       <member refid="structndigo6g12__configuration_1af082914cfc6a01318b0051489d56c31c" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>adc_cal_set</name></member>
       <member refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>adc_mode</name></member>

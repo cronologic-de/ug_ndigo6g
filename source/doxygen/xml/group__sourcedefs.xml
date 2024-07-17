@@ -148,8 +148,8 @@
         </inbodydescription>
         <location file="source/ndigo6g12_interface.h" line="262" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="262" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" prot="public" static="no">
-        <name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name>
+      <memberdef kind="define" id="group__sourcedefs_1ga008d38f3b1bf98dcb9a6615157fb5e77" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_TRG</name>
         <initializer>0x00001000</initializer>
         <briefdescription>
         </briefdescription>
@@ -159,8 +159,8 @@
         </inbodydescription>
         <location file="source/ndigo6g12_interface.h" line="264" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="264" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" prot="public" static="no">
-        <name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name>
+      <memberdef kind="define" id="group__sourcedefs_1ga2b298b7a7c3fcd57787fcef68520f719" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_GATE</name>
         <initializer>0x00002000</initializer>
         <briefdescription>
         </briefdescription>
@@ -192,6 +192,30 @@
         <inbodydescription>
         </inbodydescription>
         <location file="source/ndigo6g12_interface.h" line="272" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name>
+        <initializer><ref refid="group__sourcedefs_1ga008d38f3b1bf98dcb9a6615157fb5e77" kindref="member">NDIGO6G12_TRIGGER_SOURCE_TRG</ref></initializer>
+        <briefdescription>
+<para>Deprecated. Alias for <ref refid="group__sourcedefs_1ga008d38f3b1bf98dcb9a6615157fb5e77" kindref="member">NDIGO6G12_TRIGGER_SOURCE_TRG</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="277" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" prot="public" static="no">
+        <name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name>
+        <initializer><ref refid="group__sourcedefs_1ga2b298b7a7c3fcd57787fcef68520f719" kindref="member">NDIGO6G12_TRIGGER_SOURCE_GATE</ref></initializer>
+        <briefdescription>
+<para>Deprecated. Alias for <ref refid="group__sourcedefs_1ga2b298b7a7c3fcd57787fcef68520f719" kindref="member">NDIGO6G12_TRIGGER_SOURCE_GATE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="282" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="282" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
