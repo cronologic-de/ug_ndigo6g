@@ -17,11 +17,13 @@ The general procedure for initialization is as follows:
 Information on
 the current device will be stored as type :cpp:struct:`ndigo6g12_device`.
 
+.. raw:: html
+
+   <h2>Contents of this Section</h2>
+
 .. toctree::
-    :caption: Contents
     :maxdepth: 2
 
-    defines
     functions
     structures
 

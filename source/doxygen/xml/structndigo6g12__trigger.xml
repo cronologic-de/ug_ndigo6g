@@ -23,7 +23,7 @@ For trigger indices <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1173" column="11" bodyfile="source/ndigo6g12_interface.h" bodystart="1173" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1187" column="11" bodyfile="source/ndigo6g12_interface.h" bodystart="1187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -43,7 +43,7 @@ Default is <computeroutput>true</computeroutput>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1189" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1189" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1203" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -71,7 +71,7 @@ Default is <computeroutput>false</computeroutput>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1209" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1209" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1223" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1223" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -79,7 +79,7 @@ Default is <computeroutput>false</computeroutput>. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="1157" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1157" bodyend="1210"/>
+    <location file="source/ndigo6g12_interface.h" line="1171" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1171" bodyend="1224"/>
     <listofallmembers>
       <member refid="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>edge</name></member>
       <member refid="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger</scope><name>rising</name></member>

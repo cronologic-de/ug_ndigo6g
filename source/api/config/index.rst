@@ -10,8 +10,11 @@ necessary parameters to their specific needs.
 
 The configuration itself is done by calling :cpp:func:`ndigo6g12_configure`.
 
+.. raw:: html
+
+    <h2>Contents of this Section</h2>
+
 .. toctree::
-    :caption: Contents
     :maxdepth: 2
 
     defines

@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1134" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1134" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1144" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__read__out_1a4f8b3bd4de3b864131053ab455e7813b" prot="public" static="no" mutable="no">
         <type>volatile <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> *</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1139" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1139" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1149" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -45,11 +45,16 @@
 <para>Error code. </para>
         </briefdescription>
         <detaileddescription>
-<para>The assignments of the error codes can be found <ref refid="group__readerrors" kindref="compound">here </ref>. </para>
+<para><verbatim>embed:rst:leading-asterisk
+*          Is one of the following:
+*          
+*          .. doxygengroup:: readerrors
+*              :content-only:
+* </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1146" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1146" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1160" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1160" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -64,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1151" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="1151" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1165" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="1165" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -86,7 +91,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="source/ndigo6g12_interface.h" line="1128" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1128" bodyend="1152"/>
+    <location file="source/ndigo6g12_interface.h" line="1138" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1138" bodyend="1166"/>
     <listofallmembers>
       <member refid="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_code</name></member>
       <member refid="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_message</name></member>

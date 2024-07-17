@@ -11,7 +11,7 @@
         <name>adc_mode</name>
         <qualifiedname>ndigo6g12_configuration::adc_mode</qualifiedname>
         <briefdescription>
-<para>ADC mode as defined in <ref refid="group__adcdefs" kindref="compound">NDIGO6G12_ADC_MODE_*</ref>. </para>
+<para>Configure ADC mode. </para>
         </briefdescription>
         <detaileddescription>
 <para>The chosen ADC mode has to be supported by the current <ref refid="group__apptypes" kindref="compound">NDIGO6G12_APP_TYPE</ref>.</para>
@@ -23,11 +23,16 @@
 </listitem></itemizedlist>
 <verbatim>embed:rst:leading-asterisk
 *          For more information, see :numref:`Section %s&lt;ADC Modes&gt;`.
+*          
+*          Must be one of the following:
+*          
+*          .. doxygengroup:: adcdefs
+*              :content-only:
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1660" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1660" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1689" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1689" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1af082914cfc6a01318b0051489d56c31c" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -43,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1666" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1666" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1695" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1695" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a762a3bb11a140f26c1b5313d4d446b6e" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -61,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1675" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1675" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1704" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1704" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1aa6bf60e4eaac106ccf3902c1a8f5d942" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -76,15 +81,20 @@
 <para>Channel assignment:<itemizedlist>
 <listitem><para>0 to 3: high-resolution TDC, inputs E to H</para>
 </listitem><listitem><para>4 and 5: inputs TRG and GATE</para>
-<para>Set to a value between &#8722;1.32&#160;V and +2.0&#160;V.</para>
-<para>This should be close to 50% of the height of your pulses on the inputs. Examples for various signaling standards are defined <ref refid="group__defdcoffset" kindref="compound">here </ref>. The inputs are AC coupled. This means that for pulse inputs the absolute voltage is not important. Only the relative pulse amplitude causes the input circuits to switch. <computeroutput>tdc_trigger_offset</computeroutput> for an input must be set to the relative switching voltage for the input standard in use. If the pulses are negative, a negative switching threshold must be set and vice versa.</para>
-<para>Defaults are <ref refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kindref="member">NDIGO6G12_DC_OFFSET_N_NIM</ref> for each TDC channel. </para>
 </listitem></itemizedlist>
 </para>
+<para>Set to a value between &#8722;1.32&#160;V and +2.0&#160;V.</para>
+<para>This should be close to 50% of the height of your pulses on the inputs. Examples for various signaling standards are defined below. The inputs are AC coupled. This means that for pulse inputs the absolute voltage is not important. Only the relative pulse amplitude causes the input circuits to switch. <computeroutput>tdc_trigger_offset</computeroutput> for an input must be set to the relative switching voltage for the input standard in use. If the pulses are negative, a negative switching threshold must be set and vice versa.</para>
+<para>Defaults are <ref refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kindref="member">NDIGO6G12_DC_OFFSET_N_NIM</ref> for each TDC channel. <verbatim>embed:rst:leading-asterisk
+*          Defines for various signal standards:
+*          
+*          .. doxygengroup:: defdcoffset
+*              :content-only:
+* </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1695" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1695" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1732" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1732" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a6c8176d17295bed2bcaf313e24f33056" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__trigger" kindref="compound">ndigo6g12_trigger</ref></type>
@@ -96,13 +106,17 @@
 <para>Configuration of the external trigger sources. </para>
         </briefdescription>
         <detaileddescription>
-<para>The entries in the array correspond to the definitions <ref refid="group__triggerdefs" kindref="compound">NDIGO6G12_TRIGGER_* </ref>.</para>
+<para>The entries in the array correspond to the following defines.</para>
 <para><ref refid="structndigo6g12__trigger_1afff4cd79ce8bef5eb16061de39587d90" kindref="member">ndigo6g12_trigger::threshold</ref> is ignored for index <ref refid="group__triggerdefs_1gab86dca2f20eed3a852142415aa98496a" kindref="member">NDIGO6G12_TRIGGER_TDC0</ref> and above.</para>
-<para><ref refid="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" kindref="member">ndigo6g12_trigger::edge</ref> and <ref refid="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" kindref="member">ndigo6g12_trigger::rising</ref> are ignored for indeces <ref refid="group__triggerdefs_1ga473188e6f82aa412123aa9aa8e76f485" kindref="member">NDIGO6G12_TRIGGER_AUTO</ref> and <ref refid="group__triggerdefs_1gaddbcf304ec8709008e9cdd7594e575f9" kindref="member">NDIGO6G12_TRIGGER_ONE</ref>. </para>
+<para><ref refid="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" kindref="member">ndigo6g12_trigger::edge</ref> and <ref refid="structndigo6g12__trigger_1a7a667926a58acefbf4958b925141a920" kindref="member">ndigo6g12_trigger::rising</ref> are ignored for indeces <ref refid="group__triggerdefs_1ga473188e6f82aa412123aa9aa8e76f485" kindref="member">NDIGO6G12_TRIGGER_AUTO</ref> and <ref refid="group__triggerdefs_1gaddbcf304ec8709008e9cdd7594e575f9" kindref="member">NDIGO6G12_TRIGGER_ONE</ref>.</para>
+<para><verbatim>embed:rst:leading-asterisk
+*          .. doxygengroup:: triggerdefs
+*              :content-only:
+* </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1708" column="23" bodyfile="source/ndigo6g12_interface.h" bodystart="1708" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1749" column="23" bodyfile="source/ndigo6g12_interface.h" bodystart="1749" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a6036815c3ea54db0f0364e5407bb9364" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__trigger__block" kindref="compound">ndigo6g12_trigger_block</ref></type>
@@ -118,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1714" column="29" bodyfile="source/ndigo6g12_interface.h" bodystart="1714" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1755" column="29" bodyfile="source/ndigo6g12_interface.h" bodystart="1755" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1acb2af45715e3011dc15d8892e4f68f6d" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref></type>
@@ -134,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1720" column="28" bodyfile="source/ndigo6g12_interface.h" bodystart="1720" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1761" column="28" bodyfile="source/ndigo6g12_interface.h" bodystart="1761" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a5a34f3b615684bfa687d290ea65b8f5c" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__tdc__configuration" kindref="compound">ndigo6g12_tdc_configuration</ref></type>
@@ -149,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1725" column="33" bodyfile="source/ndigo6g12_interface.h" bodystart="1725" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1766" column="33" bodyfile="source/ndigo6g12_interface.h" bodystart="1766" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a4c18194717ac6f1d232f56c82741ce70" prot="public" static="no" mutable="no">
         <type><ref refid="structndigo6g12__averager__configuration" kindref="compound">ndigo6g12_averager_configuration</ref></type>
@@ -164,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1730" column="38" bodyfile="source/ndigo6g12_interface.h" bodystart="1730" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1771" column="38" bodyfile="source/ndigo6g12_interface.h" bodystart="1771" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -182,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1746" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1746" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1787" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1787" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -199,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1753" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1753" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1794" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1794" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -208,19 +222,25 @@
         <name>output_mode</name>
         <qualifiedname>ndigo6g12_configuration::output_mode</qualifiedname>
         <briefdescription>
-<para>Output mode. </para>
+<para>Output mode of the ADC data. </para>
         </briefdescription>
         <detaileddescription>
-<para>See <ref refid="group__outputdefs" kindref="compound">NDIGO6G12_OUTPUT_MODE_*</ref>.</para>
 <para>Default value depends on <ref refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" kindref="member">ndigo6g12_init_parameters::application_type</ref>.<itemizedlist>
 <listitem><para><ref refid="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" kindref="member">NDIGO6G12_APP_TYPE_AVRG</ref>: <ref refid="group__outputdefs_1gaa6d025ad7fb0144b088773dccd4f3ae1" kindref="member">NDIGO6G12_OUTPUT_MODE_SIGNED32</ref></para>
-</listitem><listitem><para>otherwise: <ref refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kindref="member">NDIGO6G12_OUTPUT_MODE_SIGNED16</ref>. </para>
+</listitem><listitem><para>otherwise: <ref refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kindref="member">NDIGO6G12_OUTPUT_MODE_SIGNED16</ref>.</para>
 </listitem></itemizedlist>
-</para>
+<verbatim>embed:rst:leading-asterisk
+*          Must be one of the following:
+*          
+*          .. doxygengroup:: outputdefs
+*              :content-only:
+* 
+*          For more information, see :numref:`Section %s&lt;adc data format&gt;`.
+* </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1764" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1764" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1813" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1813" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -238,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1776" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1776" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1825" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1825" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a3cf4c860b082641b35785714656ec046" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -253,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1781" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1781" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1830" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1830" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__configuration_1a5707ff9810325ed2c0ec2813936a58c2" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -276,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1800" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1800" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1849" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1849" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -347,7 +367,7 @@
         <link refid="structndigo6g12__trigger__block"/>
       </node>
     </collaborationgraph>
-    <location file="source/ndigo6g12_interface.h" line="1638" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1638" bodyend="1801"/>
+    <location file="source/ndigo6g12_interface.h" line="1661" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1661" bodyend="1850"/>
     <listofallmembers>
       <member refid="structndigo6g12__configuration_1af082914cfc6a01318b0051489d56c31c" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>adc_cal_set</name></member>
       <member refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" prot="public" virt="non-virtual"><scope>ndigo6g12_configuration</scope><name>adc_mode</name></member>

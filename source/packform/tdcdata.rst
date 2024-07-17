@@ -1,7 +1,11 @@
 .. _tdcpacket bit table:
 
-:cpp:member:`crono_packet::data` encoding for TDC hits
-------------------------------------------------------
+Data encoding for TDC hits
+--------------------------
+
+The following bit table shows the encoding of the payload data
+(:cpp:member:`crono_packet::data`) of all recorded TDC hits within
+the time-frame given by :cpp:member:`ndigo6g12_param_info::tdc_rollover_period`.
 
 .. only:: html
 

@@ -16,7 +16,7 @@ This chapter provides an overview of the provided API functionality.
 
 .. raw:: html
 
-    <h2>Contents</h2>
+    <h2>Contents of this Chapter</h2>
 
 .. toctree::
     :maxdepth: 3

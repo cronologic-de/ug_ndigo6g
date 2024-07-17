@@ -131,11 +131,16 @@
 <para>Defines which clock source is used (internal, SMA, AUX2). </para>
         </briefdescription>
         <detaileddescription>
-<para>See <ref refid="group__clockmodes" kindref="compound">NDIGO6G12_CLOCK_SOURCE</ref> defines. </para>
+<para><verbatim>embed:rst:leading-asterisk
+*          Must be one of the following:
+*          
+*          .. doxygengroup:: clockmodes
+*              :content-only:
+* </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="573" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="573" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="578" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="578" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -147,12 +152,16 @@
 <para>Select the application type. </para>
         </briefdescription>
         <detaileddescription>
-<para>See <ref refid="group__apptypes" kindref="compound">NDIGO6G12_APP_TYPE_*</ref>.</para>
-<para>Note that <ref refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" kindref="member">ndigo6g12_configuration::adc_mode</ref> must match the application type chosen here. </para>
+<para>Note that <ref refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" kindref="member">ndigo6g12_configuration::adc_mode</ref> must match the application type chosen here. <verbatim>embed:rst:leading-asterisk
+*          Must be one of the following:
+*          
+*          .. doxygengroup:: apptypes
+*              :content-only:
+* </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="581" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="581" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="591" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="591" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1a3b8fb22de8ef5aeb91d5e1c29c24fc09" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -169,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="594" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="594" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="604" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="604" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1a98d67f5783a289d35bd5983d640b0ef8" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -185,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="600" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="600" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="610" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="610" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1a20c2951f55ac2033b5d9b0f38a0cc445" prot="public" static="no" mutable="no">
         <type>uint32_t *</type>
@@ -202,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="608" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="608" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="618" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="618" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__init__parameters_1aae1a1af9d5e69b5f4952d8612f2fba96" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -218,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="616" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="616" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="626" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="626" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -227,7 +236,7 @@
     <detaileddescription>
 <para>This structure MUST be completely initialized. </para>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="506" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="506" bodyend="617"/>
+    <location file="source/ndigo6g12_interface.h" line="506" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="506" bodyend="627"/>
     <listofallmembers>
       <member refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>application_type</name></member>
       <member refid="structndigo6g12__init__parameters_1a7edf6305fafb8d595318dde91addca3c" prot="public" virt="non-virtual"><scope>ndigo6g12_init_parameters</scope><name>board_id</name></member>

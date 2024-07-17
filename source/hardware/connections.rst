@@ -16,7 +16,7 @@ inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
     :width: 90%
 
     Input connectors of an Ndigo6G-12 board located on the PCI bracket. In the
-    figure, FPGA0 equals TRG, FPGA1 equals GATE.
+    figure, FPGA0 corresponds to TRG, FPGA1 to GATE.
 
 
 .. _analog inputs:

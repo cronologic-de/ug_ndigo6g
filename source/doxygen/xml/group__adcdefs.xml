@@ -8,7 +8,7 @@
         <name>NDIGO6G12_ADC_MODE_ABCD</name>
         <initializer>0</initializer>
         <briefdescription>
-<para>4 channel mode at sample rate 1600 Msps </para>
+<para>4-channel mode at 1600 Msps sample rate </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -20,7 +20,7 @@
         <name>NDIGO6G12_ADC_MODE_AADD</name>
         <initializer>1</initializer>
         <briefdescription>
-<para>4 channel mode at sample rate 1600 Msps </para>
+<para>4-channel mode at 1600 Msps sample rate </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -32,7 +32,7 @@
         <name>NDIGO6G12_ADC_MODE_AAAA</name>
         <initializer>2</initializer>
         <briefdescription>
-<para>4 channel mode at sample rate 1600 Msps </para>
+<para>4-channel mode at 1600 Msps sample rate </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -44,7 +44,7 @@
         <name>NDIGO6G12_ADC_MODE_DDDD</name>
         <initializer>3</initializer>
         <briefdescription>
-<para>4 channel mode at sample rate 1600 Msps </para>
+<para>4-channel mode at 1600 Msps sample rate </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -56,7 +56,7 @@
         <name>NDIGO6G12_ADC_MODE_AD</name>
         <initializer>4</initializer>
         <briefdescription>
-<para>2 channel mode at sample rate 3200 Msps </para>
+<para>2-channel mode at 3200 Msps sample rate </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -68,7 +68,7 @@
         <name>NDIGO6G12_ADC_MODE_AA</name>
         <initializer>5</initializer>
         <briefdescription>
-<para>2 channel mode at sample rate 3200 Msps </para>
+<para>2-channel mode at 3200 Msps sample rate </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -80,7 +80,7 @@
         <name>NDIGO6G12_ADC_MODE_DD</name>
         <initializer>6</initializer>
         <briefdescription>
-<para>2 channel mode at sample rate 3200 Msps </para>
+<para>2-channel mode at 3200 Msps sample rate </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -92,7 +92,7 @@
         <name>NDIGO6G12_ADC_MODE_A</name>
         <initializer>7</initializer>
         <briefdescription>
-<para>1 channel mode at sample rate 6400 Msps </para>
+<para>1-channel mode at 6400 Msps sample rate </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -104,7 +104,7 @@
         <name>NDIGO6G12_ADC_MODE_D</name>
         <initializer>8</initializer>
         <briefdescription>
-<para>1 channel mode at sample rate 6400 Msps </para>
+<para>1-channel mode at 6400 Msps sample rate </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>

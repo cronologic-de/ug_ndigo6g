@@ -13,7 +13,7 @@ Source file                                     Description
                                                 example application.
 :doc:`ndigo6g12_app.h<app>`                     Header file for classes for
                                                 different Ndigo6G-12
-                                                :ref:`application types<application types>`
+                                                :cpp:member:`application types<ndigo6g12_init_parameters::application_type>`
                                                 and TDC setup.
 :doc:`ndigo6g12_adc_single.cpp<adc_single>`     Implementation of application
                                                 type :c:macro:`NDIGO6G12_APP_TYPE_1CH`.

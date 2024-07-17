@@ -6,7 +6,7 @@ ADC Modes
 Depending on the board configuration, the analog input signal is quantized
 to 12 bits, i.e., the output ranges from 0 to 4096. However, depending on
 :cpp:member:`ndigo6g12_configuration::output_mode`, the board scales the
-output data. See :ref:`sec output mode` for details.
+output data. See :numref:`Section %s<adc data format>` for details.
 
 Data processing such as trigger detection or packet building are always
 performed on 5 ns intervals. Depending on the ADC mode, this interval

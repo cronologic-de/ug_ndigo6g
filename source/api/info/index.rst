@@ -5,11 +5,13 @@ of board, it's configuration, settings and state. The information is split
 according to its scope and the computational requirements to query the
 information from the board.
 
+.. raw:: html
+
+    <h2>Contents of this Section</h2>
+
 .. toctree::
-    :caption: Contents
     :maxdepth: 2
 
-    defines
     functions
     structures
 

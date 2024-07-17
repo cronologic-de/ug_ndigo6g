@@ -58,7 +58,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>The number of high and low resolution TDC input channels. </para>
+<para>The number of high (TDC0-3) and low (TRG, GATE) resolution TDC input channels. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

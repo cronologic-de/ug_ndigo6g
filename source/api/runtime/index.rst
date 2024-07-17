@@ -1,9 +1,11 @@
 Runtime control
 ---------------
 
+.. raw:: html
+
+    <h2>Contents of this Section</h2>
+
 .. toctree::
-    :caption: Contents
     :maxdepth: 2
 
-    defines
     functions
