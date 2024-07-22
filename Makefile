@@ -7,6 +7,14 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
+PYTHON_SCRIPT = modify_api_sidebar.py
+HTML_DIR      = $(BUILDDIR)/html
+
+ifeq ($(OS),Windows_NT)
+    PY_CMD = py
+else
+    PY_CMD = python3
+endif
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -17,4 +25,5 @@ help:
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O);
+	@$(PY_CMD) $(PYTHON_SCRIPT) $(HTML_DIR)
