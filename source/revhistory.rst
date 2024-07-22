@@ -52,10 +52,13 @@ Driver
 
 User Guide
 ----------
-|version| |emdash| 2024-07-17
-    | Rename FPGA0/1 to TRG/GATE
-    | Restructure API documentation
-    | Expand documentation on Packet Format
+|version| |emdash| TBA
+    | Added link to current user guide example code
+
+0.1.2 |emdash| 2024-07-17
+    | Renamed FPGA0/1 to TRG/GATE
+    | Restructured API documentation
+    | Expanded documentation on Packet Format
 
 0.1.1 |emdash| 2024-07-16
     | Corrected values in introduction
