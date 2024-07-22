@@ -54,6 +54,7 @@ User Guide
 ----------
 |version| |emdash| TBA
     | Added link to current user guide example code
+    | Clarifications
 
 0.1.2 |emdash| 2024-07-17
     | Renamed FPGA0/1 to TRG/GATE
