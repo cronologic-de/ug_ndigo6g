@@ -24,13 +24,6 @@ Install the requirements of the project
 pip install -r requirements.txt
 ```
 
-Create doxygen XML files from the interfaces and replace some unicode characters
-in them
-```shell
-doxygen
-. replace_xsd_commands.sh
-```
-
 After that, run
 ```shell
 make html
