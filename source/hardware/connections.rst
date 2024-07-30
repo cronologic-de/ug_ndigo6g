@@ -11,12 +11,12 @@ D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs E to H
 (see :numref:`Section %s<digital TDC inputs>`), and the two digital control
 inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 
+
 .. _Fig 2.2:
-.. figure:: ../figures/Ndigo6G_connections.png
+.. figure:: ../figures/Ndigo6G_connections.*
     :width: 90%
 
-    Input connectors of an Ndigo6G-12 board located on the PCI bracket. In the
-    figure, FPGA0 corresponds to TRG, FPGA1 to GATE.
+    Input connectors of an Ndigo6G-12 board located on the PCI bracket.
 
 
 .. _analog inputs:
