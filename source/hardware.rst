@@ -43,7 +43,7 @@ Overview
 The inputs of the Ndigo6G-12 board are located on the PCI bracket.
 
 :numref:`Figure %s<Fig 2.2>` shows the location of the four analog inputs A to
-D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs E to H
+D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs 0 to 3 
 (see :numref:`Section %s<digital TDC inputs>`), and the two digital control
 inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 
