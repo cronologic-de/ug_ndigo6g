@@ -37,8 +37,8 @@ the device.
 External Inputs and Connectors
 ------------------------------
 
-Overview
-~~~~~~~~
+Front bracket inputs
+~~~~~~~~~~~~~~~~~~~~
 
 The inputs of the Ndigo6G-12 board are located on the PCI bracket.
 
@@ -53,6 +53,26 @@ inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
     :width: 90%
 
     Input connectors of an Ndigo6G-12 board located on the PCI bracket.
+
+Clock connections
+~~~~~~~~~~~~~~~~~
+
+SMA connectors to connect an external clock or to access the internal clock 
+signal are located at the top of the board (see
+:numref:`Figure %s<fig hardware picture>`).
+
+Clk in
+    Connect your external 10 MHz clock signal here. Make sure to set
+    :cpp:member:`ndigo6g12_init_parameters::clock_source` to
+    :c:macro:`NDIGO6G12_CLOCK_SOURCE_SMA`.
+
+Clk out
+    TBA
+
+Clk diff
+    TBA
+
+
 
 
 .. _analog inputs:
