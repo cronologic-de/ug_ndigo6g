@@ -55,6 +55,7 @@ User Guide
 |version| |emdash| TBA
     | Added link to current user guide example code
     | Removed clutter from the APIs "ON THIS PAGE" sidebar
+    | Updated C++ example
     | Clarifications
 
 0.1.2 |emdash| 2024-07-17
