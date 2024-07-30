@@ -1,3 +1,39 @@
+Hardware
+========
+
+Installation
+------------
+
+The Ndigo6G-12 board can be installed in any PCIe x8 (or higher
+amount of lanes) PCIe slot.
+If the slot electrically supports less than eight lanes, the board will operate
+at lower data throughput rates.
+
+Connect a 6-pin GPU power cable to the connector at the rear of the board
+(see :numref:`Figure %s<fig hardware picture>`).
+
+.. note::
+
+    The Ndigo6G-12 does not operate without a 6-pin GPU power connector.
+
+.. _fig hardware picture:
+.. figure:: figures/Ndigo6G_periphery.jpg
+
+    Overview of an Ndigo6G-12 board. Note the PCIe power connector at the rear
+    of the board.
+
+
+Cooling
+-------
+The Ndigo6G-12 board is equipped with an active cooling system, ensuring
+proper cooling of the device. If, however, the temperature of the ADC chip
+exceeds 90 °C (for instance, if the device is operated in inappropriate
+environmental conditions, see
+:numref:`Section %s<techdata environmental conditions for operation>`),
+a warning is issued to the device driver.
+When the temperature exceeds 95 °C, the ADC chip is disabled to avoid damaging
+the device.
+
 External Inputs and Connectors
 ------------------------------
 
@@ -13,7 +49,7 @@ inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 
 
 .. _Fig 2.2:
-.. figure:: ../figures/Ndigo6G_connections.*
+.. figure:: figures/Ndigo6G_connections.*
     :width: 90%
 
     Input connectors of an Ndigo6G-12 board located on the PCI bracket.
@@ -25,7 +61,7 @@ Analog Inputs
 ~~~~~~~~~~~~~
 
 .. _Fig 2.4:
-.. figure:: ../figures/InputCircuit.*
+.. figure:: figures/InputCircuit.*
     :width: 70%
 
     Input circuit for each of the four analog channels.
@@ -56,12 +92,12 @@ can be set between :math:`\pm` 0.5 |nbws| V.
 
 
 .. _Fig 2.5:
-.. figure:: ../figures/AnalogOffset_Sine.*
+.. figure:: figures/AnalogOffset_Sine.*
 
    Users can add analog offset to the input before sampling.
 
 .. _Fig 2.6:
-.. figure:: ../figures/AnalogOffset_Pulse.*
+.. figure:: figures/AnalogOffset_Pulse.*
 
    Asymmetric signal shifted to increase dynamic range.
 
@@ -75,7 +111,7 @@ The Ndigo6G-12 board includes four TDC channels with 13 ps timing resolution.
 The inputs are AC coupled (see :numref:`Figure %s<fig digital input circuit>`).
 
 .. _fig digital input circuit:
-.. figure:: ../figures/InputCircuit_TDC.*
+.. figure:: figures/InputCircuit_TDC.*
 
     Input circuit for each of the TDC input channels.
 
@@ -110,7 +146,7 @@ TRG and GATE.
 
 Input-signals on the inputs TRG and GATE are digitized and routed to the 
 Trigger Matrix. They can be used to trigger any of the trigger state machines 
-and :doc:`gating blocks <../functionality/gating>` with maximum sampling rate.
+and :doc:`gating blocks <functionality/gating>` with maximum sampling rate.
 
 The digital control inputs are optimally suited to be used as digital triggers 
 and gates, and we recommend using them instead of the
@@ -149,4 +185,5 @@ The dead-time is 32 ns.
 .. .. note::
 
 ..    When used with the TDC, the Trigger input supports negative pulses only.
+
 

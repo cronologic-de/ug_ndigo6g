@@ -168,7 +168,7 @@ Ndigo6G-12 driver.
     :maxdepth: 2
     :numbered: 3
 
-    hardware/index
+    hardware
     functionality/index
     api/index
     packform/index
