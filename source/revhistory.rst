@@ -52,7 +52,8 @@ Driver
 
 User Guide
 ----------
-|version| |emdash| TBA
+|version| |emdash| 2024-08-01
+    | Added documentation for clock connections
     | Added link to current user guide example code
     | Removed clutter from the APIs "ON THIS PAGE" sidebar
     | Updated C++ example

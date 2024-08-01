@@ -57,20 +57,22 @@ inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 Clock connections
 ~~~~~~~~~~~~~~~~~
 
-SMA connectors to connect an external clock or to access the internal clock 
+Connectors to connect an external clock or to access the internal clock 
 signal are located at the top of the board (see
 :numref:`Figure %s<fig hardware picture>`).
 
-Clk in
+Clk in (SMA)
     Connect your external 10 MHz clock signal here. Make sure to set
     :cpp:member:`ndigo6g12_init_parameters::clock_source` to
     :c:macro:`NDIGO6G12_CLOCK_SOURCE_SMA`.
 
-Clk out
-    TBA
+Clk out (SMA)
+    10 MHz output. This is either the internal clock signal, or an
+    external clock 10 MHz clock if one is used.
 
-Clk diff
-    TBA
+
+Clk diff (LEMO00)
+    Same as Clk out, but as a differential signal and with a LEMO00 connector.
 
 
 
