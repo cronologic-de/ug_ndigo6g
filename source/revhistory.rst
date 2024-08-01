@@ -57,7 +57,7 @@ User Guide
     | Added link to current user guide example code
     | Removed clutter from the APIs "ON THIS PAGE" sidebar
     | Updated C++ example
-    | Clarifications
+    | General improvements
 
 0.1.2 |emdash| 2024-07-17
     | Renamed FPGA0/1 to TRG/GATE
