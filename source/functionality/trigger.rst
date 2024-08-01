@@ -110,7 +110,7 @@ by setting the appropriate bits in the bitmask
 .. figure:: ../figures/DigitalInput.*
    :width: 50%
 
-   The digital inputs TDC0, TDC1, TDC2, TDC4, TRG, and GATE
+   The digital inputs TDC0, TDC1, TDC2, TDC3, TRG, and GATE
    have simpler trigger units.
 
 
