@@ -18,7 +18,10 @@ Thus, reading packet data requires the following steps:
   :cpp:member:`length<crono_packet::length>` has to be multiplied by 4 (since 4 
   :math:`\times` 16 bit = 64 bit).
 - Cast :cpp:member:`data<crono_packet::data>` according to 
-  :cpp:member:`type<crono_packet::type>`.
+  :cpp:member:`type<crono_packet::type>`. E.g., if 
+  :cpp:member:`type<crono_packet::type>` is 
+  :c:macro:`CRONO_PACKET_TYPE_16_BIT_SIGNED`, cast
+  :cpp:member:`data<crono_packet::data>` to ``int32_t``.
 
 
 :c:macro:`NDIGO6G12_OUTPUT_MODE_SIGNED16`

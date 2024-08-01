@@ -131,7 +131,7 @@ Ndigo6G-12 driver.
 +------------------------------------+---------------------------------------------+
 | TDC bin size                       | 13 ps                                       |
 +------------------------------------+---------------------------------------------+
-| TDC double pulse resolution        | typically 4 ns                              |
+| TDC double pulse resolution        | typically 5 ns                              |
 +------------------------------------+---------------------------------------------+
 | Multihit                           | unlimited                                   |
 +------------------------------------+---------------------------------------------+
@@ -168,7 +168,7 @@ Ndigo6G-12 driver.
     :maxdepth: 2
     :numbered: 3
 
-    hardware/index
+    hardware
     functionality/index
     api/index
     packform/index

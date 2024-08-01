@@ -1,22 +1,80 @@
+Hardware
+========
+
+Installation
+------------
+
+The Ndigo6G-12 board can be installed in any PCIe x8 (or higher
+amount of lanes) PCIe slot.
+If the slot electrically supports less than eight lanes, the board will operate
+at lower data throughput rates.
+
+Connect a 6-pin GPU power cable to the connector at the rear of the board
+(see :numref:`Figure %s<fig hardware picture>`).
+
+.. note::
+
+    The Ndigo6G-12 does not operate without a 6-pin GPU power connector.
+
+.. _fig hardware picture:
+.. figure:: figures/Ndigo6G_periphery.jpg
+
+    Overview of an Ndigo6G-12 board. Note the PCIe power connector at the rear
+    of the board.
+
+
+Cooling
+-------
+The Ndigo6G-12 board is equipped with an active cooling system, ensuring
+proper cooling of the device. If, however, the temperature of the ADC chip
+exceeds 90 °C (for instance, if the device is operated in inappropriate
+environmental conditions, see
+:numref:`Section %s<techdata environmental conditions for operation>`),
+a warning is issued to the device driver.
+When the temperature exceeds 95 °C, the ADC chip is disabled to avoid damaging
+the device.
+
 External Inputs and Connectors
 ------------------------------
 
-Overview
-~~~~~~~~
+Front bracket inputs
+~~~~~~~~~~~~~~~~~~~~
 
 The inputs of the Ndigo6G-12 board are located on the PCI bracket.
 
 :numref:`Figure %s<Fig 2.2>` shows the location of the four analog inputs A to
-D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs E to H
+D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs 0 to 3 
 (see :numref:`Section %s<digital TDC inputs>`), and the two digital control
 inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 
+
 .. _Fig 2.2:
-.. figure:: ../figures/Ndigo6G_connections.png
+.. figure:: figures/Ndigo6G_connections.*
     :width: 90%
 
-    Input connectors of an Ndigo6G-12 board located on the PCI bracket. In the
-    figure, FPGA0 corresponds to TRG, FPGA1 to GATE.
+    Input connectors of an Ndigo6G-12 board located on the PCI bracket.
+
+Clock connections
+~~~~~~~~~~~~~~~~~
+
+Connectors to connect an external clock or to access the internal clock 
+signal are located at the top of the board (see
+:numref:`Figure %s<fig hardware picture>`).
+
+Clk in (SMA)
+    Connect your external 10 MHz clock signal here. Make sure to set
+    :cpp:member:`ndigo6g12_init_parameters::clock_source` to
+    :c:macro:`NDIGO6G12_CLOCK_SOURCE_SMA`.
+
+Clk out (SMA)
+    10 MHz output. This is either the internal clock signal, or an
+    external clock 10 MHz clock if one is used.
+
+
+Clk diff (LEMO00)
+    Same as Clk out, but as a differential signal and with a LEMO00 connector.
+
+
 
 
 .. _analog inputs:
@@ -25,7 +83,7 @@ Analog Inputs
 ~~~~~~~~~~~~~
 
 .. _Fig 2.4:
-.. figure:: ../figures/InputCircuit.*
+.. figure:: figures/InputCircuit.*
     :width: 70%
 
     Input circuit for each of the four analog channels.
@@ -56,12 +114,12 @@ can be set between :math:`\pm` 0.5 |nbws| V.
 
 
 .. _Fig 2.5:
-.. figure:: ../figures/AnalogOffset_Sine.*
+.. figure:: figures/AnalogOffset_Sine.*
 
    Users can add analog offset to the input before sampling.
 
 .. _Fig 2.6:
-.. figure:: ../figures/AnalogOffset_Pulse.*
+.. figure:: figures/AnalogOffset_Pulse.*
 
    Asymmetric signal shifted to increase dynamic range.
 
@@ -75,7 +133,7 @@ The Ndigo6G-12 board includes four TDC channels with 13 ps timing resolution.
 The inputs are AC coupled (see :numref:`Figure %s<fig digital input circuit>`).
 
 .. _fig digital input circuit:
-.. figure:: ../figures/InputCircuit_TDC.*
+.. figure:: figures/InputCircuit_TDC.*
 
     Input circuit for each of the TDC input channels.
 
@@ -110,7 +168,7 @@ TRG and GATE.
 
 Input-signals on the inputs TRG and GATE are digitized and routed to the 
 Trigger Matrix. They can be used to trigger any of the trigger state machines 
-and :doc:`gating blocks <../functionality/gating>` with maximum sampling rate.
+and :doc:`gating blocks <functionality/gating>` with maximum sampling rate.
 
 The digital control inputs are optimally suited to be used as digital triggers 
 and gates, and we recommend using them instead of the
@@ -149,4 +207,5 @@ The dead-time is 32 ns.
 .. .. note::
 
 ..    When used with the TDC, the Trigger input supports negative pulses only.
+
 

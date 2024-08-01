@@ -4,7 +4,8 @@ C++-Example
 ===========
 
 The following source code is an example of an Ndigo6G-12 application written
-in C++.
+in C++. The source code is also available on our
+`GitHub <https://github.com/cronologic-de/ndigo6g_babel/tree/main/ug_example>`_.
 
 =============================================== =======
 Source file                                     Description
