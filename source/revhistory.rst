@@ -52,7 +52,9 @@ Driver
 
 User Guide
 ----------
-|version| |emdash| 2024-08-01
+|version| |emdash| TBA
+
+0.1.3 |emdash| 2024-08-01
     | Added documentation for clock connections
     | Added link to current user guide example code
     | Removed clutter from the APIs "ON THIS PAGE" sidebar
