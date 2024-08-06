@@ -52,7 +52,7 @@ Driver
 
 User Guide
 ----------
-|version| |emdash| TBA
+|version| |emdash| 2024-08-06
     | Added figures for the :ref:`Trigger Matrix<fig triggermatrix>` and
       :ref:`Gating Blocks<fig gatingblock>`.
 
