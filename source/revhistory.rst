@@ -53,6 +53,8 @@ Driver
 User Guide
 ----------
 |version| |emdash| TBA
+    | Added figures for the :ref:`Trigger Matrix<fig triggermatrix>` and
+      :ref:`Gating Blocks<fig gatingblock>`.
 
 0.1.3 |emdash| 2024-08-01
     | Added documentation for clock connections
