@@ -86,8 +86,8 @@ A :cpp:struct:`trigger_block <ndigo6g12_trigger_block>` can use several
 input :cpp:member:`sources <ndigo6g12_trigger_block::sources>`:
 
 -  The eight trigger decision units of all four ADC channels
-   \(:numref:`Figure %s<Fig 2.16>`)
--  The four TDC and the two FPGA inputs (:numref:`Figure %s<Fig 2.17>`)
+   \(:numref:`Figure %s<Fig 2.16>`)
+-  The four TDC and the two FPGA inputs (:numref:`Figure %s<Fig 2.17>`)
 -  A function trigger providing random or periodic triggering (see
    :doc:`auto_trigger`).
 
@@ -95,7 +95,7 @@ Trigger inputs from the above sources can be concatenated using a logical OR
 by setting the appropriate bits in the bitmask
 (see :cpp:member:`ndigo6g12_trigger_block::sources`).
 
-.. (:numref:`Figure %s<fig triggermatrix>`)
+See also :numref:`Figure %s<fig triggermatrix>`.
 
 
 
@@ -110,18 +110,19 @@ by setting the appropriate bits in the bitmask
 .. figure:: ../figures/DigitalInput.*
    :width: 50%
 
-   The digital inputs TDC0, TDC1, TDC2, TDC4, TRG, and GATE
+   The digital inputs TDC0, TDC1, TDC2, TDC3, TRG, and GATE
    have simpler trigger units.
 
 
-.. .. _fig triggermatrix:
-.. .. figure:: ../figures/triggermatrix.*
+.. _fig triggermatrix:
+.. figure:: ../figures/triggermatrix-Ndigo6G-12.*
 
-..    Trigger Matrix. The eight trigger signals from the four analog channels and
-..    the trigger signals from the six digital channels (four TDC channels, FPGA0,
-..    FPGA1) can be combined to create a trigger input for each *trigger block*.
-..    Additionally, four *gate signals* can be used to suppress trigger during
-..    configurable time frames.
+    Trigger Matrix. The eight trigger signals from the four analog channels and
+    the trigger signals from the six digital channels (four TDC channels, TRG,
+    GATE) can be combined to create a trigger input for each *trigger block*.
+    Additionally, four *gate signals* (see
+    :numref:`Figure %s<fig gatingblock>`) can be used to suppress trigger 
+    during configurable time frames.
 
 .. _gating trigger events:
 
@@ -131,9 +132,7 @@ Gating trigger events
 Triggers can be fed into the
 :cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`
 as outlined in
-:numref:`Chapter %s<section gating blocks>`.
-
-.. and :numref:`Figure %s<Fig 2.20>`.
+:numref:`Chapter %s<section gating blocks>` and :numref:`Figure %s<fig gatingblock>`.
 
 
 In return, the
