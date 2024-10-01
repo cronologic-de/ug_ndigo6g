@@ -53,6 +53,9 @@ Driver
 User Guide
 ----------
 |version| |emdash| 2024-10-01
+    | Corrections in Export Control
+
+0.2.0 |emdash| 2024-10-01
     | Added gating examples
     | Updated Export Control
 
