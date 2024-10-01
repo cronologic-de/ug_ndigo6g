@@ -52,7 +52,7 @@ Driver
 
 User Guide
 ----------
-|version| |emdash| TBA
+|version| |emdash| 2024-10-01
     | Added gating examples
     | Updated Export Control
 
