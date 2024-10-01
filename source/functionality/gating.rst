@@ -92,6 +92,11 @@ data acquisition, e.g.,
 - Set :c:macro:`NDIGO6G12_TRIGGER_GATE_0` as
   :cpp:member:`trigger_block[0].gates<ndigo6g12_trigger_block::gates>`.
 
+  .. code:: c++
+
+    config.trigger_block[0].gates = NDIGO6G12_TRIGGER_GATE_0
+
+
 Now, recording of data is only enabled after an initial start-up time.
 
 
@@ -115,10 +120,10 @@ To send this pulse to the trigger block, the gating block must be
 enabled in the trigger block’s AND matrix and the ONE trigger source
 must be selected.
 
-The following code example entails the necessary configuration, ommitting 
-details and assuming that
-:cpp:member:`trigger[NDIGO6G12_TRIGGER_A0]<ndigo6g12_configuration::trigger>`
-has been configured.
+.. The following code example entails the necessary configuration, ommitting 
+.. details and assuming that
+.. :cpp:member:`trigger[NDIGO6G12_TRIGGER_A0]<ndigo6g12_configuration::trigger>`
+.. has been configured.
 
 .. Gating Example 3: Dual Level Trigger
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
