@@ -321,13 +321,11 @@ we need the following documents from you:
 
 - Exporter declaration
 - Company profile
-- Gegbf. import license (country dependent)
+- Import license (country dependent)
 
 There are countries for which a **General Export License** can be used for the
 export of dual-use goods. In this case we need the corresponding documents from
-you and there will be no further delay:
-
-These include:
+you and there will be no further delay. Included countries are:
 
 - Australia
 - Japan
@@ -338,6 +336,10 @@ These include:
 - Switzerland
 - Singapore
 - USA
+
+Before re-exporting an Ndigo6G or any product containing an Ndigo6G as a 
+component, please check you local regulations whether an export permit is 
+required.
 
 It is not permitted to export an Ndigo6G to the Russian Federation or the
 Republic of Belarus.
