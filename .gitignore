@@ -16,5 +16,6 @@ source/crono_interface.h
 
 # various
 source/figures/obsolete/
+source/doxygen/html/
 *.sh
 *.bak

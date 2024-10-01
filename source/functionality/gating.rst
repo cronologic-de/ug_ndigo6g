@@ -49,46 +49,81 @@ the gate timing and delay unit.
     “Gate Stop”. A second trigger event may influence this behavior if
     retriggering is enabled.
 
+Examples
+^^^^^^^^
 
-.. Gating Example 1: Suppression of Noise After Starting an Acquisition
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Example 1: Suppression of Noise After Starting an Acquisition
+*************************************************************
 
-.. In mass spectrometer and other experiments, noise while starting data
-.. acquisition can result in undesired trigger events for that time period.
-.. To prevent noise in the output data, a gating block could be used to
-.. suppress all triggers during start-up,
+In mass spectrometer and other experiments, noise while starting data
+acquisition can result in undesired trigger events during start-up time.
+To prevent noise in the output data, a gating block could be used to
+suppress all triggers during start-up.
 
-.. The following example illustrates the use of a gating block to prevent
-.. noise: The GATE input transmits a pulse on each acquisition start. The
-.. trigger structure of the GATE input is used to select pulse polarity.
-.. Then, the GATE trigger is selected as gating block input and the gating
-.. block's start parameter is set to 0. The stop parameter is set to the
-.. desired length measured in 5 ns clock cycle and negate is set to true.
-.. The gating block will now output a low pulse of the desired length
-.. whenever there is a pulse on the GATE input.
+The following example illustrates the use of a gating block (in the following, :cpp:member:`gating_block[0]<ndigo6g12_configuration::gating_block>`) to prevent recording noise:
 
-.. Enabling this gating block as an AND input to the trigger block, for
-.. which noise shall be suppressed.
+- Set up the GATE input to trigger on each acquisition start, that is,
+  :cpp:member:`trigger[NDIGO6G12_TRIGGER_GATE]<ndigo6g12_configuration::trigger>`
+  is configured corresponding to the input signal (e.g., configuring the polarity).
+- :c:macro:`NDIGO6G12_TRIGGER_SOURCE_GATE` is selected as  
+  input source of
+  :cpp:member:`gating_block[0].source <ndigo6g12_gating_block::sources>` and the
+  :cpp:member:`gating_block[0].start <ndigo6g12_gating_block::start>` parameter is set to ``0``.
+- The :cpp:member:`gating_block[0].stop <ndigo6g12_gating_block::stop>`
+  parameter is set to the desired length (in multiples of 5 ns).
+- :cpp:member:`gating_block[0].negate <ndigo6g12_gating_block::negate>` is set to ``true``.
 
-.. Gating Example 2: Delayed Trigger
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Now, :cpp:member:`gating_block[0]<ndigo6g12_configuration::gating_block>` will output a LOW pulse of the desired length (that is, 
+the gate is closed during start-up time) whenever there is a pulse on the GATE 
+input.
 
-.. To sample a short window at a specified time after a trigger event on a
-.. channel, the gating block can be used to create a delayed trigger. To do
-.. this, one of the triggers of the channel of interested is configured to
-.. the desired parameters by selecting the threshold, setting the edge
-.. polarity and enabling edge triggering.
+Now, select the above gate for the trigger bock you want to use for triggering
+data acquisition, e.g.,
+:cpp:member:`trigger_block[0]<ndigo6g12_configuration::trigger_block>`:
 
-.. Instead of directly using this trigger as input to the trigger block’s
-.. input matrix, the trigger is selected as an input to a gating block. The
-.. block is configured to :code:`start = delay` (in 3.2 |nbws| ns clock cycles)
-.. and :code:`stop = start+1`, :code:`negate = false`. This causes the gating
-.. block to produce a one clock cycle pulse on its output after the
-.. specified delay.
+- Set :cpp:member:`trigger_block[0].sources<ndigo6g12_trigger_block::sources>`
+  e.g.,
 
-.. To send this pulse to the trigger block, the gating block must be
-.. enabled in the trigger block’s AND matrix and the ONE trigger source
-.. must be selected.
+  .. code:: c++
+
+    config.trigger_block[0].sources = NDIGO6G12_TRIGGER_SOURCE_A0 | NDIGO6G12_TRIGGER_SOURCE_D0
+
+  uses the ADC input channels A and D as sources.
+- Set :c:macro:`NDIGO6G12_TRIGGER_GATE_0` as
+  :cpp:member:`trigger_block[0].gates<ndigo6g12_trigger_block::gates>`.
+
+  .. code:: c++
+
+    config.trigger_block[0].gates = NDIGO6G12_TRIGGER_GATE_0
+
+
+Now, recording of data is only enabled after an initial start-up time.
+
+
+Example 2: Delayed Trigger
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To sample a short window at a specified time after a trigger event on a
+channel, a gating block can be used to create a delayed trigger. To do
+this, one of the triggers of the channel of interest is configured to
+the desired parameters by selecting the threshold, setting the edge
+polarity and enabling edge triggering.
+
+Instead of directly using this trigger as an input to the trigger block’s
+input matrix, the trigger is selected as an input to a gating block. The
+block is configured with :code:`start = delay` (in multiples 5 ns)
+and :code:`stop = start+1`, :code:`negate = false`. This causes the gating
+block to produce a one clock cycle pulse on its output after the
+specified delay.
+
+To send this pulse to the trigger block, the gating block must be
+enabled in the trigger block’s AND matrix and the ONE trigger source
+must be selected.
+
+.. The following code example entails the necessary configuration, ommitting 
+.. details and assuming that
+.. :cpp:member:`trigger[NDIGO6G12_TRIGGER_A0]<ndigo6g12_configuration::trigger>`
+.. has been configured.
 
 .. Gating Example 3: Dual Level Trigger
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

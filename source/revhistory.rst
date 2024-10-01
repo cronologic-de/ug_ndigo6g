@@ -52,7 +52,11 @@ Driver
 
 User Guide
 ----------
-|version| |emdash| 2024-08-06
+|version| |emdash| 2024-10-01
+    | Added gating examples
+    | Updated Export Control
+
+0.1.4 |emdash| 2024-08-06
     | Added figures for the :ref:`Trigger Matrix<fig triggermatrix>` and
       :ref:`Gating Blocks<fig gatingblock>`.
 

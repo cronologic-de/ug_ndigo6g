@@ -296,27 +296,48 @@ as a manufacturer of electronic systems with **Registration ID DE
 
 The Ndigo6G-12 belongs to **category 9**, **“Überwachungs und
 Kontrollinstrumente für ausschließlich gewerbliche Nutzung”.** The last owner
-of an Ndigo6G must recycle it, treat the board in compliance with **§11**
+of an Ndigo6G-12 must recycle it, treat the board in compliance with **§11**
 and **§12** of the German ElektroG, or return it to the manufacturer’s address
 listed in :numref:`Section %s<techdata manufacturer>`.
 
 Export Control
 ~~~~~~~~~~~~~~
 
-The Ndigo6G product line is a dual use item under
-`Council Regulation (EC) No 428/2009 of 5 May 2009 setting up a Community
-regime for the control of exports, transfer, brokering and transit of dual-use
-items <https://eur-lex.europa.eu/eli/reg/2009/428/oj>`__ in
-section **3A002h.** Similar regulations exist in many countries outside Europe.
+The Ndigo6G product line is a dual-use item under
+`Council Regulation (EC) No 428/2009 of 5 May 2009 <https://eur-lex.europa.eu/eli/reg/2009/428/oj>`__
+in section **3A002h.** Similar regulations exist in many countries outside
+Europe.
 
-An export permit is required to export this product from the European
-Community (EC) which will cause additional lead time. When ordering from
-outside the EC, the seller will ask you for additional information
-needed to obtain this permit.
+Regardless of the fact that we at cronologic exclude the use of our
+products for military purposes, **the laws of the EU and many other countries
+restrict exports** of dual-use items.
+Since we have to apply for a **General Export Permit** for these countries,
+delivery processes may be delayed or delivery to certain countries may
+become impossible.
 
-Before reexporting an Ndigo6G or any product containing an Ndigo6G as a
-component please check you local regulations whether an export permit is
-required.
+For the application of this
+`export license <https://www.cronologic.de/faq/export-license>`__
+we need the following documents from you:
+
+- Exporter declaration
+- Company profile
+- Gegbf. import license (country dependent)
+
+There are countries for which a **General Export License** can be used for the
+export of dual-use goods. In this case we need the corresponding documents from
+you and there will be no further delay:
+
+These include:
+
+- Australia
+- Japan
+- Canada
+- Liechtenstein
+- New Zealand
+- Norway
+- Switzerland
+- Singapore
+- USA
 
 It is not permitted to export an Ndigo6G to the Russian Federation or the
 Republic of Belarus.
