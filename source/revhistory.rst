@@ -52,7 +52,10 @@ Driver
 
 User Guide
 ----------
-|version| |emdash| 2024-10-01
+|version| |emdash| TBA
+    | Added digitizer characteristics
+
+0.2.1 |emdash| 2024-10-01
     | Corrections in Export Control
 
 0.2.0 |emdash| 2024-10-01
