@@ -29,7 +29,7 @@ extensions = [
 breathe_projects = {"ndigo6g12_api": os.fspath("./doxygen/xml/")}
 breathe_default_project = "ndigo6g12_api"
 breathe_show_include = False
-breathe_show_define_initializer = True
+breathe_show_define_initializer = False
 
 autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 3
