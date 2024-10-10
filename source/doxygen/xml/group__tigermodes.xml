@@ -36,7 +36,7 @@
 <para>Pulse height is approximately 1&#160;V. </para>
 </briefdescription>
 <detaileddescription>
-<para>The LEMO connector may be used as input with OR function. Use short pulses to keep the probability of collision and the effect on the baseline. </para>
+<para>The LEMO connector may be used as input with OR function. Use short pulses to keep the probability of collision and the effect on the baseline low. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
