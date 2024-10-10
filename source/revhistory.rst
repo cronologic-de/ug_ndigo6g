@@ -54,6 +54,7 @@ User Guide
 ----------
 |version| |emdash| TBA
     | Added digitizer characteristics
+    | Added chapter on TiGer
     | Fixed gating documentation
 
 0.2.1 |emdash| 2024-10-01

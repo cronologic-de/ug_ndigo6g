@@ -410,11 +410,11 @@
 <member refid="group__devicestates_1ga966029913bb493197b755aefb3451e66" kind="define"><name>NDIGO6G12_DEVICE_STATE_INITIALIZED</name></member>
 <member refid="group__devicestates_1ga9a4c10e013521be5659574c819a31104" kind="define"><name>NDIGO6G12_DEVICE_STATE_CONFIGURED</name></member>
 <member refid="group__devicestates_1ga033acfc4ed319c85c3762cac5af2bd22" kind="define"><name>NDIGO6G12_DEVICE_STATE_CAPTURING</name></member>
-<member refid="group__tigerdefs_1ga7eccbe4d5a6be5547e3483dd660bee96" kind="define"><name>NDIGO6G12_TIGER_OFF</name></member>
-<member refid="group__tigerdefs_1ga36a6878b79537652e9810e09ac165a8f" kind="define"><name>NDIGO6G12_TIGER_OUTPUT</name></member>
-<member refid="group__tigerdefs_1ga8b3220a875ee8bfa25194f383a28a88d" kind="define"><name>NDIGO6G12_TIGER_BIDI</name></member>
-<member refid="group__tigerdefs_1ga1edd2216a57c42dd92c5d0b141b61d53" kind="define"><name>NDIGO6G12_TIGER_BIPOLAR</name></member>
-<member refid="group__tigerdefs_1gafdf751fd3bdecfe23abce68ef14a8d65" kind="define"><name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name></member>
+<member refid="group__tigermodes_1ga7eccbe4d5a6be5547e3483dd660bee96" kind="define"><name>NDIGO6G12_TIGER_OFF</name></member>
+<member refid="group__tigermodes_1ga36a6878b79537652e9810e09ac165a8f" kind="define"><name>NDIGO6G12_TIGER_OUTPUT</name></member>
+<member refid="group__tigermodes_1ga8b3220a875ee8bfa25194f383a28a88d" kind="define"><name>NDIGO6G12_TIGER_BIDI</name></member>
+<member refid="group__tigermodes_1ga1edd2216a57c42dd92c5d0b141b61d53" kind="define"><name>NDIGO6G12_TIGER_BIPOLAR</name></member>
+<member refid="group__tigerstop_1gafdf751fd3bdecfe23abce68ef14a8d65" kind="define"><name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name></member>
 <member refid="ndigo6g12__interface_8h_1a4266289aaec1ed48f096291508844f64" kind="define"><name>ndigo6g12_get_default_init_parameters</name></member>
 <member refid="ndigo6g12__interface_8h_1a4571d3a373dd9cef756fb94450d0a3a9" kind="function"><name>ndigo6g12_get_driver_revision</name></member>
 <member refid="ndigo6g12__interface_8h_1a69c101ee0ec180ddd5c3a79ed0ea6a9d" kind="function"><name>ndigo6g12_get_driver_revision_str</name></member>
@@ -561,12 +561,14 @@
 <member refid="group__devicestates_1ga9a4c10e013521be5659574c819a31104" kind="define"><name>NDIGO6G12_DEVICE_STATE_CONFIGURED</name></member>
 <member refid="group__devicestates_1ga033acfc4ed319c85c3762cac5af2bd22" kind="define"><name>NDIGO6G12_DEVICE_STATE_CAPTURING</name></member>
 </compound>
-<compound refid="group__tigerdefs" kind="group"><name>tigerdefs</name>
-<member refid="group__tigerdefs_1ga7eccbe4d5a6be5547e3483dd660bee96" kind="define"><name>NDIGO6G12_TIGER_OFF</name></member>
-<member refid="group__tigerdefs_1ga36a6878b79537652e9810e09ac165a8f" kind="define"><name>NDIGO6G12_TIGER_OUTPUT</name></member>
-<member refid="group__tigerdefs_1ga8b3220a875ee8bfa25194f383a28a88d" kind="define"><name>NDIGO6G12_TIGER_BIDI</name></member>
-<member refid="group__tigerdefs_1ga1edd2216a57c42dd92c5d0b141b61d53" kind="define"><name>NDIGO6G12_TIGER_BIPOLAR</name></member>
-<member refid="group__tigerdefs_1gafdf751fd3bdecfe23abce68ef14a8d65" kind="define"><name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name></member>
+<compound refid="group__tigermodes" kind="group"><name>tigermodes</name>
+<member refid="group__tigermodes_1ga7eccbe4d5a6be5547e3483dd660bee96" kind="define"><name>NDIGO6G12_TIGER_OFF</name></member>
+<member refid="group__tigermodes_1ga36a6878b79537652e9810e09ac165a8f" kind="define"><name>NDIGO6G12_TIGER_OUTPUT</name></member>
+<member refid="group__tigermodes_1ga8b3220a875ee8bfa25194f383a28a88d" kind="define"><name>NDIGO6G12_TIGER_BIDI</name></member>
+<member refid="group__tigermodes_1ga1edd2216a57c42dd92c5d0b141b61d53" kind="define"><name>NDIGO6G12_TIGER_BIPOLAR</name></member>
+</compound>
+<compound refid="group__tigerstop" kind="group"><name>tigerstop</name>
+<member refid="group__tigerstop_1gafdf751fd3bdecfe23abce68ef14a8d65" kind="define"><name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name></member>
 </compound>
 <compound refid="group__funcreturns" kind="group"><name>funcreturns</name>
 <member refid="group__funcreturns_1ga15da8d27c6af5e31df23ca028f1da690" kind="define"><name>CRONO_OK</name></member>

@@ -15,3 +15,4 @@ Functionality
     gating
     auto_trigger
     averaging
+    tiger

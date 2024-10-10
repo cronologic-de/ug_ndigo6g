@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
 <compounddef id="group__triggerblockdefs" kind="group">
 <compoundname>triggerblockdefs</compoundname>
-<title>Triggerblockdefs</title>
+<title>Defines for ndigo6g12_trigger_block.</title>
 <sectiondef kind="define">
 <memberdef kind="define" id="group__triggerblockdefs_1gaff5fb5d6321cb5739e498a8d6004d98a" prot="public" static="no">
 <name>NDIGO6G12_MAX_PRECURSOR</name>
