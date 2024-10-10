@@ -1,147 +1,147 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="group__pcieuncorrectableerrors" kind="group">
-    <compoundname>pcieuncorrectableerrors</compoundname>
-    <title>Uncorrectable PCIe errors</title>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1ga97a5e3a911b85be88fafcb48e05172bb" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_UNDEFINED</name>
-        <initializer>1 &lt;&lt; 0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="333" column="9" bodyfile="source/crono_interface.h" bodystart="333" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1ga8c8b65caf66c81e234dcf13a5ac7fcbd" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_DATA_LINK_PROTOCOL_ERROR</name>
-        <initializer>1 &lt;&lt; 4</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="334" column="9" bodyfile="source/crono_interface.h" bodystart="334" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1gaa18929ae4b85bfca3cc43a346cb68d0f" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_SURPRISE_DOWN_ERROR</name>
-        <initializer>1 &lt;&lt; 5</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="335" column="9" bodyfile="source/crono_interface.h" bodystart="335" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1ga7892d49c550d2bdaea0bd566e141c3c4" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_POISONED_TLP</name>
-        <initializer>1 &lt;&lt; 12</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="336" column="9" bodyfile="source/crono_interface.h" bodystart="336" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1ga73e6093b362d4cad1d82ce7646f0d6b2" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_FLOW_CONTROL_PROTOCOL_ERROR</name>
-        <initializer>1 &lt;&lt; 13</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="337" column="9" bodyfile="source/crono_interface.h" bodystart="337" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1ga132391cef46b6b66053e6fdcfdbf58e4" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_COMPLETION_TIMEOUT</name>
-        <initializer>1 &lt;&lt; 14</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="338" column="9" bodyfile="source/crono_interface.h" bodystart="338" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1gacfcb753d75956a8fe416810d18a82aec" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_COMPLETER_ABORT</name>
-        <initializer>1 &lt;&lt; 15</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="339" column="9" bodyfile="source/crono_interface.h" bodystart="339" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1gaf29c9359e0e6dd3b825d8816271bb575" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_UNEXPECTED_COMPLETION</name>
-        <initializer>1 &lt;&lt; 16</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="340" column="9" bodyfile="source/crono_interface.h" bodystart="340" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1ga7794cc566837d23538813ba8e2d85c28" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_RECEIVER_OVERFLOW_ERROR</name>
-        <initializer>1 &lt;&lt; 17</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="341" column="9" bodyfile="source/crono_interface.h" bodystart="341" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1gabd898dfdf0297cee1ab2f055a8cf4b3b" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_MALFORMED_TLP</name>
-        <initializer>1 &lt;&lt; 18</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="342" column="9" bodyfile="source/crono_interface.h" bodystart="342" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1ga84df6ad73f98c27b9a3daf5c0f4787b3" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_ECRC_ERROR</name>
-        <initializer>1 &lt;&lt; 19</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="343" column="9" bodyfile="source/crono_interface.h" bodystart="343" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__pcieuncorrectableerrors_1ga74a14e636a8b824abee760f851cb53a2" prot="public" static="no">
-        <name>CRONO_PCIE_UNC_UNSUPPORED_REQUEST_ERROR</name>
-        <initializer>1 &lt;&lt; 20</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="344" column="9" bodyfile="source/crono_interface.h" bodystart="344" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <briefdescription>
+<compounddef id="group__pcieuncorrectableerrors" kind="group">
+<compoundname>pcieuncorrectableerrors</compoundname>
+<title>Uncorrectable PCIe errors</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1ga97a5e3a911b85be88fafcb48e05172bb" prot="public" static="no">
+<name>CRONO_PCIE_UNC_UNDEFINED</name>
+<initializer>1 &lt;&lt; 0</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="334" column="9" bodyfile="source/crono_interface.h" bodystart="334" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1ga8c8b65caf66c81e234dcf13a5ac7fcbd" prot="public" static="no">
+<name>CRONO_PCIE_UNC_DATA_LINK_PROTOCOL_ERROR</name>
+<initializer>1 &lt;&lt; 4</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="335" column="9" bodyfile="source/crono_interface.h" bodystart="335" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1gaa18929ae4b85bfca3cc43a346cb68d0f" prot="public" static="no">
+<name>CRONO_PCIE_UNC_SURPRISE_DOWN_ERROR</name>
+<initializer>1 &lt;&lt; 5</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="336" column="9" bodyfile="source/crono_interface.h" bodystart="336" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1ga7892d49c550d2bdaea0bd566e141c3c4" prot="public" static="no">
+<name>CRONO_PCIE_UNC_POISONED_TLP</name>
+<initializer>1 &lt;&lt; 12</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="337" column="9" bodyfile="source/crono_interface.h" bodystart="337" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1ga73e6093b362d4cad1d82ce7646f0d6b2" prot="public" static="no">
+<name>CRONO_PCIE_UNC_FLOW_CONTROL_PROTOCOL_ERROR</name>
+<initializer>1 &lt;&lt; 13</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="338" column="9" bodyfile="source/crono_interface.h" bodystart="338" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1ga132391cef46b6b66053e6fdcfdbf58e4" prot="public" static="no">
+<name>CRONO_PCIE_UNC_COMPLETION_TIMEOUT</name>
+<initializer>1 &lt;&lt; 14</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="339" column="9" bodyfile="source/crono_interface.h" bodystart="339" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1gacfcb753d75956a8fe416810d18a82aec" prot="public" static="no">
+<name>CRONO_PCIE_UNC_COMPLETER_ABORT</name>
+<initializer>1 &lt;&lt; 15</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="340" column="9" bodyfile="source/crono_interface.h" bodystart="340" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1gaf29c9359e0e6dd3b825d8816271bb575" prot="public" static="no">
+<name>CRONO_PCIE_UNC_UNEXPECTED_COMPLETION</name>
+<initializer>1 &lt;&lt; 16</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="341" column="9" bodyfile="source/crono_interface.h" bodystart="341" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1ga7794cc566837d23538813ba8e2d85c28" prot="public" static="no">
+<name>CRONO_PCIE_UNC_RECEIVER_OVERFLOW_ERROR</name>
+<initializer>1 &lt;&lt; 17</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="342" column="9" bodyfile="source/crono_interface.h" bodystart="342" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1gabd898dfdf0297cee1ab2f055a8cf4b3b" prot="public" static="no">
+<name>CRONO_PCIE_UNC_MALFORMED_TLP</name>
+<initializer>1 &lt;&lt; 18</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="343" column="9" bodyfile="source/crono_interface.h" bodystart="343" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1ga84df6ad73f98c27b9a3daf5c0f4787b3" prot="public" static="no">
+<name>CRONO_PCIE_UNC_ECRC_ERROR</name>
+<initializer>1 &lt;&lt; 19</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="344" column="9" bodyfile="source/crono_interface.h" bodystart="344" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__pcieuncorrectableerrors_1ga74a14e636a8b824abee760f851cb53a2" prot="public" static="no">
+<name>CRONO_PCIE_UNC_UNSUPPORED_REQUEST_ERROR</name>
+<initializer>1 &lt;&lt; 20</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="345" column="9" bodyfile="source/crono_interface.h" bodystart="345" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
 <para>PCIe uncorrectable error flags. </para>
-    </briefdescription>
-    <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>Only relevant when troubleshooting. </para>
-    </detaileddescription>
-  </compounddef>
+</detaileddescription>
+</compounddef>
 </doxygen>

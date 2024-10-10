@@ -1,51 +1,51 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="group__devicestates" kind="group">
-    <compoundname>devicestates</compoundname>
-    <title>defines for ndigo6g12_device_state</title>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="group__devicestates_1ga966029913bb493197b755aefb3451e66" prot="public" static="no">
-        <name>NDIGO6G12_DEVICE_STATE_INITIALIZED</name>
-        <initializer><ref refid="group__cronodevicestates_1gaeb14fa2c80d0cef48101a6ac200b84ac" kindref="member">CRONO_DEVICE_STATE_INITIALIZED</ref></initializer>
-        <briefdescription>
+<compounddef id="group__devicestates" kind="group">
+<compoundname>devicestates</compoundname>
+<title>defines for ndigo6g12_device_state</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__devicestates_1ga966029913bb493197b755aefb3451e66" prot="public" static="no">
+<name>NDIGO6G12_DEVICE_STATE_INITIALIZED</name>
+<initializer><ref refid="group__cronodevicestates_1gaeb14fa2c80d0cef48101a6ac200b84ac" kindref="member">CRONO_DEVICE_STATE_INITIALIZED</ref></initializer>
+<briefdescription>
 <para>Device is initialized but not yet configured for data capture. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="442" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="442" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__devicestates_1ga9a4c10e013521be5659574c819a31104" prot="public" static="no">
-        <name>NDIGO6G12_DEVICE_STATE_CONFIGURED</name>
-        <initializer><ref refid="group__cronodevicestates_1ga0aa3a99f1998171b4c5783dbf7a3b1fd" kindref="member">CRONO_DEVICE_STATE_CONFIGURED</ref></initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="442" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="442" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__devicestates_1ga9a4c10e013521be5659574c819a31104" prot="public" static="no">
+<name>NDIGO6G12_DEVICE_STATE_CONFIGURED</name>
+<initializer><ref refid="group__cronodevicestates_1ga0aa3a99f1998171b4c5783dbf7a3b1fd" kindref="member">CRONO_DEVICE_STATE_CONFIGURED</ref></initializer>
+<briefdescription>
 <para>Device is ready for data capture. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="447" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="447" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__devicestates_1ga033acfc4ed319c85c3762cac5af2bd22" prot="public" static="no">
-        <name>NDIGO6G12_DEVICE_STATE_CAPTURING</name>
-        <initializer><ref refid="group__cronodevicestates_1gae21c7101820077dd01168cd670573cc5" kindref="member">CRONO_DEVICE_STATE_CAPTURING</ref></initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="447" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="447" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__devicestates_1ga033acfc4ed319c85c3762cac5af2bd22" prot="public" static="no">
+<name>NDIGO6G12_DEVICE_STATE_CAPTURING</name>
+<initializer><ref refid="group__cronodevicestates_1gae21c7101820077dd01168cd670573cc5" kindref="member">CRONO_DEVICE_STATE_CAPTURING</ref></initializer>
+<briefdescription>
 <para>Device has started data capture. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="452" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="452" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="452" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="452" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
 <para>Defines for <ref refid="structndigo6g12__fast__info_1a89f234133d3efe315836311cbf21c64b" kindref="member">ndigo6g12_fast_info::state</ref>. </para>
-    </briefdescription>
-    <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>A device must be configured before data-capturing is started. </para>
-    </detaileddescription>
-  </compounddef>
+</detaileddescription>
+</compounddef>
 </doxygen>

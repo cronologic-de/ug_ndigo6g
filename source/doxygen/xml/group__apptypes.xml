@@ -1,78 +1,78 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="group__apptypes" kind="group">
-    <compoundname>apptypes</compoundname>
-    <title>Application Types</title>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" prot="public" static="no">
-        <name>NDIGO6G12_APP_TYPE_AVRG</name>
-        <initializer>5</initializer>
-        <briefdescription>
+<compounddef id="group__apptypes" kind="group">
+<compoundname>apptypes</compoundname>
+<title>Application Types</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" prot="public" static="no">
+<name>NDIGO6G12_APP_TYPE_AVRG</name>
+<initializer>5</initializer>
+<briefdescription>
 <para>Averaging mode. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><verbatim>embed:rst:leading-asterisk
 *        For more information, see :numref:`Section %s&lt;Averaging Mode&gt;`.
 * </verbatim> </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="120" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="120" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__apptypes_1ga96d6b2b565ff0f6c6cda34854768bcff" prot="public" static="no">
-        <name>NDIGO6G12_APP_TYPE_4CH</name>
-        <initializer>4</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="120" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="120" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__apptypes_1ga96d6b2b565ff0f6c6cda34854768bcff" prot="public" static="no">
+<name>NDIGO6G12_APP_TYPE_4CH</name>
+<initializer>4</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>Four ADC channels at 1.6 Gsps. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="123" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="123" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__apptypes_1ga8575c724769f442f91a76c6f73eb00fb" prot="public" static="no">
-        <name>NDIGO6G12_APP_TYPE_2CH</name>
-        <initializer>2</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="123" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="123" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__apptypes_1ga8575c724769f442f91a76c6f73eb00fb" prot="public" static="no">
+<name>NDIGO6G12_APP_TYPE_2CH</name>
+<initializer>2</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>Two ADC channels at 3.2 Gsps. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="126" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="126" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__apptypes_1ga5892cf53d029fcd233410b03261f2380" prot="public" static="no">
-        <name>NDIGO6G12_APP_TYPE_1CH</name>
-        <initializer>1</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="126" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="126" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__apptypes_1ga5892cf53d029fcd233410b03261f2380" prot="public" static="no">
+<name>NDIGO6G12_APP_TYPE_1CH</name>
+<initializer>1</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>One ADC channel at 6.4 Gsps. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="129" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="129" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__apptypes_1ga1cf9cfd9fb63b105f34151d73dbdb158" prot="public" static="no">
-        <name>NDIGO6G12_APP_TYPE_CURRENT</name>
-        <initializer>0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="129" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="129" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__apptypes_1ga1cf9cfd9fb63b105f34151d73dbdb158" prot="public" static="no">
+<name>NDIGO6G12_APP_TYPE_CURRENT</name>
+<initializer>0</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>Use currently installed application type. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="132" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="132" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="132" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="132" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
 <para>Type of application. </para>
-    </briefdescription>
-    <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>Used for <ref refid="structndigo6g12__init__parameters_1aa4675598c3bbd63db2a8e088594acbab" kindref="member">ndigo6g12_init_parameters::application_type</ref>. </para>
-    </detaileddescription>
-  </compounddef>
+</detaileddescription>
+</compounddef>
 </doxygen>

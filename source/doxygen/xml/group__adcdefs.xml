@@ -1,122 +1,122 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="group__adcdefs" kind="group">
-    <compoundname>adcdefs</compoundname>
-    <title>Defines for adc_mode</title>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="group__adcdefs_1ga387f83c29e74ed7a8e9f9dd171ad8da6" prot="public" static="no">
-        <name>NDIGO6G12_ADC_MODE_ABCD</name>
-        <initializer>0</initializer>
-        <briefdescription>
+<compounddef id="group__adcdefs" kind="group">
+<compoundname>adcdefs</compoundname>
+<title>Defines for adc_mode</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__adcdefs_1ga387f83c29e74ed7a8e9f9dd171ad8da6" prot="public" static="no">
+<name>NDIGO6G12_ADC_MODE_ABCD</name>
+<initializer>0</initializer>
+<briefdescription>
 <para>4-channel mode at 1600 Msps sample rate </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="178" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="178" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__adcdefs_1ga1eb1d3b4d01f27b96f34597b037d1e8f" prot="public" static="no">
-        <name>NDIGO6G12_ADC_MODE_AADD</name>
-        <initializer>1</initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="178" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="178" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__adcdefs_1ga1eb1d3b4d01f27b96f34597b037d1e8f" prot="public" static="no">
+<name>NDIGO6G12_ADC_MODE_AADD</name>
+<initializer>1</initializer>
+<briefdescription>
 <para>4-channel mode at 1600 Msps sample rate </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="179" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="179" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__adcdefs_1ga3313309476ae81b536e29a961537cfb9" prot="public" static="no">
-        <name>NDIGO6G12_ADC_MODE_AAAA</name>
-        <initializer>2</initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="179" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="179" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__adcdefs_1ga3313309476ae81b536e29a961537cfb9" prot="public" static="no">
+<name>NDIGO6G12_ADC_MODE_AAAA</name>
+<initializer>2</initializer>
+<briefdescription>
 <para>4-channel mode at 1600 Msps sample rate </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="180" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="180" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__adcdefs_1gaa6fb55a06a3163fe75d5ba2c3b6e6776" prot="public" static="no">
-        <name>NDIGO6G12_ADC_MODE_DDDD</name>
-        <initializer>3</initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="180" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="180" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__adcdefs_1gaa6fb55a06a3163fe75d5ba2c3b6e6776" prot="public" static="no">
+<name>NDIGO6G12_ADC_MODE_DDDD</name>
+<initializer>3</initializer>
+<briefdescription>
 <para>4-channel mode at 1600 Msps sample rate </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="181" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="181" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__adcdefs_1gaeff36ea77c6420a7798dd1ed57d327a4" prot="public" static="no">
-        <name>NDIGO6G12_ADC_MODE_AD</name>
-        <initializer>4</initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="181" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="181" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__adcdefs_1gaeff36ea77c6420a7798dd1ed57d327a4" prot="public" static="no">
+<name>NDIGO6G12_ADC_MODE_AD</name>
+<initializer>4</initializer>
+<briefdescription>
 <para>2-channel mode at 3200 Msps sample rate </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="182" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="182" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__adcdefs_1ga0fd4cb43021c9e2f155fdcc3a6415024" prot="public" static="no">
-        <name>NDIGO6G12_ADC_MODE_AA</name>
-        <initializer>5</initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="182" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="182" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__adcdefs_1ga0fd4cb43021c9e2f155fdcc3a6415024" prot="public" static="no">
+<name>NDIGO6G12_ADC_MODE_AA</name>
+<initializer>5</initializer>
+<briefdescription>
 <para>2-channel mode at 3200 Msps sample rate </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="183" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="183" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__adcdefs_1ga305d143ce6c99b781e390ac63bc501f8" prot="public" static="no">
-        <name>NDIGO6G12_ADC_MODE_DD</name>
-        <initializer>6</initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="183" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="183" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__adcdefs_1ga305d143ce6c99b781e390ac63bc501f8" prot="public" static="no">
+<name>NDIGO6G12_ADC_MODE_DD</name>
+<initializer>6</initializer>
+<briefdescription>
 <para>2-channel mode at 3200 Msps sample rate </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="184" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="184" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__adcdefs_1gadc5a2d3a469ff27f8dc115b099a3da03" prot="public" static="no">
-        <name>NDIGO6G12_ADC_MODE_A</name>
-        <initializer>7</initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="184" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="184" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__adcdefs_1gadc5a2d3a469ff27f8dc115b099a3da03" prot="public" static="no">
+<name>NDIGO6G12_ADC_MODE_A</name>
+<initializer>7</initializer>
+<briefdescription>
 <para>1-channel mode at 6400 Msps sample rate </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="185" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="185" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__adcdefs_1ga92e6becb238b0ce5f48917bf2a7fb0cb" prot="public" static="no">
-        <name>NDIGO6G12_ADC_MODE_D</name>
-        <initializer>8</initializer>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="185" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="185" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__adcdefs_1ga92e6becb238b0ce5f48917bf2a7fb0cb" prot="public" static="no">
+<name>NDIGO6G12_ADC_MODE_D</name>
+<initializer>8</initializer>
+<briefdescription>
 <para>1-channel mode at 6400 Msps sample rate </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="186" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="186" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="186" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="186" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
 <para>Defines for <ref refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" kindref="member">ndigo6g12_configuration::adc_mode</ref>. </para>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-  </compounddef>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+</compounddef>
 </doxygen>

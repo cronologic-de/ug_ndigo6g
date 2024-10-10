@@ -1,126 +1,122 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="structndigo6g12__tdc__gating__block" kind="struct" language="C++" prot="public">
-    <compoundname>ndigo6g12_tdc_gating_block</compoundname>
-    <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" prot="public" static="no" mutable="no">
-        <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-        <definition>crono_bool_t enable</definition>
-        <argsstring></argsstring>
-        <name>enable</name>
-        <qualifiedname>ndigo6g12_tdc_gating_block::enable</qualifiedname>
-        <briefdescription>
+<compounddef id="structndigo6g12__tdc__gating__block" kind="struct" language="C++" prot="public">
+<compoundname>ndigo6g12_tdc_gating_block</compoundname>
+<includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+<sectiondef kind="public-attrib">
+<memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t enable</definition>
+<argsstring></argsstring>
+<name>enable</name>
+<qualifiedname>ndigo6g12_tdc_gating_block::enable</qualifiedname>
+<briefdescription>
 <para>Activates gating block. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1387" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1387" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" static="no" mutable="no">
-        <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-        <definition>crono_bool_t negate</definition>
-        <argsstring></argsstring>
-        <name>negate</name>
-        <qualifiedname>ndigo6g12_tdc_gating_block::negate</qualifiedname>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1386" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1386" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t negate</definition>
+<argsstring></argsstring>
+<name>negate</name>
+<qualifiedname>ndigo6g12_tdc_gating_block::negate</qualifiedname>
+<briefdescription>
 <para>Inverts output polarity. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>Default is <computeroutput>false</computeroutput>. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1393" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1393" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" prot="public" static="no" mutable="no">
-        <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-        <definition>crono_bool_t retrigger</definition>
-        <argsstring></argsstring>
-        <name>retrigger</name>
-        <qualifiedname>ndigo6g12_tdc_gating_block::retrigger</qualifiedname>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1392" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1392" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" prot="public" static="no" mutable="no">
+<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+<definition>crono_bool_t retrigger</definition>
+<argsstring></argsstring>
+<name>retrigger</name>
+<qualifiedname>ndigo6g12_tdc_gating_block::retrigger</qualifiedname>
+<briefdescription>
 <para>Enable retriggering. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>If enabled:<itemizedlist>
-<listitem><para>If the timer surpassed the time corresponding to <computeroutput>start</computeroutput>, it is reset to <computeroutput>start</computeroutput>.</para>
-</listitem><listitem><para>If the timer did not surpass the time corresponding to <computeroutput>start</computeroutput>, it is reset to zero.</para>
-</listitem></itemizedlist>
-Otherwise signals at the input <computeroutput>sources</computeroutput> are ignored until <computeroutput>stop</computeroutput> is reached.</para>
+</briefdescription>
+<detaileddescription>
+<para>If enabled and a second trigger event is detected before the timer reaches <computeroutput>stop</computeroutput>, the timer is restarted. Otherwise signals at the input <computeroutput>sources</computeroutput> are ignored until <computeroutput>stop</computeroutput> is reached.</para>
 <para>Defaults to <computeroutput>false</computeroutput>. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1407" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1407" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" prot="public" static="no" mutable="no">
-        <type>int</type>
-        <definition>int start</definition>
-        <argsstring></argsstring>
-        <name>start</name>
-        <qualifiedname>ndigo6g12_tdc_gating_block::start</qualifiedname>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1402" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1402" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int start</definition>
+<argsstring></argsstring>
+<name>start</name>
+<qualifiedname>ndigo6g12_tdc_gating_block::start</qualifiedname>
+<briefdescription>
 <para>The time from the first input signal seen in the idle state until the gating output is set. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>In multiples of 5&#160;ns. 0 &#8804; <computeroutput>start</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>start</computeroutput> &#8804; <computeroutput>stop</computeroutput>.</para>
 <para>Default is 0. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1416" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1416" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" prot="public" static="no" mutable="no">
-        <type>int</type>
-        <definition>int stop</definition>
-        <argsstring></argsstring>
-        <name>stop</name>
-        <qualifiedname>ndigo6g12_tdc_gating_block::stop</qualifiedname>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1411" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1411" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int stop</definition>
+<argsstring></argsstring>
+<name>stop</name>
+<qualifiedname>ndigo6g12_tdc_gating_block::stop</qualifiedname>
+<briefdescription>
 <para>The number of samples from leaving the idle state until the gating output is reset. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>In multiples of 5&#160;ns. 0 &#8804; <computeroutput>stop</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>stop</computeroutput> &#8805; <computeroutput>start</computeroutput>.</para>
 <para>Default is 1000. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1425" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1425" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" prot="public" static="no" mutable="no">
-        <type>int</type>
-        <definition>int sources</definition>
-        <argsstring></argsstring>
-        <name>sources</name>
-        <qualifiedname>ndigo6g12_tdc_gating_block::sources</qualifiedname>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1420" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1420" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int sources</definition>
+<argsstring></argsstring>
+<name>sources</name>
+<qualifiedname>ndigo6g12_tdc_gating_block::sources</qualifiedname>
+<briefdescription>
 <para><ref refid="group__sourcedefs" kindref="compound">Bit mask</ref> with a bit set for all trigger sources that can trigger this channel. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>Default <ref refid="group__sourcedefs" kindref="compound">NDIGO6G12_TRIGGER_SOURCE_&lt;channel&gt;0</ref> (<ref refid="group__sourcedefs_1ga5282acf49f991fd38856930423263310" kindref="member">NDIGO6G12_TRIGGER_SOURCE_A0</ref> for ADC channel A, <ref refid="group__sourcedefs_1gaca7a1750faf3cffdd15d3e972551e3ba" kindref="member">NDIGO6G12_TRIGGER_SOURCE_B0</ref> for ADC channel B, etc). </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1434" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1434" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1429" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1429" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
 <para>Contains settings of the gating blocks specifically for the TDCs. </para>
-    </briefdescription>
-    <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>The functionality is similiar to <ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref>. </para>
-    </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="1383" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1383" bodyend="1435"/>
-    <listofallmembers>
-      <member refid="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>enable</name></member>
-      <member refid="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>negate</name></member>
-      <member refid="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>retrigger</name></member>
-      <member refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>sources</name></member>
-      <member refid="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>start</name></member>
-      <member refid="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>stop</name></member>
-    </listofallmembers>
-  </compounddef>
+</detaileddescription>
+<location file="source/ndigo6g12_interface.h" line="1382" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1382" bodyend="1430"/>
+<listofallmembers>
+<member refid="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>enable</name></member>
+<member refid="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>negate</name></member>
+<member refid="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>retrigger</name></member>
+<member refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>sources</name></member>
+<member refid="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>start</name></member>
+<member refid="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_gating_block</scope><name>stop</name></member>
+</listofallmembers>
+</compounddef>
 </doxygen>

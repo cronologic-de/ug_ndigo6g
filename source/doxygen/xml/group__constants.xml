@@ -1,123 +1,123 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="group__constants" kind="group">
-    <compoundname>constants</compoundname>
-    <title>Constants</title>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="group__constants_1ga2f31605192c692844d830dee4ab190df" prot="public" static="no">
-        <name>NDIGO6G12_API_VERSION</name>
-        <initializer>1</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+<compounddef id="group__constants" kind="group">
+<compoundname>constants</compoundname>
+<title>Constants</title>
+<sectiondef kind="define">
+<memberdef kind="define" id="group__constants_1ga2f31605192c692844d830dee4ab190df" prot="public" static="no">
+<name>NDIGO6G12_API_VERSION</name>
+<initializer>1</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>The current API version. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="37" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="37" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__constants_1ga8a0e2b9fc283e378af9d140d7dc5a8e5" prot="public" static="no">
-        <name>NDIGO6G12_TRIGGER_COUNT</name>
-        <initializer>16</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="37" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="37" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__constants_1ga8a0e2b9fc283e378af9d140d7dc5a8e5" prot="public" static="no">
+<name>NDIGO6G12_TRIGGER_COUNT</name>
+<initializer>16</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>The number of ADC and TDC triggers, including AUTO and ONE. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="40" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="40" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__constants_1ga58b88b343de23d00cb6e3b95ec6b35f1" prot="public" static="no">
-        <name>NDIGO6G12_ADC_CHANNEL_COUNT</name>
-        <initializer>4</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="40" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="40" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__constants_1ga58b88b343de23d00cb6e3b95ec6b35f1" prot="public" static="no">
+<name>NDIGO6G12_ADC_CHANNEL_COUNT</name>
+<initializer>4</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>The number of analog input channels. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="43" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="43" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__constants_1ga4a0f11174c3e9e1ffbe019a413df7cb1" prot="public" static="no">
-        <name>NDIGO6G12_GATE_COUNT</name>
-        <initializer>4</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="43" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="43" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__constants_1ga4a0f11174c3e9e1ffbe019a413df7cb1" prot="public" static="no">
+<name>NDIGO6G12_GATE_COUNT</name>
+<initializer>4</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>The number of gating blocks. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="46" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="46" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__constants_1ga671625c986c17588d7c66719427afea7" prot="public" static="no">
-        <name>NDIGO6G12_TDC_CHANNEL_COUNT</name>
-        <initializer>6</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="46" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="46" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__constants_1ga671625c986c17588d7c66719427afea7" prot="public" static="no">
+<name>NDIGO6G12_TDC_CHANNEL_COUNT</name>
+<initializer>6</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>The number of high (TDC0-3) and low (TRG, GATE) resolution TDC input channels. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="49" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="49" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__constants_1gae48cca7429d857a6dbd4b4b382b1a61b" prot="public" static="no">
-        <name>NDIGO6G12_BITSTREAM_DATE_LEN</name>
-        <initializer>20</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="49" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="49" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__constants_1gae48cca7429d857a6dbd4b4b382b1a61b" prot="public" static="no">
+<name>NDIGO6G12_BITSTREAM_DATE_LEN</name>
+<initializer>20</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>Bitstream date format: YYYY-MM-DD hh:mm:ss </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="52" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="52" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__constants_1gaa14e5242dc5cd22f333c69aa6af0db4f" prot="public" static="no">
-        <name>NDIGO6G12_CALIBRATION_DATE_LEN</name>
-        <initializer>20</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="52" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="52" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__constants_1gaa14e5242dc5cd22f333c69aa6af0db4f" prot="public" static="no">
+<name>NDIGO6G12_CALIBRATION_DATE_LEN</name>
+<initializer>20</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>Calibration date format: YYYY-MM-DD hh:mm </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="55" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="55" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__constants_1gaa06cf78afb177936084bbac7ce768e63" prot="public" static="no">
-        <name>NDIGO6G12_FLASH_SIG_LEN</name>
-        <initializer>60</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="55" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="55" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__constants_1gaa06cf78afb177936084bbac7ce768e63" prot="public" static="no">
+<name>NDIGO6G12_FLASH_SIG_LEN</name>
+<initializer>60</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>Length of Ndigo6G-12 flash signature </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="58" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="58" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__constants_1ga0d9550cfdb01cb823407984f781a4696" prot="public" static="no">
-        <name>NDIGO6G12_FIFO_DEPTH</name>
-        <initializer>16364</initializer>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="58" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="58" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__constants_1ga0d9550cfdb01cb823407984f781a4696" prot="public" static="no">
+<name>NDIGO6G12_FIFO_DEPTH</name>
+<initializer>16364</initializer>
+<briefdescription>
 <para>ADC sample FIFO depth. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>It is the maximum recording length in multiples of 5 ns. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="64" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="64" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="64" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="64" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
 <para>Constants. </para>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-  </compounddef>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+</compounddef>
 </doxygen>

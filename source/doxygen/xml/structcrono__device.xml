@@ -1,64 +1,64 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="structcrono__device" kind="struct" language="C++" prot="public">
-    <compoundname>crono_device</compoundname>
-    <includes refid="crono__interface_8h" local="no">crono_interface.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structcrono__device_1a65c41de4127d26b94dfbcd870b0fb249" prot="public" static="no" mutable="no">
-        <type>int</type>
-        <definition>int device_type</definition>
-        <argsstring></argsstring>
-        <name>device_type</name>
-        <qualifiedname>crono_device::device_type</qualifiedname>
-        <briefdescription>
+<compounddef id="structcrono__device" kind="struct" language="C++" prot="public">
+<compoundname>crono_device</compoundname>
+<includes refid="crono__interface_8h" local="no">crono_interface.h</includes>
+<sectiondef kind="public-attrib">
+<memberdef kind="variable" id="structcrono__device_1a65c41de4127d26b94dfbcd870b0fb249" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int device_type</definition>
+<argsstring></argsstring>
+<name>device_type</name>
+<qualifiedname>crono_device::device_type</qualifiedname>
+<briefdescription>
 <para><ref refid="group__cronodevicetypes" kindref="compound">CRONO_DEVICE_*</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="226" column="9" bodyfile="source/crono_interface.h" bodystart="226" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structcrono__device_1a7edf6305fafb8d595318dde91addca3c" prot="public" static="no" mutable="no">
-        <type>int</type>
-        <definition>int board_id</definition>
-        <argsstring></argsstring>
-        <name>board_id</name>
-        <qualifiedname>crono_device::board_id</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="227" column="9" bodyfile="source/crono_interface.h" bodystart="227" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structcrono__device_1a7edf6305fafb8d595318dde91addca3c" prot="public" static="no" mutable="no">
+<type>int</type>
+<definition>int board_id</definition>
+<argsstring></argsstring>
+<name>board_id</name>
+<qualifiedname>crono_device::board_id</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
 <para>For HPTDC use this board ID. Ndigo uses configured board ID. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="231" column="9" bodyfile="source/crono_interface.h" bodystart="231" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structcrono__device_1abd28c0efe479c17c1476917841e26ea8" prot="public" static="no" mutable="no">
-        <type>void *</type>
-        <definition>void* device</definition>
-        <argsstring></argsstring>
-        <name>device</name>
-        <qualifiedname>crono_device::device</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/crono_interface.h" line="233" column="11" bodyfile="source/crono_interface.h" bodystart="233" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="232" column="9" bodyfile="source/crono_interface.h" bodystart="232" bodyend="-1"/>
+</memberdef>
+<memberdef kind="variable" id="structcrono__device_1abd28c0efe479c17c1476917841e26ea8" prot="public" static="no" mutable="no">
+<type>void *</type>
+<definition>void* device</definition>
+<argsstring></argsstring>
+<name>device</name>
+<qualifiedname>crono_device::device</qualifiedname>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/crono_interface.h" line="234" column="11" bodyfile="source/crono_interface.h" bodystart="234" bodyend="-1"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
 <para>Basic device data structure for synchronizing cronologic Ndigo5G and HPTDC8 devices. </para>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-    <location file="source/crono_interface.h" line="222" column="1" bodyfile="source/crono_interface.h" bodystart="222" bodyend="234"/>
-    <listofallmembers>
-      <member refid="structcrono__device_1a7edf6305fafb8d595318dde91addca3c" prot="public" virt="non-virtual"><scope>crono_device</scope><name>board_id</name></member>
-      <member refid="structcrono__device_1abd28c0efe479c17c1476917841e26ea8" prot="public" virt="non-virtual"><scope>crono_device</scope><name>device</name></member>
-      <member refid="structcrono__device_1a65c41de4127d26b94dfbcd870b0fb249" prot="public" virt="non-virtual"><scope>crono_device</scope><name>device_type</name></member>
-    </listofallmembers>
-  </compounddef>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<location file="source/crono_interface.h" line="223" column="1" bodyfile="source/crono_interface.h" bodystart="223" bodyend="235"/>
+<listofallmembers>
+<member refid="structcrono__device_1a7edf6305fafb8d595318dde91addca3c" prot="public" virt="non-virtual"><scope>crono_device</scope><name>board_id</name></member>
+<member refid="structcrono__device_1abd28c0efe479c17c1476917841e26ea8" prot="public" virt="non-virtual"><scope>crono_device</scope><name>device</name></member>
+<member refid="structcrono__device_1a65c41de4127d26b94dfbcd870b0fb249" prot="public" virt="non-virtual"><scope>crono_device</scope><name>device_type</name></member>
+</listofallmembers>
+</compounddef>
 </doxygen>

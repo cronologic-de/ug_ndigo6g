@@ -13,30 +13,44 @@ Gating Blocks
 In order to decrease the amount of data transmitted to the PC, the Ndigo6G-12
 includes four independent gate and delay units.
 
-They are configured using :cpp:member:`ndigo6g12_configuration::gating_block`.
+They are configured using :cpp:member:`ndigo6g12_configuration::gating_block`
+and (specifically for the TDC channels) 
+:cpp:member:`ndigo6g12_tdc_channel::gating_block`.
 
 A gate and delay unit creates a gate window starting and closing at specified
 times after a trigger event (as configured by the user with
 :cpp:member:`ndigo6g12_gating_block::start` and
 :cpp:member:`stop <ndigo6g12_gating_block::stop>`).
 
+Concretely, if a trigger
+event is detected, a timer starts. After the timer reaches the time
+corresponding to :cpp:member:`start<ndigo6g12_gating_block::start>`, the gate 
+will activate. After the timer reaches the time corresponding to 
+:cpp:member:`stop <ndigo6g12_gating_block::stop>`, it will inactivate.
+
+This behavior may be influenced by the
+:cpp:member:`retrigger <ndigo6g12_gating_block::retrigger>` feature.
+With this feature enabled, another trigger signal will reset the timer to zero.
+That means, if a second trigger is detected *before* the gate is activated,
+the time until it *activates* is extended. If, however, the gate was already
+active, the time until it *inactivates* will be extended.
+
+.. attention::
+
+    A bug in Firmware Rev. :math:`\le`\ :ref:`1.24120 <revhistory:firmware>`
+    causes the ``retrigger`` feature to reset the gate logic entirely (i.e, the 
+    state of the gate will inactivate after a retrigger event).
+
+Depending on :cpp:member:`ndigo6g12_gating_block::negate`, an active gate will 
+be open (signal detection enabled) or closed (signal detection disabled).
+
+Each gating block can use an arbitrary combination of inputs which trigger
+it. This is configured using :cpp:member:`ndigo6g12_gating_block::sources`.
+
 :cpp:member:`trigger_blocks <ndigo6g12_configuration::trigger_block>`
 can use the gate signal to suppress data acquisition, that is,
 only data that fulfills zero suppression specifications occurring in an
-active gate window is written to the PC.
-
-Configuration
-^^^^^^^^^^^^^
-
-The inputs of each :cpp:member:`ndigo6g12_configuration::gating_block`
-is configured by :cpp:member:`ndigo6g12_gating_block::sources`.
-
-The :cpp:member:`retrigger <ndigo6g12_gating_block::retrigger>` feature will
-create a new gate if a trigger occurs during an active gate window.
-
-The gate signal can be inverted using
-:cpp:member:`ndigo6g12_gating_block::negate`, causing an
-active gate to close (instead of opening) for the specified time.
+open gate window is written to the PC.
 
 :numref:`Figure %s<Fig 2.21>` shows the functionality of
 the gate timing and delay unit.
@@ -48,6 +62,7 @@ the gate timing and delay unit.
     set period of time “Gate Start” and closes when it reaches
     “Gate Stop”. A second trigger event may influence this behavior if
     retriggering is enabled.
+    
 
 Examples
 ^^^^^^^^

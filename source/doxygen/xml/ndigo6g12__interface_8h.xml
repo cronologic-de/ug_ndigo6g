@@ -1,219 +1,219 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="ndigo6g12__interface_8h" kind="file" language="C++">
-    <compoundname>ndigo6g12_interface.h</compoundname>
-    <includes refid="crono__interface_8h" local="yes">crono_interface.h</includes>
-    <incdepgraph>
-      <node id="2">
-        <label>crono_interface.h</label>
-        <link refid="crono__interface_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>source/ndigo6g12_interface.h</label>
-        <link refid="ndigo6g12__interface_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>stdint.h</label>
-      </node>
-    </incdepgraph>
-    <innerclass refid="structndigo6g12__device" prot="public">ndigo6g12_device</innerclass>
-    <innerclass refid="structndigo6g12__init__parameters" prot="public">ndigo6g12_init_parameters</innerclass>
-    <innerclass refid="structndigo6g12__param__info" prot="public">ndigo6g12_param_info</innerclass>
-    <innerclass refid="structndigo6g12__static__info" prot="public">ndigo6g12_static_info</innerclass>
-    <innerclass refid="structndigo6g12__fast__info" prot="public">ndigo6g12_fast_info</innerclass>
-    <innerclass refid="structndigo6g12__read__in" prot="public">ndigo6g12_read_in</innerclass>
-    <innerclass refid="structndigo6g12__read__out" prot="public">ndigo6g12_read_out</innerclass>
-    <innerclass refid="structndigo6g12__trigger" prot="public">ndigo6g12_trigger</innerclass>
-    <innerclass refid="structndigo6g12__trigger__block" prot="public">ndigo6g12_trigger_block</innerclass>
-    <innerclass refid="structndigo6g12__gating__block" prot="public">ndigo6g12_gating_block</innerclass>
-    <innerclass refid="structndigo6g12__tdc__gating__block" prot="public">ndigo6g12_tdc_gating_block</innerclass>
-    <innerclass refid="structndigo6g12__tdc__tiger__block" prot="public">ndigo6g12_tdc_tiger_block</innerclass>
-    <innerclass refid="structndigo6g12__averager__configuration" prot="public">ndigo6g12_averager_configuration</innerclass>
-    <innerclass refid="structndigo6g12__tdc__channel" prot="public">ndigo6g12_tdc_channel</innerclass>
-    <innerclass refid="structndigo6g12__tdc__configuration" prot="public">ndigo6g12_tdc_configuration</innerclass>
-    <innerclass refid="structndigo6g12__configuration" prot="public">ndigo6g12_configuration</innerclass>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" prot="public" static="no">
-        <name>NDIGO6G12_API</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="28" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="28" bodyend="-1"/>
-      </memberdef>
-      <member refid="group__constants_1ga2f31605192c692844d830dee4ab190df" kind="define"><name>NDIGO6G12_API_VERSION</name></member>
-      <member refid="group__constants_1ga8a0e2b9fc283e378af9d140d7dc5a8e5" kind="define"><name>NDIGO6G12_TRIGGER_COUNT</name></member>
-      <member refid="group__constants_1ga58b88b343de23d00cb6e3b95ec6b35f1" kind="define"><name>NDIGO6G12_ADC_CHANNEL_COUNT</name></member>
-      <member refid="group__constants_1ga4a0f11174c3e9e1ffbe019a413df7cb1" kind="define"><name>NDIGO6G12_GATE_COUNT</name></member>
-      <member refid="group__constants_1ga671625c986c17588d7c66719427afea7" kind="define"><name>NDIGO6G12_TDC_CHANNEL_COUNT</name></member>
-      <member refid="group__constants_1gae48cca7429d857a6dbd4b4b382b1a61b" kind="define"><name>NDIGO6G12_BITSTREAM_DATE_LEN</name></member>
-      <member refid="group__constants_1gaa14e5242dc5cd22f333c69aa6af0db4f" kind="define"><name>NDIGO6G12_CALIBRATION_DATE_LEN</name></member>
-      <member refid="group__constants_1gaa06cf78afb177936084bbac7ce768e63" kind="define"><name>NDIGO6G12_FLASH_SIG_LEN</name></member>
-      <member refid="group__constants_1ga0d9550cfdb01cb823407984f781a4696" kind="define"><name>NDIGO6G12_FIFO_DEPTH</name></member>
-      <member refid="group__triggerblockdefs_1gaff5fb5d6321cb5739e498a8d6004d98a" kind="define"><name>NDIGO6G12_MAX_PRECURSOR</name></member>
-      <member refid="group__triggerblockdefs_1gaf82527fb9c266707d59317100be18d7d" kind="define"><name>NDIGO6G12_MAX_MULTISHOT</name></member>
-      <member refid="group__clockmodes_1gabae6fcfe7e93142eb2b8d41da3f4e030" kind="define"><name>NDIGO6G12_CLOCK_SOURCE_INTERNAL</name></member>
-      <member refid="group__clockmodes_1gace2114dd58a66ac31eb1a23601c60c25" kind="define"><name>NDIGO6G12_CLOCK_SOURCE_SMA</name></member>
-      <member refid="group__clockmodes_1ga9c55152ad351c2c87c70513d7b55d0a4" kind="define"><name>NDIGO6G12_CLOCK_SOURCE_AUX2</name></member>
-      <member refid="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" kind="define"><name>NDIGO6G12_APP_TYPE_AVRG</name></member>
-      <member refid="group__apptypes_1ga96d6b2b565ff0f6c6cda34854768bcff" kind="define"><name>NDIGO6G12_APP_TYPE_4CH</name></member>
-      <member refid="group__apptypes_1ga8575c724769f442f91a76c6f73eb00fb" kind="define"><name>NDIGO6G12_APP_TYPE_2CH</name></member>
-      <member refid="group__apptypes_1ga5892cf53d029fcd233410b03261f2380" kind="define"><name>NDIGO6G12_APP_TYPE_1CH</name></member>
-      <member refid="group__apptypes_1ga1cf9cfd9fb63b105f34151d73dbdb158" kind="define"><name>NDIGO6G12_APP_TYPE_CURRENT</name></member>
-      <member refid="group__alertdefs_1ga4c9668c2c2601a405e950252aec4a4fb" kind="define"><name>NDIGO6G12_ALERT_FPGA_TEMPERATURE</name></member>
-      <member refid="group__alertdefs_1ga2b525a74b3ee827d0f1bb6317240b376" kind="define"><name>NDIGO6G12_ALERT_VCCINT</name></member>
-      <member refid="group__alertdefs_1ga84628456bd0c7fd77905ba6f9ec7e405" kind="define"><name>NDIGO6G12_ALERT_VCCAUX</name></member>
-      <member refid="group__alertdefs_1ga8a679f157f9440803368779b8f3ffeb3" kind="define"><name>NDIGO6G12_ALERT_FPGA_TEMPERATURE_CRITICAL</name></member>
-      <member refid="group__alertdefs_1gab20a711e631e29825db5d0b36188cfbd" kind="define"><name>NDIGO6G12_ALERT_THS_TEMPERATURE_CRITICAL</name></member>
-      <member refid="group__adcdefs_1ga387f83c29e74ed7a8e9f9dd171ad8da6" kind="define"><name>NDIGO6G12_ADC_MODE_ABCD</name></member>
-      <member refid="group__adcdefs_1ga1eb1d3b4d01f27b96f34597b037d1e8f" kind="define"><name>NDIGO6G12_ADC_MODE_AADD</name></member>
-      <member refid="group__adcdefs_1ga3313309476ae81b536e29a961537cfb9" kind="define"><name>NDIGO6G12_ADC_MODE_AAAA</name></member>
-      <member refid="group__adcdefs_1gaa6fb55a06a3163fe75d5ba2c3b6e6776" kind="define"><name>NDIGO6G12_ADC_MODE_DDDD</name></member>
-      <member refid="group__adcdefs_1gaeff36ea77c6420a7798dd1ed57d327a4" kind="define"><name>NDIGO6G12_ADC_MODE_AD</name></member>
-      <member refid="group__adcdefs_1ga0fd4cb43021c9e2f155fdcc3a6415024" kind="define"><name>NDIGO6G12_ADC_MODE_AA</name></member>
-      <member refid="group__adcdefs_1ga305d143ce6c99b781e390ac63bc501f8" kind="define"><name>NDIGO6G12_ADC_MODE_DD</name></member>
-      <member refid="group__adcdefs_1gadc5a2d3a469ff27f8dc115b099a3da03" kind="define"><name>NDIGO6G12_ADC_MODE_A</name></member>
-      <member refid="group__adcdefs_1ga92e6becb238b0ce5f48917bf2a7fb0cb" kind="define"><name>NDIGO6G12_ADC_MODE_D</name></member>
-      <member refid="group__outputdefs_1gabb1307aecd252b329c43d44ea8f0e3da" kind="define"><name>NDIGO6G12_OUTPUT_MODE_RAW</name></member>
-      <member refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kind="define"><name>NDIGO6G12_OUTPUT_MODE_SIGNED16</name></member>
-      <member refid="group__outputdefs_1gaa6d025ad7fb0144b088773dccd4f3ae1" kind="define"><name>NDIGO6G12_OUTPUT_MODE_SIGNED32</name></member>
-      <member refid="group__gatedefs_1ga92f1048ce70f7946e2c1f921c74c4a14" kind="define"><name>NDIGO6G12_TRIGGER_GATE_NONE</name></member>
-      <member refid="group__gatedefs_1ga173f9f253f6482567ad05f2f0d205dab" kind="define"><name>NDIGO6G12_TRIGGER_GATE_0</name></member>
-      <member refid="group__gatedefs_1gac7f7182ce5c25dc595157a18b61dc947" kind="define"><name>NDIGO6G12_TRIGGER_GATE_1</name></member>
-      <member refid="group__gatedefs_1gaa41f51c553b024e948fa4a159516a54d" kind="define"><name>NDIGO6G12_TRIGGER_GATE_2</name></member>
-      <member refid="group__gatedefs_1gae591a05665fd94755dc5cbaacc717563" kind="define"><name>NDIGO6G12_TRIGGER_GATE_3</name></member>
-      <member refid="group__sourcedefs_1gad85e47f3b9cb93fa3c5e09b5ee23456b" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_NONE</name></member>
-      <member refid="group__sourcedefs_1ga5282acf49f991fd38856930423263310" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_A0</name></member>
-      <member refid="group__sourcedefs_1gaceb5cc7c2d9598057055bf11ae7374a9" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_A1</name></member>
-      <member refid="group__sourcedefs_1gaca7a1750faf3cffdd15d3e972551e3ba" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_B0</name></member>
-      <member refid="group__sourcedefs_1ga47accd3ba5b7c214e82ee18f5cd5781b" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_B1</name></member>
-      <member refid="group__sourcedefs_1ga8f42753ebcff479824176cb88378dde3" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_C0</name></member>
-      <member refid="group__sourcedefs_1gafb73f82c7f875d694d1cada43cead711" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_C1</name></member>
-      <member refid="group__sourcedefs_1ga4751c08972815b49297e59ff6b027dcf" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_D0</name></member>
-      <member refid="group__sourcedefs_1ga3b17643ce2cc98bd5c1f7e6f64d0355c" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_D1</name></member>
-      <member refid="group__sourcedefs_1gad88618b62eccaa028bffb8891299aade" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC0</name></member>
-      <member refid="group__sourcedefs_1ga5ded9b09fdcddbb1e25345f50c80ad69" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC1</name></member>
-      <member refid="group__sourcedefs_1gab58177061c491d9d0b478ecae11dda82" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC2</name></member>
-      <member refid="group__sourcedefs_1ga25ec036e958db242f44ffc087ffcb8df" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC3</name></member>
-      <member refid="group__sourcedefs_1ga008d38f3b1bf98dcb9a6615157fb5e77" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TRG</name></member>
-      <member refid="group__sourcedefs_1ga2b298b7a7c3fcd57787fcef68520f719" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_GATE</name></member>
-      <member refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_AUTO</name></member>
-      <member refid="group__sourcedefs_1ga4d5aa984a0ff1040e17dd6898c23f2ae" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_ONE</name></member>
-      <member refid="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name></member>
-      <member refid="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name></member>
-      <member refid="group__tdcpacketflags_1gaac3fc10b5f615ad03ecfb52a26b0e546" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_RESERVED</name></member>
-      <member refid="group__tdcpacketflags_1ga414ee83902f69fe30f828657e3a144ca" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA</name></member>
-      <member refid="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_LOST</name></member>
-      <member refid="group__tdcpacketflags_1gac5c9984ba716be0973e119ef03a1c633" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_SHORTENED</name></member>
-      <member refid="group__tdcpacketflags_1ga096593c9935b4e3bef94f8af1736a4e0" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_DMA_FIFO_FULL</name></member>
-      <member refid="group__tdcpacketflags_1gab58e0e726461115cacef8d5df0463e91" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_HOST_BUFFER_FULL</name></member>
-      <member refid="group__tdchitflags_1gaa1ab44e4949733dc2a4d001d21727bda" kind="define"><name>NDIGO6G12_TDC_HIT_FLAG_LOST</name></member>
-      <member refid="group__tdchitflags_1ga0c6587adee0e9743ab4f1b281884fdd4" kind="define"><name>NDIGO6G12_TDC_HIT_FLAG_ROLLOVER_LOST</name></member>
-      <member refid="group__tdchitflags_1gab18e3f6a232a7aa7f22c55a4bb6f2f5f" kind="define"><name>NDIGO6G12_TDC_HIT_FLAG_VALID</name></member>
-      <member refid="group__tdchitflags_1gad3453e1c7467a3e09caa68f2adef9442" kind="define"><name>NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER</name></member>
-      <member refid="group__tdchitflags_1ga8839ed36e22f6b5ebc4b530180cdbe5c" kind="define"><name>NDIGO6G12_TDC_HIT_ERROR_MASK</name></member>
-      <member refid="group__tdchitflags_1ga131480d92fc6519c48cb9b644a4832b0" kind="define"><name>NDIGO6G12_TDC_HIT_TYPE_MASK</name></member>
-      <member refid="group__tdchitflags_1ga2c849d405488877f8a9cdb14ef378aba" kind="define"><name>NDIGO6G12_TDC_PADDING_DATA_CHANNEL</name></member>
-      <member refid="group__tdchitflags_1gae9340d4a362787142eed90008105163e" kind="define"><name>NDIGO6G12_TDC_ROLLOVER_CHANNEL</name></member>
-      <member refid="group__triggerdefs_1ga473281d4d0a23ddd8e2ee741b51724e2" kind="define"><name>NDIGO6G12_TRIGGER_A0</name></member>
-      <member refid="group__triggerdefs_1ga0336cd9395363d4661f1d939075e5a1f" kind="define"><name>NDIGO6G12_TRIGGER_A1</name></member>
-      <member refid="group__triggerdefs_1ga02ee255e96407117276526717804e9ec" kind="define"><name>NDIGO6G12_TRIGGER_B0</name></member>
-      <member refid="group__triggerdefs_1ga115ae1228432f37e06d22c4ef45fe415" kind="define"><name>NDIGO6G12_TRIGGER_B1</name></member>
-      <member refid="group__triggerdefs_1gac5047570b5c4d72ec3047b1eea72ee32" kind="define"><name>NDIGO6G12_TRIGGER_C0</name></member>
-      <member refid="group__triggerdefs_1ga7731e9d91c8e9f0a777e99ae6efdb218" kind="define"><name>NDIGO6G12_TRIGGER_C1</name></member>
-      <member refid="group__triggerdefs_1ga7e30125691a36f25f34f5a67a768e5ec" kind="define"><name>NDIGO6G12_TRIGGER_D0</name></member>
-      <member refid="group__triggerdefs_1gae9712e19dc4371905d84a1e925c25606" kind="define"><name>NDIGO6G12_TRIGGER_D1</name></member>
-      <member refid="group__triggerdefs_1gab86dca2f20eed3a852142415aa98496a" kind="define"><name>NDIGO6G12_TRIGGER_TDC0</name></member>
-      <member refid="group__triggerdefs_1gaf5841ea364ca55f7a9c2425f090de583" kind="define"><name>NDIGO6G12_TRIGGER_TDC1</name></member>
-      <member refid="group__triggerdefs_1ga56946427c59350a9dd009bdb1d29d1ba" kind="define"><name>NDIGO6G12_TRIGGER_TDC2</name></member>
-      <member refid="group__triggerdefs_1ga3d28c6d62cbe3932cd5fe50894253174" kind="define"><name>NDIGO6G12_TRIGGER_TDC3</name></member>
-      <member refid="group__triggerdefs_1ga40689cd1bd352b7d7338764e72da0ecc" kind="define"><name>NDIGO6G12_TRIGGER_TRG</name></member>
-      <member refid="group__triggerdefs_1ga5c8e474086f222ea6e9945356d74183b" kind="define"><name>NDIGO6G12_TRIGGER_GATE</name></member>
-      <member refid="group__triggerdefs_1ga473188e6f82aa412123aa9aa8e76f485" kind="define"><name>NDIGO6G12_TRIGGER_AUTO</name></member>
-      <member refid="group__triggerdefs_1gaddbcf304ec8709008e9cdd7594e575f9" kind="define"><name>NDIGO6G12_TRIGGER_ONE</name></member>
-      <member refid="group__triggerdefs_1gad0a2ed9ea21a259daa91c5a8145875c9" kind="define"><name>NDIGO6G12_TRIGGER_FPGA0</name></member>
-      <member refid="group__triggerdefs_1gac9ffa6d38056cf5c0e58e73da7d27585" kind="define"><name>NDIGO6G12_TRIGGER_FPGA1</name></member>
-      <member refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kind="define"><name>NDIGO6G12_DC_OFFSET_N_NIM</name></member>
-      <member refid="group__devicestates_1ga966029913bb493197b755aefb3451e66" kind="define"><name>NDIGO6G12_DEVICE_STATE_INITIALIZED</name></member>
-      <member refid="group__devicestates_1ga9a4c10e013521be5659574c819a31104" kind="define"><name>NDIGO6G12_DEVICE_STATE_CONFIGURED</name></member>
-      <member refid="group__devicestates_1ga033acfc4ed319c85c3762cac5af2bd22" kind="define"><name>NDIGO6G12_DEVICE_STATE_CAPTURING</name></member>
-      <member refid="group__tigerdefs_1ga7eccbe4d5a6be5547e3483dd660bee96" kind="define"><name>NDIGO6G12_TIGER_OFF</name></member>
-      <member refid="group__tigerdefs_1ga36a6878b79537652e9810e09ac165a8f" kind="define"><name>NDIGO6G12_TIGER_OUTPUT</name></member>
-      <member refid="group__tigerdefs_1ga8b3220a875ee8bfa25194f383a28a88d" kind="define"><name>NDIGO6G12_TIGER_BIDI</name></member>
-      <member refid="group__tigerdefs_1ga1edd2216a57c42dd92c5d0b141b61d53" kind="define"><name>NDIGO6G12_TIGER_BIPOLAR</name></member>
-      <member refid="group__tigerdefs_1gafdf751fd3bdecfe23abce68ef14a8d65" kind="define"><name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name></member>
-      <memberdef kind="define" id="ndigo6g12__interface_8h_1a4266289aaec1ed48f096291508844f64" prot="public" static="no">
-        <name>ndigo6g12_get_default_init_parameters</name>
-        <param><defname>init</defname></param>
-        <initializer>    <ref refid="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" kindref="member">ndigo6g12_get_default_init_parameters_version</ref>(init, <ref refid="group__constants_1ga2f31605192c692844d830dee4ab190df" kindref="member">NDIGO6G12_API_VERSION</ref>)</initializer>
-        <briefdescription>
+<compounddef id="ndigo6g12__interface_8h" kind="file" language="C++">
+<compoundname>ndigo6g12_interface.h</compoundname>
+<includes refid="crono__interface_8h" local="yes">crono_interface.h</includes>
+<incdepgraph>
+<node id="2">
+<label>crono_interface.h</label>
+<link refid="crono__interface_8h"/>
+<childnode refid="3" relation="include">
+</childnode>
+</node>
+<node id="1">
+<label>source/ndigo6g12_interface.h</label>
+<link refid="ndigo6g12__interface_8h"/>
+<childnode refid="2" relation="include">
+</childnode>
+</node>
+<node id="3">
+<label>stdint.h</label>
+</node>
+</incdepgraph>
+<innerclass refid="structndigo6g12__device" prot="public">ndigo6g12_device</innerclass>
+<innerclass refid="structndigo6g12__init__parameters" prot="public">ndigo6g12_init_parameters</innerclass>
+<innerclass refid="structndigo6g12__param__info" prot="public">ndigo6g12_param_info</innerclass>
+<innerclass refid="structndigo6g12__static__info" prot="public">ndigo6g12_static_info</innerclass>
+<innerclass refid="structndigo6g12__fast__info" prot="public">ndigo6g12_fast_info</innerclass>
+<innerclass refid="structndigo6g12__read__in" prot="public">ndigo6g12_read_in</innerclass>
+<innerclass refid="structndigo6g12__read__out" prot="public">ndigo6g12_read_out</innerclass>
+<innerclass refid="structndigo6g12__trigger" prot="public">ndigo6g12_trigger</innerclass>
+<innerclass refid="structndigo6g12__trigger__block" prot="public">ndigo6g12_trigger_block</innerclass>
+<innerclass refid="structndigo6g12__gating__block" prot="public">ndigo6g12_gating_block</innerclass>
+<innerclass refid="structndigo6g12__tdc__gating__block" prot="public">ndigo6g12_tdc_gating_block</innerclass>
+<innerclass refid="structndigo6g12__tdc__tiger__block" prot="public">ndigo6g12_tdc_tiger_block</innerclass>
+<innerclass refid="structndigo6g12__averager__configuration" prot="public">ndigo6g12_averager_configuration</innerclass>
+<innerclass refid="structndigo6g12__tdc__channel" prot="public">ndigo6g12_tdc_channel</innerclass>
+<innerclass refid="structndigo6g12__tdc__configuration" prot="public">ndigo6g12_tdc_configuration</innerclass>
+<innerclass refid="structndigo6g12__configuration" prot="public">ndigo6g12_configuration</innerclass>
+<sectiondef kind="define">
+<memberdef kind="define" id="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" prot="public" static="no">
+<name>NDIGO6G12_API</name>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="28" column="10" bodyfile="source/ndigo6g12_interface.h" bodystart="28" bodyend="-1"/>
+</memberdef>
+<member refid="group__constants_1ga2f31605192c692844d830dee4ab190df" kind="define"><name>NDIGO6G12_API_VERSION</name></member>
+<member refid="group__constants_1ga8a0e2b9fc283e378af9d140d7dc5a8e5" kind="define"><name>NDIGO6G12_TRIGGER_COUNT</name></member>
+<member refid="group__constants_1ga58b88b343de23d00cb6e3b95ec6b35f1" kind="define"><name>NDIGO6G12_ADC_CHANNEL_COUNT</name></member>
+<member refid="group__constants_1ga4a0f11174c3e9e1ffbe019a413df7cb1" kind="define"><name>NDIGO6G12_GATE_COUNT</name></member>
+<member refid="group__constants_1ga671625c986c17588d7c66719427afea7" kind="define"><name>NDIGO6G12_TDC_CHANNEL_COUNT</name></member>
+<member refid="group__constants_1gae48cca7429d857a6dbd4b4b382b1a61b" kind="define"><name>NDIGO6G12_BITSTREAM_DATE_LEN</name></member>
+<member refid="group__constants_1gaa14e5242dc5cd22f333c69aa6af0db4f" kind="define"><name>NDIGO6G12_CALIBRATION_DATE_LEN</name></member>
+<member refid="group__constants_1gaa06cf78afb177936084bbac7ce768e63" kind="define"><name>NDIGO6G12_FLASH_SIG_LEN</name></member>
+<member refid="group__constants_1ga0d9550cfdb01cb823407984f781a4696" kind="define"><name>NDIGO6G12_FIFO_DEPTH</name></member>
+<member refid="group__triggerblockdefs_1gaff5fb5d6321cb5739e498a8d6004d98a" kind="define"><name>NDIGO6G12_MAX_PRECURSOR</name></member>
+<member refid="group__triggerblockdefs_1gaf82527fb9c266707d59317100be18d7d" kind="define"><name>NDIGO6G12_MAX_MULTISHOT</name></member>
+<member refid="group__clockmodes_1gabae6fcfe7e93142eb2b8d41da3f4e030" kind="define"><name>NDIGO6G12_CLOCK_SOURCE_INTERNAL</name></member>
+<member refid="group__clockmodes_1gace2114dd58a66ac31eb1a23601c60c25" kind="define"><name>NDIGO6G12_CLOCK_SOURCE_SMA</name></member>
+<member refid="group__clockmodes_1ga9c55152ad351c2c87c70513d7b55d0a4" kind="define"><name>NDIGO6G12_CLOCK_SOURCE_AUX2</name></member>
+<member refid="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" kind="define"><name>NDIGO6G12_APP_TYPE_AVRG</name></member>
+<member refid="group__apptypes_1ga96d6b2b565ff0f6c6cda34854768bcff" kind="define"><name>NDIGO6G12_APP_TYPE_4CH</name></member>
+<member refid="group__apptypes_1ga8575c724769f442f91a76c6f73eb00fb" kind="define"><name>NDIGO6G12_APP_TYPE_2CH</name></member>
+<member refid="group__apptypes_1ga5892cf53d029fcd233410b03261f2380" kind="define"><name>NDIGO6G12_APP_TYPE_1CH</name></member>
+<member refid="group__apptypes_1ga1cf9cfd9fb63b105f34151d73dbdb158" kind="define"><name>NDIGO6G12_APP_TYPE_CURRENT</name></member>
+<member refid="group__alertdefs_1ga4c9668c2c2601a405e950252aec4a4fb" kind="define"><name>NDIGO6G12_ALERT_FPGA_TEMPERATURE</name></member>
+<member refid="group__alertdefs_1ga2b525a74b3ee827d0f1bb6317240b376" kind="define"><name>NDIGO6G12_ALERT_VCCINT</name></member>
+<member refid="group__alertdefs_1ga84628456bd0c7fd77905ba6f9ec7e405" kind="define"><name>NDIGO6G12_ALERT_VCCAUX</name></member>
+<member refid="group__alertdefs_1ga8a679f157f9440803368779b8f3ffeb3" kind="define"><name>NDIGO6G12_ALERT_FPGA_TEMPERATURE_CRITICAL</name></member>
+<member refid="group__alertdefs_1gab20a711e631e29825db5d0b36188cfbd" kind="define"><name>NDIGO6G12_ALERT_THS_TEMPERATURE_CRITICAL</name></member>
+<member refid="group__adcdefs_1ga387f83c29e74ed7a8e9f9dd171ad8da6" kind="define"><name>NDIGO6G12_ADC_MODE_ABCD</name></member>
+<member refid="group__adcdefs_1ga1eb1d3b4d01f27b96f34597b037d1e8f" kind="define"><name>NDIGO6G12_ADC_MODE_AADD</name></member>
+<member refid="group__adcdefs_1ga3313309476ae81b536e29a961537cfb9" kind="define"><name>NDIGO6G12_ADC_MODE_AAAA</name></member>
+<member refid="group__adcdefs_1gaa6fb55a06a3163fe75d5ba2c3b6e6776" kind="define"><name>NDIGO6G12_ADC_MODE_DDDD</name></member>
+<member refid="group__adcdefs_1gaeff36ea77c6420a7798dd1ed57d327a4" kind="define"><name>NDIGO6G12_ADC_MODE_AD</name></member>
+<member refid="group__adcdefs_1ga0fd4cb43021c9e2f155fdcc3a6415024" kind="define"><name>NDIGO6G12_ADC_MODE_AA</name></member>
+<member refid="group__adcdefs_1ga305d143ce6c99b781e390ac63bc501f8" kind="define"><name>NDIGO6G12_ADC_MODE_DD</name></member>
+<member refid="group__adcdefs_1gadc5a2d3a469ff27f8dc115b099a3da03" kind="define"><name>NDIGO6G12_ADC_MODE_A</name></member>
+<member refid="group__adcdefs_1ga92e6becb238b0ce5f48917bf2a7fb0cb" kind="define"><name>NDIGO6G12_ADC_MODE_D</name></member>
+<member refid="group__outputdefs_1gabb1307aecd252b329c43d44ea8f0e3da" kind="define"><name>NDIGO6G12_OUTPUT_MODE_RAW</name></member>
+<member refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kind="define"><name>NDIGO6G12_OUTPUT_MODE_SIGNED16</name></member>
+<member refid="group__outputdefs_1gaa6d025ad7fb0144b088773dccd4f3ae1" kind="define"><name>NDIGO6G12_OUTPUT_MODE_SIGNED32</name></member>
+<member refid="group__gatedefs_1ga92f1048ce70f7946e2c1f921c74c4a14" kind="define"><name>NDIGO6G12_TRIGGER_GATE_NONE</name></member>
+<member refid="group__gatedefs_1ga173f9f253f6482567ad05f2f0d205dab" kind="define"><name>NDIGO6G12_TRIGGER_GATE_0</name></member>
+<member refid="group__gatedefs_1gac7f7182ce5c25dc595157a18b61dc947" kind="define"><name>NDIGO6G12_TRIGGER_GATE_1</name></member>
+<member refid="group__gatedefs_1gaa41f51c553b024e948fa4a159516a54d" kind="define"><name>NDIGO6G12_TRIGGER_GATE_2</name></member>
+<member refid="group__gatedefs_1gae591a05665fd94755dc5cbaacc717563" kind="define"><name>NDIGO6G12_TRIGGER_GATE_3</name></member>
+<member refid="group__sourcedefs_1gad85e47f3b9cb93fa3c5e09b5ee23456b" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_NONE</name></member>
+<member refid="group__sourcedefs_1ga5282acf49f991fd38856930423263310" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_A0</name></member>
+<member refid="group__sourcedefs_1gaceb5cc7c2d9598057055bf11ae7374a9" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_A1</name></member>
+<member refid="group__sourcedefs_1gaca7a1750faf3cffdd15d3e972551e3ba" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_B0</name></member>
+<member refid="group__sourcedefs_1ga47accd3ba5b7c214e82ee18f5cd5781b" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_B1</name></member>
+<member refid="group__sourcedefs_1ga8f42753ebcff479824176cb88378dde3" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_C0</name></member>
+<member refid="group__sourcedefs_1gafb73f82c7f875d694d1cada43cead711" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_C1</name></member>
+<member refid="group__sourcedefs_1ga4751c08972815b49297e59ff6b027dcf" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_D0</name></member>
+<member refid="group__sourcedefs_1ga3b17643ce2cc98bd5c1f7e6f64d0355c" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_D1</name></member>
+<member refid="group__sourcedefs_1gad88618b62eccaa028bffb8891299aade" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC0</name></member>
+<member refid="group__sourcedefs_1ga5ded9b09fdcddbb1e25345f50c80ad69" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC1</name></member>
+<member refid="group__sourcedefs_1gab58177061c491d9d0b478ecae11dda82" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC2</name></member>
+<member refid="group__sourcedefs_1ga25ec036e958db242f44ffc087ffcb8df" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TDC3</name></member>
+<member refid="group__sourcedefs_1ga008d38f3b1bf98dcb9a6615157fb5e77" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_TRG</name></member>
+<member refid="group__sourcedefs_1ga2b298b7a7c3fcd57787fcef68520f719" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_GATE</name></member>
+<member refid="group__sourcedefs_1ga5f06dc511af8e8755e8bb090b785cb45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_AUTO</name></member>
+<member refid="group__sourcedefs_1ga4d5aa984a0ff1040e17dd6898c23f2ae" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_ONE</name></member>
+<member refid="group__sourcedefs_1ga34c65cd2103688ef54475ec7cdc57d45" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA0</name></member>
+<member refid="group__sourcedefs_1ga32cf76e127bfe6810c911d6abb01e084" kind="define"><name>NDIGO6G12_TRIGGER_SOURCE_FPGA1</name></member>
+<member refid="group__tdcpacketflags_1gaac3fc10b5f615ad03ecfb52a26b0e546" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_RESERVED</name></member>
+<member refid="group__tdcpacketflags_1ga414ee83902f69fe30f828657e3a144ca" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA</name></member>
+<member refid="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_LOST</name></member>
+<member refid="group__tdcpacketflags_1gac5c9984ba716be0973e119ef03a1c633" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_SHORTENED</name></member>
+<member refid="group__tdcpacketflags_1ga096593c9935b4e3bef94f8af1736a4e0" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_DMA_FIFO_FULL</name></member>
+<member refid="group__tdcpacketflags_1gab58e0e726461115cacef8d5df0463e91" kind="define"><name>NDIGO6G12_TDC_PACKET_FLAG_HOST_BUFFER_FULL</name></member>
+<member refid="group__tdchitflags_1gaa1ab44e4949733dc2a4d001d21727bda" kind="define"><name>NDIGO6G12_TDC_HIT_FLAG_LOST</name></member>
+<member refid="group__tdchitflags_1ga0c6587adee0e9743ab4f1b281884fdd4" kind="define"><name>NDIGO6G12_TDC_HIT_FLAG_ROLLOVER_LOST</name></member>
+<member refid="group__tdchitflags_1gab18e3f6a232a7aa7f22c55a4bb6f2f5f" kind="define"><name>NDIGO6G12_TDC_HIT_FLAG_VALID</name></member>
+<member refid="group__tdchitflags_1gad3453e1c7467a3e09caa68f2adef9442" kind="define"><name>NDIGO6G12_TDC_HIT_FLAG_GROUP_TIME_ROLLOVER</name></member>
+<member refid="group__tdchitflags_1ga8839ed36e22f6b5ebc4b530180cdbe5c" kind="define"><name>NDIGO6G12_TDC_HIT_ERROR_MASK</name></member>
+<member refid="group__tdchitflags_1ga131480d92fc6519c48cb9b644a4832b0" kind="define"><name>NDIGO6G12_TDC_HIT_TYPE_MASK</name></member>
+<member refid="group__tdchitflags_1ga2c849d405488877f8a9cdb14ef378aba" kind="define"><name>NDIGO6G12_TDC_PADDING_DATA_CHANNEL</name></member>
+<member refid="group__tdchitflags_1gae9340d4a362787142eed90008105163e" kind="define"><name>NDIGO6G12_TDC_ROLLOVER_CHANNEL</name></member>
+<member refid="group__triggerdefs_1ga473281d4d0a23ddd8e2ee741b51724e2" kind="define"><name>NDIGO6G12_TRIGGER_A0</name></member>
+<member refid="group__triggerdefs_1ga0336cd9395363d4661f1d939075e5a1f" kind="define"><name>NDIGO6G12_TRIGGER_A1</name></member>
+<member refid="group__triggerdefs_1ga02ee255e96407117276526717804e9ec" kind="define"><name>NDIGO6G12_TRIGGER_B0</name></member>
+<member refid="group__triggerdefs_1ga115ae1228432f37e06d22c4ef45fe415" kind="define"><name>NDIGO6G12_TRIGGER_B1</name></member>
+<member refid="group__triggerdefs_1gac5047570b5c4d72ec3047b1eea72ee32" kind="define"><name>NDIGO6G12_TRIGGER_C0</name></member>
+<member refid="group__triggerdefs_1ga7731e9d91c8e9f0a777e99ae6efdb218" kind="define"><name>NDIGO6G12_TRIGGER_C1</name></member>
+<member refid="group__triggerdefs_1ga7e30125691a36f25f34f5a67a768e5ec" kind="define"><name>NDIGO6G12_TRIGGER_D0</name></member>
+<member refid="group__triggerdefs_1gae9712e19dc4371905d84a1e925c25606" kind="define"><name>NDIGO6G12_TRIGGER_D1</name></member>
+<member refid="group__triggerdefs_1gab86dca2f20eed3a852142415aa98496a" kind="define"><name>NDIGO6G12_TRIGGER_TDC0</name></member>
+<member refid="group__triggerdefs_1gaf5841ea364ca55f7a9c2425f090de583" kind="define"><name>NDIGO6G12_TRIGGER_TDC1</name></member>
+<member refid="group__triggerdefs_1ga56946427c59350a9dd009bdb1d29d1ba" kind="define"><name>NDIGO6G12_TRIGGER_TDC2</name></member>
+<member refid="group__triggerdefs_1ga3d28c6d62cbe3932cd5fe50894253174" kind="define"><name>NDIGO6G12_TRIGGER_TDC3</name></member>
+<member refid="group__triggerdefs_1ga40689cd1bd352b7d7338764e72da0ecc" kind="define"><name>NDIGO6G12_TRIGGER_TRG</name></member>
+<member refid="group__triggerdefs_1ga5c8e474086f222ea6e9945356d74183b" kind="define"><name>NDIGO6G12_TRIGGER_GATE</name></member>
+<member refid="group__triggerdefs_1ga473188e6f82aa412123aa9aa8e76f485" kind="define"><name>NDIGO6G12_TRIGGER_AUTO</name></member>
+<member refid="group__triggerdefs_1gaddbcf304ec8709008e9cdd7594e575f9" kind="define"><name>NDIGO6G12_TRIGGER_ONE</name></member>
+<member refid="group__triggerdefs_1gad0a2ed9ea21a259daa91c5a8145875c9" kind="define"><name>NDIGO6G12_TRIGGER_FPGA0</name></member>
+<member refid="group__triggerdefs_1gac9ffa6d38056cf5c0e58e73da7d27585" kind="define"><name>NDIGO6G12_TRIGGER_FPGA1</name></member>
+<member refid="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" kind="define"><name>NDIGO6G12_DC_OFFSET_N_NIM</name></member>
+<member refid="group__devicestates_1ga966029913bb493197b755aefb3451e66" kind="define"><name>NDIGO6G12_DEVICE_STATE_INITIALIZED</name></member>
+<member refid="group__devicestates_1ga9a4c10e013521be5659574c819a31104" kind="define"><name>NDIGO6G12_DEVICE_STATE_CONFIGURED</name></member>
+<member refid="group__devicestates_1ga033acfc4ed319c85c3762cac5af2bd22" kind="define"><name>NDIGO6G12_DEVICE_STATE_CAPTURING</name></member>
+<member refid="group__tigerdefs_1ga7eccbe4d5a6be5547e3483dd660bee96" kind="define"><name>NDIGO6G12_TIGER_OFF</name></member>
+<member refid="group__tigerdefs_1ga36a6878b79537652e9810e09ac165a8f" kind="define"><name>NDIGO6G12_TIGER_OUTPUT</name></member>
+<member refid="group__tigerdefs_1ga8b3220a875ee8bfa25194f383a28a88d" kind="define"><name>NDIGO6G12_TIGER_BIDI</name></member>
+<member refid="group__tigerdefs_1ga1edd2216a57c42dd92c5d0b141b61d53" kind="define"><name>NDIGO6G12_TIGER_BIPOLAR</name></member>
+<member refid="group__tigerdefs_1gafdf751fd3bdecfe23abce68ef14a8d65" kind="define"><name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name></member>
+<memberdef kind="define" id="ndigo6g12__interface_8h_1a4266289aaec1ed48f096291508844f64" prot="public" static="no">
+<name>ndigo6g12_get_default_init_parameters</name>
+<param><defname>init</defname></param>
+<initializer>    <ref refid="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" kindref="member">ndigo6g12_get_default_init_parameters_version</ref>(init, <ref refid="group__constants_1ga2f31605192c692844d830dee4ab190df" kindref="member">NDIGO6G12_API_VERSION</ref>)</initializer>
+<briefdescription>
 <para>Macro that calls <ref refid="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" kindref="member">ndigo6g12_get_default_init_parameters_version</ref> with the correct API version. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2077" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="2077" bodyend="2078"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="func">
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a4571d3a373dd9cef756fb94450d0a3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_get_driver_revision</definition>
-        <argsstring>()</argsstring>
-        <name>ndigo6g12_get_driver_revision</name>
-        <briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2068" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="2068" bodyend="2069"/>
+</memberdef>
+</sectiondef>
+<sectiondef kind="func">
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a4571d3a373dd9cef756fb94450d0a3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_driver_revision</definition>
+<argsstring>()</argsstring>
+<name>ndigo6g12_get_driver_revision</name>
+<briefdescription>
 <para>Get the driver version in integer format. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><simplesect kind="return"><para>The driver version in the same format as <ref refid="structndigo6g12__static__info_1ad13d5f2a4d5f44ded6ed4278020b0d9c" kindref="member">ndigo6g12_static_info::driver_revision</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1857" column="6" declfile="source/ndigo6g12_interface.h" declline="1857" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a69c101ee0ec180ddd5c3a79ed0ea6a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const char *</type>
-        <definition>const char * ndigo6g12_get_driver_revision_str</definition>
-        <argsstring>()</argsstring>
-        <name>ndigo6g12_get_driver_revision_str</name>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1848" column="6" declfile="source/ndigo6g12_interface.h" declline="1848" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a69c101ee0ec180ddd5c3a79ed0ea6a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>const char *</type>
+<definition>const char * ndigo6g12_get_driver_revision_str</definition>
+<argsstring>()</argsstring>
+<name>ndigo6g12_get_driver_revision_str</name>
+<briefdescription>
 <para>Get the driver version in string format. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><simplesect kind="return"><para>The Driver version including SVN build revision as a string with format x.y.z.svn. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1864" column="13" declfile="source/ndigo6g12_interface.h" declline="1864" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a07881e20b788b21f3b6fc179347ce1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_count_devices</definition>
-        <argsstring>(int *error_code, const char **error_message)</argsstring>
-        <name>ndigo6g12_count_devices</name>
-        <param>
-          <type>int *</type>
-          <declname>error_code</declname>
-        </param>
-        <param>
-          <type>const char **</type>
-          <declname>error_message</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1855" column="13" declfile="source/ndigo6g12_interface.h" declline="1855" declcolumn="13"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a07881e20b788b21f3b6fc179347ce1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_count_devices</definition>
+<argsstring>(int *error_code, const char **error_message)</argsstring>
+<name>ndigo6g12_count_devices</name>
+<param>
+<type>int *</type>
+<declname>error_code</declname>
+</param>
+<param>
+<type>const char **</type>
+<declname>error_message</declname>
+</param>
+<briefdescription>
 <para>Get the number of Ndigo6G-12 boards that are installed in the system. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="out">error_code</parametername>
@@ -234,28 +234,28 @@
 <simplesect kind="return"><para>The number. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1875" column="6" declfile="source/ndigo6g12_interface.h" declline="1875" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a11f73e1c74d717664b9b07ec1d3dd8b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_get_static_info</definition>
-        <argsstring>(ndigo6g12_device *device, ndigo6g12_static_info *static_info)</argsstring>
-        <name>ndigo6g12_get_static_info</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type><ref refid="structndigo6g12__static__info" kindref="compound">ndigo6g12_static_info</ref> *</type>
-          <declname>static_info</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1866" column="6" declfile="source/ndigo6g12_interface.h" declline="1866" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a11f73e1c74d717664b9b07ec1d3dd8b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_static_info</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_static_info *static_info)</argsstring>
+<name>ndigo6g12_get_static_info</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__static__info" kindref="compound">ndigo6g12_static_info</ref> *</type>
+<declname>static_info</declname>
+</param>
+<briefdescription>
 <para>Get the static information. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>The static information does not change after the device initialization. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -276,28 +276,28 @@
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1886" column="6" declfile="source/ndigo6g12_interface.h" declline="1886" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a4f3ffc2d11fe59b3e07f1ae21c56791a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_get_param_info</definition>
-        <argsstring>(ndigo6g12_device *device, ndigo6g12_param_info *param_info)</argsstring>
-        <name>ndigo6g12_get_param_info</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type><ref refid="structndigo6g12__param__info" kindref="compound">ndigo6g12_param_info</ref> *</type>
-          <declname>param_info</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1877" column="6" declfile="source/ndigo6g12_interface.h" declline="1877" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a4f3ffc2d11fe59b3e07f1ae21c56791a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_param_info</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_param_info *param_info)</argsstring>
+<name>ndigo6g12_get_param_info</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__param__info" kindref="compound">ndigo6g12_param_info</ref> *</type>
+<declname>param_info</declname>
+</param>
+<briefdescription>
 <para>Get parametric information. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>The parametric information may change due to the configuration. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -318,28 +318,28 @@
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1896" column="6" declfile="source/ndigo6g12_interface.h" declline="1896" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a43147bc42f2803900cafb97522d40cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_get_fast_info</definition>
-        <argsstring>(ndigo6g12_device *device, ndigo6g12_fast_info *fast_info)</argsstring>
-        <name>ndigo6g12_get_fast_info</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type><ref refid="structndigo6g12__fast__info" kindref="compound">ndigo6g12_fast_info</ref> *</type>
-          <declname>fast_info</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1887" column="6" declfile="source/ndigo6g12_interface.h" declline="1887" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a43147bc42f2803900cafb97522d40cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_fast_info</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_fast_info *fast_info)</argsstring>
+<name>ndigo6g12_get_fast_info</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__fast__info" kindref="compound">ndigo6g12_fast_info</ref> *</type>
+<declname>fast_info</declname>
+</param>
+<briefdescription>
 <para>Get fast status information. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>The information can be retrieved within a few microseconds. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -360,28 +360,28 @@
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1906" column="6" declfile="source/ndigo6g12_interface.h" declline="1906" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a9e89170f5af84611bf26f6a3426d81c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_get_default_configuration</definition>
-        <argsstring>(ndigo6g12_device *device, ndigo6g12_configuration *config)</argsstring>
-        <name>ndigo6g12_get_default_configuration</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref> *</type>
-          <declname>config</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="1897" column="6" declfile="source/ndigo6g12_interface.h" declline="1897" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a9e89170f5af84611bf26f6a3426d81c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_default_configuration</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_configuration *config)</argsstring>
+<name>ndigo6g12_get_default_configuration</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref> *</type>
+<declname>config</declname>
+</param>
+<briefdescription>
 <para>Copies the default configuration to the specified config pointer. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -482,28 +482,28 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 </listitem><listitem><para><ref refid="structndigo6g12__configuration_1a3cf4c860b082641b35785714656ec046" kindref="member">ramp_test_mode</ref> = <computeroutput>false</computeroutput> </para>
 </listitem></itemizedlist>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2022" column="6" declfile="source/ndigo6g12_interface.h" declline="2022" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1afb9ccbef090349b638da935ec00dfcc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_configure</definition>
-        <argsstring>(ndigo6g12_device *device, ndigo6g12_configuration *config)</argsstring>
-        <name>ndigo6g12_configure</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref> *</type>
-          <declname>config</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2013" column="6" declfile="source/ndigo6g12_interface.h" declline="2013" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1afb9ccbef090349b638da935ec00dfcc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_configure</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_configuration *config)</argsstring>
+<name>ndigo6g12_configure</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref> *</type>
+<declname>config</declname>
+</param>
+<briefdescription>
 <para>Configures the Ndigo6G-12 device. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>The config information is copied such that it can be changed after the call to <ref refid="ndigo6g12__interface_8h_1afb9ccbef090349b638da935ec00dfcc3" kindref="member">ndigo6g12_configure</ref>. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -524,28 +524,28 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2033" column="6" declfile="source/ndigo6g12_interface.h" declline="2033" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_get_default_init_parameters_version</definition>
-        <argsstring>(ndigo6g12_init_parameters *init, int client_api_version)</argsstring>
-        <name>ndigo6g12_get_default_init_parameters_version</name>
-        <param>
-          <type><ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref> *</type>
-          <declname>init</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>client_api_version</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2024" column="6" declfile="source/ndigo6g12_interface.h" declline="2024" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_default_init_parameters_version</definition>
+<argsstring>(ndigo6g12_init_parameters *init, int client_api_version)</argsstring>
+<name>ndigo6g12_get_default_init_parameters_version</name>
+<param>
+<type><ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref> *</type>
+<declname>init</declname>
+</param>
+<param>
+<type>int</type>
+<declname>client_api_version</declname>
+</param>
+<briefdescription>
 <para>Sets up the standard parameters. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>Gets a set of default parameters for <ref refid="ndigo6g12__interface_8h_1a2de181d8f48b36a640182d4118bea07d" kindref="member">ndigo6g12_init()</ref>. This must always be used to initialize the <ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref> structure.</para>
 <para>For convinience, the macro <ref refid="ndigo6g12__interface_8h_1a4266289aaec1ed48f096291508844f64" kindref="member">ndigo6g12_get_default_init_parameters</ref> is provided, which automatically sets the correct <computeroutput>client_api_version</computeroutput>.</para>
 <para>Default values:<itemizedlist>
@@ -583,32 +583,32 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 </para>
 </listitem></itemizedlist>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2069" column="6" declfile="source/ndigo6g12_interface.h" declline="2069" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a2de181d8f48b36a640182d4118bea07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_init</definition>
-        <argsstring>(ndigo6g12_device *device, ndigo6g12_init_parameters *params, const char **error_message)</argsstring>
-        <name>ndigo6g12_init</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type><ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref> *</type>
-          <declname>params</declname>
-        </param>
-        <param>
-          <type>const char **</type>
-          <declname>error_message</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2060" column="6" declfile="source/ndigo6g12_interface.h" declline="2060" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a2de181d8f48b36a640182d4118bea07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_init</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_init_parameters *params, const char **error_message)</argsstring>
+<name>ndigo6g12_init</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref> *</type>
+<declname>params</declname>
+</param>
+<param>
+<type>const char **</type>
+<declname>error_message</declname>
+</param>
+<briefdescription>
 <para>Open and initialize an Ndigo6G-12 board. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>Which Ndigo6G-12 board will be initialized is determined by <ref refid="structndigo6g12__init__parameters_1a76f4fd1aefbb9db87716f117658faf83" kindref="member">ndigo6g12_init_parameters::card_index</ref>. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="out">device</parametername>
@@ -637,24 +637,24 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2092" column="6" declfile="source/ndigo6g12_interface.h" declline="2092" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1aa9c9b2f19ee716d20a1401607ab8629d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_close</definition>
-        <argsstring>(ndigo6g12_device *device)</argsstring>
-        <name>ndigo6g12_close</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2083" column="6" declfile="source/ndigo6g12_interface.h" declline="2083" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1aa9c9b2f19ee716d20a1401607ab8629d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_close</definition>
+<argsstring>(ndigo6g12_device *device)</argsstring>
+<name>ndigo6g12_close</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<briefdescription>
 <para>Finalize the driver for this device. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -667,32 +667,32 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2100" column="6" declfile="source/ndigo6g12_interface.h" declline="2100" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_read</definition>
-        <argsstring>(ndigo6g12_device *device, ndigo6g12_read_in *in, ndigo6g12_read_out *out)</argsstring>
-        <name>ndigo6g12_read</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type><ref refid="structndigo6g12__read__in" kindref="compound">ndigo6g12_read_in</ref> *</type>
-          <declname>in</declname>
-        </param>
-        <param>
-          <type><ref refid="structndigo6g12__read__out" kindref="compound">ndigo6g12_read_out</ref> *</type>
-          <declname>out</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2091" column="6" declfile="source/ndigo6g12_interface.h" declline="2091" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_read</definition>
+<argsstring>(ndigo6g12_device *device, ndigo6g12_read_in *in, ndigo6g12_read_out *out)</argsstring>
+<name>ndigo6g12_read</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__read__in" kindref="compound">ndigo6g12_read_in</ref> *</type>
+<declname>in</declname>
+</param>
+<param>
+<type><ref refid="structndigo6g12__read__out" kindref="compound">ndigo6g12_read_out</ref> *</type>
+<declname>out</declname>
+</param>
+<briefdescription>
 <para>Reads packets from the board. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>If <ref refid="structndigo6g12__read__in_1a375ae9746419fc6197ccb8f66c636aa1" kindref="member">ndigo6g12_read_in::acknowledge_last_read</ref> is <computeroutput>true</computeroutput>, automatically acknowledges the last read packets. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -721,24 +721,24 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2113" column="6" declfile="source/ndigo6g12_interface.h" declline="2113" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a773491c1db097452e748cc4a414c71df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const char *</type>
-        <definition>const char * ndigo6g12_get_last_error_message</definition>
-        <argsstring>(ndigo6g12_device *device)</argsstring>
-        <name>ndigo6g12_get_last_error_message</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2104" column="6" declfile="source/ndigo6g12_interface.h" declline="2104" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a773491c1db097452e748cc4a414c71df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>const char *</type>
+<definition>const char * ndigo6g12_get_last_error_message</definition>
+<argsstring>(ndigo6g12_device *device)</argsstring>
+<name>ndigo6g12_get_last_error_message</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<briefdescription>
 <para>Gets latest error message of <bold>device</bold>. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -751,28 +751,28 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>char array containing the plain text error message. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2120" column="13" declfile="source/ndigo6g12_interface.h" declline="2120" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1abd149e97b66fdb38da81b19166843267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_get_pcie_info</definition>
-        <argsstring>(ndigo6g12_device *device, crono_pcie_info *pcie_info)</argsstring>
-        <name>ndigo6g12_get_pcie_info</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type><ref refid="structcrono__pcie__info" kindref="compound">crono_pcie_info</ref> *</type>
-          <declname>pcie_info</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2111" column="13" declfile="source/ndigo6g12_interface.h" declline="2111" declcolumn="13"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1abd149e97b66fdb38da81b19166843267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_get_pcie_info</definition>
+<argsstring>(ndigo6g12_device *device, crono_pcie_info *pcie_info)</argsstring>
+<name>ndigo6g12_get_pcie_info</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type><ref refid="structcrono__pcie__info" kindref="compound">crono_pcie_info</ref> *</type>
+<declname>pcie_info</declname>
+</param>
+<briefdescription>
 <para>Reads the PCIe info like correctable and uncorrectable errors. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -793,28 +793,28 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2130" column="6" declfile="source/ndigo6g12_interface.h" declline="2130" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1af409be1f4c7186527daa4b62ff76f194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_clear_pcie_errors</definition>
-        <argsstring>(ndigo6g12_device *device, int flags)</argsstring>
-        <name>ndigo6g12_clear_pcie_errors</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>flags</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2121" column="6" declfile="source/ndigo6g12_interface.h" declline="2121" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1af409be1f4c7186527daa4b62ff76f194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_clear_pcie_errors</definition>
+<argsstring>(ndigo6g12_device *device, int flags)</argsstring>
+<name>ndigo6g12_clear_pcie_errors</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type>int</type>
+<declname>flags</declname>
+</param>
+<briefdescription>
 <para>Clear PCIe errors. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>Only useful for PCIe problem debugging flags. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -844,24 +844,24 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 * </verbatim> </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2149" column="6" declfile="source/ndigo6g12_interface.h" declline="2149" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a73e2cc71b45d17768b57bfc2f84c1b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const char *</type>
-        <definition>const char * ndigo6g12_device_state_to_str</definition>
-        <argsstring>(int state)</argsstring>
-        <name>ndigo6g12_device_state_to_str</name>
-        <param>
-          <type>int</type>
-          <declname>state</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2140" column="6" declfile="source/ndigo6g12_interface.h" declline="2140" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a73e2cc71b45d17768b57bfc2f84c1b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>const char *</type>
+<definition>const char * ndigo6g12_device_state_to_str</definition>
+<argsstring>(int state)</argsstring>
+<name>ndigo6g12_device_state_to_str</name>
+<param>
+<type>int</type>
+<declname>state</declname>
+</param>
+<briefdescription>
 <para>Convert <bold>state</bold> to plain text. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>The device state is stored in <ref refid="structndigo6g12__fast__info_1a89f234133d3efe315836311cbf21c64b" kindref="member">ndigo6g12_fast_info::state</ref>. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">state</parametername>
@@ -874,24 +874,24 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>char array containing the state as plain text. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2158" column="13" declfile="source/ndigo6g12_interface.h" declline="2158" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a91dedbf501326e87ffa205136c866648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_start_capture</definition>
-        <argsstring>(ndigo6g12_device *device)</argsstring>
-        <name>ndigo6g12_start_capture</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2149" column="13" declfile="source/ndigo6g12_interface.h" declline="2149" declcolumn="13"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a91dedbf501326e87ffa205136c866648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_start_capture</definition>
+<argsstring>(ndigo6g12_device *device)</argsstring>
+<name>ndigo6g12_start_capture</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<briefdescription>
 <para>Start data acquisition. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -904,24 +904,24 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2165" column="6" declfile="source/ndigo6g12_interface.h" declline="2165" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1a97dbeb5e7c2d3e60e4adc71587d2c4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_stop_capture</definition>
-        <argsstring>(ndigo6g12_device *device)</argsstring>
-        <name>ndigo6g12_stop_capture</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2156" column="6" declfile="source/ndigo6g12_interface.h" declline="2156" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1a97dbeb5e7c2d3e60e4adc71587d2c4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_stop_capture</definition>
+<argsstring>(ndigo6g12_device *device)</argsstring>
+<name>ndigo6g12_stop_capture</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<briefdescription>
 <para>Stop data acquisition. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -934,28 +934,28 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2172" column="6" declfile="source/ndigo6g12_interface.h" declline="2172" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1af39c5c016c10bef5822ba9b83e4aa957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_manual_trigger</definition>
-        <argsstring>(ndigo6g12_device *device, int channel_mask)</argsstring>
-        <name>ndigo6g12_manual_trigger</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>channel_mask</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2163" column="6" declfile="source/ndigo6g12_interface.h" declline="2163" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1af39c5c016c10bef5822ba9b83e4aa957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_manual_trigger</definition>
+<argsstring>(ndigo6g12_device *device, int channel_mask)</argsstring>
+<name>ndigo6g12_manual_trigger</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type>int</type>
+<declname>channel_mask</declname>
+</param>
+<briefdescription>
 <para>Enables manual triggering of the ADC channels. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">device</parametername>
@@ -976,28 +976,28 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2180" column="6" declfile="source/ndigo6g12_interface.h" declline="2180" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="ndigo6g12__interface_8h_1acb9dd649c5b3c3347ccd0cd9b62d5fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int ndigo6g12_single_shot</definition>
-        <argsstring>(ndigo6g12_device *device, int channel_mask)</argsstring>
-        <name>ndigo6g12_single_shot</name>
-        <param>
-          <type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>channel_mask</declname>
-        </param>
-        <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2171" column="6" declfile="source/ndigo6g12_interface.h" declline="2171" declcolumn="6"/>
+</memberdef>
+<memberdef kind="function" id="ndigo6g12__interface_8h_1acb9dd649c5b3c3347ccd0cd9b62d5fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+<type>int</type>
+<definition>int ndigo6g12_single_shot</definition>
+<argsstring>(ndigo6g12_device *device, int channel_mask)</argsstring>
+<name>ndigo6g12_single_shot</name>
+<param>
+<type><ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref> *</type>
+<declname>device</declname>
+</param>
+<param>
+<type>int</type>
+<declname>channel_mask</declname>
+</param>
+<briefdescription>
 <para>Enables single-shot recording of the ADC channels. </para>
-        </briefdescription>
-        <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>Instead of continously triggering on input signals, only trigger and record a <ref refid="structndigo6g12__trigger__block_1a2c5c3f6d832916c465850cf9a684237e" kindref="member">ndigo6g12_trigger_block::multi_shot_count</ref> number of events.</para>
 <para>Requires that <ref refid="structndigo6g12__trigger__block_1a4cd2d3ea697c9b380a0a38e0b34db914" kindref="member">ndigo6g12_trigger_block::enabled</ref> is <computeroutput>false</computeroutput>. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1019,19 +1019,19 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <simplesect kind="return"><para>See <ref refid="group__funcreturns" kindref="compound">Function return values</ref>. </para>
 </simplesect>
 </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2192" column="6" declfile="source/ndigo6g12_interface.h" declline="2192" declcolumn="6"/>
-      </memberdef>
-    </sectiondef>
-    <briefdescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="2183" column="6" declfile="source/ndigo6g12_interface.h" declline="2183" declcolumn="6"/>
+</memberdef>
+</sectiondef>
+<briefdescription>
 <para>The functions provided by the API are declared in <computeroutput><ref refid="ndigo6g12__interface_8h" kindref="compound">ndigo6G12_interface.h</ref></computeroutput>. </para>
-    </briefdescription>
-    <detaileddescription>
+</briefdescription>
+<detaileddescription>
 <para>The API is a DLL with C linkage. </para>
-    </detaileddescription>
-    <programlisting>
+</detaileddescription>
+<programlisting>
 <codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Header<sp/>file<sp/>containing<sp/>structs<sp/>and<sp/>#defines<sp/>specific<sp/>for<sp/>the<sp/>Ndigo6G-12</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*<sp/>board.</highlight></codeline>
@@ -1437,173 +1437,173 @@ Default values of <ref refid="structndigo6g12__configuration" kindref="compound"
 <codeline lineno="1316" refid="structndigo6g12__trigger__block_1a99fb48ea8804c4690d830b2037e9e405" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__trigger__block_1a99fb48ea8804c4690d830b2037e9e405" kindref="member">minimum_free_packets</ref>;</highlight></codeline>
 <codeline lineno="1317"><highlight class="normal">}<sp/><ref refid="structndigo6g12__trigger__block" kindref="compound">ndigo6g12_trigger_block</ref>;</highlight></codeline>
 <codeline lineno="1318"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1328" refid="structndigo6g12__gating__block" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1335" refid="structndigo6g12__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" kindref="member">negate</ref>;</highlight></codeline>
-<codeline lineno="1336"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1349" refid="structndigo6g12__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref>;</highlight></codeline>
-<codeline lineno="1350"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1358" refid="structndigo6g12__gating__block_1a37722a150250e2a5a98e5e0d11e53449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__gating__block_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref>;</highlight></codeline>
-<codeline lineno="1359"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1367" refid="structndigo6g12__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">stop</ref>;</highlight></codeline>
-<codeline lineno="1368"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1376" refid="structndigo6g12__gating__block_1a09bf0a0c15c4905391944154b116a637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref>;</highlight></codeline>
-<codeline lineno="1377"><highlight class="normal">}<sp/><ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref>;</highlight></codeline>
-<codeline lineno="1378"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1383" refid="structndigo6g12__tdc__gating__block" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1387" refid="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" kindref="member">enable</ref>;</highlight></codeline>
-<codeline lineno="1388"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1393" refid="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" kindref="member">negate</ref>;</highlight></codeline>
-<codeline lineno="1394"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1407" refid="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref>;</highlight></codeline>
-<codeline lineno="1408"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1416" refid="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref>;</highlight></codeline>
-<codeline lineno="1417"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1425" refid="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">stop</ref>;</highlight></codeline>
-<codeline lineno="1426"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1434" refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref>;</highlight></codeline>
-<codeline lineno="1435"><highlight class="normal">}<sp/><ref refid="structndigo6g12__tdc__gating__block" kindref="compound">ndigo6g12_tdc_gating_block</ref>;</highlight></codeline>
-<codeline lineno="1436"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1441" refid="structndigo6g12__tdc__tiger__block" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1452" refid="structndigo6g12__tdc__tiger__block_1a1ea5d0cb93f22f7d0fdf804bd68c3326" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a1ea5d0cb93f22f7d0fdf804bd68c3326" kindref="member">mode</ref>;</highlight></codeline>
-<codeline lineno="1453"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1460" refid="structndigo6g12__tdc__tiger__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__tiger__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" kindref="member">negate</ref>;</highlight></codeline>
-<codeline lineno="1461"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1474" refid="structndigo6g12__tdc__tiger__block_1a19337455e0a99f687d18ff1c7e20ff96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref>;</highlight></codeline>
+<codeline lineno="1331" refid="structndigo6g12__gating__block" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1338" refid="structndigo6g12__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" kindref="member">negate</ref>;</highlight></codeline>
+<codeline lineno="1339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1348" refid="structndigo6g12__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref>;</highlight></codeline>
+<codeline lineno="1349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1357" refid="structndigo6g12__gating__block_1a37722a150250e2a5a98e5e0d11e53449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__gating__block_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="1358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1366" refid="structndigo6g12__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">stop</ref>;</highlight></codeline>
+<codeline lineno="1367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1375" refid="structndigo6g12__gating__block_1a09bf0a0c15c4905391944154b116a637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref>;</highlight></codeline>
+<codeline lineno="1376"><highlight class="normal">}<sp/><ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref>;</highlight></codeline>
+<codeline lineno="1377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1382" refid="structndigo6g12__tdc__gating__block" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1386" refid="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__gating__block_1af9ab2c809a800c5898c63e811b55d217" kindref="member">enable</ref>;</highlight></codeline>
+<codeline lineno="1387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1392" refid="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__gating__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" kindref="member">negate</ref>;</highlight></codeline>
+<codeline lineno="1393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1402" refid="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__gating__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref>;</highlight></codeline>
+<codeline lineno="1403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1411" refid="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__gating__block_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="1412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1420" refid="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__gating__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">stop</ref>;</highlight></codeline>
+<codeline lineno="1421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1429" refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__gating__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref>;</highlight></codeline>
+<codeline lineno="1430"><highlight class="normal">}<sp/><ref refid="structndigo6g12__tdc__gating__block" kindref="compound">ndigo6g12_tdc_gating_block</ref>;</highlight></codeline>
+<codeline lineno="1431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1436" refid="structndigo6g12__tdc__tiger__block" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1447" refid="structndigo6g12__tdc__tiger__block_1a1ea5d0cb93f22f7d0fdf804bd68c3326" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a1ea5d0cb93f22f7d0fdf804bd68c3326" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="1448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1455" refid="structndigo6g12__tdc__tiger__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__tiger__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" kindref="member">negate</ref>;</highlight></codeline>
+<codeline lineno="1456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1465" refid="structndigo6g12__tdc__tiger__block_1a19337455e0a99f687d18ff1c7e20ff96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a19337455e0a99f687d18ff1c7e20ff96" kindref="member">retrigger</ref>;</highlight></codeline>
+<codeline lineno="1466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1474" refid="structndigo6g12__tdc__tiger__block_1a37722a150250e2a5a98e5e0d11e53449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref>;</highlight></codeline>
 <codeline lineno="1475"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1483" refid="structndigo6g12__tdc__tiger__block_1a37722a150250e2a5a98e5e0d11e53449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="1483" refid="structndigo6g12__tdc__tiger__block_1a6c0af9f2e97842405fb15ed952ef2976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">stop</ref>;</highlight></codeline>
 <codeline lineno="1484"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1492" refid="structndigo6g12__tdc__tiger__block_1a6c0af9f2e97842405fb15ed952ef2976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">stop</ref>;</highlight></codeline>
-<codeline lineno="1493"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1501" refid="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref>;</highlight></codeline>
-<codeline lineno="1502"><highlight class="normal">}<sp/><ref refid="structndigo6g12__tdc__tiger__block" kindref="compound">ndigo6g12_tdc_tiger_block</ref>;</highlight></codeline>
-<codeline lineno="1503"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1507" refid="structndigo6g12__averager__configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1515" refid="structndigo6g12__averager__configuration_1a1d10e252e778731e59f0f71afd7e727e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__averager__configuration_1a1d10e252e778731e59f0f71afd7e727e" kindref="member">iterations</ref>;</highlight></codeline>
-<codeline lineno="1516"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1529" refid="structndigo6g12__averager__configuration_1acc1497904ce70b4cfd0209819f28a9e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__averager__configuration_1acc1497904ce70b4cfd0209819f28a9e9" kindref="member">stop_on_overflow</ref>;</highlight></codeline>
-<codeline lineno="1530"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1537" refid="structndigo6g12__averager__configuration_1afd03e19cafb94c89d45b97a4f50860ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__averager__configuration_1afd03e19cafb94c89d45b97a4f50860ec" kindref="member">stop_manual</ref>;</highlight></codeline>
-<codeline lineno="1538"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1554" refid="structndigo6g12__averager__configuration_1af67a741a117491352cd4d9420687aaac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__averager__configuration_1af67a741a117491352cd4d9420687aaac" kindref="member">use_saturation</ref>;</highlight></codeline>
-<codeline lineno="1555"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1561" refid="structndigo6g12__averager__configuration_1a330bd7eb8ecc195683528e61d5e1ce05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__averager__configuration_1a330bd7eb8ecc195683528e61d5e1ce05" kindref="member">stop_on_timeout</ref>;</highlight></codeline>
+<codeline lineno="1492" refid="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" kindref="member">sources</ref>;</highlight></codeline>
+<codeline lineno="1493"><highlight class="normal">}<sp/><ref refid="structndigo6g12__tdc__tiger__block" kindref="compound">ndigo6g12_tdc_tiger_block</ref>;</highlight></codeline>
+<codeline lineno="1494"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1498" refid="structndigo6g12__averager__configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1506" refid="structndigo6g12__averager__configuration_1a1d10e252e778731e59f0f71afd7e727e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__averager__configuration_1a1d10e252e778731e59f0f71afd7e727e" kindref="member">iterations</ref>;</highlight></codeline>
+<codeline lineno="1507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1520" refid="structndigo6g12__averager__configuration_1acc1497904ce70b4cfd0209819f28a9e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__averager__configuration_1acc1497904ce70b4cfd0209819f28a9e9" kindref="member">stop_on_overflow</ref>;</highlight></codeline>
+<codeline lineno="1521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1528" refid="structndigo6g12__averager__configuration_1afd03e19cafb94c89d45b97a4f50860ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__averager__configuration_1afd03e19cafb94c89d45b97a4f50860ec" kindref="member">stop_manual</ref>;</highlight></codeline>
+<codeline lineno="1529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1545" refid="structndigo6g12__averager__configuration_1af67a741a117491352cd4d9420687aaac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__averager__configuration_1af67a741a117491352cd4d9420687aaac" kindref="member">use_saturation</ref>;</highlight></codeline>
+<codeline lineno="1546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1552" refid="structndigo6g12__averager__configuration_1a330bd7eb8ecc195683528e61d5e1ce05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__averager__configuration_1a330bd7eb8ecc195683528e61d5e1ce05" kindref="member">stop_on_timeout</ref>;</highlight></codeline>
+<codeline lineno="1553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1560" refid="structndigo6g12__averager__configuration_1a564c478b4c3b07c67eec961b698be982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__averager__configuration_1a564c478b4c3b07c67eec961b698be982" kindref="member">timeout_threshold</ref>;</highlight></codeline>
+<codeline lineno="1561"><highlight class="normal">}<sp/><ref refid="structndigo6g12__averager__configuration" kindref="compound">ndigo6g12_averager_configuration</ref>;</highlight></codeline>
 <codeline lineno="1562"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1569" refid="structndigo6g12__averager__configuration_1a564c478b4c3b07c67eec961b698be982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__averager__configuration_1a564c478b4c3b07c67eec961b698be982" kindref="member">timeout_threshold</ref>;</highlight></codeline>
-<codeline lineno="1570"><highlight class="normal">}<sp/><ref refid="structndigo6g12__averager__configuration" kindref="compound">ndigo6g12_averager_configuration</ref>;</highlight></codeline>
-<codeline lineno="1571"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1575" refid="structndigo6g12__tdc__channel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1580" refid="structndigo6g12__tdc__channel_1af9ab2c809a800c5898c63e811b55d217" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__channel_1af9ab2c809a800c5898c63e811b55d217" kindref="member">enable</ref>;</highlight></codeline>
-<codeline lineno="1581"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1585" refid="structndigo6g12__tdc__channel_1a3ffe5c64f7f3ac76246dd12756e4eb04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__channel_1a3ffe5c64f7f3ac76246dd12756e4eb04" kindref="member">reserved3</ref>;</highlight></codeline>
-<codeline lineno="1586"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1590" refid="structndigo6g12__tdc__channel_1ad0249eabd8919d7823130f0d26f8b75a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__channel_1ad0249eabd8919d7823130f0d26f8b75a" kindref="member">reserved2</ref>;</highlight></codeline>
-<codeline lineno="1591"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1595" refid="structndigo6g12__tdc__channel_1aa4b21f86e8c14e515a095f15ec61a5e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__channel_1aa4b21f86e8c14e515a095f15ec61a5e4" kindref="member">reserved1</ref>;</highlight></codeline>
-<codeline lineno="1596"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1600" refid="structndigo6g12__tdc__channel_1a1af272785989cc5b2bdae9e096bc40de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__tdc__gating__block" kindref="compound">ndigo6g12_tdc_gating_block</ref><sp/><ref refid="structndigo6g12__tdc__channel_1a1af272785989cc5b2bdae9e096bc40de" kindref="member">gating_block</ref>;</highlight></codeline>
-<codeline lineno="1601"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1605" refid="structndigo6g12__tdc__channel_1a3e05037b257fb5965fda061a0e189c03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__tdc__tiger__block" kindref="compound">ndigo6g12_tdc_tiger_block</ref><sp/><ref refid="structndigo6g12__tdc__channel_1a3e05037b257fb5965fda061a0e189c03" kindref="member">tiger_block</ref>;</highlight></codeline>
-<codeline lineno="1606"><highlight class="normal">}<sp/><ref refid="structndigo6g12__tdc__channel" kindref="compound">ndigo6g12_tdc_channel</ref>;</highlight></codeline>
+<codeline lineno="1566" refid="structndigo6g12__tdc__channel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1571" refid="structndigo6g12__tdc__channel_1af9ab2c809a800c5898c63e811b55d217" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__channel_1af9ab2c809a800c5898c63e811b55d217" kindref="member">enable</ref>;</highlight></codeline>
+<codeline lineno="1572"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1576" refid="structndigo6g12__tdc__channel_1a3ffe5c64f7f3ac76246dd12756e4eb04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__channel_1a3ffe5c64f7f3ac76246dd12756e4eb04" kindref="member">reserved3</ref>;</highlight></codeline>
+<codeline lineno="1577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1581" refid="structndigo6g12__tdc__channel_1ad0249eabd8919d7823130f0d26f8b75a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__channel_1ad0249eabd8919d7823130f0d26f8b75a" kindref="member">reserved2</ref>;</highlight></codeline>
+<codeline lineno="1582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1586" refid="structndigo6g12__tdc__channel_1aa4b21f86e8c14e515a095f15ec61a5e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__channel_1aa4b21f86e8c14e515a095f15ec61a5e4" kindref="member">reserved1</ref>;</highlight></codeline>
+<codeline lineno="1587"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1591" refid="structndigo6g12__tdc__channel_1a1af272785989cc5b2bdae9e096bc40de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__tdc__gating__block" kindref="compound">ndigo6g12_tdc_gating_block</ref><sp/><ref refid="structndigo6g12__tdc__channel_1a1af272785989cc5b2bdae9e096bc40de" kindref="member">gating_block</ref>;</highlight></codeline>
+<codeline lineno="1592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1596" refid="structndigo6g12__tdc__channel_1a3e05037b257fb5965fda061a0e189c03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__tdc__tiger__block" kindref="compound">ndigo6g12_tdc_tiger_block</ref><sp/><ref refid="structndigo6g12__tdc__channel_1a3e05037b257fb5965fda061a0e189c03" kindref="member">tiger_block</ref>;</highlight></codeline>
+<codeline lineno="1597"><highlight class="normal">}<sp/><ref refid="structndigo6g12__tdc__channel" kindref="compound">ndigo6g12_tdc_channel</ref>;</highlight></codeline>
+<codeline lineno="1598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1602" refid="structndigo6g12__tdc__configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1606" refid="structndigo6g12__tdc__configuration_1a50521bcda4beea471b80ea792ca559d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__tdc__channel" kindref="compound">ndigo6g12_tdc_channel</ref><sp/>channel[<ref refid="group__constants_1ga671625c986c17588d7c66719427afea7" kindref="member">NDIGO6G12_TDC_CHANNEL_COUNT</ref>];</highlight></codeline>
 <codeline lineno="1607"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1611" refid="structndigo6g12__tdc__configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1615" refid="structndigo6g12__tdc__configuration_1a50521bcda4beea471b80ea792ca559d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__tdc__channel" kindref="compound">ndigo6g12_tdc_channel</ref><sp/>channel[<ref refid="group__constants_1ga671625c986c17588d7c66719427afea7" kindref="member">NDIGO6G12_TDC_CHANNEL_COUNT</ref>];</highlight></codeline>
-<codeline lineno="1616"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1625" refid="structndigo6g12__tdc__configuration_1a186804851b77519a6d29a798fceda898" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1a186804851b77519a6d29a798fceda898" kindref="member">skip_alignment</ref>;</highlight></codeline>
-<codeline lineno="1626"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1631" refid="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" kindref="member">alignment_mode</ref>;</highlight></codeline>
-<codeline lineno="1632"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1636" refid="structndigo6g12__tdc__configuration_1a9b2604c0bb3cc03053716f4b17b38c7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1a9b2604c0bb3cc03053716f4b17b38c7a" kindref="member">alignment_pin_high_z</ref>;</highlight></codeline>
-<codeline lineno="1637"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1641" refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" kindref="member">alignment_pin_invert</ref>;</highlight></codeline>
-<codeline lineno="1642"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1646" refid="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" kindref="member">alignment_phase_steps</ref>;</highlight></codeline>
-<codeline lineno="1647"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1651" refid="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" kindref="member">send_empty_packets</ref>;</highlight></codeline>
-<codeline lineno="1652"><highlight class="normal">}<sp/><ref refid="structndigo6g12__tdc__configuration" kindref="compound">ndigo6g12_tdc_configuration</ref>;</highlight></codeline>
-<codeline lineno="1653"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1661" refid="structndigo6g12__configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1689" refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" kindref="member">adc_mode</ref>;</highlight></codeline>
-<codeline lineno="1690"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1695" refid="structndigo6g12__configuration_1af082914cfc6a01318b0051489d56c31c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1af082914cfc6a01318b0051489d56c31c" kindref="member">adc_cal_set</ref>;</highlight></codeline>
+<codeline lineno="1616" refid="structndigo6g12__tdc__configuration_1a186804851b77519a6d29a798fceda898" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1a186804851b77519a6d29a798fceda898" kindref="member">skip_alignment</ref>;</highlight></codeline>
+<codeline lineno="1617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1622" refid="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1a8659ec75e67ce1120a0808553a4f8f62" kindref="member">alignment_mode</ref>;</highlight></codeline>
+<codeline lineno="1623"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1627" refid="structndigo6g12__tdc__configuration_1a9b2604c0bb3cc03053716f4b17b38c7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1a9b2604c0bb3cc03053716f4b17b38c7a" kindref="member">alignment_pin_high_z</ref>;</highlight></codeline>
+<codeline lineno="1628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1632" refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1a6a4d092ba2df98f37569c2acde1b266b" kindref="member">alignment_pin_invert</ref>;</highlight></codeline>
+<codeline lineno="1633"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1637" refid="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__tdc__configuration_1ace3554801bd9cc9ed4b79cd21cc3266c" kindref="member">alignment_phase_steps</ref>;</highlight></codeline>
+<codeline lineno="1638"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1642" refid="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__tdc__configuration_1ad185674109ac55f9ec49625013f63687" kindref="member">send_empty_packets</ref>;</highlight></codeline>
+<codeline lineno="1643"><highlight class="normal">}<sp/><ref refid="structndigo6g12__tdc__configuration" kindref="compound">ndigo6g12_tdc_configuration</ref>;</highlight></codeline>
+<codeline lineno="1644"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1652" refid="structndigo6g12__configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1680" refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" kindref="member">adc_mode</ref>;</highlight></codeline>
+<codeline lineno="1681"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1686" refid="structndigo6g12__configuration_1af082914cfc6a01318b0051489d56c31c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1af082914cfc6a01318b0051489d56c31c" kindref="member">adc_cal_set</ref>;</highlight></codeline>
+<codeline lineno="1687"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1695" refid="structndigo6g12__configuration_1a762a3bb11a140f26c1b5313d4d446b6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>analog_offsets[<ref refid="group__constants_1ga58b88b343de23d00cb6e3b95ec6b35f1" kindref="member">NDIGO6G12_ADC_CHANNEL_COUNT</ref>];</highlight></codeline>
 <codeline lineno="1696"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1704" refid="structndigo6g12__configuration_1a762a3bb11a140f26c1b5313d4d446b6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>analog_offsets[<ref refid="group__constants_1ga58b88b343de23d00cb6e3b95ec6b35f1" kindref="member">NDIGO6G12_ADC_CHANNEL_COUNT</ref>];</highlight></codeline>
-<codeline lineno="1705"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1732" refid="structndigo6g12__configuration_1aa6bf60e4eaac106ccf3902c1a8f5d942" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tdc_trigger_offsets[<ref refid="group__constants_1ga671625c986c17588d7c66719427afea7" kindref="member">NDIGO6G12_TDC_CHANNEL_COUNT</ref>];</highlight></codeline>
-<codeline lineno="1733"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1749" refid="structndigo6g12__configuration_1a6c8176d17295bed2bcaf313e24f33056" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__trigger" kindref="compound">ndigo6g12_trigger</ref><sp/>trigger[<ref refid="group__constants_1ga8a0e2b9fc283e378af9d140d7dc5a8e5" kindref="member">NDIGO6G12_TRIGGER_COUNT</ref>];</highlight></codeline>
-<codeline lineno="1750"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1755" refid="structndigo6g12__configuration_1a6036815c3ea54db0f0364e5407bb9364" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__trigger__block" kindref="compound">ndigo6g12_trigger_block</ref><sp/>trigger_block[<ref refid="group__constants_1ga58b88b343de23d00cb6e3b95ec6b35f1" kindref="member">NDIGO6G12_ADC_CHANNEL_COUNT</ref>];</highlight></codeline>
-<codeline lineno="1756"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1761" refid="structndigo6g12__configuration_1acb2af45715e3011dc15d8892e4f68f6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref><sp/>gating_block[<ref refid="group__constants_1ga4a0f11174c3e9e1ffbe019a413df7cb1" kindref="member">NDIGO6G12_GATE_COUNT</ref>];</highlight></codeline>
-<codeline lineno="1762"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1766" refid="structndigo6g12__configuration_1a5a34f3b615684bfa687d290ea65b8f5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__tdc__configuration" kindref="compound">ndigo6g12_tdc_configuration</ref><sp/><ref refid="structndigo6g12__configuration_1a5a34f3b615684bfa687d290ea65b8f5c" kindref="member">tdc_configuration</ref>;</highlight></codeline>
-<codeline lineno="1767"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1771" refid="structndigo6g12__configuration_1a4c18194717ac6f1d232f56c82741ce70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__averager__configuration" kindref="compound">ndigo6g12_averager_configuration</ref><sp/><ref refid="structndigo6g12__configuration_1a4c18194717ac6f1d232f56c82741ce70" kindref="member">average_configuration</ref>;</highlight></codeline>
-<codeline lineno="1772"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1787" refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" kindref="member">auto_trigger_period</ref>;</highlight></codeline>
-<codeline lineno="1788"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1794" refid="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" kindref="member">auto_trigger_random_exponent</ref>;</highlight></codeline>
-<codeline lineno="1795"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1813" refid="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" kindref="member">output_mode</ref>;</highlight></codeline>
-<codeline lineno="1814"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1825" refid="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" kindref="member">extended_bandwidth</ref>;</highlight></codeline>
-<codeline lineno="1826"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1830" refid="structndigo6g12__configuration_1a3cf4c860b082641b35785714656ec046" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__configuration_1a3cf4c860b082641b35785714656ec046" kindref="member">ramp_test_mode</ref>;</highlight></codeline>
-<codeline lineno="1831"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1849" refid="structndigo6g12__configuration_1a5707ff9810325ed2c0ec2813936a58c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__configuration_1a5707ff9810325ed2c0ec2813936a58c2" kindref="member">sample_averaging</ref>;</highlight></codeline>
-<codeline lineno="1850"><highlight class="normal">}<sp/><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref>;</highlight></codeline>
-<codeline lineno="1851"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1857" refid="ndigo6g12__interface_8h_1a4571d3a373dd9cef756fb94450d0a3a9" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a4571d3a373dd9cef756fb94450d0a3a9" kindref="member">ndigo6g12_get_driver_revision</ref>();</highlight></codeline>
-<codeline lineno="1858"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1864" refid="ndigo6g12__interface_8h_1a69c101ee0ec180ddd5c3a79ed0ea6a9d" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="ndigo6g12__interface_8h_1a69c101ee0ec180ddd5c3a79ed0ea6a9d" kindref="member">ndigo6g12_get_driver_revision_str</ref>();</highlight></codeline>
-<codeline lineno="1865"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1875" refid="ndigo6g12__interface_8h_1a07881e20b788b21f3b6fc179347ce1c5" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a07881e20b788b21f3b6fc179347ce1c5" kindref="member">ndigo6g12_count_devices</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*error_code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**error_message);</highlight></codeline>
-<codeline lineno="1876"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1886" refid="ndigo6g12__interface_8h_1a11f73e1c74d717664b9b07ec1d3dd8b0" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a11f73e1c74d717664b9b07ec1d3dd8b0" kindref="member">ndigo6g12_get_static_info</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__static__info" kindref="compound">ndigo6g12_static_info</ref><sp/>*static_info);</highlight></codeline>
-<codeline lineno="1887"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1896" refid="ndigo6g12__interface_8h_1a4f3ffc2d11fe59b3e07f1ae21c56791a" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a4f3ffc2d11fe59b3e07f1ae21c56791a" kindref="member">ndigo6g12_get_param_info</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__param__info" kindref="compound">ndigo6g12_param_info</ref><sp/>*param_info);</highlight></codeline>
-<codeline lineno="1897"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1906" refid="ndigo6g12__interface_8h_1a43147bc42f2803900cafb97522d40cb4" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a43147bc42f2803900cafb97522d40cb4" kindref="member">ndigo6g12_get_fast_info</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__fast__info" kindref="compound">ndigo6g12_fast_info</ref><sp/>*fast_info);</highlight></codeline>
-<codeline lineno="1907"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2022" refid="ndigo6g12__interface_8h_1a9e89170f5af84611bf26f6a3426d81c0" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a9e89170f5af84611bf26f6a3426d81c0" kindref="member">ndigo6g12_get_default_configuration</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref><sp/>*config);</highlight></codeline>
-<codeline lineno="2023"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2033" refid="ndigo6g12__interface_8h_1afb9ccbef090349b638da935ec00dfcc3" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1afb9ccbef090349b638da935ec00dfcc3" kindref="member">ndigo6g12_configure</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref><sp/>*config);</highlight></codeline>
-<codeline lineno="2034"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2069" refid="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" kindref="member">ndigo6g12_get_default_init_parameters_version</ref>(<ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref><sp/>*init,</highlight></codeline>
-<codeline lineno="2070"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>client_api_version);</highlight></codeline>
-<codeline lineno="2071"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2077" refid="ndigo6g12__interface_8h_1a4266289aaec1ed48f096291508844f64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ndigo6g12_get_default_init_parameters(init)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="2078"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>ndigo6g12_get_default_init_parameters_version(init,<sp/>NDIGO6G12_API_VERSION)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2079"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2092" refid="ndigo6g12__interface_8h_1a2de181d8f48b36a640182d4118bea07d" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a2de181d8f48b36a640182d4118bea07d" kindref="member">ndigo6g12_init</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref><sp/>*params,</highlight></codeline>
-<codeline lineno="2093"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**error_message);</highlight></codeline>
-<codeline lineno="2094"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2100" refid="ndigo6g12__interface_8h_1aa9c9b2f19ee716d20a1401607ab8629d" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1aa9c9b2f19ee716d20a1401607ab8629d" kindref="member">ndigo6g12_close</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device);</highlight></codeline>
-<codeline lineno="2101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2113" refid="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" kindref="member">ndigo6g12_read</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__read__in" kindref="compound">ndigo6g12_read_in</ref><sp/>*in,<sp/><ref refid="structndigo6g12__read__out" kindref="compound">ndigo6g12_read_out</ref><sp/>*out);</highlight></codeline>
-<codeline lineno="2114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2120" refid="ndigo6g12__interface_8h_1a773491c1db097452e748cc4a414c71df" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="ndigo6g12__interface_8h_1a773491c1db097452e748cc4a414c71df" kindref="member">ndigo6g12_get_last_error_message</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device);</highlight></codeline>
-<codeline lineno="2121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2130" refid="ndigo6g12__interface_8h_1abd149e97b66fdb38da81b19166843267" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1abd149e97b66fdb38da81b19166843267" kindref="member">ndigo6g12_get_pcie_info</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structcrono__pcie__info" kindref="compound">crono_pcie_info</ref><sp/>*pcie_info);</highlight></codeline>
-<codeline lineno="2131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2149" refid="ndigo6g12__interface_8h_1af409be1f4c7186527daa4b62ff76f194" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1af409be1f4c7186527daa4b62ff76f194" kindref="member">ndigo6g12_clear_pcie_errors</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="1723" refid="structndigo6g12__configuration_1aa6bf60e4eaac106ccf3902c1a8f5d942" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tdc_trigger_offsets[<ref refid="group__constants_1ga671625c986c17588d7c66719427afea7" kindref="member">NDIGO6G12_TDC_CHANNEL_COUNT</ref>];</highlight></codeline>
+<codeline lineno="1724"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1740" refid="structndigo6g12__configuration_1a6c8176d17295bed2bcaf313e24f33056" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__trigger" kindref="compound">ndigo6g12_trigger</ref><sp/>trigger[<ref refid="group__constants_1ga8a0e2b9fc283e378af9d140d7dc5a8e5" kindref="member">NDIGO6G12_TRIGGER_COUNT</ref>];</highlight></codeline>
+<codeline lineno="1741"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1746" refid="structndigo6g12__configuration_1a6036815c3ea54db0f0364e5407bb9364" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__trigger__block" kindref="compound">ndigo6g12_trigger_block</ref><sp/>trigger_block[<ref refid="group__constants_1ga58b88b343de23d00cb6e3b95ec6b35f1" kindref="member">NDIGO6G12_ADC_CHANNEL_COUNT</ref>];</highlight></codeline>
+<codeline lineno="1747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1752" refid="structndigo6g12__configuration_1acb2af45715e3011dc15d8892e4f68f6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref><sp/>gating_block[<ref refid="group__constants_1ga4a0f11174c3e9e1ffbe019a413df7cb1" kindref="member">NDIGO6G12_GATE_COUNT</ref>];</highlight></codeline>
+<codeline lineno="1753"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1757" refid="structndigo6g12__configuration_1a5a34f3b615684bfa687d290ea65b8f5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__tdc__configuration" kindref="compound">ndigo6g12_tdc_configuration</ref><sp/><ref refid="structndigo6g12__configuration_1a5a34f3b615684bfa687d290ea65b8f5c" kindref="member">tdc_configuration</ref>;</highlight></codeline>
+<codeline lineno="1758"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1762" refid="structndigo6g12__configuration_1a4c18194717ac6f1d232f56c82741ce70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structndigo6g12__averager__configuration" kindref="compound">ndigo6g12_averager_configuration</ref><sp/><ref refid="structndigo6g12__configuration_1a4c18194717ac6f1d232f56c82741ce70" kindref="member">average_configuration</ref>;</highlight></codeline>
+<codeline lineno="1763"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1778" refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" kindref="member">auto_trigger_period</ref>;</highlight></codeline>
+<codeline lineno="1779"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1785" refid="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1ae7da8f7efc68e229b839523ec8310124" kindref="member">auto_trigger_random_exponent</ref>;</highlight></codeline>
+<codeline lineno="1786"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1804" refid="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structndigo6g12__configuration_1aaf241640a83ec470bf6c337d6426ae33" kindref="member">output_mode</ref>;</highlight></codeline>
+<codeline lineno="1805"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1816" refid="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" kindref="member">extended_bandwidth</ref>;</highlight></codeline>
+<codeline lineno="1817"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1821" refid="structndigo6g12__configuration_1a3cf4c860b082641b35785714656ec046" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__configuration_1a3cf4c860b082641b35785714656ec046" kindref="member">ramp_test_mode</ref>;</highlight></codeline>
+<codeline lineno="1822"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1840" refid="structndigo6g12__configuration_1a5707ff9810325ed2c0ec2813936a58c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref><sp/><ref refid="structndigo6g12__configuration_1a5707ff9810325ed2c0ec2813936a58c2" kindref="member">sample_averaging</ref>;</highlight></codeline>
+<codeline lineno="1841"><highlight class="normal">}<sp/><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref>;</highlight></codeline>
+<codeline lineno="1842"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1848" refid="ndigo6g12__interface_8h_1a4571d3a373dd9cef756fb94450d0a3a9" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a4571d3a373dd9cef756fb94450d0a3a9" kindref="member">ndigo6g12_get_driver_revision</ref>();</highlight></codeline>
+<codeline lineno="1849"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1855" refid="ndigo6g12__interface_8h_1a69c101ee0ec180ddd5c3a79ed0ea6a9d" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="ndigo6g12__interface_8h_1a69c101ee0ec180ddd5c3a79ed0ea6a9d" kindref="member">ndigo6g12_get_driver_revision_str</ref>();</highlight></codeline>
+<codeline lineno="1856"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1866" refid="ndigo6g12__interface_8h_1a07881e20b788b21f3b6fc179347ce1c5" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a07881e20b788b21f3b6fc179347ce1c5" kindref="member">ndigo6g12_count_devices</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*error_code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**error_message);</highlight></codeline>
+<codeline lineno="1867"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1877" refid="ndigo6g12__interface_8h_1a11f73e1c74d717664b9b07ec1d3dd8b0" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a11f73e1c74d717664b9b07ec1d3dd8b0" kindref="member">ndigo6g12_get_static_info</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__static__info" kindref="compound">ndigo6g12_static_info</ref><sp/>*static_info);</highlight></codeline>
+<codeline lineno="1878"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1887" refid="ndigo6g12__interface_8h_1a4f3ffc2d11fe59b3e07f1ae21c56791a" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a4f3ffc2d11fe59b3e07f1ae21c56791a" kindref="member">ndigo6g12_get_param_info</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__param__info" kindref="compound">ndigo6g12_param_info</ref><sp/>*param_info);</highlight></codeline>
+<codeline lineno="1888"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1897" refid="ndigo6g12__interface_8h_1a43147bc42f2803900cafb97522d40cb4" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a43147bc42f2803900cafb97522d40cb4" kindref="member">ndigo6g12_get_fast_info</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__fast__info" kindref="compound">ndigo6g12_fast_info</ref><sp/>*fast_info);</highlight></codeline>
+<codeline lineno="1898"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2013" refid="ndigo6g12__interface_8h_1a9e89170f5af84611bf26f6a3426d81c0" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a9e89170f5af84611bf26f6a3426d81c0" kindref="member">ndigo6g12_get_default_configuration</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref><sp/>*config);</highlight></codeline>
+<codeline lineno="2014"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2024" refid="ndigo6g12__interface_8h_1afb9ccbef090349b638da935ec00dfcc3" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1afb9ccbef090349b638da935ec00dfcc3" kindref="member">ndigo6g12_configure</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__configuration" kindref="compound">ndigo6g12_configuration</ref><sp/>*config);</highlight></codeline>
+<codeline lineno="2025"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2060" refid="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" kindref="member">ndigo6g12_get_default_init_parameters_version</ref>(<ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref><sp/>*init,</highlight></codeline>
+<codeline lineno="2061"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>client_api_version);</highlight></codeline>
+<codeline lineno="2062"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2068" refid="ndigo6g12__interface_8h_1a4266289aaec1ed48f096291508844f64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ndigo6g12_get_default_init_parameters(init)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="2069"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>ndigo6g12_get_default_init_parameters_version(init,<sp/>NDIGO6G12_API_VERSION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2070"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2083" refid="ndigo6g12__interface_8h_1a2de181d8f48b36a640182d4118bea07d" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a2de181d8f48b36a640182d4118bea07d" kindref="member">ndigo6g12_init</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__init__parameters" kindref="compound">ndigo6g12_init_parameters</ref><sp/>*params,</highlight></codeline>
+<codeline lineno="2084"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**error_message);</highlight></codeline>
+<codeline lineno="2085"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2091" refid="ndigo6g12__interface_8h_1aa9c9b2f19ee716d20a1401607ab8629d" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1aa9c9b2f19ee716d20a1401607ab8629d" kindref="member">ndigo6g12_close</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device);</highlight></codeline>
+<codeline lineno="2092"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2104" refid="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" kindref="member">ndigo6g12_read</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structndigo6g12__read__in" kindref="compound">ndigo6g12_read_in</ref><sp/>*in,<sp/><ref refid="structndigo6g12__read__out" kindref="compound">ndigo6g12_read_out</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="2105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2111" refid="ndigo6g12__interface_8h_1a773491c1db097452e748cc4a414c71df" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="ndigo6g12__interface_8h_1a773491c1db097452e748cc4a414c71df" kindref="member">ndigo6g12_get_last_error_message</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device);</highlight></codeline>
+<codeline lineno="2112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2121" refid="ndigo6g12__interface_8h_1abd149e97b66fdb38da81b19166843267" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1abd149e97b66fdb38da81b19166843267" kindref="member">ndigo6g12_get_pcie_info</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/><ref refid="structcrono__pcie__info" kindref="compound">crono_pcie_info</ref><sp/>*pcie_info);</highlight></codeline>
+<codeline lineno="2122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2140" refid="ndigo6g12__interface_8h_1af409be1f4c7186527daa4b62ff76f194" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1af409be1f4c7186527daa4b62ff76f194" kindref="member">ndigo6g12_clear_pcie_errors</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="2141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2149" refid="ndigo6g12__interface_8h_1a73e2cc71b45d17768b57bfc2f84c1b2d" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="ndigo6g12__interface_8h_1a73e2cc71b45d17768b57bfc2f84c1b2d" kindref="member">ndigo6g12_device_state_to_str</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>state);</highlight></codeline>
 <codeline lineno="2150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2158" refid="ndigo6g12__interface_8h_1a73e2cc71b45d17768b57bfc2f84c1b2d" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="ndigo6g12__interface_8h_1a73e2cc71b45d17768b57bfc2f84c1b2d" kindref="member">ndigo6g12_device_state_to_str</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>state);</highlight></codeline>
-<codeline lineno="2159"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2165" refid="ndigo6g12__interface_8h_1a91dedbf501326e87ffa205136c866648" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a91dedbf501326e87ffa205136c866648" kindref="member">ndigo6g12_start_capture</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device);</highlight></codeline>
-<codeline lineno="2166"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2172" refid="ndigo6g12__interface_8h_1a97dbeb5e7c2d3e60e4adc71587d2c4bf" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a97dbeb5e7c2d3e60e4adc71587d2c4bf" kindref="member">ndigo6g12_stop_capture</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device);</highlight></codeline>
-<codeline lineno="2173"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2180" refid="ndigo6g12__interface_8h_1af39c5c016c10bef5822ba9b83e4aa957" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1af39c5c016c10bef5822ba9b83e4aa957" kindref="member">ndigo6g12_manual_trigger</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channel_mask);</highlight></codeline>
-<codeline lineno="2181"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2192" refid="ndigo6g12__interface_8h_1acb9dd649c5b3c3347ccd0cd9b62d5fdc" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1acb9dd649c5b3c3347ccd0cd9b62d5fdc" kindref="member">ndigo6g12_single_shot</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channel_mask);</highlight></codeline>
-<codeline lineno="2193"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2194"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2195"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="2196"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2197"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2198"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-    </programlisting>
-    <location file="source/ndigo6g12_interface.h"/>
-  </compounddef>
+<codeline lineno="2156" refid="ndigo6g12__interface_8h_1a91dedbf501326e87ffa205136c866648" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a91dedbf501326e87ffa205136c866648" kindref="member">ndigo6g12_start_capture</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device);</highlight></codeline>
+<codeline lineno="2157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2163" refid="ndigo6g12__interface_8h_1a97dbeb5e7c2d3e60e4adc71587d2c4bf" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1a97dbeb5e7c2d3e60e4adc71587d2c4bf" kindref="member">ndigo6g12_stop_capture</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device);</highlight></codeline>
+<codeline lineno="2164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2171" refid="ndigo6g12__interface_8h_1af39c5c016c10bef5822ba9b83e4aa957" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1af39c5c016c10bef5822ba9b83e4aa957" kindref="member">ndigo6g12_manual_trigger</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channel_mask);</highlight></codeline>
+<codeline lineno="2172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2183" refid="ndigo6g12__interface_8h_1acb9dd649c5b3c3347ccd0cd9b62d5fdc" refkind="member"><highlight class="normal"><ref refid="ndigo6g12__interface_8h_1aea59d26c464c3230b5e162e9a9a48401" kindref="member">NDIGO6G12_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ndigo6g12__interface_8h_1acb9dd649c5b3c3347ccd0cd9b62d5fdc" kindref="member">ndigo6g12_single_shot</ref>(<ref refid="structndigo6g12__device" kindref="compound">ndigo6g12_device</ref><sp/>*device,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channel_mask);</highlight></codeline>
+<codeline lineno="2184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2185"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="2187"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2189"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+</programlisting>
+<location file="source/ndigo6g12_interface.h"/>
+</compounddef>
 </doxygen>
