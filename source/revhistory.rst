@@ -3,7 +3,7 @@ Revision History
 
 Firmware
 --------
-24120 |emdash| 2024-04-30
+1.24120 |emdash| 2024-04-30
     | Improved ADC/TDC synchronisation
     | Added sample averaging modes AA/DD, AAAA/DDDD, and AADD
     | TiGer Updates
