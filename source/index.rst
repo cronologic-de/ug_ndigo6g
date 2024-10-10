@@ -7,24 +7,6 @@ Ndigo6G |hyphen| User Guide
 
     \RaggedRight
 
-.. only:: html
-
-    .. note::
-
-        This User Guide is under active development.
-
-.. only:: latex
-
-    .. raw:: latex
-
-        \newpage
-
-    .. note::
-
-        This User Guide is still under active development.
-        For the latest version, please visit
-        `docs.cronologic.de/ndigo6g <https://docs.cronologic.de/ndigo6g>`_
-
 .. raw:: latex
 
     \phantomsection
