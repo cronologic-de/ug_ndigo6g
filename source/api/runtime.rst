@@ -1,5 +1,5 @@
-Functions
-~~~~~~~~~
+Runtime control
+===============
 
 .. raw:: latex
 

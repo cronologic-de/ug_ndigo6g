@@ -19,11 +19,11 @@ This chapter provides an overview of the provided API functionality.
     <h2>Contents of this Chapter</h2>
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     constants
-    init/index
-    info/index
-    config/index
-    runtime/index
-    readout/index
+    init
+    info
+    config
+    runtime
+    readout
