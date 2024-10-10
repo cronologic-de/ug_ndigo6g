@@ -175,6 +175,10 @@ Ndigo6G-12 driver.
     example/index
     techdata
     revhistory
+    
+.. toctree::
+
+    erratum
 
 .. only:: html
 
