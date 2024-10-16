@@ -8,7 +8,7 @@ Packets are retrieved by :cpp:func:`ndigo6g12_read`. They are of type
 
 - Each hit on an ADC channel is stored in one packet.
   Two consecutive packets on the same ADC channel must have a minimum distance
-  of four ADC samples. The format of the payload data (see 
+  of eight ADC samples. The format of the payload data (see 
   :cpp:member:`crono_packet::data`) is explained in
   :numref:`Section %s<adc data format>`.
 

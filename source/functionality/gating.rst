@@ -112,7 +112,7 @@ data acquisition, e.g.,
     config.trigger_block[0].gates = NDIGO6G12_TRIGGER_GATE_0
 
 
-Now, recording of data is only enabled after an initial start-up time.
+Now, recording of data is suppressed for an initial start-up time.
 
 
 Example 2: Delayed Trigger

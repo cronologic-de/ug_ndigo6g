@@ -35,14 +35,14 @@
 <param><defname>current</defname></param>
 <initializer>((volatile <ref refid="structcrono__packet" kindref="compound">crono_packet</ref>*) (((int64_t) (current)) +( ((current)-&gt;type&amp;128?0:(current)-&gt;length) + 2) * 8))</initializer>
 <briefdescription>
-<para>Returns a <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> pointer pointing to the next packet in the ring buffer. </para>
+<para>Returns a <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> pointer pointing to the next packet in the host buffer. </para>
 </briefdescription>
 <detaileddescription>
-<para>Must be checked before use to not point beyond the last packet in the buffer. </para>
+<para>Must be checked before use to not point beyond the last packet of the readout data, e.g., <computeroutput><ref refid="group__cronopacketmacros_1ga9e72c7b9c13027e35d62ea245b8cea14" kindref="member">crono_next_packet(current_packet)</ref> &lt;= readout_data.last_packet</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/crono_interface.h" line="445" column="9" bodyfile="source/crono_interface.h" bodystart="445" bodyend="-1"/>
+<location file="source/crono_interface.h" line="446" column="9" bodyfile="source/crono_interface.h" bodystart="446" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

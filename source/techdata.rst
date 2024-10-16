@@ -1,7 +1,7 @@
 Technical Data
 ==============
 
-- Input Passband: **4.5 MHz** to **950 MHz**
+- Input Passband: **1 MHz** to **950 MHz**
 
 - Power Requirements: **35 W**
 

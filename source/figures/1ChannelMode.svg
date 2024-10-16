@@ -64,7 +64,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="470.73108"
+     inkscape:cx="470.47854"
      inkscape:cy="105.81348"
      inkscape:document-units="px"
      inkscape:current-layer="g3437"
@@ -130,15 +130,9 @@
       <text
          id="text3439"
          style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="184.68471"
-         x="-7.0023031"
+         y="192.68471"
+         x="9.5027723"
          xml:space="preserve">CLK</text>
-      <text
-         id="text3445"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="200.24759"
-         x="-17.565796"
-         xml:space="preserve">(3.2 GHz)</text>
       <path
          id="path3449"
          d="M 42.846225,188.81849 H 63.089588"

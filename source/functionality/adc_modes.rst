@@ -3,13 +3,11 @@
 ADC Modes
 ~~~~~~~~~
 
-Depending on the board configuration, the analog input signal is quantized
-to 12 bits, i.e., the output ranges from 0 to 4096. However, depending on
-:cpp:member:`ndigo6g12_configuration::output_mode`, the board scales the
-output data. See :numref:`Section %s<adc data format>` for details.
+The ADC quantizes the input signal using 12 bits. By default, these are mapped
+to signed 16 bit (for more details, see :numref:`Section %s<adc data format>`).
 
 Data processing such as trigger detection or packet building are always
-performed on 5 ns intervals. Depending on the ADC mode, this interval
+performed at 5 ns intervals. Depending on the ADC mode, this interval
 may contain 32 (:ref:`1-Channel Mode <1channelmode>` @ 6.4 Gsps),
 16 (:ref:`2-Channel Mode <2channelmode>` @ 3.2 Gsps) or
 8 (:ref:`4-Channel Mode <4channelmode>` @ 1.6 Gsps) samples.
@@ -19,12 +17,18 @@ The ADC mode is configured using
 
 The board supports using one, two or four channels.
 
+During interleaving, the Ndigo6G-12 firmware reorders and groups the data
+into a linear sample stream. The process is fully transparent. For
+users, the only difference is that a 5 ns cycle can contain
+8, 16 or 32 samples, depending on the mode.
+
+
 .. _1channelmode:
 
 1-Channel Modes A and D
 ^^^^^^^^^^^^^^^^^^^^^^^
 In these modes, only a single channel is used. The analog signal on that
-channel is digitized at 6.4 Gsps. Packet size is always a multiple of 16
+channel is digitized at 6.4 Gsps. Packet size is always a multiple of 32
 samples per 5 ns (See :numref:`Figures %s<Fig 2.9>`
 and :numref:`%s<Fig 2.15>`).
 
@@ -43,7 +47,7 @@ be either :c:macro:`NDIGO6G12_APP_TYPE_1CH` or
 ^^^^^^^^^^^^^^^^^
 In this mode, two channels are used simultaneously. The analog signals
 on these channels are digitized at 3.2 Gsps each.
-Packet size is always a multiple of 8 samples per
+Packet size is always a multiple of 16 samples per
 5 ns (See :numref:`Figures %s<Fig 2.8>` and
 :numref:`%s<Fig 2.14>`).
 
@@ -61,7 +65,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 ^^^^^^^^^^^^^^^^^^^
 
 In this mode, all four channels are digitized independently at 1.6 Gsps
-each. The packet size is always a multiple of 4 samples per 5 ns. (See
+each. The packet size is always a multiple of 16 samples per 10 ns. (See
 :numref:`Figures %s<Fig 2.7>` and :numref:`%s<Fig 2.13>`).
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
@@ -77,7 +81,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 Multiple Sampling Modes
 ^^^^^^^^^^^^^^^^^^^^^^^
 In these modes, only the specified input channels are used, but the channels
-are sampled independently by the ADC chips.
+are sampled independently by the ADC cores.
 The output of the board depends on
 :cpp:member:`ndigo6g12_configuration::sample_averaging`.
 
@@ -91,18 +95,13 @@ by averaging the four channels.
 To deal with complex triggering conditions, different trigger settings on each
 of the ADCs can be used.
 
-During interleaving, the Ndigo6G-12 firmware reorders and groups the data
-into a linear sample stream. The process is fully transparent. For
-users, the only difference is that a 5 ns cycle can contain
-8, 16 or 32 samples, depending on the mode.
-
 The Ndigo6G-12 provides four ADCs sampling at 1.6 Gsps each.
 Higher speed modes are implemented by interleaving two or four of these ADCs.
 
 Modes AA and DD
 ```````````````
 In this mode, input channel A (or D) is sampled at 3.2 Gsps two times and
-independently by the internal ADC chips, see
+independently by the internal ADC cores, see
 :numref:`Figure %s<fig mode AA DD>`.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
@@ -116,7 +115,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 Mode AADD
 `````````
 In this mode, input channel A and D are sampled at 1.6 Gsps two times and
-independently by the internal ADC chips, see
+independently by the internal ADC cores, see
 :numref:`Figure %s<fig mode AADD>`.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to
@@ -130,7 +129,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 Modes AAAA, DDDD
 ````````````````
 In this mode, input channel A (or D) are sampled at 1.6 Gsps four times and
-independently by the internal ADC chips, see
+independently by the internal ADC cores, see
 :numref:`Figure %s<fig mode AAAA DDDD>`.
 
 For this mode, :cpp:member:`ndigo6g12_static_info::application_type` needs to

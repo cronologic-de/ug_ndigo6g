@@ -99,10 +99,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="150"
-     inkscape:cy="133.21428"
+     inkscape:cx="149.64286"
+     inkscape:cy="133.21429"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2989"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -147,27 +147,27 @@
       <text
          id="text2991"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
-         y="103.85212"
-         x="21.270916"
+         y="115.9389"
+         x="41.127777"
          xml:space="preserve">CLK</text>
       <text
          id="text2993"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;white-space:pre;inline-size:0;fill:#000000"
          y="123.87181"
          x="2.5024607"
-         xml:space="preserve">(</text>
+         xml:space="preserve" />
       <text
          id="text2997"
          style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
          y="123.87181"
          x="8.4435234"
-         xml:space="preserve">3.2 GHz</text>
+         xml:space="preserve" />
       <text
          id="text2999"
-         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:16.266px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;white-space:pre;inline-size:0;fill:#000000"
          y="123.87181"
          x="68.817673"
-         xml:space="preserve">)</text>
+         xml:space="preserve" />
       <path
          id="path3001"
          d="M 85.396472,109.32625 H 135.05468"

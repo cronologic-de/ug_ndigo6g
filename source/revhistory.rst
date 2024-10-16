@@ -19,8 +19,6 @@ Firmware
     | PCIe optimizations
     | Minor bug fixes
 
-5444 |emdash| 2023-01-16
-
 Driver
 ------
 2.0.1 |emdash| 2024-07-17
@@ -56,6 +54,7 @@ User Guide
     | Added digitizer characteristics
     | Added chapter on TiGer
     | Fixed gating documentation
+    | Many corrections
 
 0.2.1 |emdash| 2024-10-01
     | Corrections in Export Control

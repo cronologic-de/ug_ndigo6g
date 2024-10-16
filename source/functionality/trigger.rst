@@ -6,17 +6,19 @@ Trigger Setup
 The Ndigo6G-12 records analog waveforms using zero suppression.
 Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory.
-Each ADC channel has one *trigger block* determining whether data is written to
-the FIFO.
 
-All triggers are configured with the Structures
-:cpp:struct:`ndigo6g12_trigger` and :cpp:struct:`ndigo6g12_trigger_block`.
+Each ADC channel has two *trigger units*. These can be configured independently 
+(e.g., one unit could trigger on rising edges, the other on falling).
+They are configured with
+:cpp:member:`config.trigger <ndigo6g12_configuration::trigger>`.
 
-Each *trigger block* consists of two independent units that check the
-incoming raw data stream for trigger conditions.
-
-The trigger conditions are configured using the :cpp:struct:`ndigo6g12_trigger` 
-structure.
+Each ADC channel has a corresponding *trigger block* that determines whether 
+data is written to the internal FIFOs. The trigger blocks are configured with
+:cpp:member:`config.trigger_block <ndigo6g12_configuration::trigger_block>`.
+Each trigger block can take any amount of trigger units as a source (for 
+details, see :cpp:member:`ndigo6g12_trigger_block::sources` or
+:numref:`Section %s<section trigger inputs>`),
+thus, enabling sophisticated trigger setups.
 
 Trigger configuration
 ^^^^^^^^^^^^^^^^^^^^^
@@ -40,7 +42,7 @@ only if data exceeds the threshold (edge triggering, see
 
 
 A gate :cpp:member:`length <ndigo6g12_trigger_block::length>` can be set to
-extend the trigger window by multiples of 5 ns.
+extend the recording window by multiples of 5 ns.
 Furthermore, a :cpp:member:`precursor <ndigo6g12_trigger_block::precursor>`
 window can be specified, causing the trigger unit to write data to
 the FIFO (:code:`precursor` :math:`\times` 5 ns) before the trigger event.
@@ -49,19 +51,10 @@ When edge triggering is used, all packets have the same length of
 (:code:`precursor` + :code:`length` + 1)-cycles of 5 ns.
 For level triggering, packet length is data dependent.
 
-Please note that triggering is not accurate to sample. For each
-5 ns clock cycle, it is determined whether on any sample during that clock
-cycle a trigger condition is met. If it was met during a clock cycle, that
-cycle is then selected as the trigger point.
-As a result, the trigger sample can be anywhere
-within a range of up to 8, 16, or 32 samples depending on the channel mode
-(see :numref:`Section %s<ADC modes>` and :numref:`Figures %s<Fig 2.13>`,
-:numref:`%s<Fig 2.14>`, and :numref:`%s<Fig 2.15>`).
-
-If :cpp:member:`retrigger <ndigo6g12_trigger_block::retrigger>` is enabled,
-the current trigger window is extended if a trigger event is detected inside
-the window (see :numref:`Figure %s<figure zero suppression>`).
-
+If :cpp:member:`retrigger <ndigo6g12_trigger_block::retrigger>` is enabled and
+the trigger conditions are fulfilled during the recording of the postcursor, 
+the recording window is extended (see :numref:`Figure %s<figure zero 
+suppression>`).
 
 .. _Fig 2.13:
 .. figure:: ../figures/4ChannelTriggering.*
@@ -79,6 +72,8 @@ the window (see :numref:`Figure %s<figure zero suppression>`).
 
    Triggering in 1-channel mode at 32 samples per clock cycle.
 
+.. _section trigger inputs:
+
 Trigger inputs
 ^^^^^^^^^^^^^^
 
@@ -87,7 +82,8 @@ input :cpp:member:`sources <ndigo6g12_trigger_block::sources>`:
 
 -  The eight trigger decision units of all four ADC channels
    \(:numref:`Figure %s<Fig 2.16>`)
--  The four TDC and the two FPGA inputs (:numref:`Figure %s<Fig 2.17>`)
+-  The four TDC and the two digital control inputs
+   (:numref:`Figure %s<Fig 2.17>`)
 -  A function trigger providing random or periodic triggering (see
    :doc:`auto_trigger`).
 

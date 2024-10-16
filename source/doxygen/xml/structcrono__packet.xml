@@ -114,7 +114,7 @@
 </memberdef>
 </sectiondef>
 <briefdescription>
-<para>Packet data structure in ring buffer for packets carrying varying amounts of data. </para>
+<para>Packet data structure in the host buffer for packets carrying varying amounts of data. </para>
 </briefdescription>
 <detaileddescription>
 <para>The size of the data[] array is given in the length field. </para>

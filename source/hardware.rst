@@ -9,12 +9,12 @@ amount of lanes) PCIe slot.
 If the slot electrically supports less than eight lanes, the board will operate
 at lower data throughput rates.
 
-Connect a 6-pin GPU power cable to the connector at the rear of the board
+Connect a 6-pin PCIe power cable to the connector at the rear of the board
 (see :numref:`Figure %s<fig hardware picture>`).
 
 .. note::
 
-    The Ndigo6G-12 does not operate without a 6-pin GPU power connector.
+    The Ndigo6G-12 does not operate without a 6-pin PCIe power connector.
 
 .. _fig hardware picture:
 .. figure:: figures/Ndigo6G_periphery.jpg
@@ -27,11 +27,11 @@ Cooling
 -------
 The Ndigo6G-12 board is equipped with an active cooling system, ensuring
 proper cooling of the device. If, however, the temperature of the ADC chip
-exceeds 90 °C (for instance, if the device is operated in inappropriate
+exceeds 90 °C (for instance, if the device is operated in inappropriate
 environmental conditions, see
 :numref:`Section %s<techdata environmental conditions for operation>`),
 a warning is issued to the device driver.
-When the temperature exceeds 95 °C, the ADC chip is disabled to avoid damaging
+When the temperature exceeds 95 °C, the ADC chip is disabled to avoid damaging
 the device.
 
 External Inputs and Connectors
@@ -40,7 +40,7 @@ External Inputs and Connectors
 Front bracket inputs
 ~~~~~~~~~~~~~~~~~~~~
 
-The inputs of the Ndigo6G-12 board are located on the PCI bracket.
+The inputs of the Ndigo6G-12 board are located on the slot bracket.
 
 :numref:`Figure %s<Fig 2.2>` shows the location of the four analog inputs A to
 D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs 0 to 3 
@@ -96,10 +96,11 @@ inputs are converted to a differential signal using a balun.
 
 Analog Offsets
 ^^^^^^^^^^^^^^
-AC coupling removes the common mode voltage from the input signal. Users
-can move the common mode voltage to a value of their choice using the
+AC coupling removes the DC voltage offset from the input signal.
+However, users can shift the DC baseline voltage before sampling to a value of
+their choice (using the
 :cpp:member:`analog_offset <ndigo6g12_configuration::analog_offsets>`
-parameter of each channel before sampling.
+parameter).
 
 This feature is useful for highly asymmetric signals, such as pulses
 from `TOF <https://www.cronologic.de/applications/tof-mass-spectrometry>`_
@@ -116,7 +117,7 @@ can be set between :math:`\pm` 0.5 |nbws| V.
 .. _Fig 2.5:
 .. figure:: figures/AnalogOffset_Sine.*
 
-   Users can add analog offset to the input before sampling.
+   Users can add an analog offset to the input before sampling.
 
 .. _Fig 2.6:
 .. figure:: figures/AnalogOffset_Pulse.*
@@ -135,7 +136,7 @@ The inputs are AC coupled (see :numref:`Figure %s<fig digital input circuit>`).
 .. _fig digital input circuit:
 .. figure:: figures/InputCircuit_TDC.*
 
-    Input circuit for each of the TDC input channels.
+    Principal input circuit for each of the digital TDC and control inputs.
 
 The following members of the :cpp:struct:`ndigo6g12_configuration` struct
 configure, respectively, TDC channels 0 to 3:
@@ -187,15 +188,14 @@ The input circuit and trigger logic is identical to the TDC inputs
 Use Control Inputs as TDCs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 The control inputs TRG and GATE can be used as low-resolution TDCs.
+The dead-time is 5 ns. Pulses should have a width of at least 300 ps to 
+reliably be detected.
 
 .. hint::
 
     To record timestamps with the TRG or GATE input, set
-    :cpp:member:`ndigo6g12_configuration::tdc_configuration.channel[4||5]<ndigo6g12_tdc_channel::enable>`
+    :cpp:member:`config.tdc_configuration.channel[4||5].enable<ndigo6g12_tdc_channel::enable>`
     to :code:`true`.
-
-The control inputs can detect pulses which have a minimum duration of 3.3 ns.
-The dead-time is 32 ns.
 
 .. note::
 
@@ -203,9 +203,3 @@ The dead-time is 32 ns.
     and controlling gates.
 
     The digital *TDC* inputs are best suited for measuring precise time stamps.
-
-.. .. note::
-
-..    When used with the TDC, the Trigger input supports negative pulses only.
-
-

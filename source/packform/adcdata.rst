@@ -21,13 +21,14 @@ Thus, reading packet data requires the following steps:
   :cpp:member:`type<crono_packet::type>`. E.g., if 
   :cpp:member:`type<crono_packet::type>` is 
   :c:macro:`CRONO_PACKET_TYPE_16_BIT_SIGNED`, cast
-  :cpp:member:`data<crono_packet::data>` to ``int32_t``.
+  :cpp:member:`data<crono_packet::data>` to ``int16_t``.
 
 
 :c:macro:`NDIGO6G12_OUTPUT_MODE_SIGNED16`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Raw data of the ADC is mapped to the range of a signed16 integer (−32768 to 
-32767). Packet data is of type :c:macro:`CRONO_PACKET_TYPE_16_BIT_SIGNED`.
+32767). Packet data is of type :c:macro:`CRONO_PACKET_TYPE_16_BIT_SIGNED` and
+must be cast to ``int16_t``.
 
 :c:macro:`NDIGO6G12_OUTPUT_MODE_SIGNED32`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,17 +37,40 @@ Only used if :cpp:member:`ndigo6g12_init_parameters::application_type` is
 
 Raw data of the ADC is mapped to the range of a signed32 integer (−2\ :sup:`31` 
 to 2\ :sup:`31` −1). Packet data is of type 
-:c:macro:`CRONO_PACKET_TYPE_32_BIT_SIGNED`.
+:c:macro:`CRONO_PACKET_TYPE_32_BIT_SIGNED` and must be cast to ``int32_t``.
 
 
 :c:macro:`NDIGO6G12_OUTPUT_MODE_RAW`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Packet data is returned in the native range of the ADC (0 to 4095) and as
-type :c:macro:`CRONO_PACKET_TYPE_16_BIT_SIGNED`. The two most significant
-bits are control bits and have to be masked if one wishes to use the data.
+type :c:macro:`CRONO_PACKET_TYPE_16_BIT_SIGNED`. It must be cast to ``int16_t``.
 
-.. note::
+Data layout:
+
+.. only:: html
+
+    +-------------+----+----+----+---------+----+----+-----+---+
+    | **Bit**     | 15 | 14 | 13 | 12      | 11 | 10 | ... | 0 |
+    +-------------+----+----+----+---------+----+----+-----+---+
+    | **Data**    | 0  | 0  | control bits | sample data       |
+    +-------------+----+----+--------------+-------------------+
+
+.. raw:: latex
+
+    \begingroup
+    \renewcommand\tabularxcolumn[1]{>{\Centering}p{#1}}
+    \begin{tabularx}{\textwidth}{|l||X|X|X|X|X|X|c|X|}
+        \hline
+        Bit & 15 & 14 & 13 & 12 & 11 & 10 & \dots & 0 \\
+        \hline
+        Data & 0 & 0 & \multicolumn{2}{c|}{control bits} & \multicolumn{4}{c|}{sample data} \\
+        \hline
+    \end{tabularx}
+    \endgroup
+
+
+.. attention::
 
     :c:macro:`NDIGO6G12_OUTPUT_MODE_RAW` is useful for debugging purposes.
-    For typical applications, we do not recommend using this mode over
-    :c:macro:`NDIGO6G12_OUTPUT_MODE_SIGNED16`.
+    It is not supported for user applications. Use
+    :c:macro:`NDIGO6G12_OUTPUT_MODE_SIGNED16` instead.

@@ -14,7 +14,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="442" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="442" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="466" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="466" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__devicestates_1ga9a4c10e013521be5659574c819a31104" prot="public" static="no">
 <name>NDIGO6G12_DEVICE_STATE_CONFIGURED</name>
@@ -26,7 +26,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="447" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="447" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="471" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="471" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__devicestates_1ga033acfc4ed319c85c3762cac5af2bd22" prot="public" static="no">
 <name>NDIGO6G12_DEVICE_STATE_CAPTURING</name>
@@ -38,7 +38,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="452" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="452" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="476" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="476" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

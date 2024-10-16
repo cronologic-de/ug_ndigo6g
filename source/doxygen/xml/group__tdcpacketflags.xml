@@ -13,7 +13,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="295" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="295" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="296" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="296" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__tdcpacketflags_1ga414ee83902f69fe30f828657e3a144ca" prot="public" static="no">
 <name>NDIGO6G12_TDC_PACKET_FLAG_CONTAINS_DATA</name>
@@ -25,7 +25,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="300" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="300" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="301" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="301" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" prot="public" static="no">
 <name>NDIGO6G12_TDC_PACKET_FLAG_LOST</name>
@@ -37,7 +37,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="305" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="305" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="306" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="306" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__tdcpacketflags_1gac5c9984ba716be0973e119ef03a1c633" prot="public" static="no">
 <name>NDIGO6G12_TDC_PACKET_FLAG_SHORTENED</name>
@@ -49,33 +49,33 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="310" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="310" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="311" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="311" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__tdcpacketflags_1ga096593c9935b4e3bef94f8af1736a4e0" prot="public" static="no">
 <name>NDIGO6G12_TDC_PACKET_FLAG_DMA_FIFO_FULL</name>
 <initializer>16</initializer>
 <briefdescription>
-<para>DMA FIFO was full. </para>
+<para>The DMA FIFO was full. </para>
 </briefdescription>
 <detaileddescription>
-<para>This does not necessarily mean that packets were dropped. </para>
+<para>Trigger only got lost if a subsequent package has <ref refid="structcrono__packet_1aa2585d779da0ab21273a8d92de9a0ebe" kindref="member">crono_packet::flags</ref> with a bit weight <ref refid="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" kindref="member">NDIGO6G12_TDC_PACKET_FLAG_LOST</ref> set. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="316" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="316" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="319" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="319" bodyend="-1"/>
 </memberdef>
 <memberdef kind="define" id="group__tdcpacketflags_1gab58e0e726461115cacef8d5df0463e91" prot="public" static="no">
 <name>NDIGO6G12_TDC_PACKET_FLAG_HOST_BUFFER_FULL</name>
 <initializer>32</initializer>
 <briefdescription>
-<para>Host buffer was full. </para>
+<para>The host buffer was full. </para>
 </briefdescription>
 <detaileddescription>
-<para>This does not necessarily mean that packets were dropped. </para>
+<para>Trigger only got lost if a subsequent package has <ref refid="structcrono__packet_1aa2585d779da0ab21273a8d92de9a0ebe" kindref="member">crono_packet::flags</ref> with a bit weight <ref refid="group__tdcpacketflags_1gae1a09398a594319d4d651e71af4cc531" kindref="member">NDIGO6G12_TDC_PACKET_FLAG_LOST</ref> set. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="322" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="322" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="327" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="327" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

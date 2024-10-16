@@ -17,14 +17,14 @@ class Config:
         How many samples are in one clock cycle?
         (8, 16, 32 for Ndigo6G-12)
 
-    clock_cycle_duration: str
+    clock_cycle_duration : str
         How long is one clock cycle?
         (5000 ps for Ndigo6G-12)
 
-    precursor: int
+    precursor : int
         In units of *clock_cycles_duration_ps*
 
-    length: int
+    length : int
         In units of *clock_cycles_duration_ps*
 
     filenames : list[str]
@@ -133,8 +133,7 @@ def plot(config: Config):
     # the clock cycle where trigger threshold is surpassed
     threshold_cycle = config.precursor + 1
     # the bin which is at threshold height
-    threshold_idx = (threshold_cycle * config.samples
-                     + config.samples//2) - 1
+    threshold_idx = threshold_cycle * config.samples
 
     ax.add_patch(Rectangle(
         (x[threshold_idx], 0), dx, y[threshold_idx],

@@ -9,6 +9,11 @@ General
 .. doxygengroup:: triggerblockdefs
     :content-only:
 
+Trigger and Gating Block Sources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. doxygengroup:: sourcedefs
+
 Function return values
 ~~~~~~~~~~~~~~~~~~~~~~
 .. doxygengroup:: funcreturns

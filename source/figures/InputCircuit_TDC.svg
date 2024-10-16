@@ -37,9 +37,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="7.6785714"
-     inkscape:cy="125.53571"
+     inkscape:zoom="5.6"
+     inkscape:cx="37.410714"
+     inkscape:cy="75.982143"
      inkscape:document-units="px"
      inkscape:current-layer="g2989"
      showgrid="false"
@@ -93,7 +93,7 @@
          y="4.6914368" />
       <path
          id="path2993"
-         d="M 206.00104,48.30263 V 34.820235 M 209.3995,48.30263 V 34.820235"
+         d="M 166.99435,48.30263 V 34.820235 m 3.39846,13.482395 V 34.820235"
          style="fill:none;stroke:#000000;stroke-width:1.44852px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
@@ -113,8 +113,8 @@
          inkscape:connector-curvature="0" />
       <path
          id="path3019"
-         d="m 144.82023,41.561432 h 60.67078"
-         style="fill:none;stroke:#000000;stroke-width:1.44852px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 144.35373,41.561432 h 21.59262"
+         style="fill:none;stroke:#000000;stroke-width:1.4484375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <text
          id="text3043"
@@ -218,8 +218,8 @@
          inkscape:connector-curvature="0" />
       <path
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-width:1.44852px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m 209.82066,41.561432 h 60.67078"
+         style="fill:none;stroke:#000000;stroke-width:1.4484375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 170.60174,41.561432 h 99.43228"
          id="path3058" />
       <g
          id="g3834"
@@ -274,28 +274,28 @@
          id="rect42"
          width="13.567637"
          height="25.307928"
-         x="168.94244"
+         x="195.19244"
          y="47.90799"
          style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.44844;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          id="path3015-7"
-         d="m 189.48516,110.28789 h -13.4824 l 6.7412,6.74119 z"
+         d="m 215.73516,110.28789 h -13.4824 l 6.7412,6.74119 z"
          style="fill:none;stroke:#000000;stroke-width:1.44852px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3017-0"
-         d="m 176.43488,42.256345 v 5.888398"
+         d="m 202.68488,42.256345 v 5.888398"
          style="fill:none;stroke:#000000;stroke-width:1.44844;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3017-0-2"
-         d="M 175.15304,73.734579 V 85.702261"
+         d="M 201.40304,73.734579 V 85.702261"
          style="fill:none;stroke:#000000;stroke-width:1.44844;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <text
          id="text3043-1"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke-width:1"
-         y="181.09804"
+         y="207.34804"
          x="-69.047226"
          xml:space="preserve"
          transform="rotate(-90)">50</text>
@@ -303,30 +303,30 @@
          id="rect42-9"
          width="22.904682"
          height="19.813782"
-         x="163.82124"
+         x="190.07124"
          y="81.088371"
          style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.54057;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          ry="0" />
       <path
          id="path3017-0-2-1"
-         d="M 182.57654,95.234767 V 109.51958"
+         d="M 208.82654,95.234767 V 109.51958"
          style="fill:none;stroke:#000000;stroke-width:1.44844;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3017-0-2-3"
-         d="M 167.84441,94.979374 V 106.97642"
+         d="M 194.09441,94.979374 V 106.97642"
          style="fill:none;stroke:#000000;stroke-width:1.44844;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3017-0-2-3-9"
-         d="m 175.15304,85.745594 7.4235,9.489173"
+         d="m 201.40304,85.745594 7.4235,9.489173"
          style="fill:none;stroke:#000000;stroke-width:1.44844;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cc" />
       <text
          id="text3043-1-7"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke-width:1"
-         y="172.97908"
+         y="199.22908"
          x="-139.18974"
          xml:space="preserve"
          transform="rotate(-90)">3.3V</text>

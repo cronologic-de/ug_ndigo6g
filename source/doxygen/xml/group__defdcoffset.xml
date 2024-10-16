@@ -4,6 +4,116 @@
 <compoundname>defdcoffset</compoundname>
 <title>defines for tdc_trigger_offsets</title>
 <sectiondef kind="define">
+<memberdef kind="define" id="group__defdcoffset_1ga2703bd1643f65a44ae3842b662d8b145" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_NIM</name>
+<initializer>+0.35</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="432" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="432" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1gac888297f7b2c72b7dbfe59c6aedac651" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_CMOS</name>
+<initializer>+1.18</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="433" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="433" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1gaf33717bd45f8da27a8d647d5f652949c" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_LVCMOS_33</name>
+<initializer>+1.18</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="434" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="434" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1gac32fb3ad9ab66eb930ecb863e351c782" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_LVCMOS_25</name>
+<initializer>+1.18</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="435" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="435" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga418756016aa56e6c57e25a1559959293" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_LVCMOS_18</name>
+<initializer>+0.90</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="436" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="436" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1gad6fce719691d7aeabfd54a9a8940469e" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_TTL</name>
+<initializer>+1.18</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="437" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="437" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga02026b33a8e9ebcc7915cc400dc6cf6d" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_LVTTL_33</name>
+<initializer>+1.18</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="438" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="438" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1gafe5b5e4f1d52bc1e20f6ee5173403132" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_LVTTL_25</name>
+<initializer>+1.18</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="439" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="439" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga36b1ac7c35f9e2d35b0530312dd43ac6" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_SSTL_3</name>
+<initializer>+1.18</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="440" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="440" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga261aa1ca684590b74ca22840638b6ecf" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_P_SSTL_2</name>
+<initializer>+1.18</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="441" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="441" bodyend="-1"/>
+</memberdef>
 <memberdef kind="define" id="group__defdcoffset_1gafb112d90fc4a1b049dbf1a7d377ee5c7" prot="public" static="no">
 <name>NDIGO6G12_DC_OFFSET_N_NIM</name>
 <initializer>-0.35</initializer>
@@ -13,7 +123,106 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="427" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="427" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="442" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="442" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1gae319965feb9a1fc3b104e898cb2d0cf2" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_CMOS</name>
+<initializer>-1.32</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="443" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="443" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga000f1cf22a3451caae739bf8aa88e796" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_LVCMOS_33</name>
+<initializer>-1.32</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="444" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="444" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1gab23558cdaeb7899340a197cff8933200" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_LVCMOS_25</name>
+<initializer>-1.25</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="445" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="445" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga1db49a928472322a33d7e0a81cb662e6" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_LVCMOS_18</name>
+<initializer>-0.90</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="446" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="446" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga8c61f5e85d725a7a845cf2aab945f608" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_TTL</name>
+<initializer>-1.32</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="447" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="447" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga4a6e581779add0cb88e43be1eedd7eeb" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_LVTTL_33</name>
+<initializer>-1.32</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="448" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="448" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga0ba46bbc2ddd4608682b309097260803" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_LVTTL_25</name>
+<initializer>-1.25</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="449" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="449" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1ga0a09330e24ece6b85a6847b69e1aa2f9" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_SSTL_3</name>
+<initializer>-1.32</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="450" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="450" bodyend="-1"/>
+</memberdef>
+<memberdef kind="define" id="group__defdcoffset_1gab535b44079a2bd19aec2464b52d9c919" prot="public" static="no">
+<name>NDIGO6G12_DC_OFFSET_N_SSTL_2</name>
+<initializer>-1.25</initializer>
+<briefdescription>
+</briefdescription>
+<detaileddescription>
+</detaileddescription>
+<inbodydescription>
+</inbodydescription>
+<location file="source/ndigo6g12_interface.h" line="451" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="451" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>

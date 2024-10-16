@@ -98,7 +98,7 @@
 <briefdescription>
 </briefdescription>
 <detaileddescription>
-<para>Packet data structure in ring buffer for packets carrying only the header. </para>
+<para>Packet data structure in host buffer for packets carrying only the header. </para>
 </detaileddescription>
 <location file="source/crono_interface.h" line="291" column="1" bodyfile="source/crono_interface.h" bodystart="291" bodyend="304"/>
 <listofallmembers>
