@@ -47,7 +47,7 @@
 <detaileddescription>
 <para><verbatim>embed:rst:leading-asterisk
 *          Is one of the following:
-*          
+*
 *          .. doxygengroup:: readerrors
 *              :content-only:
 * </verbatim> </para>

@@ -53,6 +53,7 @@ User Guide
 |version| |emdash| TBA
     | Added digitizer characteristics
     | Added chapter on TiGer
+    | Added :doc:`erratum`
     | Fixed gating documentation
     | Many corrections
 

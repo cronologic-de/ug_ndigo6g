@@ -133,7 +133,7 @@
 <detaileddescription>
 <para><verbatim>embed:rst:leading-asterisk
 *          Must be one of the following:
-*          
+*
 *          .. doxygengroup:: clockmodes
 *              :content-only:
 * </verbatim> </para>
@@ -154,7 +154,7 @@
 <detaileddescription>
 <para>Note that <ref refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" kindref="member">ndigo6g12_configuration::adc_mode</ref> must match the application type chosen here. <verbatim>embed:rst:leading-asterisk
 *          Must be one of the following:
-*          
+*
 *          .. doxygengroup:: apptypes
 *              :content-only:
 * </verbatim> </para>

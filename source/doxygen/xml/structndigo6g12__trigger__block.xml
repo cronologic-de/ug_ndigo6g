@@ -46,11 +46,12 @@
 </briefdescription>
 <detaileddescription>
 <para>This value is ignored if <computeroutput>enabled</computeroutput> is <computeroutput>true</computeroutput>.</para>
-<para>Maximum is <ref refid="group__triggerblockdefs_1gaf82527fb9c266707d59317100be18d7d" kindref="member">NDIGO6G12_MAX_MULTISHOT</ref>. </para>
+<para>Maximum is <ref refid="group__triggerblockdefs_1gaf82527fb9c266707d59317100be18d7d" kindref="member">NDIGO6G12_MAX_MULTISHOT</ref>.</para>
+<para>Note: Up to firmware revision 1.24120, this feature is bugged in 4-channel mode while <computeroutput>multi_shot_count &gt; 1</computeroutput>. </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1299" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1299" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1301" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1301" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1aa313c7cca7f719735e68839e5f9ec632" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -66,7 +67,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1306" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1306" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1308" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1308" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a9f59b34b1f25fe00023291b678246bcc" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -84,7 +85,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1323" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1323" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1325" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1325" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a09bf0a0c15c4905391944154b116a637" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -100,7 +101,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1332" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1332" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1334" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1334" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a606c376138bec8a53d55cc54453ffdf8" prot="public" static="no" mutable="no">
 <type>int</type>
@@ -115,14 +116,14 @@
 <para>Mask which selects the gates that have to be open for the trigger block to use.</para>
 <para>Default <ref refid="group__gatedefs_1ga92f1048ce70f7946e2c1f921c74c4a14" kindref="member">NDIGO6G12_TRIGGER_GATE_NONE</ref>. <verbatim>embed:rst:leading-asterisk
 *          The following defines can be used to create the bit mask:
-*          
+*
 *          .. doxygengroup:: gatedefs
 *              :content-only:
 * </verbatim> </para>
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1346" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1346" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1348" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1348" bodyend="-1"/>
 </memberdef>
 <memberdef kind="variable" id="structndigo6g12__trigger__block_1a99fb48ea8804c4690d830b2037e9e405" prot="public" static="no" mutable="no">
 <type>double</type>
@@ -140,7 +141,7 @@
 </detaileddescription>
 <inbodydescription>
 </inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1366" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1366" bodyend="-1"/>
+<location file="source/ndigo6g12_interface.h" line="1368" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1368" bodyend="-1"/>
 </memberdef>
 </sectiondef>
 <briefdescription>
@@ -148,7 +149,7 @@
 </briefdescription>
 <detaileddescription>
 </detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1276" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1276" bodyend="1367"/>
+<location file="source/ndigo6g12_interface.h" line="1276" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1276" bodyend="1369"/>
 <listofallmembers>
 <member refid="structndigo6g12__trigger__block_1a4cd2d3ea697c9b380a0a38e0b34db914" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>enabled</name></member>
 <member refid="structndigo6g12__trigger__block_1a606c376138bec8a53d55cc54453ffdf8" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>gates</name></member>

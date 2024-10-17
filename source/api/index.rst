@@ -5,7 +5,7 @@ Driver Programming API
 
     The API requires
     :ref:`driver versions <revhistory:Driver>` **>2.0.0** and
-    :ref:`firmware <revhistory:Firmware>` **24120**.
+    :ref:`firmware <revhistory:Firmware>` **1.24120**.
 
 
 The API is a DLL with C linkage.

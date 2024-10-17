@@ -22,7 +22,7 @@
 <param><defname>current</defname></param>
 <initializer>((<ref refid="group__cronopacketmacros_1gac98d212284a26bce0d16b8714e786186" kindref="member">crono_packet_data_length</ref>(current) + 2) * 8)</initializer>
 <briefdescription>
-<para>Returns the length of <ref refid="structcrono__packet_1a8973e4107f0b644d540e9c0725574c3d" kindref="member">crono_packet::data</ref> including its header in multiples of 8 bytes. </para>
+<para>Returns the length of <ref refid="structcrono__packet_1a8973e4107f0b644d540e9c0725574c3d" kindref="member">crono_packet::data</ref> including its header in bytes. </para>
 </briefdescription>
 <detaileddescription>
 </detaileddescription>

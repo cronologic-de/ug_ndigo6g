@@ -187,7 +187,8 @@ VCC\ :sub:`aux` PCIe 3.3 V\ :sub:`aux` rail power supply               3.3     
 
 .. note::
 
-  :sup:`1` The 12 V power is sourced solely from the GPU power connector.
+  :sup:`1` The 12 V power is sourced solely from the PCIe power connector
+  located at the rear of the board.
 
 
 Analog Inputs
