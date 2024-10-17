@@ -50,7 +50,7 @@ Driver
 
 User Guide
 ----------
-|version| |emdash| TBA
+1.0.0 |emdash| 2024-10-17
     | Added digitizer characteristics
     | Added chapter on TiGer
     | Added :doc:`erratum`
