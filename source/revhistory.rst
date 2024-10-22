@@ -50,6 +50,9 @@ Driver
 
 User Guide
 ----------
+1.0.1 |emdash| 2024-10-22
+    | Improved :numref:`Figure %s<fig hardware picture>`
+
 1.0.0 |emdash| 2024-10-17
     | Added digitizer characteristics
     | Added chapter on TiGer
