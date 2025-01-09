@@ -203,7 +203,7 @@ AC coupled single-ended analog inputs:
 +---------------+---------------------------+------+---------+-----+-------+
 | Z\ :sub:`p`   | Input impedance           |      | 50      |     | Ω     |
 +---------------+---------------------------+------+---------+-----+-------+
-| V\ :sub:`offs`| Adjustable offset         | -0.5 |         | 0.5 | V     |
+| V\ :sub:`offs`| Adjustable offset         | −0.5 |         | 0.5 | V     |
 +---------------+---------------------------+------+---------+-----+-------+
 
 Digital Inputs
@@ -211,29 +211,60 @@ Digital Inputs
 
 AC coupled single-ended digital inputs:
 
-+---------------+---------------------------+------+---------+-----+-------+
-|Symbol         |  Parameter                | Min  | Typical | Max | Units |
-+===============+===========================+======+=========+=====+=======+
-| V\ :sub:`p-p` | Peak-to-peak input voltage|      |         | 1.3 | V     |
-+---------------+---------------------------+------+---------+-----+-------+
-| Z\ :sub:`p`   | Input impedance           |      | 50      |     | Ω     |
-+---------------+---------------------------+------+---------+-----+-------+
-| V\ :sub:`offs`| Adjustable offset         | -1.3 |         | 1.3 | V     |
-+---------------+---------------------------+------+---------+-----+-------+
++------------------+---------------------------+------+---------+-----+-------+
+|Symbol            |  Parameter                | Min  | Typical | Max | Units |
++==================+===========================+======+=========+=====+=======+
+| V\ :sub:`p-p`    | Peak-to-peak input voltage|      |         | 1.3 | V     |
++------------------+---------------------------+------+---------+-----+-------+
+| Z\ :sub:`p`      | Input impedance           |      | 50      |     | Ω     |
++------------------+---------------------------+------+---------+-----+-------+
+| I\ :sub:`Term`   | Termination Current       | −50  | −20     | 50  | mA    |
++------------------+---------------------------+------+---------+-----+-------+
+| V\ :sub:`offs`   | Adjustable offset         | −1.3 |         | 1.3 | V     |
++------------------+---------------------------+------+---------+-----+-------+
+| t\ :sub:`Pulse`  | Pulse length              | 2    | 5       | 200 | ns    |
++------------------+---------------------------+------+---------+-----+-------+
+| t\ sub:Rise:`    | Pulse Edge 20% to 80%     |      |         |  10 | ns    |
++------------------+---------------------------+------+---------+-----+-------+
+| t\ sub:Fall:`    | Pulse Edge 80% to 20%     |      |         |  10 | ns    |
++------------------+---------------------------+------+---------+-----+-------+
+
+
+.. _maxratings:
 
 Absolute Maximum Ratings
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 The absolute ratings are the maximum amplitude that an input pulse can safely
-have before the ADC may be damaged.
+have before the board may be damaged.
 
-+-------------------+---------------------------+------+---------+-----+-------+
-|Symbol             |  Parameter                | Min  | Typical | Max | Units |
-+===================+===========================+======+=========+=====+=======+
-| V\ :sub:`p-p,max` | Peak-to-Peak input voltage|      |         |4.8  | V     |
-+-------------------+---------------------------+------+---------+-----+-------+
+The maximum voltage of any input voltage may not exceed the values given by
+V\ :sub:`max`.
 
+The voltages relative to a constant DC offset (i.e., the pulse “height”) 
+may not exceed the values given by V\ :sub:`AC,max`.
 
+Analog Inputs
+^^^^^^^^^^^^^
+
++------------------------+-----------------------------------------------+------+---------+-----+-------+
+|Symbol                  |  Parameter                                    | Min  | Typical | Max | Units |
++========================+===============================================+======+=========+=====+=======+
+| V\ :sub:`max`          | Maximum input voltage                         | −25  |         | 25  | V     |
++------------------------+-----------------------------------------------+------+---------+-----+-------+
+| V\ :sub:`AC,max`       | Maximum pulse height relative to DC offset    | −1.9 |         | 2.0 | V     |
++------------------------+-----------------------------------------------+------+---------+-----+-------+
+
+Digital Inputs
+^^^^^^^^^^^^^^
+
++------------------------+-----------------------------------------------+------+---------+-----+-------+
+|Symbol                  |  Parameter                                    | Min  | Typical | Max | Units |
++========================+===============================================+======+=========+=====+=======+
+| V\ :sub:`max`          | Maximum input voltage                         | −16  |         | 16  | V     |
++------------------------+-----------------------------------------------+------+---------+-----+-------+
+| V\ :sub:`AC,max`       | Maximum pulse height relative to DC offset    | −5   |         | 5   | V     |
++------------------------+-----------------------------------------------+------+---------+-----+-------+
 
 
 Information Required by DIN EN 61010-1
@@ -298,9 +329,9 @@ requirements and therefore there are no circuits that provide overvoltage
 protection for these signals.
 
 .. danger::
-  Any voltage on the inputs above **5 V**
-  or below **−5 V** relative to the voltage of the slot cover can result in
-  permanent damage to the board.
+  Applying high voltage on the inputs relative to the slot cover can result
+  in permanent damage to the board. See :numref:`Section %s<maxratings>` for
+  the maximum ratings of the inputs.
 
 
 Recycling
