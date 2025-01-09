@@ -199,7 +199,7 @@ AC coupled single-ended analog inputs:
 +---------------+---------------------------+------+---------+-----+-------+
 |Symbol         |  Parameter                | Min  | Typical | Max | Units |
 +===============+===========================+======+=========+=====+=======+
-| V\ :sub:`p-p` | Peak to peak input voltage|      |         | 1   | V     |
+| V\ :sub:`p-p` | Peak-to-peak input voltage|      |         | 1   | V     |
 +---------------+---------------------------+------+---------+-----+-------+
 | Z\ :sub:`p`   | Input impedance           |      | 50      |     | Ω     |
 +---------------+---------------------------+------+---------+-----+-------+
@@ -214,12 +214,26 @@ AC coupled single-ended digital inputs:
 +---------------+---------------------------+------+---------+-----+-------+
 |Symbol         |  Parameter                | Min  | Typical | Max | Units |
 +===============+===========================+======+=========+=====+=======+
-| V\ :sub:`p-p` | Peak to peak input voltage|      |         | 1.3 | V     |
+| V\ :sub:`p-p` | Peak-to-peak input voltage|      |         | 1.3 | V     |
 +---------------+---------------------------+------+---------+-----+-------+
 | Z\ :sub:`p`   | Input impedance           |      | 50      |     | Ω     |
 +---------------+---------------------------+------+---------+-----+-------+
 | V\ :sub:`offs`| Adjustable offset         | -1.3 |         | 1.3 | V     |
 +---------------+---------------------------+------+---------+-----+-------+
+
+Absolute Maximum Ratings
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The absolute ratings are the maximum amplitude that an input pulse can safely
+have before the ADC may be damaged.
+
++-------------------+---------------------------+------+---------+-----+-------+
+|Symbol             |  Parameter                | Min  | Typical | Max | Units |
++===================+===========================+======+=========+=====+=======+
+| V\ :sub:`p-p,max` | Peak-to-Peak input voltage|      |         |4.8  | V     |
++-------------------+---------------------------+------+---------+-----+-------+
+
+
 
 
 Information Required by DIN EN 61010-1
