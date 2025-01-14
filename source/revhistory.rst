@@ -50,6 +50,9 @@ Driver
 
 User Guide
 ----------
+1.1.0 |emdash| 2025-01-14
+    | Added :numref:`Section %s<maxratings>`
+
 1.0.1 |emdash| 2024-10-22
     | Improved :numref:`Figure %s<fig hardware picture>`
 
