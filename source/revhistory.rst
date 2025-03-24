@@ -50,6 +50,10 @@ Driver
 
 User Guide
 ----------
+dev |emdash| TBA
+    | Documented :ref:`minimal packet length <min packet length>`
+    | Updated Erratum
+
 1.1.0 |emdash| 2025-01-14
     | Added :numref:`Section %s<maxratings>`
 

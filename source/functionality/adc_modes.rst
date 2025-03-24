@@ -4,7 +4,7 @@ ADC Modes
 ~~~~~~~~~
 
 The ADC quantizes the input signal using 12 bits. By default, these are mapped
-to signed 16 bit (for more details, see :numref:`Section %s<adc data format>`).
+to signed 16 bit (for more details, see :numref:`Section %s<adc data format>`).
 
 Data processing such as trigger detection or packet building are always
 performed at 5 ns intervals. Depending on the ADC mode, this interval
@@ -15,12 +15,18 @@ may contain 32 (:ref:`1-Channel Mode <1channelmode>` @ 6.4 Gsps),
 The ADC mode is configured using
 :cpp:member:`ndigo6g12_configuration::adc_mode`.
 
-The board supports using one, two or four channels.
+The board supports using one, two or four channels. This is configured when
+the board is initialized, see :cpp:member:`ndigo6g12_init_parameters::application_type`.
 
 During interleaving, the Ndigo6G-12 firmware reorders and groups the data
 into a linear sample stream. The process is fully transparent. For
 users, the only difference is that a 5 ns cycle can contain
 8, 16 or 32 samples, depending on the mode.
+
+Depending on the
+:cpp:member:`application_type <ndigo6g12_init_parameters::application_type>`,
+the minimal length of the output packets changes (see
+:numref:`Section %s<min packet length>`).
 
 
 .. _1channelmode:
