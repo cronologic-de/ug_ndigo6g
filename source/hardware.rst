@@ -125,6 +125,23 @@ can be set between :math:`\pm` 0.5 |nbws| V.
    Asymmetric signal shifted to increase dynamic range.
 
 
+Baseline Drift
+^^^^^^^^^^^^^^
+
+Due to the AC-coupling of the analog and digital inputs, a baseline drift may
+occurs over time (see :numref:`Figure %s<baselinedrift>`). To avoid this problem,
+make sure your input signal fulfills the requirements laid out in
+:numref:`Section %s<analog inputs tech>`.
+
+.. _baselinedrift:
+
+.. figure:: figures/baselinedrift.*
+    :width: 50%
+
+    Baseline drift due to AC-coupling. A second pulse close to a first may be influenced
+    by a shifted baseline, as sketched in the lower graph.
+
+
 .. _digital tdc inputs:
 
 Digital TDC Inputs
