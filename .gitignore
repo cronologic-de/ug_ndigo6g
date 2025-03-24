@@ -11,8 +11,8 @@ build/*
 __pycache__/
 
 # interface files
-source/ndigo6g12_interface.h
-source/crono_interface.h
+source/ndigo6g12_interface.h*
+source/crono_interface.h*
 
 # various
 source/figures/obsolete/
