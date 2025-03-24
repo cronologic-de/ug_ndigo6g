@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-<compounddef id="structndigo6g12__read__in" kind="struct" language="C++" prot="public">
-<compoundname>ndigo6g12_read_in</compoundname>
-<includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
-<sectiondef kind="public-attrib">
-<memberdef kind="variable" id="structndigo6g12__read__in_1a375ae9746419fc6197ccb8f66c636aa1" prot="public" static="no" mutable="no">
-<type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
-<definition>crono_bool_t acknowledge_last_read</definition>
-<argsstring></argsstring>
-<name>acknowledge_last_read</name>
-<qualifiedname>ndigo6g12_read_in::acknowledge_last_read</qualifiedname>
-<briefdescription>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="structndigo6g12__read__in" kind="struct" language="C++" prot="public">
+    <compoundname>ndigo6g12_read_in</compoundname>
+    <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structndigo6g12__read__in_1a375ae9746419fc6197ccb8f66c636aa1" prot="public" static="no" mutable="no">
+        <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
+        <definition>crono_bool_t acknowledge_last_read</definition>
+        <argsstring></argsstring>
+        <name>acknowledge_last_read</name>
+        <qualifiedname>ndigo6g12_read_in::acknowledge_last_read</qualifiedname>
+        <briefdescription>
 <para>Automatically acknowledge packets from the previous call of <ref refid="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" kindref="member">ndigo6g12_read</ref>. </para>
-</briefdescription>
-<detaileddescription>
+        </briefdescription>
+        <detaileddescription>
 <para>Only acknowledged packets will release the memory of the DMA buffer. </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1179" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1179" bodyend="-1"/>
-</memberdef>
-</sectiondef>
-<briefdescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="1188" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1188" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
 <para>The parameters of the read commands. </para>
-</briefdescription>
-<detaileddescription>
-</detaileddescription>
-<location file="source/ndigo6g12_interface.h" line="1172" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1172" bodyend="1180"/>
-<listofallmembers>
-<member refid="structndigo6g12__read__in_1a375ae9746419fc6197ccb8f66c636aa1" prot="public" virt="non-virtual"><scope>ndigo6g12_read_in</scope><name>acknowledge_last_read</name></member>
-</listofallmembers>
-</compounddef>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="source/ndigo6g12_interface.h" line="1181" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1181" bodyend="1189"/>
+    <listofallmembers>
+      <member refid="structndigo6g12__read__in_1a375ae9746419fc6197ccb8f66c636aa1" prot="public" virt="non-virtual"><scope>ndigo6g12_read_in</scope><name>acknowledge_last_read</name></member>
+    </listofallmembers>
+  </compounddef>
 </doxygen>

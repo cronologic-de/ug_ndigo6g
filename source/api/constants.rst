@@ -18,14 +18,6 @@ Function return values
 ~~~~~~~~~~~~~~~~~~~~~~
 .. doxygengroup:: funcreturns
 
-Possible device states
-~~~~~~~~~~~~~~~~~~~~~~
-.. doxygengroup:: devicestates
-
-Alerts
-~~~~~~
-.. doxygengroup:: alertdefs
-
 PCIe Information
 ~~~~~~~~~~~~~~~~
 

@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-<compounddef id="group__tigerstop" kind="group">
-<compoundname>tigerstop</compoundname>
-<title>Defines for TiGer stop</title>
-<sectiondef kind="define">
-<memberdef kind="define" id="group__tigerstop_1gafdf751fd3bdecfe23abce68ef14a8d65" prot="public" static="no">
-<name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name>
-<initializer>15</initializer>
-<briefdescription>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="group__tigerstop" kind="group">
+    <compoundname>tigerstop</compoundname>
+    <title>Defines for TiGer stop</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__tigerstop_1gafdf751fd3bdecfe23abce68ef14a8d65" prot="public" static="no">
+        <name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name>
+        <initializer>15</initializer>
+        <briefdescription>
 <para>Maximum length of bipolar TiGer pulses. </para>
-</briefdescription>
-<detaileddescription>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="534" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="534" bodyend="-1"/>
-</memberdef>
-</sectiondef>
-<briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="534" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
 <para>Defines relevant for <ref refid="structndigo6g12__tdc__tiger__block_1a6c0af9f2e97842405fb15ed952ef2976" kindref="member">ndigo6g12_tdc_tiger_block::stop</ref>. </para>
-</briefdescription>
-<detaileddescription>
-</detaileddescription>
-</compounddef>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
 </doxygen>
