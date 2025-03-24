@@ -12,10 +12,9 @@ import os
 with open("version.txt") as f:
     version = f.read()
 
-project = 'Ndigo6G-12 User Guide'
-copyright = ("Creative Commons Attribution-NoDerivatives"
-             " 4.0 International License")
-author = 'cronologic GmbH & Co. KG'
+project = "Ndigo6G-12 User Guide"
+copyright = "Creative Commons Attribution-NoDerivatives" " 4.0 International License"
+author = "cronologic GmbH & Co. KG"
 release = version
 
 # -- General configuration ---------------------------------------------------
@@ -42,7 +41,7 @@ rst_prolog = f"""
 .. |version| replace:: {version}
 """
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 exclude_patterns = ["global.rst"]
 
 
@@ -91,20 +90,19 @@ html_favicon = "_static/cronologic_favicon.svg"
 html_title = f"{project}"
 html_secnumber_suffix = " "
 html_logo = "_static/cronologic.svg"
-html_static_path = ['_static']
+html_static_path = ["_static"]
 html_css_files = ["custom.css"]
 
 # latex_toplevel_sectioning = "section"
 
-latex_engine = 'xelatex'
+latex_engine = "xelatex"
 latex_xindy_use = False
 latex_elements = {
     "papersize": "a4paper",
     "pointsize": "12pt",
-    "fontpkg" : "",
+    "fontpkg": "",
     "preamble": r"""
         \usepackage[
-            font=montserrat,
             sphinx,
             noframe=false,
         ]
@@ -116,13 +114,13 @@ latex_elements = {
         \setcounter{tocdepth}{4}
     """,
     "extraclassoptions": r"openany",
-    "tableofcontents":r"\tableofcontents",
+    "tableofcontents": r"\tableofcontents",
     "maketitle": r"\includepdf[pages={1}]{Ndigo6G-12_Front_Page.pdf}",
     "releasename": "Rev.",
     "makeindex": "",
     "printindex": "",
 }
-latex_theme = "manual" # manual (book class) or howto (article class)
+latex_theme = "manual"  # manual (book class) or howto (article class)
 latex_additional_files = [
     "cronologicug.sty",
     "extraplaceins.sty",
@@ -130,8 +128,5 @@ latex_additional_files = [
 ]
 
 numfig = True
-numfig_format = {
-    "figure":"Figure %s:",
-    "table":"Table %s:"
-}
+numfig_format = {"figure": "Figure %s:", "table": "Table %s:"}
 numfig_secnum_depth = 1

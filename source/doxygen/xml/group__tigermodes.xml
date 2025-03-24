@@ -1,67 +1,67 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-<compounddef id="group__tigermodes" kind="group">
-<compoundname>tigermodes</compoundname>
-<title>Defines for TiGer blocks</title>
-<sectiondef kind="define">
-<memberdef kind="define" id="group__tigermodes_1ga7eccbe4d5a6be5547e3483dd660bee96" prot="public" static="no">
-<name>NDIGO6G12_TIGER_OFF</name>
-<initializer>0</initializer>
-<briefdescription>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="group__tigermodes" kind="group">
+    <compoundname>tigermodes</compoundname>
+    <title>Defines for TiGer blocks</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__tigermodes_1ga7eccbe4d5a6be5547e3483dd660bee96" prot="public" static="no">
+        <name>NDIGO6G12_TIGER_OFF</name>
+        <initializer>0</initializer>
+        <briefdescription>
 <para>TiGer deactivated. </para>
-</briefdescription>
-<detaileddescription>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="489" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="489" bodyend="-1"/>
-</memberdef>
-<memberdef kind="define" id="group__tigermodes_1ga36a6878b79537652e9810e09ac165a8f" prot="public" static="no">
-<name>NDIGO6G12_TIGER_OUTPUT</name>
-<initializer>1</initializer>
-<briefdescription>
-<para>Pulse height is approximately 2&#160;V. </para>
-</briefdescription>
-<detaileddescription>
-<para>Connected hardware must not drive any signals to the connectors used as outputs, as doing so could damage both the Ndigo6G-12 and the external hardware. We recommend to only use short pulses to avoid undesirable baseline shift due to the AC coupling, but the device does not pose any restrictions on the duty cycle. This mode can be used as a clock output with a frequency of 75/N&#160;MHz (for integer N). </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="501" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="501" bodyend="-1"/>
-</memberdef>
-<memberdef kind="define" id="group__tigermodes_1ga8b3220a875ee8bfa25194f383a28a88d" prot="public" static="no">
-<name>NDIGO6G12_TIGER_BIDI</name>
-<initializer>2</initializer>
-<briefdescription>
-<para>Pulse height is approximately 1&#160;V. </para>
-</briefdescription>
-<detaileddescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="489" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__tigermodes_1ga36a6878b79537652e9810e09ac165a8f" prot="public" static="no">
+        <name>NDIGO6G12_TIGER_OUTPUT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Pulse height is approximately 2<nonbreakablespace/>V. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Connected hardware must not drive any signals to the connectors used as outputs, as doing so could damage both the Ndigo6G-12 and the external hardware. We recommend to only use short pulses to avoid undesirable baseline shift due to the AC coupling, but the device does not pose any restrictions on the duty cycle. This mode can be used as a clock output with a frequency of 75/N<nonbreakablespace/>MHz (for integer N). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="501" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__tigermodes_1ga8b3220a875ee8bfa25194f383a28a88d" prot="public" static="no">
+        <name>NDIGO6G12_TIGER_BIDI</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Pulse height is approximately 1<nonbreakablespace/>V. </para>
+        </briefdescription>
+        <detaileddescription>
 <para>The LEMO connector may be used as input with OR function. Use short pulses to keep the probability of collision and the effect on the baseline low. </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="509" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="509" bodyend="-1"/>
-</memberdef>
-<memberdef kind="define" id="group__tigermodes_1ga1edd2216a57c42dd92c5d0b141b61d53" prot="public" static="no">
-<name>NDIGO6G12_TIGER_BIPOLAR</name>
-<initializer>3</initializer>
-<briefdescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="509" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__tigermodes_1ga1edd2216a57c42dd92c5d0b141b61d53" prot="public" static="no">
+        <name>NDIGO6G12_TIGER_BIPOLAR</name>
+        <initializer>3</initializer>
+        <briefdescription>
 <para>TiGer pulses are bipolar. </para>
-</briefdescription>
-<detaileddescription>
+        </briefdescription>
+        <detaileddescription>
 <para>Not supported for inputs TRG and GATE.</para>
-<para>In this mode, the connector creates bipolar pulses with 1&#160;V amplitude. The connector can still be used as an input. Pulses have no effect on the baseline offset.</para>
+<para>In this mode, the connector creates bipolar pulses with 1<nonbreakablespace/>V amplitude. The connector can still be used as an input. Pulses have no effect on the baseline offset.</para>
 <para>The TiGer should be configured with <computeroutput>start</computeroutput>= <computeroutput>stop + 1</computeroutput> for minimium-width bipolar pulses. The maximum bipolar pulse width is <ref refid="group__tigerstop_1gafdf751fd3bdecfe23abce68ef14a8d65" kindref="member">NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</ref>. </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="521" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="521" bodyend="-1"/>
-</memberdef>
-</sectiondef>
-<briefdescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="521" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
 <para>Defines for <ref refid="structndigo6g12__tdc__tiger__block_1a1ea5d0cb93f22f7d0fdf804bd68c3326" kindref="member">ndigo6g12_tdc_tiger_block::mode</ref>. </para>
-</briefdescription>
-<detaileddescription>
-</detaileddescription>
-</compounddef>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
 </doxygen>

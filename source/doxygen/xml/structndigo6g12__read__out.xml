@@ -1,102 +1,102 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-<compounddef id="structndigo6g12__read__out" kind="struct" language="C++" prot="public">
-<compoundname>ndigo6g12_read_out</compoundname>
-<includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
-<sectiondef kind="public-attrib">
-<memberdef kind="variable" id="structndigo6g12__read__out_1a8d78b3daa9d7891920c80238865c620c" prot="public" static="no" mutable="no">
-<type>volatile <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> *</type>
-<definition>volatile crono_packet* first_packet</definition>
-<argsstring></argsstring>
-<name>first_packet</name>
-<qualifiedname>ndigo6g12_read_out::first_packet</qualifiedname>
-<briefdescription>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="structndigo6g12__read__out" kind="struct" language="C++" prot="public">
+    <compoundname>ndigo6g12_read_out</compoundname>
+    <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structndigo6g12__read__out_1a8d78b3daa9d7891920c80238865c620c" prot="public" static="no" mutable="no">
+        <type>volatile <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> *</type>
+        <definition>volatile crono_packet* first_packet</definition>
+        <argsstring></argsstring>
+        <name>first_packet</name>
+        <qualifiedname>ndigo6g12_read_out::first_packet</qualifiedname>
+        <briefdescription>
 <para>Pointer to the first packet. </para>
-</briefdescription>
-<detaileddescription>
+        </briefdescription>
+        <detaileddescription>
 <para>That is, the pointer that was captured by the call of <ref refid="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" kindref="member">ndigo6g12_read</ref>. </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1191" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1191" bodyend="-1"/>
-</memberdef>
-<memberdef kind="variable" id="structndigo6g12__read__out_1a4f8b3bd4de3b864131053ab455e7813b" prot="public" static="no" mutable="no">
-<type>volatile <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> *</type>
-<definition>volatile crono_packet* last_packet</definition>
-<argsstring></argsstring>
-<name>last_packet</name>
-<qualifiedname>ndigo6g12_read_out::last_packet</qualifiedname>
-<briefdescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="1200" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__read__out_1a4f8b3bd4de3b864131053ab455e7813b" prot="public" static="no" mutable="no">
+        <type>volatile <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> *</type>
+        <definition>volatile crono_packet* last_packet</definition>
+        <argsstring></argsstring>
+        <name>last_packet</name>
+        <qualifiedname>ndigo6g12_read_out::last_packet</qualifiedname>
+        <briefdescription>
 <para>Pointer to the last packet. </para>
-</briefdescription>
-<detaileddescription>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1196" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1196" bodyend="-1"/>
-</memberdef>
-<memberdef kind="variable" id="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" static="no" mutable="no">
-<type>int</type>
-<definition>int error_code</definition>
-<argsstring></argsstring>
-<name>error_code</name>
-<qualifiedname>ndigo6g12_read_out::error_code</qualifiedname>
-<briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="1205" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int error_code</definition>
+        <argsstring></argsstring>
+        <name>error_code</name>
+        <qualifiedname>ndigo6g12_read_out::error_code</qualifiedname>
+        <briefdescription>
 <para>Error code. </para>
-</briefdescription>
-<detaileddescription>
+        </briefdescription>
+        <detaileddescription>
 <para><verbatim>embed:rst:leading-asterisk
 *          Is one of the following:
-*
+*          
 *          .. doxygengroup:: readerrors
 *              :content-only:
 * </verbatim> </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1207" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1207" bodyend="-1"/>
-</memberdef>
-<memberdef kind="variable" id="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" static="no" mutable="no">
-<type>const char *</type>
-<definition>const char* error_message</definition>
-<argsstring></argsstring>
-<name>error_message</name>
-<qualifiedname>ndigo6g12_read_out::error_message</qualifiedname>
-<briefdescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="1216" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* error_message</definition>
+        <argsstring></argsstring>
+        <name>error_message</name>
+        <qualifiedname>ndigo6g12_read_out::error_message</qualifiedname>
+        <briefdescription>
 <para>Plain text error message. </para>
-</briefdescription>
-<detaileddescription>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/ndigo6g12_interface.h" line="1212" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="1212" bodyend="-1"/>
-</memberdef>
-</sectiondef>
-<briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="1221" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="1221" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
 <para>Struct for the read-out of the Ndigo6G-12 packets. </para>
-</briefdescription>
-<detaileddescription>
-</detaileddescription>
-<collaborationgraph>
-<node id="2">
-<label>crono_packet</label>
-<link refid="structcrono__packet"/>
-</node>
-<node id="1">
-<label>ndigo6g12_read_out</label>
-<link refid="structndigo6g12__read__out"/>
-<childnode refid="2" relation="usage">
-<edgelabel>first_packet</edgelabel>
-<edgelabel>last_packet</edgelabel>
-</childnode>
-</node>
-</collaborationgraph>
-<location file="source/ndigo6g12_interface.h" line="1185" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1185" bodyend="1213"/>
-<listofallmembers>
-<member refid="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_code</name></member>
-<member refid="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_message</name></member>
-<member refid="structndigo6g12__read__out_1a8d78b3daa9d7891920c80238865c620c" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>first_packet</name></member>
-<member refid="structndigo6g12__read__out_1a4f8b3bd4de3b864131053ab455e7813b" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>last_packet</name></member>
-</listofallmembers>
-</compounddef>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>crono_packet</label>
+        <link refid="structcrono__packet"/>
+      </node>
+      <node id="1">
+        <label>ndigo6g12_read_out</label>
+        <link refid="structndigo6g12__read__out"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>first_packet</edgelabel>
+          <edgelabel>last_packet</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="source/ndigo6g12_interface.h" line="1194" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1194" bodyend="1222"/>
+    <listofallmembers>
+      <member refid="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_code</name></member>
+      <member refid="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_message</name></member>
+      <member refid="structndigo6g12__read__out_1a8d78b3daa9d7891920c80238865c620c" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>first_packet</name></member>
+      <member refid="structndigo6g12__read__out_1a4f8b3bd4de3b864131053ab455e7813b" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>last_packet</name></member>
+    </listofallmembers>
+  </compounddef>
 </doxygen>

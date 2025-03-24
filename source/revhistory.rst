@@ -53,6 +53,7 @@ User Guide
 dev |emdash| TBA
     | Documented :ref:`minimal packet length <min packet length>`
     | Updated Erratum
+    | Moved alert and device-state defines to corresponding documentation section
 
 1.1.0 |emdash| 2025-01-14
     | Added :numref:`Section %s<maxratings>`

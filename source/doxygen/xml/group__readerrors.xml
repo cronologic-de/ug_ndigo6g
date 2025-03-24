@@ -1,62 +1,62 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-<compounddef id="group__readerrors" kind="group">
-<compoundname>readerrors</compoundname>
-<title>Errors of read_out</title>
-<sectiondef kind="define">
-<memberdef kind="define" id="group__readerrors_1gac7abe40011dc7e20ab59d0bcbc619a0d" prot="public" static="no">
-<name>CRONO_READ_OK</name>
-<initializer>0</initializer>
-<briefdescription>
-</briefdescription>
-<detaileddescription>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="group__readerrors" kind="group">
+    <compoundname>readerrors</compoundname>
+    <title>Errors of read_out</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__readerrors_1gac7abe40011dc7e20ab59d0bcbc619a0d" prot="public" static="no">
+        <name>CRONO_READ_OK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
 <para>Reading packets from the device was successful. </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/crono_interface.h" line="192" column="9" bodyfile="source/crono_interface.h" bodystart="192" bodyend="-1"/>
-</memberdef>
-<memberdef kind="define" id="group__readerrors_1ga1b7dea2e56f046ef2f405c9b8c4d5d95" prot="public" static="no">
-<name>CRONO_READ_NO_DATA</name>
-<initializer>1</initializer>
-<briefdescription>
-</briefdescription>
-<detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="192" column="9" bodyfile="source/crono_interface.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__readerrors_1ga1b7dea2e56f046ef2f405c9b8c4d5d95" prot="public" static="no">
+        <name>CRONO_READ_NO_DATA</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
 <para>Trying to read packets does not yield data. </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/crono_interface.h" line="195" column="9" bodyfile="source/crono_interface.h" bodystart="195" bodyend="-1"/>
-</memberdef>
-<memberdef kind="define" id="group__readerrors_1ga4fa4fb29e1a2598c455e9810e064fac9" prot="public" static="no">
-<name>CRONO_READ_INTERNAL_ERROR</name>
-<initializer>2</initializer>
-<briefdescription>
-</briefdescription>
-<detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="195" column="9" bodyfile="source/crono_interface.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__readerrors_1ga4fa4fb29e1a2598c455e9810e064fac9" prot="public" static="no">
+        <name>CRONO_READ_INTERNAL_ERROR</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
 <para>Some unhandled error occured. A device reinit is required. </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/crono_interface.h" line="198" column="9" bodyfile="source/crono_interface.h" bodystart="198" bodyend="-1"/>
-</memberdef>
-<memberdef kind="define" id="group__readerrors_1gaf061dd14b2d0d1ab2a69d2c8a9604629" prot="public" static="no">
-<name>CRONO_READ_TIMEOUT</name>
-<initializer>3</initializer>
-<briefdescription>
-</briefdescription>
-<detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="198" column="9" bodyfile="source/crono_interface.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__readerrors_1gaf061dd14b2d0d1ab2a69d2c8a9604629" prot="public" static="no">
+        <name>CRONO_READ_TIMEOUT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
 <para>Trying to read packets does not yield data in the given amount of time. </para>
-</detaileddescription>
-<inbodydescription>
-</inbodydescription>
-<location file="source/crono_interface.h" line="201" column="9" bodyfile="source/crono_interface.h" bodystart="201" bodyend="-1"/>
-</memberdef>
-</sectiondef>
-<briefdescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="201" column="9" bodyfile="source/crono_interface.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
 <para>Errors for <computeroutput>read_out</computeroutput> structure. </para>
-</briefdescription>
-<detaileddescription>
-</detaileddescription>
-</compounddef>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
 </doxygen>
