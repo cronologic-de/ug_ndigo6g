@@ -23,6 +23,9 @@ thus, enabling sophisticated trigger setups.
 Trigger configuration
 ^^^^^^^^^^^^^^^^^^^^^
 
+Analog Inputs
+*************
+
 Users can specify a :cpp:member:`threshold <ndigo6g12_trigger::threshold>`
 and can choose whether triggering is used
 whenever incoming data is below or above the threshold (level triggering,
@@ -71,6 +74,19 @@ suppression>`).
 .. figure:: ../figures/1ChannelTriggering.*
 
    Triggering in 1-channel mode at 32 samples per clock cycle.
+
+Digital Inputs
+**************
+
+For all digital inputs, the configuration value
+:cpp:member:`ndigo6g12_trigger::threshold` is ignored. Their trigger threshold is
+configured by :cpp:member:`ndigo6g12_configuration::tdc_trigger_offsets`.
+
+Equivalently to the analog inputs, edge- or level-trigger functionality can be
+enabled using :cpp:member:`ndigo6g12_trigger::edge`. The duration of a level trigger
+is solely limited by the AC-coupling (see :numref:`Figure %s<fig baselinedrift>` for
+the effects of AC-coupling on a signal).
+
 
 .. _section trigger inputs:
 

@@ -52,6 +52,8 @@ User Guide
 ----------
 dev |emdash| TBA
     | Moved alert and device-state defines to corresponding documentation section
+    | Documented possible baseline drift due to the AC coupling
+    | Expanded documentation of the trigger setup
 
 1.1.0 |emdash| 2025-01-14
     | Added :numref:`Section %s<maxratings>`

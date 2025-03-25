@@ -15,7 +15,7 @@ def exp(x, x0, y0, scale, tau):
 
 def plot():
 
-    ap._set_theme_atompy("lb", use_latex=True, use_serif=False)
+    ap._set_theme_atompy("lb", use_latex=False, use_serif=False)
     plt.rcParams["figure.figsize"] = 4.0, 3.0
 
     axs: tuple[Axes, Axes]
@@ -59,6 +59,16 @@ def plot():
 
     axs[1].axhline(
         signal_y[edges[2] - 1], ls=":", c=plt.rcParams["axes.edgecolor"], lw=0.8
+    )
+
+    axs[1].annotate(
+        "shifted baseline",
+        xy=(edges[2] - 1, signal_y[edges[2] - 1]),
+        xytext=(0.8, 0.02),
+        ha="right",
+        color=plt.rcParams["axes.edgecolor"],
+        textcoords=axs[1].transAxes,
+        arrowprops=dict(arrowstyle="->", color=plt.rcParams["axes.edgecolor"]),
     )
 
     for ax in axs:
