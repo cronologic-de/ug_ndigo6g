@@ -3,6 +3,10 @@ Revision History
 
 Firmware
 --------
+
+1.25086 |emdash| 2025-04-03
+    | Bugfix: Removed trigger dead time
+
 1.24120 |emdash| 2024-04-30
     | Improved ADC/TDC synchronisation
     | Added sample averaging modes AA/DD, AAAA/DDDD, and AADD
@@ -21,6 +25,10 @@ Firmware
 
 Driver
 ------
+2.2.0 |emdash| 2025-04-03
+    | Bugfix: Removed trigger dead time
+    | Bugfix: Fixed :c:macro:`NDIGO6G12_MAX_PRECURSOR` for :ref:`Averaging Mode`
+    
 2.0.1 |emdash| 2024-07-17
     | Extensive revision of the application programming interface
     | Improved linux support
