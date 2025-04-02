@@ -25,8 +25,11 @@ users, the only difference is that a 5 ns cycle can contain
 
 Depending on the
 :cpp:member:`application_type <ndigo6g12_init_parameters::application_type>`,
-the minimal length of the output packets changes (see
-:numref:`Section %s<min packet length>`).
+the minimal length of the output packets changes. The minimal lengths are:
+
+- 3 :math:`\times` 32 Samples (15 ns) @ 6.4 Gsps (1-Channel Mode)
+- 3 :math:`\times` 16 Samples (15 ns) @ 3.2 Gsps (2-Channel Mode)
+- 4 :math:`\times` 8 Samples (20 ns) @ 1.6 Gsps (4-Channel Mode)
 
 
 .. _1channelmode:

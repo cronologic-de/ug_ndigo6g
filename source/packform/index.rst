@@ -15,20 +15,12 @@ Packets are retrieved by :cpp:func:`ndigo6g12_read`. They are of type
   packet (stored in the payload data). The memory layout thereof is shown in
   :numref:`Section %s<tdcpacket bit table>`.
 
+.. note::
 
-.. _min packet length:
+  The minimum packet length depends on the application type. See
+  :numref:`Section %s<ADC Modes>` for details.
 
-Minimal Packet Length
----------------------
-Packets have a minimal length, which depends on the
-:cpp:member:`ndigo6g12_static_info::application_type` in use (see also
-:doc:`../functionality/adc_modes`).
 
-The minimal lengths are:
-
-- 4 :math:`\times` 8 Samples (20 ns) @ 1.6 Gsps (4-Channel Mode)
-- 3 :math:`\times` 16 Samples (15 ns) @ 3.2 Gsps (2-Channel Mode)
-- 3 :math:`\times` 32 Samples (15 ns) @ 6.4 Gsps (1-Channel Mode)
 
 .. raw:: html
 
