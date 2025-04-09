@@ -16,3 +16,5 @@ Functionality
     auto_trigger
     averaging
     tiger
+    firmware
+    calibration

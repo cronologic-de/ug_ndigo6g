@@ -58,6 +58,9 @@ Driver
 
 User Guide
 ----------
+1.3.0-dev |emdash| TBD
+    | Documented firmware update procedure
+
 1.2.0 |emdash| 2025-04-02
     | Documented minimal packet length
     | Moved alert and device-state defines to corresponding documentation section
