@@ -58,7 +58,7 @@ Driver
 
 User Guide
 ----------
-1.3.0-dev |emdash| TBD
+1.3.0 |emdash| 2025-04-10
     | Documented firmware update procedure
     | Documented TDC calibration procedure
 
