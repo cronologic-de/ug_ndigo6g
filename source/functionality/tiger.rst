@@ -12,7 +12,7 @@ including the auto-trigger and the ADC channels.
 
 .. note::
 
-    The TiGer configuration is similiar to the
+    The TiGer configuration is similar to the
     :ref:`gating blocks<Section Gating Blocks>`.
 
 The TiGer can be used in different output

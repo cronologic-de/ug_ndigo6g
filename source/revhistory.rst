@@ -8,7 +8,7 @@ Firmware
     | Bugfix: Removed trigger dead time
 
 1.24120 — 2024-04-30
-    | Improved ADC/TDC synchronisation
+    | Improved ADC/TDC synchronization
     | Added sample averaging modes AA/DD, AAAA/DDDD, and AADD
     | TiGer Updates
     | Internal optimizations
@@ -33,7 +33,7 @@ Driver
     | Extensive revision of the application programming interface
     | Improved linux support
     | Improved documentation
-    | Improved TDC and ADC synchronisation
+    | Improved TDC and ADC synchronization
 
 1.5.4 — 2024-07-13
     | Fixed 2 channel handling with trigger from opposite channel (trigger A on channel D)
