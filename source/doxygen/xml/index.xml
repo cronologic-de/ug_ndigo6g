@@ -350,6 +350,7 @@
     <member refid="group__outputdefs_1gabb1307aecd252b329c43d44ea8f0e3da" kind="define"><name>NDIGO6G12_OUTPUT_MODE_RAW</name></member>
     <member refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kind="define"><name>NDIGO6G12_OUTPUT_MODE_SIGNED16</name></member>
     <member refid="group__outputdefs_1gaa6d025ad7fb0144b088773dccd4f3ae1" kind="define"><name>NDIGO6G12_OUTPUT_MODE_SIGNED32</name></member>
+    <member refid="group__outputdefs_1gad21868409a9b62292a1690d9434c78ab" kind="define"><name>NDIGO6G12_OUTPUT_MODE_RAW_NO_CB</name></member>
     <member refid="group__gatedefs_1ga92f1048ce70f7946e2c1f921c74c4a14" kind="define"><name>NDIGO6G12_TRIGGER_GATE_NONE</name></member>
     <member refid="group__gatedefs_1ga173f9f253f6482567ad05f2f0d205dab" kind="define"><name>NDIGO6G12_TRIGGER_GATE_0</name></member>
     <member refid="group__gatedefs_1gac7f7182ce5c25dc595157a18b61dc947" kind="define"><name>NDIGO6G12_TRIGGER_GATE_1</name></member>
@@ -505,6 +506,7 @@
     <member refid="group__outputdefs_1gabb1307aecd252b329c43d44ea8f0e3da" kind="define"><name>NDIGO6G12_OUTPUT_MODE_RAW</name></member>
     <member refid="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" kind="define"><name>NDIGO6G12_OUTPUT_MODE_SIGNED16</name></member>
     <member refid="group__outputdefs_1gaa6d025ad7fb0144b088773dccd4f3ae1" kind="define"><name>NDIGO6G12_OUTPUT_MODE_SIGNED32</name></member>
+    <member refid="group__outputdefs_1gad21868409a9b62292a1690d9434c78ab" kind="define"><name>NDIGO6G12_OUTPUT_MODE_RAW_NO_CB</name></member>
   </compound>
   <compound refid="group__gatedefs" kind="group"><name>gatedefs</name>
     <member refid="group__gatedefs_1ga92f1048ce70f7946e2c1f921c74c4a14" kind="define"><name>NDIGO6G12_TRIGGER_GATE_NONE</name></member>

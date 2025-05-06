@@ -8,7 +8,7 @@
         <name>NDIGO6G12_OUTPUT_MODE_RAW</name>
         <initializer>0</initializer>
         <briefdescription>
-<para>Return the native range (0 to 4095). </para>
+<para>Return the native range (0 to 4095) augmented by two ADC control bits per sample. </para>
         </briefdescription>
         <detaileddescription>
 <para>Not supported for user applications. </para>
@@ -42,6 +42,18 @@
         <inbodydescription>
         </inbodydescription>
         <location file="source/ndigo6g12_interface.h" line="214" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__outputdefs_1gad21868409a9b62292a1690d9434c78ab" prot="public" static="no">
+        <name>NDIGO6G12_OUTPUT_MODE_RAW_NO_CB</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>Return the native range (0 to 4095). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="219" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="219" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

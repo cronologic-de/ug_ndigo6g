@@ -69,8 +69,15 @@ Data layout:
     \endgroup
 
 
+:c:macro:`NDIGO6G12_OUTPUT_MODE_RAW_NO_CB`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Packet data is returned in the native range of the ADC (0 to 4095) and as type
+:c:macro:`CRONO_PACKET_TYPE_16_BIT_SIGNED`. It must be cast to ``int16_t``. Unlike
+:c:macro:`NDIGO6G12_OUTPUT_MODE_RAW`, it does not contain control bits.
+
 .. attention::
 
-    :c:macro:`NDIGO6G12_OUTPUT_MODE_RAW` is useful for debugging purposes.
-    It is not supported for user applications. Use
+    :c:macro:`NDIGO6G12_OUTPUT_MODE_RAW` and :c:macro:`NDIGO6G12_OUTPUT_MODE_RAW_NO_CB`
+    are useful for debugging purposes.
+    They are not supported for user applications. Use
     :c:macro:`NDIGO6G12_OUTPUT_MODE_SIGNED16` instead.

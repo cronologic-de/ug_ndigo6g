@@ -102,7 +102,7 @@
       </memberdef>
       <memberdef kind="define" id="group__constants_1ga0d9550cfdb01cb823407984f781a4696" prot="public" static="no">
         <name>NDIGO6G12_FIFO_DEPTH</name>
-        <initializer>16364</initializer>
+        <initializer>16374</initializer>
         <briefdescription>
 <para>ADC sample FIFO depth. </para>
         </briefdescription>
