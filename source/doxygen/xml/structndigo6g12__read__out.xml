@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1196" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1196" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1209" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1209" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__read__out_1a4f8b3bd4de3b864131053ab455e7813b" prot="public" static="no" mutable="no">
         <type>volatile <ref refid="structcrono__packet" kindref="compound">crono_packet</ref> *</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1201" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1201" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1214" column="27" bodyfile="source/ndigo6g12_interface.h" bodystart="1214" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1212" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1212" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1225" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1225" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1217" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="1217" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1230" column="16" bodyfile="source/ndigo6g12_interface.h" bodystart="1230" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -91,7 +91,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="source/ndigo6g12_interface.h" line="1190" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1190" bodyend="1218"/>
+    <location file="source/ndigo6g12_interface.h" line="1203" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1203" bodyend="1231"/>
     <listofallmembers>
       <member refid="structndigo6g12__read__out_1a7d16b1c68c87cec009d972e79abfba78" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_code</name></member>
       <member refid="structndigo6g12__read__out_1aed3e11140a4ff2456ee8cb2bb7271c3c" prot="public" virt="non-virtual"><scope>ndigo6g12_read_out</scope><name>error_message</name></member>
