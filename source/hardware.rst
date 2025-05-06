@@ -129,7 +129,7 @@ AC-Coupling and Baseline Drift
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Due to the AC-coupling of the analog and digital inputs, a baseline drift may
-occurs over time (see :numref:`Figure %s<fig baselinedrift>`). To avoid this problem,
+occur over time (see :numref:`Figure %s<fig baselinedrift>`). To avoid this problem,
 make sure your input signal fulfills the requirements laid out in
 :numref:`Section %s<analog inputs tech>`.
 
