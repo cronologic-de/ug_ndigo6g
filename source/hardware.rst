@@ -115,12 +115,14 @@ can be set between :math:`\pm` 0.5 V.
 
 
 .. _Fig 2.5:
-.. figure:: figures/AnalogOffset_Sine.*
+.. figure:: figures/analog_offset_sine.*
+   :width: 80%
 
    Users can add an analog offset to the input before sampling.
 
 .. _Fig 2.6:
-.. figure:: figures/AnalogOffset_Pulse.*
+.. figure:: figures/analog_offset_pulse.*
+   :width: 80%
 
    Asymmetric signal shifted to increase dynamic range.
 

@@ -62,6 +62,7 @@ User Guide
     | Updated documentation of :cpp:member:`ndigo6g12_configuration::output_mode`
     | Updated :cpp:member:`ndigo6g12_param_info::adc_sample_delay` docstring.
     | Documented possible baseline drift due to the AC coupling
+    | Updated :numref:`Figures %s<Fig 2.5>` and :numref:`%s<Fig 2.6>` to work in dark mode
 
 1.3.0 — 2025-04-10
     | Documented firmware update procedure
