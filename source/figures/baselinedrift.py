@@ -35,6 +35,20 @@ def plot():
     axs[0].plot(pulse_x, pulse_y, **pulse_kwargs)
     axs[0].set_ylabel("Signal height", color=plt.rcParams["axes.edgecolor"])
 
+    axs[0].annotate(
+        "",
+        xytext=(edges[0], 50),
+        xy=(edges[1], 50),
+        arrowprops=dict(
+            arrowstyle="<->",
+            color=plt.rcParams["axes.edgecolor"],
+            shrinkA=0,
+            shrinkB=1.6,
+        ),
+    )
+    center = (edges[1] - edges[0]) / 2.0
+    axs[0].text(center, 60, r"$\approx$ 2.5 µs", color=plt.rcParams["axes.edgecolor"])
+
     signal_x = pulse_x.copy()
     signal_y = pulse_y.copy()
 
