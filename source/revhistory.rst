@@ -61,6 +61,7 @@ User Guide
 1.3.1-dev — TBD
     | Updated documentation of :cpp:member:`ndigo6g12_configuration::output_mode`
     | Updated :cpp:member:`ndigo6g12_param_info::adc_sample_delay` docstring.
+    | Documented possible baseline drift due to the AC coupling
 
 1.3.0 — 2025-04-10
     | Documented firmware update procedure
