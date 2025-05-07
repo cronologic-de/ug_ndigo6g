@@ -21,8 +21,11 @@ def plot():
     axs: tuple[Axes, Axes]
     fig, axs = plt.subplots(2, 1)
 
-    pulse_kwargs: dict[Any, Any] = dict(lw=3.0, c=ap.PALETTE_OKABE_ITO[0], ls="-")
-    record_kwargs: dict[Any, Any] = dict(lw=3.0, c=ap.PALETTE_OKABE_ITO[1], ls="-")
+    cronoblue = "#376eb5"
+    cronoorange = "#ed7800"
+
+    pulse_kwargs: dict[Any, Any] = dict(lw=3.0, c=cronoblue, ls="-")
+    record_kwargs: dict[Any, Any] = dict(lw=3.0, c=cronoorange, ls="-")
 
     pulse_x = np.linspace(0, 100, 100)
     pulse_y = np.full(100, 0).astype(float)
