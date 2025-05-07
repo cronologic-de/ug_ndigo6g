@@ -111,7 +111,7 @@ effectively cutting the dynamic range in half
 (see :numref:`Figure %s<Fig 2.6>`).
 By shifting the DC baseline to one end of the ADC range, the input range
 can be used fully, providing the maximum dynamic range. The analog offset
-can be set between :math:`\pm` 0.5 |nbws| V.
+can be set between :math:`\pm` 0.5 V.
 
 
 .. _Fig 2.5:
@@ -123,6 +123,23 @@ can be set between :math:`\pm` 0.5 |nbws| V.
 .. figure:: figures/AnalogOffset_Pulse.*
 
    Asymmetric signal shifted to increase dynamic range.
+
+
+AC-Coupling and Baseline Drift
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Due to the AC-coupling of the analog and digital inputs, a baseline drift may
+occur over time (see :numref:`Figure %s<fig baselinedrift>`). To avoid this problem,
+make sure your input signal fulfills the requirements laid out in
+:numref:`Section %s<analog inputs tech>`.
+
+.. _fig baselinedrift:
+
+.. figure:: figures/baselinedrift.*
+    :width: 50%
+
+    Baseline drift due to AC-coupling. A second pulse close to a first may be influenced
+    by a shifted baseline, as sketched in the lower graph.
 
 
 .. _digital tdc inputs:
