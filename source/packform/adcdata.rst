@@ -39,6 +39,13 @@ Raw data of the ADC is mapped to the range of a signed32 integer (−2\ :sup:`31
 to 2\ :sup:`31` −1). Packet data is of type 
 :c:macro:`CRONO_PACKET_TYPE_32_BIT_SIGNED` and must be cast to ``int32_t``.
 
+.. attention::
+
+    Be aware that in averaging mode, the first two 64-bit words in
+    :cpp:member:`data<crono_packet::data>` are an extended header. See
+    :numref:`Section %s<avrg data format>` for more information.
+
+
 
 :c:macro:`NDIGO6G12_OUTPUT_MODE_RAW`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -34,3 +34,4 @@ Packets are retrieved by :cpp:func:`ndigo6g12_read`. They are of type
     utility
     adcdata
     tdcdata
+    avrgdata
