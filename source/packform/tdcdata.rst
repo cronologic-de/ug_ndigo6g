@@ -18,8 +18,8 @@ the time-frame given by :cpp:member:`ndigo6g12_param_info::tdc_rollover_period`.
     |             |:cpp:member:`crono_packet::timestamp`          |                               | | :code:`0x1`: TDC channel 2   |
     |             |and is given in units of                       |                               | | :code:`0x2`: TDC channel 3   |
     |             |:cpp:member:`ndigo6g12_param_info::tdc_period`.|                               | | :code:`0x3`: TDC channel 4   |
-    |             |                                               |                               | | :code:`0x4`:TRG              |
-    |             |                                               |                               | | :code:`0x5`:GATE             |
+    |             |                                               |                               | | :code:`0x4`: TRG             |
+    |             |                                               |                               | | :code:`0x5`: GATE            |
     |             |                                               |                               | | :code:`0xD`: Dummy data      |
     |             |                                               |                               | | :code:`0xF`: Rollover marker |
     +-------------+-----------------------------------------------+-------------------------------+--------------------------------+
