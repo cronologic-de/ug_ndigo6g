@@ -6,8 +6,9 @@ Data encoding for ADC hits
 :cpp:member:`data<crono_packet::data>`, that is, the packet-data payload, 
 depends on :cpp:member:`ndigo6g12_configuration::output_mode`. The length of 
 the :cpp:member:`data<crono_packet::data>` array is encoded in :cpp:member:`length<crono_packet::length>`. Be 
-aware that :cpp:member:`length<crono_packet::length>` is in multiples of 64 bit, while the size of the fields 
-of :cpp:member:`data<crono_packet::data>` depends on :cpp:member:`type<crono_packet::type>`.
+aware that :cpp:member:`length<crono_packet::length>` is in multiples of 64 bit, while
+the size of the fields of :cpp:member:`data<crono_packet::data>` depends on
+:cpp:member:`type<crono_packet::type>`.
 
 Thus, reading packet data requires the following steps:
 
