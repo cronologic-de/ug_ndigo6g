@@ -14,7 +14,7 @@ the time-frame given by :cpp:member:`ndigo6g12_param_info::tdc_rollover_period`.
     +-------------+----+----+-----------------------------+---+---+---+---+---+-------------------+---+---+---+--------------------+
     | **Data**    | Timestamp                                     | TDC hit flags                 |Channel number                  |
     +-------------+-----------------------------------------------+-------------------------------+--------------------------------+
-    | **Details** |The timestamp is relative to                   | See :ref:`here<tdchitflags>`  | | :code:`0x0`: TDC channel 1   |
+    | **Details** |The timestamp is relative to                   | See below.                    | | :code:`0x0`: TDC channel 1   |
     |             |:cpp:member:`crono_packet::timestamp`          |                               | | :code:`0x1`: TDC channel 2   |
     |             |and is given in units of                       |                               | | :code:`0x2`: TDC channel 3   |
     |             |:cpp:member:`ndigo6g12_param_info::tdc_period`.|                               | | :code:`0x3`: TDC channel 4   |
@@ -45,7 +45,6 @@ the time-frame given by :cpp:member:`ndigo6g12_param_info::tdc_rollover_period`.
       :cpp:member:`crono_packet::timestamp`
       and is given in units of
       :cpp:member:`ndigo6g12_param_info::tdc_period`.
-    - See :numref:`Section %s<tdchitflags>` for an overview of the TDC hit flags.
     - | The channel numbers are:
       | :code:`0x0`: TDC channel 1
       | :code:`0x1`: TDC channel 2
@@ -55,3 +54,8 @@ the time-frame given by :cpp:member:`ndigo6g12_param_info::tdc_rollover_period`.
       | :code:`0x5`: GATE
       | :code:`0xD`: Dummy data
       | :code:`0xF`: Rollover marker
+
+The TDC hit flags are one of the following:
+
+.. doxygengroup:: tdchitflags
+    :content-only:

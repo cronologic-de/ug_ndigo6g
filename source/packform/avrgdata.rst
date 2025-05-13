@@ -42,3 +42,14 @@ containing more information, as shown in the following bit table.
         \item \texttt{0x08}: stopped by software
         \item \texttt{0x10}: stopped by overflow
     \end{itemize}
+
+The following data words contain the raw ADC data mapped to the range of a signed32
+integer (−2\ :sup:`31` to 2\ :sup:`31` −1). Thus, :cpp:member:`crono_packet::data`
+must be cast to ``int32_t`` and :cpp:member:`crono_packet::length` must be multiplied
+by 2 **taking into account the extended header**. That is,
+
+.. code-block:: c
+
+    uint32_t extended_header_length = 2;
+    uint32_t sample_count = ((pkt->length - extended_header_length) * 2);
+    int32_t* adc_data = (int32_t*)(pkt->data + offset);

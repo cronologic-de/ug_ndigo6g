@@ -64,6 +64,7 @@ User Guide
     | Documented possible baseline drift due to the AC coupling
     | Updated :numref:`Figures %s<Fig 2.5>` and :numref:`%s<Fig 2.6>` to work in dark mode
     | Improved Averager documentation
+    | Revised documentation of :cpp:struct:`crono_packet`
 
 1.3.0 — 2025-04-10
     | Documented firmware update procedure
