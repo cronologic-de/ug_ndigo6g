@@ -8,7 +8,7 @@
         <name>NDIGO6G12_APP_TYPE_AVRG</name>
         <initializer>5</initializer>
         <briefdescription>
-<para>Averaging mode. </para>
+<para>Averaging mode at 6.4 Gsps. </para>
         </briefdescription>
         <detaileddescription>
 <para><verbatim>embed:rst:leading-asterisk

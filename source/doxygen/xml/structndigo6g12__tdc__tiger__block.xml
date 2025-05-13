@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1517" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1517" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1524" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1524" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1525" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1525" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1532" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1532" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a19337455e0a99f687d18ff1c7e20ff96" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1535" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1535" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1542" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1542" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a37722a150250e2a5a98e5e0d11e53449" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -69,12 +69,12 @@
 <para>The time from the first input signal seen in the idle state until the TiGer outputs a signal. </para>
         </briefdescription>
         <detaileddescription>
-<para>In multiples of 5<nonbreakablespace/>ns. 0 <le/> <computeroutput>start</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>start</computeroutput> <le/> <computeroutput>stop</computeroutput>.</para>
+<para>In multiples of 5&#160;ns. 0 &#8804; <computeroutput>start</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>start</computeroutput> &#8804; <computeroutput>stop</computeroutput>.</para>
 <para>Default is 0. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1544" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1544" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1551" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1551" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a6c0af9f2e97842405fb15ed952ef2976" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -86,13 +86,13 @@
 <para>The number of samples from leaving the idle state until the TiGer output is reset. </para>
         </briefdescription>
         <detaileddescription>
-<para>In multiples of 5<nonbreakablespace/>ns. 0 <le/> <computeroutput>stop</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>stop</computeroutput> <ge/> <computeroutput>start</computeroutput>.</para>
+<para>In multiples of 5&#160;ns. 0 &#8804; <computeroutput>stop</computeroutput> &lt; 2<superscript>16</superscript>, while <computeroutput>stop</computeroutput> &#8805; <computeroutput>start</computeroutput>.</para>
 <para>Note that the maximum length for bipolar pulses is given by <ref refid="group__tigerstop_1gafdf751fd3bdecfe23abce68ef14a8d65" kindref="member">NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</ref>.</para>
 <para>Default is 1. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1555" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1555" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1562" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1562" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__tdc__tiger__block_1a09bf0a0c15c4905391944154b116a637" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1564" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1564" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1571" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1571" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -117,7 +117,7 @@
     <detaileddescription>
 <para>The configuration is similiar to <ref refid="structndigo6g12__gating__block" kindref="compound">ndigo6g12_gating_block</ref>. </para>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="1506" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1506" bodyend="1565"/>
+    <location file="source/ndigo6g12_interface.h" line="1513" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1513" bodyend="1572"/>
     <listofallmembers>
       <member refid="structndigo6g12__tdc__tiger__block_1a1ea5d0cb93f22f7d0fdf804bd68c3326" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>mode</name></member>
       <member refid="structndigo6g12__tdc__tiger__block_1abef0189ea0a3a1cd77f2cb2c1d94d045" prot="public" virt="non-virtual"><scope>ndigo6g12_tdc_tiger_block</scope><name>negate</name></member>

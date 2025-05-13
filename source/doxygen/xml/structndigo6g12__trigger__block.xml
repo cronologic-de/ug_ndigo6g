@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1298" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1298" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1305" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1305" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a19337455e0a99f687d18ff1c7e20ff96" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1308" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1308" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1315" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a2c5c3f6d832916c465850cf9a684237e" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1319" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1319" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1326" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1326" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1aa313c7cca7f719735e68839e5f9ec632" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -60,14 +60,14 @@
         <name>precursor</name>
         <qualifiedname>ndigo6g12_trigger_block::precursor</qualifiedname>
         <briefdescription>
-<para>Precursor in multiples of 5<nonbreakablespace/>ns. </para>
+<para>Precursor in multiples of 5&#160;ns. </para>
         </briefdescription>
         <detaileddescription>
 <para>The amount of data preceding a trigger that is captured. The maximum is <ref refid="group__triggerblockdefs_1gaff5fb5d6321cb5739e498a8d6004d98a" kindref="member">NDIGO6G12_MAX_PRECURSOR</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1326" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1326" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1333" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1333" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a9f59b34b1f25fe00023291b678246bcc" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -76,16 +76,16 @@
         <name>length</name>
         <qualifiedname>ndigo6g12_trigger_block::length</qualifiedname>
         <briefdescription>
-<para>Length of the postcursor in multiples of 5<nonbreakablespace/>ns. </para>
+<para>Length of the postcursor in multiples of 5&#160;ns. </para>
         </briefdescription>
         <detaileddescription>
 <para>The total amount of data that is recorded in addition to the trigger window is controlled by <computeroutput>length</computeroutput> and <computeroutput>precursor</computeroutput>. <computeroutput>precursor</computeroutput> determines the amount of data before the trigger window, <computeroutput>length</computeroutput> the amount of data after the trigger condition was false the first time.</para>
-<para>In <ref refid="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" kindref="member">edge-trigger mode </ref>, the <emphasis>trigger window</emphasis> is always 1 (i.e., 5<nonbreakablespace/>ns long). Otherwise, (level-trigger mode) the trigger window is as long as the trigger condition was fulfilled.</para>
+<para>In <ref refid="structndigo6g12__trigger_1a4dbbda0d4544380bc4ba68ae114139d4" kindref="member">edge-trigger mode </ref>, the <emphasis>trigger window</emphasis> is always 1 (i.e., 5&#160;ns long). Otherwise, (level-trigger mode) the trigger window is as long as the trigger condition was fulfilled.</para>
 <para>The maximum value is <ref refid="group__constants_1ga0d9550cfdb01cb823407984f781a4696" kindref="member">NDIGO6G12_FIFO_DEPTH</ref> minus <ref refid="structndigo6g12__trigger__block_1aa313c7cca7f719735e68839e5f9ec632" kindref="member">ndigo6g12_trigger_block::precursor</ref> minus <emphasis>trigger window</emphasis>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1343" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1343" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1350" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1350" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a09bf0a0c15c4905391944154b116a637" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1352" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1352" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1359" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1359" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a606c376138bec8a53d55cc54453ffdf8" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1366" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1366" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1373" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1373" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__trigger__block_1a99fb48ea8804c4690d830b2037e9e405" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1386" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1386" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1393" column="12" bodyfile="source/ndigo6g12_interface.h" bodystart="1393" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -149,7 +149,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="1294" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1294" bodyend="1387"/>
+    <location file="source/ndigo6g12_interface.h" line="1301" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1301" bodyend="1394"/>
     <listofallmembers>
       <member refid="structndigo6g12__trigger__block_1a4cd2d3ea697c9b380a0a38e0b34db914" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>enabled</name></member>
       <member refid="structndigo6g12__trigger__block_1a606c376138bec8a53d55cc54453ffdf8" prot="public" virt="non-virtual"><scope>ndigo6g12_trigger_block</scope><name>gates</name></member>

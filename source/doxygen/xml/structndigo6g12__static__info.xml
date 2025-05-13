@@ -47,8 +47,8 @@
         </briefdescription>
         <detaileddescription>
 <para>The board revision number can be read from a register. It is a four bit number that changes when the schematic of the board is changed.<itemizedlist>
-<listitem><para>0: Experimental version of the first board. Labeled <ldquo/>Rev.<nonbreakablespace/>1<rdquo/>.</para>
-</listitem><listitem><para>2: First commercial version. Labeled <ldquo/>Rev.<nonbreakablespace/>2<rdquo/> </para>
+<listitem><para>0: Experimental version of the first board. Labeled &#8220;Rev.&#160;1&#8221;.</para>
+</listitem><listitem><para>2: First commercial version. Labeled &#8220;Rev.&#160;2&#8221; </para>
 </listitem></itemizedlist>
 </para>
         </detaileddescription>
@@ -287,7 +287,7 @@
         </briefdescription>
         <detaileddescription>
 <para>The clock frequency of the auto trigger in Hz used for the calculations of <ref refid="structndigo6g12__configuration_1ab66c682cd186a6226dd8133b03ca55b8" kindref="member">ndigo6g12_configuration::auto_trigger_period</ref>.</para>
-<para>Fixed at 200<nonbreakablespace/>MHz. </para>
+<para>Fixed at 200&#160;MHz. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

@@ -22,7 +22,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Use an external 10<nonbreakablespace/>MHz clock as reference. The input is the SMA socket located on the board. </para>
+<para>Use an external 10&#160;MHz clock as reference. The input is the SMA socket located on the board. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -34,7 +34,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Use an external 10<nonbreakablespace/>MHz clock as reference. The input is the TRG LEMO connector located on the slot bracket. </para>
+<para>Use an external 10&#160;MHz clock as reference. The input is the TRG LEMO connector located on the slot bracket. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

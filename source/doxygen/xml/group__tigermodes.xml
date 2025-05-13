@@ -20,10 +20,10 @@
         <name>NDIGO6G12_TIGER_OUTPUT</name>
         <initializer>1</initializer>
         <briefdescription>
-<para>Pulse height is approximately 2<nonbreakablespace/>V. </para>
+<para>Pulse height is approximately 2&#160;V. </para>
         </briefdescription>
         <detaileddescription>
-<para>Connected hardware must not drive any signals to the connectors used as outputs, as doing so could damage both the Ndigo6G-12 and the external hardware. We recommend to only use short pulses to avoid undesirable baseline shift due to the AC coupling, but the device does not pose any restrictions on the duty cycle. This mode can be used as a clock output with a frequency of 75/N<nonbreakablespace/>MHz (for integer N). </para>
+<para>Connected hardware must not drive any signals to the connectors used as outputs, as doing so could damage both the Ndigo6G-12 and the external hardware. We recommend to only use short pulses to avoid undesirable baseline shift due to the AC coupling, but the device does not pose any restrictions on the duty cycle. This mode can be used as a clock output with a frequency of 75/N&#160;MHz (for integer N). </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -33,7 +33,7 @@
         <name>NDIGO6G12_TIGER_BIDI</name>
         <initializer>2</initializer>
         <briefdescription>
-<para>Pulse height is approximately 1<nonbreakablespace/>V. </para>
+<para>Pulse height is approximately 1&#160;V. </para>
         </briefdescription>
         <detaileddescription>
 <para>The LEMO connector may be used as input with OR function. Use short pulses to keep the probability of collision and the effect on the baseline low. </para>
@@ -50,7 +50,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Not supported for inputs TRG and GATE.</para>
-<para>In this mode, the connector creates bipolar pulses with 1<nonbreakablespace/>V amplitude. The connector can still be used as an input. Pulses have no effect on the baseline offset.</para>
+<para>In this mode, the connector creates bipolar pulses with 1&#160;V amplitude. The connector can still be used as an input. Pulses have no effect on the baseline offset.</para>
 <para>The TiGer should be configured with <computeroutput>start</computeroutput>= <computeroutput>stop + 1</computeroutput> for minimium-width bipolar pulses. The maximum bipolar pulse width is <ref refid="group__tigerstop_1gafdf751fd3bdecfe23abce68ef14a8d65" kindref="member">NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</ref>. </para>
         </detaileddescription>
         <inbodydescription>

@@ -92,7 +92,7 @@
         <name>perf_derating</name>
         <qualifiedname>ndigo6g12_init_parameters::perf_derating</qualifiedname>
         <briefdescription>
-<para>Default 0, corresponding to 1.6, 3.2, or 6.4<nonbreakablespace/>Gsps (depending on <computeroutput>application_type</computeroutput>). </para>
+<para>Default 0, corresponding to 1.6, 3.2, or 6.4&#160;Gsps (depending on <computeroutput>application_type</computeroutput>). </para>
         </briefdescription>
         <detaileddescription>
 <para>For internal use only. Do not change. </para>

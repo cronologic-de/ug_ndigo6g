@@ -48,7 +48,7 @@
         <name>fpga_temperature</name>
         <qualifiedname>ndigo6g12_fast_info::fpga_temperature</qualifiedname>
         <briefdescription>
-<para>Temperature of the FPGA in <deg/>C. </para>
+<para>Temperature of the FPGA in &#176;C. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -213,7 +213,7 @@
         <name>temp4633_1</name>
         <qualifiedname>ndigo6g12_fast_info::temp4633_1</qualifiedname>
         <briefdescription>
-<para>Shows temperature of voltage regulartor U3_1 in <deg/>C. </para>
+<para>Shows temperature of voltage regulartor U3_1 in &#176;C. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -228,7 +228,7 @@
         <name>temp4633_2</name>
         <qualifiedname>ndigo6g12_fast_info::temp4633_2</qualifiedname>
         <briefdescription>
-<para>Shows temperature of voltage regulator U3_2 in <deg/>C. </para>
+<para>Shows temperature of voltage regulator U3_2 in &#176;C. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -243,7 +243,7 @@
         <name>temp4644</name>
         <qualifiedname>ndigo6g12_fast_info::temp4644</qualifiedname>
         <briefdescription>
-<para>Shows temperature of voltage regulator U4 in <deg/>C. </para>
+<para>Shows temperature of voltage regulator U4 in &#176;C. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -258,7 +258,7 @@
         <name>tdc1_temp</name>
         <qualifiedname>ndigo6g12_fast_info::tdc1_temp</qualifiedname>
         <briefdescription>
-<para>Temperature of the TDC-chip in <deg/>C. </para>
+<para>Temperature of the TDC-chip in &#176;C. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -289,7 +289,7 @@
         <name>ev12_temp</name>
         <qualifiedname>ndigo6g12_fast_info::ev12_temp</qualifiedname>
         <briefdescription>
-<para>Temperature of the ADC in <deg/>C. </para>
+<para>Temperature of the ADC in &#176;C. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -307,7 +307,7 @@
 <para>Alert bits from temperature sensor and the system monitor. </para>
         </briefdescription>
         <detaileddescription>
-<para>Bit 0 is set if the TDC temperature exceeds 140<deg/>C. In this case the TDC shut down and the device needs to be reinitialized. <verbatim>embed:rst:leading-asterisk
+<para>Bit 0 is set if the TDC temperature exceeds 140&#176;C. In this case the TDC shut down and the device needs to be reinitialized. <verbatim>embed:rst:leading-asterisk
 *          Is one of the following:
 *          
 *          .. doxygengroup:: alertdefs

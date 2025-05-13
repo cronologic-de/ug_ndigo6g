@@ -14,7 +14,7 @@
 <para>Bandwidth. </para>
         </briefdescription>
         <detaileddescription>
-<para>4.5 or 6.5<nonbreakablespace/>GHz depending on <ref refid="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" kindref="member">ndigo6g12_configuration::extended_bandwidth</ref>. </para>
+<para>4.5 or 6.5&#160;GHz depending on <ref refid="structndigo6g12__configuration_1aa4b148b7fc185e4561dd7e3e1b9414a6" kindref="member">ndigo6g12_configuration::extended_bandwidth</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -30,7 +30,7 @@
 <para>ADC sample resolution. </para>
         </briefdescription>
         <detaileddescription>
-<para>Always 12<nonbreakablespace/>bit. </para>
+<para>Always 12&#160;bit. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -46,7 +46,7 @@
 <para>Actual ADC sample rate of currently sampled data. </para>
         </briefdescription>
         <detaileddescription>
-<para>Depending on <ref refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" kindref="member">ndigo6g12_configuration::adc_mode</ref>, that is, <computeroutput>sample_rate</computeroutput> = 6.4<nonbreakablespace/>GHz / <ref refid="structndigo6g12__param__info_1a178795099d0608972755dfef8d8367e3" kindref="member">channels</ref>. </para>
+<para>Depending on <ref refid="structndigo6g12__configuration_1a05331e51c932e355bad5f7d88fca6920" kindref="member">ndigo6g12_configuration::adc_mode</ref>, that is, <computeroutput>sample_rate</computeroutput> = 6.4&#160;GHz / <ref refid="structndigo6g12__param__info_1a178795099d0608972755dfef8d8367e3" kindref="member">channels</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
