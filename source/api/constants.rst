@@ -13,14 +13,18 @@ Trigger and Gating Block Sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: sourcedefs
+    :no-title:
 
 Function return values
 ~~~~~~~~~~~~~~~~~~~~~~
 .. doxygengroup:: funcreturns
+    :no-title:
 
 PCIe Information
 ~~~~~~~~~~~~~~~~
 
 .. doxygengroup:: pciecorrectableerrors
+    :no-title:
 
 .. doxygengroup:: pcieuncorrectableerrors
+    :no-title:
