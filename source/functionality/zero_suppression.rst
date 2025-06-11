@@ -18,6 +18,7 @@ realize much more complex scenarios using the *Trigger* and *Gating Blocks*
 
 .. _Figure Zero Suppression:
 .. figure:: ../figures/ZeroSupp.*
+    :width: 70%
 
     Simple zero suppression: Only data
     with values above a threshold are written to the PC.
