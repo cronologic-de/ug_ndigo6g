@@ -52,4 +52,7 @@ by 2 **taking into account the extended header**. That is,
 
     uint32_t extended_header_length = 2;
     uint32_t sample_count = ((pkt->length - extended_header_length) * 2);
-    int32_t* adc_data = (int32_t*)(pkt->data + offset);
+    int32_t* adc_data = (int32_t*)(pkt->data + extended_header_length);
+    for (uint32_t i = 0; i < sample_count; i++) {
+        /* work with adc_data[i] */
+    }
