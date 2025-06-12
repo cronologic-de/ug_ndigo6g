@@ -5,6 +5,7 @@ Gating Blocks
 
 .. _fig gatingblock:
 .. figure:: ../figures/GatingBlocks_Ndigo6G-12.*
+    :width: 90%
 
     Gating Blocks: Each gating block can use an arbitrary combination
     of inputs to trigger its state machine. The outputs can be individually
