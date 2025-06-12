@@ -92,6 +92,11 @@ figcaption {
   padding-bottom: 2.25em;
 }
 
+figure, .figure {
+  padding-top: 1.2rem;
+}
+
+
 body {
   font-feature-settings: "tnum" 1;
 }
