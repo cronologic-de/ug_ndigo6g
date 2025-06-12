@@ -301,7 +301,7 @@ def plot_pulse():
         format_ax(ax)
 
     ap.make_me_nice(fix_figwidth=True)
-    ap.savefig("*_pulse", ftype=("pdf", "png"), transparent=True, dpi=300)
+    ap.savefig("*_pulse", ftype=("pdf", "svg"), transparent=True, dpi=300)
 
 
 def plot_sine():
@@ -377,7 +377,7 @@ def plot_sine():
         format_ax(ax)
 
     ap.make_me_nice(fix_figwidth=True)
-    ap.savefig("*_sine", ftype=("pdf", "png"), transparent=True, dpi=300)
+    ap.savefig("*_sine", ftype=("pdf", "svg"), transparent=True, dpi=300)
 
 
 if __name__ == "__main__":

@@ -35,11 +35,13 @@ only if data exceeds the threshold (edge triggering, see
 
 .. _fig level trigger:
 .. figure:: ../figures/level-trigger.*
+   :width: 90%
 
    Example for level triggering.
 
 .. _fig edge trigger:
 .. figure:: ../figures/edge-trigger.*
+   :width: 90%
 
    Example for edge triggering.
 
@@ -61,17 +63,20 @@ suppression>`).
 
 .. _Fig 2.13:
 .. figure:: ../figures/4ChannelTriggering.*
+   :width: 90%
 
    Triggering in 4-channel mode at 8 samples per clock cycle.
 
 .. _Fig 2.14:
 .. figure:: ../figures/2ChannelTriggering.*
+   :width: 90%
 
    Triggering in 2-channel mode at 16 samples per clock cycle.
 
 
 .. _Fig 2.15:
 .. figure:: ../figures/1ChannelTriggering.*
+   :width: 90%
 
    Triggering in 1-channel mode at 32 samples per clock cycle.
 
@@ -113,6 +118,7 @@ See also :numref:`Figure %s<fig triggermatrix>`.
 
 .. _Fig 2.16:
 .. figure:: ../figures/analog-trigger.*
+   :width: 70%
 
    From the ADC inputs, a trigger unit creates an input flag for
    the trigger matrix. Each digitizer channel (A, B, C, D) has two trigger
@@ -120,7 +126,7 @@ See also :numref:`Figure %s<fig triggermatrix>`.
 
 .. _Fig 2.17:
 .. figure:: ../figures/DigitalInput.*
-   :width: 50%
+   :width: 70%
 
    The digital inputs TDC0, TDC1, TDC2, TDC3, TRG, and GATE
    have simpler trigger units.

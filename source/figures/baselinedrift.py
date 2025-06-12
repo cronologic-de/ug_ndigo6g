@@ -114,7 +114,7 @@ def plot():
         ax.set_xlim(-0, 105)
 
     ap.make_me_nice()
-    ap.savefig("*", ftype=("pdf", "png"), dpi=300, transparent=True)
+    ap.savefig("*", ftype=("pdf", "svg"), dpi=300, transparent=True)
 
 
 if __name__ == "__main__":

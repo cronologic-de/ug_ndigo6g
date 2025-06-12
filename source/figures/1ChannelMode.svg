@@ -2,8 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="684.70142"
-   height="298.24326"
+   width="603.297"
+   height="254.64345"
    id="svg2"
    version="1.1"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
@@ -63,9 +63,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="470.47854"
-     inkscape:cy="105.81348"
+     inkscape:zoom="2.8"
+     inkscape:cx="275.71428"
+     inkscape:cy="159.82143"
      inkscape:document-units="px"
      inkscape:current-layer="g3437"
      showgrid="false"
@@ -89,7 +89,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -97,522 +96,514 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(80.815332,-380.64596)">
+     transform="translate(24.168015,-399.36287)">
     <g
        id="g3437"
        transform="translate(-34.300543,312.42991)">
-      <rect
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect3866"
-         width="856.10547"
-         height="358.96259"
-         x="-19.208269"
-         y="-11.850744"
-         transform="matrix(0.77735823,0,0,0.77735823,-23.537425,85.47398)" />
       <text
          id="text3477-0"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="213.0266"
          x="315.1084"
          xml:space="preserve">1.6 Gsps</text>
       <text
          id="text3477-1"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="213.0266"
          x="416.1084"
          xml:space="preserve">1.6 Gsps</text>
       <text
          id="text3477-6"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="213.0266"
          x="517.1084"
          xml:space="preserve">1.6 Gsps</text>
       <text
          id="text3439"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="192.68471"
          x="9.5027723"
          xml:space="preserve">CLK</text>
       <path
          id="path3449"
          d="M 42.846225,188.81849 H 63.089588"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3451"
          d="m 70.384497,188.81849 -9.66575,4.86327 c 1.519774,-3.03955 1.519774,-6.62621 0,-9.66575 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3453"
          d="M 70.384497,161.28022 V 234.7764 H 134.70126 V 161.28022 Z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3455"
          d="M 70.384497,234.7764 H 134.70126 V 161.28022 H 70.384497 Z"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <text
          id="text3457"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="194.41125"
          x="84.427193"
          xml:space="preserve">Clock </text>
       <text
          id="text3459"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="209.97372"
          x="85.399849"
          xml:space="preserve">circuit</text>
       <text
          id="text3461"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#569fd6;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#376eb5;fill-opacity:1"
          y="244.98927"
          x="267.28619"
          xml:space="preserve">Inverted</text>
       <text
          id="text3465"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#569fd6;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#376eb5;fill-opacity:1"
          y="260.55173"
          x="266.5752"
          xml:space="preserve">1.6 GHz</text>
       <path
          id="path3467"
          d="M 52.02565,317.5128 H 612.63922 V 87.723243 H 52.02565 Z"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3469"
          d="m 134.70126,220.06501 h 66.26207"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3471"
          d="m 208.25823,220.06501 -9.66575,4.86327 c 1.51977,-3.03954 1.51977,-6.62621 0,-9.66575 v 0 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3473"
          d="m 208.25823,161.28022 h 64.31676 v 62.49303 l -32.15838,29.42279 -32.15838,-29.42279 z"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <text
          id="text3475"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="197.32922"
          x="220.59877"
          xml:space="preserve">ADC A</text>
       <text
          id="text3477"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="213.02681"
          x="214.44838"
          xml:space="preserve">1.6 Gsps</text>
       <path
          id="path3481"
          d="m 309.35348,161.28022 h 64.31676 v 62.49303 l -32.15838,29.42279 -32.15838,-29.42279 z"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <text
          id="text3483"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="197.32922"
          x="321.75482"
          xml:space="preserve">ADC B</text>
       <path
          id="path3489"
          d="m 410.44873,161.28022 h 64.31675 v 62.49303 l -32.15837,29.42279 -32.15838,-29.42279 z"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <text
          id="text3491"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="197.32922"
          x="421.93817"
          xml:space="preserve">ADC C</text>
       <path
          id="path3497"
          d="m 511.54397,161.28022 h 64.31677 v 62.49303 l -32.15838,29.42279 -32.15839,-29.42279 z"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <text
          id="text3499"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="197.32922"
          x="523.09424"
          xml:space="preserve">ADC D</text>
       <path
          id="path3505"
          d="M 233.24328,299.09316 V 263.22654"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3507"
          d="m 233.24328,255.93163 4.80248,9.66575 c -3.03954,-1.51977 -6.56541,-1.51977 -9.60496,0 v 0 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3509"
          d="M 247.95468,280.73431 V 263.22654"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3511"
          d="m 247.95468,255.93163 4.80248,9.66575 c -3.03954,-1.51977 -6.56541,-1.51977 -9.60496,0 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3513"
          d="M 333.97379,299.09316 V 263.22654"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3515"
          d="m 333.97379,255.93163 4.80248,9.66575 c -3.03955,-1.51977 -6.56542,-1.51977 -9.60496,0 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3517"
          d="M 348.68519,280.73431 V 263.22654"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3519"
          d="m 348.68519,255.93163 4.80248,9.66575 c -3.03955,-1.51977 -6.62621,-1.51977 -9.66575,0 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3521"
          d="M 435.43379,299.09316 V 263.22654"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3523"
          d="m 435.43379,255.93163 4.80248,9.66575 c -3.03955,-1.51977 -6.56542,-1.51977 -9.60496,0 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3525"
          d="M 450.14517,280.73431 V 263.22654"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3527"
          d="m 450.14517,255.93163 4.80248,9.66575 c -3.03954,-1.51977 -6.6262,-1.51977 -9.60496,0 v 0 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <text
          id="text3533"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="341.42206"
          x="347.76093"
          xml:space="preserve">Channel A or D</text>
       <path
          id="path3547"
          d="m 189.83859,142.86058 v 62.49303"
-         style="fill:none;stroke:#569fd6;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#376eb5;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3549"
          d="M 281.75442,142.86058 H 189.83859"
-         style="fill:none;stroke:#569fd6;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#376eb5;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3551"
          d="m 281.75442,142.86058 v 55.13733"
-         style="fill:none;stroke:#569fd6;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#376eb5;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3553"
          d="m 281.75442,197.99791 h 20.30415"
-         style="fill:none;stroke:#569fd6;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#376eb5;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3555"
          d="m 309.35348,197.99791 -9.66575,4.86327 c 1.51977,-3.03954 1.51977,-6.6262 0,-9.66575 v 0 z"
-         style="fill:#569fd6;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#376eb5;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3557"
          d="m 382.84966,128.14918 v 69.84873"
-         style="fill:none;stroke:#006266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#ed7800;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3559"
          d="m 382.84966,197.99791 h 20.30416"
-         style="fill:none;stroke:#006266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#ed7800;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3561"
          d="m 410.44873,197.99791 -9.66576,4.86327 c 1.51978,-3.03954 1.51978,-6.6262 0,-9.66575 v 0 z"
-         style="fill:#006266;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#ed7800;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3563"
          d="m 493.12434,113.49858 v 84.49933"
-         style="fill:none;stroke:#944266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#0070c0;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3565"
          d="m 493.12434,197.99791 h 11.12473"
-         style="fill:none;stroke:#944266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#0070c0;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3567"
          d="m 511.54397,197.99791 -9.66575,4.86327 c 1.51978,-3.03954 1.51978,-6.6262 0,-9.66575 v 0 z"
-         style="fill:#944266;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#0070c0;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <text
          id="text3569"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="244.98927"
          x="146.67706"
          xml:space="preserve">In</text>
       <text
          id="text3571"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="244.98927"
          x="157.37627"
          xml:space="preserve">-</text>
       <text
          id="text3573"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="244.98927"
          x="161.26688"
          xml:space="preserve">phase</text>
       <text
          id="text3577"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#000000"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#8c8c8c"
          y="260.55173"
          x="146.93874"
          xml:space="preserve">1.6 GHz</text>
       <path
          id="path3579"
          d="m 174.88403,128.14918 v 62.49303"
-         style="fill:none;stroke:#006266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#ed7800;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3581"
          d="M 382.84966,128.14918 H 174.88403"
-         style="fill:none;stroke:#006266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#ed7800;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3583"
          d="M 247.95468,280.73431 H 348.68519"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3585"
          d="M 233.24328,299.09316 H 384.67339"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3587"
          d="M 536.16428,280.73431 V 263.22654"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3589"
          d="m 536.16428,255.93163 4.80248,9.66575 c -3.03954,-1.51977 -6.56542,-1.51977 -9.60496,0 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3591"
          d="M 550.87568,299.15395 V 263.22654"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3593"
          d="m 550.87568,255.93163 4.80248,9.66575 c -3.03955,-1.51977 -6.62621,-1.51977 -9.66575,0 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3595"
          d="m 450.14517,280.73431 h 86.01911"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3597"
          d="m 450.14517,278.05951 c -1.51976,0 -2.73558,1.21582 -2.73558,2.6748 0,1.51977 1.21582,2.73559 2.73558,2.73559 1.51978,0 2.67481,-1.21582 2.67481,-2.73559 0,-1.45898 -1.15503,-2.6748 -2.67481,-2.6748"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3599"
          d="m 450.14517,278.05951 c -1.51976,0 -2.73558,1.21582 -2.73558,2.6748 0,1.51977 1.21582,2.73559 2.73558,2.73559 1.51978,0 2.67481,-1.21582 2.67481,-2.73559 0,-1.45898 -1.15503,-2.6748 -2.67481,-2.6748"
-         style="fill:none;stroke:#000000;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3601"
          d="m 384.67339,299.09316 166.20229,0.0608"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3603"
          d="m 435.43379,296.41836 c -1.51978,0 -2.7356,1.21582 -2.7356,2.6748 0,1.51978 1.21582,2.73559 2.7356,2.73559 1.51976,0 2.73558,-1.21581 2.73558,-2.73559 0,-1.45898 -1.21582,-2.6748 -2.73558,-2.6748"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3605"
          d="m 435.43379,296.41836 c -1.51978,0 -2.7356,1.21582 -2.7356,2.6748 0,1.51978 1.21582,2.73559 2.7356,2.73559 1.51976,0 2.73558,-1.21581 2.73558,-2.73559 0,-1.45898 -1.21582,-2.6748 -2.73558,-2.6748"
-         style="fill:none;stroke:#000000;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3607"
          d="M 174.88403,190.64221 H 134.70126"
-         style="fill:none;stroke:#006266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#ed7800;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3609"
          d="M 160.47659,175.68766 H 134.70126"
-         style="fill:none;stroke:#944266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#0070c0;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3611"
          d="M 189.83859,205.35361 H 134.70126"
-         style="fill:none;stroke:#569fd6;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#376eb5;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3613"
          d="M 160.47659,113.49858 H 493.12434"
-         style="fill:none;stroke:#944266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#0070c0;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3615"
          d="m 160.47659,113.49858 v 62.18908"
-         style="fill:none;stroke:#944266;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#0070c0;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <text
          id="text3617"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#006266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#ed7800;fill-opacity:1"
          y="138.96997"
          x="386.92267"
          xml:space="preserve">90</text>
       <text
          id="text3619"
-         style="font-style:normal;font-weight:normal;font-size:8.75389px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#006266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:8.75389px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#ed7800;fill-opacity:1"
          y="135.07935"
          x="401.51245"
          xml:space="preserve">0</text>
       <text
          id="text3621"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#006266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#ed7800;fill-opacity:1"
          y="138.96997"
          x="410.26639"
          xml:space="preserve">phase</text>
       <text
          id="text3623"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#339966"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#ed7800;fill-opacity:1"
          y="138.96997"
          x="445.28189"
          xml:space="preserve">-</text>
       <text
          id="text3625"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#006266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#ed7800;fill-opacity:1"
          y="138.96997"
          x="450.14517"
          xml:space="preserve">shifted</text>
       <text
          id="text3629"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#006266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#ed7800;fill-opacity:1"
          y="154.53242"
          x="388.10226"
          xml:space="preserve">1.6 GHz</text>
       <text
          id="text3631"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#944266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#0070c0;fill-opacity:1"
          y="138.96997"
          x="499.75055"
          xml:space="preserve">270</text>
       <text
          id="text3633"
-         style="font-style:normal;font-weight:normal;font-size:8.75389px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#944266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:8.75389px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#0070c0;fill-opacity:1"
          y="135.07935"
          x="521.14893"
          xml:space="preserve">0</text>
       <text
          id="text3635"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#944266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#0070c0;fill-opacity:1"
          y="138.96997"
          x="528.93018"
          xml:space="preserve">phase</text>
       <text
          id="text3637"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#944266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#0070c0;fill-opacity:1"
          y="138.96997"
          x="564.9184"
          xml:space="preserve">-</text>
       <text
          id="text3639"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#944266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#0070c0;fill-opacity:1"
          y="138.96997"
          x="568.80896"
          xml:space="preserve">shifted</text>
       <text
          id="text3643"
-         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#944266;fill-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.6445px;line-height:0%;font-family:Arial;text-align:start;text-anchor:start;fill:#0070c0;fill-opacity:1"
          y="154.53242"
          x="499.95752"
          xml:space="preserve">1.6 GHz</text>
       <path
          id="path3645"
          d="M 384.67339,326.69223 V 299.09316"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3647"
          d="M 399.38479,326.69223 V 280.73431"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3649"
          d="m 399.38479,280.73431 h 50.76038"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3651"
          d="m 348.68519,280.73431 h 50.6996"
-         style="fill:none;stroke:#000000;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:1.58056px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3653"
          d="m 348.68519,277.99872 c -1.51978,0 -2.7356,1.21582 -2.7356,2.73559 0,1.51977 1.21582,2.73559 2.7356,2.73559 1.45897,0 2.67479,-1.21582 2.67479,-2.73559 0,-1.51977 -1.21582,-2.73559 -2.67479,-2.73559"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3655"
          d="m 348.68519,277.99872 c -1.51978,0 -2.7356,1.21582 -2.7356,2.73559 0,1.51977 1.21582,2.73559 2.7356,2.73559 1.45897,0 2.67479,-1.21582 2.67479,-2.73559 0,-1.51977 -1.21582,-2.73559 -2.67479,-2.73559"
-         style="fill:none;stroke:#000000;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3657"
          d="m 333.97379,296.41836 c -1.51977,0 -2.73559,1.21582 -2.73559,2.6748 0,1.51978 1.21582,2.73559 2.73559,2.73559 1.51977,0 2.73559,-1.21581 2.73559,-2.73559 0,-1.45898 -1.21582,-2.6748 -2.73559,-2.6748"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3659"
          d="m 333.97379,296.41836 c -1.51977,0 -2.73559,1.21582 -2.73559,2.6748 0,1.51978 1.21582,2.73559 2.73559,2.73559 1.51977,0 2.73559,-1.21581 2.73559,-2.73559 0,-1.45898 -1.21582,-2.6748 -2.73559,-2.6748"
-         style="fill:none;stroke:#000000;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3661"
          d="m 399.38479,278.05951 c -1.45899,0 -2.6748,1.21582 -2.6748,2.6748 0,1.51977 1.21581,2.73559 2.6748,2.73559 1.51977,0 2.73559,-1.21582 2.73559,-2.73559 0,-1.45898 -1.21582,-2.6748 -2.73559,-2.6748"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3663"
          d="m 399.38479,278.05951 c -1.45899,0 -2.6748,1.21582 -2.6748,2.6748 0,1.51977 1.21581,2.73559 2.6748,2.73559 1.51977,0 2.73559,-1.21582 2.73559,-2.73559 0,-1.45898 -1.21582,-2.6748 -2.73559,-2.6748"
-         style="fill:none;stroke:#000000;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="path3665"
          d="m 384.67339,296.41836 c -1.45898,0 -2.6748,1.21582 -2.6748,2.6748 0,1.51978 1.21582,2.73559 2.6748,2.73559 1.51977,0 2.73559,-1.21581 2.73559,-2.73559 0,-1.45898 -1.21582,-2.6748 -2.73559,-2.6748"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#8c8c8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <path
          id="path3667"
          d="m 384.67339,296.41836 c -1.45898,0 -2.6748,1.21582 -2.6748,2.6748 0,1.51978 1.21582,2.73559 2.6748,2.73559 1.51977,0 2.73559,-1.21581 2.73559,-2.73559 0,-1.45898 -1.21582,-2.6748 -2.73559,-2.6748"
-         style="fill:none;stroke:#000000;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#8c8c8c;stroke-width:0.303954px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <text
          xml:space="preserve"
@@ -621,7 +612,9 @@
          y="242.97244"
          id="text1"><tspan
            sodipodi:role="line"
-           id="tspan1" /></text>
+           id="tspan1"
+           x="-21.766052"
+           y="242.97244" /></text>
       <text
          xml:space="preserve"
          style="font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, ';fill:#ed7800;stroke:#ed7800;stroke-width:1.173"
@@ -629,7 +622,9 @@
          y="14.677964"
          id="text2"><tspan
            sodipodi:role="line"
-           id="tspan2" /></text>
+           id="tspan2"
+           x="11.568982"
+           y="14.677964" /></text>
     </g>
   </g>
 </svg>
