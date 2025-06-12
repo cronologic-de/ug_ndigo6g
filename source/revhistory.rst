@@ -58,7 +58,7 @@ Driver
 
 User Guide
 ----------
-1.4.0-dev — TBD
+1.4.0 — 2025-06-12
     | Updated documentation of :cpp:member:`ndigo6g12_configuration::output_mode`
     | Updated :cpp:member:`ndigo6g12_param_info::adc_sample_delay` docstring
     | Documented possible baseline drift due to the AC coupling
