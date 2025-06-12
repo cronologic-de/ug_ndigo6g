@@ -866,7 +866,7 @@ def main():
 
     ap.make_me_nice(fix_figwidth=True)
 
-    ap.savefig("*", ftype=("pdf", "png"), dpi=192, transparent=True)
+    ap.savefig("*", ftype=("pdf", "svg"), dpi=192, transparent=True)
 
 
 if __name__ == "__main__":
