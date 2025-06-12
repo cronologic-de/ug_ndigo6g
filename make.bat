@@ -2,6 +2,12 @@
 
 pushd %~dp0
 
+if "%OS%"=="Windows_NT" (
+    set PY_CMD=py
+) else (
+    set PY_CMD=python3
+)
+
 REM Command file for Sphinx documentation
 
 if "%SPHINXBUILD%" == "" (
@@ -26,6 +32,7 @@ if errorlevel 9009 (
 if "%1" == "" goto help
 
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -a -E
+%PY_CMD% modify_api_sidebar.py %BUILDDIR%/html
 goto end
 
 :help
