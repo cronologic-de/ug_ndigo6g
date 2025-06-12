@@ -36,12 +36,14 @@ only if data exceeds the threshold (edge triggering, see
 .. _fig level trigger:
 .. figure:: ../figures/level-trigger.*
    :width: 90%
+   :alt: Example for level triggering of the Ndigo6G-12.
 
    Example for level triggering.
 
 .. _fig edge trigger:
 .. figure:: ../figures/edge-trigger.*
    :width: 90%
+   :alt: Example for edge triggering of the Ndigo6G-12.
 
    Example for edge triggering.
 
@@ -64,11 +66,13 @@ suppression>`).
 .. _Fig 2.13:
 .. figure:: ../figures/4ChannelTriggering.*
    :width: 90%
+   :alt: Ndigo6G-12 triggering in 4-channel mode
 
    Triggering in 4-channel mode at 8 samples per clock cycle.
 
 .. _Fig 2.14:
 .. figure:: ../figures/2ChannelTriggering.*
+   :alt: Ndigo6G-12 triggering in 2-channel mode
    :width: 90%
 
    Triggering in 2-channel mode at 16 samples per clock cycle.
@@ -76,6 +80,7 @@ suppression>`).
 
 .. _Fig 2.15:
 .. figure:: ../figures/1ChannelTriggering.*
+   :alt: Ndigo6G-12 triggering in 1-channel mode
    :width: 90%
 
    Triggering in 1-channel mode at 32 samples per clock cycle.
@@ -118,6 +123,7 @@ See also :numref:`Figure %s<fig triggermatrix>`.
 
 .. _Fig 2.16:
 .. figure:: ../figures/analog-trigger.*
+   :alt: Logic of the analog inputs.
    :width: 70%
 
    From the ADC inputs, a trigger unit creates an input flag for
@@ -127,6 +133,7 @@ See also :numref:`Figure %s<fig triggermatrix>`.
 .. _Fig 2.17:
 .. figure:: ../figures/DigitalInput.*
    :width: 70%
+   :alt: Logic of the digital inputs.
 
    The digital inputs TDC0, TDC1, TDC2, TDC3, TRG, and GATE
    have simpler trigger units.
@@ -134,6 +141,7 @@ See also :numref:`Figure %s<fig triggermatrix>`.
 
 .. _fig triggermatrix:
 .. figure:: ../figures/triggermatrix-Ndigo6G-12.*
+    :alt: Triggermatrix of the Ndigo6G-12
 
     Trigger Matrix. The eight trigger signals from the four analog channels and
     the trigger signals from the six digital channels (four TDC channels, TRG,

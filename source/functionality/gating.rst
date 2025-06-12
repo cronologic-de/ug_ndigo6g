@@ -6,6 +6,7 @@ Gating Blocks
 .. _fig gatingblock:
 .. figure:: ../figures/GatingBlocks_Ndigo6G-12.*
     :width: 90%
+    :alt: Gating Block Matrix of the Ndigo6G-12
 
     Gating Blocks: Each gating block can use an arbitrary combination
     of inputs to trigger its state machine. The outputs can be individually
@@ -58,6 +59,7 @@ the gate timing and delay unit.
 
 .. _Fig 2.21:
 .. figure:: ../figures/gating_principle.*
+    :alt: Sketch of Gate functionality.
 
     Gate and delay functionality: When a trigger occurs, the gate opens after a
     set period of time “Gate Start” and closes when it reaches

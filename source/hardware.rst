@@ -18,6 +18,7 @@ Connect a 6-pin PCIe power cable to the connector at the rear of the board
 
 .. _fig hardware picture:
 .. figure:: figures/Ndigo6G_periphery.jpg
+   :alt: Overview of Ndigo6G-12 board
 
     Overview of an Ndigo6G-12 board. Note the PCIe power connector at the rear
     of the board.
@@ -51,6 +52,7 @@ inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 .. _Fig 2.2:
 .. figure:: figures/Ndigo6G_connections.*
     :width: 90%
+    :alt: Input connectors of an Ndigo6G-12 board
 
     Input connectors of an Ndigo6G-12 board located on the PCI bracket.
 
@@ -85,6 +87,7 @@ Analog Inputs
 .. _Fig 2.4:
 .. figure:: figures/InputCircuit.*
     :width: 70%
+    :alt: Input circuit for each of the four analog channels
 
     Input circuit for each of the four analog channels.
 
@@ -117,12 +120,14 @@ can be set between :math:`\pm` 0.5 V.
 .. _Fig 2.5:
 .. figure:: figures/analog_offset_sine.*
    :width: 80%
+   :alt: Analog offset on ADC input
 
    Users can add an analog offset to the input before sampling.
 
 .. _Fig 2.6:
 .. figure:: figures/analog_offset_pulse.*
    :width: 80%
+   :alt: Shifted asymmetric signal
 
    Asymmetric signal shifted to increase dynamic range.
 
@@ -139,6 +144,7 @@ make sure your input signal fulfills the requirements laid out in
 
 .. figure:: figures/baselinedrift.*
     :width: 50%
+    :alt: Baseline drift due to AC-coupling
 
     Baseline drift due to AC-coupling. A second pulse close to a first may be influenced
     by a shifted baseline, as sketched in the lower graph.
@@ -154,6 +160,7 @@ The inputs are AC coupled (see :numref:`Figure %s<fig digital input circuit>`).
 
 .. _fig digital input circuit:
 .. figure:: figures/InputCircuit_TDC.*
+    :alt: Principal input circuit for each of the digital TDC and control inputs
 
     Principal input circuit for each of the digital TDC and control inputs.
 

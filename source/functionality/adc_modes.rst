@@ -47,6 +47,7 @@ be either :c:macro:`NDIGO6G12_APP_TYPE_1CH` or
 
 .. _Fig 2.9:
 .. figure:: ../figures/1ChannelMode.*
+    :alt: Ndigo6G-12 ADCs in 1-channel-mode A, B, C, or D
 
     ADCs in 1-channel-mode A, B, C or D interleaved for 6.4 Gsps.
 
@@ -65,6 +66,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 
 .. _Fig 2.8:
 .. figure:: ../figures/2ChannelMode.*
+    :alt: Ndigo6G-12 ADCs in 2-channel-mode AD
 
     ADCs in 2-channel-mode AD, interleaved for 3.2 Gsps.
 
@@ -82,6 +84,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 
 .. _Fig 2.7:
 .. figure:: ../figures/4ChannelMode.*
+    :alt: Ndigo6G-12 ADCs in 4-channel-mode ABCD
 
     ADCs in 4-channel-mode ABCD at 1.6 Gsps.
 
@@ -118,6 +121,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_2CH`.
 
 .. _fig mode AA DD:
 .. figure:: ../figures/2ChannelMode_AA_DD.*
+    :alt: Ndigo6G-12 ADCs in 2-channel-mode AA or DD.
 
     ADCs in 2-channel-mode AA or DD at 3.2 Gsps.
 
@@ -132,6 +136,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 
 .. _fig mode AADD:
 .. figure:: ../figures/4ChannelMode_AADD.*
+    :alt: Ndigo6G-12 ADCs in 4-channel-mode AADD.
 
     ADCs in 4-channel-mode AADD at 1.6 Gsps.
 
@@ -146,6 +151,7 @@ be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
 
 .. _fig mode AAAA DDDD:
 .. figure:: ../figures/4ChannelMode_AAAA_DDDD.*
+    :alt: Ndigo6G-12 ADCs in 4-channel-mode AAAA or DDDD.
 
     ADCs in 4-channel-mode AAAA or DDDD at 1.6 Gsps.
 
