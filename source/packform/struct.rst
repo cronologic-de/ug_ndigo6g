@@ -65,7 +65,7 @@ Output Structure *crono_packet*
     .. cpp:member:: uint32_t length
 
         Length of :cpp:member:`crono_packet::data` in multiples of 64 bits. The actual
-        length of :cpp:member:`crono_packet::data` depends
+        length of :cpp:member:`crono_packet::data` depends on 
         :cpp:member:`crono_packet::type`.
 
     .. cpp:member:: uint64_t timestamp
