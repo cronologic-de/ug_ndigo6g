@@ -18,7 +18,7 @@ Connect a 6-pin PCIe power cable to the connector at the rear of the board
 
 .. _fig hardware picture:
 .. figure:: figures/Ndigo6G_periphery.jpg
-   :alt: Overview of Ndigo6G-12 board
+    :alt: Overview of Ndigo6G-12 board
 
     Overview of an Ndigo6G-12 board. Note the PCIe power connector at the rear
     of the board.
