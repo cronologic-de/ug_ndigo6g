@@ -14,7 +14,7 @@ The period is
    T = M + [1...2^N] - 1
 
 clock cycles with a duration of 5 ns per cycle, where :math:`6 \leq M < 2^{32}`
-and :math:`0 \leq M < 32`.
+and :math:`0 \leq N < 32`.
 
 This allows to monitor input signals at times the current trigger
 configuration does not trigger, e.g., to get baseline information in
