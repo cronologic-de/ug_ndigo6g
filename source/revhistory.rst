@@ -60,6 +60,7 @@ User Guide
 ----------
 1.4.1-dev - TBD
     | Fixed spelling error
+    | Update mechanical dimensions
 
 1.4.0 — 2025-06-12
     | Updated documentation of :cpp:member:`ndigo6g12_configuration::output_mode`

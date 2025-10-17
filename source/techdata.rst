@@ -5,9 +5,8 @@ Technical Data
 
 - Power Requirements: **35 W**
 
-- Mechanical Dimensions:
-  **170 mm** :math:`\times` **106 mm** :math:`\times` **22 mm**
-  (fits in one PCIe slot)
+- Mechanical Dimensions (excluding slot bracket): **168 × 121 × 19 mm**
+  (fits in most full-height PCIe slots).
 
 - Throughput: **5200 MByte/s** on PCIe x8
 
