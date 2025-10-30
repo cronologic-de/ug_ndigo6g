@@ -101,7 +101,7 @@ jobs:
         source: ./artifacts/latex/Ndigo6G_User_Guide.pdf
         target: ${{ secrets.TARGETPDF }}
         strip_components: 3
-        rm: true
+        rm: false
 
     - name: zip documentation
       run: |
