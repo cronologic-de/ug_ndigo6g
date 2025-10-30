@@ -43,7 +43,7 @@ jobs:
         root_file: ndigo6g-12userguide.tex
         latexmk_use_lualatex: true
         working_directory: build/latex
-        pre_compile: "tlmgr update --self && tlmgr update --all"
+        # pre_compile: "tlmgr update --self && tlmgr update --all"
 
     - name: Upload log if latexmk fails
       if: ${{ failure() }}
