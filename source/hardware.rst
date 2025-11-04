@@ -193,6 +193,8 @@ Digital Control Inputs
 There are two digital control inputs on the front slot cover called
 TRG and GATE.
 
+TRG and GATE can detect pulses with a width that is least 2 ns and at maximum 200 ns.
+
 Input-signals on the inputs TRG and GATE are digitized and routed to the 
 Trigger Matrix. They can be used to trigger any of the trigger state machines 
 and :doc:`gating blocks <functionality/gating>` with maximum sampling rate.
