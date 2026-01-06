@@ -28,13 +28,14 @@ Connect a 6-pin PCIe power cable to the connector at the rear of the board
 Cooling
 -------
 The Ndigo6G-12 board is equipped with an active cooling system, ensuring
-proper cooling of the device. If, however, the temperature of the ADC chip
-exceeds 70 °C (for instance, if the device is operated in inappropriate
-environmental conditions, see
+proper cooling of the device. If, however, the temperature of the ADC, TDC, or FPGA
+chips on the board exceed critical temperatures (for instance, if the device is
+operated in inappropriate environmental conditions, see
 :numref:`Section %s<techdata environmental conditions for operation>`),
 a warning is issued to the device driver.
-When the temperature exceeds 140 °C, the ADC chip is disabled to avoid damaging
-the device.
+
+The temperature warnings can be read out using
+:cpp:member:`ndigo6g12_fast_info::alerts`.
 
 External Inputs and Connectors
 ------------------------------
