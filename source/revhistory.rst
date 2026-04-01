@@ -62,6 +62,7 @@ User Guide
     | Fixed spelling error
     | Updated mechanical dimensions
     | Fixed temperature values in :ref:`sec cooling`
+    | Documented possible use of external power supply
 
 1.4.0 — 2025-06-12
     | Updated documentation of :cpp:member:`ndigo6g12_configuration::output_mode`

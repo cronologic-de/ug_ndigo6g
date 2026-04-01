@@ -10,7 +10,12 @@ If the slot electrically supports less than eight lanes, the board will operate
 at lower data throughput rates.
 
 Connect a 6-pin PCIe power cable to the connector at the rear of the board
-(see :numref:`Figure %s<fig hardware picture>`).
+(see :numref:`Figure %s<fig hardware picture>`). When using an external 12 V power
+supply, be aware that it must be switched on before you boot the host system of the
+Ndigo6G-12. Note that when you power cycle the host system without power cycling the
+external 12 V power supply, the Ndigo6G-12 will not power cycle. This should generally
+not be a problem, unless you were to
+:doc:`perform a firmware update<functionality/firmware>`.
 
 .. note::
 
