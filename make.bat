@@ -11,7 +11,7 @@ if "%OS%"=="Windows_NT" (
 REM Command file for Sphinx documentation
 
 if "%SPHINXBUILD%" == "" (
-	set SPHINXBUILD=sphinx-build
+	set SPHINXBUILD=uv run --no-dev --frozen sphinx-build
 )
 set SOURCEDIR=source
 set BUILDDIR=build

@@ -1,5 +1,0 @@
-sphinx
-furo
-breathe
-bs4
-lxml
