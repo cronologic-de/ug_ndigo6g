@@ -33,6 +33,8 @@ breathe_show_define_initializer = False
 autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 3
 
+toc_object_entries_show_parents = "hide"
+
 with open("global.rst", "r") as f:
     prolog_file = f.read()
 rst_prolog = f"""
