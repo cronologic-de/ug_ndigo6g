@@ -1,14 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.axes import Axes
-from scipy.interpolate import interp1d
-
-
-# requires atompy v 4.20.0
-# get it via github
-# pip git+https://github.com/frekm/atompy.git@v4.20.0
-import atompy as ap
-
+import mplutils as mplu
 
 PULSE_DATA = np.array(
     (
@@ -234,15 +226,20 @@ CRONOORANGE = "#ed7800"
 
 def plot_pulse():
 
-    ap._set_theme_atompy("lb", use_latex=False, use_serif=False)
-    grey = plt.rcParams["axes.edgecolor"]
+    # ap._set_theme_atompy("lb", use_latex=False, use_serif=False)
+
+    plt.style.use("cronoweb.mplstyle")
+    plt.rcParams["axes.spines.left"] = True
+    plt.rcParams["axes.spines.bottom"] = True
     plt.rcParams["figure.figsize"] = 4.0, 3.0
-    plt.rcParams["ytick.labelcolor"] = grey
-    plt.rcParams["ytick.color"] = grey
     plt.rcParams["font.size"] = 7.0
     plt.rcParams["axes.grid"] = 0.0
+    plt.rcParams["ytick.major.size"] = 4.0
+    plt.rcParams["ytick.minor.size"] = 2.2
+    grey = plt.rcParams["axes.edgecolor"]
+    plt.rcParams["ytick.color"] = grey
 
-    _, axs = plt.subplots(nrows=1, ncols=2)
+    _, axs = plt.subplots(nrows=1, ncols=2, layout=mplu.FixedLayoutEngine())
 
     ofs = PULSE_DATA[1, 0]
     axs[1].plot(
@@ -300,21 +297,23 @@ def plot_pulse():
     for ax in axs:
         format_ax(ax)
 
-    ap.make_me_nice(fix_figwidth=True)
-    ap.savefig("*_pulse", ftype=("pdf", "svg"), transparent=True, dpi=300)
+    mplu.savefig("*_pulse", ftype=("pdf", "svg"), transparent=True, dpi=300)
 
 
 def plot_sine():
 
-    ap._set_theme_atompy("lb", use_latex=False, use_serif=False)
-    grey = plt.rcParams["axes.edgecolor"]
+    plt.style.use("cronoweb.mplstyle")
+    plt.rcParams["axes.spines.left"] = True
+    plt.rcParams["axes.spines.bottom"] = True
     plt.rcParams["figure.figsize"] = 4.0, 3.0
-    plt.rcParams["ytick.labelcolor"] = grey
-    plt.rcParams["ytick.color"] = grey
     plt.rcParams["font.size"] = 7.0
     plt.rcParams["axes.grid"] = 0.0
+    plt.rcParams["ytick.major.size"] = 4.0
+    plt.rcParams["ytick.minor.size"] = 2.2
+    grey = plt.rcParams["axes.edgecolor"]
+    plt.rcParams["ytick.color"] = grey
 
-    _, axs = plt.subplots(nrows=1, ncols=2)
+    _, axs = plt.subplots(nrows=1, ncols=2, layout=mplu.FixedLayoutEngine())
 
     x = np.linspace(0.0, 0.9, 300)
     y = generate_sine_wave(x, 0.48, 2.25)
@@ -376,8 +375,7 @@ def plot_sine():
     for ax in axs:
         format_ax(ax)
 
-    ap.make_me_nice(fix_figwidth=True)
-    ap.savefig("*_sine", ftype=("pdf", "svg"), transparent=True, dpi=300)
+    mplu.savefig("*_sine", ftype=("pdf", "svg"), transparent=True, dpi=300)
 
 
 if __name__ == "__main__":

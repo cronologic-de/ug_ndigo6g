@@ -3,10 +3,7 @@ from matplotlib.axes import Axes
 import numpy as np
 from typing import Any
 
-# requires atompy v 4.20.0
-# get it via github
-# pip git+https://github.com/frekm/atompy.git@v4.20.0
-import atompy as ap
+import mplutils as mplu
 
 
 def exp(x, x0, y0, scale, tau):
@@ -15,11 +12,14 @@ def exp(x, x0, y0, scale, tau):
 
 def plot():
 
-    ap._set_theme_atompy("lb", use_latex=False, use_serif=False)
+    plt.style.use("cronoweb.mplstyle")
+    plt.rcParams["axes.spines.left"] = True
+    plt.rcParams["axes.spines.bottom"] = True
+
     plt.rcParams["figure.figsize"] = 4.0, 3.0
 
     axs: tuple[Axes, Axes]
-    fig, axs = plt.subplots(2, 1)
+    _, axs = plt.subplots(2, 1, layout=mplu.FixedLayoutEngine())
 
     cronoblue = "#376eb5"
     cronoorange = "#ed7800"
@@ -113,8 +113,7 @@ def plot():
         ax.set_ylim(-110, 110)
         ax.set_xlim(-0, 105)
 
-    ap.make_me_nice()
-    ap.savefig("*", ftype=("pdf", "svg"), dpi=300, transparent=True)
+    mplu.savefig("*", ftype=("pdf", "svg"), dpi=300, transparent=True)
 
 
 if __name__ == "__main__":
