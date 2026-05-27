@@ -58,13 +58,14 @@ Driver
 
 User Guide
 ----------
-1.4.1-dev - TBD
+1.5.0-dev - TBD
     | Fixed spelling error
     | Updated mechanical dimensions
     | Fixed temperature values in :ref:`sec cooling`
     | Documented possible use of external power supply
     | Documented gating setup times
     | Updated :ref:`digital ctrl inputs`
+    | Added :ref:`sec mem mgmt`
 
 1.4.0 — 2025-06-12
     | Updated documentation of :cpp:member:`ndigo6g12_configuration::output_mode`

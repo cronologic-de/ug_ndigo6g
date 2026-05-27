@@ -1,6 +1,6 @@
 [project]
 name = "ug-ndigo6g"
-version = "1.4.1-dev"
+version = "1.5.0-dev"
 description = "User Guide of cronologic's Ndigo6G-12"
 readme = "README.md"
 requires-python = ">=3.11"
