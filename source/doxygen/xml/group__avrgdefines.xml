@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="group__avrgdefines" kind="group">
+    <compoundname>avrgdefines</compoundname>
+    <title>Defines for Averager</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__avrgdefines_1gabfece38c5026c65c0216b4c6c63fa099" prot="public" static="no">
+        <name>NDIGO6G12_MAX_AVRG_ITERATIONS</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+<para>Maximum amount of iterations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="553" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Defines relevant for <ref refid="group__apptypes_1gaf118a537365443a82aa649f50dcbeacb" kindref="member">NDIGO6G12_APP_TYPE_AVRG</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

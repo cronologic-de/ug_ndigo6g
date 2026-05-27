@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="201" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="201" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="202" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__outputdefs_1ga47484f82a72759a22685cb14a6b8e457" prot="public" static="no">
         <name>NDIGO6G12_OUTPUT_MODE_SIGNED16</name>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="207" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="207" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="208" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="208" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__outputdefs_1gaa6d025ad7fb0144b088773dccd4f3ae1" prot="public" static="no">
         <name>NDIGO6G12_OUTPUT_MODE_SIGNED32</name>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="214" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="214" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="215" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="215" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__outputdefs_1gad21868409a9b62292a1690d9434c78ab" prot="public" static="no">
         <name>NDIGO6G12_OUTPUT_MODE_RAW_NO_CB</name>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="219" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="219" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="220" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="220" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

@@ -11,6 +11,9 @@ General
 .. doxygengroup:: triggerblockdefs
     :content-only:
 
+.. doxygengroup:: avrgdefines
+    :content-only:
+
 Trigger and Gating Block Sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -66,6 +66,7 @@ User Guide
     | Documented gating setup times
     | Updated :ref:`digital ctrl inputs`
     | Added :ref:`sec mem mgmt`
+    | Updated API documentation
 
 1.4.0 — 2025-06-12
     | Updated documentation of :cpp:member:`ndigo6g12_configuration::output_mode`

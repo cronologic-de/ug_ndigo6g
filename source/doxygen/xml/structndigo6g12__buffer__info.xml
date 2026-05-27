@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="structndigo6g12__buffer__info" kind="struct" language="C++" prot="public">
+    <compoundname>ndigo6g12_buffer_info</compoundname>
+    <includes refid="ndigo6g12__interface_8h" local="no">ndigo6g12_interface.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structndigo6g12__buffer__info_1a8f42b30e133f5e794e3a6797279b838a" prot="public" static="no" mutable="no">
+        <type>uint64_t *</type>
+        <definition>uint64_t* buffer_address</definition>
+        <argsstring></argsstring>
+        <name>buffer_address</name>
+        <qualifiedname>ndigo6g12_buffer_info::buffer_address</qualifiedname>
+        <briefdescription>
+<para>buffer address </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="2296" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="2296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structndigo6g12__buffer__info_1ab7ef5ad7c0ae31c7f43a08feb997a0e2" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t buffer_size</definition>
+        <argsstring></argsstring>
+        <name>buffer_size</name>
+        <qualifiedname>ndigo6g12_buffer_info::buffer_size</qualifiedname>
+        <briefdescription>
+<para>size of the buffer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/ndigo6g12_interface.h" line="2300" column="13" bodyfile="source/ndigo6g12_interface.h" bodystart="2300" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>contains buffer information </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="source/ndigo6g12_interface.h" line="2293" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="2293" bodyend="2301"/>
+    <listofallmembers>
+      <member refid="structndigo6g12__buffer__info_1a8f42b30e133f5e794e3a6797279b838a" prot="public" virt="non-virtual"><scope>ndigo6g12_buffer_info</scope><name>buffer_address</name></member>
+      <member refid="structndigo6g12__buffer__info_1ab7ef5ad7c0ae31c7f43a08feb997a0e2" prot="public" virt="non-virtual"><scope>ndigo6g12_buffer_info</scope><name>buffer_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

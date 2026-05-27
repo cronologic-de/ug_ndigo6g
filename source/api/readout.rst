@@ -34,6 +34,15 @@ data is packaged in *packets* (see :numref:`Chapter %s<packet format>`).
 .. raw:: latex
 
     \phantomsection
+    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_acknowledge}}
+
+.. doxygenfunction:: ndigo6g12_acknowledge
+
+
+
+.. raw:: latex
+
+    \phantomsection
     \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_read\_in}}
 
 .. doxygenstruct:: ndigo6g12_read_in
