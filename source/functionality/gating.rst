@@ -24,6 +24,8 @@ times after a trigger event (as configured by the user with
 :cpp:member:`ndigo6g12_gating_block::start` and
 :cpp:member:`stop <ndigo6g12_gating_block::stop>`).
 
+A delay between trigger detection and gate setup exists and is about 50 ns.
+
 Concretely, if a trigger
 event is detected, a timer starts. After the timer reaches the time
 corresponding to :cpp:member:`start<ndigo6g12_gating_block::start>`, the gate 
