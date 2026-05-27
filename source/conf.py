@@ -6,14 +6,23 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
+import tomllib
+import pathlib
 
-# sys.path.append(os.path.abspath("../exts/"))
 
-with open("version.txt") as f:
-    version = f.read()
+def get_version():
+    pyproject = pathlib.Path(__file__).parents[1] / "pyproject.toml"
+    if pyproject.exists():
+        with pyproject.open("rb") as f:
+            data = tomllib.load(f)
+        return data.get("project", {}).get("version")
+    return "0.0.0"
+
+
+version = get_version()
 
 project = "Ndigo6G-12 User Guide"
-copyright = "Creative Commons Attribution-NoDerivatives" " 4.0 International License"
+copyright = "2026, cronologic GmbH & Co. KG"
 author = "cronologic GmbH & Co. KG"
 release = version
 
@@ -32,6 +41,8 @@ breathe_show_define_initializer = False
 
 autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 3
+
+toc_object_entries_show_parents = "hide"
 
 with open("global.rst", "r") as f:
     prolog_file = f.read()

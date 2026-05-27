@@ -9,22 +9,18 @@ gigasample PCIe digitizer boards by
 
 Find the documentation online at [docs.cronologic.de/ndigo6g](https://docs.cronologic.de/ndigo6g).
 
-LuaLaTeX or XeLaTeX, Python, and doxygen are necessary for compilation.
+## Prerequisites
 
-## Setup and installation
+Python is necessary for creating the HTML output.
 
-Optionally, create and activate a virtual environment
-```shell
-python -m venv .venv
-. .\.venv\Scripts\activate
-```
+Python and LuaLaTeX are necessary for creating the LaTeX/PDF output.
 
-Install the requirements of the project
-```shell
-pip install -r requirements.txt
-```
+Dependencies are managed using [uv](https://docs.astral.sh/uv).
 
-After that, run
+## Building
+
+Run
+
 ```shell
 make html
 ```
@@ -34,6 +30,8 @@ make latexpdf
 ```
 to compile the project as HTML or PDF. The HTML (PDF) output is in `build/html/`
 (`build/latex/`).
+
+Alternatively, if you do not have make, use the [make.bat](make.bat) script instead.
 
 ## License
 This documentation is licensed under the

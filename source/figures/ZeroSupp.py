@@ -1,10 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
-# requires atompy v 4.20.0
-# get it via github
-# pip git+https://github.com/frekm/atompy.git@v4.20.0
-import atompy as ap
+import mplutils as mplu
 
 X, Y = np.array(
     [
@@ -776,12 +772,16 @@ def annotate(ax, start, stop, arrowprops):
 
 
 def main():
-    ap._set_theme_atompy("b", use_latex=False, use_serif=False)
+    plt.style.use("cronoweb.mplstyle")
+    plt.rcParams["axes.spines.bottom"] = True
     plt.rcParams["figure.figsize"] = 4.0, 3.0
     grey = plt.rcParams["axes.edgecolor"]
 
+    palette = mplu.colors.OkabeItoPalette()
+
     ax0 = plt.subplot(211)
     ax1 = plt.subplot(212)
+    plt.gcf().set_layout_engine(mplu.FixedLayoutEngine())
     axs = (ax0, ax1)
 
     crossings = find_crossing(X, Y, THRESHOLD)
@@ -790,7 +790,7 @@ def main():
     arrowprops = dict(arrowstyle="-|>", shrinkA=0, shrinkB=0, fc=CRONOORANGE)
     arrowprops["ec"] = arrowprops["fc"]
     annotate(ax0, (crossings[2], yarr), (crossings[2] + POSTCURSOR, yarr), arrowprops)
-    arrowprops["fc"] = ap.PALETTE_OKABE_ITO[0]
+    arrowprops["fc"] = palette[0]
     arrowprops["ec"] = arrowprops["fc"]
     annotate(ax0, (crossings[0], yarr), (crossings[0] + POSTCURSOR, yarr), arrowprops)
     annotate(ax0, (crossings[0], yarr), (crossings[0] - PRECURSOR, yarr), arrowprops)
@@ -810,14 +810,14 @@ def main():
         arrowprops=arrowprops,
         color=CRONOORANGE,
     )
-    arrowprops["ec"] = ap.PALETTE_OKABE_ITO[0]
+    arrowprops["ec"] = palette[0]
     ax0.annotate(
         "Precursor",
         xy=(0.7, yarr),
         xytext=(0.7, ytxt),
         arrowprops=arrowprops,
         ha="right",
-        color=ap.PALETTE_OKABE_ITO[0],
+        color=palette[0],
     )
     ax0.annotate(
         "Postcursor",
@@ -825,7 +825,7 @@ def main():
         xytext=(0.76, ytxt),
         arrowprops=arrowprops,
         ha="left",
-        color=ap.PALETTE_OKABE_ITO[0],
+        color=palette[0],
     )
 
     fr0 = crossings[0] - PRECURSOR
@@ -858,15 +858,13 @@ def main():
     )
 
     for ax in axs:
-        ax.set_box_aspect(1.0 / 4.0)
         ax.set_xlim(XRANGE)
         ax.set_ylim(0, 1.03)
         ax.set_xticks([])
         ax.set_yticks([])
+        mplu.set_axes_size(4.0, aspect=1 / 4, ax=ax)
 
-    ap.make_me_nice(fix_figwidth=True)
-
-    ap.savefig("*", ftype=("pdf", "svg"), dpi=192, transparent=True)
+    mplu.savefig("*", ftype=("pdf", "svg"), dpi=192, transparent=True)
 
 
 if __name__ == "__main__":

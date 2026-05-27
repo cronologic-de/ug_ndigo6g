@@ -10,7 +10,12 @@ If the slot electrically supports less than eight lanes, the board will operate
 at lower data throughput rates.
 
 Connect a 6-pin PCIe power cable to the connector at the rear of the board
-(see :numref:`Figure %s<fig hardware picture>`).
+(see :numref:`Figure %s<fig hardware picture>`). When using an external 12 V power
+supply, be aware that it must be switched on before you boot the host system of the
+Ndigo6G-12. Note that when you power cycle the host system without power cycling the
+external 12 V power supply, the Ndigo6G-12 will not power cycle. This should generally
+not be a problem, unless you were to
+:doc:`perform a firmware update<functionality/firmware>`.
 
 .. note::
 
@@ -23,17 +28,19 @@ Connect a 6-pin PCIe power cable to the connector at the rear of the board
     Overview of an Ndigo6G-12 board. Note the PCIe power connector at the rear
     of the board.
 
+.. _sec cooling:
 
 Cooling
 -------
 The Ndigo6G-12 board is equipped with an active cooling system, ensuring
-proper cooling of the device. If, however, the temperature of the ADC chip
-exceeds 90 °C (for instance, if the device is operated in inappropriate
-environmental conditions, see
+proper cooling of the device. If, however, the temperature of the ADC, TDC, or FPGA
+chips on the board exceed critical temperatures (for instance, if the device is
+operated in inappropriate environmental conditions, see
 :numref:`Section %s<techdata environmental conditions for operation>`),
 a warning is issued to the device driver.
-When the temperature exceeds 95 °C, the ADC chip is disabled to avoid damaging
-the device.
+
+The temperature warnings can be read out using
+:cpp:member:`ndigo6g12_fast_info::alerts`.
 
 External Inputs and Connectors
 ------------------------------
