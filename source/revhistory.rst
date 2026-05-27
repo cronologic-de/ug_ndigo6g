@@ -58,7 +58,7 @@ Driver
 
 User Guide
 ----------
-1.5.0-dev - TBD
+1.5.0 - 2026-05-27
     | Fixed spelling error
     | Updated mechanical dimensions
     | Fixed temperature values in :ref:`sec cooling`
