@@ -1,3 +1,5 @@
+:tocdepth: 3
+
 Output Structure *crono_packet*
 -------------------------------
 .. .. doxygenstruct:: crono_packet

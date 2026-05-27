@@ -307,7 +307,7 @@
 <para>Alert bits from temperature sensor and the system monitor. </para>
         </briefdescription>
         <detaileddescription>
-<para>Bit 0 is set if the TDC temperature exceeds 140&#176;C. In this case the TDC shut down and the device needs to be reinitialized. <verbatim>embed:rst:leading-asterisk
+<para><verbatim>embed:rst:leading-asterisk
 *          Is one of the following:
 *          
 *          .. doxygengroup:: alertdefs
@@ -316,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1055" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1055" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1052" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1052" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1addd928187e7b988d927057f6e7c67a13" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -332,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1061" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1061" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1058" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1058" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a946981413ca4a952eef495aa8097fef7" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -348,7 +348,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1068" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1068" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1065" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1065" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a919f151d5f43932122ab66c8d7d552d9" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -364,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1073" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1073" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1070" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1070" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1ae933d3ca3b4cea50914b66195f017395" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -379,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1078" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1078" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1075" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1075" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1af4aef7211a3a83a288990c2f0d552c02" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -394,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1083" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1083" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1080" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1080" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1af5bf1b96bf0309f94175246a34427e84" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -410,7 +410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1089" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1089" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1086" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1086" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a1819c324ac13c5becc051a4fbad0f802" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -426,7 +426,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1095" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1095" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1092" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1092" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1ad40e2f25adfd6bc02ba5a84c0e0bdc30" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -442,7 +442,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1101" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1101" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1098" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1098" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a0c9dd386f65999c2d03c69d9f8aeedf9" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -458,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1107" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1107" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1104" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a5f88bd9235cfab79aef04f5815ee7d79" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -474,7 +474,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1113" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1113" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1110" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a8d016be86f660e88b09d856c1053c8e0" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -490,7 +490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1119" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1119" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1116" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a4bc0094b8b7b263496f26746277dba2b" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -506,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1125" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1125" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1122" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a903ae77f3dcc13ddda10298d8245ae96" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -522,7 +522,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1131" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1131" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1128" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1ae298e66a6a01ba7304eb529221b86a41" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -538,7 +538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1138" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1138" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1135" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a82fdda10777af65341bbbcd062d14456" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -554,7 +554,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1144" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1144" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1141" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a41ec4fdf59dc41482f136c7dfbe5bdd2" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -569,7 +569,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1149" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1149" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1146" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1ae882d17bbbf3233eedd336b8b8ddb062" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -584,7 +584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1154" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1154" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1151" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a9f71023de14dd51eb55b92e4d1b6b5ea" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -599,7 +599,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1159" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1159" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1156" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1af74522e1153c60f7a66ee45e7a27b6df" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -614,7 +614,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1164" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1164" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1161" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a892b53d400cfdfd76557108ceec90210" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -629,7 +629,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1169" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1169" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1166" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a4a0bac780849b710011029cda4cfb7e6" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -644,7 +644,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1174" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1174" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1171" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1171" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a7877cb59b85901d88cecdd16dbee6d42" prot="public" static="no" mutable="no">
         <type><ref refid="crono__interface_8h_1ab356dc6c6a71cc1e1edf5da063237ccd" kindref="member">crono_bool_t</ref></type>
@@ -659,7 +659,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1179" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1179" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1176" column="18" bodyfile="source/ndigo6g12_interface.h" bodystart="1176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__fast__info_1a8adf5caaa2160f343d12737cd99f1ba7" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -674,7 +674,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="1184" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1184" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="1181" column="9" bodyfile="source/ndigo6g12_interface.h" bodystart="1181" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -683,7 +683,7 @@
     <detaileddescription>
 <para>This structure is filled by <ref refid="ndigo6g12__interface_8h_1a43147bc42f2803900cafb97522d40cb4" kindref="member">ndigo6g12_get_fast_info()</ref>. This information can be obtained within a few microseconds. </para>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="927" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="927" bodyend="1185"/>
+    <location file="source/ndigo6g12_interface.h" line="927" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="927" bodyend="1182"/>
     <listofallmembers>
       <member refid="structndigo6g12__fast__info_1adbd1ca81d32fed7e8e01190de37156d5" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_2v5</name></member>
       <member refid="structndigo6g12__fast__info_1a3d6ccdebf705d3f0e262602ba7aeff7a" prot="public" virt="non-virtual"><scope>ndigo6g12_fast_info</scope><name>adc_3v3</name></member>

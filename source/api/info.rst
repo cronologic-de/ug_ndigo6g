@@ -1,3 +1,5 @@
+:tocdepth: 3
+
 Status information
 ------------------
 The driver provides functions to retrieve detailed information on the type

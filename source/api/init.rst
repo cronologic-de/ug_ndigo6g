@@ -1,3 +1,5 @@
+:tocdepth: 3
+
 Initialization
 --------------
 To use a Ndigo6G-12 board, it first needs to be initialized. This is done by

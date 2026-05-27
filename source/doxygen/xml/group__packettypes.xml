@@ -114,6 +114,17 @@
         </inbodydescription>
         <location file="source/crono_interface.h" line="58" column="9" bodyfile="source/crono_interface.h" bodystart="58" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="group__packettypes_1gac6e2fae181534804919bcb6ee4848e1f" prot="public" static="no">
+        <name>CRONO_PACKET_TYPE_VRIDIAN_DATA</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/crono_interface.h" line="59" column="9" bodyfile="source/crono_interface.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="group__packettypes_1ga5aaa58af03dbbb76c5eb831dcaa20212" prot="public" static="no">
         <name>CRONO_PACKET_TYPE_TIMESTAMP_ONLY</name>
         <initializer>128</initializer>
@@ -123,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="59" column="9" bodyfile="source/crono_interface.h" bodystart="59" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="60" column="9" bodyfile="source/crono_interface.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__packettypes_1ga856a406737bf3188259c5ea5438f458c" prot="public" static="no">
         <name>CRONO_PACKET_TYPE_END_OF_BUFFER</name>
@@ -134,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="60" column="9" bodyfile="source/crono_interface.h" bodystart="60" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="61" column="9" bodyfile="source/crono_interface.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__packettypes_1gaf56df0e5f1ebb2a8a310614da4a82ca4" prot="public" static="no">
         <name>CRONO_PACKET_TYPE_TRIGGER_PATTERN</name>
@@ -145,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="61" column="9" bodyfile="source/crono_interface.h" bodystart="61" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="62" column="9" bodyfile="source/crono_interface.h" bodystart="62" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

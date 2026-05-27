@@ -252,6 +252,7 @@
     <member refid="group__packettypes_1gac59202bb1df12d01615e4d2455aa2ffb" kind="define"><name>CRONO_PACKET_TYPE_64_BIT_UNSIGNED</name></member>
     <member refid="group__packettypes_1ga8bde9783b3aa1b809dfbb547e0577bc4" kind="define"><name>CRONO_PACKET_TYPE_TDC_DATA</name></member>
     <member refid="group__packettypes_1ga19f824458691e5c17f7042a792ecf3c8" kind="define"><name>CRONO_PACKET_TYPE_AVRG_DATA</name></member>
+    <member refid="group__packettypes_1gac6e2fae181534804919bcb6ee4848e1f" kind="define"><name>CRONO_PACKET_TYPE_VRIDIAN_DATA</name></member>
     <member refid="group__packettypes_1ga5aaa58af03dbbb76c5eb831dcaa20212" kind="define"><name>CRONO_PACKET_TYPE_TIMESTAMP_ONLY</name></member>
     <member refid="group__packettypes_1ga856a406737bf3188259c5ea5438f458c" kind="define"><name>CRONO_PACKET_TYPE_END_OF_BUFFER</name></member>
     <member refid="group__packettypes_1gaf56df0e5f1ebb2a8a310614da4a82ca4" kind="define"><name>CRONO_PACKET_TYPE_TRIGGER_PATTERN</name></member>
@@ -642,6 +643,7 @@
     <member refid="group__packettypes_1gac59202bb1df12d01615e4d2455aa2ffb" kind="define"><name>CRONO_PACKET_TYPE_64_BIT_UNSIGNED</name></member>
     <member refid="group__packettypes_1ga8bde9783b3aa1b809dfbb547e0577bc4" kind="define"><name>CRONO_PACKET_TYPE_TDC_DATA</name></member>
     <member refid="group__packettypes_1ga19f824458691e5c17f7042a792ecf3c8" kind="define"><name>CRONO_PACKET_TYPE_AVRG_DATA</name></member>
+    <member refid="group__packettypes_1gac6e2fae181534804919bcb6ee4848e1f" kind="define"><name>CRONO_PACKET_TYPE_VRIDIAN_DATA</name></member>
     <member refid="group__packettypes_1ga5aaa58af03dbbb76c5eb831dcaa20212" kind="define"><name>CRONO_PACKET_TYPE_TIMESTAMP_ONLY</name></member>
     <member refid="group__packettypes_1ga856a406737bf3188259c5ea5438f458c" kind="define"><name>CRONO_PACKET_TYPE_END_OF_BUFFER</name></member>
     <member refid="group__packettypes_1gaf56df0e5f1ebb2a8a310614da4a82ca4" kind="define"><name>CRONO_PACKET_TYPE_TRIGGER_PATTERN</name></member>

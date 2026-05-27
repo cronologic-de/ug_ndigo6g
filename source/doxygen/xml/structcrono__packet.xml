@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="248" column="13" bodyfile="source/crono_interface.h" bodystart="248" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="249" column="13" bodyfile="source/crono_interface.h" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcrono__packet_1aa85ae96a521d9356271a2e3d0d57b21c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="253" column="13" bodyfile="source/crono_interface.h" bodystart="253" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="254" column="13" bodyfile="source/crono_interface.h" bodystart="254" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcrono__packet_1a1d127017fb298b889f4ba24752d08b8e" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="259" column="13" bodyfile="source/crono_interface.h" bodystart="259" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="260" column="13" bodyfile="source/crono_interface.h" bodystart="260" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcrono__packet_1aa2585d779da0ab21273a8d92de9a0ebe" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="264" column="13" bodyfile="source/crono_interface.h" bodystart="264" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="265" column="13" bodyfile="source/crono_interface.h" bodystart="265" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcrono__packet_1aebb70c2aab3407a9f05334c47131a43b" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="269" column="14" bodyfile="source/crono_interface.h" bodystart="269" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="270" column="14" bodyfile="source/crono_interface.h" bodystart="270" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcrono__packet_1a8a591d341723df9496cda98e225b25b4" prot="public" static="no" mutable="no">
         <type>int64_t</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="276" column="13" bodyfile="source/crono_interface.h" bodystart="276" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="277" column="13" bodyfile="source/crono_interface.h" bodystart="277" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcrono__packet_1a8973e4107f0b644d540e9c0725574c3d" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/crono_interface.h" line="283" column="14" bodyfile="source/crono_interface.h" bodystart="283" bodyend="-1"/>
+        <location file="source/crono_interface.h" line="284" column="14" bodyfile="source/crono_interface.h" bodystart="284" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -119,7 +119,7 @@
     <detaileddescription>
 <para>The size of the data[] array is given in the length field. </para>
     </detaileddescription>
-    <location file="source/crono_interface.h" line="244" column="1" bodyfile="source/crono_interface.h" bodystart="244" bodyend="284"/>
+    <location file="source/crono_interface.h" line="245" column="1" bodyfile="source/crono_interface.h" bodystart="245" bodyend="285"/>
     <listofallmembers>
       <member refid="structcrono__packet_1aa85ae96a521d9356271a2e3d0d57b21c" prot="public" virt="non-virtual"><scope>crono_packet</scope><name>card</name></member>
       <member refid="structcrono__packet_1a715f5cb061d11eb75981741eda4dafcd" prot="public" virt="non-virtual"><scope>crono_packet</scope><name>channel</name></member>

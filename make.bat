@@ -11,7 +11,7 @@ if "%OS%"=="Windows_NT" (
 REM Command file for Sphinx documentation
 
 if "%SPHINXBUILD%" == "" (
-	set SPHINXBUILD=sphinx-build
+	set SPHINXBUILD=uv run --no-dev --frozen sphinx-build
 )
 set SOURCEDIR=source
 set BUILDDIR=build
@@ -32,7 +32,6 @@ if errorlevel 9009 (
 if "%1" == "" goto help
 
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -a -E
-%PY_CMD% modify_api_sidebar.py %BUILDDIR%/html
 goto end
 
 :help

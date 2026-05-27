@@ -60,7 +60,9 @@ User Guide
 ----------
 1.4.1-dev - TBD
     | Fixed spelling error
-    | Update mechanical dimensions
+    | Updated mechanical dimensions
+    | Fixed temperature values in :ref:`sec cooling`
+    | Documented possible use of external power supply
     | Documented gating setup times
     | Updated :ref:`digital ctrl inputs`
 
