@@ -4,6 +4,9 @@ Revision History
 Firmware
 --------
 
+1.26147 — 2026-05-27
+    | Internal optimizations
+
 1.25086 — 2025-04-03
     | Bugfix: Removed trigger dead time
 
@@ -25,6 +28,11 @@ Firmware
 
 Driver
 ------
+2.3.0
+    | Requires Firmware revision 1.26147
+    | Enhanced IOMMU compatibility: The kernel-mode driver now enables full DMA support,
+      ensuring seamless operation when IOMMU is active
+
 2.2.0 — 2025-04-03
     | Bugfix: Removed trigger dead time
     | Bugfix: Fixed :c:macro:`NDIGO6G12_MAX_PRECURSOR` for :ref:`Averaging Mode`
@@ -58,6 +66,9 @@ Driver
 
 User Guide
 ----------
+1.5.1 - 2026-06-03
+    | Updated firmware and driver revision list
+
 1.5.0 - 2026-05-27
     | Fixed spelling error
     | Updated mechanical dimensions
