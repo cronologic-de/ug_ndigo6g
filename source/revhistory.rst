@@ -28,7 +28,7 @@ Firmware
 
 Driver
 ------
-2.3.0
+2.3.0 - 2026-06-08
     | Requires Firmware revision 1.26147
     | Enhanced IOMMU compatibility: The kernel-mode driver now enables full DMA support,
       ensuring seamless operation when IOMMU is active
