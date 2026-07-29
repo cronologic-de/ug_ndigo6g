@@ -66,6 +66,9 @@ Driver
 
 User Guide
 ----------
+1.5.2 - TBD
+    | Expanded documentation on :ref:`tdc characteristics`
+
 1.5.1 - 2026-06-03
     | Updated firmware and driver revision list
 
