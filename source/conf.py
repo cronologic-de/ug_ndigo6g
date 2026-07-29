@@ -6,8 +6,8 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
-import tomllib
 import pathlib
+import tomllib
 
 
 def get_version():
@@ -108,6 +108,7 @@ html_css_files = ["custom.css"]
 
 latex_engine = "xelatex"
 latex_xindy_use = False
+latex_table_style = ["booktabs"]
 latex_elements = {
     "papersize": "a4paper",
     "pointsize": "12pt",
