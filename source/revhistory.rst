@@ -67,7 +67,7 @@ Driver
 User Guide
 ----------
 1.6.0 - TBD
-    | Expanded documentation on :ref:`tdc characteristics`
+    | Expanded technical data on :ref:`tdc characteristics`
     | Added documentation for :cpp:func:`ndigo6g12_get_buffer_info`, :cpp:func:`ndigo6g12_get_free_buffer`, and :cpp:struct:`ndigo6g12_buffer_info`
     | Updated API documentation
 
