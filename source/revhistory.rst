@@ -66,8 +66,10 @@ Driver
 
 User Guide
 ----------
-1.5.2 - TBD
+1.6.0 - TBD
     | Expanded documentation on :ref:`tdc characteristics`
+    | Added documentation for :cpp:func:`ndigo6g12_get_buffer_info`, :cpp:func:`ndigo6g12_get_free_buffer`, and :cpp:struct:`ndigo6g12_buffer_info`
+    | Updated API documentation
 
 1.5.1 - 2026-06-03
     | Updated firmware and driver revision list

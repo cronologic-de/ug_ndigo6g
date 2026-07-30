@@ -59,6 +59,20 @@ information from the board.
 
 .. doxygenfunction:: ndigo6g12_get_pcie_info
 
+.. raw:: latex
+
+    \phantomsection
+    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_buffer\_info}}
+
+.. doxygenfunction:: ndigo6g12_get_buffer_info
+
+.. raw:: latex
+
+    \phantomsection
+    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_free\_buffer}}
+
+.. doxygenfunction:: ndigo6g12_get_free_buffer
+
 
 .. Structures
 
@@ -92,4 +106,12 @@ information from the board.
     \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_pcie\_info}}
 
 .. doxygenstruct:: crono_pcie_info
+    :members:
+
+.. raw:: latex
+
+    \phantomsection
+    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_buffer\_info}}
+
+.. doxygenstruct:: ndigo6g12_buffer_info
     :members:

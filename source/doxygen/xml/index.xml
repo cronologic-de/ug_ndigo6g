@@ -256,7 +256,9 @@
     <member refid="group__packettypes_1gac59202bb1df12d01615e4d2455aa2ffb" kind="define"><name>CRONO_PACKET_TYPE_64_BIT_UNSIGNED</name></member>
     <member refid="group__packettypes_1ga8bde9783b3aa1b809dfbb547e0577bc4" kind="define"><name>CRONO_PACKET_TYPE_TDC_DATA</name></member>
     <member refid="group__packettypes_1ga19f824458691e5c17f7042a792ecf3c8" kind="define"><name>CRONO_PACKET_TYPE_AVRG_DATA</name></member>
+    <member refid="group__packettypes_1ga05221fa067346a93b49f7ec9162c5150" kind="define"><name>CRONO_PACKET_TYPE_RFSOC_TEST_DATA</name></member>
     <member refid="group__packettypes_1gac6e2fae181534804919bcb6ee4848e1f" kind="define"><name>CRONO_PACKET_TYPE_VRIDIAN_DATA</name></member>
+    <member refid="group__packettypes_1ga632dd87093156d58649a7ac9ae2ad7ef" kind="define"><name>CRONO_PACKET_TYPE_CRIMSON_DUAL_GAIN</name></member>
     <member refid="group__packettypes_1ga5aaa58af03dbbb76c5eb831dcaa20212" kind="define"><name>CRONO_PACKET_TYPE_TIMESTAMP_ONLY</name></member>
     <member refid="group__packettypes_1ga856a406737bf3188259c5ea5438f458c" kind="define"><name>CRONO_PACKET_TYPE_END_OF_BUFFER</name></member>
     <member refid="group__packettypes_1gaf56df0e5f1ebb2a8a310614da4a82ca4" kind="define"><name>CRONO_PACKET_TYPE_TRIGGER_PATTERN</name></member>
@@ -441,7 +443,11 @@
     <member refid="group__tigermodes_1ga1edd2216a57c42dd92c5d0b141b61d53" kind="define"><name>NDIGO6G12_TIGER_BIPOLAR</name></member>
     <member refid="group__tigerstop_1gafdf751fd3bdecfe23abce68ef14a8d65" kind="define"><name>NDIGO6G12_TIGER_MAX_BIPOLAR_PULSE_LENGTH</name></member>
     <member refid="group__avrgdefines_1gabfece38c5026c65c0216b4c6c63fa099" kind="define"><name>NDIGO6G12_MAX_AVRG_ITERATIONS</name></member>
+    <member refid="ndigo6g12__interface_8h_1ae384673a7c7f0c3c4fdd57fa257f2be2" kind="define"><name>NDIGO6G12_RSA_CHALLENGE_LENGTH</name></member>
+    <member refid="ndigo6g12__interface_8h_1a6344937a3717ebf7bc529c8899d647b3" kind="define"><name>NDIGO6G12_RSA_RESPONSE_LENGTH</name></member>
     <member refid="ndigo6g12__interface_8h_1a4266289aaec1ed48f096291508844f64" kind="define"><name>ndigo6g12_get_default_init_parameters</name></member>
+    <member refid="ndigo6g12__interface_8h_1aeabf60977d39eea146451cfc4a00cff3" kind="define"><name>CRONO_NOT_AUTHORIZED</name></member>
+    <member refid="ndigo6g12__interface_8h_1adaedc2b8ea613fc2a4a28210f600bee3" kind="typedef"><name>ndigo6g12_rsa_challenge_callback</name></member>
     <member refid="ndigo6g12__interface_8h_1a4571d3a373dd9cef756fb94450d0a3a9" kind="function"><name>ndigo6g12_get_driver_revision</name></member>
     <member refid="ndigo6g12__interface_8h_1a69c101ee0ec180ddd5c3a79ed0ea6a9d" kind="function"><name>ndigo6g12_get_driver_revision_str</name></member>
     <member refid="ndigo6g12__interface_8h_1a07881e20b788b21f3b6fc179347ce1c5" kind="function"><name>ndigo6g12_count_devices</name></member>
@@ -452,6 +458,7 @@
     <member refid="ndigo6g12__interface_8h_1afb9ccbef090349b638da935ec00dfcc3" kind="function"><name>ndigo6g12_configure</name></member>
     <member refid="ndigo6g12__interface_8h_1a9b17c6124fa242e7293b30d927826ff3" kind="function"><name>ndigo6g12_get_default_init_parameters_version</name></member>
     <member refid="ndigo6g12__interface_8h_1a2de181d8f48b36a640182d4118bea07d" kind="function"><name>ndigo6g12_init</name></member>
+    <member refid="ndigo6g12__interface_8h_1adbad75fd0e4757fa230076c34b4d064a" kind="function"><name>ndigo6g12_authenticate</name></member>
     <member refid="ndigo6g12__interface_8h_1aa9c9b2f19ee716d20a1401607ab8629d" kind="function"><name>ndigo6g12_close</name></member>
     <member refid="ndigo6g12__interface_8h_1ad25dc720dca5598bbfc481133ab67213" kind="function"><name>ndigo6g12_read</name></member>
     <member refid="ndigo6g12__interface_8h_1ab6cd696d16c16894316ab59caccb9077" kind="function"><name>ndigo6g12_acknowledge</name></member>
@@ -654,7 +661,9 @@
     <member refid="group__packettypes_1gac59202bb1df12d01615e4d2455aa2ffb" kind="define"><name>CRONO_PACKET_TYPE_64_BIT_UNSIGNED</name></member>
     <member refid="group__packettypes_1ga8bde9783b3aa1b809dfbb547e0577bc4" kind="define"><name>CRONO_PACKET_TYPE_TDC_DATA</name></member>
     <member refid="group__packettypes_1ga19f824458691e5c17f7042a792ecf3c8" kind="define"><name>CRONO_PACKET_TYPE_AVRG_DATA</name></member>
+    <member refid="group__packettypes_1ga05221fa067346a93b49f7ec9162c5150" kind="define"><name>CRONO_PACKET_TYPE_RFSOC_TEST_DATA</name></member>
     <member refid="group__packettypes_1gac6e2fae181534804919bcb6ee4848e1f" kind="define"><name>CRONO_PACKET_TYPE_VRIDIAN_DATA</name></member>
+    <member refid="group__packettypes_1ga632dd87093156d58649a7ac9ae2ad7ef" kind="define"><name>CRONO_PACKET_TYPE_CRIMSON_DUAL_GAIN</name></member>
     <member refid="group__packettypes_1ga5aaa58af03dbbb76c5eb831dcaa20212" kind="define"><name>CRONO_PACKET_TYPE_TIMESTAMP_ONLY</name></member>
     <member refid="group__packettypes_1ga856a406737bf3188259c5ea5438f458c" kind="define"><name>CRONO_PACKET_TYPE_END_OF_BUFFER</name></member>
     <member refid="group__packettypes_1gaf56df0e5f1ebb2a8a310614da4a82ca4" kind="define"><name>CRONO_PACKET_TYPE_TRIGGER_PATTERN</name></member>
