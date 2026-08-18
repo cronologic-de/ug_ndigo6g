@@ -16,8 +16,8 @@ including the auto-trigger and the ADC channels.
     :ref:`gating blocks<Section Gating Blocks>`.
 
 The TiGer can be used in different output
-:cpp:member:`modes<ndigo6g12_tdc_tiger_block::mode>`. For an overview of the
-different modes, see the documentation in the API section.
+:cpp:member:`ndigo6g12_tdc_tiger_block::mode`.
+For an overview of the different modes, see the documentation in the API section.
 
 With restrictions, the respective LEMO connectors can be used
 simultaneously as a TiGer output *and* as an input.
