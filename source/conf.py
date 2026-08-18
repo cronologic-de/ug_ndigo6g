@@ -106,7 +106,7 @@ html_css_files = ["custom.css"]
 
 # latex_toplevel_sectioning = "section"
 
-latex_engine = "xelatex"
+latex_engine = "lualatex"
 latex_xindy_use = False
 latex_table_style = ["booktabs"]
 latex_elements = {
