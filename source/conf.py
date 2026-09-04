@@ -39,6 +39,8 @@ breathe_default_project = "ndigo6g12_api"
 breathe_show_include = False
 breathe_show_define_initializer = True
 
+primary_domain = "cpp"
+
 autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 3
 
