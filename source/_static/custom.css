@@ -1,4 +1,30 @@
-@import url("default.css");
+@font-face {
+    font-family: "montserrat";
+    src: url("montserrat-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("montserrat-italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("montserrat-bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("montserrat-bolditalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
 
 .ctypered {
   color: #8E2100;

@@ -35,7 +35,8 @@ Alternatively, if you do not have make, use the [make.bat](make.bat) script inst
 
 ## License
 This documentation is licensed under the
-[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
+[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license
+(see [LICENSE](LICENSE)).
 You are free to copy and redistribute the material in any medium or format for
 any purpose, even commercially unchanged if you give appropriate credit to
 cronologic GmbH & Co. KG. A link to
@@ -46,3 +47,5 @@ non-exclusive but unlimited rights to your edit to cronologic GmbH & Co. KG.
 ![Creative Commons by-nd 4.0](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)
 
 The file [extraplaceins.sty](extraplaceins.sty) is in the public domain.
+
+The Montserrat font is licensed under the [SIL OPEN FONT LICENSE](OFL.txt).
