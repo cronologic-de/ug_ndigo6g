@@ -20,45 +20,14 @@ Information on
 the current device will be stored as type :cpp:struct:`ndigo6g12_device`.
 
 
+.. latex-toc-doxygendefine:: ndigo6g12_get_default_init_parameters
 
-.. raw:: latex
+.. latex-toc-doxygenfunction:: ndigo6g12_get_default_init_parameters_version
 
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_default\_init\_parameters}}
+.. latex-toc-doxygenfunction:: ndigo6g12_init
 
-.. doxygendefine:: ndigo6g12_get_default_init_parameters
+.. latex-toc-doxygenfunction:: ndigo6g12_close
 
-.. doxygenfunction:: ndigo6g12_get_default_init_parameters_version
+.. latex-toc-doxygenstruct:: ndigo6g12_device
 
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_init}}
-
-.. doxygenfunction:: ndigo6g12_init
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_close}}
-
-.. doxygenfunction:: ndigo6g12_close
-
-
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_device}}
-
-.. doxygenstruct:: ndigo6g12_device
-    :members:
-    :undoc-members:
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_init\_parameters}}
-
-.. doxygenstruct:: ndigo6g12_init_parameters
-    :members:
+.. latex-toc-doxygenstruct:: ndigo6g12_init_parameters

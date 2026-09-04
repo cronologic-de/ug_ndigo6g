@@ -35,7 +35,7 @@ Driver
 
 2.2.0 — 2025-04-03
     | Bugfix: Removed trigger dead time
-    | Bugfix: Fixed :c:macro:`NDIGO6G12_MAX_PRECURSOR` for :ref:`Averaging Mode`
+    | Bugfix: Fixed :c:macro:`NDIGO6G12_MAX_PRECURSOR` for :doc:`functionality/averaging`
 
 2.0.1 — 2024-07-17
     | Extensive revision of the application programming interface
@@ -105,7 +105,7 @@ User Guide
     | Updated Erratum
 
 1.1.0 — 2025-01-14
-    | Added :numref:`Section %s<maxratings>`
+    | Added :ref:`maxratings`
 
 1.0.1 — 2024-10-22
     | Improved :numref:`Figure %s<fig hardware picture>`

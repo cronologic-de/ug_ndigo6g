@@ -32,7 +32,7 @@ Output Structure *crono_packet*
 
         .. c:macro:: CRONO_PACKET_TYPE_16_BIT_SIGNED
 
-            Used for :ref:`ADC data <adc data format>`.
+            Used for :doc:`ADC data <adcdata>`.
 
             :cpp:member:`crono_packet::data` must be cast to ``int16_t`` and
             :cpp:member:`crono_packet::length` must be multiplied by 4.
@@ -46,7 +46,7 @@ Output Structure *crono_packet*
 
         .. c:macro:: CRONO_PACKET_TYPE_AVRG_DATA
 
-            Used for :ref:`averaged ADC data <avrg data format>`.
+            Used for :doc:`averaged ADC data <avrgdata>`.
 
             :cpp:member:`crono_packet::data` must be cast to ``uint32_t`` and
             :cpp:member:`crono_packet::length` must be multiplied by 2.
@@ -67,7 +67,7 @@ Output Structure *crono_packet*
     .. cpp:member:: uint32_t length
 
         Length of :cpp:member:`crono_packet::data` in multiples of 64 bits. The actual
-        length of :cpp:member:`crono_packet::data` depends on 
+        length of :cpp:member:`crono_packet::data` depends on
         :cpp:member:`crono_packet::type`.
 
     .. cpp:member:: uint64_t timestamp
@@ -80,17 +80,13 @@ Output Structure *crono_packet*
 
         Payload data of the packet.
 
-        The length of ``data`` corresponds to :cpp:member:`crono_packet::length`.
+        The length of ``data`` corresponds to :member:`crono_packet::length`.
 
-        The data type must be cast according to :cpp:member:`crono_packet::type`, and
-        the data encoding also depends on :cpp:member:`crono_packet::type`.
+        The data type must be cast according to :member:`crono_packet::type`, and
+        the data encoding also depends on :member:`crono_packet::type`.
 
-        See :numref:`Section %s<adc data format>` for the data encoding of ADC data.
+        See :doc:`adcdata` for the data encoding of ADC data.
 
-        See :numref:`Section %s<tdcpacket bit table>` for the data encoding of TDC data.
+        See :doc:`tdcdata` for the data encoding of TDC data.
 
-        See :numref:`Section %s<avrg data format>` for the data encoding of averaged
-        ADC data.
-
-
-
+        See :doc:`avrgdata` for the data encoding of averaged ADC data.

@@ -12,7 +12,7 @@
         </briefdescription>
         <detaileddescription>
 <para><verbatim>embed:rst:leading-asterisk
-*        For more information, see :numref:`Section %s&lt;Averaging Mode&gt;`.
+*        For more information, see :doc:`../functionality/averaging`.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>

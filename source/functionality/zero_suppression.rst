@@ -13,8 +13,7 @@ Data is only written to the PC if the sample values exceed a specific
 threshold.
 Expanding on that, the Ndigo6G-12's zero suppression can be used to
 realize much more complex scenarios using the *Trigger* and *Gating Blocks*
-(see :numref:`Sections %s<Section Trigger Blocks>` and
-:numref:`%s<Section Gating Blocks>`).
+(see :doc:`trigger` and :doc:`gating`).
 
 .. _Figure Zero Suppression:
 .. figure:: ../figures/ZeroSupp.*

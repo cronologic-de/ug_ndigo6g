@@ -22,7 +22,7 @@
 </listitem><listitem><para><ref refid="group__apptypes_1ga5892cf53d029fcd233410b03261f2380" kindref="member">NDIGO6G12_APP_TYPE_1CH</ref>: <ref refid="group__adcdefs_1ga387f83c29e74ed7a8e9f9dd171ad8da6" kindref="member">NDIGO6G12_ADC_MODE_ABCD</ref></para>
 </listitem></itemizedlist>
 <verbatim>embed:rst:leading-asterisk
-*          For more information, see :numref:`Section %s&lt;ADC Modes&gt;`.
+*          For more information, see :doc:`../functionality/adc_modes`.
 *
 *          Must be one of the following:
 *
@@ -246,7 +246,7 @@
 *          .. doxygengroup:: outputdefs
 *              :content-only:
 *
-*          For more information, see :numref:`Section %s&lt;adc data format&gt;`.
+*          For more information, see :doc:`../packform/adcdata`.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -302,7 +302,7 @@
 </listitem></itemizedlist>
 <verbatim>embed:rst:leading-asterisk
 *          For more information, see :ref:`multiple sampling modes` in
-*          :numref:`Section %s&lt;ADC Modes&gt;`.
+*          :doc:`../functionality/adc_modes`.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>

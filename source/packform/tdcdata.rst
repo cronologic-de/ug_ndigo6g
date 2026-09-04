@@ -1,6 +1,6 @@
 .. _tdcpacket bit table:
 
-Data encoding for TDC hits
+Data Encoding for TDC Hits
 --------------------------
 
 The following bit table shows the encoding of the payload data

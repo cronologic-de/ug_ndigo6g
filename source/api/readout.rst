@@ -5,53 +5,17 @@ Readout
 
 After an Ndigo6G-12 board is initialized and capturing, the captured events
 can be read from the board with :cpp:func:`ndigo6g12_read`. The read-out
-data is packaged in *packets* (see :numref:`Chapter %s<packet format>`).
+data is packaged in *packets* (see :doc:`../packform/index`).
 
 
-.. raw:: latex
+.. latex-toc-doxygenfunction:: ndigo6g12_read
 
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_read}}
+.. latex-toc-doxygenfunction:: ndigo6g12_get_last_error_message
 
-.. doxygenfunction:: ndigo6g12_read
+.. latex-toc-doxygenfunction:: ndigo6g12_device_state_to_str
 
-.. raw:: latex
+.. latex-toc-doxygenfunction:: ndigo6g12_acknowledge
 
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_last\_error\_message}}
+.. latex-toc-doxygenstruct:: ndigo6g12_read_in
 
-.. doxygenfunction:: ndigo6g12_get_last_error_message
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_device\_state\_to\_str}}
-
-.. doxygenfunction:: ndigo6g12_device_state_to_str
-
-
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_acknowledge}}
-
-.. doxygenfunction:: ndigo6g12_acknowledge
-
-
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_read\_in}}
-
-.. doxygenstruct:: ndigo6g12_read_in
-    :members:
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_read\_out}}
-
-.. doxygenstruct:: ndigo6g12_read_out
-    :members:
+.. latex-toc-doxygenstruct:: ndigo6g12_read_out

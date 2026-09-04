@@ -21,7 +21,7 @@ by clicking “Flash” after browsing to your calibration file.
     re-calibrate your Ndigo6G-12. Restoring a previous calibration from a backup
     is not sufficient.
 
-Re-calibrating the Ndigo6G-12
+Re-Calibrating the Ndigo6G-12
 -----------------------------
 
 Calibration is performed with the command-line tool *ndigo6g12_tdc_alignment.exe*.
@@ -42,5 +42,3 @@ If multiple Ndigo6G-12 are installed in your system, you can perform calibration
 each one of them by calling
 :code:`.\\ndigo6g12_tdc_alignment.exe -index \<device_index\>`, where the
 :code:`\<device_index\>` starts at 0 and increments for each Ndigo6G-12.
-
-

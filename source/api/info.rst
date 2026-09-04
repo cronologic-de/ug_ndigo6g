@@ -1,6 +1,6 @@
 :tocdepth: 3
 
-Status information
+Status Information
 ------------------
 The driver provides functions to retrieve detailed information on the type
 of board, it's configuration, settings and state. The information is split
@@ -10,108 +10,33 @@ information from the board.
 
 .. functions
 
-.. raw:: latex
+.. latex-toc-doxygenfunction:: ndigo6g12_get_driver_revision
 
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_driver\_revision}}
+.. latex-toc-doxygenfunction:: ndigo6g12_get_driver_revision_str
 
-.. doxygenfunction:: ndigo6g12_get_driver_revision
+.. latex-toc-doxygenfunction:: ndigo6g12_count_devices
 
-.. raw:: latex
+.. latex-toc-doxygenfunction:: ndigo6g12_get_static_info
 
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_driver\_revision\_str}}
+.. latex-toc-doxygenfunction:: ndigo6g12_get_param_info
 
-.. doxygenfunction:: ndigo6g12_get_driver_revision_str
+.. latex-toc-doxygenfunction:: ndigo6g12_get_fast_info
 
-.. raw:: latex
+.. latex-toc-doxygenfunction:: ndigo6g12_get_pcie_info
 
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_count\_devices}}
+.. latex-toc-doxygenfunction:: ndigo6g12_get_buffer_info
 
-.. doxygenfunction:: ndigo6g12_count_devices
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_static\_info}}
-
-.. doxygenfunction:: ndigo6g12_get_static_info
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_param\_info}}
-
-.. doxygenfunction:: ndigo6g12_get_param_info
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_fast\_info}}
-
-.. doxygenfunction:: ndigo6g12_get_fast_info
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_pcie\_info}}
-
-.. doxygenfunction:: ndigo6g12_get_pcie_info
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_buffer\_info}}
-
-.. doxygenfunction:: ndigo6g12_get_buffer_info
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_get\_free\_buffer}}
-
-.. doxygenfunction:: ndigo6g12_get_free_buffer
+.. latex-toc-doxygenfunction:: ndigo6g12_get_free_buffer
 
 
 .. Structures
 
-.. raw:: latex
+.. latex-toc-doxygenstruct:: ndigo6g12_param_info
 
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_param\_info}}
+.. latex-toc-doxygenstruct:: ndigo6g12_static_info
 
-.. doxygenstruct:: ndigo6g12_param_info
-    :members:
+.. latex-toc-doxygenstruct:: ndigo6g12_fast_info
 
-.. raw:: latex
+.. latex-toc-doxygenstruct:: crono_pcie_info
 
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_static\_info}}
-
-.. doxygenstruct:: ndigo6g12_static_info
-    :members:
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_fast\_info}}
-
-.. doxygenstruct:: ndigo6g12_fast_info
-    :members:
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_pcie\_info}}
-
-.. doxygenstruct:: crono_pcie_info
-    :members:
-
-.. raw:: latex
-
-    \phantomsection
-    \addcontentsline{toc}{subsubsection}{\textit{ndigo6g12\_buffer\_info}}
-
-.. doxygenstruct:: ndigo6g12_buffer_info
-    :members:
+.. latex-toc-doxygenstruct:: ndigo6g12_buffer_info

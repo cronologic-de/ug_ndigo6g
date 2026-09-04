@@ -96,7 +96,7 @@
 <para>Used for <ref refid="structndigo6g12__configuration_1acb2af45715e3011dc15d8892e4f68f6d" kindref="member">ndigo6g12_configuration::gating_block</ref>.</para>
 <para>After a signal at one of the <computeroutput>sources</computeroutput> is detected, a timer starts running. Once the timer reaches the value specified by <computeroutput>start</computeroutput>, a gate is opened (or closed, depending on <computeroutput>negate</computeroutput>) until the timer reaches the time specified by <computeroutput>stop</computeroutput>.</para>
 <para>What happens in the event that another signal before <computeroutput>stop</computeroutput> is detected is controlled by <computeroutput>retrigger</computeroutput>. <verbatim>embed:rst:leading-asterisk
-*          See also :numref:`Section %s&lt;Section Gating Blocks&gt;`.
+*          See also :doc:`../functionality/gating`.
 * </verbatim> </para>
     </detaileddescription>
     <location file="source/ndigo6g12_interface.h" line="1466" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="1466" bodyend="1511"/>

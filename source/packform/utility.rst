@@ -1,4 +1,4 @@
-Utility macros
+Utility Macros
 --------------
 
 The following macros can be used to navigate through the packets obtained

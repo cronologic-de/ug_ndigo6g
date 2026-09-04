@@ -1,10 +1,8 @@
-.. _ADC Modes:
-
 ADC Modes
 ~~~~~~~~~
 
 The ADC quantizes the input signal using 12 bits. By default, these are mapped
-to signed 16 bit (for more details, see :numref:`Section %s<adc data format>`).
+to signed 16 bit (for more details, see :doc:`../packform/adcdata`).
 
 Data processing such as trigger detection or packet building are always
 performed at 5 ns intervals. Depending on the ADC mode, this interval
@@ -154,7 +152,3 @@ be :c:macro:`NDIGO6G12_APP_TYPE_4CH`.
     :alt: Ndigo6G-12 ADCs in 4-channel-mode AAAA or DDDD.
 
     ADCs in 4-channel-mode AAAA or DDDD at 1.6 Gsps.
-
-
-
-

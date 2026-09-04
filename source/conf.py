@@ -7,7 +7,10 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
 import pathlib
+import sys
 import tomllib
+
+sys.path.append(str(pathlib.Path("./_ext").resolve()))
 
 
 def get_version():
@@ -29,14 +32,12 @@ release = version
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = [
-    "sphinx.ext.autosectionlabel",
-    "breathe",
-]
+extensions = ["sphinx.ext.autosectionlabel", "breathe", "latex-toc-doxygen"]
 
 breathe_projects = {"ndigo6g12_api": os.fspath("./doxygen/xml/")}
 breathe_default_project = "ndigo6g12_api"
 breathe_show_include = False
+breathe_default_members = ("members", "undoc-members")
 breathe_show_define_initializer = True
 
 primary_domain = "cpp"
@@ -56,6 +57,10 @@ rst_prolog = f"""
 
 templates_path = ["_templates"]
 exclude_patterns = ["global.rst"]
+
+numfig = True
+numfig_format = {"figure": "Figure %s", "table": "Table %s"}
+numfig_secnum_depth = 1
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -140,7 +145,3 @@ latex_additional_files = [
     "extraplaceins.sty",
     "Ndigo6G-12_Front_Page.pdf",
 ]
-
-numfig = True
-numfig_format = {"figure": "Figure %s:", "table": "Table %s:"}
-numfig_secnum_depth = 1

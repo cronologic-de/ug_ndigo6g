@@ -20,7 +20,7 @@ Trigger and Gating Block Sources
 .. doxygengroup:: sourcedefs
     :no-title:
 
-Function return values
+Function Return Values
 ~~~~~~~~~~~~~~~~~~~~~~
 .. doxygengroup:: funcreturns
     :no-title:

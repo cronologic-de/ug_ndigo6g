@@ -1,6 +1,6 @@
 .. _avrg data format:
 
-Data encoding for averaged ADC hits
+Data Encoding for Averaged ADC Hits
 -----------------------------------
 
 When using :c:macro:`NDIGO6G12_APP_TYPE_AVRG`, the first two 64-bit words of

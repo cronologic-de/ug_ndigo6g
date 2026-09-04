@@ -1,5 +1,5 @@
 ============================
-Performing a firmware update
+Performing a Firmware Update
 ============================
 
 The Ndigo6G-12 device driver includes the tool *FirmwareGUI_64.exe*. It can be used
@@ -37,7 +37,6 @@ Procedure
     reboot may not be sufficient.
 
 .. attention::
-    
+
     After a firmware update the TDCs have to be re-calibrated.
     See :doc:`./calibration` for the procedure.
-

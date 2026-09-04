@@ -255,7 +255,7 @@ have before the board may be damaged.
 The maximum voltage of any input voltage may not exceed the values given by
 V\ :sub:`max`.
 
-The voltages relative to a constant DC offset (i.e., the pulse “height”) 
+The voltages relative to a constant DC offset (i.e., the pulse “height”)
 may not exceed the values given by V\ :sub:`AC,max`.
 
 Analog Inputs
@@ -331,8 +331,8 @@ to the system must be turned off before installing the board.
 
 Environmental Conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~
-See :numref:`Section %s<techdata environmental conditions for operation>`
-and :numref:`Section %s<techdata power supply>`.
+See :ref:`techdata environmental conditions for operation`
+and :ref:`techdata power supply`.
 
 
 Inputs
@@ -343,9 +343,10 @@ requirements and therefore there are no circuits that provide overvoltage
 protection for these signals.
 
 .. danger::
-  Applying high voltage on the inputs relative to the slot cover can result
-  in permanent damage to the board. See :numref:`Section %s<maxratings>` for
-  the maximum ratings of the inputs.
+
+    Applying high voltage on the inputs relative to the slot cover can result
+    in permanent damage to the board. See :ref:`maxratings` for
+    the maximum ratings of the inputs.
 
 
 Recycling
@@ -359,7 +360,7 @@ The Ndigo6G-12 belongs to **category 9**, **“Überwachungs und
 Kontrollinstrumente für ausschließlich gewerbliche Nutzung”.** The last owner
 of an Ndigo6G-12 must recycle it, treat the board in compliance with **§11**
 and **§12** of the German ElektroG, or return it to the manufacturer’s address
-listed in :numref:`Section %s<techdata manufacturer>`.
+listed in :ref:`techdata manufacturer`.
 
 Export Control
 ~~~~~~~~~~~~~~
@@ -398,8 +399,8 @@ you and there will be no further delay. Included countries are:
 - Singapore
 - USA
 
-Before re-exporting an Ndigo6G or any product containing an Ndigo6G as a 
-component, please check you local regulations whether an export permit is 
+Before re-exporting an Ndigo6G or any product containing an Ndigo6G as a
+component, please check you local regulations whether an export permit is
 required.
 
 It is not permitted to export an Ndigo6G to the Russian Federation or the

@@ -7,20 +7,20 @@ The Ndigo6G-12 records analog waveforms using zero suppression.
 Whenever a relevant waveform is detected, data is written to an internal
 FIFO memory.
 
-Each ADC channel has two *trigger units*. These can be configured independently 
+Each ADC channel has two *trigger units*. These can be configured independently
 (e.g., one unit could trigger on rising edges, the other on falling).
 They are configured with
 :cpp:member:`config.trigger <ndigo6g12_configuration::trigger>`.
 
-Each ADC channel has a corresponding *trigger block* that determines whether 
+Each ADC channel has a corresponding *trigger block* that determines whether
 data is written to the internal FIFOs. The trigger blocks are configured with
 :cpp:member:`config.trigger_block <ndigo6g12_configuration::trigger_block>`.
-Each trigger block can take any amount of trigger units as a source (for 
+Each trigger block can take any amount of trigger units as a source (for
 details, see :cpp:member:`ndigo6g12_trigger_block::sources` or
-:numref:`Section %s<section trigger inputs>`),
+:ref:`section trigger inputs`),
 thus, enabling sophisticated trigger setups.
 
-Trigger configuration
+Trigger Configuration
 ^^^^^^^^^^^^^^^^^^^^^
 
 Analog Inputs
@@ -59,8 +59,8 @@ When edge triggering is used, all packets have the same length of
 For level triggering, packet length is data dependent.
 
 If :cpp:member:`retrigger <ndigo6g12_trigger_block::retrigger>` is enabled and
-the trigger conditions are fulfilled during the recording of the postcursor, 
-the recording window is extended (see :numref:`Figure %s<figure zero 
+the trigger conditions are fulfilled during the recording of the postcursor,
+the recording window is extended (see :numref:`Figure %s<figure zero
 suppression>`).
 
 .. _Fig 2.13:
@@ -147,18 +147,18 @@ See also :numref:`Figure %s<fig triggermatrix>`.
     the trigger signals from the six digital channels (four TDC channels, TRG,
     GATE) can be combined to create a trigger input for each *trigger block*.
     Additionally, four *gate signals* (see
-    :numref:`Figure %s<fig gatingblock>`) can be used to suppress trigger 
+    :numref:`Figure %s<fig gatingblock>`) can be used to suppress trigger
     during configurable time frames.
 
 .. _gating trigger events:
 
-Gating trigger events
+Gating Trigger Events
 ^^^^^^^^^^^^^^^^^^^^^
 
 Triggers can be fed into the
 :cpp:member:`gating_blocks <ndigo6g12_configuration::gating_block>`
 as outlined in
-:numref:`Chapter %s<section gating blocks>` and :numref:`Figure %s<fig gatingblock>`.
+:doc:`gating` and :numref:`Figure %s<fig gatingblock>`.
 
 
 In return, the

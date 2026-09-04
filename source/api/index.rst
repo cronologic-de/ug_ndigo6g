@@ -21,9 +21,9 @@ This chapter provides an overview of the provided API functionality.
 .. toctree::
     :maxdepth: 2
 
-    constants
     init
     info
     config
     runtime
     readout
+    constants

@@ -4,13 +4,13 @@ Hardware
 Installation
 ------------
 
-The Ndigo6G-12 board can be installed in any PCIe x8 (or higher
+The Ndigo6G-12 board can be installed in any PCIe x8 (or higher
 amount of lanes) PCIe slot.
 If the slot electrically supports less than eight lanes, the board will operate
 at lower data throughput rates.
 
 Connect a 6-pin PCIe power cable to the connector at the rear of the board
-(see :numref:`Figure %s<fig hardware picture>`). When using an external 12 V power
+(see :ref:`fig hardware picture`). When using an external 12 V power
 supply, be aware that it must be switched on before you boot the host system of the
 Ndigo6G-12. Note that when you power cycle the host system without power cycling the
 external 12 V power supply, the Ndigo6G-12 will not power cycle. This should generally
@@ -36,7 +36,7 @@ The Ndigo6G-12 board is equipped with an active cooling system, ensuring
 proper cooling of the device. If, however, the temperature of the ADC, TDC, or FPGA
 chips on the board exceed critical temperatures (for instance, if the device is
 operated in inappropriate environmental conditions, see
-:numref:`Section %s<techdata environmental conditions for operation>`),
+:ref:`techdata environmental conditions for operation`),
 a warning is issued to the device driver.
 
 The temperature warnings can be read out using
@@ -45,15 +45,15 @@ The temperature warnings can be read out using
 External Inputs and Connectors
 ------------------------------
 
-Front bracket inputs
+Front Bracket Inputs
 ~~~~~~~~~~~~~~~~~~~~
 
 The inputs of the Ndigo6G-12 board are located on the slot bracket.
 
 :numref:`Figure %s<Fig 2.2>` shows the location of the four analog inputs A to
-D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs 0 to 3
-(see :numref:`Section %s<digital TDC inputs>`), and the two digital control
-inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
+D (see :ref:`analog inputs`), the four digital TDC inputs 0 to 3
+(see :ref:`digital TDC inputs`), and the two digital control
+inputs TRG and GATE (see :ref:`digital ctrl inputs`).
 
 
 .. _Fig 2.2:
@@ -63,7 +63,7 @@ inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 
     Input connectors of an Ndigo6G-12 board located on the PCI bracket.
 
-Clock connections
+Clock Connections
 ~~~~~~~~~~~~~~~~~
 
 Connectors to connect an external clock or to access the internal clock
@@ -155,7 +155,7 @@ AC-Coupling and Baseline Drift
 Due to the AC-coupling of the analog and digital inputs, a baseline drift may
 occur over time (see :numref:`Figure %s<fig baselinedrift>`). To avoid this problem,
 make sure your input signal fulfills the requirements laid out in
-:numref:`Section %s<analog inputs tech>`.
+:ref:`analog inputs tech`.
 
 .. _fig baselinedrift:
 
@@ -221,7 +221,7 @@ and gates, and we recommend using them instead of the
 :ref:`digital TDC inputs <digital tdc inputs>` for these purposes.
 
 TRG and GATE are configured analogously to the TDC inputs (see
-:numref:`Section %s<digital tdc inputs>` and
+:ref:`digital tdc inputs` and
 :numref:`Figure %s<Fig 2.17>`), where indices 4 (5) and
 :c:macro:`NDIGO6G12_TRIGGER_TRG` (:c:macro:`NDIGO6G12_TRIGGER_GATE`)
 correspond to input TRG (GATE).
@@ -251,7 +251,7 @@ reliably be detected.
 
 .. _sec mem mgmt:
 
-Memory management
+Memory Management
 -----------------
 
 The host buffer is memory on the host’s system in which the data recorded by the
