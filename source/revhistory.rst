@@ -36,7 +36,7 @@ Driver
 2.2.0 — 2025-04-03
     | Bugfix: Removed trigger dead time
     | Bugfix: Fixed :c:macro:`NDIGO6G12_MAX_PRECURSOR` for :ref:`Averaging Mode`
-    
+
 2.0.1 — 2024-07-17
     | Extensive revision of the application programming interface
     | Improved linux support
@@ -68,7 +68,10 @@ User Guide
 ----------
 1.6.0 - TBD
     | Expanded technical data on :ref:`tdc characteristics`
-    | Added documentation for :cpp:func:`ndigo6g12_get_buffer_info`, :cpp:func:`ndigo6g12_get_free_buffer`, and :cpp:struct:`ndigo6g12_buffer_info`
+    | Added documentation for :cpp:func:`ndigo6g12_get_buffer_info`,
+      :cpp:func:`ndigo6g12_get_free_buffer`, and
+      :cpp:struct:`ndigo6g12_buffer_info`
+    | Documented thermal baseline drift after initialization
     | Updated API documentation
 
 1.5.1 - 2026-06-03

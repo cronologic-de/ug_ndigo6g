@@ -51,7 +51,7 @@ Front bracket inputs
 The inputs of the Ndigo6G-12 board are located on the slot bracket.
 
 :numref:`Figure %s<Fig 2.2>` shows the location of the four analog inputs A to
-D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs 0 to 3 
+D (see :numref:`Section %s<analog inputs>`), the four digital TDC inputs 0 to 3
 (see :numref:`Section %s<digital TDC inputs>`), and the two digital control
 inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 
@@ -66,7 +66,7 @@ inputs TRG and GATE (see :numref:`Section %s<digital ctrl inputs>`).
 Clock connections
 ~~~~~~~~~~~~~~~~~
 
-Connectors to connect an external clock or to access the internal clock 
+Connectors to connect an external clock or to access the internal clock
 signal are located at the top of the board (see
 :numref:`Figure %s<fig hardware picture>`).
 
@@ -126,17 +126,27 @@ can be set between :math:`\pm` 0.5 V.
 
 .. _Fig 2.5:
 .. figure:: figures/analog_offset_sine.*
-   :width: 80%
-   :alt: Analog offset on ADC input
+    :width: 80%
+    :alt: Analog offset on ADC input
 
-   Users can add an analog offset to the input before sampling.
+    Users can add an analog offset to the input before sampling.
 
 .. _Fig 2.6:
 .. figure:: figures/analog_offset_pulse.*
-   :width: 80%
-   :alt: Shifted asymmetric signal
+    :width: 80%
+    :alt: Shifted asymmetric signal
 
-   Asymmetric signal shifted to increase dynamic range.
+    Asymmetric signal shifted to increase dynamic range.
+
+.. attention::
+
+    After calling :func:`ndigo6g12_init`, the ADC chip will
+    heat up, which will slightly shift its baseline.
+
+    If you plan to measure very small pulses, wait for about
+    2 minutes after calling ``ndigo6g12_init`` before you start
+    capturing data and tune the values of ``analog_offset``
+    only after this startup period.
 
 
 AC-Coupling and Baseline Drift
@@ -153,8 +163,8 @@ make sure your input signal fulfills the requirements laid out in
     :width: 50%
     :alt: Baseline drift due to AC-coupling
 
-    Baseline drift due to AC-coupling. A second pulse close to a first may be influenced
-    by a shifted baseline, as sketched in the lower graph.
+    Baseline drift due to AC-coupling. A second pulse close to a first may
+    be influenced by a shifted baseline, as sketched in the lower graph.
 
 
 .. _digital tdc inputs:
@@ -202,11 +212,11 @@ TRG and GATE.
 
 TRG and GATE can detect pulses with a width that is least 2 ns and at maximum 200 ns.
 
-Input-signals on the inputs TRG and GATE are digitized and routed to the 
-Trigger Matrix. They can be used to trigger any of the trigger state machines 
+Input-signals on the inputs TRG and GATE are digitized and routed to the
+Trigger Matrix. They can be used to trigger any of the trigger state machines
 and :doc:`gating blocks <functionality/gating>` with maximum sampling rate.
 
-The digital control inputs are optimally suited to be used as digital triggers 
+The digital control inputs are optimally suited to be used as digital triggers
 and gates, and we recommend using them instead of the
 :ref:`digital TDC inputs <digital tdc inputs>` for these purposes.
 
@@ -223,7 +233,7 @@ The input circuit and trigger logic is identical to the TDC inputs
 Use Control Inputs as TDCs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 The control inputs TRG and GATE can be used as low-resolution TDCs.
-The dead-time is 5 ns. Pulses should have a width of at least 300 ps to 
+The dead-time is 5 ns. Pulses should have a width of at least 300 ps to
 reliably be detected.
 
 .. hint::

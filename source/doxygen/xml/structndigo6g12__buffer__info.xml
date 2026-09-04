@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2357" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="2357" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="2400" column="14" bodyfile="source/ndigo6g12_interface.h" bodystart="2400" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structndigo6g12__buffer__info_1ab7ef5ad7c0ae31c7f43a08feb997a0e2" prot="public" static="no" mutable="no">
         <type>int64_t</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="source/ndigo6g12_interface.h" line="2362" column="13" bodyfile="source/ndigo6g12_interface.h" bodystart="2362" bodyend="-1"/>
+        <location file="source/ndigo6g12_interface.h" line="2405" column="13" bodyfile="source/ndigo6g12_interface.h" bodystart="2405" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -40,7 +40,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="source/ndigo6g12_interface.h" line="2353" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="2353" bodyend="2363"/>
+    <location file="source/ndigo6g12_interface.h" line="2396" column="1" bodyfile="source/ndigo6g12_interface.h" bodystart="2396" bodyend="2406"/>
     <listofallmembers>
       <member refid="structndigo6g12__buffer__info_1a8f42b30e133f5e794e3a6797279b838a" prot="public" virt="non-virtual"><scope>ndigo6g12_buffer_info</scope><name>buffer_address</name></member>
       <member refid="structndigo6g12__buffer__info_1ab7ef5ad7c0ae31c7f43a08feb997a0e2" prot="public" virt="non-virtual"><scope>ndigo6g12_buffer_info</scope><name>buffer_size</name></member>
