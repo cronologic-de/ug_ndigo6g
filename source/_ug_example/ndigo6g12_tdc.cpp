@@ -47,7 +47,8 @@ void Ndigo6GApp::ProcessTDCPacket(crono_packet* pkt) {
 			printf("TDC event on channel %d timestamp: packet without "
 				"shift %.3f ns, "
 				"with shift %.3f ns, edge %.3f ns  \n",
-				tdcChannel, (double)(pkt->timestamp * pi->packet_ts_period) / 1000.0,
+				tdcChannel,
+				(double)(pkt->timestamp * pi->packet_ts_period) / 1000.0,
 				packetTs / 1000., edgeTsPs / 1000.);
 
 		}
@@ -70,10 +71,11 @@ void Ndigo6GApp::ConfigureTDC(ndigo6g12_configuration* config) {
 		config->tdc_trigger_offsets[i] = NDIGO6G12_DC_OFFSET_N_NIM;
 
 		// enable TDC channel
-		config->tdc_configuration.channel[i].enable = (tdcChannelMask & (1 << i)) != 0;
+		config->tdc_configuration.channel[i].enable =
+		                                       (tdcChannelMask & (1 << i)) != 0;
 
 		// enable falling edge trigger as input to trigger matrix for selected
-		// TDC channel 
+		// TDC channel
 		// only required if used as trigger source for Gating, TiGer
 		// or ADC trigger blocks
 		config->trigger[NDIGO6G12_TRIGGER_TDC0 + i].edge = true;

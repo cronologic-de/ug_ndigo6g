@@ -4,16 +4,16 @@
 #include <vector>
 #include <float.h>
 
-// this utility class manages the arrival of timestamps for 
+// this utility class manages the arrival of timestamps for
 // a number of channels and tries to group them to a start
 // signal on one channel and stop signals on the other channels
 
 // delay status
-enum DelayStatus { 
+enum DelayStatus {
     NotEnoughData, // we do not know, if the following signal has already arrived
     StopsMissing,  // some of the stops have arrived after a maximum wait time
     Complete,      // start and all expected stops were processed correctly
-    StartMissing 
+    StartMissing
 };
 
 class ChannelInfo {
@@ -87,7 +87,7 @@ class DelayMeasurement {
         startIndex = channelIndexes[startChannel];
     }
 
-    void SetMaxWaitTime(double maxWaitTime) { 
+    void SetMaxWaitTime(double maxWaitTime) {
         this->maxWaitTime = maxWaitTime;
     }
     // write the current timestamp in ps to the structure
@@ -168,7 +168,7 @@ class DelayMeasurement {
                 delays.status = Complete;
             } else if (channelsTooEarly > 0 || !startPresent) {
                 // cut away
-                double cutOffTimestamp = startPresent 
+                double cutOffTimestamp = startPresent
                                             ? startTimestamp - maxDelay
                                             : latestTimestamp - maxWaitTime;
 
@@ -214,7 +214,7 @@ class DelayMeasurement {
         }
         if (delays->status == StartMissing) {
 
-            printf("---\n Start missing at  %.3lf ns\n", 
+            printf("---\n Start missing at  %.3lf ns\n",
                 delays->startTimestamp / 1000.);
             for (const ChannelDelay &cd : delays->channelDelays) {
                 if (cd.isStart) {

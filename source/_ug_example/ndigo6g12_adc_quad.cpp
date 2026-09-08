@@ -47,7 +47,7 @@ void Ndigo6GAppQuad::ConfigureADC(ndigo6g12_configuration *config,
         config->trigger[index].threshold = adcThreshold;
     }
 
-    // the sources of each channel (they should trigger on the input data 
+    // the sources of each channel (they should trigger on the input data
     // of the channel)
     std::array<int, 4> sources = {
         NDIGO6G12_TRIGGER_SOURCE_A0, NDIGO6G12_TRIGGER_SOURCE_B0,
@@ -58,7 +58,7 @@ void Ndigo6GAppQuad::ConfigureADC(ndigo6g12_configuration *config,
     for (int c = 0; c < 4; c++) {
         config->analog_offsets[c] = NDIGO6G12_DC_OFFSET_N_NIM * -1;
 
-        // enable channel 
+        // enable channel
         config->trigger_block[c].enabled = true;
 
         // in multiples of 8 ADC samples (5 ns recording time) after trigger

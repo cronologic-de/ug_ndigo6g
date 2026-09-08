@@ -3,7 +3,7 @@
 #include <cmath>
 
 
-// an application that measures the delay between a start signal (A) and a 
+// an application that measures the delay between a start signal (A) and a
 // stop signal (D)
 double Ndigo6GAppDual::ProcessADCPacket(crono_packet *pkt) {
 

@@ -93,7 +93,8 @@ class Ndigo6GApp {
 
 
 };
-// maximum distance of two pulses, so that they are considered to be a cable delay
+// maximum distance of two pulses, so that they are considered to be
+// a cable delay
 static const double MAX_DELAY_PS = 500000.;
 
 class Ndigo6GAppSingle : public Ndigo6GApp {

@@ -16,7 +16,7 @@ std::map<int, std::string> requirementsMap = {
      "Starts the test of the currently configured app type"},
     {1,
      "Measure time distance between passing of "
-        "threshold, calculates the frequency, requires NIM signal on channel A"},
+       "threshold, calculates the frequency, requires NIM signal on channel A"},
     {2, "Dual-channel application that measures delay between start "
         "pulse on channel A and stop pulse on channel D (NIM)"},
     {4, "Quad-channel application that measures delay between start "
@@ -29,8 +29,11 @@ Ndigo6GApp *adcApp;
 ndigo6g12_param_info paramInfo;
 
 // initialize Ndigo6G-12 device
-ndigo6g12_device initialize_ndigo6g12(int bufferSize, int boardId,
-                                      int cardIndex, int appType, int tdcChannels) {
+ndigo6g12_device initialize_ndigo6g12(int bufferSize,
+                                      int boardId,
+                                      int cardIndex,
+                                      int appType,
+                                      int tdcChannels) {
     // prepare initialization
     ndigo6g12_init_parameters params;
     // fill initialization data structure with default values
@@ -47,7 +50,7 @@ ndigo6g12_device initialize_ndigo6g12(int bufferSize, int boardId,
     // this specifies the directories or the specific .cronorom if dynamic
     // switching of appType is required. If not specified, the example will
     // return an error if the appType does not match the current appType in the
-    // firmware 
+    // firmware
     params.firmware_locations = ".";
 
     // initialize card
@@ -179,11 +182,11 @@ int main(int argc, char *argv[]) {
         printf("tdcMask: Bit flag for TDC channels E-H\n");
         exit(1);
     }
-    
+
     int appType = atoi(argv[1]);
     int tdcChannelMask = 0;
     if (argc > 2) {
-        tdcChannelMask = atoi(argv[2]);    
+        tdcChannelMask = atoi(argv[2]);
     }
     // use 128 MiByte to buffer incoming data
     // largest ADC data packet has about 500 KiByte
