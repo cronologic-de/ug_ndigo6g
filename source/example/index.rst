@@ -5,7 +5,9 @@ C++-Example
 
 The following source code is an example of an Ndigo6G-12 application written
 in C++. The source code is also available on our
-`GitHub <https://github.com/cronologic-de/ndigo6g_babel/tree/main/ug_example>`_.
+`GitHub <https://github.com/cronologic-de/ndigo6g_babel/tree/main/ug_example>`_,
+where you can also find the instructions on how to get the example running
+on your system.
 
 =============================================== =======
 Source file                                     Description
@@ -41,4 +43,3 @@ Source file                                     Description
     adc_averager
     tdc
     delay
-
