@@ -66,12 +66,13 @@ Driver
 
 User Guide
 ----------
-1.6.0 - TBD
+1.6.0 - 2026-09-08
     | Expanded technical data on :ref:`tdc characteristics`
     | Added documentation for :cpp:func:`ndigo6g12_get_buffer_info`,
       :cpp:func:`ndigo6g12_get_free_buffer`, and
       :cpp:struct:`ndigo6g12_buffer_info`
-    | Documented thermal baseline drift after initialization
+    | Documented slight thermal baseline drift after initialization
+      (see :ref:`analog offsets`)
     | Updated API documentation
 
 1.5.1 - 2026-06-03

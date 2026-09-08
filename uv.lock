@@ -1419,7 +1419,7 @@ wheels = [
 
 [[package]]
 name = "ug-ndigo6g"
-version = "1.6.0.dev0"
+version = "1.6.0"
 source = { virtual = "." }
 dependencies = [
     { name = "breathe" },
