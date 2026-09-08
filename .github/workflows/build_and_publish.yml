@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         ref: main
 
@@ -30,13 +30,13 @@ jobs:
         make latex
 
     - name: Upload HTML to artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: html
         path: build/html
 
     - name: Compile PDF
-      uses: xu-cheng/latex-action@v3
+      uses: xu-cheng/latex-action@v4
       with:
         root_file: ndigo6g-12userguide.tex
         latexmk_use_lualatex: true
@@ -45,7 +45,7 @@ jobs:
 
     - name: Upload log if latexmk fails
       if: ${{ failure() }}
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: latex_files
         path: |
@@ -56,7 +56,7 @@ jobs:
         mv build/latex/ndigo6g-12userguide.pdf build/latex/Ndigo6G_User_Guide.pdf
 
     - name: Upload LaTeX to artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: latex
         path: build/latex
@@ -73,12 +73,12 @@ jobs:
         ref: main
 
     - name: Download artifacts
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v8
       with:
         path: ./artifacts
 
     - name: Publish HTML
-      uses: appleboy/scp-action@v0.1.7
+      uses: appleboy/scp-action@v1
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
@@ -90,7 +90,7 @@ jobs:
         rm: true
 
     - name: Publish PDF
-      uses: appleboy/scp-action@v0.1.7
+      uses: appleboy/scp-action@v1
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
@@ -113,4 +113,3 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
       run: |
         gh release upload ${{ github.event.release.tag_name }} ./documentation.zip
-
